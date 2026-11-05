@@ -1,0 +1,118 @@
+{
+  "id": "umich",
+  "name": "University of Michigan",
+  "shortName": "Michigan",
+  "city": "Ann Arbor",
+  "state": "MI",
+  "setting": "town",
+  "officialDomains": [
+    "umich.edu"
+  ],
+  "officialHosts": [],
+  "units": [
+    {
+      "id": "lsa",
+      "name": "College of Literature, Science, and the Arts",
+      "shortName": "LSA",
+      "aliases": [
+        "LSA",
+        "Literature, Science, and the Arts"
+      ],
+      "hosts": [
+        "lsa.umich.edu"
+      ]
+    },
+    {
+      "id": "engineering",
+      "name": "College of Engineering",
+      "shortName": "Michigan Engineering",
+      "aliases": [
+        "College of Engineering",
+        "Michigan Engineering",
+        "CoE"
+      ],
+      "hosts": [
+        "www.engin.umich.edu",
+        "robotics.umich.edu"
+      ]
+    },
+    {
+      "id": "taubman",
+      "name": "Taubman College of Architecture and Urban Planning",
+      "shortName": "Taubman College",
+      "aliases": [
+        "Taubman",
+        "Taubman College",
+        "Architecture and Urban Planning",
+        "Urban Technology"
+      ],
+      "hosts": [
+        "taubmancollege.umich.edu"
+      ]
+    },
+    {
+      "id": "si",
+      "name": "School of Information",
+      "shortName": "UMSI",
+      "aliases": [
+        "UMSI",
+        "School of Information"
+      ],
+      "hosts": [
+        "www.si.umich.edu"
+      ]
+    },
+    {
+      "id": "seas",
+      "name": "School for Environment and Sustainability",
+      "shortName": "SEAS",
+      "aliases": [
+        "SEAS",
+        "School for Environment and Sustainability"
+      ],
+      "hosts": [
+        "seas.umich.edu"
+      ]
+    },
+    {
+      "id": "ross",
+      "name": "Stephen M. Ross School of Business",
+      "shortName": "Ross",
+      "aliases": [
+        "Ross",
+        "Ross School of Business"
+      ],
+      "hosts": [
+        "michiganross.umich.edu"
+      ]
+    },
+    {
+      "id": "smtd",
+      "name": "School of Music, Theatre & Dance",
+      "shortName": "SMTD",
+      "aliases": [
+        "SMTD",
+        "School of Music, Theatre & Dance"
+      ],
+      "hosts": [
+        "smtd.umich.edu"
+      ]
+    },
+    {
+      "id": "stamps",
+      "name": "Penny W. Stamps School of Art & Design",
+      "shortName": "Stamps",
+      "aliases": [
+        "Stamps",
+        "Stamps School of Art & Design"
+      ],
+      "hosts": [
+        "stamps.umich.edu"
+      ]
+    }
+  ],
+  "prompts": [],
+  "seedUrls": [],
+  "unreachableHosts": [],
+  "hasCorpus": false
+}

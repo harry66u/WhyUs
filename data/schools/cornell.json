@@ -1,0 +1,144 @@
+{
+  "id": "cornell",
+  "name": "Cornell University",
+  "shortName": "Cornell",
+  "city": "Ithaca",
+  "state": "NY",
+  "setting": "town",
+  "officialDomains": [
+    "cornell.edu"
+  ],
+  "officialHosts": [
+    "cornell.campusgroups.com",
+    "cornellbotanicgardens.org"
+  ],
+  "units": [
+    {
+      "id": "cals",
+      "name": "College of Agriculture and Life Sciences",
+      "shortName": "CALS",
+      "aliases": [
+        "CALS",
+        "Agriculture and Life Sciences"
+      ],
+      "hosts": [
+        "cals.cornell.edu"
+      ]
+    },
+    {
+      "id": "aap",
+      "name": "College of Architecture, Art, and Planning",
+      "shortName": "AAP",
+      "aliases": [
+        "AAP",
+        "Architecture, Art, and Planning"
+      ],
+      "hosts": [
+        "aap.cornell.edu"
+      ]
+    },
+    {
+      "id": "as",
+      "name": "College of Arts and Sciences",
+      "shortName": "A&S",
+      "aliases": [
+        "Arts and Sciences",
+        "A&S"
+      ],
+      "hosts": [
+        "as.cornell.edu"
+      ]
+    },
+    {
+      "id": "brooks",
+      "name": "Cornell Jeb E. Brooks School of Public Policy",
+      "shortName": "Brooks",
+      "aliases": [
+        "Brooks School",
+        "Brooks School of Public Policy",
+        "Public Policy"
+      ],
+      "hosts": [
+        "publicpolicy.cornell.edu"
+      ]
+    },
+    {
+      "id": "bowers",
+      "name": "Cornell Ann S. Bowers College of Computing and Information Science",
+      "shortName": "Bowers CIS",
+      "aliases": [
+        "Bowers",
+        "Computing and Information Science",
+        "CIS"
+      ],
+      "hosts": [
+        "bowers.cornell.edu"
+      ]
+    },
+    {
+      "id": "engineering",
+      "name": "College of Engineering",
+      "shortName": "Cornell Engineering",
+      "aliases": [
+        "Cornell Engineering",
+        "College of Engineering"
+      ],
+      "hosts": [
+        "www.engineering.cornell.edu"
+      ]
+    },
+    {
+      "id": "human-ecology",
+      "name": "College of Human Ecology",
+      "shortName": "Human Ecology",
+      "aliases": [
+        "Human Ecology",
+        "CHE"
+      ],
+      "hosts": [
+        "www.human.cornell.edu"
+      ]
+    },
+    {
+      "id": "ilr",
+      "name": "School of Industrial and Labor Relations",
+      "shortName": "ILR",
+      "aliases": [
+        "ILR",
+        "Industrial and Labor Relations"
+      ],
+      "hosts": [
+        "www.ilr.cornell.edu"
+      ]
+    },
+    {
+      "id": "dyson",
+      "name": "Charles H. Dyson School of Applied Economics and Management",
+      "shortName": "Dyson",
+      "aliases": [
+        "Dyson",
+        "Applied Economics and Management"
+      ],
+      "hosts": [
+        "dyson.cornell.edu"
+      ]
+    },
+    {
+      "id": "nolan",
+      "name": "Peter and Stephanie Nolan School of Hotel Administration",
+      "shortName": "Nolan",
+      "aliases": [
+        "Nolan",
+        "Hotel School",
+        "Hotel Administration"
+      ],
+      "hosts": [
+        "sha.cornell.edu"
+      ]
+    }
+  ],
+  "prompts": [],
+  "seedUrls": [],
+  "unreachableHosts": [],
+  "hasCorpus": false
+}

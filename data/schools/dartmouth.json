@@ -1,0 +1,47 @@
+{
+  "id": "dartmouth",
+  "name": "Dartmouth College",
+  "shortName": "Dartmouth",
+  "city": "Hanover",
+  "state": "NH",
+  "setting": "town",
+  "officialDomains": [
+    "dartmouth.edu"
+  ],
+  "officialHosts": [
+    "dartmouth.smartcatalogiq.com"
+  ],
+  "units": [
+    {
+      "id": "college",
+      "name": "Dartmouth College",
+      "shortName": "Dartmouth",
+      "aliases": [
+        "Dartmouth",
+        "Arts and Sciences",
+        "Faculty of Arts and Sciences"
+      ],
+      "hosts": [
+        "home.dartmouth.edu",
+        "dartmouth.smartcatalogiq.com"
+      ]
+    },
+    {
+      "id": "thayer",
+      "name": "Thayer School of Engineering",
+      "shortName": "Thayer",
+      "aliases": [
+        "Thayer",
+        "Dartmouth Engineering",
+        "Engineering"
+      ],
+      "hosts": [
+        "engineering.dartmouth.edu"
+      ]
+    }
+  ],
+  "prompts": [],
+  "seedUrls": [],
+  "unreachableHosts": [],
+  "hasCorpus": false
+}

@@ -1,0 +1,57 @@
+{
+  "name": "whyus",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Research tool for \"Why this college?\" supplemental essays. Verified official sources only. Never writes the essay.",
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "tsx scripts/db-migrate.ts",
+    "db:seed": "tsx scripts/db-seed.ts",
+    "research:fetch": "tsx scripts/fetch-text.ts",
+    "research:verify": "tsx scripts/verify-facts.ts",
+    "corpus:verify": "tsx scripts/verify-facts.ts --all --write",
+    "done-check": "tsx scripts/done-check.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "1.5.0",
+    "@electric-sql/pglite": "0.5.15",
+    "@react-pdf/renderer": "4.9.0",
+    "cheerio": "1.2.0",
+    "clsx": "2.1.1",
+    "drizzle-orm": "0.45.4",
+    "motion": "14.9.1",
+    "next": "16.4.5",
+    "postgres": "4.0.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "stripe": "23.1.0",
+    "undici": "8.12.4",
+    "unpdf": "2.1.0",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@tailwindcss/postcss": "4.3.4",
+    "@types/node": "22.20.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "drizzle-kit": "0.31.11",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.4.5",
+    "tailwindcss": "4.3.4",
+    "tsx": "4.23.15",
+    "typescript": "6.0.3",
+    "vitest": "5.1.0"
+  }
+}

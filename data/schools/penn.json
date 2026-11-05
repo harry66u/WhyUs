@@ -1,0 +1,69 @@
+{
+  "id": "penn",
+  "name": "University of Pennsylvania",
+  "shortName": "Penn",
+  "city": "Philadelphia",
+  "state": "PA",
+  "setting": "urban",
+  "officialDomains": [
+    "upenn.edu"
+  ],
+  "officialHosts": [],
+  "units": [
+    {
+      "id": "college",
+      "name": "College of Arts and Sciences",
+      "shortName": "The College",
+      "aliases": [
+        "the College",
+        "College of Arts and Sciences",
+        "School of Arts and Sciences",
+        "SAS"
+      ],
+      "hosts": [
+        "www.college.upenn.edu",
+        "www.sas.upenn.edu"
+      ]
+    },
+    {
+      "id": "seas",
+      "name": "School of Engineering and Applied Science",
+      "shortName": "Penn Engineering",
+      "aliases": [
+        "Penn Engineering",
+        "SEAS",
+        "School of Engineering"
+      ],
+      "hosts": [
+        "www.seas.upenn.edu"
+      ]
+    },
+    {
+      "id": "wharton",
+      "name": "The Wharton School",
+      "shortName": "Wharton",
+      "aliases": [
+        "Wharton"
+      ],
+      "hosts": [
+        "www.wharton.upenn.edu"
+      ]
+    },
+    {
+      "id": "nursing",
+      "name": "School of Nursing",
+      "shortName": "Penn Nursing",
+      "aliases": [
+        "Penn Nursing",
+        "Nursing"
+      ],
+      "hosts": [
+        "www.nursing.upenn.edu"
+      ]
+    }
+  ],
+  "prompts": [],
+  "seedUrls": [],
+  "unreachableHosts": [],
+  "hasCorpus": false
+}

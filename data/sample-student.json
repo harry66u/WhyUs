@@ -1,0 +1,93 @@
+{
+  "id": "sample-jordan-reyes",
+  "name": "Jordan Reyes",
+  "graduationYear": 2027,
+  "highSchool": "Lakeview High School",
+  "location": "Lakeview, Ohio",
+  "intendedMajors": ["Environmental Engineering", "Environmental Studies"],
+  "interests": [
+    "water quality and watershed science",
+    "low-cost environmental sensors",
+    "climate and energy policy",
+    "urban heat and city data",
+    "open civic data",
+    "Spanish-English interpretation",
+    "jazz trumpet",
+    "bike repair"
+  ],
+  "activities": [
+    {
+      "id": "act-creek-watch",
+      "title": "Creek Watch Sensor Network",
+      "role": "Founder and lead engineer",
+      "category": "Environmental",
+      "description": "Built and deployed 9 solar-powered Arduino sensors measuring turbidity, temperature, and dissolved oxygen in Mill Creek; publish an open data dashboard used by the township conservation commission.",
+      "grades": "10, 11, 12",
+      "hoursPerWeek": 6,
+      "weeksPerYear": 40
+    },
+    {
+      "id": "act-debate",
+      "title": "Policy Debate",
+      "role": "Varsity co-captain",
+      "organization": "Lakeview High School Debate",
+      "category": "Debate/Speech",
+      "description": "State quarterfinalist; wrote the team's energy and water policy case files; coach novice debaters on research and cross-examination.",
+      "grades": "9, 10, 11, 12",
+      "hoursPerWeek": 10,
+      "weeksPerYear": 30
+    },
+    {
+      "id": "act-heat-map",
+      "title": "Downtown Heat Island Map",
+      "role": "Independent project",
+      "category": "Research",
+      "description": "Built a bike-mounted temperature logger and mapped summer heat across downtown Lakeview; presented the map and tree-cover recommendations to city council.",
+      "grades": "12",
+      "hoursPerWeek": 5,
+      "weeksPerYear": 12
+    },
+    {
+      "id": "act-interpreter",
+      "title": "Volunteer Interpreter",
+      "role": "Spanish-English interpreter",
+      "organization": "Lakeview Township and Community Health Fair",
+      "category": "Community Service (Volunteer)",
+      "description": "Interpret for Spanish-speaking families at township meetings on stormwater fees and at the annual community health fair.",
+      "grades": "11, 12",
+      "hoursPerWeek": 3,
+      "weeksPerYear": 30
+    },
+    {
+      "id": "act-swcd-intern",
+      "title": "Summer Intern, County Soil and Water Conservation District",
+      "role": "Field and GIS intern",
+      "category": "Work (Paid)",
+      "description": "Mapped stormwater outfalls with GIS, sampled streams after storms, and helped draft a green-infrastructure grant application.",
+      "grades": "Summer after 11",
+      "hoursPerWeek": 30,
+      "weeksPerYear": 8
+    },
+    {
+      "id": "act-jazz",
+      "title": "Jazz Band",
+      "role": "Lead trumpet",
+      "organization": "Lakeview High School Jazz Ensemble",
+      "category": "Music: Instrumental",
+      "description": "Lead trumpet in the school big band and a student combo; arrange charts for the combo; All-State Jazz Ensemble alternate.",
+      "grades": "9, 10, 11, 12",
+      "hoursPerWeek": 5,
+      "weeksPerYear": 36
+    },
+    {
+      "id": "act-bike-coop",
+      "title": "Community Bike Co-op",
+      "role": "Volunteer mechanic",
+      "category": "Community Service (Volunteer)",
+      "description": "Repair donated bikes and teach basic maintenance at a co-op that gives refurbished bikes to refugee families.",
+      "grades": "10, 11, 12",
+      "hoursPerWeek": 4,
+      "weeksPerYear": 35
+    }
+  ]
+}

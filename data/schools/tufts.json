@@ -1,0 +1,56 @@
+{
+  "id": "tufts",
+  "name": "Tufts University",
+  "shortName": "Tufts",
+  "city": "Medford and Somerville",
+  "state": "MA",
+  "setting": "suburban",
+  "officialDomains": [
+    "tufts.edu"
+  ],
+  "officialHosts": [],
+  "units": [
+    {
+      "id": "as",
+      "name": "School of Arts and Sciences",
+      "shortName": "Arts and Sciences",
+      "aliases": [
+        "Arts and Sciences",
+        "A&S",
+        "School of Arts and Sciences"
+      ],
+      "hosts": [
+        "as.tufts.edu"
+      ]
+    },
+    {
+      "id": "engineering",
+      "name": "School of Engineering",
+      "shortName": "Tufts Engineering",
+      "aliases": [
+        "School of Engineering",
+        "Tufts Engineering",
+        "Engineering"
+      ],
+      "hosts": [
+        "engineering.tufts.edu"
+      ]
+    },
+    {
+      "id": "smfa",
+      "name": "School of the Museum of Fine Arts at Tufts",
+      "shortName": "SMFA",
+      "aliases": [
+        "SMFA",
+        "School of the Museum of Fine Arts"
+      ],
+      "hosts": [
+        "smfa.tufts.edu"
+      ]
+    }
+  ],
+  "prompts": [],
+  "seedUrls": [],
+  "unreachableHosts": [],
+  "hasCorpus": false
+}
