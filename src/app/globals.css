@@ -1,0 +1,233 @@
+@import "tailwindcss";
+
+/*
+ * WhyUs design tokens.
+ *
+ * Concept: the app is a research instrument (Instrument Sans, cool graphite
+ * surfaces) that produces documents (Newsreader, the "briefing" layer).
+ * One signature accent, "marker amber", is reserved for the things the product
+ * is about: what is distinctive, what is live, and what has focus.
+ * Dark is the default; light is a user option (data-theme="light").
+ */
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+@custom-variant light (&:where([data-theme="light"], [data-theme="light"] *));
+
+:root,
+[data-theme="dark"] {
+  color-scheme: dark;
+  --canvas: #0a0c10;
+  --raised: #0f1218;
+  --sunken: #07080b;
+  --overlay: #151922;
+  --hover: rgb(148 163 184 / 0.07);
+  --line: rgb(148 163 184 / 0.13);
+  --line-strong: rgb(148 163 184 / 0.24);
+  --fg: #e9edf3;
+  --fg-muted: #a0a9b7;
+  --fg-subtle: #7a8392;
+  --accent: #f2b33d;
+  --accent-hover: #ffc452;
+  --accent-fg: #1b1303;
+  --accent-text: #f5c25e;
+  --accent-wash: rgb(242 179 61 / 0.12);
+  --accent-line: rgb(242 179 61 / 0.4);
+  --ok: #67c29a;
+  --ok-wash: rgb(103 194 154 / 0.12);
+  --bad: #ec7272;
+  --bad-wash: rgb(236 114 114 / 0.12);
+  --info: #8ca6d9;
+  --focus: #f2b33d;
+  --shadow-pop: 0 12px 32px rgb(0 0 0 / 0.5), 0 0 0 1px var(--line);
+  --shadow-raise: 0 1px 0 rgb(255 255 255 / 0.03) inset, 0 0 0 1px var(--line);
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+  --canvas: #f5f6f8;
+  --raised: #ffffff;
+  --sunken: #eceef2;
+  --overlay: #ffffff;
+  --hover: rgb(15 23 42 / 0.05);
+  --line: rgb(15 23 42 / 0.1);
+  --line-strong: rgb(15 23 42 / 0.18);
+  --fg: #0e1116;
+  --fg-muted: #4b5462;
+  --fg-subtle: #646d7c;
+  --accent: #f2b33d;
+  --accent-hover: #e7a62a;
+  --accent-fg: #1b1303;
+  --accent-text: #8f5c0c;
+  --accent-wash: rgb(242 179 61 / 0.18);
+  --accent-line: rgb(176 116 18 / 0.45);
+  --ok: #2f8f64;
+  --ok-wash: rgb(47 143 100 / 0.1);
+  --bad: #c24141;
+  --bad-wash: rgb(194 65 65 / 0.08);
+  --info: #3d5fa8;
+  --focus: #9a6410;
+  --shadow-pop: 0 12px 32px rgb(15 23 42 / 0.12), 0 0 0 1px var(--line);
+  --shadow-raise: 0 1px 2px rgb(15 23 42 / 0.04), 0 0 0 1px var(--line);
+}
+
+@theme inline {
+  --font-sans: var(--font-instrument-sans), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-serif: var(--font-newsreader), ui-serif, Georgia, "Times New Roman", serif;
+
+  --color-canvas: var(--canvas);
+  --color-raised: var(--raised);
+  --color-sunken: var(--sunken);
+  --color-overlay: var(--overlay);
+  --color-hover: var(--hover);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-fg: var(--fg);
+  --color-muted: var(--fg-muted);
+  --color-subtle: var(--fg-subtle);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-fg: var(--accent-fg);
+  --color-accent-text: var(--accent-text);
+  --color-accent-wash: var(--accent-wash);
+  --color-accent-line: var(--accent-line);
+  --color-ok: var(--ok);
+  --color-ok-wash: var(--ok-wash);
+  --color-bad: var(--bad);
+  --color-bad-wash: var(--bad-wash);
+  --color-info: var(--info);
+
+  --shadow-pop: var(--shadow-pop);
+  --shadow-raise: var(--shadow-raise);
+}
+
+@theme {
+  /* Type scale (rem at 16px): 12 13 14 15 17 20 24 30 40 56 72 */
+  --text-2xs: 0.75rem;
+  --text-2xs--line-height: 1.1rem;
+  --text-xs: 0.8125rem;
+  --text-xs--line-height: 1.2rem;
+  --text-sm: 0.875rem;
+  --text-sm--line-height: 1.35rem;
+  --text-base: 0.9375rem;
+  --text-base--line-height: 1.55rem;
+  --text-md: 1.0625rem;
+  --text-md--line-height: 1.65rem;
+  --text-lg: 1.25rem;
+  --text-lg--line-height: 1.8rem;
+  --text-xl: 1.5rem;
+  --text-xl--line-height: 2rem;
+  --text-2xl: 1.875rem;
+  --text-2xl--line-height: 2.3rem;
+  --text-3xl: 2.5rem;
+  --text-3xl--line-height: 2.85rem;
+  --text-4xl: 3.5rem;
+  --text-4xl--line-height: 3.65rem;
+  --text-5xl: 4.5rem;
+  --text-5xl--line-height: 4.5rem;
+
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --animate-live: live-pulse 1.6s ease-in-out infinite;
+  --animate-enter: enter 260ms var(--ease-out-quint) both;
+
+  @keyframes live-pulse {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.35;
+    }
+  }
+  @keyframes enter {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
+
+@layer base {
+  html {
+    background: var(--canvas);
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    background: var(--canvas);
+    color: var(--fg);
+    font-family: var(--font-sans);
+    font-size: var(--text-base);
+    line-height: var(--text-base--line-height);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "kern", "calt";
+    min-height: 100dvh;
+  }
+  ::selection {
+    background: var(--accent-wash);
+    color: var(--fg);
+  }
+  :focus-visible {
+    outline: 2px solid var(--focus);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  hr {
+    border-color: var(--line);
+  }
+  input,
+  textarea,
+  select,
+  button {
+    font: inherit;
+    color: inherit;
+  }
+  /* Numbers that line up (scores, dates, counts). */
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+  /* The briefing layer: long-form, cited text. */
+  .prose-briefing {
+    font-family: var(--font-serif);
+    font-optical-sizing: auto;
+    font-size: 1.0625rem;
+    line-height: 1.7;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  :root,
+  [data-theme="dark"] {
+    --canvas: #ffffff;
+    --raised: #ffffff;
+    --fg: #0e1116;
+    --fg-muted: #3e4652;
+    --fg-subtle: #5b6370;
+    --line: rgb(15 23 42 / 0.14);
+  }
+}

@@ -265,7 +265,14 @@ export interface StoredResearchEvent {
 /* Dossiers                                                            */
 /* ------------------------------------------------------------------ */
 
-export type SwapStatus = "equivalent" | "similar" | "none";
+/**
+ * Swap test outcome for one other school on the student's list:
+ * - equivalent: that school's verified research has essentially the same thing
+ * - similar: something comparable but clearly different
+ * - none: that school's verified research has nothing comparable
+ * - unknown: no verified research base for that school yet (never claim "none")
+ */
+export type SwapStatus = "equivalent" | "similar" | "none" | "unknown";
 
 export interface SwapResult {
   schoolId: SchoolId;

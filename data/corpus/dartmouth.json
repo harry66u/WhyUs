@@ -1,7 +1,411 @@
 {
   "schoolId": "dartmouth",
   "term": "2026-fall",
-  "builtAt": "",
-  "builtBy": "",
-  "facts": []
+  "builtAt": "2026-11-05",
+  "builtBy": "research-agent",
+  "facts": [
+    {
+      "id": "dartmouth:engs-14-technology-entrepreneurship:99541b",
+      "schoolId": "dartmouth",
+      "unitIds": [
+        "college",
+        "thayer"
+      ],
+      "kind": "course",
+      "title": "ENGS 14: Technology Entrepreneurship",
+      "nameOnPage": "ENGS 14",
+      "summary": "An introductory course on technology entrepreneurship and the venture ecosystem, designed for undergraduates from all majors.",
+      "hook": "introduces students from any major to how technology ventures are started, funded, and grown",
+      "quote": "It is designed for undergraduate students from all majors, including science, engineering, and the humanities who seek to better understand the entrepreneurial mindset as applied to the commercialization of new technologies and its key processes and challenges.",
+      "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/engineering-sciences/engs-engineering-sciences-undergraduate/engs-14",
+      "sourceTitle": "Dartmouth College - ENGS14",
+      "themes": [
+        "entrepreneurship",
+        "ecology"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:50:06.401Z"
+      }
+    },
+    {
+      "id": "dartmouth:engs-18-system-dynamics-in-policy-design:4da799",
+      "schoolId": "dartmouth",
+      "unitIds": [
+        "college",
+        "thayer"
+      ],
+      "kind": "course",
+      "title": "ENGS 18: System Dynamics in Policy Design and Analysis",
+      "nameOnPage": "ENGS 18",
+      "summary": "An introduction to system dynamics, a feedback- and simulation-based approach to designing policies, with no prior engineering or computer science experience required.",
+      "hook": "teaches computer simulation of feedback systems as a tool for designing and analyzing policy",
+      "quote": "This course introduces systems dynamics, an approach to policy design and analysis based upon feedback principles and computer simulation. ... No prior engineering or computer science experience is necessary.",
+      "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/engineering-sciences/engs-engineering-sciences-undergraduate/engs-18",
+      "sourceTitle": "Dartmouth College - ENGS18",
+      "themes": [
+        "public-policy",
+        "computer-science",
+        "design"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:50:05.685Z"
+      }
+    },
+    {
+      "id": "dartmouth:engs-21-introduction-to-engineering:f249e8",
+      "schoolId": "dartmouth",
+      "unitIds": [
+        "college",
+        "thayer"
+      ],
+      "kind": "course",
+      "title": "ENGS 21: Introduction to Engineering",
+      "nameOnPage": "ENGS 21",
+      "summary": "The introductory engineering course, in which students work as a team on a complete design project applied to a real problem from initial concept to final recommendations.",
+      "hook": "puts students on a team design project that takes a real problem from initial concept to final recommendations",
+      "quote": "The student is introduced to engineering through participation, as a member of a team, in a complete design project. ... Engineering principles of analysis, experimentation, and design are applied to a real problem, from initial concept to final recommendations.",
+      "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/engineering-sciences/engs-engineering-sciences-undergraduate/engs-21",
+      "sourceTitle": "Dartmouth College - ENGS21",
+      "themes": [
+        "engineering-design",
+        "design"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "The required gateway design course for the engineering major, so engineering applicants often mention it.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:50:04.146Z"
+      }
+    },
+    {
+      "id": "dartmouth:engs-28-embedded-systems:484200",
+      "schoolId": "dartmouth",
+      "unitIds": [
+        "college",
+        "thayer"
+      ],
+      "kind": "course",
+      "title": "ENGS 28: Embedded Systems",
+      "nameOnPage": "ENGS 28",
+      "summary": "An early-stage engineering course that introduces physical sensors and actuators and how to connect and program them on a microcontroller, aimed partly at students who started with Arduino.",
+      "hook": "takes students from hobby-level Arduino projects to programming sensors and actuators on a microcontroller",
+      "quote": "Many students have been exposed to the potential of embedded systems at the hobby or maker level through robotics and the boards such as the popular Arduino and are excited to go farther. ... Engs 28 will introduce you to a variety of physical sensors and actuators, and how to connect them to a microcontroller.",
+      "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/engineering-sciences/engs-engineering-sciences-undergraduate/engs-28",
+      "sourceTitle": "Dartmouth College - ENGS28",
+      "themes": [
+        "sensors",
+        "electrical-engineering",
+        "making",
+        "robotics",
+        "computer-science"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:50:03.793Z"
+      }
+    },
+    {
+      "id": "dartmouth:engs-37-introduction-to-environmental-en:7e5192",
+      "schoolId": "dartmouth",
+      "unitIds": [
+        "college",
+        "thayer"
+      ],
+      "kind": "course",
+      "title": "ENGS 37: Introduction to Environmental Engineering",
+      "nameOnPage": "ENGS 37",
+      "summary": "A survey of the sources, measurement techniques, and treatment technologies for pollution, covering water pollution, air pollution, solid wastes, and pollutant fate and transport.",
+      "hook": "introduces how engineers measure and treat water and air pollution, using design examples and case studies",
+      "quote": "A survey of the sources, measurement techniques, and treatment technologies relating to environmental pollution resulting from the activities of humans. ... Technological and other issues will be addressed relating to water pollution, air pollution, solid wastes, and the fate and transport of pollutants in the environment.",
+      "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/engineering-sciences/engs-engineering-sciences-undergraduate/engs-37",
+      "sourceTitle": "Dartmouth College - ENGS37",
+      "themes": [
+        "environmental-engineering",
+        "water",
+        "design"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:50:03.045Z"
+      }
+    },
+    {
+      "id": "dartmouth:engs-42-watershed-hydrology:de7d94",
+      "schoolId": "dartmouth",
+      "unitIds": [
+        "college",
+        "thayer"
+      ],
+      "kind": "course",
+      "title": "ENGS 42: Watershed Hydrology",
+      "nameOnPage": "ENGS 42",
+      "summary": "A course on how water and sediment move through watersheds, including runoff, streamflow, and the transport and fate of contaminants, taught through field and computational methods.",
+      "hook": "trains students to make field measurements and analyze environmental data on runoff, streamflow, and contaminants",
+      "quote": "The processes controlling the generation of runoff and streamflow are highlighted and used to explore the transport and fate of sediment and contaminants in watersheds. Throughout the course, ideas and concepts are explored through field and computational methods, with emphasis given to developing observational skills, making field measurements, and doing environmental data analysis.",
+      "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/engineering-sciences/engs-engineering-sciences-undergraduate/engs-42",
+      "sourceTitle": "Dartmouth College - ENGS42",
+      "themes": [
+        "water",
+        "fieldwork",
+        "data-science",
+        "computer-science"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:50:03.330Z"
+      }
+    },
+    {
+      "id": "dartmouth:engs-43-environmental-transport-and-fate:972f66",
+      "schoolId": "dartmouth",
+      "unitIds": [
+        "college",
+        "thayer"
+      ],
+      "kind": "course",
+      "title": "ENGS 43: Environmental Transport and Fate",
+      "nameOnPage": "ENGS 43",
+      "summary": "An introduction to groundwater resources taught through case studies on groundwater budgets, well hydraulics, numerical modeling, contaminant transport, and water quality standards.",
+      "hook": "uses case studies to teach groundwater modeling, contaminant transport, and water quality standards",
+      "quote": "This course is an introduction to groundwater and groundwater resources. ... The case studies also provide insight into the complexity of sustainable groundwater resource management through the exploration of the ideas of safe yield, surface-groundwater interactions, and water quality standards.",
+      "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/engineering-sciences/engs-engineering-sciences-undergraduate/engs-43",
+      "sourceTitle": "Dartmouth College - ENGS43",
+      "themes": [
+        "water",
+        "environmental-engineering",
+        "sustainability",
+        "business"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:50:03.445Z"
+      }
+    },
+    {
+      "id": "dartmouth:engs-45-sustainable-urban-systems-berlin:c45330",
+      "schoolId": "dartmouth",
+      "unitIds": [
+        "college",
+        "thayer"
+      ],
+      "kind": "course",
+      "title": "ENGS 45: Sustainable Urban Systems (Berlin)",
+      "nameOnPage": "ENGS 45",
+      "summary": "An engineering course on the technology of urban sustainability, from energy, air quality, and water supply to transportation, decarbonization, and city planning.",
+      "hook": "examines how cities handle energy, air quality, water, transportation, and decarbonization through an engineering lens",
+      "quote": "This engineering course addresses the technological aspects of urban sustainability, including energy procurement, energy consumption and green energy, air quality, water supply, use and treatment, building infrastructure, transportation, resource conservation, decarbonization, city planning and the role of automation and information technology in modern sustainable cities.",
+      "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/engineering-sciences/engs-engineering-sciences-undergraduate/engs-45",
+      "sourceTitle": "Dartmouth College - ENGS45",
+      "themes": [
+        "cities",
+        "sustainability",
+        "energy",
+        "water",
+        "environmental-engineering",
+        "civil-engineering",
+        "climate",
+        "transportation",
+        "ecology"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:50:05.055Z"
+      }
+    },
+    {
+      "id": "dartmouth:engs-8-understand-energy:7f70d3",
+      "schoolId": "dartmouth",
+      "unitIds": [
+        "college",
+        "thayer"
+      ],
+      "kind": "course",
+      "title": "ENGS 8: Understand Energy",
+      "nameOnPage": "ENGS 8",
+      "summary": "A course that builds literacy in energy technologies, from batteries to heat pumps, with field trips, labs, and attention to the policies reshaping the energy landscape.",
+      "hook": "builds energy literacy through field trips, labs, and discussion of the policies reshaping power demand",
+      "quote": "This course builds students' literacy around energy technologies (from batteries to heat pumps), impacts, and the undergirding science. Students engage with readings, discussions, and problem sets; experience energy in the real world through field trips and labs; and explore news about the events, shifting policies, and increasing demand for power that are reshaping the energy landscape.",
+      "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/engineering-sciences/engs-engineering-sciences-undergraduate/engs-8",
+      "sourceTitle": "Dartmouth College - ENGS8",
+      "themes": [
+        "energy",
+        "climate",
+        "fieldwork",
+        "public-policy",
+        "education"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:50:06.037Z"
+      }
+    },
+    {
+      "id": "dartmouth:engs-85-16-energy-and-climate-systems-an:4d057b",
+      "schoolId": "dartmouth",
+      "unitIds": [
+        "college",
+        "thayer"
+      ],
+      "kind": "course",
+      "title": "ENGS 85.16: Energy and Climate Systems Analysis and Decision Making",
+      "nameOnPage": "ENGS 85.16",
+      "summary": "A course on decision analysis and systems modeling for energy systems and climate change mitigation, ending in a real-world case study with local or regional stakeholders.",
+      "hook": "applies decision analysis and energy-climate models to a real case study with local or regional stakeholders",
+      "quote": "This course introduces the principles of decision analysis and systems modeling, with a focus on energy systems and climate change mitigation applications. ... To bridge theory and practice, students will apply these tools to a real-world case study in partnership with local or regional stakeholders.",
+      "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/engineering-sciences/engs-engineering-sciences-undergraduate/engs-85-16",
+      "sourceTitle": "Dartmouth College - ENGS85.16",
+      "themes": [
+        "energy",
+        "climate",
+        "environmental-policy",
+        "civil-engineering"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:50:05.328Z"
+      }
+    },
+    {
+      "id": "dartmouth:engs-89-engineering-design-methodology-a:fc344d",
+      "schoolId": "dartmouth",
+      "unitIds": [
+        "college",
+        "thayer"
+      ],
+      "kind": "course",
+      "title": "ENGS 89: Engineering Design Methodology and Project Initiation",
+      "nameOnPage": "ENGS 89",
+      "summary": "The first half of a two-term team design sequence (ENGS 89/90) in which projects come from specifications submitted by industry and other organizations.",
+      "hook": "has student teams spend two terms on design projects specified by industry and other organizations",
+      "quote": "Design projects are developed from specifications submitted by industry and other organizations and are pursued over the course of two quarters as a team project, 89/90.",
+      "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/engineering-sciences/engs-engineering-sciences-undergraduate/engs-89",
+      "sourceTitle": "Dartmouth College - ENGS89",
+      "themes": [
+        "engineering-design",
+        "design"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "The engineering capstone sequence, familiar to many engineering applicants.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:50:04.493Z"
+      }
+    },
+    {
+      "id": "dartmouth:engineering-sciences-major-modified-with:ca11ce",
+      "schoolId": "dartmouth",
+      "unitIds": [
+        "college",
+        "thayer"
+      ],
+      "kind": "major",
+      "title": "Engineering Sciences Major Modified with Environmental Sciences",
+      "nameOnPage": "Modified Major with Environmental Sciences",
+      "summary": "A modified Engineering Sciences major that combines engineering courses with environmental science courses drawn from biology, chemistry, ecology, and earth sciences.",
+      "hook": "lets an engineering major build in environmental science courses from biology, chemistry, and earth sciences",
+      "quote": "Modified Major with Environmental Sciences: Students interested in engineering and environmental science may elect an engineering major modified with environmental science courses. Effective preparation for graduate study or professional activity in the environmental sciences requires an assimilation of material traditionally encountered in biology, chemistry, ecology, and earth sciences, as well as in engineering sciences.",
+      "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/engineering-sciences",
+      "sourceTitle": "Dartmouth College - Engineering Sciences - Undergraduate",
+      "themes": [
+        "environmental-engineering",
+        "interdisciplinary",
+        "ecology",
+        "earth-science",
+        "chemistry",
+        "biology"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:50:06.613Z"
+      }
+    },
+    {
+      "id": "dartmouth:engineering-sciences-major-modified-with:bcf182",
+      "schoolId": "dartmouth",
+      "unitIds": [
+        "college",
+        "thayer"
+      ],
+      "kind": "major",
+      "title": "Engineering Sciences Major Modified with Public Policy",
+      "nameOnPage": "Modified major with Public Policy",
+      "summary": "A modified Engineering Sciences major for students interested in technology and public policy, with policy tracks that include environment, natural resources, health, and science and technology.",
+      "hook": "pairs an engineering major with public policy coursework, including an environment and public policy track",
+      "quote": "Modified major with Public Policy: Students interested in technology and public policy may elect an engineering major modified with public policy. ... Possible tracks include: Environment and Public Policy; Health and Public Policy; Natural resources and Public Policy; and Science/technology and Public Policy.",
+      "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/engineering-sciences",
+      "sourceTitle": "Dartmouth College - Engineering Sciences - Undergraduate",
+      "themes": [
+        "public-policy",
+        "environmental-policy",
+        "interdisciplinary"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:50:06.613Z"
+      }
+    }
+  ]
 }
