@@ -5,6 +5,61 @@
   "builtBy": "research-agent",
   "facts": [
     {
+      "id": "dartmouth:dartmouth-center-for-social-impact:e28cc5",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "kind": "center",
+      "title": "Dartmouth Center for Social Impact",
+      "nameOnPage": "Dartmouth Center for Social Impact",
+      "summary": "Dartmouth's center for community-driven experiential learning, which prepares students to address pressing societal problems.",
+      "hook": "offers community-driven experiential learning aimed at pressing societal problems",
+      "quote": "The Dartmouth Center for Social Impact educates students to be transformative leaders for the common good. Through community-driven experiential learning, our students cultivate their skills, scholarship, and passion to develop high-impact approaches to the most pressing societal problems.",
+      "sourceUrl": "https://students.dartmouth.edu/social-impact/about/mission-and-vision",
+      "sourceTitle": "Mission and Vision | Students | Social Impact",
+      "themes": [
+        "community-engagement",
+        "social-enterprise"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "The college's main service and community engagement center.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:56:18.353Z"
+      }
+    },
+    {
+      "id": "dartmouth:nelson-a-rockefeller-center-for-public-p:637f50",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "kind": "center",
+      "title": "Nelson A. Rockefeller Center for Public Policy and the Social Sciences",
+      "nameOnPage": "Rockefeller Center",
+      "summary": "Dartmouth's public policy center, which offers policy courses, a public policy minor, research opportunities, skills training, and visits from scholars and practitioners.",
+      "hook": "trains students in public policy through courses, policy research, and skills training",
+      "quote": "The Rockefeller Center educates, trains, and inspires the next generation of public policy leaders, across fields, through multidisciplinary policy and social science-focused education, engagements and public lectures with distinguished visiting scholars and practitioners, policy-oriented research across the social sciences, and skills training.",
+      "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/the-nelson-a-rockefeller-center-for-public-policy",
+      "sourceTitle": "Dartmouth College - The Nelson A. Rockefeller Center for Public Policy",
+      "themes": [
+        "public-policy",
+        "political-science",
+        "education",
+        "undergraduate-research",
+        "interdisciplinary"
+      ],
+      "commonness": "common",
+      "commonnessReason": "One of Dartmouth's best-known centers and a frequent reference in Why Dartmouth essays.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:56:17.872Z"
+      }
+    },
+    {
       "id": "dartmouth:engs-14-technology-entrepreneurship:99541b",
       "schoolId": "dartmouth",
       "unitIds": [
@@ -30,7 +85,7 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:50:06.401Z"
+        "checkedAt": "2026-11-05T15:56:08.661Z"
       }
     },
     {
@@ -60,7 +115,7 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:50:05.685Z"
+        "checkedAt": "2026-11-05T15:56:09.067Z"
       }
     },
     {
@@ -89,7 +144,7 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:50:04.146Z"
+        "checkedAt": "2026-11-05T15:56:09.002Z"
       }
     },
     {
@@ -121,7 +176,7 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:50:03.793Z"
+        "checkedAt": "2026-11-05T15:56:09.358Z"
       }
     },
     {
@@ -151,7 +206,7 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:50:03.045Z"
+        "checkedAt": "2026-11-05T15:56:09.703Z"
       }
     },
     {
@@ -182,7 +237,7 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:50:03.330Z"
+        "checkedAt": "2026-11-05T15:56:10.051Z"
       }
     },
     {
@@ -213,7 +268,7 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:50:03.445Z"
+        "checkedAt": "2026-11-05T15:56:10.677Z"
       }
     },
     {
@@ -249,7 +304,7 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:50:05.055Z"
+        "checkedAt": "2026-11-05T15:56:10.782Z"
       }
     },
     {
@@ -281,7 +336,7 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:50:06.037Z"
+        "checkedAt": "2026-11-05T15:56:11.255Z"
       }
     },
     {
@@ -312,7 +367,7 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:50:05.328Z"
+        "checkedAt": "2026-11-05T15:56:11.600Z"
       }
     },
     {
@@ -341,7 +396,312 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:50:04.493Z"
+        "checkedAt": "2026-11-05T15:56:11.935Z"
+      }
+    },
+    {
+      "id": "dartmouth:envs-21-transforming-the-energy-system-k:fa66ff",
+      "schoolId": "dartmouth",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "course",
+      "title": "ENVS 21: Transforming the Energy System: Keeping the Lights on While Saving the Planet",
+      "nameOnPage": "ENVS 21",
+      "summary": "A team-taught course on the shift to renewable energy in New England that ends with a discussion of Dartmouth's own energy transition.",
+      "hook": "studies New England's renewable energy transition and ends by examining Dartmouth's own energy transition",
+      "quote": "This course will explore how transitioning to renewable energy systems is a necessary leverage point for addressing human-caused climate change, with a specific focus on how energy for electricity and heat is generated and used in New England. ... The course will culminate in a discussion of Dartmouth's own energy transition as well as regional- and national scale solutions",
+      "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/environmental-studies-program/envs-environmental-studies/envs-21",
+      "sourceTitle": "Dartmouth College - ENVS21",
+      "themes": [
+        "energy",
+        "climate"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:56:14.397Z"
+      }
+    },
+    {
+      "id": "dartmouth:envs-50-environmental-problem-analysis-a:0da731",
+      "schoolId": "dartmouth",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "course",
+      "title": "ENVS 50: Environmental Problem Analysis and Policy Formulation",
+      "nameOnPage": "ENVS 50",
+      "summary": "A senior course in which student teams develop policy measures for a local environmental problem and present and defend their recommendations publicly.",
+      "hook": "has student teams craft and publicly defend policy recommendations for a local environmental problem",
+      "quote": "Students working together in groups will formulate and justify policy measures that they think would be appropriate to deal with a local environmental problem. ... Considerable field work may be involved, and the final examination will consist of a public presentation and defense of student-generated policy recommendations.",
+      "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/environmental-studies-program/envs-environmental-studies/envs-50",
+      "sourceTitle": "Dartmouth College - ENVS50",
+      "themes": [
+        "environmental-policy",
+        "public-policy",
+        "fieldwork"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:56:14.397Z"
+      }
+    },
+    {
+      "id": "dartmouth:geog-28-immigration-race-and-ethnicity:3d01da",
+      "schoolId": "dartmouth",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "course",
+      "title": "GEOG 28: Immigration, Race, and Ethnicity",
+      "nameOnPage": "GEOG 28",
+      "summary": "A geography course on 20th-century immigration to the United States, covering citizenship, social mobility, transnationalism, and Latino, Asian, and European immigrant groups.",
+      "hook": "examines U.S. immigration, citizenship, and the experiences of Latino, Asian, and European groups",
+      "quote": "This course examines 20th century immigration to the United States and pays special attention to issues of race and ethnicity. ... We feature nativist reactions to immigration and highlight differences within and between Latino, Asian, and European groups throughout the course.",
+      "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/geography/geog-geography/geog-28",
+      "sourceTitle": "Dartmouth College - GEOG28",
+      "themes": [
+        "immigration",
+        "latin-america",
+        "transportation",
+        "asia",
+        "global"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:56:14.032Z"
+      }
+    },
+    {
+      "id": "dartmouth:geog-42-water-policy-and-politics:6fe1d2",
+      "schoolId": "dartmouth",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "course",
+      "title": "GEOG 42: Water Policy and Politics",
+      "nameOnPage": "GEOG 42",
+      "summary": "A course on the political, social, and legal sides of water resource management and how regulatory agencies and the legal sector handle water issues.",
+      "hook": "shows how the technical side of hydrology plays out in water policy, regulation, and law",
+      "quote": "This course is designed to provide students with a general background to the issues confronting water resource management. The course covers the political, social and legal aspects confronting effective water policy decision making. One of the goals is to demonstrate that the technical aspects of hydrology occur within a socio-political arena.",
+      "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/geography/geog-geography/geog-42",
+      "sourceTitle": "Dartmouth College - GEOG42",
+      "themes": [
+        "water",
+        "public-policy",
+        "environmental-policy",
+        "law",
+        "political-science",
+        "business"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:56:13.681Z"
+      }
+    },
+    {
+      "id": "dartmouth:geog-57-urban-applications-of-gis:03655d",
+      "schoolId": "dartmouth",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "course",
+      "title": "GEOG 57: Urban Applications of GIS",
+      "nameOnPage": "GEOG 57",
+      "summary": "A geography course on using GIS to solve urban problems in planning and design, public administration, environmental assessment, land use change, and social and political issues.",
+      "hook": "teaches students to apply GIS to real urban planning, land use, and public administration problems",
+      "quote": "This course is about how to use GIS technology to solve urban problems. The application problems that will be discussed in the class are from areas including urban planning and design, public administration, business decision-making, environment assessment, land use change, and social and political issues.",
+      "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/geography/geog-geography/geog-57",
+      "sourceTitle": "Dartmouth College - GEOG57",
+      "themes": [
+        "gis-mapping",
+        "cities",
+        "public-policy",
+        "design",
+        "business"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:56:12.961Z"
+      }
+    },
+    {
+      "id": "dartmouth:geog-62-01-river-processes-and-watershed:50a217",
+      "schoolId": "dartmouth",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "course",
+      "title": "GEOG 62.01: River Processes and Watershed Science",
+      "nameOnPage": "GEOG 62.01",
+      "summary": "A course on how watershed processes supply water and sediment to stream channels and how climate change is shifting watershed and river processes.",
+      "hook": "connects watershed processes and river sediment to the effects of climate change",
+      "quote": "This course examines the links between watershed scale processes such as weathering, denudation, and mass wasting on the supply of water and sediment to stream channels on both contemporary and geologic timescales and further evaluates the role of climate change on the magnitude and direction of shifts in watershed and fluvial processes.",
+      "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/geography/geog-geography/geog-62-01",
+      "sourceTitle": "Dartmouth College - GEOG62.01",
+      "themes": [
+        "water",
+        "climate",
+        "earth-science"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:56:13.242Z"
+      }
+    },
+    {
+      "id": "dartmouth:mus-35-the-jazz-language:00bfe6",
+      "schoolId": "dartmouth",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "course",
+      "title": "MUS 35: The Jazz Language",
+      "nameOnPage": "MUS 35",
+      "summary": "A course that teaches instrumentalists and vocalists the core jazz vocabulary by ear, including transcribing phrases in all 12 keys and learning solos as a class.",
+      "hook": "trains jazz players to learn phrases and solos by ear and transcribe them in all 12 keys",
+      "quote": "This course will present the essential elements of the \"jazz vocabulary\" to instrumentalists and vocalists. ... Students will practice learning phrases by ear, which they will then transcribe and write in 12-keys.",
+      "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/music/mus-music-undergraduate-courses/mus-20-mus-39/mus-35",
+      "sourceTitle": "Dartmouth College - MUS35",
+      "themes": [
+        "jazz",
+        "music"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:56:15.467Z"
+      }
+    },
+    {
+      "id": "dartmouth:mus-45-12-advanced-studies-in-jazz-histo:13652e",
+      "schoolId": "dartmouth",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "course",
+      "title": "MUS 45.12: Advanced Studies in Jazz History: A Century of Jazz at Dartmouth",
+      "nameOnPage": "MUS 45.12",
+      "summary": "A research course on Dartmouth's own history with jazz and other forms of Black music, using primary sources, interviews, and oral history.",
+      "hook": "has students document Dartmouth's century of jazz through archival research and oral history",
+      "quote": "This term we will be turning our gaze inward, exploring Dartmouth's own history with jazz and other forms of Black music over the past century. Through a combination of primary source research, interviews and oral history, and creative storytelling and writing, the goal of this course is to generate lasting, honest, insightful, and engaging documentation of the complicated history of jazz at Dartmouth.",
+      "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/music/mus-music-undergraduate-courses/mus-40-mus-49/mus-45-12",
+      "sourceTitle": "Dartmouth College - MUS45.12",
+      "themes": [
+        "jazz",
+        "music",
+        "history"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:56:15.784Z"
+      }
+    },
+    {
+      "id": "dartmouth:span-73-14-embodying-care-immigration-he:94d0d5",
+      "schoolId": "dartmouth",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "course",
+      "title": "SPAN 73.14: Embodying Care: Immigration, Health, and the Medical Humanities",
+      "nameOnPage": "SPAN 73.14",
+      "summary": "A seminar co-taught with Geisel faculty in which students study immigrant health in U.S. and Latinx contexts and produce bilingual, public-facing work.",
+      "hook": "has students study immigrant health in Latinx communities and produce bilingual, public-facing work",
+      "quote": "Through fiction, theatre, visual art, documentary, and community-engaged methods, students examine immigrant health in U.S. and Latinx contexts and produce bilingual, public-facing work that connects analysis to practice.",
+      "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/spanish-and-portuguese-languages-and-literatures/span-spanish/span-73-14",
+      "sourceTitle": "Dartmouth College - SPAN73.14",
+      "themes": [
+        "immigration",
+        "language-access",
+        "latin-america",
+        "public-health",
+        "film-media",
+        "theater",
+        "visual-arts",
+        "medicine",
+        "literature",
+        "community-engagement"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:56:14.962Z"
+      }
+    },
+    {
+      "id": "dartmouth:span-9-02-culture-and-conversation-spani:f9697e",
+      "schoolId": "dartmouth",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "course",
+      "title": "SPAN 9.02: Culture and Conversation: Spanish for Health Equity",
+      "nameOnPage": "SPAN 9.02",
+      "summary": "A Spanish course for health and medical settings that examines language and intercultural proficiency in health care access and includes a Social Impact Practicum.",
+      "hook": "builds Spanish for health settings and examines how language shapes access to care, with a community practicum",
+      "quote": "The goal is to expand foundational communication skills so that students can use Spanish in academic and professional settings in health and medical fields, and so that they can reflect critically on the role of linguistic and intercultural proficiency in health care access (particularly in the United States). ... it includes a Social Impact Practicum in collaboration with the Center for Social Impact.",
+      "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/spanish-and-portuguese-languages-and-literatures/span-spanish/span-9-02",
+      "sourceTitle": "Dartmouth College - SPAN9.02",
+      "themes": [
+        "language-access",
+        "languages",
+        "public-health",
+        "community-engagement",
+        "social-enterprise",
+        "medicine"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:56:14.665Z"
       }
     },
     {
@@ -374,7 +734,7 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:50:06.613Z"
+        "checkedAt": "2026-11-05T15:56:12.189Z"
       }
     },
     {
@@ -404,7 +764,205 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:50:06.613Z"
+        "checkedAt": "2026-11-05T15:56:12.189Z"
+      }
+    },
+    {
+      "id": "dartmouth:environmental-studies-major-and-minors:b9c00f",
+      "schoolId": "dartmouth",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "major",
+      "title": "Environmental Studies Major and Minors",
+      "nameOnPage": "Environmental Studies",
+      "summary": "The Environmental Studies department offers a major plus minors in Environmental Studies (with Sustainability and Sustainable Energy tracks) and Environmental Science.",
+      "hook": "offers an Environmental Studies major and minors with Sustainability and Sustainable Energy tracks",
+      "quote": "To meet the needs of our students, we offer a major in Environmental Studies and two minors: Environmental Studies (tracks available in Environmental Studies, Sustainability or Sustainable Energy) and Environmental Science.",
+      "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/environmental-studies-program",
+      "sourceTitle": "Dartmouth College - Environmental Studies",
+      "themes": [
+        "sustainability",
+        "energy"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "The main environmental major, so environmentally minded applicants often name it.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:56:16.134Z"
+      }
+    },
+    {
+      "id": "dartmouth:dartmouth-as-living-lab:7f7e2f",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "kind": "program",
+      "title": "Dartmouth as Living Lab",
+      "nameOnPage": "Campus as Lab",
+      "summary": "A sustainability initiative that uses Dartmouth's campus lands and infrastructure as test sites for research, teaching, and pilots of climate and sustainability solutions.",
+      "hook": "turns campus lands and buildings into test sites for climate and sustainability research and pilots",
+      "quote": "Embracing a \"Campus as Lab\" approach allows students, faculty, and staff collaborate to use our campus to generate research, teaching, and creative scholarship on climate change and sustainability. Campus lands, infrastructure, and spaces become dynamic testing grounds where innovative sustainability solutions are piloted in real time.",
+      "sourceUrl": "https://www.sustainability.dartmouth.edu/campus-as-lab",
+      "sourceTitle": "DARTMOUTH AS LIVING LAB | Dartmouth Sustainability",
+      "themes": [
+        "sustainability",
+        "climate",
+        "undergraduate-research",
+        "civil-engineering",
+        "education"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:56:18.597Z"
+      }
+    },
+    {
+      "id": "dartmouth:environmental-studies-africa-foreign-stu:889b41",
+      "schoolId": "dartmouth",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "program",
+      "title": "Environmental Studies Africa Foreign Study Program (Namibia)",
+      "nameOnPage": "Africa Foreign Study Program",
+      "summary": "An Environmental Studies foreign study program that travels to Namibia to study environmental issues in the context of southern Africa, open to students of all majors.",
+      "hook": "takes students of any major to Namibia for field-based environmental study in southern Africa",
+      "quote": "We also offer the Africa Foreign Study Program that travels to Namibia where we explore the themes of environmental studies within the particular environment, culture and history of the southern Africa region. ... The program benefits from having diverse perspectives among the student participants, and all majors are welcome to apply.",
+      "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/environmental-studies-program",
+      "sourceTitle": "Dartmouth College - Environmental Studies",
+      "themes": [
+        "study-abroad",
+        "africa",
+        "fieldwork",
+        "history"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:56:16.134Z"
+      }
+    },
+    {
+      "id": "dartmouth:first-year-research-in-engineering-exper:322002",
+      "schoolId": "dartmouth",
+      "unitIds": [
+        "thayer"
+      ],
+      "kind": "program",
+      "title": "First Year Research in Engineering Experience (FYREE)",
+      "nameOnPage": "First Year Research in Engineering Experience",
+      "summary": "A paid research internship that pairs first-year students and prospective engineering majors with engineering faculty for two terms of lab research.",
+      "hook": "pairs first-year students with engineering faculty for a paid, two-term research internship in their labs",
+      "quote": "The First Year Research in Engineering Experience (FYREE) program is a paid research internship that provides early hands-on research experience and mentoring within the engineering sciences for first-year Dartmouth undergraduate students and prospective engineering majors. ... During the program, FYREE students are paired with engineering faculty and take part in active research in their labs.",
+      "sourceUrl": "https://engineering.dartmouth.edu/undergraduate/fyree",
+      "sourceTitle": "First Year Research in Engineering Experience | Dartmouth Engineering",
+      "themes": [
+        "undergraduate-research",
+        "first-year",
+        "education",
+        "career"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:56:17.300Z"
+      }
+    },
+    {
+      "id": "dartmouth:policy-research-shop:6e4e58",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "kind": "program",
+      "title": "Policy Research Shop",
+      "nameOnPage": "Policy Research Shop",
+      "summary": "A Rockefeller Center program in which students research policy questions requested by New Hampshire and Vermont state, county, and local government officials.",
+      "hook": "has students research policy questions for New Hampshire and Vermont state and local officials",
+      "quote": "The Center sponsors the Policy Research Shop, a student-staffed, faculty-mentored research enterprise in which students conduct research at the request of New Hampshire and Vermont state, county, and local government officials.",
+      "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/the-nelson-a-rockefeller-center-for-public-policy",
+      "sourceTitle": "Dartmouth College - The Nelson A. Rockefeller Center for Public Policy",
+      "themes": [
+        "public-policy",
+        "political-science",
+        "undergraduate-research",
+        "education"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:56:17.872Z"
+      }
+    },
+    {
+      "id": "dartmouth:social-impact-practicums-sips:a724ad",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "kind": "program",
+      "title": "Social Impact Practicums (SIPs)",
+      "nameOnPage": "Social Impact Practicum (SIP)",
+      "summary": "Course-based projects that connect Dartmouth classes with needs identified by Upper Valley nonprofits, including human-centered design projects in Thayer's Senior Design Challenge.",
+      "hook": "connects coursework to projects for Upper Valley nonprofits, including engineering design projects",
+      "quote": "A Social Impact Practicum (SIP) is a project-based experiential learning opportunity connecting undergraduate courses at Dartmouth with community needs identified by nonprofit organizations throughout the Upper Valley. ... DCSI also collaborates with Thayer's Senior Design Challenge to match human-centered design projects proposed by Upper Valley nonprofits with this two-term senior-level engineering course.",
+      "sourceUrl": "https://students.dartmouth.edu/social-impact/programs-initiatives/students/social-impact-practicums-sips",
+      "sourceTitle": "Social Impact Practicums (SIPs) | Students | Social Impact",
+      "themes": [
+        "community-engagement",
+        "social-enterprise",
+        "engineering-design",
+        "design"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:56:18.341Z"
+      }
+    },
+    {
+      "id": "dartmouth:undergraduate-research-assistantships-at:b2db68",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "kind": "program",
+      "title": "Undergraduate Research Assistantships at Dartmouth (URAD)",
+      "nameOnPage": "Undergraduate Research Assistantships at Dartmouth (URAD)",
+      "summary": "A program that funds undergraduates to work as part-time research assistants with Dartmouth faculty, with a stipend paid at the end of each term of research.",
+      "hook": "pays undergraduates a stipend to work as part-time research assistants with faculty",
+      "quote": "Undergraduates experience research first-hand by working with Dartmouth faculty in part-time research assistantships. Students receive a stipend at the end of the completed term of research.",
+      "sourceUrl": "https://students.dartmouth.edu/surfd/undergraduate-research/undergraduate-research-assistantships-dartmouth-urad",
+      "sourceTitle": "Undergraduate Research Assistantships at Dartmouth (URAD) | Scholars Programs, Undergraduate Research, and Fellowships at Dartmouth",
+      "themes": [
+        "undergraduate-research"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "A broad research-funding program that many science-minded applicants mention.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:56:18.014Z"
       }
     }
   ]

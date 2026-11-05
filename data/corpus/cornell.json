@@ -1,7 +1,774 @@
 {
   "schoolId": "cornell",
   "term": "2026-fall",
-  "builtAt": "",
-  "builtBy": "",
-  "facts": []
+  "builtAt": "2026-11-05",
+  "builtBy": "research-agent",
+  "facts": [
+    {
+      "id": "cornell:bee-4670-applied-water-research-in-nys:3ac8a1",
+      "schoolId": "cornell",
+      "unitIds": [
+        "engineering",
+        "cals"
+      ],
+      "kind": "course",
+      "title": "BEE 4670: Applied Water Research In NYS",
+      "nameOnPage": "BEE 4670",
+      "summary": "A seminar series that brings together researchers working with the New York State Water Resources Institute at Cornell and state agency partners to improve water management in New York.",
+      "hook": "connects students with researchers and state agencies working on New York's water problems",
+      "quote": "Every year, the New York State Water Resources Institute (NYSWRI) at Cornell supports applied research that addresses critical water resource problems in NYS and the nation. This seminar series brings together researchers who work with NYSWRI and state agency partners to support and improve water management in the state.",
+      "sourceUrl": "https://classes.cornell.edu/browse/roster/SP27/class/BEE/4670",
+      "sourceTitle": "Class Roster - Spring 2027 - BEE 4670",
+      "themes": [
+        "water",
+        "environmental-policy",
+        "business"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:52:34.870Z"
+      }
+    },
+    {
+      "id": "cornell:cee-3007-engineering-in-the-community:486b36",
+      "schoolId": "cornell",
+      "unitIds": [
+        "engineering"
+      ],
+      "kind": "course",
+      "title": "CEE 3007: Engineering in the Community",
+      "nameOnPage": "CEE 3007",
+      "summary": "A course in which students plan, design, and build an infrastructure service project for the local community while learning power tools and how to communicate with non-experts.",
+      "hook": "has students plan, design, and build an infrastructure project for the local community",
+      "quote": "This course will prepare you for this type of engagement by planning, designing, and building an infrastructure service project to benefit the local community. You will develop skills in using power tools, project management, risk management, engineering judgment, communicating with non-experts, teamwork, and leadership.",
+      "sourceUrl": "https://classes.cornell.edu/browse/roster/SP27/class/CEE/3007",
+      "sourceTitle": "Class Roster - Spring 2027 - CEE 3007",
+      "themes": [
+        "community-engagement",
+        "civil-engineering",
+        "making",
+        "design",
+        "business",
+        "leadership"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:52:35.269Z"
+      }
+    },
+    {
+      "id": "cornell:cee-4795-sensors-for-the-built-and-natur:805324",
+      "schoolId": "cornell",
+      "unitIds": [
+        "engineering"
+      ],
+      "kind": "course",
+      "title": "CEE 4795: Sensors for the Built and Natural Environments",
+      "nameOnPage": "CEE 4795",
+      "summary": "A course introducing sensors for civil and environmental engineering uses such as air and water quality monitoring and watershed engineering, in which students design and assemble a sensing system.",
+      "hook": "has students design and assemble sensing systems for air, water, and watershed monitoring",
+      "quote": "This course introduces students to a wide variety of sensors with a specific focus on civil and environmental engineering applications such as material testing, structural health monitoring, traffic engineering, air and water quality monitoring, structural testing, watershed engineering, and geotechnical and subsurface energy applications. ... Design and assemble a sensing system for a specific measuring/monitoring application",
+      "sourceUrl": "https://classes.cornell.edu/browse/roster/SP27/class/CEE/4795",
+      "sourceTitle": "Class Roster - Spring 2027 - CEE 4795",
+      "themes": [
+        "sensors",
+        "water",
+        "environmental-engineering",
+        "civil-engineering",
+        "energy",
+        "transportation",
+        "design"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:52:34.595Z"
+      }
+    },
+    {
+      "id": "cornell:cee-4800-engineering-smart-cities:7a2ed4",
+      "schoolId": "cornell",
+      "unitIds": [
+        "engineering"
+      ],
+      "kind": "course",
+      "title": "CEE 4800: Engineering Smart Cities",
+      "nameOnPage": "CEE 4800",
+      "summary": "A course on smart city infrastructure in which students combine data and models to control system performance, with case studies in urban flooding, energy supply, air quality, and water supply.",
+      "hook": "teaches students to combine data and models to run city infrastructure, from flood control to water supply",
+      "quote": "In particular, students will learn to combine data and models to control overall system performance in the face of uncertainty. ... Finally, the class will explore cases studies in urban flooding, energy supply, transportation and air quality, and water supply.",
+      "sourceUrl": "https://classes.cornell.edu/browse/roster/SP27/class/CEE/4800",
+      "sourceTitle": "Class Roster - Spring 2027 - CEE 4800",
+      "themes": [
+        "cities",
+        "sensors",
+        "data-science",
+        "water",
+        "environmental-engineering",
+        "civil-engineering",
+        "energy",
+        "transportation"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:52:34.628Z"
+      }
+    },
+    {
+      "id": "cornell:engrd-2400-observing-the-earth-remote-se:b5daaa",
+      "schoolId": "cornell",
+      "unitIds": [
+        "engineering"
+      ],
+      "kind": "course",
+      "title": "ENGRD 2400: Observing the Earth: Remote Sensing and GIS",
+      "nameOnPage": "ENGRD 2400",
+      "summary": "An engineering course that introduces GIS and satellite remote sensing data and ends with a student-designed capstone project analyzing satellite data.",
+      "hook": "introduces GIS and satellite data analysis through a student-designed capstone project",
+      "quote": "We will introduce students to Geographical Information Systems (GIS) and other methods for viewing and manipulating data. ... Students will design and present a capstone project involving satellite data analysis and interpretation.",
+      "sourceUrl": "https://classes.cornell.edu/browse/roster/SP27/class/ENGRD/2400",
+      "sourceTitle": "Class Roster - Spring 2027 - ENGRD 2400",
+      "themes": [
+        "gis-mapping",
+        "earth-science",
+        "data-science",
+        "sensors",
+        "aerospace",
+        "engineering-design",
+        "design"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:52:34.870Z"
+      }
+    },
+    {
+      "id": "cornell:engri-1130-sustainable-engineering-of-en:14f41e",
+      "schoolId": "cornell",
+      "unitIds": [
+        "engineering"
+      ],
+      "kind": "course",
+      "title": "ENGRI 1130: Sustainable Engineering of Energy, Water, Soil, and Air Resources",
+      "nameOnPage": "ENGRI 1130",
+      "summary": "An introductory engineering course organized into energy, water, soil, and air modules, each built around a case study of local or regional significance.",
+      "hook": "introduces first-year engineers to sustainable resource management through local case studies",
+      "quote": "Course introduces concepts and tools required for the sustainable management of energy, water, soil, and air resources in our modern society. Semester is organized into four modules, each concentrating on one resource area and including a case study of local or regional significance.",
+      "sourceUrl": "https://classes.cornell.edu/browse/roster/SP27/class/ENGRI/1130",
+      "sourceTitle": "Class Roster - Spring 2027 - ENGRI 1130",
+      "themes": [
+        "sustainability",
+        "water",
+        "energy",
+        "environmental-engineering",
+        "agriculture",
+        "business"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:52:35.003Z"
+      }
+    },
+    {
+      "id": "cornell:pe-1666-bike-touring:01190e",
+      "schoolId": "cornell",
+      "unitIds": [],
+      "kind": "course",
+      "title": "PE 1666: Bike Touring",
+      "nameOnPage": "PE 1666",
+      "summary": "A physical education course that teaches bike touring gear, camping, route planning, and bike maintenance, ending in a two-day bike tour with overnight camping.",
+      "hook": "teaches bike maintenance and route planning, ending with a two-day bike tour",
+      "quote": "This course will cover bike touring equipment use, camping skills, route planning and bike maintenance. ... the course will culminate in a two-day bike tour with overnight camping.",
+      "sourceUrl": "https://classes.cornell.edu/browse/roster/SP27/class/PE/1666",
+      "sourceTitle": "Class Roster - Spring 2027 - PE 1666",
+      "themes": [
+        "cycling",
+        "outdoors",
+        "education"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:52:35.269Z"
+      }
+    },
+    {
+      "id": "cornell:defrees-hydraulics-lab:808e27",
+      "schoolId": "cornell",
+      "unitIds": [
+        "engineering"
+      ],
+      "kind": "facility",
+      "title": "DeFrees Hydraulics Lab",
+      "nameOnPage": "DeFrees Hydraulics Lab",
+      "summary": "The DeFrees Hydraulics Lab anchors Cornell's environmental fluid mechanics and hydrology program, with a wave tank, a wind-water tunnel, and a flume that models rivers, estuaries, and lake shores.",
+      "hook": "provides wave tanks and flumes that model rivers, estuaries, and lake shorelines",
+      "quote": "The focal point of research and experimental studies in the environmental fluid mechanics and hydrology program, the DeFrees hydraulics lab is equipped with three main experimental facilities: ... Designed to model shallow coastal waters, rivers, estuaries, the littoral zone of lakes, and more generally any environment where the horizontal length scales are long relative to the depths.",
+      "sourceUrl": "https://www.duffield.cornell.edu/cee/educational-facilities/",
+      "sourceTitle": "Educational Facilities | School of Civil and Environmental Engineering | Cornell Duffield Engineering",
+      "themes": [
+        "water",
+        "environmental-engineering",
+        "mechanical-engineering",
+        "marine"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:52:33.829Z"
+      }
+    },
+    {
+      "id": "cornell:environmental-teaching-lab:f74993",
+      "schoolId": "cornell",
+      "unitIds": [
+        "engineering"
+      ],
+      "kind": "facility",
+      "title": "Environmental Teaching Lab",
+      "nameOnPage": "Environmental Teaching Lab",
+      "summary": "A civil and environmental engineering lab for bench-scale analysis of environmental samples that hosts an automated water treatment plant design competition for upper-level undergraduates.",
+      "hook": "hosts an automated water treatment plant design competition for upper-level undergraduates",
+      "quote": "This flexible facility is designed for bench scale experiments and analysis of environmental samples and processes. The Environmental Teaching Lab hosts an automated water treatment plant design competition for upper level undergraduates, and a biocatalysis laboratory for graduate students.",
+      "sourceUrl": "https://www.duffield.cornell.edu/cee/educational-facilities/",
+      "sourceTitle": "Educational Facilities | School of Civil and Environmental Engineering | Cornell Duffield Engineering",
+      "themes": [
+        "water",
+        "environmental-engineering",
+        "engineering-design",
+        "education",
+        "design"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:52:33.829Z"
+      }
+    },
+    {
+      "id": "cornell:manufacturing-and-learning-studio:49e262",
+      "schoolId": "cornell",
+      "unitIds": [
+        "engineering"
+      ],
+      "kind": "facility",
+      "title": "Manufacturing and Learning Studio",
+      "nameOnPage": "Manufacturing and Learning Studio",
+      "summary": "The Sibley School's professionally staffed machine shop, with milling machines, lathes, and CNC machines, trains everyone who uses it.",
+      "hook": "trains students to use milling machines, lathes, and CNC machines in a staffed machine shop",
+      "quote": "The Manufacturing and Learning Studio of the Sibley School of Mechanical and Aerospace Engineering is equipped with standard milling machines, lathes, high-end CNC machines, and a host of support equipment, this machine shop is professionally staffed and provides thorough training to all who use it.",
+      "sourceUrl": "https://www.duffield.cornell.edu/student-project-teams/project-team-facilities/",
+      "sourceTitle": "Project Team Facilities | Cornell Duffield Engineering",
+      "themes": [
+        "making",
+        "mechanical-engineering",
+        "aerospace"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:52:34.182Z"
+      }
+    },
+    {
+      "id": "cornell:rapid-prototyping-lab:07412d",
+      "schoolId": "cornell",
+      "unitIds": [
+        "engineering"
+      ],
+      "kind": "facility",
+      "title": "Rapid Prototyping Lab",
+      "nameOnPage": "Rapid Prototyping Lab",
+      "summary": "A student-operated engineering prototyping lab with 3D printers, a laser cutter, and a CNC router table.",
+      "hook": "gives engineering students 3D printers, a laser cutter, and a CNC router run by fellow undergraduates",
+      "quote": "Operated by undergraduate engineering students, the Rapid Prototyping Lab provides a variety of 3D printers, a laser cutter, and a CNC router table.",
+      "sourceUrl": "https://www.duffield.cornell.edu/student-project-teams/project-team-facilities/",
+      "sourceTitle": "Project Team Facilities | Cornell Duffield Engineering",
+      "themes": [
+        "making",
+        "engineering-design"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Makerspaces are common across engineering schools; applicants mention them often.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:52:34.182Z"
+      }
+    },
+    {
+      "id": "cornell:damian-helbling:ec4a37",
+      "schoolId": "cornell",
+      "unitIds": [
+        "engineering"
+      ],
+      "kind": "faculty",
+      "title": "Damian Helbling",
+      "nameOnPage": "Damian Helbling",
+      "summary": "Damian Helbling, in Cornell's School of Civil and Environmental Engineering, studies organic chemicals in water and wastewater and develops remediation technologies; his doctoral work used sensor networks in water systems.",
+      "hook": "researches contaminants in water and wastewater and technologies to clean impacted water systems",
+      "quote": "His graduate research focused on the use of sensor networks within drinking water distribution systems to monitor and control post-treatment water quality. ... Helbling joined the School of Civil and Environmental Engineering at Cornell University in January 2014. His research has focused on developing techniques to characterize the universe of organic molecules in water and wastewater by means of high-resolution mass spectrometry and developing technologies for the remediation of impacted water systems.",
+      "sourceUrl": "https://www.duffield.cornell.edu/people/damian-e-helbling/",
+      "sourceTitle": "Damian E. Helbling | Cornell Duffield Engineering",
+      "themes": [
+        "water",
+        "environmental-engineering",
+        "sensors"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Damian Helbling"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:52:33.570Z"
+      }
+    },
+    {
+      "id": "cornell:albertson-lab:794162",
+      "schoolId": "cornell",
+      "unitIds": [
+        "engineering"
+      ],
+      "kind": "lab",
+      "title": "Albertson Lab",
+      "nameOnPage": "Albertson Lab",
+      "summary": "A civil and environmental engineering lab studying how water, carbon dioxide, pollutants, and energy move between land and atmosphere, combining measurements and models for hydrometeorology and air quality.",
+      "hook": "fuses field measurements and models to predict land-atmosphere exchange and air quality",
+      "quote": "Focusing on the development of a comprehensive understanding of the exchange rates of mass (e.g. water, CO2, pollutants), energy, and momentum between the land and atmosphere. Primary applications in hydrometeorology and air quality, particularly focused on the fusion of measurements and models for optimal prediction.",
+      "sourceUrl": "https://www.duffield.cornell.edu/cee/research-groups/",
+      "sourceTitle": "Research Groups | School of Civil and Environmental Engineering | Cornell Duffield Engineering",
+      "themes": [
+        "environmental-engineering",
+        "earth-science",
+        "sensors",
+        "climate",
+        "energy"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:52:33.069Z"
+      }
+    },
+    {
+      "id": "cornell:reed-research-group:fcc80a",
+      "schoolId": "cornell",
+      "unitIds": [
+        "engineering"
+      ],
+      "kind": "lab",
+      "title": "Reed Research Group",
+      "nameOnPage": "Reed Research Group",
+      "summary": "A civil and environmental engineering group studying sustainable water management under competing demands from renewable energy, ecosystems, growing populations, and climate change.",
+      "hook": "researches how to manage water sustainably as energy, ecosystem, and climate pressures collide",
+      "quote": "The Reed Research Group’s primary research interests relate to sustainable water management given conflicting demands from renewable energy systems, ecosystem services, expanding populations, and climate change.",
+      "sourceUrl": "https://www.duffield.cornell.edu/cee/research-groups/",
+      "sourceTitle": "Research Groups | School of Civil and Environmental Engineering | Cornell Duffield Engineering",
+      "themes": [
+        "water",
+        "climate",
+        "energy",
+        "sustainability",
+        "environmental-engineering",
+        "ecology",
+        "business"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:52:33.069Z"
+      }
+    },
+    {
+      "id": "cornell:reid-research-group:28da8d",
+      "schoolId": "cornell",
+      "unitIds": [
+        "engineering"
+      ],
+      "kind": "lab",
+      "title": "Reid Research Group",
+      "nameOnPage": "Reid Research Group",
+      "summary": "A civil and environmental engineering lab that applies environmental biogeochemistry and ecosystem engineering, including nature-based technologies, to water quality problems.",
+      "hook": "studies nature-based technologies that protect the quality of water resources",
+      "quote": "Our laboratory is focused on investigating the applications of environmental biogeochemistry and ecosystem engineering to water quality problems. Our group seeks to understand and innovate the use of nature-based technologies as sustainable tools to ensure the quality of water resources for societal needs and ecosystem health.",
+      "sourceUrl": "https://www.duffield.cornell.edu/cee/research-groups/",
+      "sourceTitle": "Research Groups | School of Civil and Environmental Engineering | Cornell Duffield Engineering",
+      "themes": [
+        "water",
+        "environmental-engineering",
+        "ecology",
+        "sustainability"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:52:33.069Z"
+      }
+    },
+    {
+      "id": "cornell:richardson-lab:61c7f2",
+      "schoolId": "cornell",
+      "unitIds": [
+        "engineering"
+      ],
+      "kind": "lab",
+      "title": "Richardson Lab",
+      "nameOnPage": "Richardson Lab",
+      "summary": "A civil and environmental engineering lab that studies microbial communities for bioremediation, bioenergy, sustainable wastewater treatment, and pathogen detection.",
+      "hook": "investigates microbes used for bioremediation, wastewater treatment, and pathogen detection",
+      "quote": "The Richardson group studies microbial communities of relevance to important environmental engineering problems. Application areas include bioremediation, bioenergy, sustainable wastewater treatment, nutrient and greenhouse gas cycling, and pathogen detection.",
+      "sourceUrl": "https://www.duffield.cornell.edu/cee/research-groups/",
+      "sourceTitle": "Research Groups | School of Civil and Environmental Engineering | Cornell Duffield Engineering",
+      "themes": [
+        "environmental-engineering",
+        "biology",
+        "water",
+        "cycling",
+        "climate",
+        "sustainability"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:52:33.069Z"
+      }
+    },
+    {
+      "id": "cornell:finger-lakes-pfas-mapping-project:d13795",
+      "schoolId": "cornell",
+      "unitIds": [
+        "engineering"
+      ],
+      "kind": "location",
+      "title": "Finger Lakes PFAS mapping project",
+      "nameOnPage": "Finger Lakes",
+      "summary": "Undergraduates in Damian Helbling's research group have sampled more than 300 bodies of water, including all 11 Finger Lakes, for PFAS and added the data to an interactive map.",
+      "hook": "lets undergraduates sample Finger Lakes waters for PFAS and share results on a public map",
+      "quote": "A group of undergraduates in Helbling’s research group has since filled the gap, taking more than 500 samples across 300 bodies of water, including all 11 Finger Lakes and many tributaries, ponds and even puddles that persistently pool after rain. They’ve screened the samples for 24 common PFAS and added the data to an interactive map.",
+      "sourceUrl": "https://news.cornell.edu/stories/2026/10/students-create-first-depth-map-forever-chemicals-finger-lakes",
+      "sourceTitle": "Students create first in-depth map of ‘forever chemicals’ in the Finger Lakes | Cornell Chronicle",
+      "themes": [
+        "water",
+        "gis-mapping",
+        "undergraduate-research",
+        "environmental-engineering"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Damian Helbling"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:52:36.767Z"
+      }
+    },
+    {
+      "id": "cornell:environmental-engineering-major:6e1ea5",
+      "schoolId": "cornell",
+      "unitIds": [
+        "engineering",
+        "cals"
+      ],
+      "kind": "major",
+      "title": "Environmental Engineering Major",
+      "nameOnPage": "Environmental Engineering",
+      "summary": "Cornell's B.S. in Environmental Engineering is offered jointly by the College of Engineering and CALS and trains students to prevent or clean up pollution of air, streams, and groundwater.",
+      "hook": "offers an environmental engineering degree run jointly by the College of Engineering and CALS",
+      "quote": "They work to contain, reduce or prevent hazardous waste, air pollution, or contaminated streams and groundwater. ... The Bachelor degree program in Environmental Engineering is jointly offered by the College of Engineering and the College of Agriculture and Life Sciences at Cornell University.",
+      "sourceUrl": "https://www.duffield.cornell.edu/cee/environmental-engineering-major/",
+      "sourceTitle": "Environmental Engineering Major | School of Civil and Environmental Engineering | Cornell Duffield Engineering",
+      "themes": [
+        "environmental-engineering",
+        "water",
+        "agriculture"
+      ],
+      "commonness": "common",
+      "commonnessReason": "The intended major's own program page; nearly every environmental engineering applicant cites the major itself.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:52:32.722Z"
+      }
+    },
+    {
+      "id": "cornell:smart-cities-minor:f9e525",
+      "schoolId": "cornell",
+      "unitIds": [
+        "engineering"
+      ],
+      "kind": "major",
+      "title": "Smart Cities Minor",
+      "nameOnPage": "Smart Cities Minor",
+      "summary": "An engineering minor that teaches students to use sensors, real-time data, and AI to design and control dynamic infrastructure systems for future cities.",
+      "hook": "trains engineers to use sensors, real-time data, and AI to run city infrastructure",
+      "quote": "The smart cities minor equips engineering students to use sensors, smart devices, real-time data, and AI for designing and controlling dynamic infrastructure systems. It combines technical civil engineering skills with knowledge of the environment, climate change, technology, and data science to help engineer future smart cities.",
+      "sourceUrl": "https://www.duffield.cornell.edu/cee/minors/",
+      "sourceTitle": "Minors in Smart Cities and Engineering Management | School of Civil and Environmental Engineering",
+      "themes": [
+        "cities",
+        "sensors",
+        "civil-engineering",
+        "data-science",
+        "climate",
+        "ai",
+        "design"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:52:32.745Z"
+      }
+    },
+    {
+      "id": "cornell:aguaclara-project-team:f483dd",
+      "schoolId": "cornell",
+      "unitIds": [
+        "engineering"
+      ],
+      "kind": "organization",
+      "title": "AguaClara Project Team",
+      "nameOnPage": "AguaClara Project team",
+      "summary": "AguaClara is a Cornell engineering project team that develops sustainable, gravity-powered water treatment technologies, including an automated coagulant dosing system, for communities worldwide.",
+      "hook": "develops gravity-powered water treatment technology for communities with limited resources",
+      "quote": "I am one of the team leads for the AguaClara Project team, where we develop sustainable, gravity-powered water treatment technologies for communities around the world. We are currently developing an automated coagulant dosing system to eliminate the need for an operator at all times in communities with limited financial resources.",
+      "sourceUrl": "https://www.duffield.cornell.edu/cbe/2025/08/01/kayla-stephenson-26-from-classroom-to-community/",
+      "sourceTitle": "Kayla Stephenson '26: From classroom to community | R.F. Smith School of Chemical and Biomolecular Engineering",
+      "themes": [
+        "water",
+        "environmental-engineering",
+        "engineering-design",
+        "global",
+        "finance",
+        "sustainability"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "A well-known Cornell water project team that environmental engineering applicants often find.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:52:36.053Z"
+      }
+    },
+    {
+      "id": "cornell:cornell-speech-and-debate:dc058e",
+      "schoolId": "cornell",
+      "unitIds": [],
+      "kind": "organization",
+      "title": "Cornell Speech and Debate",
+      "nameOnPage": "Cornell Speech and Debate",
+      "summary": "Cornell's only university-sponsored debate organization, competing in policy debate, British Parliamentary debate, Spanish-language Worlds debate, and individual speech events.",
+      "hook": "competes in policy debate and in Spanish-language Worlds debate",
+      "quote": "The Cornell Speech and Debate Program is the only university-sponsored debate organization at Cornell. We compete in Policy debate, Worlds (British Parliamentary) debate, Spanish-language Worlds debate and Individual Speech events.",
+      "sourceUrl": "https://www.ilr.cornell.edu/cornell-debate",
+      "sourceTitle": "Cornell Speech and Debate | The ILR School",
+      "themes": [
+        "debate",
+        "languages",
+        "public-policy"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "The university's main debate program; known but not a typical essay focus.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:52:36.071Z"
+      }
+    },
+    {
+      "id": "cornell:engineers-without-borders:5b6a63",
+      "schoolId": "cornell",
+      "unitIds": [
+        "engineering"
+      ],
+      "kind": "organization",
+      "title": "Engineers Without Borders",
+      "nameOnPage": "Engineers without Borders",
+      "summary": "A Cornell student group that designs and implements sustainable engineering projects with international communities.",
+      "hook": "lets students design and build sustainable engineering projects with communities abroad",
+      "quote": "Students who aim to create long-lasting solutions to problems in international communities. Members are given the opportunity to nurture their creative and technical expertise by designing and implementing sustainable engineering projects.",
+      "sourceUrl": "https://www.duffield.cornell.edu/cee/clubs-organizations/",
+      "sourceTitle": "Clubs and Organizations | School of Civil and Environmental Engineering | Cornell Duffield Engineering",
+      "themes": [
+        "community-engagement",
+        "sustainability",
+        "global",
+        "design"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Engineers Without Borders chapters exist at many universities.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:52:35.909Z"
+      }
+    },
+    {
+      "id": "cornell:society-of-hispanic-professional-enginee:23d00c",
+      "schoolId": "cornell",
+      "unitIds": [
+        "engineering"
+      ],
+      "kind": "organization",
+      "title": "Society of Hispanic Professional Engineers, Cornell Chapter",
+      "nameOnPage": "Society of Hispanic Professional Engineers, Cornell Chapter",
+      "summary": "The Cornell chapter of the Society of Hispanic Professional Engineers works to increase the participation of Hispanic students and professionals in engineering, science, and math.",
+      "hook": "connects Hispanic engineering students to a professional community in engineering and science",
+      "quote": "Dedicated to increasing the participation of Hispanic professionals and college students in the fields of engineering, science, and math.",
+      "sourceUrl": "https://www.duffield.cornell.edu/cee/undergraduate-experience/",
+      "sourceTitle": "Undergraduate Experience | School of Civil and Environmental Engineering | Cornell Duffield Engineering",
+      "themes": [
+        "latin-america",
+        "cultural-identity",
+        "mathematics"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "SHPE chapters exist at many engineering schools.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:52:36.221Z"
+      }
+    },
+    {
+      "id": "cornell:global-start-cantabria:5e9352",
+      "schoolId": "cornell",
+      "unitIds": [
+        "engineering"
+      ],
+      "kind": "program",
+      "title": "Global Start Cantabria",
+      "nameOnPage": "Global Start Cantabria",
+      "summary": "A Duffield Engineering program in which first-year students spend their first semester in Santander, Spain, after two weeks of immersion Spanish with a host family.",
+      "hook": "lets first-year engineers start in Santander, Spain, with immersion Spanish and a host family",
+      "quote": "Duffield Engineering Global Start participants will take a similar course load as their counterparts starting their first term at Cornell. ... As part of the Global Start Cantabria Program, all students will take intensive immersion Spanish for two weeks and live with a host family prior to the start of classes.",
+      "sourceUrl": "https://www.duffield.cornell.edu/study-abroad/global-start-cantabria/",
+      "sourceTitle": "Global Start Cantabria | Cornell Duffield Engineering",
+      "themes": [
+        "study-abroad",
+        "languages",
+        "global"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Featured on the admissions page for engineering applicants.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:52:35.385Z"
+      }
+    },
+    {
+      "id": "cornell:rising-researchers-program:3b3ca6",
+      "schoolId": "cornell",
+      "unitIds": [
+        "engineering"
+      ],
+      "kind": "program",
+      "title": "Rising Researchers Program",
+      "nameOnPage": "Rising Researchers",
+      "summary": "A Duffield Engineering program that matches first- and second-year undergraduates with graduate student mentors for spring and summer research projects.",
+      "hook": "pairs first- and second-year engineers with graduate mentors for spring and summer research",
+      "quote": "First and second year Duffield Engineering undergrads who participate in at least one Office of Inclusive Excellence research event and attend two research group open houses/tours are eligible to apply for a mentored research position as a Rising Researcher beginning in the spring. During the spring and summer, undergraduates work on a research project in close collaboration with a graduate student mentor.",
+      "sourceUrl": "https://www.duffield.cornell.edu/undergraduate-research/research-opportunities/rising-researchers-program/",
+      "sourceTitle": "Rising Researchers Program | Cornell Duffield Engineering",
+      "themes": [
+        "undergraduate-research",
+        "education"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T15:52:35.614Z"
+      }
+    }
+  ]
 }
