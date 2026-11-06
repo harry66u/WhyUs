@@ -13,7 +13,7 @@ export function NavLink({ href, icon, children, exact = false }: { href: string;
       href={href}
       aria-current={active ? "page" : undefined}
       className={cn(
-        "flex h-8 items-center gap-2.5 rounded-md px-2.5 text-sm transition-colors",
+        "flex h-8 shrink-0 items-center gap-2.5 whitespace-nowrap rounded-md px-2.5 text-sm transition-colors",
         active ? "bg-hover text-fg" : "text-muted hover:bg-hover hover:text-fg",
       )}
     >
