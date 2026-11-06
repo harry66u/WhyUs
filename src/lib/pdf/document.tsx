@@ -126,7 +126,7 @@ function makeStyles(f: PdfFonts) {
     sectionIntro: { fontSize: 8, lineHeight: 1.45, color: C.muted, marginTop: 3, maxWidth: 400 },
 
     // Details
-    detail: { flexDirection: "row", paddingVertical: 12, borderTopWidth: 0.75, borderTopColor: C.line, position: "relative" },
+    detail: { flexDirection: "row", paddingVertical: 9, borderTopWidth: 0.75, borderTopColor: C.line, position: "relative" },
     detailFirst: { borderTopWidth: 0, paddingTop: 4 },
     rank: {
       position: "absolute",
@@ -144,7 +144,7 @@ function makeStyles(f: PdfFonts) {
     kindDivider: { width: 0.75, height: 7, backgroundColor: C.lineStrong, marginHorizontal: 6 },
     scope: { fontSize: 7.5, color: C.subtle },
     summary: { fontFamily: f.serif, fontSize: 10, lineHeight: 1.45, color: C.ink, marginTop: 6 },
-    fitLabel: { fontFamily: f.sans, fontWeight: 500, fontSize: 7.5, color: C.muted, marginTop: 6 },
+    fitLabel: { fontFamily: f.sans, fontWeight: 500, fontSize: 7.5, color: C.muted, marginTop: 5 },
     fit: { fontFamily: f.serif, fontSize: 10, lineHeight: 1.45, color: C.ink, marginTop: 2 },
     quote: { marginTop: 7, paddingLeft: 7, borderLeftWidth: 1.25, borderLeftColor: C.lineStrong },
     quoteText: { fontFamily: f.serif, fontSize: 9, lineHeight: 1.45, color: C.muted },
@@ -359,6 +359,18 @@ function SwapLine({ result, s }: { result: SwapResult; s: Styles }) {
   );
 }
 
+/**
+ * The PDF keeps a short verbatim excerpt so each entry stays compact; the
+ * citation links to the official page where the full passage was confirmed.
+ */
+export function quoteExcerpt(quote: string, max = 190): string {
+  const q = quote.replace(/\s+/g, " ").trim();
+  if (q.length <= max) return q;
+  const cut = q.slice(0, max);
+  const at = cut.lastIndexOf(" ");
+  return `${(at > max * 0.6 ? cut.slice(0, at) : cut).replace(/[\s,;:.\-]+$/, "")}…`;
+}
+
 function DetailBlock({
   detail,
   dossier,
@@ -386,11 +398,10 @@ function DetailBlock({
           {scope ? <View style={s.kindDivider} /> : null}
           {scope ? <Text style={s.scope}>{scope}</Text> : null}
         </View>
-        <Text style={s.summary}>{detail.summary}</Text>
         <Text style={s.fitLabel}>Why it fits you</Text>
         <Text style={s.fit}>{detail.fit.sentence}</Text>
         <View style={s.quote}>
-          <Text style={s.quoteText}>{`“${detail.quote}”`}</Text>
+          <Text style={s.quoteText}>{`“${quoteExcerpt(detail.quote)}”`}</Text>
           <View style={s.citation}>
             <Text>
               <Link src={detail.sourceUrl} style={s.citationLink}>
@@ -420,7 +431,6 @@ function DetailBlock({
             <Text style={s.commonPillText}>Commonly mentioned</Text>
           </View>
         ) : null}
-        {detail.uniqueness.reason ? <Text style={s.reason}>{detail.uniqueness.reason}</Text> : null}
         {showSwap ? (
           <View style={s.railSpacer}>
             <Text style={s.railLabel}>Swap test</Text>
@@ -606,7 +616,7 @@ export function DossierPdfDocument({ dossier, fonts, preparedFor }: DossierPdfPr
           )}
 
           {/* Research note */}
-          <View style={s.note} wrap={false}>
+          <View style={s.note} minPresenceAhead={24}>
             <Text style={s.noteTitle}>Research note</Text>
             <Text style={s.noteText}>{dossier.policyNote?.trim() || RESEARCH_POLICY_NOTE}</Text>
           </View>
