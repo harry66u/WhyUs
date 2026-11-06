@@ -26,10 +26,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:06.762Z"
+        "checkedAt": "2026-11-06T16:31:07.575Z"
       }
     },
     {
@@ -42,7 +42,7 @@
       "title": "Climate Futures",
       "nameOnPage": "Climate Futures",
       "summary": "A Taubman College effort that amplifies architecture, design, and planning contributions in the built environment, with a space students can reserve for climate-related discussions and projects.",
-      "hook": "gives students a reservable space for climate-related discussions, meetings, and projects",
+      "hook": "amplifies architecture, design, and planning work on the built environment and offers students a space for climate projects",
       "quote": "Climate Futures amplifies architectural, design and planning contributions to mutual flourishing in the built environment. ... Taubman College students and faculty can reserve the space via Google Calendar for climate-related discussions, meetings, and collaborative or course projects.",
       "sourceUrl": "https://taubmancollege.umich.edu/research/initiatives/climate-futures/",
       "sourceTitle": "Climate Futures - Taubman College",
@@ -52,48 +52,18 @@
         "cities"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:06.652Z"
-      }
-    },
-    {
-      "id": "umich:geospatial-data-and-mapping-u-m-library:6fe940",
-      "schoolId": "umich",
-      "unitIds": [],
-      "kind": "center",
-      "title": "Geospatial Data and Mapping (U-M Library)",
-      "nameOnPage": "Geospatial Data and Mapping",
-      "summary": "The U-M Library connects new and experienced GIS users to experts and services, with digital mapping software such as ArcGIS Pro, ArcGIS Online, and QGIS.",
-      "hook": "connects students at any level to GIS experts and mapping software such as ArcGIS Pro and QGIS",
-      "quote": "Whether you’re an experienced user of geospatial data and geographic information systems (GIS) or are just starting out, we can connect you to experts and services to support your work. ... Use the digital mapping software we have available at the library, including ArcGIS Pro, ArcGIS Online, QGIS, and others",
-      "sourceUrl": "https://www.lib.umich.edu/research-and-scholarship/data-services/geospatial-data-and-mapping/",
-      "sourceTitle": "Geospatial Data and Mapping | University of Michigan Library",
-      "themes": [
-        "gis-mapping",
-        "data-science",
-        "computer-science"
-      ],
-      "commonness": "rare",
-      "commonnessReason": "",
-      "people": [],
-      "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
-      "verification": {
-        "status": "verified",
-        "checkedAt": "2026-11-05T16:25:06.692Z"
+        "checkedAt": "2026-11-06T16:31:07.689Z"
       }
     },
     {
       "id": "umich:institute-for-advanced-construction-futu:d33c82",
       "schoolId": "umich",
-      "unitIds": [
-        "taubman"
-      ],
+      "unitIds": [],
       "kind": "center",
       "title": "Institute for Advanced Construction Futures",
       "nameOnPage": "Institute for Advanced Construction Futures",
@@ -110,13 +80,12 @@
         "cities"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:06.612Z"
+        "checkedAt": "2026-11-06T16:31:07.686Z"
       }
     },
     {
@@ -141,10 +110,10 @@
       "commonnessReason": "Runs the university-wide arts programs many applicants encounter.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:06.606Z"
+        "checkedAt": "2026-11-06T16:31:07.658Z"
       }
     },
     {
@@ -172,10 +141,10 @@
         "T. Finholt"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:06.702Z"
+        "checkedAt": "2026-11-06T16:31:07.618Z"
       }
     },
     {
@@ -200,19 +169,17 @@
         "cities",
         "architecture",
         "transportation",
-        "ecology",
-        "business"
+        "ecology"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [
         "Jen Maigret"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:06.761Z"
+        "checkedAt": "2026-11-06T16:31:07.893Z"
       }
     },
     {
@@ -242,10 +209,10 @@
         "Gus Wendel"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:06.900Z"
+        "checkedAt": "2026-11-06T16:31:07.879Z"
       }
     },
     {
@@ -274,10 +241,10 @@
         "Scott Campbell"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:07.011Z"
+        "checkedAt": "2026-11-06T16:31:07.906Z"
       }
     },
     {
@@ -304,10 +271,10 @@
         "Philip D’Anieri"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:07.149Z"
+        "checkedAt": "2026-11-06T16:31:08.013Z"
       }
     },
     {
@@ -337,10 +304,10 @@
         "Chanel Beebe"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:07.160Z"
+        "checkedAt": "2026-11-06T16:31:08.034Z"
       }
     },
     {
@@ -370,10 +337,10 @@
         "Wonyoung So"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:07.217Z"
+        "checkedAt": "2026-11-06T16:31:08.303Z"
       }
     },
     {
@@ -402,10 +369,10 @@
         "Violet Whitney"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:07.421Z"
+        "checkedAt": "2026-11-06T16:31:08.336Z"
       }
     },
     {
@@ -436,10 +403,10 @@
         "Sheng-Hung Lee"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:07.445Z"
+        "checkedAt": "2026-11-06T16:31:08.647Z"
       }
     },
     {
@@ -471,10 +438,10 @@
         "Ron Bronson"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:07.783Z"
+        "checkedAt": "2026-11-06T16:31:08.999Z"
       }
     },
     {
@@ -504,10 +471,10 @@
         "Joe Grengs"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:08.194Z"
+        "checkedAt": "2026-11-06T16:31:09.352Z"
       }
     },
     {
@@ -529,19 +496,17 @@
         "civic-tech",
         "gis-mapping",
         "cities",
-        "business",
         "interdisciplinary"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [
         "Xiaofan Liang"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:08.478Z"
+        "checkedAt": "2026-11-06T16:31:09.698Z"
       }
     },
     {
@@ -554,7 +519,7 @@
       "title": "UT 439: Urban AI",
       "nameOnPage": "Urban AI",
       "summary": "A course on AI in urban contexts covering machine learning basics, language models, AI governance, ethics, and environmental costs, with weekly programming labs and student projects.",
-      "hook": "pairs lectures on AI in cities and its governance with weekly programming labs and an own-choice project",
+      "hook": "pairs weekly lectures on AI in cities, its governance, and its costs with programming labs and student-led projects",
       "quote": "Topics include GenAI tools, basics of machine learning, natural language processing, and large language models, AI applications in urban contexts, AI governance, ethics, and environmental costs, and human-in-the-loop AI. The course is structured with weekly lectures and programming-based technical labs. Students will have opportunities to develop their own projects.",
       "sourceUrl": "https://taubmancollege.umich.edu/course/ut439-urban-ai-section-1-winter-2027/",
       "sourceTitle": "UT 439 Section 1 - Urban AI - Winter 2027 - Taubman College",
@@ -566,15 +531,14 @@
         "political-science"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [
         "Xiaofan Liang"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:08.831Z"
+        "checkedAt": "2026-11-06T16:31:10.051Z"
       }
     },
     {
@@ -601,10 +565,10 @@
       "commonnessReason": "Listed among Taubman College's featured facilities.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:09.213Z"
+        "checkedAt": "2026-11-06T16:31:10.397Z"
       }
     },
     {
@@ -630,10 +594,10 @@
       "commonnessReason": "A widely publicized engineering building.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:10.939Z"
+        "checkedAt": "2026-11-06T16:31:11.105Z"
       }
     },
     {
@@ -658,10 +622,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:09.884Z"
+        "checkedAt": "2026-11-06T16:31:11.099Z"
       }
     },
     {
@@ -671,7 +635,7 @@
       "kind": "facility",
       "title": "Montgomery Sheet Music Collection",
       "nameOnPage": "Montgomery Sheet Music Collection",
-      "summary": "A U-M Library collection of more than 20,000 pieces of sheet music from 1900 to 1950, assembled by a jazz and ragtime pianist and including works by Duke Ellington and Fats Waller.",
+      "summary": "A U-M Library collection of more than 20,000 pieces of sheet music, mostly from 1900 to 1950, assembled by a jazz and ragtime pianist and including works by Duke Ellington and Fats Waller.",
       "hook": "holds early 20th-century sheet music by composers such as Duke Ellington and Fats Waller",
       "quote": "Assembled by Michael Montgomery, a jazz and ragtime pianist, sheet music collector, and U-M alum, the Montgomery Sheet Music Collection contains more than 20,000 pieces dating primarily from 1900 to 1950. ... Duke Ellington, Fats Waller, Eubie Blake, W. C. Handy, James P. Johnson, Shelton Brooks, Chris Smith, and Gussie Davis are among those represented.",
       "sourceUrl": "https://www.lib.umich.edu/collections/collecting-areas/special-collections/music-library-special-collections/montgomery-sheet/",
@@ -681,14 +645,14 @@
         "music",
         "history"
       ],
-      "commonness": "rare",
-      "commonnessReason": "",
+      "commonness": "moderate",
+      "commonnessReason": "A specialized library collection.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:10.232Z"
+        "checkedAt": "2026-11-06T16:31:11.713Z"
       }
     },
     {
@@ -712,10 +676,10 @@
       "commonnessReason": "The library's main makerspace, open to all students.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:10.436Z"
+        "checkedAt": "2026-11-06T16:31:11.721Z"
       }
     },
     {
@@ -744,10 +708,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:10.591Z"
+        "checkedAt": "2026-11-06T16:31:11.797Z"
       }
     },
     {
@@ -777,10 +741,10 @@
         "Ana Paula Pimentel Walker"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:10.757Z"
+        "checkedAt": "2026-11-06T16:31:12.059Z"
       }
     },
     {
@@ -810,10 +774,10 @@
         "Larissa Larsen"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:10.932Z"
+        "checkedAt": "2026-11-06T16:31:12.159Z"
       }
     },
     {
@@ -841,14 +805,14 @@
         "Robert Goodspeed"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:11.004Z"
+        "checkedAt": "2026-11-06T16:31:12.401Z"
       }
     },
     {
-      "id": "umich:wonyoung-so:33fbc1",
+      "id": "umich:wonyoung-so:21dbf3",
       "schoolId": "umich",
       "unitIds": [
         "taubman"
@@ -858,25 +822,22 @@
       "nameOnPage": "Wonyoung So",
       "summary": "An assistant professor of urban technology who directs the Reparative Technology Lab and uses critical data studies and data visualization to study housing and access to opportunity.",
       "hook": "uses data visualization and critical data studies to examine housing and access to opportunity",
-      "quote": "Wonyoung So is an assistant professor of urban technology and director of the Reparative Technology Lab. He works at the intersection of urban planning, critical data studies, and data visualization to study how access to resources and opportunities — over space and place — is mediated by data and technology, with a focus on housing and translating scholarly research into public impact that promotes democratic participation by marginalized residents.",
+      "quote": "Wonyoung So is an assistant professor of urban technology and director of the Reparative Technology Lab. He works at the intersection of urban planning, critical data studies, and data visualization to study how access to resources and opportunities — over space and place — is mediated by data and technology, with a focus on housing",
       "sourceUrl": "https://taubmancollege.umich.edu/faculty/directory/wonyoung-so/",
       "sourceTitle": "Wonyoung So - Taubman College",
       "themes": [
         "data-science",
-        "cities",
-        "social-justice",
-        "language-access"
+        "cities"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [
         "Wonyoung So"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:11.285Z"
+        "checkedAt": "2026-11-06T16:31:12.500Z"
       }
     },
     {
@@ -907,10 +868,10 @@
         "Xiaofan Liang"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:11.634Z"
+        "checkedAt": "2026-11-06T16:31:12.850Z"
       }
     },
     {
@@ -932,19 +893,17 @@
         "information",
         "medicine",
         "mental-health",
-        "community-engagement",
-        "business"
+        "community-engagement"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [
         "Tiffany Veinot"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:06.762Z"
+        "checkedAt": "2026-11-06T16:31:07.575Z"
       }
     },
     {
@@ -975,10 +934,10 @@
         "Robert Adams"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:11.981Z"
+        "checkedAt": "2026-11-06T16:31:13.200Z"
       }
     },
     {
@@ -1011,10 +970,10 @@
         "Ana Paula Pimentel Walker"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:12.342Z"
+        "checkedAt": "2026-11-06T16:31:13.565Z"
       }
     },
     {
@@ -1025,7 +984,7 @@
       ],
       "kind": "lab",
       "title": "Urban Technology Research Cluster",
-      "nameOnPage": "Urban Technology",
+      "nameOnPage": "Urban Technology Research Cluster",
       "summary": "A Taubman research cluster that applies digital tools, data analytics, and human-centered design to urban problems, including civic technologies for access, accountability, and participation.",
       "hook": "applies data analytics and human-centered design to city problems, including civic technology",
       "quote": "Urban Technology focuses on the intersection of technology, design and cities. The cluster applies digital tools, data analytics, and human-centered design to improve urban functionality, sustainability, and quality of life. ... Building civic technologies that improve access, accountability, and public participation.",
@@ -1040,7 +999,6 @@
         "sustainability"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [
         "Bryan Boyer",
         "Ron Bronson",
@@ -1051,10 +1009,10 @@
         "Matthew Wizinsky"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:12.771Z"
+        "checkedAt": "2026-11-06T16:31:13.903Z"
       }
     },
     {
@@ -1089,10 +1047,10 @@
         "María Arquero de Alarcón"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:13.034Z"
+        "checkedAt": "2026-11-06T16:31:14.254Z"
       }
     },
     {
@@ -1101,7 +1059,7 @@
       "unitIds": [],
       "kind": "location",
       "title": "Ann Arbor bike lane network",
-      "nameOnPage": "Ann Arbor",
+      "nameOnPage": "network of bike lanes",
       "summary": "Ann Arbor is described as one of America's top bike-friendly communities, with an expanding network of bike lanes, pedestrian-friendly streets, and growing EV infrastructure.",
       "hook": "puts students in a bike-friendly city with an expanding network of bike lanes",
       "quote": "Ann Arbor has earned its place among America’s top bike-friendly communities with an extensive, ever-expanding network of bike lanes. Pedestrian-friendly streets promote an active lifestyle and sustainable mobility, along with a growing infrastructure for electric vehicles (EVs) and other modes of transportation reflect a commitment to reducing carbon footprints.",
@@ -1119,10 +1077,10 @@
       "commonnessReason": "Ann Arbor's livability is a familiar theme in Michigan essays.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:13.396Z"
+        "checkedAt": "2026-11-06T16:31:14.625Z"
       }
     },
     {
@@ -1133,7 +1091,7 @@
       ],
       "kind": "location",
       "title": "Detroit and Chicago study visits",
-      "nameOnPage": "Detroit and Chicago",
+      "nameOnPage": "regional centers like Detroit and Chicago",
       "summary": "Urban Technology students study and visit regional centers such as Detroit and Chicago and compare them with global metropolises.",
       "hook": "takes Urban Technology students to study Detroit and Chicago firsthand",
       "quote": "Build a strong foundation in how cities work to better recognize urban challenges and tackle them with sharper insight and greater creativity. Students study and visit regional centers like Detroit and Chicago, while comparing and contrasting them with global metropolises.",
@@ -1144,13 +1102,12 @@
         "global"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:13.743Z"
+        "checkedAt": "2026-11-06T16:31:14.959Z"
       }
     },
     {
@@ -1174,10 +1131,10 @@
       "commonnessReason": "The Huron River is a familiar Ann Arbor landmark.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:13.396Z"
+        "checkedAt": "2026-11-06T16:31:14.625Z"
       }
     },
     {
@@ -1189,7 +1146,7 @@
       "kind": "location",
       "title": "Michigan Great Lakes Coastal Program",
       "nameOnPage": "Michigan Great Lakes Coastal Program",
-      "summary": "Training developed through the Michigan Great Lakes Coastal Program to help Michigan's Great Lakes coastal communities plan and manage their coastal lands.",
+      "summary": "A Water, Infrastructure, and Coastal Resilience cluster project developing training that encourages Michigan's Great Lakes coastal communities to plan and manage their coastal lands.",
       "hook": "develops shoreline-planning training for Michigan's Great Lakes coastal communities",
       "quote": "Developing training to encourage and help Michigan great lakes coastal communities to pay attention to coastal short lands and plan and manage them, through the Michigan Great Lakes Coastal Program.",
       "sourceUrl": "https://taubmancollege.umich.edu/research/clusters-and-labs/water/",
@@ -1198,18 +1155,18 @@
         "water",
         "cities",
         "environmental-policy",
-        "marine"
+        "marine",
+        "civil-engineering"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [
         "Richard Norton"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:13.034Z"
+        "checkedAt": "2026-11-06T16:31:14.254Z"
       }
     },
     {
@@ -1237,24 +1194,28 @@
         "Robert Goodspeed"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:12.771Z"
+        "checkedAt": "2026-11-06T16:31:13.903Z"
       }
     },
     {
-      "id": "umich:architecture-minor:6f88e6",
+      "id": "umich:architecture-minor:6b3452",
       "schoolId": "umich",
       "unitIds": [
-        "taubman"
+        "lsa",
+        "stamps",
+        "ross",
+        "taubman",
+        "engineering"
       ],
       "kind": "major",
       "title": "Architecture Minor",
       "nameOnPage": "Architecture Minor",
-      "summary": "A 15-credit Taubman minor open to Urban Technology students that starts with ARCH 212, an introductory architecture course designed for non-majors.",
-      "hook": "lets Urban Technology students add an architecture minor that begins with a course built for non-majors",
-      "quote": "The Architecture Minor is currently open to undergraduate students enrolled in the College of Literature, Science, and the Arts (LSA), Stamps School of Art & Design, Ross School of Business, and Taubman College (Urban Technology). ... The 15-credit architecture minor contains a core introductory course, ARCH 212, designed specifically for non-majors",
+      "summary": "A 15-credit architecture minor open to LSA, Stamps, Ross, and Urban Technology students (and to Engineering students from Winter 2027), built around ARCH 212, an introduction designed for non-majors.",
+      "hook": "lets non-architecture majors add a 15-credit architecture minor that starts with a course built for them",
+      "quote": "The Architecture Minor is currently open to undergraduate students enrolled in the College of Literature, Science, and the Arts (LSA), Stamps School of Art & Design, Ross School of Business, and Taubman College (Urban Technology). College of Engineering students may declare the minor effective Winter 2027. ... The 15-credit architecture minor contains a core introductory course, ARCH 212, designed specifically for non-majors",
       "sourceUrl": "https://taubmancollege.umich.edu/academics/architecture/architecture-minor/",
       "sourceTitle": "Architecture Minor - Taubman College",
       "themes": [
@@ -1265,13 +1226,12 @@
         "business"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:14.791Z"
+        "checkedAt": "2026-11-06T16:31:16.000Z"
       }
     },
     {
@@ -1302,10 +1262,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:15.141Z"
+        "checkedAt": "2026-11-06T16:31:16.363Z"
       }
     },
     {
@@ -1334,41 +1294,45 @@
       "commonnessReason": "The degree itself; every Urban Technology applicant names it.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:13.743Z"
+        "checkedAt": "2026-11-06T16:31:14.959Z"
       }
     },
     {
-      "id": "umich:real-estate-development-minor:203b20",
+      "id": "umich:real-estate-development-minor:009aa1",
       "schoolId": "umich",
       "unitIds": [
-        "taubman"
+        "taubman",
+        "ross",
+        "lsa",
+        "stamps",
+        "smtd",
+        "engineering",
+        "si"
       ],
       "kind": "major",
       "title": "Real Estate Development Minor",
       "nameOnPage": "Real Estate Development Minor",
-      "summary": "A minor drawing on faculty from Taubman, Ross, and Kinesiology that lets undergraduates in many fields add real estate development and the built environment to their major.",
-      "hook": "adds real estate development and the built environment to a student's major",
-      "quote": "A minor in real estate development empowers undergraduate students in many fields to supplement their major areas of study with broad knowledge about improving metropolitan developments. ... With faculty expertise from Taubman College of Architecture and Urban Planning, the Ross School of Business, and the School of Kinesiology, this program offers a progressive approach to developing real estate and the built environment in the U.S. and worldwide.",
+      "summary": "A 15-credit minor that lets undergraduates in many fields add knowledge about improving metropolitan developments and integrate disciplines to shape sustainable places.",
+      "hook": "lets students in many majors add real estate development and the shaping of sustainable places",
+      "quote": "A minor in real estate development empowers undergraduate students in many fields to supplement their major areas of study with broad knowledge about improving metropolitan developments. ... This 15-credit minor guides students in integrating disciplines to shape sustainable places",
       "sourceUrl": "https://taubmancollege.umich.edu/academics/urban-and-regional-planning/real-estate-development-minor/",
       "sourceTitle": "Real Estate Development Minor - Taubman College",
       "themes": [
         "cities",
         "business",
         "architecture",
-        "kinesiology",
-        "visual-arts"
+        "sustainability"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:15.491Z"
+        "checkedAt": "2026-11-06T16:31:16.695Z"
       }
     },
     {
@@ -1395,10 +1359,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:15.491Z"
+        "checkedAt": "2026-11-06T16:31:16.695Z"
       }
     },
     {
@@ -1422,48 +1386,22 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:15.542Z"
+        "checkedAt": "2026-11-06T16:31:16.843Z"
       }
     },
     {
-      "id": "umich:blue-bop-jazz-orchestra:30e322",
-      "schoolId": "umich",
-      "unitIds": [],
-      "kind": "organization",
-      "title": "Blue Bop Jazz Orchestra",
-      "nameOnPage": "Blue Bop Jazz Orchestra",
-      "summary": "Blue Bop Jazz Orchestra is listed in the U-M Arts Initiative's Student Arts Org Directory.",
-      "hook": "appears in U-M's Student Arts Org Directory as a student jazz orchestra",
-      "quote": "Blue Bop Jazz Orchestra ... Student Arts Org Directory",
-      "sourceUrl": "https://arts.umich.edu/sao/6409952492427187631",
-      "sourceTitle": "Blue Bop Jazz Orchestra — Michigan Arts",
-      "themes": [
-        "jazz",
-        "music"
-      ],
-      "commonness": "rare",
-      "commonnessReason": "",
-      "people": [],
-      "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
-      "verification": {
-        "status": "verified",
-        "checkedAt": "2026-11-05T16:25:15.649Z"
-      }
-    },
-    {
-      "id": "umich:bluelab-metro:91cf40",
+      "id": "umich:bluelab-metro:79e44e",
       "schoolId": "umich",
       "unitIds": [],
       "kind": "organization",
       "title": "BLUElab Metro",
       "nameOnPage": "BLUElab Metro",
-      "summary": "A BLUElab team building a smart irrigation system for two local community gardens and farms that monitors soil and weather conditions to optimize watering.",
-      "hook": "designs a soil- and weather-monitoring irrigation control system with local community farms",
-      "quote": "This year we are working on our smart water irrigation system for both the Apple Ridge Community Gardens in Ypsilanti and Clay Hill Community Farm and Garden in Superior Township. By monitoring the soil and weather conditions, and researching each plant's watering needs, we are designing a control system that optimizes the watering process.",
+      "summary": "A BLUElab student team designing a smart irrigation system for the Apple Ridge Community Gardens in Ypsilanti and Clay Hill Community Farm and Garden that monitors soil and weather to optimize watering.",
+      "hook": "designs a soil- and weather-monitoring irrigation control system for local community gardens",
+      "quote": "our smart water irrigation system for both the Apple Ridge Community Gardens in Ypsilanti and Clay Hill Community Farm and Garden ... By monitoring the soil and weather conditions, and researching each plant's watering needs, we are designing a control system that optimizes the watering process.",
       "sourceUrl": "https://bluelab.engin.umich.edu/bluelab-metro.html",
       "sourceTitle": "BLUElab Metro",
       "themes": [
@@ -1471,43 +1409,15 @@
         "sensors",
         "agriculture",
         "community-engagement",
-        "engineering-design",
-        "political-science"
+        "engineering-design"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:16.293Z"
-      }
-    },
-    {
-      "id": "umich:michigan-backpacking-club:30c775",
-      "schoolId": "umich",
-      "unitIds": [],
-      "kind": "organization",
-      "title": "Michigan Backpacking Club",
-      "nameOnPage": "Michigan Backpacking Club",
-      "summary": "Planet Blue lists the Michigan Backpacking Club among U-M's more than 100 sustainability-focused student organizations.",
-      "hook": "appears on Planet Blue's list of sustainability-focused student organizations",
-      "quote": "Check out the list below of the 100+ sustainability-focused student organizations on campus. ... Michigan Backpacking Club",
-      "sourceUrl": "https://planetblue.umich.edu/campus/get-involved/for-students/student-orgs/",
-      "sourceTitle": "Student Organizations | Planet Blue",
-      "themes": [
-        "outdoors",
-        "sustainability"
-      ],
-      "commonness": "rare",
-      "commonnessReason": "",
-      "people": [],
-      "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
-      "verification": {
-        "status": "verified",
-        "checkedAt": "2026-11-05T16:25:16.262Z"
+        "checkedAt": "2026-11-06T16:31:17.413Z"
       }
     },
     {
@@ -1532,10 +1442,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:15.542Z"
+        "checkedAt": "2026-11-06T16:31:16.843Z"
       }
     },
     {
@@ -1561,10 +1471,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:15.949Z"
+        "checkedAt": "2026-11-06T16:31:17.025Z"
       }
     },
     {
@@ -1587,10 +1497,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:15.542Z"
+        "checkedAt": "2026-11-06T16:31:16.843Z"
       }
     },
     {
@@ -1609,17 +1519,15 @@
         "robotics",
         "sensors",
         "marine",
-        "transportation",
-        "business"
+        "transportation"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:15.949Z"
+        "checkedAt": "2026-11-06T16:31:17.025Z"
       }
     },
     {
@@ -1643,20 +1551,18 @@
       "commonnessReason": "One of U-M's best-known student teams, often cited by engineering applicants.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:16.593Z"
+        "checkedAt": "2026-11-06T16:31:17.643Z"
       }
     },
     {
-      "id": "umich:urb-consulting:c379a2",
+      "id": "umich:urban-technology-consulting-club-urb-con:c379a2",
       "schoolId": "umich",
-      "unitIds": [
-        "taubman"
-      ],
+      "unitIds": [],
       "kind": "organization",
-      "title": "URB Consulting",
+      "title": "Urban Technology Consulting Club (URB Consulting)",
       "nameOnPage": "URB Consulting",
       "summary": "An interdisciplinary student consulting club that takes on real client projects for organizations doing technology-driven work in cities and the built environment.",
       "hook": "lets students consult for real clients doing technology-driven work in cities",
@@ -1670,13 +1576,12 @@
         "interdisciplinary"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:16.168Z"
+        "checkedAt": "2026-11-06T16:31:17.118Z"
       }
     },
     {
@@ -1700,10 +1605,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:16.168Z"
+        "checkedAt": "2026-11-06T16:31:17.118Z"
       }
     },
     {
@@ -1713,7 +1618,7 @@
       "kind": "organization",
       "title": "Woven Wind",
       "nameOnPage": "Woven Wind",
-      "summary": "A BLUElab student team designing a portable wind turbine and running outreach that teaches kids about engineering and renewable energy in Southeast Michigan.",
+      "summary": "A BLUElab student team designing a portable wind turbine to travel throughout Southeast Michigan, paired with educational outreach that teaches kids about engineering and renewable energy.",
       "hook": "builds a portable wind turbine and teaches kids about engineering and renewable energy",
       "quote": "Woven Wind is focused on building a portable wind turbine for schools and communities in tandem with educational outreach designed to teach kids about engineering and renewable energy. Our team is currently designing a portable wind turbine to travel throughout Southeast Michigan and beyond.",
       "sourceUrl": "https://bluelab.engin.umich.edu/woven-wind.html",
@@ -1722,17 +1627,42 @@
         "energy",
         "youth",
         "education",
-        "engineering-design",
-        "running"
+        "engineering-design"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:16.526Z"
+        "checkedAt": "2026-11-06T16:31:17.523Z"
+      }
+    },
+    {
+      "id": "umich:arts-honors-cords:0c03e6",
+      "schoolId": "umich",
+      "unitIds": [],
+      "kind": "program",
+      "title": "Arts Honors Cords",
+      "nameOnPage": "Arts Honors Cord",
+      "summary": "Magenta Arts Honors Cords recognize U-M students who earn at least fifteen points through arts activities, courses, programs, and jobs during their time at Michigan.",
+      "hook": "awards magenta graduation cords to students who earn fifteen points through arts activities",
+      "quote": "These magenta cords recognize students who meaningfully integrated the arts into their University of Michigan experience to learn & grow as creatives, leaders, and people. ... To be accepted into the Excellence in Arts Honors Cord program, U-M students must participate in a variety of arts and creative activities, courses, programs, internships, jobs, or academic minors or majors during their period of study at the University of Michigan. A minimum of fifteen points must be earned to qualify.",
+      "sourceUrl": "https://arts.umich.edu/honors",
+      "sourceTitle": "Arts Honors Cord — Michigan Arts",
+      "themes": [
+        "visual-arts",
+        "music",
+        "theater",
+        "career"
+      ],
+      "commonness": "rare",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:31:17.743Z"
       }
     },
     {
@@ -1757,10 +1687,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:16.537Z"
+        "checkedAt": "2026-11-06T16:31:18.216Z"
       }
     },
     {
@@ -1783,10 +1713,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:16.564Z"
+        "checkedAt": "2026-11-06T16:31:18.067Z"
       }
     },
     {
@@ -1811,10 +1741,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:17.022Z"
+        "checkedAt": "2026-11-06T16:31:18.597Z"
       }
     },
     {
@@ -1840,10 +1770,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:16.763Z"
+        "checkedAt": "2026-11-06T16:31:18.101Z"
       }
     },
     {
@@ -1869,10 +1799,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:16.802Z"
+        "checkedAt": "2026-11-06T16:31:18.115Z"
       }
     },
     {
@@ -1897,10 +1827,10 @@
       "commonnessReason": "Featured on Taubman College's student travel pages.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:16.852Z"
+        "checkedAt": "2026-11-06T16:31:18.213Z"
       }
     },
     {
@@ -1926,10 +1856,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:16.876Z"
+        "checkedAt": "2026-11-06T16:31:18.235Z"
       }
     },
     {
@@ -1940,7 +1870,7 @@
       ],
       "kind": "program",
       "title": "UMSI Study Abroad",
-      "nameOnPage": "Study abroad",
+      "nameOnPage": "10 study abroad programs",
       "summary": "UMSI runs 10 study abroad programs with partner universities, including Amsterdam, where coursework can focus on urban interaction design, virtual reality, or big data.",
       "hook": "sends information students abroad, including to Amsterdam for urban interaction design",
       "quote": "UMSI hosts 10 study abroad programs in partnership with universities around the world. ... At the Amsterdam University of Applied Sciences, you’ll choose a thematic focus for your coursework — from urban interaction design to virtual reality to big data — and collaborate with local organizations to solve real challenges.",
@@ -1954,13 +1884,12 @@
         "data-science"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:16.895Z"
+        "checkedAt": "2026-11-06T16:31:18.259Z"
       }
     },
     {
@@ -1982,10 +1911,10 @@
       "commonnessReason": "U-M's best-known undergraduate research program; many applicants cite it.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:16.763Z"
+        "checkedAt": "2026-11-06T16:31:18.101Z"
       }
     },
     {
@@ -2013,10 +1942,10 @@
         "Lisa Sauvé"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:16.895Z"
+        "checkedAt": "2026-11-06T16:31:18.362Z"
       }
     },
     {
@@ -2028,8 +1957,8 @@
       "kind": "program",
       "title": "Voices in Civic Belonging",
       "nameOnPage": "Voices in Civic Belonging",
-      "summary": "A U-M initiative led by social work and planning faculty to strengthen civic engagement in Michigan's immigrant and refugee communities, including a statewide training program for leaders.",
-      "hook": "works with Michigan immigrant and refugee communities on civic engagement and leadership training",
+      "summary": "A new U-M initiative led by social work and planning faculty to strengthen civic engagement in Michigan's immigrant and refugee communities; planned activities include a statewide training program for leaders.",
+      "hook": "aims to strengthen civic engagement among Michigan's immigrant and refugee communities, including planned leadership training",
       "quote": "Voices in Civic Belonging: Strengthening Immigrant and Refugee Engagement in Michigan is led by Odessa Gonzalez Benson, associate professor of social work and urban and regional planning, and Ana Paula Pimentel Walker, associate professor of urban and regional planning. ... Activities will include engaging community stakeholders, collecting data, developing educational and capacity-building programs, implementing a statewide training program for immigrant and refugee leaders, and evaluating the program’s impact.",
       "sourceUrl": "https://taubmancollege.umich.edu/news/2026/08/27/new-gonzalez-benson-and-pimentel-walker-initiative-aims-to-strengthen-civic-engagement-among-immigrant-and-refugee-communities/",
       "sourceTitle": "New Gonzalez Benson and Pimentel Walker initiative aims to strengthen civic engagement among immigrant and refugee communities - Taubman College",
@@ -2042,16 +1971,15 @@
         "leadership"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [
         "Odessa Gonzalez Benson",
         "Ana Paula Pimentel Walker"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:17.184Z"
+        "checkedAt": "2026-11-06T16:31:18.457Z"
       }
     },
     {
@@ -2076,38 +2004,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:17.244Z"
-      }
-    },
-    {
-      "id": "umich:arts-honors-cords:0c03e6",
-      "schoolId": "umich",
-      "unitIds": [],
-      "kind": "tradition",
-      "title": "Arts Honors Cords",
-      "nameOnPage": "Arts Honors Cord",
-      "summary": "Magenta Arts Honors Cords recognize U-M students who earn at least fifteen points through arts activities, courses, programs, and jobs during their time at Michigan.",
-      "hook": "awards magenta graduation cords to students who earn fifteen points through arts activities",
-      "quote": "These magenta cords recognize students who meaningfully integrated the arts into their University of Michigan experience to learn & grow as creatives, leaders, and people. ... To be accepted into the Excellence in Arts Honors Cord program, U-M students must participate in a variety of arts and creative activities, courses, programs, internships, jobs, or academic minors or majors during their period of study at the University of Michigan. A minimum of fifteen points must be earned to qualify.",
-      "sourceUrl": "https://arts.umich.edu/honors",
-      "sourceTitle": "Arts Honors Cord — Michigan Arts",
-      "themes": [
-        "visual-arts",
-        "music",
-        "theater",
-        "career"
-      ],
-      "commonness": "rare",
-      "commonnessReason": "",
-      "people": [],
-      "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
-      "verification": {
-        "status": "verified",
-        "checkedAt": "2026-11-05T16:25:17.253Z"
+        "checkedAt": "2026-11-06T16:31:18.579Z"
       }
     },
     {
@@ -2130,10 +2030,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:17.386Z"
+        "checkedAt": "2026-11-06T16:31:18.714Z"
       }
     },
     {
@@ -2146,7 +2046,7 @@
       "title": "Student Show Exhibition",
       "nameOnPage": "Student Show Exhibition",
       "summary": "Taubman College's annual Student Show Exhibition displays faculty-selected studio projects from the fall, and undergraduate and graduate students compete for awards.",
-      "hook": "puts the best fall studio work on display and in competition for awards each year",
+      "hook": "puts faculty-selected fall studio projects on display each year, with students competing for awards",
       "quote": "Graduate and undergraduates may also compete for awards in the annual Student Show Exhibition, a gallery of faculty-selected projects representing the best of the student work created in the fall studios.",
       "sourceUrl": "https://taubmancollege.umich.edu/students/awards/",
       "sourceTitle": "Student Awards - Taubman College",
@@ -2159,10 +2059,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:25:17.582Z"
+        "checkedAt": "2026-11-06T16:31:18.805Z"
       }
     }
   ]

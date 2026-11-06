@@ -59,7 +59,7 @@
       },
       "sourceUrl": "https://admissions.dartmouth.edu/glossary-term/writing-supplement",
       "verifiedAt": null,
-      "note": "Question 1 of the Class of 2031 writing supplement; required of all applicants, 100 words or fewer. The official page (marked Updated July 22, 2026) could not be read from this environment on 2026-11-05: fetch-text reports the TLS chain cannot be validated and WebFetch returned HTTP 503. Wording comes from WebSearch results for the official page and matches two independent reproductions of it."
+      "note": "Question 1 of the Class of 2031 writing supplement; required of all applicants, 100 words or fewer. The official page (marked Updated July 22, 2026) could not be read from this environment on 2026-11-05: fetch-text reports the TLS chain cannot be validated and WebFetch returned HTTP 503. Wording comes from WebSearch results for the official page and matches two independent reproductions of it. Re-checked 2026-11-06: fetch-text still cannot validate the TLS chain and WebFetch still returns HTTP 503, so the text remains unconfirmed on the official page."
     },
     {
       "id": "dartmouth-2026-q2a",
@@ -74,7 +74,7 @@
       },
       "sourceUrl": "https://admissions.dartmouth.edu/glossary-term/writing-supplement",
       "verifiedAt": null,
-      "note": "Question 2 is required: choose Option A or Option B and respond in 250 words or fewer. Not confirmed on the official page from this environment (TLS failure for fetch-text, HTTP 503 for WebFetch on 2026-11-05); text matches WebSearch results for the official page and two independent reproductions of it."
+      "note": "Question 2 is required: choose Option A or Option B and respond in 250 words or fewer. Not confirmed on the official page from this environment (TLS failure for fetch-text, HTTP 503 for WebFetch on 2026-11-05); text matches WebSearch results for the official page and two independent reproductions of it. Re-checked 2026-11-06: fetch-text still cannot validate the TLS chain and WebFetch still returns HTTP 503, so the text remains unconfirmed on the official page."
     },
     {
       "id": "dartmouth-2026-q2b",
@@ -89,7 +89,7 @@
       },
       "sourceUrl": "https://admissions.dartmouth.edu/glossary-term/writing-supplement",
       "verifiedAt": null,
-      "note": "Question 2 is required: choose Option A or Option B and respond in 250 words or fewer. Not confirmed on the official page from this environment (TLS failure for fetch-text, HTTP 503 for WebFetch on 2026-11-05); text matches two independent reproductions of the official page."
+      "note": "Question 2 is required: choose Option A or Option B and respond in 250 words or fewer. Not confirmed on the official page from this environment (TLS failure for fetch-text, HTTP 503 for WebFetch on 2026-11-05); text matches two independent reproductions of the official page. Re-checked 2026-11-06: fetch-text still cannot validate the TLS chain and WebFetch still returns HTTP 503, so the text remains unconfirmed on the official page."
     },
     {
       "id": "dartmouth-2026-q3a",
@@ -104,7 +104,7 @@
       },
       "sourceUrl": "https://admissions.dartmouth.edu/glossary-term/writing-supplement",
       "verifiedAt": null,
-      "note": "Question 3 is required: choose one of six prompts (A-F) and respond in 250 words or fewer. Not confirmed on the official page from this environment (TLS failure for fetch-text, HTTP 503 for WebFetch on 2026-11-05); text matches WebSearch results for the official page and two independent reproductions of it."
+      "note": "Question 3 is required: choose one of six prompts (A-F) and respond in 250 words or fewer. Not confirmed on the official page from this environment (TLS failure for fetch-text, HTTP 503 for WebFetch on 2026-11-05); text matches WebSearch results for the official page and two independent reproductions of it. Re-checked 2026-11-06: fetch-text still cannot validate the TLS chain and WebFetch still returns HTTP 503, so the text remains unconfirmed on the official page."
     },
     {
       "id": "dartmouth-2026-q3b",
@@ -119,7 +119,7 @@
       },
       "sourceUrl": "https://admissions.dartmouth.edu/glossary-term/writing-supplement",
       "verifiedAt": null,
-      "note": "Question 3 is required: choose one of six prompts (A-F) and respond in 250 words or fewer. Not confirmed on the official page from this environment (TLS failure for fetch-text, HTTP 503 for WebFetch on 2026-11-05); text matches two independent reproductions of the official page, which differ only in using dashes or commas around 'or are you already making'."
+      "note": "Question 3 is required: choose one of six prompts (A-F) and respond in 250 words or fewer. Not confirmed on the official page from this environment (TLS failure for fetch-text, HTTP 503 for WebFetch on 2026-11-05); text matches two independent reproductions of the official page, which differ only in using dashes or commas around 'or are you already making'. Re-checked 2026-11-06: fetch-text still cannot validate the TLS chain and WebFetch still returns HTTP 503, so the text remains unconfirmed on the official page."
     },
     {
       "id": "dartmouth-2026-q3c",
@@ -134,7 +134,7 @@
       },
       "sourceUrl": "https://admissions.dartmouth.edu/glossary-term/writing-supplement",
       "verifiedAt": null,
-      "note": "Question 3 is required: choose one of six prompts (A-F) and respond in 250 words or fewer. Not confirmed on the official page from this environment (TLS failure for fetch-text, HTTP 503 for WebFetch on 2026-11-05); text matches two independent reproductions of the official page."
+      "note": "Question 3 is required: choose one of six prompts (A-F) and respond in 250 words or fewer. Not confirmed on the official page from this environment (TLS failure for fetch-text, HTTP 503 for WebFetch on 2026-11-05); text matches two independent reproductions of the official page. Re-checked 2026-11-06: fetch-text still cannot validate the TLS chain and WebFetch still returns HTTP 503, so the text remains unconfirmed on the official page."
     },
     {
       "id": "dartmouth-2026-q3d",
@@ -149,7 +149,7 @@
       },
       "sourceUrl": "https://admissions.dartmouth.edu/glossary-term/writing-supplement",
       "verifiedAt": null,
-      "note": "Question 3 is required: choose one of six prompts (A-F) and respond in 250 words or fewer. Not confirmed on the official page from this environment (TLS failure for fetch-text, HTTP 503 for WebFetch on 2026-11-05); text matches two independent reproductions of the official page."
+      "note": "Question 3 is required: choose one of six prompts (A-F) and respond in 250 words or fewer. Not confirmed on the official page from this environment (TLS failure for fetch-text, HTTP 503 for WebFetch on 2026-11-05); text matches two independent reproductions of the official page. Re-checked 2026-11-06: fetch-text still cannot validate the TLS chain and WebFetch still returns HTTP 503, so the text remains unconfirmed on the official page."
     },
     {
       "id": "dartmouth-2026-q3e",
@@ -164,7 +164,7 @@
       },
       "sourceUrl": "https://admissions.dartmouth.edu/glossary-term/writing-supplement",
       "verifiedAt": null,
-      "note": "Question 3 is required: choose one of six prompts (A-F) and respond in 250 words or fewer. Not confirmed on the official page from this environment (TLS failure for fetch-text, HTTP 503 for WebFetch on 2026-11-05); text matches WebSearch results for the official page and two independent reproductions of it."
+      "note": "Question 3 is required: choose one of six prompts (A-F) and respond in 250 words or fewer. Not confirmed on the official page from this environment (TLS failure for fetch-text, HTTP 503 for WebFetch on 2026-11-05); text matches WebSearch results for the official page and two independent reproductions of it. Re-checked 2026-11-06: fetch-text still cannot validate the TLS chain and WebFetch still returns HTTP 503, so the text remains unconfirmed on the official page."
     },
     {
       "id": "dartmouth-2026-q3f",
@@ -179,7 +179,7 @@
       },
       "sourceUrl": "https://admissions.dartmouth.edu/glossary-term/writing-supplement",
       "verifiedAt": null,
-      "note": "Question 3 is required: choose one of six prompts (A-F) and respond in 250 words or fewer. Not confirmed on the official page from this environment (TLS failure for fetch-text, HTTP 503 for WebFetch on 2026-11-05); text matches two independent reproductions of the official page."
+      "note": "Question 3 is required: choose one of six prompts (A-F) and respond in 250 words or fewer. Not confirmed on the official page from this environment (TLS failure for fetch-text, HTTP 503 for WebFetch on 2026-11-05); text matches two independent reproductions of the official page. Re-checked 2026-11-06: fetch-text still cannot validate the TLS chain and WebFetch still returns HTTP 503, so the text remains unconfirmed on the official page."
     }
   ],
   "seedUrls": [
@@ -340,7 +340,7 @@
     {
       "host": "admissions.dartmouth.edu",
       "reason": "fetch-text: TLS certificate chain could not be validated; WebFetch returned HTTP 503",
-      "checkedAt": "2026-11-05"
+      "checkedAt": "2026-11-06"
     },
     {
       "host": "outdoors.dartmouth.edu",

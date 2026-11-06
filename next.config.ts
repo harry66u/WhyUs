@@ -11,6 +11,11 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
   // Native/wasm packages that must not be bundled into server chunks.
   serverExternalPackages: ["@electric-sql/pglite", "@react-pdf/renderer", "unpdf"],
+  // Files read at runtime that static analysis cannot see.
+  outputFileTracingIncludes: {
+    "/api/dossiers/[dossierId]/pdf": ["./src/lib/pdf/fonts/**/*"],
+    "/*": ["./drizzle/**/*"],
+  },
   async headers() {
     return [{ source: "/:path*", headers: securityHeaders }];
   },

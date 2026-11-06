@@ -23,10 +23,10 @@
       "commonnessReason": "Dartmouth's main energy institute, familiar to applicants interested in energy.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:02.554Z"
+        "checkedAt": "2026-11-06T16:29:54.311Z"
       }
     },
     {
@@ -49,10 +49,10 @@
       "commonnessReason": "The college's main service and community engagement center.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:02.974Z"
+        "checkedAt": "2026-11-06T16:29:54.804Z"
       }
     },
     {
@@ -73,14 +73,14 @@
         "education",
         "undergraduate-research"
       ],
-      "commonness": "rare",
-      "commonnessReason": "",
+      "commonness": "moderate",
+      "commonnessReason": "A named institute on Dartmouth's main Centers & Institutes page, known to applicants interested in polar studies.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:02.554Z"
+        "checkedAt": "2026-11-06T16:29:54.311Z"
       }
     },
     {
@@ -101,14 +101,14 @@
         "public-policy",
         "education"
       ],
-      "commonness": "moderate",
-      "commonnessReason": "A prominent center that internationally minded applicants often mention.",
+      "commonness": "common",
+      "commonnessReason": "One of Dartmouth's best-known centers; internationally minded applicants often cite it.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:02.537Z"
+        "checkedAt": "2026-11-06T16:29:54.271Z"
       }
     },
     {
@@ -131,10 +131,10 @@
       "commonnessReason": "The college's main entrepreneurship center.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:02.521Z"
+        "checkedAt": "2026-11-06T16:29:54.279Z"
       }
     },
     {
@@ -158,10 +158,10 @@
       "commonnessReason": "A well-known part of Dartmouth's identity and history.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:02.623Z"
+        "checkedAt": "2026-11-06T16:29:54.341Z"
       }
     },
     {
@@ -187,10 +187,10 @@
       "commonnessReason": "One of Dartmouth's best-known centers and a frequent reference in Why Dartmouth essays.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:03.073Z"
+        "checkedAt": "2026-11-06T16:29:54.892Z"
       }
     },
     {
@@ -212,14 +212,14 @@
         "engineering-design",
         "design"
       ],
-      "commonness": "moderate",
+      "commonness": "common",
       "commonnessReason": "The required gateway design course for the engineering major, so engineering applicants often mention it.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:03.390Z"
+        "checkedAt": "2026-11-06T16:29:55.255Z"
       }
     },
     {
@@ -232,8 +232,8 @@
       "kind": "course",
       "title": "ENGS 28: Embedded Systems",
       "nameOnPage": "ENGS 28",
-      "summary": "An engineering course that introduces physical sensors and actuators and how to connect them to a microcontroller, building on hobby-level experience with boards like Arduino.",
-      "hook": "takes students from hobby-level Arduino projects to connecting sensors and actuators to a microcontroller",
+      "summary": "An embedded systems course that introduces physical sensors and actuators and how to connect them to a microcontroller, for students ready to go beyond hobby-level work with boards like Arduino.",
+      "hook": "introduces sensors, actuators, and microcontroller interfacing beyond hobby-level Arduino projects",
       "quote": "Many students have been exposed to the potential of embedded systems at the hobby or maker level through robotics and the boards such as the popular Arduino and are excited to go farther. ... Engs 28 will introduce you to a variety of physical sensors and actuators, and how to connect them to a microcontroller.",
       "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/engineering-sciences/engs-engineering-sciences-undergraduate/engs-28",
       "sourceTitle": "Dartmouth College - ENGS28",
@@ -245,13 +245,12 @@
         "computer-science"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:03.459Z"
+        "checkedAt": "2026-11-06T16:29:55.222Z"
       }
     },
     {
@@ -271,17 +270,15 @@
       "sourceTitle": "Dartmouth College - ENGS37",
       "themes": [
         "environmental-engineering",
-        "water",
-        "design"
+        "water"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:03.816Z"
+        "checkedAt": "2026-11-06T16:29:55.573Z"
       }
     },
     {
@@ -309,10 +306,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:04.160Z"
+        "checkedAt": "2026-11-06T16:29:55.921Z"
       }
     },
     {
@@ -345,10 +342,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:03.089Z"
+        "checkedAt": "2026-11-06T16:29:55.758Z"
       }
     },
     {
@@ -361,7 +358,7 @@
       "kind": "course",
       "title": "ENGS 85.16: Energy and Climate Systems Analysis and Decision Making",
       "nameOnPage": "ENGS 85.16",
-      "summary": "A course on decision analysis and systems modeling for energy systems and climate change mitigation, ending in a real-world case study with local or regional stakeholders.",
+      "summary": "A course on decision analysis and systems modeling for energy systems and climate change mitigation, in which students apply these tools to a real-world case study with local or regional stakeholders.",
       "hook": "applies decision analysis and energy-climate models to a real case study with local or regional stakeholders",
       "quote": "This course introduces the principles of decision analysis and systems modeling, with a focus on energy systems and climate change mitigation applications. ... To bridge theory and practice, students will apply these tools to a real-world case study in partnership with local or regional stakeholders.",
       "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/engineering-sciences/engs-engineering-sciences-undergraduate/engs-85-16",
@@ -373,13 +370,12 @@
         "civil-engineering"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:04.577Z"
+        "checkedAt": "2026-11-06T16:29:56.347Z"
       }
     },
     {
@@ -404,10 +400,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:04.907Z"
+        "checkedAt": "2026-11-06T16:29:56.708Z"
       }
     },
     {
@@ -433,10 +429,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:05.235Z"
+        "checkedAt": "2026-11-06T16:29:57.005Z"
       }
     },
     {
@@ -462,10 +458,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:05.586Z"
+        "checkedAt": "2026-11-06T16:29:57.362Z"
       }
     },
     {
@@ -487,17 +483,15 @@
         "public-policy",
         "environmental-policy",
         "law",
-        "political-science",
-        "business"
+        "political-science"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:05.939Z"
+        "checkedAt": "2026-11-06T16:29:57.724Z"
       }
     },
     {
@@ -525,10 +519,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:06.289Z"
+        "checkedAt": "2026-11-06T16:29:58.061Z"
       }
     },
     {
@@ -554,10 +548,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:06.636Z"
+        "checkedAt": "2026-11-06T16:29:58.401Z"
       }
     },
     {
@@ -582,10 +576,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:06.972Z"
+        "checkedAt": "2026-11-06T16:29:58.742Z"
       }
     },
     {
@@ -618,10 +612,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:07.333Z"
+        "checkedAt": "2026-11-06T16:29:59.093Z"
       }
     },
     {
@@ -650,10 +644,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:07.693Z"
+        "checkedAt": "2026-11-06T16:29:59.457Z"
       }
     },
     {
@@ -672,14 +666,14 @@
         "neuroscience",
         "psychology"
       ],
-      "commonness": "rare",
-      "commonnessReason": "",
+      "commonness": "moderate",
+      "commonnessReason": "Featured on Dartmouth's main Centers & Institutes page and familiar to neuroscience applicants.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:02.554Z"
+        "checkedAt": "2026-11-06T16:29:54.311Z"
       }
     },
     {
@@ -707,10 +701,10 @@
       "commonnessReason": "A known campus resource for environmentally minded students.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:08.265Z"
+        "checkedAt": "2026-11-06T16:29:59.987Z"
       }
     },
     {
@@ -731,40 +725,13 @@
         "education"
       ],
       "commonness": "common",
-      "commonnessReason": "A flagship campus institution featured on the college's main student life pages.",
+      "commonnessReason": "A flagship campus institution that many applicants mention.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:02.554Z"
-      }
-    },
-    {
-      "id": "dartmouth:hop-student-workshops:1c029f",
-      "schoolId": "dartmouth",
-      "unitIds": [],
-      "kind": "facility",
-      "title": "Hop Student Workshops",
-      "nameOnPage": "Student Workshops",
-      "summary": "Woodworking, jewelry and metal, and ceramics studios at the Hopkins Center where students build hands-on projects without prior experience.",
-      "hook": "opens woodworking, metal, and ceramics studios to students with no experience",
-      "quote": "Hone your craft with hands-on projects in wood, metal/jewelry and clay—no experience needed! ... This workshop allows students to try their hands at furniture design, cabinetmaking, wood turning, carving and all aspects of woodworking.",
-      "sourceUrl": "https://hop.dartmouth.edu/student-opportunities/student-workshops",
-      "sourceTitle": "Student Workshops | Hopkins Center for the Arts at Dartmouth",
-      "themes": [
-        "making",
-        "visual-arts",
-        "design"
-      ],
-      "commonness": "moderate",
-      "commonnessReason": "A well-known campus maker resource featured on the college's student life pages.",
-      "people": [],
-      "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
-      "verification": {
-        "status": "verified",
-        "checkedAt": "2026-11-05T16:22:08.825Z"
+        "checkedAt": "2026-11-06T16:29:54.311Z"
       }
     },
     {
@@ -790,47 +757,21 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:09.135Z"
+        "checkedAt": "2026-11-06T16:30:00.621Z"
       }
     },
     {
-      "id": "dartmouth:rauner-special-collections-library:6fd74f",
-      "schoolId": "dartmouth",
-      "unitIds": [],
-      "kind": "facility",
-      "title": "Rauner Special Collections Library",
-      "nameOnPage": "Rauner Special Collections Library",
-      "summary": "Dartmouth's special collections library, holding rare books, manuscripts, and the College Archives, with staff who work with students on research.",
-      "hook": "lets students work hands-on with rare books, manuscripts, and the College Archives",
-      "quote": "Stewarded by a team of specialists, Rauner Special Collections Library houses over 100,000 rare books, millions of manuscripts, and the extensive Dartmouth College Archives. The team collaborates and partners with students, faculty, staff, and the archive-curious at Dartmouth—and across the globe—to accelerate research and advance scholarship.",
-      "sourceUrl": "https://www.library.dartmouth.edu/rauner",
-      "sourceTitle": "Rauner Special Collections Library | Dartmouth Libraries",
-      "themes": [
-        "history",
-        "museums"
-      ],
-      "commonness": "moderate",
-      "commonnessReason": "A well-known library that humanities applicants often mention.",
-      "people": [],
-      "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
-      "verification": {
-        "status": "verified",
-        "checkedAt": "2026-11-05T16:22:09.251Z"
-      }
-    },
-    {
-      "id": "dartmouth:thayer-project-spaces-and-instructional:40f59f",
+      "id": "dartmouth:project-spaces-and-labs-dartmouth-engine:40f59f",
       "schoolId": "dartmouth",
       "unitIds": [
         "college",
         "thayer"
       ],
       "kind": "facility",
-      "title": "Thayer Project Spaces and Instructional Labs",
+      "title": "Project Spaces & Labs (Dartmouth Engineering)",
       "nameOnPage": "Project Spaces & Labs",
       "summary": "Thayer's instructional labs and workshops, which support the project-based curriculum with hands-on engineering projects and design and fabrication for research.",
       "hook": "gives students hands-on space and staff support for real-world engineering projects",
@@ -843,13 +784,65 @@
         "design"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:09.483Z"
+        "checkedAt": "2026-11-06T16:30:00.838Z"
+      }
+    },
+    {
+      "id": "dartmouth:rauner-special-collections-library:6fd74f",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "kind": "facility",
+      "title": "Rauner Special Collections Library",
+      "nameOnPage": "Rauner Special Collections Library",
+      "summary": "Dartmouth's special collections library, holding over 100,000 rare books, millions of manuscripts, and the College Archives, with a team that partners with students on research.",
+      "hook": "partners with students on research using rare books, manuscripts, and the College Archives",
+      "quote": "Stewarded by a team of specialists, Rauner Special Collections Library houses over 100,000 rare books, millions of manuscripts, and the extensive Dartmouth College Archives. The team collaborates and partners with students, faculty, staff, and the archive-curious at Dartmouth—and across the globe—to accelerate research and advance scholarship.",
+      "sourceUrl": "https://www.library.dartmouth.edu/rauner",
+      "sourceTitle": "Rauner Special Collections Library | Dartmouth Libraries",
+      "themes": [
+        "history",
+        "museums"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "A well-known library that humanities applicants often mention.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:30:01.120Z"
+      }
+    },
+    {
+      "id": "dartmouth:student-workshops-at-the-hop:1c029f",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "kind": "facility",
+      "title": "Student Workshops at the Hop",
+      "nameOnPage": "Student Workshops at the Hop",
+      "summary": "Woodworking, jewelry and metal, and ceramics studios at the Hopkins Center where students build hands-on projects without prior experience.",
+      "hook": "opens woodworking, metal, and ceramics studios to students with no experience",
+      "quote": "Hone your craft with hands-on projects in wood, metal/jewelry and clay—no experience needed! ... This workshop allows students to try their hands at furniture design, cabinetmaking, wood turning, carving and all aspects of woodworking.",
+      "sourceUrl": "https://hop.dartmouth.edu/student-opportunities/student-workshops",
+      "sourceTitle": "Student Workshops | Hopkins Center for the Arts at Dartmouth",
+      "themes": [
+        "making",
+        "visual-arts",
+        "design"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "A well-known Hopkins Center resource for hands-on making.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:30:01.376Z"
       }
     },
     {
@@ -878,10 +871,10 @@
         "Carl E. Renshaw"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:09.938Z"
+        "checkedAt": "2026-11-06T16:30:01.412Z"
       }
     },
     {
@@ -912,10 +905,10 @@
         "Erin Mayfield"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:09.672Z"
+        "checkedAt": "2026-11-06T16:30:01.234Z"
       }
     },
     {
@@ -937,20 +930,17 @@
         "climate",
         "water",
         "sustainability",
-        "economics",
-        "design",
-        "business"
+        "economics"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [
         "Klaus Keller"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:09.702Z"
+        "checkedAt": "2026-11-06T16:30:01.402Z"
       }
     },
     {
@@ -976,10 +966,10 @@
         "Taylor Ho Bynum"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:09.789Z"
+        "checkedAt": "2026-11-06T16:30:01.541Z"
       }
     },
     {
@@ -1000,17 +990,15 @@
       "themes": [
         "sensors",
         "electrical-engineering",
-        "biomedical-engineering",
-        "design"
+        "biomedical-engineering"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:10.049Z"
+        "checkedAt": "2026-11-06T16:30:01.568Z"
       }
     },
     {
@@ -1023,7 +1011,7 @@
       "title": "Citrin Family GIS/Applied Spatial Analysis Lab",
       "nameOnPage": "Citrin Family GIS/Applied Spatial Analysis Lab",
       "summary": "A GIS and remote sensing lab whose GPS units, photogrammetric workstations, and field spectrometer students and faculty have used for mapping and field measurements such as turbidity.",
-      "hook": "lends GPS units and a field spectrometer and supports student GIS, mapping, and remote sensing projects",
+      "hook": "supports student GIS, mapping, and remote sensing work with GPS units, photogrammetric workstations, and a field spectrometer",
       "quote": "Dartmouth's Citrin Family GIS/Applied Spatial Analysis Lab supports research and education in geographic information science and technology, remote sensing, spatial analysis, geographic data visualization, and related fields. ... Students and faculty have used the lab's GPS units for mapping projects, mobile photogrammetric workstations for offsite work, and our field spectrometer for measuring turbidity in a Svalbard fjord",
       "sourceUrl": "https://spatial.host.dartmouth.edu/",
       "sourceTitle": "Citrin Family GIS / Applied Spatial Analysis Lab at Dartmouth College – Geographic information science and technology",
@@ -1037,13 +1025,12 @@
         "fieldwork"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:11.504Z"
+        "checkedAt": "2026-11-06T16:30:03.444Z"
       }
     },
     {
@@ -1068,10 +1055,10 @@
       "commonnessReason": "A well-known student technology lab among computing applicants.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:10.844Z"
+        "checkedAt": "2026-11-06T16:30:02.322Z"
       }
     },
     {
@@ -1105,10 +1092,10 @@
         "Elizabeth Murnane"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:11.388Z"
+        "checkedAt": "2026-11-06T16:30:03.004Z"
       }
     },
     {
@@ -1135,37 +1122,38 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:11.536Z"
+        "checkedAt": "2026-11-06T16:30:03.161Z"
       }
     },
     {
-      "id": "dartmouth:appalachian-trail-and-connecticut-river:018b41",
+      "id": "dartmouth:appalachian-trail-and-connecticut-river:2cbd94",
       "schoolId": "dartmouth",
       "unitIds": [],
       "kind": "location",
       "title": "Appalachian Trail and Connecticut River",
       "nameOnPage": "Appalachian Trail",
-      "summary": "The Appalachian Trail runs through campus and the Connecticut River is steps away, and the Dartmouth Outing Club offers membership open to all.",
+      "summary": "The Appalachian Trail runs through campus and the Connecticut River is just steps away, so outdoor activities are always within reach.",
       "hook": "puts the Appalachian Trail and the Connecticut River within steps of campus",
-      "quote": "With the Appalachian Trail running through campus and the Connecticut River just steps away, outdoor activities ... The Dartmouth Outing Club (DOC) is the country's oldest and largest collegiate outing club, with membership open to all.",
+      "quote": "With the Appalachian Trail running through campus and the Connecticut River just steps away, outdoor activities are always accessible here.",
       "sourceUrl": "https://home.dartmouth.edu/about/life-upper-valley",
       "sourceTitle": "Life in the Upper Valley | Dartmouth",
       "themes": [
         "outdoors",
         "water",
-        "running"
+        "running",
+        "disability"
       ],
-      "commonness": "moderate",
-      "commonnessReason": "A widely known feature of Dartmouth's setting.",
+      "commonness": "common",
+      "commonnessReason": "A hallmark of Dartmouth's setting that many applicants mention.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:11.639Z"
+        "checkedAt": "2026-11-06T16:30:03.286Z"
       }
     },
     {
@@ -1188,35 +1176,10 @@
       "commonnessReason": "A known Dartmouth amenity that outdoors-minded applicants mention.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:12.099Z"
-      }
-    },
-    {
-      "id": "dartmouth:moosilauke-ravine-lodge:6a558f",
-      "schoolId": "dartmouth",
-      "unitIds": [],
-      "kind": "location",
-      "title": "Moosilauke Ravine Lodge",
-      "nameOnPage": "Ravine Lodge",
-      "summary": "A log lodge 2,500 feet up Mount Moosilauke where incoming students get their introduction to Dartmouth and each other through songs, stories, and shared meals.",
-      "hook": "introduces new students to Dartmouth through songs, stories, and meals at a log lodge on Mount Moosilauke",
-      "quote": "getting their introduction to Dartmouth and each other, not on a manicured campus but through songs and stories and shared meals in a log lodge 2,500 feet up the eastern flank of Mount Moosilauke.",
-      "sourceUrl": "https://home.dartmouth.edu/about/moosilauke-ravine-lodge-built",
-      "sourceTitle": "Moosilauke Ravine Lodge Built | Dartmouth",
-      "themes": [
-        "outdoors"
-      ],
-      "commonness": "moderate",
-      "commonnessReason": "Familiar through First-Year Trips and often mentioned by outdoors-minded applicants.",
-      "people": [],
-      "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
-      "verification": {
-        "status": "verified",
-        "checkedAt": "2026-11-05T16:22:12.183Z"
+        "checkedAt": "2026-11-06T16:30:03.866Z"
       }
     },
     {
@@ -1243,10 +1206,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:13.129Z"
+        "checkedAt": "2026-11-06T16:30:04.498Z"
       }
     },
     {
@@ -1272,10 +1235,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:12.635Z"
+        "checkedAt": "2026-11-06T16:30:04.585Z"
       }
     },
     {
@@ -1306,10 +1269,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:12.773Z"
+        "checkedAt": "2026-11-06T16:30:04.751Z"
       }
     },
     {
@@ -1336,10 +1299,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:12.773Z"
+        "checkedAt": "2026-11-06T16:30:04.751Z"
       }
     },
     {
@@ -1350,7 +1313,7 @@
       ],
       "kind": "major",
       "title": "Environmental Studies Major and Minors",
-      "nameOnPage": "Environmental Studies",
+      "nameOnPage": "major in Environmental Studies",
       "summary": "The Environmental Studies department offers a major plus minors in Environmental Studies (with Sustainability and Sustainable Energy tracks) and Environmental Science.",
       "hook": "offers an Environmental Studies major and minors with Sustainability and Sustainable Energy tracks",
       "quote": "To meet the needs of our students, we offer a major in Environmental Studies and two minors: Environmental Studies (tracks available in Environmental Studies, Sustainability or Sustainable Energy) and Environmental Science.",
@@ -1365,10 +1328,10 @@
       "commonnessReason": "The main environmental major, so environmentally minded applicants often name it.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:13.006Z"
+        "checkedAt": "2026-11-06T16:30:04.988Z"
       }
     },
     {
@@ -1379,7 +1342,7 @@
       "title": "Coast Jazz Orchestra at Dartmouth",
       "nameOnPage": "Coast Jazz Orchestra",
       "summary": "Dartmouth's jazz orchestra, open by audition to students of any major and any instrument, alongside smaller Music Department combos.",
-      "hook": "lets non-majors audition for the jazz orchestra or smaller combos to keep playing jazz",
+      "hook": "lets students of any major audition for the jazz orchestra, alongside smaller Music Department combos",
       "quote": "The Coast Jazz Orchestra is open to anyone and any instrument by audition. Students don't have to be a music major or minor, and in addition to the jazz orchestra, the Music Department has several active smaller combos, so hopefully all students can find a context to keep playing that fits their interests and commitment level.",
       "sourceUrl": "https://hop.dartmouth.edu/events/resident-ensembles/coast-jazz-orchestra-dartmouth",
       "sourceTitle": "Coast Jazz Orchestra at Dartmouth | Hopkins Center for the Arts at Dartmouth",
@@ -1391,10 +1354,10 @@
       "commonnessReason": "The college's main jazz ensemble, which musically active applicants often mention.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:13.175Z"
+        "checkedAt": "2026-11-06T16:30:04.989Z"
       }
     },
     {
@@ -1418,10 +1381,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:13.218Z"
+        "checkedAt": "2026-11-06T16:30:05.156Z"
       }
     },
     {
@@ -1444,10 +1407,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:13.708Z"
+        "checkedAt": "2026-11-06T16:30:05.645Z"
       }
     },
     {
@@ -1471,10 +1434,10 @@
       "commonnessReason": "The college's competitive policy debate team, a natural reference for debaters.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:19.273Z"
+        "checkedAt": "2026-11-06T16:30:10.957Z"
       }
     },
     {
@@ -1502,10 +1465,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:19.257Z"
+        "checkedAt": "2026-11-06T16:30:11.046Z"
       }
     },
     {
@@ -1533,10 +1496,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:19.257Z"
+        "checkedAt": "2026-11-06T16:30:11.046Z"
       }
     },
     {
@@ -1561,10 +1524,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:08.265Z"
+        "checkedAt": "2026-11-06T16:29:59.987Z"
       }
     },
     {
@@ -1588,10 +1551,10 @@
       "commonnessReason": "One of Dartmouth's signature institutions and among the most cited details in Why Dartmouth essays.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:19.525Z"
+        "checkedAt": "2026-11-06T16:30:11.456Z"
       }
     },
     {
@@ -1613,10 +1576,10 @@
       "commonnessReason": "Well known on campus and to applicants interested in journalism.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:19.525Z"
+        "checkedAt": "2026-11-06T16:30:11.456Z"
       }
     },
     {
@@ -1646,10 +1609,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:19.554Z"
+        "checkedAt": "2026-11-06T16:30:11.542Z"
       }
     },
     {
@@ -1675,10 +1638,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:19.761Z"
+        "checkedAt": "2026-11-06T16:30:11.542Z"
       }
     },
     {
@@ -1706,10 +1669,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:13.006Z"
+        "checkedAt": "2026-11-06T16:30:04.988Z"
       }
     },
     {
@@ -1737,10 +1700,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:19.865Z"
+        "checkedAt": "2026-11-06T16:30:11.916Z"
       }
     },
     {
@@ -1763,10 +1726,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:20.312Z"
+        "checkedAt": "2026-11-06T16:30:12.340Z"
       }
     },
     {
@@ -1790,10 +1753,10 @@
       "commonnessReason": "A well-known Dartmouth off-campus option among applicants interested in languages.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:20.040Z"
+        "checkedAt": "2026-11-06T16:30:12.065Z"
       }
     },
     {
@@ -1818,10 +1781,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:03.073Z"
+        "checkedAt": "2026-11-06T16:29:54.892Z"
       }
     },
     {
@@ -1846,10 +1809,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:20.145Z"
+        "checkedAt": "2026-11-06T16:30:12.208Z"
       }
     },
     {
@@ -1875,10 +1838,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:20.297Z"
+        "checkedAt": "2026-11-06T16:30:12.297Z"
       }
     },
     {
@@ -1891,7 +1854,7 @@
       "title": "The Stretch",
       "nameOnPage": "The Stretch",
       "summary": "A roughly two-month off-campus field program across the western United States and Canada in which students collect and analyze field data.",
-      "hook": "takes students on a two-month field traverse of the American West to collect and analyze data",
+      "hook": "takes students on a roughly two-month field traverse of the western U.S. and Canada to collect and analyze data",
       "quote": "The Stretch is among the most storied and longest-lived off-campus programs at Dartmouth, and it consists of a roughly two-month traverse across the western United States and Canada where students are directly engaged in field-based data collection and analysis.",
       "sourceUrl": "https://eaps.dartmouth.edu/stretch/stretch",
       "sourceTitle": "The Stretch | Department of Earth and Planetary Sciences",
@@ -1905,10 +1868,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:20.401Z"
+        "checkedAt": "2026-11-06T16:30:12.496Z"
       }
     },
     {
@@ -1930,10 +1893,10 @@
       "commonnessReason": "A broad research-funding program that many science-minded applicants mention.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:20.489Z"
+        "checkedAt": "2026-11-06T16:30:12.508Z"
       }
     },
     {
@@ -1955,10 +1918,10 @@
       "commonnessReason": "A well-known Dartmouth tradition.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:20.588Z"
+        "checkedAt": "2026-11-06T16:30:12.625Z"
       }
     },
     {
@@ -1982,10 +1945,10 @@
       "commonnessReason": "A signature Dartmouth tradition that many applicants mention.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:20.736Z"
+        "checkedAt": "2026-11-06T16:30:12.738Z"
       }
     },
     {
@@ -2008,10 +1971,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:20.857Z"
+        "checkedAt": "2026-11-06T16:30:12.809Z"
       }
     },
     {
@@ -2033,10 +1996,10 @@
       "commonnessReason": "One of Dartmouth's best-known traditions.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:22:20.868Z"
+        "checkedAt": "2026-11-06T16:30:13.002Z"
       }
     }
   ]

@@ -5,32 +5,6 @@
   "builtBy": "research-agent",
   "facts": [
     {
-      "id": "cornell:akwe-kon:6d4944",
-      "schoolId": "cornell",
-      "unitIds": [],
-      "kind": "center",
-      "title": "Akwe:kon",
-      "nameOnPage": "Akwe:kon",
-      "summary": "Akwe:kon, the first Native student residence hall in North America, is offered alongside Indigenous Studies courses and student leadership opportunities.",
-      "hook": "offers a home at Akwe:kon, the first Native student residence hall in North America",
-      "quote": "Indigenous Studies (AIIS) courses, student leadership opportunities, and an undergraduate residential experience at Akwe:kon, the first Native student residence hall in North America.",
-      "sourceUrl": "https://admissions.cornell.edu/community-belonging/belonging-inclusion",
-      "sourceTitle": "Belonging & Inclusion | Undergraduate Admissions",
-      "themes": [
-        "cultural-identity",
-        "leadership"
-      ],
-      "commonness": "moderate",
-      "commonnessReason": "Listed on the admissions belonging page.",
-      "people": [],
-      "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
-      "verification": {
-        "status": "verified",
-        "checkedAt": "2026-11-05T16:15:41.781Z"
-      }
-    },
-    {
       "id": "cornell:cornell-atkinson-center-for-sustainabili:76a7e9",
       "schoolId": "cornell",
       "unitIds": [],
@@ -50,10 +24,10 @@
       "commonnessReason": "Cornell's flagship sustainability center; many environment-focused applicants name it.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:41.776Z"
+        "checkedAt": "2026-11-06T16:30:55.748Z"
       }
     },
     {
@@ -72,14 +46,14 @@
         "community-engagement",
         "education"
       ],
-      "commonness": "moderate",
-      "commonnessReason": "Featured on admissions pages as Cornell's community engagement hub.",
+      "commonness": "common",
+      "commonnessReason": "Featured on Cornell's admissions pages as its community engagement hub.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:41.784Z"
+        "checkedAt": "2026-11-06T16:30:55.744Z"
       }
     },
     {
@@ -90,7 +64,7 @@
       "title": "Entrepreneurship at Cornell",
       "nameOnPage": "Entrepreneurship at Cornell",
       "summary": "A university-wide entrepreneurship program that runs conferences, hackathons, internships, mentorship, a business accelerator, co-working spaces, and competitions.",
-      "hook": "runs hackathons, mentorship, a business accelerator, and competitions for student founders",
+      "hook": "runs hackathons, mentorship programs, a business accelerator, co-working spaces, and competitions",
       "quote": "Entrepreneurship at Cornell (EaC) is a university-wide program ... like big conferences, hackathons, internship and mentorship programs, webinars, a business accelerator, and wonderful co-working spaces and competitions",
       "sourceUrl": "https://eship.cornell.edu/",
       "sourceTitle": "Entrepreneurship at Cornell - Entrepreneurship at Cornell",
@@ -104,36 +78,10 @@
       "commonnessReason": "Most universities have an entrepreneurship hub; applicants interested in startups often cite it.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:42.011Z"
-      }
-    },
-    {
-      "id": "cornell:health-professions-advising-center-hpac:9427b2",
-      "schoolId": "cornell",
-      "unitIds": [],
-      "kind": "center",
-      "title": "Health Professions Advising Center (HPAC)",
-      "nameOnPage": "Health Professions Advising Center",
-      "summary": "Cornell's Health Professions Advising Center serves all students interested in pre-health, from early exploration through preparing for and applying to pre-health programs.",
-      "hook": "advises any Cornell student exploring, preparing for, or applying to pre-health programs",
-      "quote": "Cornell’s resource for all students interested in pre-health is the Health Professions Advising Center (HPAC) office and website. This office serves students interested in a variety of pre-health professional pathways and assists students at various stages of exploration, preparing for, and applying to pre-health programs.",
-      "sourceUrl": "https://www.duffield.cornell.edu/advising/choose-your-academic-pathway/pre-health-pathways/",
-      "sourceTitle": "Pre-Health Pathways | Cornell Duffield Engineering",
-      "themes": [
-        "medicine",
-        "career"
-      ],
-      "commonness": "moderate",
-      "commonnessReason": "Pre-health advising offices are standard at most universities.",
-      "people": [],
-      "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
-      "verification": {
-        "status": "verified",
-        "checkedAt": "2026-11-05T16:15:41.819Z"
+        "checkedAt": "2026-11-06T16:30:55.978Z"
       }
     },
     {
@@ -158,10 +106,10 @@
       "commonnessReason": "First-Year Writing Seminars are a standard part of the Cornell curriculum.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:41.935Z"
+        "checkedAt": "2026-11-06T16:30:55.751Z"
       }
     },
     {
@@ -184,10 +132,10 @@
       "commonnessReason": "Listed on the admissions belonging page.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:41.781Z"
+        "checkedAt": "2026-11-06T16:30:55.740Z"
       }
     },
     {
@@ -197,7 +145,7 @@
       "kind": "center",
       "title": "New York State Water Resources Institute",
       "nameOnPage": "New York State Water Resources Institute",
-      "summary": "The New York State Water Resources Institute at Cornell connects researchers, water managers, policymakers, and the public to improve water management through research, funding, and outreach.",
+      "summary": "The New York State Water Resources Institute at Cornell supports science and dialogue among researchers, water managers, policymakers, and the public to improve water management.",
       "hook": "links Cornell water research with New York agencies, managers, and community groups",
       "quote": "At the New York State Water Resources Institute at Cornell University (NYSWRI), we support robust science and dialogue between researchers, managers, policymakers, and the general public to improve water management through: ... Relationship-building with state agencies, professional organizations, and citizen stakeholder groups.",
       "sourceUrl": "https://cals.cornell.edu/water-resources-institute",
@@ -205,17 +153,15 @@
       "themes": [
         "water",
         "environmental-policy",
-        "public-policy",
-        "business"
+        "public-policy"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:42.333Z"
+        "checkedAt": "2026-11-06T16:30:55.746Z"
       }
     },
     {
@@ -235,17 +181,15 @@
       "sourceTitle": "Class Roster - Spring 2027 - BEE 4670",
       "themes": [
         "water",
-        "environmental-policy",
-        "business"
+        "environmental-policy"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:42.346Z"
+        "checkedAt": "2026-11-06T16:30:56.346Z"
       }
     },
     {
@@ -267,17 +211,15 @@
         "civil-engineering",
         "making",
         "design",
-        "business",
         "leadership"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:42.387Z"
+        "checkedAt": "2026-11-06T16:30:56.389Z"
       }
     },
     {
@@ -307,10 +249,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:42.721Z"
+        "checkedAt": "2026-11-06T16:30:56.638Z"
       }
     },
     {
@@ -341,26 +283,26 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:43.071Z"
+        "checkedAt": "2026-11-06T16:30:56.971Z"
       }
     },
     {
-      "id": "cornell:crp-4680-introduction-to-urban-data-scie:5bcd1c",
+      "id": "cornell:crp-3680-introduction-to-urban-data-scie:29daf8",
       "schoolId": "cornell",
       "unitIds": [
         "aap"
       ],
       "kind": "course",
-      "title": "CRP 4680: Introduction to Urban Data Science: Theory, Applications, and Practice",
-      "nameOnPage": "CRP 4680",
+      "title": "CRP 3680: Introduction to Urban Data Science: Theory, Applications, and Practice",
+      "nameOnPage": "CRP 3680",
       "summary": "A city planning course in which students use Python and open-source urban datasets to analyze, visualize, and communicate data for planning and policy questions.",
       "hook": "has students analyze open urban datasets in Python and present findings for planning and policy",
       "quote": "Urban data science combines questions of urban development, structure, complexity, theory, policy, and dynamics with a set of computational tools and big data. ... Using Python and open-source urban datasets in the Jupyter Notebook environment, students will work on hands-on applied exercises and projects which emphasize framing theoretically grounded and data-driven questions, analyzing and visualizing data, and communicating results for planning and policy contexts.",
-      "sourceUrl": "https://classes.cornell.edu/browse/roster/SP27/class/CRP/4680",
-      "sourceTitle": "Class Roster - Spring 2027 - CRP 4680",
+      "sourceUrl": "https://classes.cornell.edu/browse/roster/SP27/class/CRP/3680",
+      "sourceTitle": "Class Roster - Spring 2027 - CRP 3680",
       "themes": [
         "cities",
         "data-science",
@@ -373,10 +315,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:42.590Z"
+        "checkedAt": "2026-11-06T16:30:57.320Z"
       }
     },
     {
@@ -399,17 +341,15 @@
         "data-science",
         "sensors",
         "aerospace",
-        "engineering-design",
-        "design"
+        "engineering-design"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:43.480Z"
+        "checkedAt": "2026-11-06T16:30:57.672Z"
       }
     },
     {
@@ -422,7 +362,7 @@
       "title": "ENGRI 1130: Sustainable Engineering of Energy, Water, Soil, and Air Resources",
       "nameOnPage": "ENGRI 1130",
       "summary": "An introductory engineering course organized into energy, water, soil, and air modules, each built around a case study of local or regional significance.",
-      "hook": "introduces first-year engineers to sustainable resource management through local case studies",
+      "hook": "introduces sustainable management of energy, water, soil, and air through local and regional case studies",
       "quote": "Course introduces concepts and tools required for the sustainable management of energy, water, soil, and air resources in our modern society. Semester is organized into four modules, each concentrating on one resource area and including a case study of local or regional significance.",
       "sourceUrl": "https://classes.cornell.edu/browse/roster/SP27/class/ENGRI/1130",
       "sourceTitle": "Class Roster - Spring 2027 - ENGRI 1130",
@@ -431,17 +371,15 @@
         "water",
         "energy",
         "environmental-engineering",
-        "agriculture",
-        "business"
+        "agriculture"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:43.551Z"
+        "checkedAt": "2026-11-06T16:30:58.061Z"
       }
     },
     {
@@ -467,17 +405,18 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:43.828Z"
+        "checkedAt": "2026-11-06T16:30:58.413Z"
       }
     },
     {
       "id": "cornell:envs-4500-climate-solutions-capstone:e32f98",
       "schoolId": "cornell",
       "unitIds": [
-        "cals"
+        "cals",
+        "as"
       ],
       "kind": "course",
       "title": "ENVS 4500: Climate Solutions Capstone",
@@ -497,13 +436,12 @@
         "education"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:44.162Z"
+        "checkedAt": "2026-11-06T16:30:58.772Z"
       }
     },
     {
@@ -529,10 +467,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:44.535Z"
+        "checkedAt": "2026-11-06T16:30:59.111Z"
       }
     },
     {
@@ -555,10 +493,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:45.145Z"
+        "checkedAt": "2026-11-06T16:30:59.648Z"
       }
     },
     {
@@ -582,10 +520,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:45.220Z"
+        "checkedAt": "2026-11-06T16:30:59.814Z"
       }
     },
     {
@@ -614,16 +552,18 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:45.309Z"
+        "checkedAt": "2026-11-06T16:30:59.893Z"
       }
     },
     {
       "id": "cornell:span-2070-intermediate-spanish-for-the-m:a824df",
       "schoolId": "cornell",
-      "unitIds": [],
+      "unitIds": [
+        "as"
+      ],
       "kind": "course",
       "title": "SPAN 2070: Intermediate Spanish for the Medical and Health Professions",
       "nameOnPage": "SPAN 2070",
@@ -640,17 +580,16 @@
         "history"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:45.572Z"
+        "checkedAt": "2026-11-06T16:31:00.229Z"
       }
     },
     {
-      "id": "cornell:defrees-hydraulics-lab:808e27",
+      "id": "cornell:defrees-hydraulics-lab:609d1d",
       "schoolId": "cornell",
       "unitIds": [
         "engineering"
@@ -658,9 +597,9 @@
       "kind": "facility",
       "title": "DeFrees Hydraulics Lab",
       "nameOnPage": "DeFrees Hydraulics Lab",
-      "summary": "The DeFrees Hydraulics Lab anchors Cornell's environmental fluid mechanics and hydrology program, with a wave tank, a wind-water tunnel, and a flume that models rivers, estuaries, and lake shores.",
-      "hook": "provides wave tanks and flumes that model rivers, estuaries, and lake shorelines",
-      "quote": "The focal point of research and experimental studies in the environmental fluid mechanics and hydrology program, the DeFrees hydraulics lab is equipped with three main experimental facilities: ... Designed to model shallow coastal waters, rivers, estuaries, the littoral zone of lakes, and more generally any environment where the horizontal length scales are long relative to the depths.",
+      "summary": "Cornell's DeFrees Hydraulics Lab anchors its environmental fluid mechanics and hydrology program, with a wave tank, a wave-current flume modeling rivers, estuaries, and lakes, and a wind-water tunnel.",
+      "hook": "provides a wave tank, a wave-current flume, and a wind-water tunnel for modeling rivers, estuaries, and lakes",
+      "quote": "The focal point of research and experimental studies in the environmental fluid mechanics and hydrology program, the DeFrees hydraulics lab is equipped with three main experimental facilities: A Wave Tank ... A Wide Meandering Wave-Current Flume Designed to model shallow coastal waters, rivers, estuaries, the littoral zone of lakes ... A Tilting Wind Water Tunnel Designed to model coupled air-water flows",
       "sourceUrl": "https://www.duffield.cornell.edu/cee/educational-facilities/",
       "sourceTitle": "Educational Facilities | School of Civil and Environmental Engineering | Cornell Duffield Engineering",
       "themes": [
@@ -670,13 +609,12 @@
         "marine"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:45.928Z"
+        "checkedAt": "2026-11-06T16:31:00.512Z"
       }
     },
     {
@@ -700,10 +638,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:46.035Z"
+        "checkedAt": "2026-11-06T16:31:00.882Z"
       }
     },
     {
@@ -724,17 +662,15 @@
         "water",
         "environmental-engineering",
         "engineering-design",
-        "education",
-        "design"
+        "education"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:45.928Z"
+        "checkedAt": "2026-11-06T16:31:00.512Z"
       }
     },
     {
@@ -755,14 +691,14 @@
         "architecture",
         "design"
       ],
-      "commonness": "moderate",
-      "commonnessReason": "A campus landmark featured on admissions pages.",
+      "commonness": "common",
+      "commonnessReason": "A campus landmark featured on Cornell's admissions pages.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:47.157Z"
+        "checkedAt": "2026-11-06T16:31:01.323Z"
       }
     },
     {
@@ -788,10 +724,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:46.619Z"
+        "checkedAt": "2026-11-06T16:31:01.216Z"
       }
     },
     {
@@ -816,10 +752,10 @@
       "commonnessReason": "Makerspaces are common across engineering schools; applicants mention them often.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:46.619Z"
+        "checkedAt": "2026-11-06T16:31:01.216Z"
       }
     },
     {
@@ -845,10 +781,10 @@
       "commonnessReason": "The main performing arts venue, mentioned on admissions pages.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:47.107Z"
+        "checkedAt": "2026-11-06T16:31:01.741Z"
       }
     },
     {
@@ -876,10 +812,10 @@
         "Damian Helbling"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:46.978Z"
+        "checkedAt": "2026-11-06T16:31:01.414Z"
       }
     },
     {
@@ -910,10 +846,10 @@
         "Edwin (Todd) Cowen"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:47.064Z"
+        "checkedAt": "2026-11-06T16:31:01.585Z"
       }
     },
     {
@@ -946,10 +882,10 @@
         "H. Oliver Gao"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:47.183Z"
+        "checkedAt": "2026-11-06T16:31:01.740Z"
       }
     },
     {
@@ -972,21 +908,19 @@
         "environmental-engineering",
         "data-science",
         "biology",
-        "business",
         "environmental-policy",
         "ecology",
         "public-policy"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [
         "Jacqueline Gerson"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:47.272Z"
+        "checkedAt": "2026-11-06T16:31:01.824Z"
       }
     },
     {
@@ -999,7 +933,7 @@
       "title": "Albertson Lab",
       "nameOnPage": "Albertson Lab",
       "summary": "A civil and environmental engineering lab studying how water, CO2, pollutants, and energy move between land and atmosphere, fusing measurements and models for air quality prediction.",
-      "hook": "fuses field measurements and models to predict land-atmosphere exchange and air quality",
+      "hook": "fuses measurements and models to predict land-atmosphere exchange and air quality",
       "quote": "Focusing on the development of a comprehensive understanding of the exchange rates of mass (e.g. water, CO2, pollutants), energy, and momentum between the land and atmosphere. Primary applications in hydrometeorology and air quality, particularly focused on the fusion of measurements and models for optimal prediction.",
       "sourceUrl": "https://www.duffield.cornell.edu/cee/research-groups/",
       "sourceTitle": "Research Groups | School of Civil and Environmental Engineering | Cornell Duffield Engineering",
@@ -1012,13 +946,12 @@
         "fieldwork"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:47.320Z"
+        "checkedAt": "2026-11-06T16:31:01.928Z"
       }
     },
     {
@@ -1039,17 +972,15 @@
         "climate",
         "civil-engineering",
         "sustainability",
-        "environmental-engineering",
-        "business"
+        "environmental-engineering"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:47.320Z"
+        "checkedAt": "2026-11-06T16:31:01.928Z"
       }
     },
     {
@@ -1072,17 +1003,15 @@
         "energy",
         "sustainability",
         "environmental-engineering",
-        "ecology",
-        "business"
+        "ecology"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:47.320Z"
+        "checkedAt": "2026-11-06T16:31:01.928Z"
       }
     },
     {
@@ -1109,10 +1038,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:47.320Z"
+        "checkedAt": "2026-11-06T16:31:01.928Z"
       }
     },
     {
@@ -1139,10 +1068,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:47.320Z"
+        "checkedAt": "2026-11-06T16:31:01.928Z"
       }
     },
     {
@@ -1166,14 +1095,14 @@
       "commonnessReason": "Featured on admissions pages; a standard part of Cornell's setting.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:48.108Z"
+        "checkedAt": "2026-11-06T16:31:02.708Z"
       }
     },
     {
-      "id": "cornell:cornell-biological-field-station-interns:44094c",
+      "id": "cornell:cornell-biological-field-station-interns:b260ea",
       "schoolId": "cornell",
       "unitIds": [
         "cals"
@@ -1183,7 +1112,7 @@
       "nameOnPage": "Cornell Biological Field Station",
       "summary": "The Cornell Biological Field Station on the south shore of Oneida Lake offers 10-week summer undergraduate research internships with mentor scientists.",
       "hook": "offers 10-week summer research internships on Oneida Lake with mentor scientists",
-      "quote": "The Department of Natural Resources and the Environment, in conjunction with the Cornell Biological Field Station (CBFS), will offer 10-week undergraduate research internships during the summer field season. ... The Cornell Biological Field Station is a well-equipped facility located on the south shore of Oneida Lake, NY.",
+      "quote": "The Department of Natural Resources and the Environment, in conjunction with the Cornell Biological Field Station (CBFS), will offer 10-week undergraduate research internships during the summer field season. This program offers exciting opportunities for students to collaborate on research with mentor scientists conducting ecological investigations in a wide variety of ecosystems. ... The Cornell Biological Field Station is a well-equipped facility located on the south shore of Oneida Lake, NY.",
       "sourceUrl": "https://cals.cornell.edu/biological-field-station-shackelton-point/cbfs-internship-program",
       "sourceTitle": "CBFS Internship Program | CALS",
       "themes": [
@@ -1199,10 +1128,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:48.108Z"
+        "checkedAt": "2026-11-06T16:31:02.709Z"
       }
     },
     {
@@ -1226,24 +1155,24 @@
       "commonnessReason": "Ithaca's gorges are among the most frequently cited features of Cornell.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:48.554Z"
+        "checkedAt": "2026-11-06T16:31:03.163Z"
       }
     },
     {
-      "id": "cornell:finger-lakes-pfas-mapping-project:d13795",
+      "id": "cornell:finger-lakes-pfas-mapping-project:f8933b",
       "schoolId": "cornell",
       "unitIds": [
         "engineering"
       ],
       "kind": "location",
       "title": "Finger Lakes PFAS mapping project",
-      "nameOnPage": "Finger Lakes",
-      "summary": "Undergraduates in Damian Helbling's research group have sampled more than 300 bodies of water, including all 11 Finger Lakes, for PFAS and added the data to an interactive map.",
-      "hook": "lets undergraduates sample Finger Lakes waters for PFAS and share results on a public map",
-      "quote": "A group of undergraduates in Helbling’s research group has since filled the gap, taking more than 500 samples across 300 bodies of water, including all 11 Finger Lakes and many tributaries, ponds and even puddles that persistently pool after rain. They’ve screened the samples for 24 common PFAS and added the data to an interactive map.",
+      "nameOnPage": "PFAS",
+      "summary": "Undergraduates in Damian Helbling's research group have sampled more than 300 bodies of water, including all 11 Finger Lakes, for PFAS and mapped the results; the team is now in its second generation.",
+      "hook": "involves undergraduates in sampling Finger Lakes waters for PFAS and mapping the results",
+      "quote": "A group of undergraduates in Helbling’s research group has since filled the gap, taking more than 500 samples across 300 bodies of water, including all 11 Finger Lakes and many tributaries, ponds and even puddles that persistently pool after rain. They’ve screened the samples for 24 common PFAS and added the data to an interactive map. ... The student team, now in its second generation after the project’s initial members graduated, also hope to influence the state’s monitoring of PFAS",
       "sourceUrl": "https://news.cornell.edu/stories/2026/10/students-create-first-depth-map-forever-chemicals-finger-lakes",
       "sourceTitle": "Students create first in-depth map of ‘forever chemicals’ in the Finger Lakes | Cornell Chronicle",
       "themes": [
@@ -1253,15 +1182,14 @@
         "environmental-engineering"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [
         "Damian Helbling"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:48.484Z"
+        "checkedAt": "2026-11-06T16:31:03.114Z"
       }
     },
     {
@@ -1273,25 +1201,24 @@
       ],
       "kind": "major",
       "title": "Biological Sciences Major",
-      "nameOnPage": "Biological Sciences",
+      "nameOnPage": "Biological Sciences major",
       "summary": "Cornell's Biological Sciences major requires each student to declare one of 14 concentrations, among them Neurobiology & Behavior, which explores how nervous systems generate behavior.",
-      "hook": "lets biology majors specialize in one of 14 concentrations, from neurobiology to marine biology",
+      "hook": "lets biology majors specialize in one of 14 concentrations, such as Neurobiology & Behavior",
       "quote": "Biological Sciences 14 concentrations ... All Biological Sciences Majors must declare a concentration. ... Neurobiology & Behavior ... Exploring how nervous systems generate behavior, from neurons to societies.",
       "sourceUrl": "https://cals.cornell.edu/biological-sciences/undergraduate-program/concentrations",
       "sourceTitle": "Concentrations | CALS",
       "themes": [
         "biology",
-        "neuroscience",
-        "marine"
+        "neuroscience"
       ],
       "commonness": "moderate",
       "commonnessReason": "The main biology major; pre-med and biology applicants often cite it.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:48.110Z"
+        "checkedAt": "2026-11-06T16:31:02.710Z"
       }
     },
     {
@@ -1303,8 +1230,8 @@
       ],
       "kind": "major",
       "title": "Environmental Engineering Major",
-      "nameOnPage": "Environmental Engineering",
-      "summary": "Cornell's B.S. in Environmental Engineering is offered jointly by the College of Engineering and CALS and trains students to prevent or clean up pollution of air, streams, and groundwater.",
+      "nameOnPage": "Environmental Engineering Major",
+      "summary": "A bachelor's degree offered jointly by the College of Engineering and CALS in a field whose engineers contain, reduce, or prevent hazardous waste, air pollution, and contaminated streams and groundwater.",
       "hook": "offers an environmental engineering degree run jointly by the College of Engineering and CALS",
       "quote": "They work to contain, reduce or prevent hazardous waste, air pollution, or contaminated streams and groundwater. ... The Bachelor degree program in Environmental Engineering is jointly offered by the College of Engineering and the College of Agriculture and Life Sciences at Cornell University.",
       "sourceUrl": "https://www.duffield.cornell.edu/cee/environmental-engineering-major/",
@@ -1318,10 +1245,10 @@
       "commonnessReason": "The intended major's own program page; nearly every environmental engineering applicant cites the major itself.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:48.310Z"
+        "checkedAt": "2026-11-06T16:31:02.979Z"
       }
     },
     {
@@ -1332,7 +1259,7 @@
       "title": "Minor in Sustainable Energy Systems",
       "nameOnPage": "Sustainable Energy Systems",
       "summary": "A six-course minor open to all undergraduates that requires a course in each of four categories, including one on the policy, economics, business, history, and ethics of energy.",
-      "hook": "pairs energy technology courses with a required policy, economics, or ethics course",
+      "hook": "requires at least one course on the policy, economics, history, or ethics of energy alongside its other breadth categories",
       "quote": "The minor is open to all undergraduate students. ... To earn the minor, students must complete six courses and a minimum of 18 credits ... At least one course from each of four breadth categories: ... Category 4: Social Impact: Policy, Economics, Business, History, Ethics, and Risk Analysis",
       "sourceUrl": "https://www.duffield.cornell.edu/degree/sustainable-energy-systems-minor-requirements/",
       "sourceTitle": "Minor in Sustainable Energy Systems | Cornell Duffield Engineering",
@@ -1351,10 +1278,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:48.444Z"
+        "checkedAt": "2026-11-06T16:31:03.061Z"
       }
     },
     {
@@ -1377,21 +1304,19 @@
         "civil-engineering",
         "data-science",
         "climate",
-        "ai",
-        "design"
+        "ai"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:48.473Z"
+        "checkedAt": "2026-11-06T16:31:03.222Z"
       }
     },
     {
-      "id": "cornell:aguaclara-project-team:fc67a5",
+      "id": "cornell:aguaclara-project-team:25515b",
       "schoolId": "cornell",
       "unitIds": [
         "engineering"
@@ -1399,9 +1324,9 @@
       "kind": "organization",
       "title": "AguaClara Project Team",
       "nameOnPage": "AguaClara Project team",
-      "summary": "AguaClara is a Cornell engineering project team that develops sustainable, gravity-powered water treatment technologies, including an automated coagulant dosing system, for communities worldwide.",
+      "summary": "AguaClara is a Cornell engineering project team that develops sustainable, gravity-powered water treatment technologies for communities around the world.",
       "hook": "develops gravity-powered water treatment technology for communities around the world",
-      "quote": "I am one of the team leads for the AguaClara Project team, where we develop sustainable, gravity-powered water treatment technologies for communities around the world. We are currently developing an automated coagulant dosing system to eliminate the need for an operator at all times",
+      "quote": "I am one of the team leads for the AguaClara Project team, where we develop sustainable, gravity-powered water treatment technologies for communities around the world.",
       "sourceUrl": "https://www.duffield.cornell.edu/cbe/2025/08/01/kayla-stephenson-26-from-classroom-to-community/",
       "sourceTitle": "Kayla Stephenson '26: From classroom to community | R.F. Smith School of Chemical and Biomolecular Engineering",
       "themes": [
@@ -1415,38 +1340,36 @@
       "commonnessReason": "A well-known Cornell water project team that environmental engineering applicants often find.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:48.574Z"
+        "checkedAt": "2026-11-06T16:31:03.408Z"
       }
     },
     {
-      "id": "cornell:cornell-greenclub:03c7b3",
+      "id": "cornell:cornell-greenclub:16ba25",
       "schoolId": "cornell",
       "unitIds": [],
       "kind": "organization",
       "title": "Cornell GreenClub",
       "nameOnPage": "GreenClub",
-      "summary": "A student-led sustainability group, offered with a course, whose interdisciplinary teams design and carry out community-based sustainability projects with campus or community partners.",
+      "summary": "A course-based, student-led sustainability program in which interdisciplinary teams design and carry out community-based projects with campus or community partners.",
       "hook": "runs student-led sustainability projects with campus and community partners",
-      "quote": "This course engages students in real-world, community-based sustainability projects through Cornell GreenClub. Structured as a student-led, engaged-learning experience, students work in interdisciplinary teams to design and implement stakeholder-focused projects that address community needs.",
+      "quote": "This course engages students in real-world, community-based sustainability projects through Cornell GreenClub. Structured as a student-led, engaged-learning experience, students work in interdisciplinary teams to design and implement stakeholder-focused projects that address community needs. Teams collaborate with campus or community partners to define goals, analyze constraints, gather and interpret data, and develop actionable recommendations.",
       "sourceUrl": "https://classes.cornell.edu/browse/roster/SP27/class/BEE/4950",
       "sourceTitle": "Class Roster - Spring 2027 - BEE 4950",
       "themes": [
         "sustainability",
         "community-engagement",
-        "design",
         "interdisciplinary"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:48.829Z"
+        "checkedAt": "2026-11-06T16:31:03.745Z"
       }
     },
     {
@@ -1470,10 +1393,10 @@
       "commonnessReason": "The university's main debate program; known but not a typical essay focus.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:49.335Z"
+        "checkedAt": "2026-11-06T16:31:04.177Z"
       }
     },
     {
@@ -1494,16 +1417,16 @@
         "community-engagement",
         "sustainability",
         "global",
-        "design"
+        "engineering-design"
       ],
       "commonness": "moderate",
       "commonnessReason": "Engineers Without Borders chapters exist at many universities.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:49.101Z"
+        "checkedAt": "2026-11-06T16:31:03.790Z"
       }
     },
     {
@@ -1512,7 +1435,7 @@
       "unitIds": [],
       "kind": "organization",
       "title": "Jazz Ensemble (MUSIC 4615)",
-      "nameOnPage": "Jazz Ensemble",
+      "nameOnPage": "Jazz Ensemble (MUSIC 4615)",
       "summary": "Cornell's auditioned jazz ensemble builds musicianship, improvisation, and ensemble skills while studying the cultural and historical contexts of jazz.",
       "hook": "builds improvisation and ensemble skills for auditioned jazz players",
       "quote": "Jazz Ensemble (MUSIC 4615) ... The Jazz Ensemble develops musicianship, improvisation, and ensemble skills while exploring the cultural and historical contexts of the art form. ... Participation is by audition.",
@@ -1527,10 +1450,10 @@
       "commonnessReason": "Most universities have a jazz ensemble.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:45.145Z"
+        "checkedAt": "2026-11-06T16:30:59.648Z"
       }
     },
     {
@@ -1553,10 +1476,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:45.145Z"
+        "checkedAt": "2026-11-06T16:30:59.648Z"
       }
     },
     {
@@ -1582,10 +1505,10 @@
       "commonnessReason": "SHPE chapters exist at many engineering schools.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:49.158Z"
+        "checkedAt": "2026-11-06T16:31:03.839Z"
       }
     },
     {
@@ -1596,7 +1519,7 @@
       "title": "The Cornell Daily Sun",
       "nameOnPage": "The Cornell Daily Sun",
       "summary": "Cornell's student newspaper, founded in 1880, is independent of the university and staffed almost entirely by Cornell students from an office in downtown Ithaca.",
-      "hook": "is staffed almost entirely by students, who run an independent paper founded in 1880",
+      "hook": "gives students the chance to staff an independent daily newspaper founded in 1880",
       "quote": "Founded in 1880, The Cornell Daily Sun is the oldest continuously independent college daily newspaper in the country. It is staffed almost entirely by Cornell students, operating out of an office building in downtown Ithaca.",
       "sourceUrl": "https://faq.enrollment.cornell.edu/kb/article/264-does-cornell-have-a-student-newspaper/",
       "sourceTitle": "Does Cornell have a student newspaper? - Frequently Asked Questions",
@@ -1608,10 +1531,10 @@
       "commonnessReason": "Every campus has a student paper; known but rarely the center of an essay.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:50.341Z"
+        "checkedAt": "2026-11-06T16:31:05.096Z"
       }
     },
     {
@@ -1635,10 +1558,36 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:49.856Z"
+        "checkedAt": "2026-11-06T16:31:04.652Z"
+      }
+    },
+    {
+      "id": "cornell:akwe-kon:6d4944",
+      "schoolId": "cornell",
+      "unitIds": [],
+      "kind": "program",
+      "title": "Akwe:kon",
+      "nameOnPage": "Akwe:kon",
+      "summary": "Akwe:kon, the first Native student residence hall in North America, is offered alongside Indigenous Studies courses and student leadership opportunities.",
+      "hook": "offers a home at Akwe:kon, the first Native student residence hall in North America",
+      "quote": "Indigenous Studies (AIIS) courses, student leadership opportunities, and an undergraduate residential experience at Akwe:kon, the first Native student residence hall in North America.",
+      "sourceUrl": "https://admissions.cornell.edu/community-belonging/belonging-inclusion",
+      "sourceTitle": "Belonging & Inclusion | Undergraduate Admissions",
+      "themes": [
+        "cultural-identity",
+        "leadership"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Listed on the admissions belonging page.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:30:55.740Z"
       }
     },
     {
@@ -1664,10 +1613,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:49.960Z"
+        "checkedAt": "2026-11-06T16:31:04.855Z"
       }
     },
     {
@@ -1691,10 +1640,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:49.843Z"
+        "checkedAt": "2026-11-06T16:31:04.778Z"
       }
     },
     {
@@ -1717,10 +1666,10 @@
       "commonnessReason": "A well-known Cornell off-campus program for policy-minded students.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:50.416Z"
+        "checkedAt": "2026-11-06T16:31:05.104Z"
       }
     },
     {
@@ -1730,8 +1679,8 @@
       "kind": "program",
       "title": "Cornell Outdoor Education",
       "nameOnPage": "Cornell Outdoor Education",
-      "summary": "Cornell Outdoor Education offers wilderness trips, adventure programs, and outdoor courses for students.",
-      "hook": "takes students into the wilderness through outdoor courses and adventure trips",
+      "summary": "Cornell describes its outdoor education program as the most comprehensive collegiate outdoor education program in the country, inviting students to discover the wilderness and new adventures.",
+      "hook": "invites students to discover the wilderness and new adventures through outdoor education",
       "quote": "Discover the wilderness, experience new adventures, and explore the world. Cornell offers the most comprehensive collegiate outdoor education program in the country.",
       "sourceUrl": "https://admissions.cornell.edu/community-belonging/health-wellness",
       "sourceTitle": "Health & Wellness | Undergraduate Admissions",
@@ -1744,14 +1693,14 @@
       "commonnessReason": "Featured on admissions pages and widely cited by applicants who love the outdoors.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:50.040Z"
+        "checkedAt": "2026-11-06T16:31:04.827Z"
       }
     },
     {
-      "id": "cornell:dc-start:fdd459",
+      "id": "cornell:dc-start:aff989",
       "schoolId": "cornell",
       "unitIds": [
         "brooks"
@@ -1761,7 +1710,7 @@
       "nameOnPage": "DC Start",
       "summary": "A first-semester residential program in Washington, D.C., for first-year Brooks School students entering the public policy and health care policy majors.",
       "hook": "starts first-year Brooks students' policy studies in Washington, D.C.",
-      "quote": "DC Start is a residential academic experience offered to first year Brooks School undergraduate students in their fall semester. Housed at the Brooks School’s Wolpe Building in close walking distance to Dupont Circle in Washington D.C., the program offers an inspiring, immersive public policy learning experience to students entering the public policy and health care policy majors.",
+      "quote": "DC Start is a residential academic experience offered to first-year Brooks School undergraduate students in their fall semester. Housed at the Brooks School’s Wolpe Hall within walking distance of Dupont Circle in Washington, D.C., the program offers an inspiring, immersive public policy learning experience to students entering the public policy and health care policy majors.",
       "sourceUrl": "https://publicpolicy.cornell.edu/dc/start/",
       "sourceTitle": "First-Year Undergrads - Cornell Brooks Public Policy",
       "themes": [
@@ -1769,14 +1718,14 @@
         "first-year",
         "medicine"
       ],
-      "commonness": "moderate",
-      "commonnessReason": "Featured in the Brooks School admissions requirements.",
+      "commonness": "common",
+      "commonnessReason": "Featured on the Brooks School admissions page, which asks DC Start applicants to explain their interest.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:50.470Z"
+        "checkedAt": "2026-11-06T16:31:05.205Z"
       }
     },
     {
@@ -1799,10 +1748,10 @@
       "commonnessReason": "Student accelerators are common; eLab is known among entrepreneurship applicants.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:50.200Z"
+        "checkedAt": "2026-11-06T16:31:04.999Z"
       }
     },
     {
@@ -1824,14 +1773,14 @@
         "languages",
         "global"
       ],
-      "commonness": "moderate",
-      "commonnessReason": "Featured on the admissions page for engineering applicants.",
+      "commonness": "common",
+      "commonnessReason": "Featured on Cornell's admissions page for Duffield Engineering applicants.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:50.211Z"
+        "checkedAt": "2026-11-06T16:31:05.012Z"
       }
     },
     {
@@ -1856,10 +1805,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:50.723Z"
+        "checkedAt": "2026-11-06T16:31:05.378Z"
       }
     },
     {
@@ -1888,10 +1837,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:50.573Z"
+        "checkedAt": "2026-11-06T16:31:05.197Z"
       }
     },
     {
@@ -1914,10 +1863,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:50.679Z"
+        "checkedAt": "2026-11-06T16:31:05.256Z"
       }
     },
     {
@@ -1942,10 +1891,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:50.758Z"
+        "checkedAt": "2026-11-06T16:31:05.435Z"
       }
     },
     {
@@ -1967,10 +1916,10 @@
       "commonnessReason": "An iconic Cornell tradition that many applicants mention.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:51.211Z"
+        "checkedAt": "2026-11-06T16:31:06.050Z"
       }
     },
     {
@@ -1993,10 +1942,10 @@
       "commonnessReason": "One of Cornell's best-known traditions, featured on admissions pages.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:48.108Z"
+        "checkedAt": "2026-11-06T16:31:02.708Z"
       }
     },
     {
@@ -2018,10 +1967,10 @@
       "commonnessReason": "Cornell's best-known annual celebration, named on admissions pages.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:15:51.373Z"
+        "checkedAt": "2026-11-06T16:31:06.060Z"
       }
     }
   ]

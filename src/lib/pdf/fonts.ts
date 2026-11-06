@@ -70,7 +70,7 @@ function findFontDir(): string | null {
   const needed = [...FILES.sans, ...FILES.serif, ...FILES.display].map((f) => f.file);
   for (const dir of fontDirCandidates()) {
     try {
-      if (needed.every((f) => fs.statSync(path.join(dir, f)).isFile())) return dir;
+      if (needed.every((f) => fs.statSync(path.join(/*turbopackIgnore: true*/ dir, f)).isFile())) return dir;
     } catch {
       // missing in this candidate; try the next one
     }
@@ -96,7 +96,7 @@ export function ensurePdfFonts(): PdfFonts {
     for (const key of ["sans", "serif", "display"] as const) {
       Font.register({
         family: FAMILIES[key],
-        fonts: FILES[key].map((f) => ({ src: path.join(dir, f.file), fontWeight: f.fontWeight })),
+        fonts: FILES[key].map((f) => ({ src: path.join(/*turbopackIgnore: true*/ dir, f.file), fontWeight: f.fontWeight })),
       });
     }
     fonts = { ...FAMILIES, embedded: true };

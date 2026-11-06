@@ -25,10 +25,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:29:47.416Z"
+        "checkedAt": "2026-11-06T16:30:16.680Z"
       }
     },
     {
@@ -51,10 +51,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:29:47.303Z"
+        "checkedAt": "2026-11-06T16:30:16.685Z"
       }
     },
     {
@@ -65,7 +65,7 @@
       "title": "Kelly Writers House",
       "nameOnPage": "Kelly Writers House",
       "summary": "Founded in 1995, the Kelly Writers House is a 13-room house on Locust Walk that serves writers from Penn and the Philadelphia region and hosts about 150 public programs each semester.",
-      "hook": "offers a 13-room house on Locust Walk with about 150 public writing programs each semester",
+      "hook": "offers a 13-room house on Locust Walk that hosts about 150 public programs each semester",
       "quote": "Founded in 1995 by a group of students, faculty, staff and alumni, the Kelly Writers House is an actual 13-room house at 3805 Locust Walk on Penn's campus that serves as a center for writers of all kinds from Penn and the Philadelphia region at large. Each semester the Writers House hosts approximately 150 public programs and projects",
       "sourceUrl": "https://writing.upenn.edu/wh/about/",
       "sourceTitle": "About the Kelly Writers House",
@@ -77,38 +77,10 @@
       "commonnessReason": "One of the most frequently cited Penn landmarks in applicant essays.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:29:47.727Z"
-      }
-    },
-    {
-      "id": "penn:kleinman-center-for-energy-policy:c682f9",
-      "schoolId": "penn",
-      "unitIds": [],
-      "kind": "center",
-      "title": "Kleinman Center for Energy Policy",
-      "nameOnPage": "Kleinman Center",
-      "summary": "Penn's Kleinman Center for Energy Policy has funded more than 200 Penn student grants, offered four times a year to individual students and student groups for research and conferences.",
-      "hook": "funds student research and conference grants four times a year, open to individuals and student groups",
-      "quote": "From research to conferences, the Kleinman Center has funded more than 200 Penn student grants. Grants are offered four times per year in the spring, summer, fall, and winter, and are open to individual students as well as student groups.",
-      "sourceUrl": "https://kleinmanenergy.upenn.edu/education/student-grants/",
-      "sourceTitle": "Student Grants - Kleinman Center for Energy Policy",
-      "themes": [
-        "energy",
-        "environmental-policy",
-        "undergraduate-research",
-        "public-policy"
-      ],
-      "commonness": "moderate",
-      "commonnessReason": "Penn's energy policy center is known to energy-minded applicants, but its student grant program is less often cited.",
-      "people": [],
-      "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
-      "verification": {
-        "status": "verified",
-        "checkedAt": "2026-11-05T16:29:47.835Z"
+        "checkedAt": "2026-11-06T16:30:17.045Z"
       }
     },
     {
@@ -133,10 +105,10 @@
       "commonnessReason": "Penn's best-known community engagement center, frequently named in Penn essays.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:29:47.466Z"
+        "checkedAt": "2026-11-06T16:30:16.941Z"
       }
     },
     {
@@ -159,18 +131,16 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:29:47.386Z"
+        "checkedAt": "2026-11-06T16:30:16.780Z"
       }
     },
     {
       "id": "penn:the-water-center-at-penn:b76979",
       "schoolId": "penn",
-      "unitIds": [
-        "college"
-      ],
+      "unitIds": [],
       "kind": "center",
       "title": "The Water Center at Penn",
       "nameOnPage": "The Water Center at Penn",
@@ -187,13 +157,12 @@
         "public-policy"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:29:47.874Z"
+        "checkedAt": "2026-11-06T16:30:16.953Z"
       }
     },
     {
@@ -215,10 +184,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:29:47.949Z"
+        "checkedAt": "2026-11-06T16:30:17.384Z"
       }
     },
     {
@@ -230,8 +199,8 @@
       "kind": "course",
       "title": "EAS 2020: Rivers in a Changing World",
       "nameOnPage": "EAS 2020: Rivers in a Changing World",
-      "summary": "An ABCS course that brings Penn undergraduates and Sayre High School students together at an environmental river laboratory steps from Cobbs Creek for hands-on river science.",
-      "hook": "pairs Penn undergraduates with Sayre High School students for hands-on river science beside Cobbs Creek",
+      "summary": "An ABCS course built on a partnership with Sayre High School that uses an environmental river laboratory steps from Cobbs Creek for hands-on learning by Sayre students alongside Penn undergraduates.",
+      "hook": "has Penn undergraduates learn alongside Sayre High School students at a river laboratory beside Cobbs Creek",
       "quote": "to develop an Academically Based Community Service (ABCS) course on “Rivers in a changing world”. ... The unique setting of an environmental river laboratory that is just steps from a natural river (Cobbs Creek), and close to Sayre High School, presents a special opportunity for meaningful hands-on learning of Sayre students in collaboration with Penn undergraduates.",
       "sourceUrl": "https://www.nettercenter.upenn.edu/fall-2026-abcs-courses",
       "sourceTitle": "Fall 2026 ABCS Courses | Netter Center for Community Partnerships",
@@ -242,15 +211,14 @@
         "fieldwork"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [
         "Douglas Jerolmack"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:29:47.606Z"
+        "checkedAt": "2026-11-06T16:30:16.964Z"
       }
     },
     {
@@ -283,14 +251,14 @@
         "Cynthia Sung"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:29:47.606Z"
+        "checkedAt": "2026-11-06T16:30:16.964Z"
       }
     },
     {
-      "id": "penn:eesc-4300-meteorology-and-atmospheric-sc:e98414",
+      "id": "penn:eesc-4300-meteorology-and-atmospheric-sc:3d378e",
       "schoolId": "penn",
       "unitIds": [
         "college"
@@ -298,9 +266,9 @@
       "kind": "course",
       "title": "EESC 4300: Meteorology and Atmospheric Science",
       "nameOnPage": "EESC 4300",
-      "summary": "This course explains the physics of weather and climate, from hurricanes and heat waves to urban heat islands and neighborhood-scale urban microclimates.",
+      "summary": "An atmospheric science course on the physical processes that shape weather and climate, tied to hurricanes, heat waves, and urban heat islands at scales from neighborhood microclimates to the whole planet.",
       "hook": "explains urban heat islands and neighborhood microclimates through atmospheric physics",
-      "quote": "From hurricanes and heat waves to climate change and urban heat islands, atmospheric science sits at the center of some of today's most urgent environmental challenges. ... from neighborhood urban microclimates to the entire planet",
+      "quote": "From hurricanes and heat waves to climate change and urban heat islands, atmospheric science sits at the center of some of today's most urgent environmental challenges. ... Students explore the structure and composition of the atmosphere and the physical processes that shape weather and climate ... from neighborhood urban microclimates to the entire planet",
       "sourceUrl": "https://earth.sas.upenn.edu/course-list/2027A",
       "sourceTitle": "Courses for Spring 2027 | Earth and Environmental Sciences",
       "themes": [
@@ -310,15 +278,14 @@
         "earth-science"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [
         "Einara Zahn"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:29:48.198Z"
+        "checkedAt": "2026-11-06T16:30:17.140Z"
       }
     },
     {
@@ -330,7 +297,7 @@
       "kind": "course",
       "title": "EESC 4630: Hydrology",
       "nameOnPage": "EESC 4630",
-      "summary": "A fall 2026 course introducing the hydrologic cycle and water budgets, stream flow, flood hydrographs, groundwater flow, and water quality.",
+      "summary": "An introduction to the hydrologic cycle and water budgets, stream flow, flood hydrograph analysis, groundwater flow, well hydraulics, and water quality.",
       "hook": "covers stream flow, flood hydrographs, groundwater flow, and water quality fundamentals",
       "quote": "Introduction to the basic principles of the hydrologic cycle and water budgets, precipitation and infiltration, evaporation and transpiration, stream flow, hydrograph analysis (floods), subsurface and groundwater flow, well hydraulics, water quality, and frequency analysis.",
       "sourceUrl": "https://earth.sas.upenn.edu/course-list/2026C",
@@ -340,15 +307,14 @@
         "earth-science"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [
         "Hugo Ulloa"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:29:48.399Z"
+        "checkedAt": "2026-11-06T16:30:17.489Z"
       }
     },
     {
@@ -377,10 +343,10 @@
         "Jane E Dmochowski"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:29:48.399Z"
+        "checkedAt": "2026-11-06T16:30:17.489Z"
       }
     },
     {
@@ -411,10 +377,10 @@
         "Emma Lapp"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:29:48.399Z"
+        "checkedAt": "2026-11-06T16:30:17.489Z"
       }
     },
     {
@@ -426,7 +392,7 @@
       "kind": "course",
       "title": "ENVS 2390: Freshwater Ecology",
       "nameOnPage": "ENVS 2390",
-      "summary": "A spring 2027 survey of the physical, chemical, and biological properties of freshwater ecosystems, from rivers to still waters, both natural and polluted.",
+      "summary": "A survey of the physical, chemical, and biological properties of freshwater ecosystems, both flowing and still, natural and polluted.",
       "hook": "surveys the physics, chemistry, and biology of natural and polluted freshwater ecosystems",
       "quote": "Survey of the physical, chemical and biological properties of freshwater ecosystems, both riverine and lentic, natural and polluted.",
       "sourceUrl": "https://earth.sas.upenn.edu/course-list/2027A",
@@ -440,15 +406,14 @@
         "physics"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [
         "Melinda Daniels"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:29:48.198Z"
+        "checkedAt": "2026-11-06T16:30:17.140Z"
       }
     },
     {
@@ -478,10 +443,10 @@
         "Teresa Gimenez"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:29:48.198Z"
+        "checkedAt": "2026-11-06T16:30:17.140Z"
       }
     },
     {
@@ -508,10 +473,10 @@
         "Jane E Dmochowski"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:29:48.198Z"
+        "checkedAt": "2026-11-06T16:30:17.140Z"
       }
     },
     {
@@ -538,10 +503,10 @@
         "Thomas Philip Mckeon"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:29:48.198Z"
+        "checkedAt": "2026-11-06T16:30:17.140Z"
       }
     },
     {
@@ -553,7 +518,7 @@
       "kind": "course",
       "title": "ENVS 4250: Our Water Planet",
       "nameOnPage": "ENVS 4250",
-      "summary": "A spring 2027 course that uses case studies to examine water issues and the outlook for water quality and availability in an era of rapid environmental change, with a local field trip.",
+      "summary": "A course that uses case studies to examine water issues in the Anthropocene and the outlook for water quality and availability in an era of rapid environmental change, with a local field trip.",
       "hook": "examines the future of water quality and availability through case studies and a local field trip",
       "quote": "use topical case studies to examine water issues in the Anthropocene and examine what lies in store for water quality and availability in the twenty-first century during an era of rapid environmental change. ... This course will include a local field trip.",
       "sourceUrl": "https://earth.sas.upenn.edu/course-list/2027A",
@@ -563,15 +528,14 @@
         "fieldwork"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [
         "Jon Hawkings"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:29:48.198Z"
+        "checkedAt": "2026-11-06T16:30:17.140Z"
       }
     },
     {
@@ -600,10 +564,10 @@
         "Michael Mann"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:29:48.198Z"
+        "checkedAt": "2026-11-06T16:30:17.140Z"
       }
     },
     {
@@ -631,10 +595,10 @@
         "Kathryn Hellerstein"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:29:49.252Z"
+        "checkedAt": "2026-11-06T16:30:18.182Z"
       }
     },
     {
@@ -664,10 +628,10 @@
         "Linda Grabner"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:29:49.252Z"
+        "checkedAt": "2026-11-06T16:30:18.182Z"
       }
     },
     {
@@ -696,38 +660,10 @@
         "Dylan Small"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:29:47.606Z"
-      }
-    },
-    {
-      "id": "penn:campus-bike-repair-stations-and-penn-bik:fbd0f8",
-      "schoolId": "penn",
-      "unitIds": [],
-      "kind": "facility",
-      "title": "Campus bike repair stations and Penn Bike Map",
-      "nameOnPage": "bike repair stations",
-      "summary": "Penn maintains two campus bike repair stations for community use and a Penn Bike Map showing city bike lanes, Penn bike parking, and repair stations.",
-      "hook": "gives cyclists two campus repair stations and a map of bike lanes, parking, and repair stops",
-      "quote": "Flat tire? Penn has campus bike repair stations. There are two bike repair stations available for use by the Penn Community. ... Penn Bike Map - includes City designated bike lanes, Penn bike parking, and repair stations on campus.",
-      "sourceUrl": "https://transportation.upenn.edu/resources-cyclists",
-      "sourceTitle": "Resources for Cyclists | Penn Transportation and Parking",
-      "themes": [
-        "cycling",
-        "transportation",
-        "gis-mapping",
-        "making"
-      ],
-      "commonness": "rare",
-      "commonnessReason": "",
-      "people": [],
-      "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
-      "verification": {
-        "status": "verified",
-        "checkedAt": "2026-11-05T16:29:49.919Z"
+        "checkedAt": "2026-11-06T16:30:16.964Z"
       }
     },
     {
@@ -749,14 +685,14 @@
         "robotics",
         "entrepreneurship"
       ],
-      "commonness": "rare",
-      "commonnessReason": "",
+      "commonness": "moderate",
+      "commonnessReason": "A makerspace of the kind most engineering schools offer.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:29:50.100Z"
+        "checkedAt": "2026-11-06T16:30:18.662Z"
       }
     },
     {
@@ -782,10 +718,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:29:57.869Z"
+        "checkedAt": "2026-11-06T16:30:27.036Z"
       }
     },
     {
@@ -815,10 +751,10 @@
         "Howard Neukrug"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:29:57.675Z"
+        "checkedAt": "2026-11-06T16:30:27.033Z"
       }
     },
     {
@@ -848,10 +784,10 @@
         "Hugo N. Ulloa"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:29:57.675Z"
+        "checkedAt": "2026-11-06T16:30:27.033Z"
       }
     },
     {
@@ -882,10 +818,10 @@
         "Jon Hawkings"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:29:57.675Z"
+        "checkedAt": "2026-11-06T16:30:27.033Z"
       }
     },
     {
@@ -897,8 +833,8 @@
       "kind": "lab",
       "title": "Oceans & Climate Group @Penn",
       "nameOnPage": "Oceans & Climate Group",
-      "summary": "The Oceans & Climate Group runs global climate models and built a Digital Climate Atlas of over 200 geospatial datasets with IPCC projections of how warming will affect places.",
-      "hook": "uses global climate models and a 200-dataset online climate atlas to map warming impacts",
+      "summary": "The Oceans & Climate Group runs global climate models and studies their output; its Digital Climate Atlas is an online visualization of over 200 geospatial datasets, including IPCC projections of warming impacts.",
+      "hook": "runs global climate models and offers an online climate atlas of more than 200 geospatial datasets",
       "quote": "We run global climate models and study their output ... The Digital Climate Atlas is an online climate visualization project. It includes over 200 geospatial datasets and includes IPCC projections for how temperature increases will impact places around the world.",
       "sourceUrl": "https://web.sas.upenn.edu/oceans-and-climate/",
       "sourceTitle": "Oceans and Climate |",
@@ -910,15 +846,14 @@
         "global"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [
         "Irina Marinov"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:29:58.605Z"
+        "checkedAt": "2026-11-06T16:30:28.021Z"
       }
     },
     {
@@ -929,7 +864,7 @@
       ],
       "kind": "lab",
       "title": "Penn ATmospheric Multiscale Observations & Simulations (ATMOS) Lab",
-      "nameOnPage": "Urban Microclimate & Atmospheric Physics",
+      "nameOnPage": "ATMOS Lab",
       "summary": "The ATMOS Lab studies how surface turbulence interacts with the atmosphere from microclimates to regional climate, with a research area on heat, mass, and momentum transfer in cities.",
       "hook": "investigates urban microclimates and how heat moves through cities",
       "quote": "The ATMOS Lab studies how turbulent processes at the Earth’s surface interact with the atmosphere across scales, from microclimates to regional weather and climate. ... Urban Microclimate & Atmospheric Physics ... Fundamental understanding of heat, mass, and momentum transfer in cities.",
@@ -942,13 +877,12 @@
         "earth-science"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:29:58.688Z"
+        "checkedAt": "2026-11-06T16:30:27.894Z"
       }
     },
     {
@@ -959,7 +893,7 @@
       ],
       "kind": "lab",
       "title": "Penn GEFLOW Lab",
-      "nameOnPage": "Urban Flooding in a Changing Climate",
+      "nameOnPage": "Penn GEFLOW Lab",
       "summary": "The Penn GEFLOW Lab studies fluid physics in nature, including a project on how extreme rainfall becomes urban flood waves, and lists senior thesis research among its openings for undergraduates.",
       "hook": "offers undergraduates senior thesis research on natural flows such as urban flooding from extreme rainfall",
       "quote": "This project aims to develop an interdisciplinary framework to predict how extreme rainfall events become flood waves in urban environments and quantify its impacts. ... Undergraduate student – Senior thesis",
@@ -974,13 +908,12 @@
         "interdisciplinary"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:29:58.748Z"
+        "checkedAt": "2026-11-06T16:30:28.021Z"
       }
     },
     {
@@ -1009,10 +942,10 @@
         "Alain F. Plante"
       ],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:30:08.911Z"
+        "checkedAt": "2026-11-06T16:30:38.111Z"
       }
     },
     {
@@ -1039,10 +972,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:29:58.803Z"
+        "checkedAt": "2026-11-06T16:30:28.249Z"
       }
     },
     {
@@ -1067,22 +1000,22 @@
       "commonnessReason": "ABCS is a signature Penn model that some applicants mention, though specific ABCS courses are rarely named.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:30:00.198Z"
+        "checkedAt": "2026-11-06T16:30:29.035Z"
       }
     },
     {
-      "id": "penn:civic-sustainability-fellowship-with-phi:f04804",
+      "id": "penn:civic-sustainability-fellowship-with-phi:1a2574",
       "schoolId": "penn",
       "unitIds": [],
       "kind": "location",
       "title": "Civic Sustainability Fellowship with Philadelphia city agencies",
       "nameOnPage": "Civic Sustainability Fellowship",
-      "summary": "This eleven-week paid summer fellowship places Penn students with Philadelphia city agencies and nonprofits, such as the City's Office of Sustainability and the Philadelphia Energy Authority.",
-      "hook": "places students in paid summer roles with Philadelphia's sustainability office and energy authority",
-      "quote": "This eleven-week paid summer program places research interns in summer positions with city agencies and non-profit organization to support the City’s sustainability objectives and provide professional development and real-world learning opportunities to Penn students. ... City of Philadelphia’s Office of Sustainability ... Philadelphia Energy Authority",
+      "summary": "A paid eleven-week summer fellowship placing Penn students with city agencies and nonprofits on sustainability; hosts have included the Office of Sustainability and Philadelphia Energy Authority.",
+      "hook": "places students in paid summer roles that support Philadelphia's sustainability goals",
+      "quote": "This eleven-week paid summer program places research interns in summer positions with city agencies and non-profit organization to support the City’s sustainability objectives and provide professional development and real-world learning opportunities to Penn students. ... Organizations have included: ... City of Philadelphia’s Office of Sustainability ... Philadelphia Energy Authority",
       "sourceUrl": "https://www.sustainability.upenn.edu/get-involved/opportunities/civic-sustainability-fellowship",
       "sourceTitle": "Civic Sustainability Fellowship | Penn Sustainability",
       "themes": [
@@ -1093,40 +1026,38 @@
         "social-enterprise"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:30:00.325Z"
+        "checkedAt": "2026-11-06T16:30:29.112Z"
       }
     },
     {
-      "id": "penn:morris-arboretum-and-gardens:458a8c",
+      "id": "penn:morris-arboretum-and-gardens:c60b38",
       "schoolId": "penn",
       "unitIds": [],
       "kind": "location",
       "title": "Morris Arboretum & Gardens",
       "nameOnPage": "Morris Arboretum & Gardens",
-      "summary": "Penn's Morris Arboretum & Gardens is a historic public garden and educational institution whose year-round offerings integrate art, science, and environmental stewardship.",
-      "hook": "offers year-round activities that combine science and environmental stewardship at Penn's public garden",
-      "quote": "A historic public garden and educational institution, the Morris Arboretum & Gardens hosts year-round ... that integrates art, science, and environmental stewardship.",
+      "summary": "Penn's Morris Arboretum & Gardens is a historic public garden and educational institution that hosts year-round programming integrating art, science, and environmental stewardship.",
+      "hook": "offers year-round programming that combines art, science, and environmental stewardship",
+      "quote": "A historic public garden and educational institution, the Morris Arboretum & Gardens hosts year-round programming that integrates art, science, and environmental stewardship.",
       "sourceUrl": "https://www.upenn.edu/life-at-penn/arts",
       "sourceTitle": "Arts & Culture | University of Pennsylvania",
       "themes": [
         "ecology",
-        "museums",
-        "education"
+        "education",
+        "computer-science"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:30:00.405Z"
+        "checkedAt": "2026-11-06T16:30:29.187Z"
       }
     },
     {
@@ -1148,10 +1079,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:30:00.198Z"
+        "checkedAt": "2026-11-06T16:30:29.035Z"
       }
     },
     {
@@ -1179,21 +1110,22 @@
       "commonnessReason": "Widely publicized as the first Ivy League undergraduate AI degree, so many applicants cite it.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:30:01.003Z"
+        "checkedAt": "2026-11-06T16:30:29.854Z"
       }
     },
     {
       "id": "penn:computational-neuroscience-minor:e9aa63",
       "schoolId": "penn",
       "unitIds": [
-        "college"
+        "college",
+        "seas"
       ],
       "kind": "major",
       "title": "Computational Neuroscience Minor",
-      "nameOnPage": "Computational Neuroscience",
+      "nameOnPage": "Minor in Computational Neuroscience",
       "summary": "Penn's cross-school Computational Neuroscience minor gives students who study the brain quantitative skills and teaches neuroscience to students already trained in quantitative methods.",
       "hook": "pairs quantitative training with neuroscience for students coming from either side",
       "quote": "The Neuroscience Program has established a cross-school, inter-disciplinary Minor in Computational Neuroscience ... The minor provides quantitative skills to those already studying the brain, and teaches neuroscience to those already immersed in quantitative methodologies.",
@@ -1206,13 +1138,12 @@
         "computer-science"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:30:01.443Z"
+        "checkedAt": "2026-11-06T16:30:30.242Z"
       }
     },
     {
@@ -1223,9 +1154,9 @@
       ],
       "kind": "major",
       "title": "Environmental Studies Major",
-      "nameOnPage": "Environmental Studies",
-      "summary": "Penn's Environmental Studies major trains graduates to model geographic and environmental systems and to collect, manage, and work with complex environmental data sets in software.",
-      "hook": "trains students to collect, manage, and work with complex environmental data sets in software",
+      "nameOnPage": "Environmental Studies Major",
+      "summary": "Penn's Environmental Studies major aims to graduate students who can model environmental systems, collect and manage complex data sets, and work with environmental data in software.",
+      "hook": "trains students to model environmental systems and to collect and manage complex data sets",
       "quote": "Graduates can also develop basic models of geographic, environmental or geologic systems. Graduates can collect and manage a complex data set. They can also manipulate environmental data with computer software.",
       "sourceUrl": "https://earth.sas.upenn.edu/undergraduate/majors/environmental-studies",
       "sourceTitle": "Environmental Studies | Earth and Environmental Sciences",
@@ -1240,10 +1171,10 @@
       "commonnessReason": "The intended major itself is often named by applicants, but its data and modeling objectives are rarely cited.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:30:01.636Z"
+        "checkedAt": "2026-11-06T16:30:30.450Z"
       }
     },
     {
@@ -1264,17 +1195,15 @@
         "environmental-policy",
         "community-engagement",
         "environmental-studies",
-        "public-policy",
-        "business"
+        "public-policy"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:30:01.636Z"
+        "checkedAt": "2026-11-06T16:30:30.450Z"
       }
     },
     {
@@ -1303,10 +1232,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:30:02.429Z"
+        "checkedAt": "2026-11-06T16:30:30.913Z"
       }
     },
     {
@@ -1318,7 +1247,7 @@
       "kind": "major",
       "title": "Philosophy, Politics and Economics (PPE) major",
       "nameOnPage": "PPE Thematic Concentrations",
-      "summary": "PPE is an interdisciplinary major in which students design a thematic concentration of advanced courses, with themes such as Public Policy and Governance and Distributive Justice.",
+      "summary": "PPE is an interdisciplinary major in which students design a thematic concentration of challenging classes, with themes such as Public Policy and Governance and Distributive Justice.",
       "hook": "lets students build a cross-disciplinary concentration in themes like public policy and governance",
       "quote": "PPE is an interdisciplinary major that aims teach its majors how to think and work interdisciplinarily. ... Students design a thematic concentration composed of challenging classes, allowing them to think deeply about interdisciplinary topics ... Public Policy and Governance ... Distributive Justice",
       "sourceUrl": "https://ppe.sas.upenn.edu/study/curriculum/thematic-concentrations",
@@ -1331,13 +1260,12 @@
         "interdisciplinary"
       ],
       "commonness": "moderate",
-      "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:30:03.010Z"
+        "checkedAt": "2026-11-06T16:30:32.167Z"
       }
     },
     {
@@ -1361,10 +1289,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:30:08.975Z"
+        "checkedAt": "2026-11-06T16:30:38.228Z"
       }
     },
     {
@@ -1387,10 +1315,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:30:09.034Z"
+        "checkedAt": "2026-11-06T16:30:38.362Z"
       }
     },
     {
@@ -1400,8 +1328,8 @@
       "kind": "organization",
       "title": "Penn Cycling & Triathlon sport club",
       "nameOnPage": "Cycling & Triathlon",
-      "summary": "Cycling & Triathlon is one of Penn's student sport clubs, which operate under the Sport Club Council and the Campus Recreation Department.",
-      "hook": "gives riders a student-run cycling and triathlon club within Penn Campus Recreation",
+      "summary": "Cycling & Triathlon appears in Penn Campus Recreation's sport club directory; sport clubs operate under the Sport Club Council and the Campus Recreation Department.",
+      "hook": "lets riders join a cycling and triathlon sport club under Penn Campus Recreation",
       "quote": "Sport Clubs fall under the direction of the Sport Club Council (SCC) and the Campus Recreation Department. ... Cycling & Triathlon",
       "sourceUrl": "https://recreation.upenn.edu/sports/2019/9/25/sport-club-directory.aspx",
       "sourceTitle": "Sport Club Directory - Penn Campus Recreation",
@@ -1411,13 +1339,12 @@
         "fitness"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:30:09.612Z"
+        "checkedAt": "2026-11-06T16:30:38.825Z"
       }
     },
     {
@@ -1439,10 +1366,10 @@
       "commonnessReason": "Most universities have a debate team; useful for the swap test.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:30:09.918Z"
+        "checkedAt": "2026-11-06T16:30:39.183Z"
       }
     },
     {
@@ -1466,10 +1393,10 @@
       "commonnessReason": "Most universities have an environmental club; useful mainly for the swap test.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:30:10.648Z"
+        "checkedAt": "2026-11-06T16:30:39.941Z"
       }
     },
     {
@@ -1493,10 +1420,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:30:10.822Z"
+        "checkedAt": "2026-11-06T16:30:40.125Z"
       }
     },
     {
@@ -1521,10 +1448,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:30:11.207Z"
+        "checkedAt": "2026-11-06T16:30:40.512Z"
       }
     },
     {
@@ -1547,10 +1474,10 @@
       "commonnessReason": "Most universities offer jazz ensembles; useful for the swap test.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:30:11.871Z"
+        "checkedAt": "2026-11-06T16:30:41.159Z"
       }
     },
     {
@@ -1574,10 +1501,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:30:09.034Z"
+        "checkedAt": "2026-11-06T16:30:38.362Z"
       }
     },
     {
@@ -1599,10 +1526,10 @@
       "commonnessReason": "A standard student newspaper featured on admissions pages; most schools have an equivalent.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:30:12.044Z"
+        "checkedAt": "2026-11-06T16:30:41.231Z"
       }
     },
     {
@@ -1615,7 +1542,7 @@
       "title": "Hayden Scholars",
       "nameOnPage": "Hayden Scholars",
       "summary": "Hayden Scholars builds a community of undergraduate geoscience researchers through independent research experiences affiliated with Penn's Department of Earth and Environmental Science.",
-      "hook": "gives undergraduates mentored, independent geoscience research experiences within a cohort",
+      "hook": "builds a community of undergraduate geoscience researchers through independent research experiences",
       "quote": "The Hayden Scholars program aims to build a community of undergraduate researchers in the geosciences at Penn through extra-curricular, independent research experiences affiliated with the Department of Earth and Environmental Science.",
       "sourceUrl": "https://earth.sas.upenn.edu/undergraduate/undergraduate-research",
       "sourceTitle": "Undergraduate Research | Earth and Environmental Sciences",
@@ -1626,13 +1553,39 @@
         "education"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:30:12.203Z"
+        "checkedAt": "2026-11-06T16:30:41.351Z"
+      }
+    },
+    {
+      "id": "penn:kleinman-center-for-energy-policy-studen:c682f9",
+      "schoolId": "penn",
+      "unitIds": [],
+      "kind": "program",
+      "title": "Kleinman Center for Energy Policy Student Grants",
+      "nameOnPage": "Kleinman Center",
+      "summary": "The Kleinman Center for Energy Policy has funded more than 200 Penn student grants, from research to conferences, offered four times a year to individual students and student groups.",
+      "hook": "funds student research and conference grants four times a year, open to individuals and student groups",
+      "quote": "From research to conferences, the Kleinman Center has funded more than 200 Penn student grants. Grants are offered four times per year in the spring, summer, fall, and winter, and are open to individual students as well as student groups.",
+      "sourceUrl": "https://kleinmanenergy.upenn.edu/education/student-grants/",
+      "sourceTitle": "Student Grants - Kleinman Center for Energy Policy",
+      "themes": [
+        "energy",
+        "environmental-policy",
+        "undergraduate-research",
+        "public-policy"
+      ],
+      "commonness": "rare",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:30:42.124Z"
       }
     },
     {
@@ -1657,10 +1610,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:30:12.288Z"
+        "checkedAt": "2026-11-06T16:30:42.517Z"
       }
     },
     {
@@ -1685,10 +1638,10 @@
       "commonnessReason": "Study abroad offices exist at nearly every university and are often cited generically.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:30:00.198Z"
+        "checkedAt": "2026-11-06T16:30:29.035Z"
       }
     },
     {
@@ -1707,14 +1660,14 @@
         "outdoors",
         "fitness"
       ],
-      "commonness": "rare",
-      "commonnessReason": "",
+      "commonness": "moderate",
+      "commonnessReason": "A campus-recreation outdoor trips program like those at many universities.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:30:13.318Z"
+        "checkedAt": "2026-11-06T16:30:42.764Z"
       }
     },
     {
@@ -1737,10 +1690,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:30:14.291Z"
+        "checkedAt": "2026-11-06T16:30:43.367Z"
       }
     },
     {
@@ -1763,23 +1716,21 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:30:14.726Z"
+        "checkedAt": "2026-11-06T16:30:43.756Z"
       }
     },
     {
       "id": "penn:penn-model-organization-of-american-stat:b03008",
       "schoolId": "penn",
-      "unitIds": [
-        "college"
-      ],
+      "unitIds": [],
       "kind": "program",
       "title": "Penn Model Organization of American States (Penn Model OAS)",
       "nameOnPage": "Penn Model OAS",
       "summary": "Penn Model OAS pairs Penn undergraduates with Philadelphia-area public high school students who prepare as diplomats for an annual Model OAS simulation in Washington, D.C., including public speaking.",
-      "hook": "prepares students as diplomats for a Model OAS simulation alongside Philadelphia high schoolers",
+      "hook": "has Penn students help Philadelphia-area high schoolers prepare as diplomats for an annual Model OAS simulation",
       "quote": "Students come from public high schools across in Philadelphia and the Norristown area to work with Penn college students in preparing to serve as “diplomats” in the annual Model OAS simulation in Washington, D.C. in late fall. ... They also engage in public speaking, and interact with policy experts, public officials, and leading scholars in the field.",
       "sourceUrl": "https://clals.sas.upenn.edu/welcome-penn-model-oas",
       "sourceTitle": "Welcome to Penn Model OAS | Center for Latin American and Latinx Studies",
@@ -1792,13 +1743,12 @@
         "public-policy"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:30:15.167Z"
+        "checkedAt": "2026-11-06T16:30:44.492Z"
       }
     },
     {
@@ -1821,10 +1771,10 @@
       "commonnessReason": "A well-publicized Penn research program that some applicants mention.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:30:18.968Z"
+        "checkedAt": "2026-11-06T16:30:48.312Z"
       }
     },
     {
@@ -1848,10 +1798,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:30:19.030Z"
+        "checkedAt": "2026-11-06T16:30:48.340Z"
       }
     },
     {
@@ -1882,10 +1832,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:30:19.510Z"
+        "checkedAt": "2026-11-06T16:30:49.245Z"
       }
     },
     {
@@ -1907,10 +1857,10 @@
       "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:30:19.393Z"
+        "checkedAt": "2026-11-06T16:30:48.720Z"
       }
     },
     {
@@ -1921,7 +1871,7 @@
       ],
       "kind": "program",
       "title": "The Marian Anderson Performance Program (MUSC 0100)",
-      "nameOnPage": "Marian Anderson",
+      "nameOnPage": "Marian Anderson Performance Program",
       "summary": "This auditioned Music Department program, open to music majors and minors, provides performance instruction in classical, jazz, and world music traditions.",
       "hook": "offers auditioned performance instruction in jazz, classical, and world music for music majors and minors",
       "quote": "This program is open to music majors and minors only. ... The Department of Music supports a wide variety of performance traditions and encourages qualified students to apply for instruction in classical, jazz, and world music traditions.",
@@ -1932,13 +1882,12 @@
         "jazz"
       ],
       "commonness": "rare",
-      "commonnessReason": "",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:30:19.455Z"
+        "checkedAt": "2026-11-06T16:30:48.785Z"
       }
     },
     {
@@ -1964,10 +1913,36 @@
       "commonnessReason": "A known specialized program with its own application; energy-focused applicants often mention it.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:30:19.648Z"
+        "checkedAt": "2026-11-06T16:30:49.048Z"
+      }
+    },
+    {
+      "id": "penn:convocation-at-franklin-field:9cb3eb",
+      "schoolId": "penn",
+      "unitIds": [],
+      "kind": "tradition",
+      "title": "Convocation at Franklin Field",
+      "nameOnPage": "Convocation Ceremony",
+      "summary": "Convocation at Franklin Field is Penn's traditional welcome ceremony for the incoming class and new transfer students, with remarks and musical performances.",
+      "hook": "welcomes each new class at Franklin Field with remarks and musical performances",
+      "quote": "hosted the Convocation Ceremony ... at Franklin Field. This ceremony is Penn's traditional welcome to the Class of ... and new transfer students as they join the Penn community, with remarks and musical performances.",
+      "sourceUrl": "https://convocation.upenn.edu/",
+      "sourceTitle": "University of Pennsylvania",
+      "themes": [
+        "first-year",
+        "music"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Most universities hold a convocation; useful mainly for the swap test.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:30:49.414Z"
       }
     },
     {
@@ -1989,37 +1964,10 @@
       "commonnessReason": "Penn's best-known student tradition, widely cited by applicants.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:30:20.013Z"
-      }
-    },
-    {
-      "id": "penn:new-student-convocation-at-franklin-fiel:9cb3eb",
-      "schoolId": "penn",
-      "unitIds": [],
-      "kind": "tradition",
-      "title": "New Student Convocation at Franklin Field",
-      "nameOnPage": "Convocation",
-      "summary": "Convocation at Franklin Field is Penn's traditional welcome ceremony for the incoming class and new transfer students, with remarks and musical performances.",
-      "hook": "welcomes each new class at Franklin Field with remarks and musical performances",
-      "quote": "hosted the Convocation Ceremony ... at Franklin Field. This ceremony is Penn's traditional welcome to the Class of ... and new transfer students as they join the Penn community, with remarks and musical performances.",
-      "sourceUrl": "https://convocation.upenn.edu/",
-      "sourceTitle": "University of Pennsylvania",
-      "themes": [
-        "first-year",
-        "history",
-        "music"
-      ],
-      "commonness": "moderate",
-      "commonnessReason": "Most universities hold a convocation; useful mainly for the swap test.",
-      "people": [],
-      "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
-      "verification": {
-        "status": "verified",
-        "checkedAt": "2026-11-05T16:30:20.156Z"
+        "checkedAt": "2026-11-06T16:30:49.381Z"
       }
     },
     {
@@ -2042,10 +1990,10 @@
       "commonnessReason": "A famous Penn tradition that many applicants mention.",
       "people": [],
       "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
+      "verifiedAt": "2026-11-06",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T16:30:19.893Z"
+        "checkedAt": "2026-11-06T16:30:49.307Z"
       }
     }
   ]

@@ -126,7 +126,7 @@
       },
       "sourceUrl": "https://admissions.umich.edu/apply/first-year-applicants/essay-questions",
       "verifiedAt": null,
-      "note": "Required for all first-year applicants; answered about the unit applied to (for Urban Technology applicants, Taubman College). admissions.umich.edu answers automated clients with a Cloudflare bot challenge (fetch-text and WebFetch both refused with HTTP 403), so the text could not be confirmed on the official page from this environment. Search results for the official essay-questions page show this wording and word range, and two independent 2026-27 essay guides reproduce the identical prompt (one reports checking U-M's page on 2026-09-24 and that the prompts are unchanged from 2025-26). Re-confirm on the official page before marking verified."
+      "note": "Required for all first-year applicants; answered about the unit applied to (for Urban Technology applicants, Taubman College). admissions.umich.edu answers automated clients with a Cloudflare bot challenge (fetch-text and WebFetch both refused with HTTP 403), so the text could not be confirmed on the official page from this environment. Search results for the official essay-questions page show this wording and word range, and two independent 2026-27 essay guides reproduce the identical prompt (one reports checking U-M's page on 2026-09-24 and that the prompts are unchanged from 2025-26). Re-confirm on the official page before marking verified. Re-checked 2026-11-06: fetch-text still gets the bot challenge (HTTP 403), which WhyUs does not try to get past."
     },
     {
       "id": "umich-2026-contribute",
@@ -142,7 +142,7 @@
       },
       "sourceUrl": "https://admissions.umich.edu/apply/first-year-applicants/essay-questions",
       "verifiedAt": null,
-      "note": "Required for all first-year applicants. admissions.umich.edu answers automated clients with a Cloudflare bot challenge (fetch-text and WebFetch both refused with HTTP 403), so the text could not be confirmed on the official page from this environment. Search results for the official essay-questions page show this wording and word range, and two independent 2026-27 essay guides reproduce the identical prompt (one reports checking U-M's page on 2026-09-24 and that the prompts are unchanged from 2025-26). Re-confirm on the official page before marking verified."
+      "note": "Required for all first-year applicants. admissions.umich.edu answers automated clients with a Cloudflare bot challenge (fetch-text and WebFetch both refused with HTTP 403), so the text could not be confirmed on the official page from this environment. Search results for the official essay-questions page show this wording and word range, and two independent 2026-27 essay guides reproduce the identical prompt (one reports checking U-M's page on 2026-09-24 and that the prompts are unchanged from 2025-26). Re-confirm on the official page before marking verified. Re-checked 2026-11-06: fetch-text still gets the bot challenge (HTTP 403), which WhyUs does not try to get past."
     }
   ],
   "seedUrls": [
@@ -318,7 +318,7 @@
     {
       "host": "admissions.umich.edu",
       "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
-      "checkedAt": "2026-11-05"
+      "checkedAt": "2026-11-06"
     },
     {
       "host": "lsa.umich.edu",
