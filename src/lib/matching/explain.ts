@@ -38,7 +38,7 @@ export function offerClause(s: ScoredFact): string {
  * connection: the cited theme first, then a rare word the fact shares.
  * `themes` (optional): the themes the sentence cites, strongest first.
  */
-export function evidencePhrase(a: ActivityProfile, link: ActivityLink, themes?: string[]): string | null {
+export function evidencePhrase(a: ActivityProfile, link: ActivityLink, themes?: string[], factStems?: Set<string>): string | null {
   const text = a.evidenceText;
   if (!text || text === a.title) return null;
   // Each candidate phrase is credited for what produced it: the connection's
@@ -74,7 +74,14 @@ export function evidencePhrase(a: ActivityProfile, link: ActivityLink, themes?: 
     if (inTitle === stems.length) continue;
     let score = credit;
     if (stems.length >= 2) score += 0.6;
+    // Words the detail itself uses make the shared ground visible ("energy and water policy" for an energy professor).
+    if (factStems) score += Math.min(0.8, 0.4 * stems.filter((x) => factStems.has(x)).length);
     if (inTitle * 2 >= stems.length) score -= 0.6;
+    // Fragments: a possessive opener ("team's energy") or the first half of a
+    // coordinated modifier ("energy" in "energy and water policy case files").
+    if (/^[^\s]+['’]s\s/.test(phrase)) score -= 0.8;
+    const pos = text.lastIndexOf(phrase, at);
+    if (/^\s+(?:and|or|&)\s+[A-Za-z]/.test(text.slice((pos >= 0 ? pos : at) + phrase.length))) score -= 0.8;
     // A proper name on its own ("Mill Creek") explains less than a description.
     if (wordsOf(phrase).every((w) => /^[A-Z0-9]/.test(w.text))) score -= 1;
     if (score >= 1.75 && (!best || score > best.score + 1e-9 || (Math.abs(score - best.score) < 1e-9 && at < best.at))) {
@@ -84,9 +91,17 @@ export function evidencePhrase(a: ActivityProfile, link: ActivityLink, themes?: 
   return best?.phrase ?? null;
 }
 
-function leadFor(link: ActivityLink): string {
+/**
+ * How strongly the sentence states the connection. "Builds directly on" needs a
+ * strong link through a theme the fact is named for (its title) or shared
+ * distinctive words; a theme the fact only mentions in its description
+ * ("why bike lanes change at a city line") never earns more than "Connects to".
+ */
+function leadFor(s: ScoredFact, link: ActivityLink, theme: string | undefined): string {
   const fit = link.specific.length > 0 ? link.citedFit : link.fit;
-  if (fit >= 0.68 || (fit >= 0.45 && link.tokens.length > 0 && link.raw > 0)) return "Builds directly on";
+  const named = theme != null && (s.features.themes.get(theme) ?? 0) >= 1;
+  const words = link.tokens.length;
+  if ((fit >= 0.68 && (named || words > 0)) || (fit >= 0.45 && ((named && words > 0) || words >= 2))) return "Builds directly on";
   if (fit >= 0.3) return "Connects to";
   return "Relates to";
 }
@@ -94,9 +109,9 @@ function leadFor(link: ActivityLink): string {
 function fitWithActivity(s: ScoredFact, link: ActivityLink, themes: string[], short = false): string {
   const a = link.source;
   const offer = offerClause(s);
-  const phrase = short ? null : evidencePhrase(a, link, themes);
+  const phrase = short ? null : evidencePhrase(a, link, themes, new Set(s.features.tokens.keys()));
   const ref = short ? a.shortRef : a.ref;
-  const lead = leadFor(link);
+  const lead = leadFor(s, link, themes[0]);
   const full = `${lead} ${ref}${phrase ? ` (${phrase})` : ""}: ${offer}.`;
   if (full.length <= MAX_SENTENCE || short) return full;
   const noPhrase = `${lead} ${ref}: ${offer}.`;

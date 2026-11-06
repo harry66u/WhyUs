@@ -126,7 +126,7 @@ export const BASIS_PREFERENCE: Record<BasisKind, number> = { activity: 1, intere
  */
 export const ACTIVITY_FIRST_FIT = 0.25;
 
-/** Shares within this fraction of the strongest compete to be the primary theme (the most specific wins). */
+/** A detail may be filed under another of its themes when that theme is at least this strong relative to the strongest. */
 const NEAR_TOP = 0.6;
 
 const COMMONNESS_MULT: Record<string, number> = { common: 0.6, moderate: 0.86, rare: 1 };
@@ -337,13 +337,19 @@ function bestLink<T>(links: (Link<T> | null)[]): Link<T> | null {
   return best;
 }
 
-/** Citable shares in primary order: among those near the strongest, the most specific first; then the rest by strength. */
+/**
+ * Citable shares in primary order. Specific themes (weight >= 1.1) come first,
+ * ordered by strength weighted once more by specificity, so a narrow theme that
+ * is nearly as strong wins ("water policy" files under environmental policy, not
+ * public policy) while a theme the activity only mentions in passing does not
+ * outrank one it is named for. Broader subject themes (weight 1.0, central on
+ * both sides) follow: they carry a citation only when nothing specific does.
+ */
 export function primaryOrder(specific: ThemeShare[]): ThemeShare[] {
-  const top = specific[0]?.value ?? 0;
-  const near = specific
-    .filter((t) => t.value >= NEAR_TOP * top)
-    .sort((a, b) => themeWeight(b.key) - themeWeight(a.key) || b.value - a.value || a.key.localeCompare(b.key));
-  return [...near, ...specific.filter((t) => t.value < NEAR_TOP * top)];
+  const narrow = (t: ThemeShare) => (themeWeight(t.key) >= SPECIFIC_THEME_WEIGHT ? 0 : 1);
+  return [...specific].sort(
+    (a, b) => narrow(a) - narrow(b) || b.value * themeWeight(b.key) - a.value * themeWeight(a.key) || b.value - a.value || a.key.localeCompare(b.key),
+  );
 }
 
 function basesFor(links: ActivityLink[], interests: InterestLink[], majors: InterestLink[]): Basis[] {
@@ -353,13 +359,18 @@ function basesFor(links: ActivityLink[], interests: InterestLink[], majors: Inte
     const ordered = primaryOrder(link.specific);
     const theme = ordered[0].key;
     const top = link.specific[0].value;
+    const narrowPrimary = themeWeight(theme) >= SPECIFIC_THEME_WEIGHT;
     out.push({
       kind,
       sourceId,
       keyHead,
       theme,
       themes: ordered.map((t) => t.key),
-      alternatives: ordered.slice(1).filter((t) => t.value >= NEAR_TOP * top && !sameThemeFamily(t.key, theme)).map((t) => t.key),
+      // Nearly as strong, a different topic, and as specific as the primary.
+      alternatives: ordered
+        .slice(1)
+        .filter((t) => t.value >= NEAR_TOP * top && !sameThemeFamily(t.key, theme) && (!narrowPrimary || themeWeight(t.key) >= SPECIFIC_THEME_WEIGHT))
+        .map((t) => t.key),
       fit: link.citedFit,
       value: link.citedFit * BASIS_PREFERENCE[kind],
       link,

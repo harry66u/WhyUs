@@ -121,8 +121,8 @@ function fitToLength(line: string): string {
  * most two details. "Measurement that changes what a town decides about its
  * water: from your Creek Watch Sensor Network to Jacqueline Gerson and CEE 4795."
  */
-export function ideaLine(theme: string, from: string, fromShort: string, details: RankedDetail[]): string {
-  const through = capitalizeFirst(throughLine(theme));
+export function ideaLine(theme: string, from: string, fromShort: string, details: RankedDetail[], variant = 0): string {
+  const through = capitalizeFirst(throughLine(theme, variant));
   const two = details.slice(0, 2);
   const attempts: [string, RankedDetail[], boolean[]][] = [
     [from, two, [true, true]],
@@ -250,6 +250,7 @@ export function angleCandidates(details: RankedDetail[], uniqueness: Map<string,
 
   const majors = ctx.majorGroups ?? new Set<ThemeGroup>();
   const out: AngleCandidate[] = [];
+  const lineFor = new Map<AngleCandidate, (variant: number) => string>();
   for (const g of groups.values()) {
     const themes = new Set<string>();
     for (const m of g.members) for (const t of m.themes) themes.add(t);
@@ -280,20 +281,31 @@ export function angleCandidates(details: RankedDetail[], uniqueness: Map<string,
       const lineDetails = members.map((m) => m.detail);
       const related = new Map<string, number>();
       for (const m of members) m.themes.forEach((t, i) => t !== theme && related.set(t, (related.get(t) ?? 0) + 1 / (i + 1)));
-      out.push({
+      const build = (variant: number) => ideaLine(theme, sourcePhrase(g, theme, false), sourcePhrase(g, theme, true), lineDetails, variant);
+      const candidate: AngleCandidate = {
         key: `${g.head}|${theme}`,
         activityId: g.activity?.id ?? null,
         theme,
         factIds: lineDetails.map((d) => d.scored.fact.id),
         themes: [theme, ...[...related.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).map(([k]) => k).slice(0, 2)],
         score,
-        line: ideaLine(theme, sourcePhrase(g, theme, false), sourcePhrase(g, theme, true), lineDetails),
+        line: build(0),
         academic,
-      });
+      };
+      lineFor.set(candidate, build);
+      out.push(candidate);
     }
   }
   // Activity angles before interest and major angles at equal strength.
-  return out.sort((a, b) => b.score - a.score || Number(b.activityId != null) - Number(a.activityId != null) || a.key.localeCompare(b.key));
+  out.sort((a, b) => b.score - a.score || Number(b.activityId != null) - Number(a.activityId != null) || a.key.localeCompare(b.key));
+  // Two angles on one theme (from different activities) get different framings.
+  const seen = new Map<string, number>();
+  for (const c of out) {
+    const n = seen.get(c.theme) ?? 0;
+    seen.set(c.theme, n + 1);
+    if (n > 0) c.line = (lineFor.get(c) ?? (() => c.line))(n);
+  }
+  return out;
 }
 
 /** Fallback angles (one per detail theme): used when the details support too few angles that do not share a detail. */

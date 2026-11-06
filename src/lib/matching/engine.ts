@@ -11,15 +11,20 @@
  * - Never introduces a fact that is not one of the verified candidates.
  *
  * Building blocks (all pure and deterministic):
- *   profile.ts     studentThemes(): activity themes, depth, concrete nouns
- *   features.ts    per-fact themes by field, names, specificity
- *   rank.ts        scoreFacts(): fit and ranking score
- *   select.ts      6-8 diverse details
- *   explain.ts     one plain fit sentence per detail
+ *   profile.ts     studentThemes(): activity themes (title and role over
+ *                  description; incidental mentions dropped), depth, concrete nouns
+ *   features.ts    per-fact themes by field, central themes, names, specificity,
+ *                  substance (essay-worthiness) and academic/amenity classification
+ *   rank.ts        promptFocus() (academic, unit, community, open); scoreFacts():
+ *                  fit, citable bases (a specific shared theme), ranking score
+ *   select.ts      6-8 details with their cited bases: one per (activity, theme),
+ *                  two per activity, academic minimum and extracurricular cap by prompt
+ *   explain.ts     one plain fit sentence per detail, grounded in its cited basis
  *   swap.ts        swapTest() against the other schools on the list
- *   uniqueness.ts  per-detail and per-dossier uniqueness
- *   angles.ts      angle candidates, lead choice, one-line ideas
- *   questions.ts   exactly three questions
+ *   uniqueness.ts  per-detail (substance-aware) and per-dossier uniqueness
+ *   angles.ts      angle candidates and strength, lead choice, one-line ideas
+ *   framing.ts     theme-specific through-lines for angle lines
+ *   questions.ts   exactly three specific, varied questions
  *   coordinate.ts  coordinateAngles() across a student's dossiers
  *   llm.ts         optional Claude pass with strict validation
  */
@@ -211,7 +216,13 @@ export async function buildDossier(input: BuildDossierInput, hooks: BuildHooks =
   const selected = selectDetails(scored, { min: 6, max: 8, value, focus });
   const ranked: RankedDetail[] = selected.map((s, i) => ({ scored: s, rank: i + 1, cite: s.cite }));
   const explanations = ranked.map((d) => explainFit(d.scored, d.cite ?? null));
-  const fitScore = (d: RankedDetail) => round(d.cite ? d.cite.fit : 0.5 * d.scored.fit, 2);
+  // Connection strength shown with each detail: the cited basis, reinforced by stated interests and intended majors.
+  const fitScore = (d: RankedDetail) => {
+    const c = d.cite;
+    if (!c) return round(0.5 * d.scored.fit, 2);
+    const support = c.kind === "activity" ? 0.5 * (d.scored.interest?.fit ?? 0) + 0.25 * (d.scored.major?.fit ?? 0) : c.kind === "interest" ? 0.25 * (d.scored.major?.fit ?? 0) : 0;
+    return round(Math.min(1, c.fit + (1 - c.fit) * support), 2);
+  };
   for (let i = 0; i < ranked.length; i++) {
     throwIfAborted(signal);
     const s = ranked[i].scored;
@@ -286,8 +297,9 @@ export async function buildDossier(input: BuildDossierInput, hooks: BuildHooks =
     majorGroups: majorGroups(student),
     unitThemes: unitThemeShares(scored),
   };
+  const schoolShort = input.school.shortName || input.school.name;
   let candidates: AngleCandidate[] = angleCandidates(ranked, new Map(details.map((d) => [d.factId, d.uniqueness.score])), angleContext);
-  const fallback = fallbackCandidates(ranked, input.school.shortName || input.school.name, new Set(candidates.map((c) => c.key)));
+  const fallback = fallbackCandidates(ranked, schoolShort, new Set(candidates.map((c) => c.key)));
   if (candidates.length < 2) candidates = [...candidates, ...fallback];
   const chosen = chooseAngles(candidates, usedLeadsFrom(input.usedLeadAngleKeys ?? []));
   const shown = [...chosen.shown];
@@ -298,10 +310,13 @@ export async function buildDossier(input: BuildDossierInput, hooks: BuildHooks =
     if (extra) shown.push(extra);
   }
   const shownKeys = new Set(shown.map((c) => c.key));
-  const options = [...chosen.options.filter((c) => !shownKeys.has(c.key)), ...fallback.filter((c) => !shownKeys.has(c.key) && !chosen.options.includes(c))].slice(0, 20);
+  // Alternates for cross-school coordination, plus single-detail angles for details no other angle uses.
+  const covered = new Set(candidates.flatMap((c) => (/^school\|/.test(c.key) ? [] : c.factIds)));
+  const spare = fallback.filter((c) => !shownKeys.has(c.key) && !candidates.includes(c) && c.factIds.every((id) => !covered.has(id)));
+  const options = [...chosen.options.filter((c) => !shownKeys.has(c.key)), ...spare].slice(0, 16);
   let angles: EssayAngle[] = shown.map((c, i) => toEssayAngle(c, i === 0));
   let angleOptions: EssayAngle[] = options.map((c) => toEssayAngle(c, false));
-  let questions = pickQuestions(ranked, { seed: input.school.id });
+  let questions = pickQuestions(ranked, { seed: input.school.id, academicFirst: focus.mode === "academic" });
 
   /* Optional Claude pass ---------------------------------------------- */
   let engine: Dossier["stats"]["engine"] = "deterministic";

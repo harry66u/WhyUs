@@ -145,8 +145,31 @@ const BY_GROUP: Record<ThemeGroup, string> = {
   academic: "a question pursued past the classroom",
 };
 
-/** The through-line for a theme, lowercase (callers capitalize it at the start of a line). */
-export function throughLine(theme: string): string {
+/** Second and third framings for themes that often appear twice in one dossier. */
+const VARIANTS: Record<string, string[]> = {
+  water: ["following water from the stream to the decision about it", "water data that ends up shaping a local decision"],
+  sensors: ["low-cost instruments, careful data, real answers", "measuring what a place is actually doing"],
+  cities: ["the city as a system that can be measured and redesigned", "urban problems read through data and design"],
+  "gis-mapping": ["field observations turned into maps people can use", "maps as evidence for a local decision"],
+  "environmental-policy": ["evidence that holds up in a policy argument", "the technical side of an environmental decision"],
+  "public-policy": ["how a policy argument is built and tested", "evidence first, recommendation second"],
+  energy: ["energy systems seen from the grid to the household", "the numbers behind an energy decision"],
+  climate: ["climate questions answered locally", "adapting places to a changing climate"],
+  "data-science": ["open data that a community can check for itself", "analysis that ends in a decision"],
+  "language-access": ["interpretation as public infrastructure", "making expert knowledge reach every household"],
+  "environmental-engineering": ["engineering judgment applied to dirty water and air", "from contaminant to cleanup"],
+  "civil-engineering": ["infrastructure that has to work in a storm", "systems people only notice when they fail"],
+  fieldwork: ["data collected by hand, in the field", "what samples reveal that models miss"],
+};
+
+/**
+ * The through-line for a theme, lowercase (callers capitalize it at the start
+ * of a line). `variant` picks another framing of the same theme, so two angles
+ * on one theme in a dossier do not open with the same words.
+ */
+export function throughLine(theme: string, variant = 0): string {
+  const extra = VARIANTS[theme];
+  if (variant > 0 && extra?.length) return extra[(variant - 1) % extra.length];
   const own = BY_THEME[theme];
   if (own) return own;
   const group = themeGroup(theme);

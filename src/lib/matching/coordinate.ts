@@ -237,7 +237,6 @@ export function coordinateAngles(dossiers: Dossier[]): Dossier[] {
   const indexes = list.map((_, i) => i).sort((a, b) => list[a].id.localeCompare(list[b].id));
   const nextAngles = new Array<{ shown: EssayAngle[]; options: EssayAngle[] } | null>(list.length).fill(null);
   for (const i of indexes) {
-    const d = list[i];
     const options = cands[i];
     const lead = options[leads[i]];
     if (!lead) continue;

@@ -33,7 +33,7 @@ export const NON_ACADEMIC_KINDS: ReadonlySet<FactKind> = new Set<FactKind>(["org
 export const FIELD_STRENGTH = { title: 1, lead: 0.78, stored: 0.5, quote: 0.4 } as const;
 
 /** Subjects that make policy work environmental policy. */
-const ENVIRONMENT_POLICY_SUBJECTS = ["energy", "climate", "water", "environmental-engineering", "environmental-studies", "ecology", "sustainability"];
+const ENVIRONMENT_POLICY_SUBJECTS = ["energy", "climate", "water", "environmental-engineering", "environmental-studies", "ecology"];
 
 /**
  * Everyday things most campuses have. Two facts naming the same one are

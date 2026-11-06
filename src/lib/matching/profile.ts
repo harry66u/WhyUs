@@ -221,6 +221,32 @@ function endsWithRoleNoun(text: string): boolean {
   return ROLE_NOUN.test(text.trim());
 }
 
+/** The work a role names: "Summer Intern" -> "summer internship", "Volunteer Interpreter" -> "volunteer interpreting". */
+const ROLE_WORK: [RegExp, string][] = [
+  [/\bresearch assistant$/i, "research assistantship"],
+  [/\bintern$/i, "internship"],
+  [/\bapprentice$/i, "apprenticeship"],
+  [/\bfellow$/i, "fellowship"],
+  [/\binterpreter$/i, "interpreting"],
+  [/\btranslator$/i, "translating"],
+  [/\btutor$/i, "tutoring"],
+  [/\bmentor$/i, "mentoring"],
+  [/\bcoach$/i, "coaching"],
+];
+
+function roleWork(role: string): string | null {
+  for (const [re, work] of ROLE_WORK) {
+    if (!re.test(role)) continue;
+    const phrase = role.replace(re, work);
+    // Lowercase plain words ("Summer Intern"), keep acronyms and names as written.
+    return phrase
+      .split(/\s+/)
+      .map((w) => (/^[A-Z][a-z]+$/.test(w) ? w.toLowerCase() : w))
+      .join(" ");
+  }
+  return null;
+}
+
 /** How a sentence refers to the activity. */
 export function activityRefs(a: Activity): { ref: string; shortRef: string; tinyRef: string } {
   const title = a.title.trim().replace(/\s+/g, " ");
@@ -228,10 +254,15 @@ export function activityRefs(a: Activity): { ref: string; shortRef: string; tiny
   if (parts.length >= 2 && parts[0].split(/\s+/).length <= 4 && endsWithRoleNoun(parts[0])) {
     const role = parts[0];
     const org = parts.slice(1).join(", ");
-    return { ref: `your role as ${articleFor(role)} ${role} at ${org}`, shortRef: `your work at ${org}`, tinyRef: `your ${role} role` };
+    const work = roleWork(role);
+    // "County Soil and Water Conservation District" -> "your Conservation District internship".
+    const head = org.split(/\s+(?:at|of|in)\s+/)[0].split(/\s+/).slice(-2).join(" ");
+    const tiny = work ? (head && head.length <= 24 && head !== org ? `your ${head} ${work.split(/\s+/).pop()}` : `your ${work}`) : `your ${role} role`;
+    return { ref: `your role as ${articleFor(role)} ${role} at ${org}`, shortRef: `your work at ${org}`, tinyRef: tiny };
   }
   if (title.split(/\s+/).length <= 5 && endsWithRoleNoun(title)) {
-    return { ref: `your role as ${articleFor(title)} ${title}`, shortRef: `your work as ${articleFor(title)} ${title}`, tinyRef: `your ${title} role` };
+    const work = roleWork(title);
+    return { ref: `your role as ${articleFor(title)} ${title}`, shortRef: `your work as ${articleFor(title)} ${title}`, tinyRef: work ? `your ${work}` : `your ${title} role` };
   }
   const words = title.split(/\s+/);
   return { ref: `your ${title}`, shortRef: `your ${title}`, tinyRef: `your ${words.length > 5 ? words.slice(0, 5).join(" ") : title}` };

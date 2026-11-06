@@ -324,6 +324,10 @@ export interface EssayAngle {
   activityIds: string[];
   themes: string[];
   isLead: boolean;
+  /** How strong the angle is for this student and prompt (used to coordinate leads across schools). */
+  strength?: number;
+  /** True when the angle rests on academic details (courses, faculty, labs, majors, research). */
+  academic?: boolean;
 }
 
 export interface DossierQuestion {

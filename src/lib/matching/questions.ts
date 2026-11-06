@@ -52,29 +52,39 @@ const since = (q: QContext, rest: string) => (q.hook ? `Since ${q.subject} ${q.h
 
 const FRAMES: Record<FactKind, Frame[]> = {
   course: [
+    { id: "course-hard", audience: "current_student", build: (q) => since(q, "which part of the course did students find hardest, and what helped them through it?") },
+    { id: "course-built", audience: "current_student", answered: OUTSIDE_ANSWERED, build: (q) => since(q, "what did students end up building or analyzing, and did any of it leave the classroom?") },
     { id: "course-project", audience: "current_student", answered: OUTSIDE_ANSWERED, build: (q) => `In ${q.name}, what did the final project look like, and did any of it leave the classroom?` },
     { id: "course-handson", audience: "current_student", answered: HANDS_ON_ANSWERED, build: (q) => `How much of ${q.name} is hands-on work, and how much is lectures and problem sets?` },
-    { id: "course-hard", audience: "current_student", build: (q) => since(q, "which part of the course did students find hardest, and what helped them through it?") },
     { id: "course-access", audience: "info_session", answered: FIRST_YEAR_ANSWERED, build: (q) => `Can first-year students take ${q.name}, or does it usually come after the core sequence?` },
     { id: "course-timing", audience: "info_session", answered: TIMING_ANSWERED, build: (q) => `How often is ${q.name} offered, and do students outside the major get seats?` },
     { id: "course-after", audience: "info_session", build: (q) => since(q, "do students carry that work into research or a thesis afterward?") },
+    { id: "course-before", audience: "info_session", answered: FIRST_YEAR_ANSWERED, build: (q) => `What do students usually take before ${q.name}, and what does it prepare them for next?` },
   ],
   major: [
     { id: "major-declare", audience: "info_session", answered: /\bdeclare\b/i, build: (q) => `When do students declare ${q.name}, and how much room does it leave for courses outside it?` },
     { id: "major-research", audience: "info_session", build: (q) => `How do students in ${q.name} find research or project work, and how early do they start?` },
+    { id: "major-start", audience: "info_session", answered: /\bdeclare\b/i, build: (q) => since(q, "which courses do students usually start with, and when do they declare?") },
     { id: "major-courses", audience: "current_student", build: (q) => `Which courses in ${q.name} did students say shaped them most, and why?` },
     { id: "major-after", audience: "current_student", build: (q) => `What did recent graduates of ${q.name} go on to do, and did the program prepare them for it?` },
   ],
   faculty: [
-    { id: "faculty-start", audience: "info_session", answered: ACCESS_ANSWERED, build: (q) => `How do undergraduates usually start working with ${q.name}, and how early can they begin?` },
     {
       id: "faculty-topic",
       audience: "info_session",
       answered: ACCESS_ANSWERED,
       build: (q) => (q.topic ? `Does ${q.name} take undergraduates into research on ${q.topic}, and through a course, a paid position, or independent study?` : null),
     },
+    { id: "faculty-start", audience: "info_session", answered: ACCESS_ANSWERED, build: (q) => `How do undergraduates usually start working with ${q.name}, and how early can they begin?` },
+    {
+      id: "faculty-help",
+      audience: "info_session",
+      answered: ACCESS_ANSWERED,
+      build: (q) => (q.hook && WORK_HOOK.test(q.hook) ? since(q, "are there parts of that work a first- or second-year student could help with?") : null),
+    },
     { id: "faculty-class", audience: "current_student", build: (q) => `What is it like to take a class with ${q.name}, and does the research show up in the course?` },
     { id: "faculty-did", audience: "current_student", build: (q) => (q.topic ? `Have students you know worked with ${q.name} on ${q.topic}, and what did they actually do?` : null) },
+    { id: "faculty-first", audience: "current_student", build: (q) => `Which course with ${q.name} would you take first, and why?` },
   ],
   lab: [
     {
@@ -84,30 +94,37 @@ const FRAMES: Record<FactKind, Frame[]> = {
       build: (q) => `How do first- and second-year students get a spot in ${q.name}: through a course, a paid position, or by asking a professor?`,
     },
     { id: "lab-own", audience: "info_session", build: (q) => `Can a student bring their own project idea to ${q.name}, or do newcomers join an existing project?` },
+    { id: "lab-themselves", audience: "info_session", build: (q) => (q.hook && WORK_HOOK.test(q.hook) ? since(q, "how much of that work do undergraduates do themselves?") : null) },
     { id: "lab-first-term", audience: "current_student", build: (q) => `What did newer undergraduates in ${q.name} actually do in their first term?` },
-    { id: "lab-part", audience: "current_student", build: (q) => since(q, "which part of that work do undergraduates actually do?") },
+    { id: "lab-part", audience: "current_student", build: (q) => (q.hook && WORK_HOOK.test(q.hook) ? since(q, "which part of that work do undergraduates actually do?") : null) },
+    { id: "lab-time", audience: "current_student", answered: /\b(?:paid|for credit|stipends?)\b/i, build: (q) => `How much time does ${q.name} take during the term, and is it paid or for credit?` },
   ],
   center: [
     { id: "center-fund", audience: "info_session", answered: FUNDING_ANSWERED, build: (q) => `What does ${q.name} fund or organize for students in their first two years?` },
     { id: "center-involve", audience: "info_session", build: (q) => since(q, "how do undergraduates usually get involved, and how early?") },
+    { id: "center-courses", audience: "info_session", build: (q) => `Which courses or research projects connect students to ${q.name}?` },
     { id: "center-done", audience: "current_student", build: (q) => `What have students you know done through ${q.name}, and how did they first connect with it?` },
+    { id: "center-week", audience: "current_student", build: (q) => since(q, "what does that look like for a student week to week?") },
   ],
   facility: [
     { id: "facility-training", audience: "current_student", answered: FIRST_YEAR_ANSWERED, build: (q) => `How long does training for ${q.name} take, and how busy does it get near deadlines?` },
     { id: "facility-made", audience: "current_student", build: (q) => `What have students built or made in ${q.name} outside of class?` },
     { id: "facility-own", audience: "info_session", answered: /\b(?:own projects|open to (?:all|any|everyone|the whole))\b/i, build: (q) => `Can first-year students use ${q.name} for their own projects, or only for coursework?` },
+    { id: "facility-courses", audience: "info_session", build: (q) => since(q, "which courses use it, and when can students start?") },
   ],
   organization: [
     { id: "org-hours", audience: "current_student", build: (q) => `How many hours a week does ${q.name} take, and do newer members get real responsibilities?` },
     { id: "org-first", audience: "current_student", build: (q) => `What do new members of ${q.name} actually work on in their first semester?` },
+    { id: "org-share", audience: "current_student", build: (q) => since(q, "how much of that do first-year members get to do?") },
     { id: "org-join", audience: "info_session", answered: JOIN_ANSWERED, build: (q) => `How do first-year students join ${q.name}, and is prior experience expected?` },
     { id: "org-faculty", audience: "info_session", answered: STUDENT_RUN_ANSWERED, build: (q) => `Does ${q.name} work with faculty or courses, or is it run entirely by students?` },
   ],
   program: [
     { id: "program-apply", audience: "info_session", answered: JOIN_ANSWERED, build: (q) => `How competitive is ${q.name}, and when in the year do students apply?` },
     { id: "program-after", audience: "info_session", build: (q) => `What do students who finish ${q.name} usually go on to do?` },
+    { id: "program-own", audience: "info_session", build: (q) => since(q, "how much of the work do students plan themselves?") },
     { id: "program-differently", audience: "current_student", build: (q) => `What did students who did ${q.name} say they would do differently?` },
-    { id: "program-own", audience: "current_student", build: (q) => since(q, "how much of the work do students plan themselves?") },
+    { id: "program-week", audience: "current_student", build: (q) => since(q, "what did a typical week actually involve?") },
   ],
   tradition: [
     { id: "tradition-inside", audience: "current_student", build: (q) => `What is ${q.name} actually like from the inside, and is it worth planning around?` },
@@ -126,16 +143,31 @@ const COLLECTION_FRAMES: Frame[] = [
   { id: "collection-use", audience: "current_student", build: (q) => `How often do students actually use ${q.name}, and for what kinds of work?` },
 ];
 
+/** Research projects and field opportunities tied to a place: ask how students take part. */
+const PROJECT_FRAMES: Frame[] = [
+  { id: "project-join", audience: "info_session", answered: /\b(?:paid|for credit|stipends?|volunteers?)\b/i, build: (q) => `How do undergraduates join ${q.name}, and is the work paid, for credit, or volunteer?` },
+  { id: "project-did", audience: "current_student", build: (q) => `What did students who worked on ${q.name} actually do, and how did they get started?` },
+  { id: "project-early", audience: "info_session", build: (q) => since(q, "how do newer students take part, and how early?") },
+];
+
+/** Faculty whose connection to the student is a pursuit outside the major (a jazz director for an engineer). */
+const MENTOR_FRAMES: Frame[] = [
+  { id: "mentor-join", audience: "info_session", build: (q) => `How do students outside the department get to work with ${q.name}, and how are spots decided?` },
+  { id: "mentor-week", audience: "current_student", build: (q) => `What is it like to work with ${q.name}, and how much time does it take in a typical week?` },
+];
+
 /** Places and resources open to everyone (bike lanes, trails, a map): no sign-up, so ask about use. */
 const RESOURCE_FRAMES: Frame[] = [
   { id: "resource-organize", audience: "info_session", build: (q) => `How do students use ${q.name} day to day, and does the school organize anything around it?` },
   { id: "resource-practice", audience: "current_student", build: (q) => `How much do students actually use ${q.name}, and what is it like in practice?` },
 ];
 
-function framesFor(kind: FactKind, title: string): Frame[] {
+function framesFor(kind: FactKind, title: string, academic: boolean): Frame[] {
+  if (kind === "faculty" && !academic) return MENTOR_FRAMES;
   if ((kind === "facility" || kind === "location" || kind === "center") && /\b(?:collections?|library|libraries|archives?|museums?|galler(?:y|ies)|herbarium)\b/i.test(title)) {
     return COLLECTION_FRAMES;
   }
+  if (kind === "location" && academic) return PROJECT_FRAMES;
   if ((kind === "facility" || kind === "location") && /\b(?:lanes?|network|trails?|map|stations?|paths?|routes?|parks?|river|lake|mountains?|gardens?|arboretum|natural areas?|preserves?|forests?)\b/i.test(title)) {
     return RESOURCE_FRAMES;
   }
@@ -159,7 +191,8 @@ const PREFERRED: Record<FactKind, Audience> = {
 const other = (a: Audience): Audience => (a === "info_session" ? "current_student" : "info_session");
 
 const MAX_HOOK = 72;
-const HOOK_BREAKS = [", ", " for ", " through ", " from ", " with ", " at the ", " in ", " to ", " and "];
+/** Prepositions that open a modifier: the clause before them still reads as a whole. */
+const PREP_BREAKS = [" for ", " through ", " from ", " with ", " at the ", " using ", " by ", " in ", " to "];
 
 /** The hook, shortened at a natural break so it fits inside a question. */
 function shortHook(hook: string | undefined): string | null {
@@ -167,13 +200,29 @@ function shortHook(hook: string | undefined): string | null {
   if (!h) return null;
   if (h.length <= MAX_HOOK) return h;
   let cut = -1;
-  for (const b of HOOK_BREAKS) {
-    const i = h.lastIndexOf(b, MAX_HOOK);
-    if (i >= 25 && i > cut) cut = i;
+  // 1. The earliest modifier break: "has students design and assemble sensing systems | for air, water, ..."
+  //    Verbs that need their complement ("pairs X with Y", "connects X to Y") keep it.
+  const needsComplement = /^(?:pairs|combines|connects|links|matches|teams|takes|puts|brings)\b/i.test(h);
+  for (const b of PREP_BREAKS) {
+    if (needsComplement && (b === " with " || b === " to ")) continue;
+    const i = h.indexOf(b, 25);
+    if (i >= 25 && i <= MAX_HOOK && (cut < 0 || i < cut)) cut = i;
+  }
+  // 2. A second verb phrase: "lends GPS units and a field spectrometer | and supports ..."
+  if (cut < 0) {
+    for (const m of h.matchAll(/ and (?=[a-z]+s\b)/g)) if (m.index != null && m.index >= 25 && m.index <= MAX_HOOK) cut = m.index;
+  }
+  // 3. A list break.
+  if (cut < 0) {
+    for (const b of [", ", " and "]) {
+      const i = h.lastIndexOf(b, MAX_HOOK);
+      if (i >= 25 && i > cut) cut = i;
+    }
   }
   if (cut < 0) return null;
   return h
     .slice(0, cut)
+    .replace(/[\s,;:]+$/, "")
     .replace(/\s+(?:and|or|the|a|an|of|to|for|with|in|on|at|from|by)$/i, "")
     .trim();
 }
@@ -197,13 +246,18 @@ function topicOf(hook: string | undefined): string | null {
 
 function contextFor(d: RankedDetail): QContext {
   const f = d.scored.fact;
+  const subject = d.scored.features.subject;
   return {
     name: d.scored.features.name,
-    subject: d.scored.features.subject,
+    // A question names its detail: "this lab" only works inside a fit sentence.
+    subject: /^this\s/i.test(subject) ? d.scored.features.name : subject,
     hook: shortHook(f.hook),
     topic: f.kind === "faculty" || f.kind === "lab" ? topicOf(f.hook) : null,
   };
 }
+
+/** Hooks that describe work being done (not resources on offer), so "that work" reads right. */
+const WORK_HOOK = /^(?:researches|studies|investigates|uses|designs|develops|builds|measures|maps|models|tests|analyzes|examines|fuses|applies|co-designs|employs|explores|has students|puts students|trains|teaches)\b/i;
 
 function answeredBy(frame: Frame, d: RankedDetail): boolean {
   if (!frame.answered) return false;
@@ -211,20 +265,37 @@ function answeredBy(frame: Frame, d: RankedDetail): boolean {
   return frame.answered.test(`${f.title}\n${f.summary}\n${f.hook}\n${f.quote}`);
 }
 
+/** True when a frame's text draws on the detail's own hook or topic (not just its name). */
+function isSpecificFrame(fr: Frame, q: QContext): boolean {
+  const generic = fr.build({ ...q, hook: null, topic: null });
+  const full = fr.build(q);
+  return full != null && full !== generic;
+}
+
 /**
  * The question for one detail and audience. Frames whose answer the fact's own
  * text already gives are skipped; among the rest, the choice rotates by school
- * and detail. Falls back to the other audience, then to any frame.
+ * and detail (frames that draw on the detail's own words first when
+ * `preferSpecific`). Falls back to the other audience.
  */
-function questionFor(d: RankedDetail, audience: Audience, seed: string, usedFrames: Set<string>, usedTexts: Set<string>): DossierQuestion | null {
-  const frames = framesFor(d.scored.fact.kind, d.scored.fact.title);
+function questionFor(
+  d: RankedDetail,
+  audience: Audience,
+  seed: string,
+  usedFrames: Set<string>,
+  usedTexts: Set<string>,
+  preferSpecific = false,
+): DossierQuestion | null {
+  const frames = framesFor(d.scored.fact.kind, d.scored.fact.title, d.scored.academic !== false);
   const q = contextFor(d);
   for (const aud of [audience, other(audience)]) {
     const list = frames.filter((fr) => fr.audience === aud && !usedFrames.has(fr.id) && !answeredBy(fr, d));
     if (list.length === 0) continue;
     const start = hashString(`${seed}|${d.scored.fact.id}|${aud}`) % list.length;
-    for (let k = 0; k < list.length; k++) {
-      const fr = list[(start + k) % list.length];
+    const rotated = list.map((_, k) => list[(start + k) % list.length]);
+    // Specific frames (drawing on the detail's own words) first when asked; the order is otherwise kept.
+    const ordered = preferSpecific ? [...rotated.filter((fr) => isSpecificFrame(fr, q)), ...rotated.filter((fr) => !isSpecificFrame(fr, q))] : rotated;
+    for (const fr of ordered) {
       const raw = fr.build(q);
       if (!raw) continue;
       const text = capitalizeFirst(raw.replace(/\s+/g, " ").trim());
@@ -239,13 +310,17 @@ function questionFor(d: RankedDetail, audience: Audience, seed: string, usedFram
 export interface QuestionOptions {
   /** Varies phrasing across a student's schools (e.g. the school id). */
   seed?: string;
+  /** Ask about academic details first (the prompt is about the academic program or a specific college). */
+  academicFirst?: boolean;
 }
 
 /** Exactly three questions (when there is at least one detail), about three different details where possible, mixing both audiences. */
 export function pickQuestions(details: RankedDetail[], opts: QuestionOptions = {}): DossierQuestion[] {
   if (details.length === 0) return [];
   const seed = opts.seed ?? "";
-  const ordered = [...details].sort((a, b) => a.rank - b.rank);
+  const ordered = [...details].sort(
+    (a, b) => (opts.academicFirst ? Number(b.scored.academic !== false) - Number(a.scored.academic !== false) : 0) || a.rank - b.rank,
+  );
   const chosen: RankedDetail[] = [];
   const sourceOf = (d: RankedDetail) => {
     const cite = d.cite !== undefined ? d.cite : d.scored.bases?.[0];
@@ -275,9 +350,10 @@ export function pickQuestions(details: RankedDetail[], opts: QuestionOptions = {
   const usedFrames = new Set<string>();
   const usedTexts = new Set<string>();
   const out: DossierQuestion[] = [];
-  for (const s of slots) {
+  for (const [i, s] of slots.entries()) {
+    // Alternate: the first and third questions lean on the detail's own words, the second may stay general.
     const q =
-      questionFor(s.d, s.audience, seed, usedFrames, usedTexts) ??
+      questionFor(s.d, s.audience, seed, usedFrames, usedTexts, i !== 1) ??
       questionFor(s.d, s.audience, `${seed}#`, new Set(), usedTexts) ?? {
         text: `What do students say ${s.d.scored.features.name} is like in practice?`,
         factId: s.d.scored.fact.id,
