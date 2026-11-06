@@ -130,7 +130,7 @@ export const THEMES: Theme[] = [
   t("theater", "Theater", "arts", 1.2, String.raw`theat(?:er|re)\w*|acting\b|drama\w*|improv\b|improvisational`),
   t("music", "Music", "arts", 1.1, String.raw`music\w*|orchestra\w*|ensembles?\b|choir\w*|choral|bands?\b|music(?:al)? composition|composers?\b|concerts?\b|instrumental (?:music|ensembles?|performance|lessons?)|music: instrumental|trumpet|saxophone|piano|violin|cello|guitar`),
   t("jazz", "Jazz", "arts", 1.5, String.raw`jazz|big band|combos?\b`),
-  t("visual-arts", "Visual arts", "arts", 1.1, String.raw`visual arts?|studio art|painting|drawing|sculpture|printmaking|ceramics|photograph\w*|fine arts?`),
+  t("visual-arts", "Visual arts", "arts", 1.1, String.raw`visual arts?|studio art|painting|figure drawing|drawing (?:courses?|classes|studios?)|sculpture|printmaking|ceramics|photograph\w*|fine arts?`),
   t("design", "Design", "arts", 1.0, String.raw`graphic design|visual design|communication design|typograph\w*|fashion design|interior design|industrial design|web design|art and design|design arts?|design studies|design (?:major|minor|school)`),
   t("museums", "Museums and collections", "arts", 1.2, String.raw`museums?\b|curat\w*|special collections|art collections?|exhibitions?\b|galler(?:y|ies)\b|art history`),
   t("dance", "Dance", "arts", 1.3, String.raw`danc\w*|choreograph\w*`),
@@ -139,7 +139,7 @@ export const THEMES: Theme[] = [
   // Business
   t("entrepreneurship", "Entrepreneurship", "business", 1.2, String.raw`entrepreneur\w*|startups?\b|start-ups?\b|new ventures?|business ventures?|social ventures?|venture (?:capital|competitions?|funds?|creation|labs?|studios?|ecosystems?)|incubat\w*|(?<!particle |linear )accelerators?\b|(?:startup|company|business) founders?`),
   t("finance", "Finance", "business", 1.1, String.raw`financ(?:e|ial)\b|investment\w*|investing|banking|accounting|venture capital|fintech`),
-  t("business", "Business and management", "business", 0.8, String.raw`business\b|management\b|marketing\b|consulting\b`),
+  t("business", "Business and management", "business", 0.8, String.raw`business\b|business management|management (?:science|consulting|studies|major|minor|program)|marketing\b|consulting\b`),
   t("social-enterprise", "Social impact", "business", 1.2, String.raw`social enterprise|social impact|impact investing|nonprofits?\b|non-profits?\b|social entrepreneurship`),
   t("hospitality", "Hospitality", "business", 1.3, String.raw`hospitality|hotels?\b|restaurants?\b|culinary`),
 
