@@ -301,8 +301,12 @@ function entityFromRun(run: Token[]): { tokens: Token[]; kind: "name" | "place" 
     if (others.length > 0) return { tokens: named, kind: "name" };
   }
   // Leading head with no head at the end: "Institute of Arctic Studies", "College of Engineering".
+  // The name stops at "at", "in", "on" ("School of Engineering at Example University").
   if (tokens.length >= 3 && LEADING_HEADS.has(tokens[0].lower) && !tokens[1].cap && (tokens[1].lower === "of" || tokens[1].lower === "for")) {
-    return { tokens, kind: "name" };
+    let k = 2;
+    while (k < tokens.length && (isNameWord(tokens[k]) || (isConnector(tokens[k]) && ["of", "and", "&", "the", "for"].includes(tokens[k].lower)))) k++;
+    while (k - 1 > 1 && isConnector(tokens[k - 1])) k--;
+    if (k > 2) return { tokens: tokens.slice(0, k), kind: "name" };
   }
   const content = tokens.filter((t) => !isConnector(t));
   if (content.length >= 2) {

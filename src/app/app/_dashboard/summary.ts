@@ -80,5 +80,5 @@ export function entitlementHint(ent: Entitlements, studentId: string): Entitleme
   if (ent.remainingSchools === Number.POSITIVE_INFINITY) return { text: "Unlimited schools." };
   if (ent.freeSchoolAvailable) return { text: "Your first school is free." };
   if (ent.credits > 0) return { text: ent.credits === 1 ? "1 school credit left." : `${ent.credits} school credits left.` };
-  return { text: "No school credits left.", action: { label: "See plans", href: "/pricing" } };
+  return { text: "No school credits left.", action: { label: "See plans", href: "/app/settings#plan" } };
 }

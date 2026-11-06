@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import {
   ClosingCta,
   DraftSpecimen,
@@ -10,6 +11,8 @@ import {
   SourcesSpecimen,
   SwapTestSpecimen,
 } from "@/components/landing";
+import { DeletedNotice } from "@/components/landing/deleted-notice";
+import { SOCIAL_IMAGE } from "@/components/landing/social";
 
 const TITLE = "WhyUs: verified research for every “Why us?” essay";
 const DESCRIPTION =
@@ -26,11 +29,13 @@ export const metadata: Metadata = {
     title: TITLE,
     description: DESCRIPTION,
     locale: "en_US",
+    images: [{ ...SOCIAL_IMAGE }],
   },
   twitter: {
     card: "summary_large_image",
     title: TITLE,
     description: DESCRIPTION,
+    images: [{ url: SOCIAL_IMAGE.url, alt: SOCIAL_IMAGE.alt }],
   },
 };
 
@@ -42,6 +47,9 @@ export default async function LandingPage() {
   const demo = await getLandingDemo();
   return (
     <>
+      <Suspense fallback={null}>
+        <DeletedNotice />
+      </Suspense>
       <Hero demo={demo} />
       <SourcesSpecimen demo={demo} />
       <SwapTestSpecimen demo={demo} />

@@ -5,7 +5,7 @@ import { type ReactNode, useId, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Select } from "@/components/ui/field";
 import type { BuyAvailability, PaymentsMode } from "@/lib/billing/overview";
-import { formatMoney } from "@/lib/billing/plans";
+import { formatMoney, PLAN_TERM_LABEL } from "@/lib/billing/plans";
 import type { AccountRole, PurchaseKind } from "@/lib/types";
 
 export interface PlanPurchaseProps {
@@ -155,7 +155,7 @@ export function PlanPurchase(props: PlanPurchaseProps) {
                 value={quantity}
                 onChange={(e) => setQuantity(Number(e.target.value))}
                 disabled={!props.schoolCredit.available || off || busy}
-                className="h-9 w-[7.5rem]"
+                className="max-w-[7.5rem]"
               >
                 {CREDIT_CHOICES.filter((n) => n <= props.maxCredits).map((n) => (
                   <option key={n} value={n}>
@@ -165,6 +165,7 @@ export function PlanPurchase(props: PlanPurchaseProps) {
               </Select>
               <Button
                 variant="secondary"
+                className="h-10"
                 disabled={!props.schoolCredit.available || off || busy}
                 onClick={() => buy("school_credit", { quantity })}
                 aria-label={simulated ? `Development: simulate purchase of ${creditWhat}` : undefined}
@@ -178,7 +179,11 @@ export function PlanPurchase(props: PlanPurchaseProps) {
         <BuyRow
           title="Unlimited"
           price={`${prices.unlimited} one time`}
-          detail={role === "student" ? "Every school on your list for 12 months, without using credits." : "Every school for one student for 12 months, without using credits."}
+          detail={
+            role === "student"
+              ? `Every school on your list for ${PLAN_TERM_LABEL}, without using credits.`
+              : `Every school for one student for ${PLAN_TERM_LABEL}, without using credits.`
+          }
           note={unlimitedNote}
           error={errors.unlimited}
           controls={
@@ -193,7 +198,7 @@ export function PlanPurchase(props: PlanPurchaseProps) {
                     value={chosen?.id ?? ""}
                     onChange={(e) => setStudentId(e.target.value)}
                     disabled={choosable.length === 0 || off || busy}
-                    className="h-9 w-[12rem]"
+                    className="max-w-[12rem]"
                   >
                     {props.students.map((s) => (
                       <option key={s.id} value={s.id} disabled={!s.unlimited.available}>
@@ -205,6 +210,7 @@ export function PlanPurchase(props: PlanPurchaseProps) {
               ) : null}
               <Button
                 variant="secondary"
+                className="h-10"
                 disabled={!unlimitedTarget?.unlimited.available || off || busy}
                 onClick={() => unlimitedTarget && buy("unlimited", { studentId: unlimitedTarget.id })}
                 aria-label={simulated ? `Development: simulate purchase of unlimited schools${unlimitedTarget && role !== "student" ? ` for ${unlimitedTarget.name}` : ""}` : undefined}
@@ -222,13 +228,14 @@ export function PlanPurchase(props: PlanPurchaseProps) {
             detail={
               props.counselor.active
                 ? `Active until ${props.counselor.endsAt}. Each extra plan adds ${props.counselorMaxStudents} students, with every school included.`
-                : `Every school for up to ${props.counselorMaxStudents} students for 12 months, without using credits.`
+                : `Every school for up to ${props.counselorMaxStudents} students for ${PLAN_TERM_LABEL}, without using credits.`
             }
             note={props.counselor.reason}
             error={errors.counselor}
             controls={
               <Button
                 variant="secondary"
+                className="h-10"
                 disabled={!props.counselor.available || off || busy}
                 onClick={() => buy("counselor", {})}
                 aria-label={simulated ? `Development: simulate purchase of ${counselorWhat}` : undefined}

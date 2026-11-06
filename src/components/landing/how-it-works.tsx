@@ -31,7 +31,7 @@ export function HowItWorks() {
           From your activity list to a one-page briefing for every school on your list, each one ready in about two minutes.
         </p>
 
-        <ol className="mt-14 grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
+        <ol className="mt-14 grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
           {STEPS.map((step, i) => (
             <li key={step.title} className="relative min-w-0">
               <div className="flex items-center gap-3" aria-hidden="true">

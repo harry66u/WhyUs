@@ -4,17 +4,58 @@
  * Pure functions only (used by the browser).
  */
 import type { DraftCheckResult, DraftIssue, DraftIssueType } from "@/lib/types";
-import type { Paragraph, TextRange } from "./text";
+import { sentenceAt, type Paragraph, type Sentence, type TextRange } from "./text";
 
 export type HighlightStyle = "verified" | "problem" | "swap" | "generic";
 
-export interface NumberedIssue extends DraftIssue {
+/**
+ * A draft issue as checkDraft returns it. Confirmed claims also carry the
+ * official name of the detail they matched and the source page's title, so a
+ * note can show what was confirmed without repeating the whole message.
+ */
+export interface CheckedIssue extends DraftIssue {
+  matchedTitle?: string;
+  sourceTitle?: string;
+}
+
+export interface CheckedDraft extends DraftCheckResult {
+  issues: CheckedIssue[];
+}
+
+export interface NumberedIssue extends CheckedIssue {
   /** Stable within one result: "n3". */
   id: string;
 }
 
-export function numberIssues(issues: DraftIssue[]): NumberedIssue[] {
+export function numberIssues(issues: CheckedIssue[]): NumberedIssue[] {
   return issues.map((issue, i) => ({ ...issue, id: `n${i + 1}` }));
+}
+
+export type NoteItem =
+  | { kind: "single"; id: string; issue: NumberedIssue }
+  /** Every confirmed claim in one sentence, in one compact note (id = the first claim's). */
+  | { kind: "confirmed"; id: string; issues: NumberedIssue[] };
+
+/** Notes in reading order, with each sentence's confirmed claims gathered into one note. */
+export function groupNotes(notes: NumberedIssue[], sentences: Sentence[]): NoteItem[] {
+  const items: NoteItem[] = [];
+  const bySentence = new Map<number, Extract<NoteItem, { kind: "confirmed" }>>();
+  for (const issue of notes) {
+    if (issue.type === "verified_claim" && issue.range) {
+      const sentence = sentenceAt(sentences, issue.range.start)?.index ?? -1 - items.length;
+      const group = bySentence.get(sentence);
+      if (group) {
+        group.issues.push(issue);
+        continue;
+      }
+      const created = { kind: "confirmed" as const, id: issue.id, issues: [issue] };
+      bySentence.set(sentence, created);
+      items.push(created);
+      continue;
+    }
+    items.push({ kind: "single", id: issue.id, issue });
+  }
+  return items;
 }
 
 export function highlightOf(issue: Pick<DraftIssue, "type">): HighlightStyle | null {

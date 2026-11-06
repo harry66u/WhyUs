@@ -3,10 +3,19 @@
 import { useReducedMotion } from "motion/react";
 import { useCallback, useEffect, useId, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { cn } from "@/components/ui/cn";
-import { highlightOf, layoutParagraphs, needsAttention, numberIssues, type HighlightStyle, type NumberedIssue } from "@/lib/draft/present";
+import {
+  groupNotes,
+  highlightOf,
+  layoutParagraphs,
+  needsAttention,
+  numberIssues,
+  type CheckedIssue,
+  type HighlightStyle,
+  type NoteItem,
+  type NumberedIssue,
+} from "@/lib/draft/present";
 import { segmentDraft } from "@/lib/draft/text";
-import type { DraftIssue } from "@/lib/types";
-import { DraftNote } from "./draft-note";
+import { ConfirmedNote, DraftNote } from "./draft-note";
 import { markClasses } from "./styles";
 
 export type NoteFilter = "all" | "attention";
@@ -22,14 +31,15 @@ function sameOffsets(a: Record<string, number>, b: Record<string, number>): bool
 }
 
 /**
- * The checked draft with highlights in place and one margin note per flag.
+ * The checked draft with highlights in place and margin notes.
  * Desktop: notes sit in a right-hand rail, each aligned with the line it is
  * about. Narrow screens: a paragraph's notes follow it. Hovering or focusing a
  * note outlines its words; clicking highlighted words brings up their note.
  */
-export function AnnotatedDraft({ text, issues, filter, className }: { text: string; issues: DraftIssue[]; filter: NoteFilter; className?: string }) {
+export function AnnotatedDraft({ text, issues, filter, className }: { text: string; issues: CheckedIssue[]; filter: NoteFilter; className?: string }) {
   const numbered = useMemo(() => numberIssues(issues), [issues]);
-  const views = useMemo(() => layoutParagraphs(text, segmentDraft(text).paragraphs, numbered), [text, numbered]);
+  const segmentation = useMemo(() => segmentDraft(text), [text]);
+  const views = useMemo(() => layoutParagraphs(text, segmentation.paragraphs, numbered), [text, segmentation, numbered]);
   const byId = useMemo(() => new Map(numbered.map((i) => [i.id, i])), [numbered]);
   const [active, setActive] = useState<string | null>(null);
   const [offsets, setOffsets] = useState<Record<string, number>>({});
@@ -38,6 +48,16 @@ export function AnnotatedDraft({ text, issues, filter, className }: { text: stri
   const reduceMotion = useReducedMotion();
 
   const shown = useCallback((i: NumberedIssue) => filter === "all" || needsAttention(i), [filter]);
+  const items = useMemo(
+    () => views.map((view) => groupNotes(view.notes.filter(shown), segmentation.sentences)),
+    [views, shown, segmentation],
+  );
+  /** Which note element holds each issue (confirmed claims share their sentence's note). */
+  const holder = useMemo(() => {
+    const map = new Map<string, string>();
+    for (const list of items) for (const item of list) for (const i of item.kind === "single" ? [item.issue] : item.issues) map.set(i.id, item.id);
+    return map;
+  }, [items]);
   const noteDomId = useCallback((id: string) => `${prefix}-note-${id}`, [prefix]);
 
   const measure = useCallback(() => {
@@ -50,12 +70,11 @@ export function AnnotatedDraft({ text, issues, filter, className }: { text: stri
       if (!textEl || !list) continue;
       const t = textEl.getBoundingClientRect();
       const l = list.getBoundingClientRect();
-      const beside = l.left >= t.right - 1;
+      if (l.left < t.right - 1) continue; // stacked under the paragraph: natural flow
       let y = 0;
       let first = true;
       for (const item of list.querySelectorAll<HTMLElement>("[data-note-id]")) {
         const id = item.dataset.noteId ?? "";
-        if (!beside) continue;
         const mark = textEl.querySelector<HTMLElement>(`[data-issue-ids~="${id}"]`);
         const desired = mark ? Math.max(0, mark.getBoundingClientRect().top - t.top - NOTE_NUDGE) : y;
         const top = Math.max(desired, first ? 0 : y + NOTE_GAP);
@@ -69,7 +88,7 @@ export function AnnotatedDraft({ text, issues, filter, className }: { text: stri
 
   useLayoutEffect(() => {
     measure();
-  }, [measure, views, filter]);
+  }, [measure, items]);
 
   useEffect(() => {
     const root = rootRef.current;
@@ -96,24 +115,28 @@ export function AnnotatedDraft({ text, issues, filter, className }: { text: stri
     });
     if (!target) return;
     setActive(target);
-    const el = document.getElementById(noteDomId(target));
+    const noteId = holder.get(target);
+    const el = noteId ? document.getElementById(noteDomId(noteId)) : null;
     if (el) {
       el.scrollIntoView({ block: "nearest", behavior: reduceMotion ? "auto" : "smooth" });
       el.focus({ preventScroll: true });
     }
   };
 
+  const renderItem = (item: NoteItem) =>
+    item.kind === "single" ? (
+      <DraftNote issue={item.issue} domId={noteDomId(item.id)} active={active === item.issue.id} onActivate={setActive} />
+    ) : (
+      <ConfirmedNote issues={item.issues} domId={noteDomId(item.id)} active={active} onActivate={setActive} />
+    );
+
   return (
     <div ref={rootRef} className={cn("space-y-7", className)}>
-      {views.map((view) => {
-        const notes = view.notes.filter(shown);
+      {views.map((view, v) => {
+        const notes = items[v] ?? [];
         return (
-          <div
-            key={view.paragraph.index}
-            data-draft-paragraph=""
-            className="grid items-start gap-x-12 gap-y-3 lg:grid-cols-[minmax(0,1fr)_17.5rem]"
-          >
-            <p data-draft-text="" className="min-w-0 font-serif text-[1.0625rem]/[1.9] break-words whitespace-pre-wrap text-fg [font-optical-sizing:auto]">
+          <div key={view.paragraph.index} data-draft-paragraph="" className="grid items-start gap-x-12 gap-y-3 lg:grid-cols-[minmax(0,1fr)_17.5rem]">
+            <p data-draft-text="" className="min-w-0 max-w-[44rem] font-serif text-[1.0625rem]/[1.9] break-words whitespace-pre-wrap text-fg [font-optical-sizing:auto]">
               {view.segments.map((seg) => {
                 if (seg.issueIds.length === 0) return <span key={seg.start}>{seg.text}</span>;
                 const styles = new Set(
@@ -138,15 +161,20 @@ export function AnnotatedDraft({ text, issues, filter, className }: { text: stri
               })}
             </p>
             {notes.length > 0 ? (
-              <ol data-draft-notes="" role="list" aria-label={`Notes on paragraph ${view.paragraph.index + 1}`} className="min-w-0 border-l border-line pl-4 lg:border-l-0 lg:pl-0">
-                {notes.map((issue) => (
+              <ol
+                data-draft-notes=""
+                role="list"
+                aria-label={`Notes on paragraph ${view.paragraph.index + 1}`}
+                className="min-w-0 border-l border-line pl-4 lg:border-l-0 lg:pl-0"
+              >
+                {notes.map((item) => (
                   <li
-                    key={issue.id}
-                    data-note-id={issue.id}
-                    style={offsets[issue.id] !== undefined ? { marginTop: offsets[issue.id] } : undefined}
-                    className="[&:not(:first-child)]:mt-2"
+                    key={item.id}
+                    data-note-id={item.id}
+                    style={offsets[item.id] !== undefined ? { marginTop: offsets[item.id] } : undefined}
+                    className="min-w-0 [&:not(:first-child)]:mt-2"
                   >
-                    <DraftNote issue={issue} domId={noteDomId(issue.id)} active={active === issue.id} onActivate={setActive} />
+                    {renderItem(item)}
                   </li>
                 ))}
               </ol>

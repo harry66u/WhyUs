@@ -29,7 +29,7 @@ export function PlansAndPrivacy({ prices }: { prices: LandingPrices }) {
 
   return (
     <section aria-label="Pricing and privacy" className="border-t border-line">
-      <div className="mx-auto grid max-w-[1200px] gap-16 px-4 py-20 sm:px-6 lg:grid-cols-12 lg:gap-10 lg:py-28">
+      <div className="mx-auto grid max-w-[1200px] grid-cols-1 gap-16 px-4 py-20 sm:px-6 lg:grid-cols-12 lg:gap-10 lg:py-28">
         <div className="lg:col-span-6">
           <h2 id="pricing-title" className="text-2xl font-semibold tracking-[-0.03em] text-fg sm:text-3xl">
             Your first school is free

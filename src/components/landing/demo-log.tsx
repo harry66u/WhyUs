@@ -155,9 +155,10 @@ function Line({ entry, verifiedOn }: { entry: LogEntry; verifiedOn: Record<strin
 }
 
 /**
- * The research log, newest line at the bottom. The list is anchored to the
- * bottom of its (fixed-height, clipped) container, so new lines push older
- * ones up and out of view, the way a console scrolls.
+ * The research log, newest line at the bottom. Its wrapper is at least as tall
+ * as the (fixed-height, clipped) container and pinned to its bottom: while the
+ * log is short it fills in from the top, and once it is longer, new lines push
+ * older ones up and out of view, the way a console scrolls.
  */
 export function DemoLog({
   entries,
@@ -173,18 +174,20 @@ export function DemoLog({
 }) {
   const shown = entries.filter((e) => !(e.kind === "stage" && e.status === "done" && !e.detail)).slice(-WINDOW);
   return (
-    <ol aria-label="Research log, newest at the bottom" className={cn("absolute inset-x-0 bottom-0 px-2 pb-2.5", className)}>
-      {shown.map((entry) => (
-        <motion.li
-          key={entry.key}
-          initial={entry.live ? (reduce ? { opacity: 0 } : { opacity: 0, height: 0 }) : false}
-          animate={reduce ? { opacity: 1 } : { opacity: 1, height: "auto" }}
-          transition={{ duration: 0.26, ease: EASE }}
-          className="overflow-hidden"
-        >
-          <Line entry={entry} verifiedOn={verifiedOn} />
-        </motion.li>
-      ))}
-    </ol>
+    <div className={cn("absolute inset-x-0 bottom-0 min-h-full", className)}>
+      <ol aria-label="Research log, newest at the bottom" className="px-2 pt-3 pb-2.5">
+        {shown.map((entry) => (
+          <motion.li
+            key={entry.key}
+            initial={entry.live ? (reduce ? { opacity: 0 } : { opacity: 0, height: 0 }) : false}
+            animate={reduce ? { opacity: 1 } : { opacity: 1, height: "auto" }}
+            transition={{ duration: 0.26, ease: EASE }}
+            className="overflow-hidden"
+          >
+            <Line entry={entry} verifiedOn={verifiedOn} />
+          </motion.li>
+        ))}
+      </ol>
+    </div>
   );
 }

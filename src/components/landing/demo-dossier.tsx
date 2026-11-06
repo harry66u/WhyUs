@@ -6,9 +6,9 @@ import { TickingNumber } from "@/components/research/counters";
 import type { ResearchViewState } from "@/components/research/state";
 import { cn } from "@/components/ui/cn";
 import { kindLabel } from "@/lib/format";
-import type { DossierDetail, SwapResult } from "@/lib/types";
+import type { SwapResult } from "@/lib/types";
 import { DemoSwapGlyph, SWAP_WORDS } from "./swap-glyph";
-import type { ComparedSchool, LandingDemo } from "./types";
+import type { ComparedSchool, DemoDetailView, DemoView } from "./types";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
@@ -21,10 +21,6 @@ function meterFill(score: number): string {
   if (score >= 70) return "bg-accent";
   if (score >= 45) return "bg-[color-mix(in_srgb,var(--accent)_55%,var(--fg-subtle))]";
   return "bg-subtle";
-}
-
-function labelOf(detail: DossierDetail): string {
-  return detail.uniqueness.commonlyMentioned ? "Commonly mentioned" : detail.uniqueness.label;
 }
 
 /**
@@ -71,7 +67,7 @@ function DemoMeter({ score, label, shown }: { score: number; label: string; show
   );
 }
 
-function SwapCluster({ results, compared, shown }: { results: SwapResult[]; compared: ComparedSchool[]; shown: boolean }) {
+function SwapCluster({ results, compared, shown }: { results: Pick<SwapResult, "schoolId" | "schoolName" | "status">[]; compared: ComparedSchool[]; shown: boolean }) {
   const ordered = compared.map(
     (c) => results.find((r) => r.schoolId === c.schoolId) ?? { schoolId: c.schoolId, schoolName: c.shortName, status: "unknown" as const },
   );
@@ -109,7 +105,7 @@ function DetailRow({
   compared,
   reduce,
 }: {
-  detail: DossierDetail;
+  detail: DemoDetailView;
   index: number;
   matched: boolean;
   swapped: boolean;
@@ -117,9 +113,9 @@ function DetailRow({
   compared: ComparedSchool[];
   reduce: boolean;
 }) {
-  const score = Math.max(0, Math.min(100, Math.round(detail.uniqueness.score)));
-  const label = labelOf(detail);
-  const marked = matched && detail.rank <= 3 && score >= 70;
+  const { score, label } = detail;
+  // The accent marks what is distinctive, so it waits until the swap test has scored the detail.
+  const marked = swapped && detail.rank <= 3 && score >= 70;
   return (
     <li
       className={cn(
@@ -158,7 +154,7 @@ function DetailRow({
                   <span className="truncate">Fits {activityTitle}</span>
                 </>
               ) : null}
-              {detail.uniqueness.commonlyMentioned ? (
+              {detail.commonlyMentioned ? (
                 <span className="inline-flex h-4 shrink-0 items-center rounded-full px-1.5 text-[0.6875rem] text-fg shadow-[0_0_0_1px_var(--line-strong)]">
                   Commonly mentioned
                 </span>
@@ -173,7 +169,7 @@ function DetailRow({
         )}
       </div>
       <div className="col-start-2 mt-1.5 flex items-center gap-4 @md:col-start-3 @md:mt-0 @md:justify-end">
-        <SwapCluster results={detail.swap ?? []} compared={compared} shown={swapped} />
+        <SwapCluster results={detail.swap} compared={compared} shown={swapped} />
         <DemoMeter score={score} label={label} shown={swapped} />
       </div>
     </li>
@@ -186,16 +182,23 @@ function DetailRow({
  * schools, then the overall score and the lead angle. Every row slot is
  * reserved from the start, so the pane never changes height.
  */
-export function DemoDossier({ demo, state, reduce }: { demo: LandingDemo; state: ResearchViewState; reduce: boolean }) {
+export function DemoDossier({ demo, state, reduce }: { demo: DemoView; state: ResearchViewState; reduce: boolean }) {
   const headingId = useId();
-  const details = [...demo.dossier.details].sort((a, b) => a.rank - b.rank);
+  const details = demo.details;
   const done = Boolean(state.done);
   const matched = details.filter((d) => state.matches[d.factId]).length;
   const lead = state.angles.find((a) => a.isLead);
-  const finalLead = demo.dossier.angles.find((a) => a.isLead)?.line ?? demo.dossier.angles[0]?.line ?? null;
+  const finalLead = demo.leadAngle;
   const moreNarrow = Math.max(0, details.length - NARROW_ROWS);
   const moreWide = Math.max(0, details.length - WIDE_ROWS);
-  const status = done ? "Final ranking" : matched > 0 ? "Ranking as matches arrive" : "Waiting for verified facts";
+  const verified = state.counters.factsVerified;
+  const status = done
+    ? "Final ranking"
+    : matched > 0
+      ? "Ranking as matches arrive"
+      : verified > 0
+        ? `${verified} ${verified === 1 ? "fact" : "facts"} verified, matching next`
+        : "Waiting for verified facts";
   const { summary } = demo;
   const more = (n: number) => `${n} more ${n === 1 ? "detail" : "details"} in the full dossier.`;
 
@@ -234,7 +237,7 @@ export function DemoDossier({ demo, state, reduce }: { demo: LandingDemo; state:
         ) : null}
 
         <div className="mt-auto pt-4">
-          <div className="grid gap-x-8 gap-y-4 border-t border-line pt-4 @lg:grid-cols-[9rem_minmax(0,1fr)]">
+          <div className="grid grid-cols-1 gap-x-8 gap-y-4 border-t border-line pt-4 @lg:grid-cols-[9rem_minmax(0,1fr)]">
             <div>
               <p className="text-2xs text-muted">Uniqueness score</p>
               <p className={cn("mt-1 flex items-baseline gap-1.5 transition-opacity duration-300", done ? "opacity-100" : "opacity-0")} aria-hidden={!done}>
@@ -252,7 +255,7 @@ export function DemoDossier({ demo, state, reduce }: { demo: LandingDemo; state:
             <div className="min-w-0">
               <p className="text-2xs text-muted">Lead angle</p>
               {/* The final line, invisible, reserves exactly the height the lead angle will take. */}
-              <div className="mt-1 grid">
+              <div className="mt-1 grid grid-cols-1">
                 <p aria-hidden="true" className="invisible col-start-1 row-start-1 font-serif text-[0.9375rem] leading-[1.45] text-pretty">
                   {finalLead ?? " "}
                 </p>

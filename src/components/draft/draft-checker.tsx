@@ -8,8 +8,8 @@ import { cn } from "@/components/ui/cn";
 import { IconDraft } from "@/components/ui/icons";
 import { Spinner } from "@/components/ui/misc";
 import { NEVER_REWRITES } from "@/lib/draft/messages";
+import type { CheckedDraft } from "@/lib/draft/present";
 import { countWords, MAX_DRAFT_CHARS, WORD_COUNT_RULE } from "@/lib/draft/text";
-import type { DraftCheckResult } from "@/lib/types";
 import { AnnotatedDraft, type NoteFilter } from "./annotated-draft";
 import { DraftSummary } from "./draft-summary";
 
@@ -17,12 +17,12 @@ const EASE = [0.22, 1, 0.36, 1] as const;
 
 interface Checked {
   text: string;
-  result: DraftCheckResult;
+  result: CheckedDraft;
 }
 
-function isResult(data: unknown): data is DraftCheckResult {
+function isResult(data: unknown): data is CheckedDraft {
   if (!data || typeof data !== "object") return false;
-  const d = data as Partial<DraftCheckResult>;
+  const d = data as Partial<CheckedDraft>;
   return typeof d.wordCount === "number" && Array.isArray(d.issues) && typeof d.summary === "object" && d.summary !== null;
 }
 
@@ -31,7 +31,7 @@ function plural(n: number, one: string, many = `${one}s`): string {
 }
 
 /** One sentence for screen readers when a check finishes. */
-export function resultAnnouncement(r: DraftCheckResult): string {
+export function resultAnnouncement(r: CheckedDraft): string {
   const parts = [`${plural(r.summary.verifiedClaims, "fact")} confirmed`];
   if (r.summary.unverifiedClaims) parts.push(`${r.summary.unverifiedClaims} could not be confirmed`);
   const other = r.issues.filter((i) => i.type === "wrong_school").length;
@@ -72,6 +72,7 @@ export function DraftChecker({
   const ids = useId();
   const draftId = `${ids}-draft`;
   const countId = `${ids}-count`;
+  const statusId = `${ids}-status`;
   const ruleId = `${ids}-rule`;
 
   const words = useMemo(() => countWords(text), [text]);
@@ -179,67 +180,67 @@ export function DraftChecker({
       ) : null}
 
       {mode === "edit" || !checked ? (
-        <form onSubmit={onSubmit} aria-busy={checking || undefined}>
-          <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+        <form onSubmit={onSubmit} aria-busy={checking || undefined} className="grid items-start gap-x-12 gap-y-6 lg:grid-cols-[minmax(0,1fr)_17.5rem]">
+          <div className="min-w-0 lg:max-w-[44rem]">
             <label htmlFor={draftId} className="text-sm font-medium text-fg">
               Your draft
             </label>
-            <p id={countId} className={cn("tabular text-xs", over > 0 ? "text-bad" : "text-muted")}>
-              {wordLimit ? (
-                <>
-                  {words} / {wordLimit} words{over > 0 ? `, ${over} over` : ""}
-                </>
-              ) : (
-                plural(words, "word")
-              )}
-            </p>
+            <textarea
+              ref={textareaRef}
+              id={draftId}
+              value={text}
+              onChange={(e) => setText(e.target.value)}
+              onKeyDown={onKeyDown}
+              readOnly={checking}
+              aria-describedby={`${countId} ${statusId} ${ruleId}`}
+              aria-invalid={tooLong || undefined}
+              placeholder="Paste your draft here."
+              spellCheck
+              className="mt-2 block min-h-[22rem] w-full resize-y rounded-lg bg-sunken px-5 py-4 font-serif text-[1.0625rem]/[1.8] text-fg shadow-[0_0_0_1px_var(--line)] transition-shadow duration-150 [field-sizing:content] placeholder:text-subtle hover:shadow-[0_0_0_1px_var(--line-strong)] focus:shadow-[0_0_0_1px_var(--accent-line),0_0_0_4px_var(--accent-wash)] focus:outline-none focus-visible:outline-none aria-[invalid=true]:shadow-[0_0_0_1px_var(--bad)] sm:px-6 sm:py-5 [font-optical-sizing:auto]"
+            />
+            {wordLimit ? (
+              <span aria-hidden="true" className="mt-2 block h-[2px] w-full overflow-hidden rounded-full bg-line">
+                <span
+                  className={cn("block h-full rounded-full transition-[width] duration-300 ease-out", over > 0 ? "bg-bad" : "bg-subtle")}
+                  style={{ width: `${Math.min(100, (words / wordLimit) * 100)}%` }}
+                />
+              </span>
+            ) : null}
           </div>
-          <textarea
-            ref={textareaRef}
-            id={draftId}
-            value={text}
-            onChange={(e) => setText(e.target.value)}
-            onKeyDown={onKeyDown}
-            readOnly={checking}
-            aria-describedby={`${countId} ${ruleId}`}
-            aria-invalid={tooLong || undefined}
-            placeholder="Paste your draft here."
-            spellCheck
-            className="mt-2 block min-h-[20rem] w-full resize-y rounded-lg bg-sunken px-5 py-4 font-serif text-[1.0625rem]/[1.75] text-fg shadow-[0_0_0_1px_var(--line)] transition-shadow duration-150 [field-sizing:content] placeholder:text-subtle hover:shadow-[0_0_0_1px_var(--line-strong)] focus:shadow-[0_0_0_1px_var(--accent-line),0_0_0_4px_var(--accent-wash)] focus:outline-none focus-visible:outline-none aria-[invalid=true]:shadow-[0_0_0_1px_var(--bad)] sm:px-6 sm:py-5"
-          />
-          {wordLimit ? (
-            <span aria-hidden="true" className="mt-2 block h-[2px] w-full overflow-hidden rounded-full bg-line">
-              <span
-                className={cn("block h-full rounded-full transition-[width] duration-300 ease-out", over > 0 ? "bg-bad" : "bg-subtle")}
-                style={{ width: `${Math.min(100, (words / wordLimit) * 100)}%` }}
-              />
-            </span>
-          ) : null}
 
-          {error ? (
-            <p role="alert" className="mt-4 rounded-md bg-bad-wash px-3 py-2 text-sm text-bad">
-              {error}
+          <div className="lg:sticky lg:top-8 lg:pt-7">
+            <p className="text-xs text-subtle">Word count</p>
+            <p id={countId} className="mt-1 text-3xl font-semibold tracking-[-0.03em]">
+              <span className={cn("tabular", over > 0 ? "text-bad" : "text-fg")}>{words}</span>
+              {wordLimit ? <span className="tabular text-lg font-normal tracking-normal text-subtle"> / {wordLimit}</span> : null}
+              <span className="sr-only"> words</span>
             </p>
-          ) : null}
-          {tooLong ? (
-            <p role="alert" className="mt-4 rounded-md bg-bad-wash px-3 py-2 text-sm text-bad">
-              This draft is longer than {MAX_DRAFT_CHARS.toLocaleString("en-US")} characters. Check one essay at a time.
+            <p id={statusId} className={cn("mt-1 text-xs", over > 0 ? "text-bad" : "text-muted")}>
+              {!wordLimit
+                ? "No word limit for this prompt"
+                : over > 0
+                  ? `${over} over the ${wordLimit}-word limit`
+                  : over === 0
+                    ? "Exactly at the limit"
+                    : `${-over} left before the limit`}
             </p>
-          ) : null}
+            <p id={ruleId} className="mt-3 text-xs leading-relaxed text-subtle">
+              {WORD_COUNT_RULE}
+            </p>
 
-          <div className="mt-4 flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-            <div className="max-w-[52ch] space-y-1 text-xs text-subtle">
-              <p id={ruleId}>{WORD_COUNT_RULE}</p>
-              <p>Drafts are checked and discarded. WhyUs does not store them.</p>
-              {checked && stale ? <p className="text-muted">The draft has changed since the last check.</p> : null}
-            </div>
-            <div className="flex shrink-0 flex-wrap items-center gap-2">
-              {checked && !stale ? (
-                <Button variant="ghost" onClick={() => setMode("review")}>
-                  Back to results
-                </Button>
-              ) : null}
-              <Button type="submit" variant="primary" disabled={!canCheck} aria-keyshortcuts="Control+Enter Meta+Enter">
+            {error ? (
+              <p role="alert" className="mt-4 rounded-md bg-bad-wash px-3 py-2 text-sm text-bad">
+                {error}
+              </p>
+            ) : null}
+            {tooLong ? (
+              <p role="alert" className="mt-4 rounded-md bg-bad-wash px-3 py-2 text-sm text-bad">
+                This draft is longer than {MAX_DRAFT_CHARS.toLocaleString("en-US")} characters. Check one essay at a time.
+              </p>
+            ) : null}
+
+            <div className="mt-5 flex flex-col gap-2 sm:flex-row lg:flex-col">
+              <Button type="submit" variant="primary" disabled={!canCheck} aria-keyshortcuts="Control+Enter Meta+Enter" className="sm:min-w-40 lg:w-full">
                 {checking ? (
                   <>
                     <Spinner className="text-accent-fg" />
@@ -251,9 +252,16 @@ export function DraftChecker({
                   "Check draft"
                 )}
               </Button>
+              {checked && !stale ? (
+                <Button variant="ghost" onClick={() => setMode("review")} className="lg:w-full">
+                  Back to results
+                </Button>
+              ) : null}
             </div>
+            {checked && stale ? <p className="mt-2 text-xs text-muted">The draft has changed since the last check.</p> : null}
+            <p className="mt-4 text-xs leading-relaxed text-subtle">Drafts are checked and discarded. WhyUs does not store them.</p>
+            <p className="mt-5 border-t border-line pt-4 text-sm text-muted">{NEVER_REWRITES}</p>
           </div>
-          <p className="mt-6 border-l-2 border-line-strong pl-3 text-sm text-muted">{NEVER_REWRITES}</p>
         </form>
       ) : (
         <motion.section

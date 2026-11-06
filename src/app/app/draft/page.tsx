@@ -109,9 +109,12 @@ export default async function DraftPickerPage() {
                 {rows.map((row) => (
                   <li
                     key={row.id}
-                    className={cn("group relative grid gap-x-4 gap-y-2 px-4 py-4 transition-colors duration-150 hover:bg-hover lg:items-center lg:py-3.5", GRID)}
+                    className={cn(
+                      "group relative grid grid-cols-[auto_minmax(0,1fr)] items-center gap-x-5 gap-y-2 px-4 py-4 transition-colors duration-150 hover:bg-hover lg:py-3.5",
+                      GRID,
+                    )}
                   >
-                    <div className="min-w-0 pr-8 lg:pr-0">
+                    <div className="col-span-2 min-w-0 pr-8 lg:col-span-1 lg:pr-0">
                       <Link
                         href={row.href}
                         className="font-medium tracking-[-0.01em] text-fg after:absolute after:inset-0 after:content-['']"
@@ -121,7 +124,7 @@ export default async function DraftPickerPage() {
                       </Link>
                       {row.unitName ? <p className="truncate text-xs text-muted">{row.unitName}</p> : null}
                     </div>
-                    <p className="min-w-0 truncate text-sm text-muted" title={row.promptTitle}>
+                    <p className="col-span-2 min-w-0 truncate text-sm text-muted lg:col-span-1" title={row.promptTitle}>
                       <span className="sr-only">Prompt: </span>
                       {row.promptTitle}
                     </p>

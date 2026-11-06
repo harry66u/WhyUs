@@ -211,6 +211,6 @@ describe("entitlementHint", () => {
     expect(entitlementHint({ ...base, credits: 2, remainingSchools: 2 }, "s").text).toBe("2 school credits left.");
     expect(entitlementHint({ ...base, unlimitedStudentIds: ["s"], remainingSchools: Infinity }, "s").text).toBe("Unlimited schools for this student.");
     expect(entitlementHint({ ...base, counselorPlan: { active: true, maxStudents: 25 } }, "s").text).toBe("Covered by your counselor plan.");
-    expect(entitlementHint(base, "s")).toEqual({ text: "No school credits left.", action: { label: "See plans", href: "/pricing" } });
+    expect(entitlementHint(base, "s")).toEqual({ text: "No school credits left.", action: { label: "See plans", href: "/app/settings#plan" } });
   });
 });

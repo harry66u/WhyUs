@@ -19,7 +19,7 @@
  */
 import sampleStudentJson from "@data/sample-student.json";
 import { labelCountsText, scoreBand } from "@/components/dossier/model";
-import { buildDossier, rankFacts } from "@/lib/matching/engine";
+import { buildDossier, rankFacts, swapTest, type OtherSchool } from "@/lib/matching/engine";
 import { EXAMPLE_DOSSIER } from "@/lib/fixtures/example-dossier";
 import { seedCorpora } from "@/lib/research/corpus-data";
 import { isOfficialUrl, listSchools, promptsFor } from "@/lib/schools/registry";
@@ -33,7 +33,7 @@ import type {
   StudentProfile,
   SupplementalPrompt,
 } from "@/lib/types";
-import type { ComparedSchool, CorpusStats, DossierSummary, LandingCitation, LandingDemo } from "./types";
+import type { ComparedSchool, CorpusStats, DossierSummary, LandingCitation, LandingDemo, LeftOutDetail } from "./types";
 
 /* ------------------------------------------------------------------ */
 /* The sample student's list                                           */
@@ -245,6 +245,28 @@ function activityTitle(student: StudentProfile, detail: DossierDetail): string |
   return id ? student.activities.find((a) => a.id === id)?.title : undefined;
 }
 
+/**
+ * Of the facts a run verified but did not put in the dossier, the one the other
+ * schools most clearly have too, by the engine's swap test: something
+ * comparable at three or more schools, with an equivalent counting double
+ * (weight 4 or more). Null when no fact is that swappable.
+ */
+export function mostSwappable(candidates: Fact[], others: OtherSchool[]): LeftOutDetail | null {
+  let best: LeftOutDetail | null = null;
+  let bestWeight = 0;
+  for (const f of candidates) {
+    const swap = swapTest(f, others);
+    const equivalents = swap.filter((r) => r.status === "equivalent").length;
+    const similar = swap.filter((r) => r.status === "similar").length;
+    const weight = equivalents * 2 + similar;
+    if (equivalents + similar >= 3 && weight >= 4 && weight > bestWeight) {
+      best = { factId: f.id, kind: f.kind, title: f.title, swap };
+      bestWeight = weight;
+    }
+  }
+  return best;
+}
+
 /** The score line as the briefing words it (same bands and counts as the dossier page). */
 export function dossierSummary(dossier: Dossier): DossierSummary {
   const score = Math.max(0, Math.min(100, Math.round(dossier.uniquenessScore)));
@@ -442,6 +464,7 @@ export async function buildLandingDemo(inputs: LandingDemoInputs): Promise<Landi
 
   const entries = list.filter((e) => schoolById.has(e.schoolId));
   const targets = [...entries].sort((a, b) => rankOf(order, a.schoolId) - rankOf(order, b.schoolId));
+  let failure: unknown = null;
 
   for (const target of targets) {
     const school = schoolById.get(target.schoolId)!;
@@ -469,26 +492,33 @@ export async function buildLandingDemo(inputs: LandingDemoInputs): Promise<Landi
     const unit = target.unitId ? school.units.find((u) => u.id === target.unitId) ?? null : null;
     const corpus = inputs.corpora.find((c) => c.schoolId === school.id);
 
-    const built = await buildDossier({
-      dossierId: `landing-demo-${school.id}`,
-      applicationId: `landing-demo-${school.id}`,
-      student: inputs.student,
-      school,
-      unitId: target.unitId,
-      prompt: { text: prompt.text, wordLimit: prompt.wordLimit?.max ?? null },
-      verifiedFacts: plan.verified,
-      otherSchools: others.map((o) => ({ school: o.school, facts: o.facts })),
-      usedLeadAngleKeys: [],
-      term: corpus?.term ?? "",
-      stats: {
-        pagesRead: plan.pages.length,
-        pagesBlocked: 0,
-        factsConsidered: base.length,
-        factsVerified: plan.verified.length,
-        factsRejected: 0,
-        durationMs: 0,
-      },
-    });
+    const otherSchools: OtherSchool[] = others.map((o) => ({ school: o.school, facts: o.facts }));
+    let built: Dossier;
+    try {
+      built = await buildDossier({
+        dossierId: `landing-demo-${school.id}`,
+        applicationId: `landing-demo-${school.id}`,
+        student: inputs.student,
+        school,
+        unitId: target.unitId,
+        prompt: { text: prompt.text, wordLimit: prompt.wordLimit?.max ?? null },
+        verifiedFacts: plan.verified,
+        otherSchools,
+        usedLeadAngleKeys: [],
+        term: corpus?.term ?? "",
+        stats: {
+          pagesRead: plan.pages.length,
+          pagesBlocked: 0,
+          factsConsidered: base.length,
+          factsVerified: plan.verified.length,
+          factsRejected: 0,
+          durationMs: 0,
+        },
+      });
+    } catch (err) {
+      failure ??= err; // try the next school on the list
+      continue;
+    }
 
     const dossier = keepVerifiedOnly(built, plan.verified);
     if (dossier.details.length < MIN_DEMO_DETAILS) continue;
@@ -532,10 +562,16 @@ export async function buildLandingDemo(inputs: LandingDemoInputs): Promise<Landi
       dossier,
       summary: dossierSummary(dossier),
       compared,
+      leftOut: mostSwappable(
+        plan.verified.filter((f) => !dossier.details.some((d) => d.factId === f.id)),
+        otherSchools,
+      ),
       citation,
       corpusStats: corpusStats(inputs.schools, inputs.corpora),
     };
   }
+  // Nothing qualified. Surface an engine failure (the caller logs it and shows the example).
+  if (failure) throw failure;
   return null;
 }
 
@@ -613,6 +649,7 @@ export function exampleLandingDemo(student: StudentProfile): LandingDemo {
     dossier,
     summary: dossierSummary(dossier),
     compared,
+    leftOut: null,
     citation: {
       factId: top.factId,
       kind: top.kind,

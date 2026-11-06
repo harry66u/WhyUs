@@ -39,6 +39,11 @@ export interface NameEntry {
    * they count only when written exactly so, and not at the start of a sentence.
    */
   exactCase?: boolean;
+  /**
+   * One ordinary word ("Winterfest"): matched when a claim names it, but never
+   * searched for in free text, where it could be a common word.
+   */
+  claimOnly?: boolean;
 }
 
 export interface FactIndex {
@@ -193,6 +198,7 @@ export function buildFactIndex(school: School, facts: Fact[]): FactIndex {
       let key = v.kind === "code" ? codeKey(v.display) : normName(v.display);
       if (!key) continue;
       let exactCase = false;
+      let claimOnly = false;
       if (v.kind === "name") {
         const bare = v.display.replace(/^(?:the|a|an)\s+/i, "");
         const articled = bare !== v.display;
@@ -201,8 +207,10 @@ export function buildFactIndex(school: School, facts: Fact[]): FactIndex {
           // "The Dartmouth" (a newspaper) is not "Dartmouth"; "The Stretch" is not "stretch".
           key = normalizeTitle(v.display);
           exactCase = true;
-        } else if (self.has(key) || (single && !/\p{Lu}.*\p{Lu}/u.test(bare))) {
+        } else if (self.has(key)) {
           continue;
+        } else if (single && !/\p{Lu}.*\p{Lu}/u.test(bare)) {
+          claimOnly = true;
         }
       }
       const tokens = tokensOf(key);
@@ -228,8 +236,8 @@ export function buildFactIndex(school: School, facts: Fact[]): FactIndex {
           break;
         }
       }
-      if (exactCase) distinctive = false;
-      entries.push({ kind: v.kind, key, display: v.display, fact, distinctive, ...(exactCase ? { exactCase } : {}) });
+      if (exactCase || claimOnly) distinctive = false;
+      entries.push({ kind: v.kind, key, display: v.display, fact, distinctive, ...(exactCase ? { exactCase } : {}), ...(claimOnly ? { claimOnly } : {}) });
     }
   }
   const byKey = new Map<string, NameEntry[]>();
@@ -404,7 +412,7 @@ function writtenAsName(original: string, entry: NameEntry): boolean {
 export function scanKnownNames(text: string, hay: NormalizedText, idx: FactIndex, opts: { distinctiveOnly: boolean }): KnownHit[] {
   const hits: KnownHit[] = [];
   for (const entry of idx.entries) {
-    if (entry.kind === "code") continue;
+    if (entry.kind === "code" || entry.claimOnly) continue;
     if (opts.distinctiveOnly && !entry.distinctive) continue;
     for (const r of findNormalized(hay, entry.key, 20)) {
       // Ranges stop before a possessive ("Club's" -> "Club"): the apostrophe folds to a space.

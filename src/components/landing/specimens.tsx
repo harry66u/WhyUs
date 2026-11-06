@@ -1,10 +1,11 @@
 import { SWAP_STATUS_LABELS, SwapGlyph, uniquenessLabel } from "@/components/dossier";
 import { Badge } from "@/components/ui/badge";
+import { cn } from "@/components/ui/cn";
 import { IconCheck } from "@/components/ui/icons";
 import { UniquenessMeter } from "@/components/ui/meter";
 import { SourceLink } from "@/components/ui/misc";
 import { formatDate, kindLabel } from "@/lib/format";
-import type { DossierDetail, SwapResult, SwapStatus } from "@/lib/types";
+import type { DossierDetail, FactKind, SwapResult, SwapStatus, UniquenessLabel } from "@/lib/types";
 import { joinNames } from "./demo-data";
 import { SWAP_WORDS } from "./swap-glyph";
 import type { ComparedSchool, LandingDemo } from "./types";
@@ -32,7 +33,7 @@ export function SourcesSpecimen({ demo }: { demo: LandingDemo }) {
 
   return (
     <section aria-labelledby="sources-title" className="border-t border-line">
-      <div className="mx-auto grid max-w-[1200px] gap-12 px-4 py-20 sm:px-6 lg:grid-cols-12 lg:gap-10 lg:py-28">
+      <div className="mx-auto grid max-w-[1200px] grid-cols-1 gap-12 px-4 py-20 sm:px-6 lg:grid-cols-12 lg:gap-10 lg:py-28">
         <div className="lg:col-span-5">
           <h2 id="sources-title" className={H2}>
             Official sources only, and every fact verified
@@ -71,7 +72,7 @@ export function SourcesSpecimen({ demo }: { demo: LandingDemo }) {
             </blockquote>
             <div className="mt-5">
               <span className="sr-only">Source: </span>
-              <SourceLink url={c.sourceUrl} verifiedAt={c.verifiedAt} />
+              <SourceLink url={c.sourceUrl} verifiedAt={c.verifiedAt} className="max-w-full" />
             </div>
 
             <div className="mt-7 border-t border-line pt-5">
@@ -115,10 +116,56 @@ export function SourcesSpecimen({ demo }: { demo: LandingDemo }) {
 /* Swap test                                                           */
 /* ------------------------------------------------------------------ */
 
-function resultFor(detail: DossierDetail, school: ComparedSchool): SwapResult {
+function resultFor(swap: SwapResult[], school: ComparedSchool): SwapResult {
+  return swap.find((r) => r.schoolId === school.schoolId) ?? { schoolId: school.schoolId, schoolName: school.shortName, status: "unknown" };
+}
+
+/** One row of the matrix: a dossier detail with its uniqueness, or the verified detail the dossier left out. */
+interface MatrixRow {
+  factId: string;
+  title: string;
+  kind: FactKind;
+  swap: SwapResult[];
+  verdict: { score: number; label: UniquenessLabel } | "left-out";
+}
+
+export function matrixModel(demo: Pick<LandingDemo, "dossier" | "leftOut">): MatrixRow[] {
+  const details = demo.leftOut ? [...demo.dossier.details].sort((a, b) => a.rank - b.rank).slice(0, 4) : matrixRows(demo.dossier.details);
+  const rows: MatrixRow[] = details.map((d) => ({
+    factId: d.factId,
+    title: d.title,
+    kind: d.kind,
+    swap: d.swap,
+    verdict: { score: Math.round(d.uniqueness.score), label: uniquenessLabel(d) },
+  }));
+  if (demo.leftOut) rows.push({ ...demo.leftOut, verdict: "left-out" });
+  return rows;
+}
+
+function Verdict({ row }: { row: MatrixRow }) {
+  if (row.verdict === "left-out") return <span className="text-xs text-muted">Not in the dossier</span>;
+  const { score, label } = row.verdict;
   return (
-    detail.swap.find((r) => r.schoolId === school.schoolId) ?? { schoolId: school.schoolId, schoolName: school.shortName, status: "unknown" }
+    <span className="inline-flex flex-wrap items-center gap-x-2.5 gap-y-1">
+      <UniquenessMeter score={score} size="sm" label={`Uniqueness ${score} out of 100, ${label}`} />
+      <span className={label === "Distinctive" ? "text-xs font-medium text-accent-text" : "text-xs text-fg"}>{label}</span>
+    </span>
   );
+}
+
+function matrixCaption(demo: LandingDemo): string {
+  if (demo.source === "example") return "Example data for a fictional school.";
+  const base = `From the ${demo.school.shortName} dossier in the replay, against the sample student’s other schools.`;
+  if (!demo.leftOut) return base;
+  const names = (status: SwapStatus) => demo.leftOut!.swap.filter((r) => r.status === status).map((r) => r.schoolName);
+  const verb = (n: string[]) => (n.length === 1 ? "has" : "have");
+  const equivalent = names("equivalent");
+  const similar = names("similar");
+  const parts = [
+    equivalent.length ? `${joinNames(equivalent)} ${verb(equivalent)} an equivalent` : null,
+    similar.length ? `${joinNames(similar)} ${verb(similar)} something similar` : null,
+  ].filter(Boolean);
+  return `${base} The last row was verified in the same run but is not in the dossier: ${parts.join(", and ")}.`;
 }
 
 /**
@@ -144,15 +191,14 @@ function cellText(r: SwapResult, school: ComparedSchool): string {
 const LEGEND: SwapStatus[] = ["equivalent", "similar", "none", "unknown"];
 
 export function SwapTestSpecimen({ demo }: { demo: LandingDemo }) {
-  const rows = matrixRows(demo.dossier.details);
+  const rows = matrixModel(demo);
   const schools = demo.compared;
-  const example = demo.source === "example";
   if (rows.length === 0 || schools.length === 0) return null;
 
   return (
     <section aria-labelledby="swap-title" className="border-t border-line">
       <div className="mx-auto max-w-[1200px] px-4 py-20 sm:px-6 lg:py-28">
-        <div className="grid gap-5 lg:grid-cols-12 lg:gap-10">
+        <div className="grid grid-cols-1 gap-5 lg:grid-cols-12 lg:gap-10">
           <h2 id="swap-title" className={`${H2} lg:col-span-5`}>
             The swap test
           </h2>
@@ -186,71 +232,62 @@ export function SwapTestSpecimen({ demo }: { demo: LandingDemo }) {
                 </tr>
               </thead>
               <tbody className="divide-y divide-line">
-                {rows.map((d) => {
-                  const label = uniquenessLabel(d);
-                  return (
-                    <tr key={d.factId}>
-                      <th scope="row" className="max-w-[22rem] px-5 py-4 align-top font-normal">
-                        <span className="block font-serif text-base leading-snug text-pretty text-fg">{d.title}</span>
-                        <span className="mt-1 block text-2xs text-subtle">{kindLabel(d.kind)}</span>
-                      </th>
-                      {schools.map((s) => {
-                        const r = resultFor(d, s);
-                        const text = cellText(r, s);
-                        return (
-                          <td key={s.schoolId} className="px-3 py-4 text-center align-middle" title={text}>
-                            <SwapGlyph status={r.status} className="mx-auto h-4 w-4" />
-                            <span className="sr-only">{SWAP_STATUS_LABELS[r.status]}</span>
-                          </td>
-                        );
-                      })}
-                      <td className="px-5 py-4 align-middle">
-                        <span className="flex flex-wrap items-center gap-x-2.5 gap-y-1">
-                          <UniquenessMeter score={d.uniqueness.score} size="sm" label={`Uniqueness ${Math.round(d.uniqueness.score)} out of 100, ${label}`} />
-                          <span className={label === "Distinctive" ? "text-xs font-medium text-accent-text" : "text-xs text-fg"}>{label}</span>
-                        </span>
-                      </td>
-                    </tr>
-                  );
-                })}
+                {rows.map((row) => (
+                  <tr key={row.factId} className={row.verdict === "left-out" ? "bg-sunken" : undefined} data-matrix-row={row.verdict === "left-out" ? "left-out" : "dossier"}>
+                    <th scope="row" className="max-w-[22rem] px-5 py-4 align-top font-normal">
+                      <span className={cn("block font-serif text-base leading-snug text-pretty", row.verdict === "left-out" ? "text-muted" : "text-fg")}>
+                        {row.title}
+                      </span>
+                      <span className="mt-1 block text-2xs text-subtle">{kindLabel(row.kind)}</span>
+                    </th>
+                    {schools.map((s) => {
+                      const r = resultFor(row.swap, s);
+                      return (
+                        <td key={s.schoolId} className="px-3 py-4 text-center align-middle" title={cellText(r, s)}>
+                          <SwapGlyph status={r.status} className="mx-auto h-4 w-4" />
+                          <span className="sr-only">{SWAP_STATUS_LABELS[r.status]}</span>
+                        </td>
+                      );
+                    })}
+                    <td className="px-5 py-4 align-middle">
+                      <Verdict row={row} />
+                    </td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </div>
 
           {/* Narrow: one block per detail */}
-          <ul role="list" className="divide-y divide-line rounded-lg bg-raised px-4 shadow-raise md:hidden">
-            {rows.map((d) => {
-              const label = uniquenessLabel(d);
-              return (
-                <li key={d.factId} className="py-4">
-                  <p className="font-serif text-base leading-snug text-fg">{d.title}</p>
-                  <p className="mt-0.5 text-2xs text-subtle">{kindLabel(d.kind)}</p>
-                  <ul role="list" className="mt-3 grid grid-cols-2 gap-x-4 gap-y-2" aria-label="Swap test">
-                    {schools.map((s) => {
-                      const r = resultFor(d, s);
-                      return (
-                        <li key={s.schoolId} className="flex min-w-0 items-center gap-2 text-xs">
-                          <SwapGlyph status={r.status} className="shrink-0" />
-                          <span className="truncate text-fg">{s.shortName}</span>
-                          <span className="sr-only">: {SWAP_STATUS_LABELS[r.status]}</span>
-                          <span className="shrink-0 text-subtle" aria-hidden="true">
-                            {SWAP_WORDS[r.status]}
-                          </span>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                  <p className="mt-3 flex items-center gap-2.5">
-                    <UniquenessMeter score={d.uniqueness.score} size="sm" label={`Uniqueness ${Math.round(d.uniqueness.score)} out of 100, ${label}`} />
-                    <span className={label === "Distinctive" ? "text-xs font-medium text-accent-text" : "text-xs text-fg"}>{label}</span>
-                  </p>
-                </li>
-              );
-            })}
+          <ul role="list" className="divide-y divide-line overflow-hidden rounded-lg bg-raised shadow-raise md:hidden">
+            {rows.map((row) => (
+              <li key={row.factId} className={cn("px-4 py-4", row.verdict === "left-out" && "bg-sunken")}>
+                <p className={cn("font-serif text-base leading-snug", row.verdict === "left-out" ? "text-muted" : "text-fg")}>{row.title}</p>
+                <p className="mt-0.5 text-2xs text-subtle">{kindLabel(row.kind)}</p>
+                <ul role="list" className="mt-3 grid grid-cols-1 gap-x-4 gap-y-2 min-[420px]:grid-cols-2" aria-label="Swap test">
+                  {schools.map((s) => {
+                    const r = resultFor(row.swap, s);
+                    return (
+                      <li key={s.schoolId} className="flex min-w-0 items-center gap-2 text-xs">
+                        <SwapGlyph status={r.status} className="shrink-0" />
+                        <span className="min-w-0 truncate text-fg">{s.shortName}</span>
+                        <span className="sr-only">: {SWAP_STATUS_LABELS[r.status]}</span>
+                        <span className="shrink-0 text-subtle" aria-hidden="true">
+                          {SWAP_WORDS[r.status]}
+                        </span>
+                      </li>
+                    );
+                  })}
+                </ul>
+                <p className="mt-3">
+                  <Verdict row={row} />
+                </p>
+              </li>
+            ))}
           </ul>
 
-          <figcaption className="mt-4 flex flex-col gap-3 text-xs text-subtle lg:flex-row lg:items-center lg:justify-between">
-            <ul role="list" className="flex flex-wrap gap-x-5 gap-y-2" aria-label="Key">
+          <figcaption className="mt-4 flex flex-col gap-3 text-xs text-subtle lg:flex-row lg:items-start lg:justify-between lg:gap-10">
+            <ul role="list" className="flex shrink-0 flex-wrap gap-x-5 gap-y-2" aria-label="Key">
               {LEGEND.map((status) => (
                 <li key={status} className="inline-flex items-center gap-2">
                   <SwapGlyph status={status} className="h-3.5 w-3.5" />
@@ -258,11 +295,7 @@ export function SwapTestSpecimen({ demo }: { demo: LandingDemo }) {
                 </li>
               ))}
             </ul>
-            <p>
-              {example
-                ? "Example data for a fictional school."
-                : `From the ${demo.school.shortName} dossier in the replay, against the sample student’s other schools.`}
-            </p>
+            <p className="max-w-[60ch] lg:text-right">{matrixCaption(demo)}</p>
           </figcaption>
         </figure>
       </div>
@@ -289,7 +322,7 @@ function DraftLines({ widths }: { widths: number[] }) {
 export function DraftSpecimen() {
   return (
     <section aria-labelledby="draft-title" className="border-t border-line">
-      <div className="mx-auto grid max-w-[1200px] gap-12 px-4 py-20 sm:px-6 lg:grid-cols-12 lg:gap-10 lg:py-28">
+      <div className="mx-auto grid max-w-[1200px] grid-cols-1 gap-12 px-4 py-20 sm:px-6 lg:grid-cols-12 lg:gap-10 lg:py-28">
         <div className="lg:order-2 lg:col-span-5 lg:col-start-8">
           <h2 id="draft-title" className={H2}>
             WhyUs never writes or rewrites your essay.

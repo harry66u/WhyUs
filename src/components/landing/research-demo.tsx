@@ -13,7 +13,7 @@ import { DemoDossier } from "./demo-dossier";
 import { DemoLog } from "./demo-log";
 import { FADE_MS, HOLD_MS, initialCount, replaySchedule, replayState, toStoredEvents } from "./demo-script";
 import { IconPause, IconPlay, IconReplay } from "./icons";
-import type { LandingDemo } from "./types";
+import type { DemoView } from "./types";
 
 /* ------------------------------------------------------------------ */
 /* Hydration-safe media and visibility (server and first paint: false/true) */
@@ -51,12 +51,13 @@ function word(n: number, one: string, many: string): string {
  * - Plays when it scrolls into view and loops after holding the finished
  *   dossier; pauses while the pointer is over it or focus is inside it, while
  *   it is off screen, and while the tab is hidden.
- * - Pause and play are always available (and override hover and focus).
+ * - A pause button stops it until the visitor plays it again (play also
+ *   overrides a hover or focus pause).
  * - With reduced motion it shows the finished dossier and plays only on request,
  *   with fades instead of movement.
  * - Stage changes are announced politely during the first pass.
  */
-export function ResearchDemo({ demo, className }: { demo: LandingDemo; className?: string }) {
+export function ResearchDemo({ demo, className }: { demo: DemoView; className?: string }) {
   const stored = useMemo(() => toStoredEvents(demo.events), [demo.events]);
   const schedule = useMemo(() => replaySchedule(demo.events), [demo.events]);
   const total = stored.length;
@@ -124,10 +125,13 @@ export function ResearchDemo({ demo, className }: { demo: LandingDemo; className
     setAnnounce(true);
   }, []);
 
+  // The button is the visitor's explicit choice: "Pause" stops the replay until
+  // they press "Play" (hover and focus pauses are transient and show only in
+  // the status). "Play" also overrides a hover or focus pause.
   const onControl = () => {
     if (still || (reduce && finished)) {
       restart();
-    } else if (heldBack) {
+    } else if (userPaused) {
       setUserPaused(false);
       setOverride(true);
       setAnnounce(true);
@@ -155,7 +159,7 @@ export function ResearchDemo({ demo, className }: { demo: LandingDemo; className
   const control =
     still || (reduce && finished)
       ? { label: still ? "Play replay" : "Replay", aria: "Play the research replay from the start", icon: still ? <IconPlay size={14} /> : <IconReplay size={14} /> }
-      : heldBack
+      : userPaused
         ? { label: "Play", aria: "Play the research replay", icon: <IconPlay size={14} /> }
         : { label: "Pause", aria: "Pause the research replay", icon: <IconPause size={14} /> };
 
@@ -223,7 +227,7 @@ export function ResearchDemo({ demo, className }: { demo: LandingDemo; className
             <StageTrack stages={stages} />
           </div>
 
-          <div className="grid lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]">
+          <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]">
             <section aria-labelledby={logHeadingId} className="flex min-w-0 flex-col border-b border-line bg-sunken lg:border-r lg:border-b-0">
               <header className="flex items-center justify-between gap-3 border-b border-line px-4 py-3">
                 <h3 id={logHeadingId} className="text-sm font-medium text-fg">
@@ -233,7 +237,7 @@ export function ResearchDemo({ demo, className }: { demo: LandingDemo; className
                   {demo.source === "example" ? "Fictional example data" : `Official ${demo.school.shortName} pages only`}
                 </span>
               </header>
-              <div className="relative h-52 overflow-hidden [mask-image:linear-gradient(to_bottom,transparent,#000_3.5rem)] lg:h-auto lg:min-h-0 lg:flex-1">
+              <div className="relative h-52 overflow-hidden [mask-image:linear-gradient(to_bottom,transparent,#000_1.25rem)] lg:h-auto lg:min-h-0 lg:flex-1">
                 <DemoLog entries={state.entries} verifiedOn={demo.verifiedOn} reduce={reduce} />
               </div>
             </section>

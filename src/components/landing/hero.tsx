@@ -1,4 +1,5 @@
 import { ButtonLink } from "@/components/ui/button";
+import { toDemoView } from "./demo-view";
 import { ResearchDemo } from "./research-demo";
 import type { LandingDemo } from "./types";
 
@@ -33,8 +34,8 @@ export function Hero({ demo }: { demo: LandingDemo }) {
         </div>
       </div>
 
-      <div className="mx-auto mt-14 max-w-[1200px] px-4 sm:mt-16 sm:px-6">
-        <ResearchDemo demo={demo} />
+      <div className="mx-auto mt-14 max-w-[1200px] px-4 pb-20 sm:mt-16 sm:px-6 lg:pb-28">
+        <ResearchDemo demo={toDemoView(demo)} />
         <p className="mt-3 max-w-[75ch] text-xs text-subtle">{demoCaption(demo)}</p>
       </div>
     </section>

@@ -53,7 +53,7 @@ function StudentForm({
           {state.message}
         </p>
         <div className="flex flex-wrap gap-2">
-          <ButtonLink href="/pricing" variant="secondary" size="sm">
+          <ButtonLink href="/app/settings#plan" variant="secondary" size="sm">
             See plans
           </ButtonLink>
           <ButtonLink href="/app/settings" variant="ghost" size="sm">

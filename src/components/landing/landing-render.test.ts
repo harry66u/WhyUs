@@ -4,15 +4,18 @@ import { describe, expect, it } from "vitest";
 import sampleStudentJson from "@data/sample-student.json";
 import MarketingLayout from "@/app/(marketing)/layout";
 import LandingPage, { metadata } from "@/app/(marketing)/page";
+import { alt as ogAlt, contentType as ogContentType, size as ogSize } from "@/app/opengraph-image";
 import { SwapGlyph } from "@/components/dossier";
 import { formatDate } from "@/lib/format";
 import { listSchools, schoolForUrl } from "@/lib/schools/registry";
 import type { StudentProfile, SwapStatus } from "@/lib/types";
 import { exampleLandingDemo, getLandingDemo } from "./demo-data";
+import { toDemoView } from "./demo-view";
 import { Hero } from "./hero";
 import { formatPrice, landingPrices } from "./prices";
 import { ResearchDemo } from "./research-demo";
-import { excerpt, matrixRows } from "./specimens";
+import { SOCIAL_IMAGE } from "./social";
+import { excerpt, matrixModel, matrixRows } from "./specimens";
 import { DemoSwapGlyph } from "./swap-glyph";
 
 /** Visible text: tags removed, common entities decoded, whitespace collapsed. */
@@ -62,8 +65,12 @@ describe("landing page", () => {
     const html = await renderPage();
     expect(html).toContain("<table");
     for (const s of demo.compared) expect(html).toContain(`>${s.shortName}</th>`);
-    for (const d of matrixRows(demo.dossier.details)) expect(text(html)).toContain(d.title);
+    for (const row of matrixModel(demo)) expect(text(html)).toContain(row.title);
     for (const label of ["Equivalent", "Similar", "No equivalent found", "Not researched yet"]) expect(text(html)).toContain(label);
+    if (demo.leftOut) {
+      expect(html).toContain('data-matrix-row="left-out"');
+      expect(text(html)).toContain("Not in the dossier");
+    }
   });
 
   it("numbers the four steps as a sequence", async () => {
@@ -96,7 +103,7 @@ describe("landing page", () => {
 
   it("starts the replay on the first stage, with the dossier slots reserved", async () => {
     const demo = await getLandingDemo();
-    const html = renderToStaticMarkup(createElement(ResearchDemo, { demo }));
+    const html = renderToStaticMarkup(createElement(ResearchDemo, { demo: toDemoView(demo) }));
     const t = text(html);
     expect(t).toContain("Scope the prompt");
     expect(t).toContain("Replaying");
@@ -106,6 +113,20 @@ describe("landing page", () => {
     // No detail row is filled in before its match arrives.
     for (const d of demo.dossier.details) expect(html).not.toContain(`href="${d.sourceUrl.replace(/&/g, "&amp;")}"`);
     expect(t).not.toContain("Final ranking");
+  });
+
+  it("sends the browser only what the replay renders", async () => {
+    const demo = await getLandingDemo();
+    const view = toDemoView(demo);
+    expect(view.details.map((d) => d.rank)).toEqual([...demo.dossier.details].map((d) => d.rank).sort((a, b) => a - b));
+    expect(view.leadAngle).toBe(demo.dossier.angles.find((a) => a.isLead)?.line);
+    const payload = JSON.stringify(view);
+    expect(payload.length).toBeLessThan(JSON.stringify(demo).length * 0.75);
+    // No fields the replay does not show (summaries, fit sentences in the dossier, questions, the policy note).
+    for (const d of demo.dossier.details) expect(payload).not.toContain(JSON.stringify(d.summary));
+    expect(payload).not.toContain('"policyNote":');
+    expect(payload).not.toContain('"questions":');
+    expect(payload).not.toContain('"angleOptions":');
   });
 
   it("labels the example data when no research base is available", () => {
@@ -121,8 +142,14 @@ describe("landing page", () => {
     const title = metadata.title as { absolute: string };
     expect(title.absolute).toMatch(/^WhyUs: /);
     expect(metadata.description).toMatch(/never writes your essay/);
-    expect(metadata.openGraph).toMatchObject({ type: "website", url: "/" });
-    expect(metadata.twitter).toMatchObject({ card: "summary_large_image" });
+    expect(metadata.openGraph).toMatchObject({ type: "website", url: "/", images: [{ url: "/opengraph-image", width: 1200, height: 630 }] });
+    expect(metadata.twitter).toMatchObject({ card: "summary_large_image", images: [{ url: "/opengraph-image" }] });
+  });
+
+  it("names the social card exactly as the image route describes it", () => {
+    expect(SOCIAL_IMAGE.alt).toBe(ogAlt);
+    expect({ width: SOCIAL_IMAGE.width, height: SOCIAL_IMAGE.height }).toEqual(ogSize);
+    expect(ogContentType).toBe("image/png");
   });
 });
 

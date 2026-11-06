@@ -3,7 +3,7 @@
  * (demo-data.ts) and passed to client components as plain JSON, so nothing
  * here may hold functions, Dates, Maps, or class instances.
  */
-import type { Dossier, FactKind, ResearchEvent } from "@/lib/types";
+import type { Dossier, FactKind, ResearchEvent, SwapResult } from "@/lib/types";
 
 /**
  * "corpus": built from the verified research bases in /data/corpus.
@@ -69,8 +69,54 @@ export interface LandingDemo {
   /** Display values for the dossier score, worded by the briefing's own model (components/dossier/model). */
   summary: DossierSummary;
   compared: ComparedSchool[];
+  /**
+   * A fact verified in the same run that is not in the dossier and that most
+   * of the other schools on the list have something comparable to (by the
+   * engine's swap test). Shown beside the dossier's details to make the test visible.
+   */
+  leftOut: LeftOutDetail | null;
   citation: LandingCitation;
   corpusStats: CorpusStats | null;
+}
+
+/**
+ * What the client-side replay needs, and nothing else (it is serialized into
+ * the page). Built from a LandingDemo by toDemoView (demo-view.ts).
+ */
+export interface DemoView {
+  source: DemoSource;
+  school: LandingDemo["school"];
+  unit: LandingDemo["unit"];
+  prompt: { text: string; wordLimit: number | null };
+  events: ResearchEvent[];
+  verifiedOn: Record<string, string>;
+  compared: ComparedSchool[];
+  summary: DossierSummary;
+  /** The dossier's details in rank order, reduced to what the forming dossier shows. */
+  details: DemoDetailView[];
+  /** The final lead angle (reserves its space while the replay runs). */
+  leadAngle: string | null;
+}
+
+export interface DemoDetailView {
+  factId: string;
+  rank: number;
+  kind: FactKind;
+  title: string;
+  sourceUrl: string;
+  /** 0-100, rounded. */
+  score: number;
+  /** "Commonly mentioned" whenever the engine flags it, else the engine's label. */
+  label: string;
+  commonlyMentioned: boolean;
+  swap: Pick<SwapResult, "schoolId" | "schoolName" | "status">[];
+}
+
+export interface LeftOutDetail {
+  factId: string;
+  kind: FactKind;
+  title: string;
+  swap: SwapResult[];
 }
 
 export interface DossierSummary {

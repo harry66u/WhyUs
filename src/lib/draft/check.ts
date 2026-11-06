@@ -24,7 +24,7 @@ import { isVerifiedFact, swapTest, type OtherSchool } from "@/lib/matching/swap"
 import { getSchoolFacts } from "@/lib/research/corpus-store";
 import { currentTerm, isoDate, verifiedThisTerm } from "@/lib/research/term";
 import { getSchool } from "@/lib/schools/registry";
-import type { Activity, DraftCheckResult, DraftIssue, DraftIssueType, Fact, FactKind, School } from "@/lib/types";
+import type { Activity, DraftIssueType, Fact, FactKind, School } from "@/lib/types";
 import { extractClaims, resolveOverlaps, type Claim, type ClaimKind } from "./claims";
 import { buildFactIndex, matchElsewhere, matchHere, nearMiss, scanKnownNames, type FactIndex, type FactMatch, type KnownHit } from "./facts-index";
 import { detectGeneric } from "./generic";
@@ -32,6 +32,7 @@ import { FIRST_PERSON, FUTURE_CUES, GENERIC_UNIT_WORDS, CONNECTORS } from "./lex
 import { extractClaimsWithClaude, type ExtractedClaim } from "./llm";
 import { genericMessage, swapMessage, UNVERIFIED_MESSAGE, verifiedMessage, wordCountMessage, wrongSchoolMessage } from "./messages";
 import { PageCorpus, type CachedPage } from "./page-search";
+import type { CheckedDraft, CheckedIssue } from "./present";
 import { loadCachedOfficialPages } from "./pages";
 import { buildRefPatterns, findSchoolRefs, ownNames, type SchoolRef } from "./schools";
 import { containsWords, countWords, normalizeWithMap, normName, segmentDraft, sentenceAt, type Sentence, type TextRange } from "./text";
@@ -207,7 +208,7 @@ const EXCERPT_MAX = 220;
 /* checkDraft                                                           */
 /* ------------------------------------------------------------------ */
 
-export async function checkDraft(input: DraftCheckInput, deps: Partial<DraftCheckDeps> = {}): Promise<DraftCheckResult> {
+export async function checkDraft(input: DraftCheckInput, deps: Partial<DraftCheckDeps> = {}): Promise<CheckedDraft> {
   const d: DraftCheckDeps = { ...defaultDeps(), ...deps };
   const now = d.now();
   const text = typeof input.text === "string" ? input.text : "";
@@ -218,12 +219,12 @@ export async function checkDraft(input: DraftCheckInput, deps: Partial<DraftChec
   const wordCount = countWords(text);
   const wordLimit = typeof input.wordLimit === "number" && Number.isFinite(input.wordLimit) && input.wordLimit > 0 ? Math.floor(input.wordLimit) : null;
   const seg = segmentDraft(text);
-  const issues: DraftIssue[] = [];
+  const issues: CheckedIssue[] = [];
   const excerpt = (r: TextRange) => {
     const t = text.slice(r.start, r.end);
     return t.length > EXCERPT_MAX ? `${t.slice(0, EXCERPT_MAX - 1).trimEnd()}…` : t;
   };
-  const finish = (genericSentences: number): DraftCheckResult => {
+  const finish = (genericSentences: number): CheckedDraft => {
     issues.sort(
       (a, b) =>
         (a.range ? 1 : 0) - (b.range ? 1 : 0) ||
@@ -261,9 +262,13 @@ export async function checkDraft(input: DraftCheckInput, deps: Partial<DraftChec
     .map(([schoolId, unitId]) => ({ school: d.getSchool(schoolId), unitId }))
     .filter((o): o is { school: School; unitId: string | null } => Boolean(o.school));
 
-  const extraction = d.extractClaims
-    ? d.extractClaims(text, { schoolName: school.name }).catch(() => [] as ExtractedClaim[])
-    : Promise.resolve([] as ExtractedClaim[]);
+  // Optional extra spans; any failure (thrown or rejected) leaves the patterns to do the work.
+  const extract = d.extractClaims;
+  const extraction: Promise<ExtractedClaim[]> = extract
+    ? Promise.resolve()
+        .then(() => extract(text, { schoolName: school.name }))
+        .catch(() => [])
+    : Promise.resolve([]);
   const factLists = await Promise.all([d.loadFacts(school.id), ...others.map((o) => d.loadFacts(o.school.id))]);
   const usable = (list: Fact[], s: School) => (list ?? []).filter((f) => f && f.schoolId === s.id && isVerifiedFact(f));
   const here = buildFactIndex(school, usable(factLists[0], school));
@@ -334,7 +339,8 @@ export async function checkDraft(input: DraftCheckInput, deps: Partial<DraftChec
   const personal = (c: Claim): boolean => {
     const key = normName(c.query);
     if (key && activityTexts.some((t) => containsWords(t, key))) return true;
-    if (c.possessor) return false;
+    // "Example's Heron Lab" is about the school; "Sam's Robotics Club" is judged like any other name.
+    if (c.possessor && ownKeys.has(normName(c.possessor))) return false;
     const s = seg.sentences[c.sentence];
     const st = text.slice(s.start, s.end);
     if (FUTURE_CUES.test(st) || mentionsSchool(st)) return false;
@@ -468,6 +474,8 @@ export async function checkDraft(input: DraftCheckInput, deps: Partial<DraftChec
           excerpt: excerpt(range),
           sourceUrl: e.fact.sourceUrl,
           verifiedAt: verifiedDay(e.fact),
+          matchedTitle: e.fact.title,
+          ...(e.fact.sourceTitle ? { sourceTitle: e.fact.sourceTitle } : {}),
         });
         verifiedBySentence.set(m.sentence, [...(verifiedBySentence.get(m.sentence) ?? []), e.fact]);
         break;
@@ -481,6 +489,7 @@ export async function checkDraft(input: DraftCheckInput, deps: Partial<DraftChec
           excerpt: excerpt(range),
           sourceUrl: e.page.url,
           verifiedAt: isoDate(new Date(e.page.fetchedAt)),
+          ...(e.page.title ? { sourceTitle: e.page.title } : {}),
         });
         if (m.claim) verifiedBySentence.set(m.sentence, [...(verifiedBySentence.get(m.sentence) ?? []), pageFact(m.claim, e.page, school, now)]);
         break;

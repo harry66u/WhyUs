@@ -131,6 +131,21 @@ describe("landing demo from the verified research bases", () => {
     }
   });
 
+  it("contrasts the dossier with a verified detail it left out only when the other schools have something comparable", async () => {
+    const demo = await realDemo();
+    if (!demo.leftOut) return; // nothing in this run was swappable enough to show
+    const f = fact(demo.leftOut.factId);
+    expect(demo.leftOut.title).toBe(f.title);
+    expect(demo.verifiedOn[f.id]).toBe(f.verifiedAt!.slice(0, 10));
+    expect(demo.dossier.details.some((d) => d.factId === f.id)).toBe(false);
+    const compared = new Set(demo.compared.map((c) => c.schoolId));
+    for (const r of demo.leftOut.swap) expect(compared.has(r.schoolId)).toBe(true);
+    const equivalents = demo.leftOut.swap.filter((r) => r.status === "equivalent").length;
+    const similar = demo.leftOut.swap.filter((r) => r.status === "similar").length;
+    expect(equivalents + similar).toBeGreaterThanOrEqual(3);
+    expect(equivalents * 2 + similar).toBeGreaterThanOrEqual(4);
+  });
+
   it("uses a prompt confirmed on an official page", async () => {
     const demo = await realDemo();
     const school = getSchool(demo.school.id)!;

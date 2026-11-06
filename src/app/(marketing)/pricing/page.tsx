@@ -8,6 +8,7 @@ import {
   COUNSELOR_STUDENTS_WITHOUT_PLAN,
   formatMoney,
   PARENT_MAX_STUDENTS,
+  PLAN_TERM_LABEL,
   REFUND_WINDOW_DAYS,
   supportEmail,
   unlimitedBreakEven,
@@ -96,7 +97,7 @@ export default function PricingPage() {
       rows: {
         schools: "Every school on the list",
         students: "One student",
-        lasts: "12 months",
+        lasts: PLAN_TERM_LABEL,
         bestFor: `A full list. From ${breakEven} schools it costs less than credits.`,
       },
     },
@@ -108,7 +109,7 @@ export default function PricingPage() {
       rows: {
         schools: "Every school, for every student",
         students: `Up to ${c.counselorMaxStudents} students`,
-        lasts: "12 months",
+        lasts: PLAN_TERM_LABEL,
         bestFor: "School counselors and college access programs",
       },
     },
@@ -251,7 +252,7 @@ export default function PricingPage() {
             </Faq>
             <Faq question="How does the counselor plan work?">
               <p>
-                One counselor account manages up to {c.counselorMaxStudents} students for 12 months, with every school included. Each student has a
+                One counselor account manages up to {c.counselorMaxStudents} students for {PLAN_TERM_LABEL}, with every school included. Each student has a
                 private profile, list of schools, and dossiers. Need more students? A second plan adds {c.counselorMaxStudents} more.
               </p>
             </Faq>

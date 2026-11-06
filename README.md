@@ -46,6 +46,8 @@ See `.env.example`. Everything is optional in development:
 | `RESEND_API_KEY`, `EMAIL_FROM` | Sign-in emails. Required in production. |
 | `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET` | Payments. Without them, development builds offer a simulated checkout. |
 | `APP_URL` | Absolute URL for sign-in links, share links, and Stripe redirects. Required in production. |
+| `SUPPORT_EMAIL` | Contact address shown on the pricing and privacy pages (refunds, privacy requests). Hidden when unset. |
+| `PRICE_*_CENTS`, `COUNSELOR_MAX_STUDENTS` | Plan prices and counselor seats (defaults: $9 per school, $29 unlimited, $199 counselor plan for 25 students). |
 | `DATABASE_URL` | Postgres in production. |
 | `WHYUS_BOT_UA` | How the research bot identifies itself to school web servers (add a contact URL). |
 
@@ -66,6 +68,14 @@ See `.env.example`. Everything is optional in development:
 The research bot identifies itself honestly, respects robots.txt, rate-limits per host,
 and uses standard TLS validation. It never tries to get past bot challenges; pages it
 cannot read are reported in the live view and left out.
+
+## Plans
+
+First school free per account; then $9 per school (credits never expire) or $29 for unlimited
+schools for one student for 12 months; the counselor plan covers up to 25 students with unlimited
+schools for 12 months. The exact rules are documented at the top of `src/lib/billing/rules.ts`;
+prices, seat counts, the 12-month term, and the 14-day refund window are constants in
+`src/lib/billing/plans.ts`.
 
 ## Scripts
 
@@ -90,4 +100,9 @@ See `docs/ARCHITECTURE.md` (modules and contracts), `docs/DESIGN.md` (design sys
   in-process in the background, so use a long-lived Node host (or a serverless platform
   with long function durations).
 - Use Postgres (`DATABASE_URL`) in production; PGlite is for local development.
-- Configure the Stripe webhook at `/api/stripe/webhook` for `checkout.session.completed`.
+- Configure the Stripe webhook at `/api/stripe/webhook` for `checkout.session.completed`,
+  `checkout.session.async_payment_succeeded`, and `charge.refunded`. The route answers 503
+  until `STRIPE_WEBHOOK_SECRET` is set.
+- Build with `WHYUS_DISABLE_LLM=1` if `ANTHROPIC_API_KEY` is present at build time and you want the
+  landing page demo (computed while prerendering from the verified research bases) to stay
+  deterministic.

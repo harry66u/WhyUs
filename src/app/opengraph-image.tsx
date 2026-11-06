@@ -6,6 +6,9 @@ import { ImageResponse } from "next/og";
  * The default social card for WhyUs (generated at build time). Uses the same
  * Instrument Sans and Newsreader files the PDF export embeds; if they cannot be
  * read, the card falls back to the built-in font rather than failing.
+ *
+ * The landing page names this card in its own metadata (components/landing/social.ts);
+ * keep `alt` and `size` in step with it (a test checks).
  */
 export const alt = "WhyUs: specific, verified research for every “Why us?” essay. It never writes your essay.";
 export const size = { width: 1200, height: 630 };

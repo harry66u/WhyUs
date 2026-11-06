@@ -53,8 +53,8 @@ export function wrongSchoolMessage(
 }
 
 export function swapMessage(schools: string[]): string {
-  if (schools.length === 1) return `Swap test: ${schools[0]} has an equivalent, so this sentence could also go in your ${schools[0]} essay.`;
-  return `Swap test: ${joinNames(schools)} have equivalents, so this sentence could also go in those essays.`;
+  if (schools.length === 1) return `${schools[0]} has an equivalent, so this sentence could also go in your ${schools[0]} essay.`;
+  return `${joinNames(schools)} have equivalents, so this sentence could also go in those essays.`;
 }
 
 function phraseMessage(phrase: string, category: ClicheCategory): string {

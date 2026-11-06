@@ -100,11 +100,11 @@ export function AddSchoolForm({
           <p className="text-sm font-medium text-fg">This account cannot add another school yet</p>
           <p className="mt-1 text-sm text-muted">{blocked}</p>
           <div className="mt-3 flex flex-wrap gap-2">
-            <ButtonLink href="/pricing" variant="secondary" size="sm">
+            <ButtonLink href="/app/settings#plan" variant="secondary" size="sm">
               See plans
             </ButtonLink>
-            <ButtonLink href="/app/settings" variant="ghost" size="sm">
-              Billing settings
+            <ButtonLink href="/pricing" variant="ghost" size="sm">
+              Compare plans
             </ButtonLink>
           </div>
         </div>

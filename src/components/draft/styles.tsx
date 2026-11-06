@@ -16,17 +16,21 @@ export const HIGHLIGHT: Record<HighlightStyle, string> = {
   generic: "underline decoration-subtle decoration-dotted decoration-[1.5px] underline-offset-[5px]",
 };
 
-const MARK_BASE = "rounded-[2px] bg-transparent text-inherit box-decoration-clone transition-shadow duration-150";
+/** <mark> has a browser background and text color; the text color always follows the document. */
+const MARK_BASE = "rounded-[2px] text-inherit box-decoration-clone transition-shadow duration-150";
 
 /** Classes for one rendered segment, given the highlight styles that cover it (claims win over sentences). */
 export function markClasses(styles: ReadonlySet<HighlightStyle>, active: boolean): string {
   const claim = styles.has("problem") ? "problem" : styles.has("verified") ? "verified" : null;
+  const swap = claim !== "problem" && styles.has("swap");
   return cn(
     MARK_BASE,
     claim === "problem" && HIGHLIGHT.problem,
     claim === "verified" && HIGHLIGHT.verified,
-    claim !== "problem" && styles.has("swap") && HIGHLIGHT.swap,
+    swap && HIGHLIGHT.swap,
     claim === null && styles.has("generic") && HIGHLIGHT.generic,
+    // Only when nothing above sets a wash (utility order would otherwise let "transparent" win).
+    claim !== "problem" && !swap && "bg-transparent",
     active && "shadow-[0_0_0_1.5px_var(--accent-line)]",
   );
 }
