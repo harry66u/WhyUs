@@ -49,8 +49,301 @@
       ]
     }
   ],
-  "prompts": [],
-  "seedUrls": [],
-  "unreachableHosts": [],
-  "hasCorpus": false
+  "prompts": [
+    {
+      "id": "tufts-2026-engagement",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "cycle": "2026-27",
+      "kind": "why_school",
+      "title": "How you learned about and engaged with Tufts (Short Answer #1)",
+      "text": "Please describe how you have learned about and engaged with Tufts during your college search process.",
+      "wordLimit": {
+        "min": 75,
+        "max": 150
+      },
+      "sourceUrl": "https://admissions.tufts.edu/apply/short-answer-questions/",
+      "verifiedAt": "2026-11-06",
+      "note": "Listed under 'Short Answer Prompts for the Class of 2031' on the official Tufts Admissions page, confirmed with fetch-text on 2026-11-06. First-year applicants answer two required short answer prompts: #1 for everyone, #2 specific to the school or program they apply to. This is Tufts' version of the 'Why Tufts?' question for 2026-27; required of all applicants, 75-150 words."
+    },
+    {
+      "id": "tufts-2026-as-assignment",
+      "schoolId": "tufts",
+      "unitIds": [
+        "as"
+      ],
+      "cycle": "2026-27",
+      "kind": "other",
+      "title": "Favorite school assignment (Arts and Sciences, Short Answer #2)",
+      "text": "Tell us about one of your favorite school assignments in the past two years. What was the assignment and why did you enjoy it?",
+      "wordLimit": {
+        "min": 100,
+        "max": 200
+      },
+      "sourceUrl": "https://admissions.tufts.edu/apply/short-answer-questions/",
+      "verifiedAt": "2026-11-06",
+      "note": "Listed under 'Short Answer Prompts for the Class of 2031' on the official Tufts Admissions page, confirmed with fetch-text on 2026-11-06. First-year applicants answer two required short answer prompts: #1 for everyone, #2 specific to the school or program they apply to. Required of applicants to the School of Arts and Sciences, 100-200 words."
+    },
+    {
+      "id": "tufts-2026-engineering-project",
+      "schoolId": "tufts",
+      "unitIds": [
+        "engineering"
+      ],
+      "cycle": "2026-27",
+      "kind": "other",
+      "title": "Engineering or science project (School of Engineering, Short Answer #2)",
+      "text": "Tell us about an engineering or science-related project that you have helped build, design, create, or iterate in the past two years. What was the project and what was your role?",
+      "wordLimit": {
+        "min": 100,
+        "max": 200
+      },
+      "sourceUrl": "https://admissions.tufts.edu/apply/short-answer-questions/",
+      "verifiedAt": "2026-11-06",
+      "note": "Listed under 'Short Answer Prompts for the Class of 2031' on the official Tufts Admissions page, confirmed with fetch-text on 2026-11-06. First-year applicants answer two required short answer prompts: #1 for everyone, #2 specific to the school or program they apply to. Required of applicants to the School of Engineering, 100-200 words."
+    },
+    {
+      "id": "tufts-2026-bfa-portfolio",
+      "schoolId": "tufts",
+      "unitIds": [
+        "smfa"
+      ],
+      "cycle": "2026-27",
+      "kind": "other",
+      "title": "Portfolio piece (BFA, Short Answer #2)",
+      "text": "Tell us more about a specific piece in your portfolio. What were the ideas you intended to explore, and how did those ideas inform the process of making the piece?",
+      "wordLimit": {
+        "min": 100,
+        "max": 200
+      },
+      "sourceUrl": "https://admissions.tufts.edu/apply/short-answer-questions/",
+      "verifiedAt": "2026-11-06",
+      "note": "Listed under 'Short Answer Prompts for the Class of 2031' on the official Tufts Admissions page, confirmed with fetch-text on 2026-11-06. First-year applicants answer two required short answer prompts: #1 for everyone, #2 specific to the school or program they apply to. Required of applicants to the Bachelor of Fine Arts (BFA) program at SMFA at Tufts, 100-200 words."
+    },
+    {
+      "id": "tufts-2026-combined-portfolio",
+      "schoolId": "tufts",
+      "unitIds": [
+        "smfa"
+      ],
+      "cycle": "2026-27",
+      "kind": "other",
+      "title": "Portfolio piece and academics (Combined Degree BFA + BA/BS, Short Answer #2)",
+      "text": "Tell us more about a specific piece in your portfolio. How did an academic course, project, or interest inspire the ideas that you explored in this piece? Or, how did making this piece influence your academic interests?",
+      "wordLimit": {
+        "min": 100,
+        "max": 200
+      },
+      "sourceUrl": "https://admissions.tufts.edu/apply/short-answer-questions/",
+      "verifiedAt": "2026-11-06",
+      "note": "Listed under 'Short Answer Prompts for the Class of 2031' on the official Tufts Admissions page, confirmed with fetch-text on 2026-11-06. First-year applicants answer two required short answer prompts: #1 for everyone, #2 specific to the school or program they apply to. Required of applicants to the 5-year Combined Degree (BFA + BA/BS) program between SMFA at Tufts and the School of Arts and Sciences, 100-200 words; it replaces the BFA prompt for those applicants."
+    }
+  ],
+  "seedUrls": [
+    {
+      "url": "https://admissions.tufts.edu/apply/short-answer-questions/",
+      "category": "admissions",
+      "note": "2026-27 (Class of 2031) short answer prompts for all three schools and the Combined Degree."
+    },
+    {
+      "url": "https://admissions.tufts.edu/apply/applying-to-tufts/",
+      "category": "admissions",
+      "note": "Application overview, deadlines, and the three undergraduate schools."
+    },
+    {
+      "url": "https://engineering.tufts.edu/cee/",
+      "category": "departments",
+      "unitIds": [
+        "engineering"
+      ],
+      "note": "Civil and Environmental Engineering department (the old cee.tufts.edu host does not resolve)."
+    },
+    {
+      "url": "https://engineering.tufts.edu/cee/current-students/undergraduate-program/majors/bachelor-science-environmental-engineering",
+      "category": "departments",
+      "unitIds": [
+        "engineering"
+      ],
+      "note": "BS in Environmental Engineering (BSEVE)."
+    },
+    {
+      "url": "https://engineering.tufts.edu/cee/people/faculty",
+      "category": "faculty",
+      "unitIds": [
+        "engineering"
+      ],
+      "note": "CEE faculty list with research areas; profile links use /cee/node/<id> and redirect to /cee/people/faculty/<name>."
+    },
+    {
+      "url": "https://engineering.tufts.edu/cee/research",
+      "category": "research",
+      "unitIds": [
+        "engineering"
+      ],
+      "note": "CEE research themes and labs (water resources, climate and energy, health and environment)."
+    },
+    {
+      "url": "https://engineering.tufts.edu/research/undergraduate-research",
+      "category": "research",
+      "unitIds": [
+        "engineering"
+      ],
+      "note": "Engineering undergraduate research programs."
+    },
+    {
+      "url": "https://engineering.tufts.edu/research/centers-and-institutes",
+      "category": "research",
+      "note": "Engineering-affiliated centers and institutes (CEEO, Derby, AI, materials)."
+    },
+    {
+      "url": "https://engineering.tufts.edu/studentlife/orgs",
+      "category": "organizations",
+      "unitIds": [
+        "engineering"
+      ],
+      "note": "School of Engineering student organizations."
+    },
+    {
+      "url": "https://engineering.tufts.edu/studentlife/new-programs-and-courses",
+      "category": "programs",
+      "unitIds": [
+        "engineering"
+      ],
+      "note": "New engineering minors (Public Health Engineering, AI, Music Engineering courses)."
+    },
+    {
+      "url": "https://sites.tufts.edu/soefirstyear/en1/",
+      "category": "catalog",
+      "unitIds": [
+        "engineering"
+      ],
+      "note": "EN1 Introduction to Engineering section descriptions by term (Fall 2026, Spring 2027); sites.tufts.edu pages take about 10 seconds to load."
+    },
+    {
+      "url": "https://as.tufts.edu/academics/departments-and-interdisciplinary-programs",
+      "category": "departments",
+      "unitIds": [
+        "as"
+      ],
+      "note": "Arts and Sciences departments; most department sites have an /academics/courses page with full course descriptions."
+    },
+    {
+      "url": "https://as.tufts.edu/uep/academics/courses",
+      "category": "catalog",
+      "note": "Urban and Environmental Policy and Planning courses, including undergraduate-only GIS, urban studies, and environmental policy courses."
+    },
+    {
+      "url": "https://as.tufts.edu/music/academics/courses",
+      "category": "catalog",
+      "note": "Music course descriptions, including jazz, ensembles, and music engineering."
+    },
+    {
+      "url": "https://as.tufts.edu/romancestudies/academics/courses/spanish-program-courses",
+      "category": "catalog",
+      "note": "Spanish courses, including translation, medical interpretation, and community-engaged courses."
+    },
+    {
+      "url": "https://as.tufts.edu/environmentalstudies/academics/undergraduate-programs",
+      "category": "departments",
+      "note": "Environmental Studies majors and minors (course descriptions are hosted on tufts.box.com and are not readable here)."
+    },
+    {
+      "url": "https://tischcollege.tufts.edu/programs-major/programs-undergraduates",
+      "category": "programs",
+      "note": "Tisch College undergraduate programs (Tisch Scholars, Summer Fellows, Civic Semester, IGL)."
+    },
+    {
+      "url": "https://tischcollege.tufts.edu/community/community-partners",
+      "category": "location",
+      "note": "Community partners in Medford, Somerville, and Boston's Chinatown."
+    },
+    {
+      "url": "https://students.tufts.edu/office-campus-life/student-orgs/student-organizations-fair",
+      "category": "organizations",
+      "note": "Fall 2026 Student Organizations Fair list of active groups by category (descriptions are on the CampusGroups site, which is off tufts.edu)."
+    },
+    {
+      "url": "https://admissions.tufts.edu/discover-tufts/life-at-tufts/student-organizations/",
+      "category": "organizations",
+      "note": "Admissions overview of student organizations (debate, publications, service, club sports)."
+    },
+    {
+      "url": "https://sustainability.tufts.edu/get-involved/students/student-organizations/",
+      "category": "organizations",
+      "note": "Environmental and sustainability student groups."
+    },
+    {
+      "url": "https://students.tufts.edu/office-campus-life/outdoor-education/outdoor-education-programs",
+      "category": "organizations",
+      "note": "Tufts Mountain Club, the Loj, and Tufts Wilderness Orientation."
+    },
+    {
+      "url": "https://admissions.tufts.edu/discover-tufts/tufts-traditions/",
+      "category": "traditions",
+      "note": "Tufts traditions (the Cannon, Illumination Ceremony, Spring Fling, Jumbo)."
+    },
+    {
+      "url": "https://sustainability.tufts.edu/resources/transportation/biking-at-tufts/",
+      "category": "location",
+      "note": "Biking at Tufts: Tufts Bikes, Minuteman Bikeway, Mystic Lakes, Middlesex Fells."
+    },
+    {
+      "url": "https://admissions.tufts.edu/discover-tufts/academics/study-abroad/",
+      "category": "programs",
+      "note": "Study abroad, Civic Semester, Tufts in Washington, and cross-registration."
+    },
+    {
+      "url": "https://europeancenter.tufts.edu/academic-programs/",
+      "category": "location",
+      "note": "Tufts European Center in Talloires, France."
+    },
+    {
+      "url": "https://students.tufts.edu/diversity-and-inclusion",
+      "category": "overview",
+      "note": "Identity centers and diversity resources."
+    }
+  ],
+  "unreachableHosts": [
+    {
+      "host": "environment.tufts.edu",
+      "reason": "Tufts Institute of the Environment site: the network proxy rejects the connection (gateway 502 on CONNECT), so fetch-text cannot read robots.txt or any page. Environmental facts cite engineering.tufts.edu, as.tufts.edu, and sustainability.tufts.edu instead.",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "host": "cee.tufts.edu",
+      "reason": "Does not resolve from here (gateway 502 on CONNECT). The Civil and Environmental Engineering department is published at engineering.tufts.edu/cee/.",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "host": "bulletin.tufts.edu",
+      "reason": "Gateway 502 on CONNECT, so the bulletin cannot be read; course facts cite department course pages on as.tufts.edu and the EN1 section pages on sites.tufts.edu.",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "host": "courses.tufts.edu",
+      "reason": "Answers with a 301 redirect to University College continuing-education listings that fetch-text cannot follow (UND_ERR_SOCKET); it is not the undergraduate catalog.",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "host": "ase.tufts.edu",
+      "reason": "Legacy Arts, Sciences and Engineering host; answers with a 301 redirect to www.tufts.edu that fetch-text cannot follow (UND_ERR_SOCKET). Current pages live on as.tufts.edu and engineering.tufts.edu.",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "host": "go.tufts.edu",
+      "reason": "robots.txt disallows automated reading (short-link host, e.g. go.tufts.edu/sis).",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "host": "smfa.tufts.edu",
+      "reason": "Responds (HTTP 200) but the homepage exceeds the page-size limit, and other paths redirect to it; SMFA facts cite as.tufts.edu/academics/smfa-tufts instead.",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "host": "jumbolife.tufts.edu",
+      "reason": "Redirects to tufts.campusgroups.com, a third-party host that is not listed as official; its group listings carry little descriptive text, so club facts cite tufts.edu pages.",
+      "checkedAt": "2026-11-06"
+    }
+  ],
+  "hasCorpus": true
 }

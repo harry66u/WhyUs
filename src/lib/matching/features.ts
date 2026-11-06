@@ -8,7 +8,7 @@
  * moderate weight (they were chosen deliberately by the researcher).
  */
 import type { Fact, FactKind } from "@/lib/types";
-import { THEMES, isThemeKey } from "./themes";
+import { THEMES, isThemeKey, themeWeight } from "./themes";
 import { contentBigrams, contentStems, courseCodeOf, titleWithoutCode } from "./text";
 
 export type KindFamily = "course" | "study" | "research" | "facility" | "group" | "program" | "tradition" | "place";
@@ -31,6 +31,9 @@ export const NON_ACADEMIC_KINDS: ReadonlySet<FactKind> = new Set<FactKind>(["org
 
 /** Theme strength by the field it was found in. */
 export const FIELD_STRENGTH = { title: 1, lead: 0.78, stored: 0.5, quote: 0.4 } as const;
+
+/** Subjects that make policy work environmental policy. */
+const ENVIRONMENT_POLICY_SUBJECTS = ["energy", "climate", "water", "environmental-engineering", "environmental-studies", "ecology", "sustainability"];
 
 /**
  * Everyday things most campuses have. Two facts naming the same one are
@@ -97,6 +100,26 @@ export interface FactFeatures {
   specificity: number;
   /** Canonical keys of everyday campus things this fact names (outing club, makerspace, ...). */
   equivalence: Set<string>;
+  /**
+   * Themes the fact is about: named in its title, or among its strongest
+   * summary/hook themes. A theme mentioned in passing ("tours to concerts by
+   * bicycle") is not central and cannot carry a cited connection.
+   */
+  central: Set<string>;
+  /**
+   * 0-1 essay-worthiness: how well this detail can carry a "why this school"
+   * argument. Courses, labs, faculty, majors, research programs and centers are
+   * substantive; amenities (repair stations, maps, bike lanes, dining), generic
+   * services, archival collections, recreation spots, and directory listings are weak.
+   */
+  substance: number;
+  /**
+   * Academic detail: courses, majors, faculty, labs, research centers, academic
+   * and research programs, teaching labs, field and research opportunities.
+   */
+  academic: boolean;
+  /** Everyday amenity, service, collection, or recreation spot (weak unless strongly matched). */
+  amenity: boolean;
 }
 
 const cache = new WeakMap<Fact, { sig: string; features: FactFeatures }>();
@@ -134,6 +157,12 @@ function computeFeatures(fact: Fact): FactFeatures {
     // A researcher's tag confirms a theme found only in the quote.
     if (cur < FIELD_STRENGTH.stored) themes.set(k, FIELD_STRENGTH.stored);
   }
+  // Policy work on an environmental subject is environmental policy ("energy systems
+  // planning and climate mitigation at the line between engineering and public policy").
+  const policy = Math.max(themes.get("public-policy") ?? 0, themes.get("law") ?? 0);
+  const environment = Math.max(...ENVIRONMENT_POLICY_SUBJECTS.map((k) => themes.get(k) ?? 0));
+  const derived = Math.min(policy, environment);
+  if (derived >= FIELD_STRENGTH.lead && (themes.get("environmental-policy") ?? 0) < derived) themes.set("environmental-policy", derived);
 
   const code = fact.kind === "course" ? courseCodeOf(title, fact.nameOnPage) : null;
   const plainTitle = code ? titleWithoutCode(title) : title;
@@ -173,6 +202,7 @@ function computeFeatures(fact: Fact): FactFeatures {
   specificity = Math.min(1, specificity);
 
   const { subject, name, longName } = namesFor(fact, code, plainTitle);
+  const essay = essayProfile(fact);
 
   return {
     themes,
@@ -186,7 +216,112 @@ function computeFeatures(fact: Fact): FactFeatures {
     longName,
     specificity,
     equivalence,
+    central: centralThemes(themes),
+    ...essay,
   };
+}
+
+/** Title-level themes, plus the strongest summary/hook themes (at most four by weighted strength). */
+function centralThemes(themes: Map<string, number>): Set<string> {
+  const out = new Set<string>();
+  const lead = [...themes.entries()]
+    .filter(([, v]) => v >= FIELD_STRENGTH.lead)
+    .map(([k, v]) => [k, v * themeWeight(k)] as const)
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+  for (const [k] of lead) if ((themes.get(k) ?? 0) >= FIELD_STRENGTH.title) out.add(k);
+  for (const [k] of lead.slice(0, 4)) out.add(k);
+  if (out.size === 0) {
+    // Nothing in the title, summary, or hook: the researcher's strongest tag stands in.
+    const top = [...themes.entries()].sort((a, b) => b[1] * themeWeight(b[0]) - a[1] * themeWeight(a[0]) || a[0].localeCompare(b[0]))[0];
+    if (top && top[1] >= FIELD_STRENGTH.stored) out.add(top[0]);
+  }
+  return out;
+}
+
+/* ------------------------------------------------------------------ */
+/* Substance: is this something an essay can stand on?                  */
+/* ------------------------------------------------------------------ */
+
+const AMENITY_RE =
+  /\b(?:repair stations?|bike (?:maps?|lanes?|lane network|parking|racks?|share)|bike-friendly|parking|dining|meal plans?|caf(?:e|é)s?|cafeterias?|shuttles?|bus (?:routes?|service)|gyms?|fitness cent(?:er|re)s?|recreation cent(?:er|re)s?|swimming pools?|lounges?|wi-?fi|lockers?|bookstores?|ski areas?|skiway)\b/i;
+const COLLECTION_RE = /\b(?:sheet music|special collections?|rare books|manuscripts|(?:music|library|art|museum|archival) collections?|collection of|archives?|museums?)\b/i;
+const SERVICE_RE =
+  /\b(?:advis(?:es|ing|ors?)\b|career (?:services|cent(?:er|re)s?)|tutoring|help desk|consultations?|support network|holistic support|software such as|experts and services|reservable space|space students can reserve|helps students find|counseling services)\b/i;
+const LISTING_RE = /\b(?:appears (?:in|on)|is listed (?:in|on)|listed in|lists the)\b/i;
+const RECREATION_RE =
+  /\b(?:recreation(?:al)?|trails?|kayak\w*|hiking|boating|swimming|fishing|skiing|camping|day trips|outdoor (?:trips|adventures?|expeditions?|recreation)|adventure (?:trips|programs?)|multi-day (?:outdoor )?expeditions?)\b/i;
+const RESEARCH_RE =
+  /\b(?:research\w*|laborator\w*|thesis|fellows(?:hips?)?|scholars|practicums?|capstone|field (?:stations?|research|programs?|courses?|traverse|data|measurements?|methods)|fieldwork|mentor scientists|faculty mentors?|investigat\w*|living lab\w*|test (?:sites?|beds?))\b/i;
+const CURRICULUM_RE =
+  /\b(?:courses?|coursework|curricul\w*|seminars?|colloquium|credit-bearing|credits?|degree|majors?|minors?|concentrations?|study abroad|foreign stud(?:y|ies)|stud(?:y|ies) programs?|study of|study (?:visits?|trips?|tours?)|immersion|instruction)\b/i;
+const PROJECT_RE = /\b(?:designs?|builds?|develops?|prototyp\w*|engineering project|project team|hackathon|analy[sz]es?|analy[sz]e)\b/i;
+const IDENTITY_RE = /\b(?:cultural|culture|identity|heritage|affinity|residential community|residence hall|living-learning|program house|first-generation)\b/i;
+const VENTURE_ARTS_RE = /\b(?:entrepreneur\w*|startups?|business accelerator|arts initiative|access to the arts)\b/i;
+const LAB_SPACE_RE = /\b(?:labs?|laborator\w*|studios?|instructional|flumes?|wave tanks?|imaging)\b/i;
+const MAKER_RE = /\b(?:maker\w*|prototyp\w*|fabricat\w*|machine shop|3D print\w*|laser cut\w*|CNC|welding|woodworking)\b/i;
+
+interface EssayProfile {
+  substance: number;
+  academic: boolean;
+  amenity: boolean;
+}
+
+/**
+ * Essay-worthiness by kind and content. Deterministic and conservative: kinds
+ * set the baseline (courses, faculty, labs, majors highest; traditions lowest)
+ * and the fact's own words move it (research, coursework, and project language
+ * up; amenities, services, collections, recreation, and bare directory listings down).
+ */
+export function essayProfile(fact: Pick<Fact, "kind" | "title" | "summary" | "hook">): EssayProfile {
+  const title = fact.title ?? "";
+  const text = `${title}\n${fact.summary ?? ""}\n${fact.hook ?? ""}`;
+  const research = RESEARCH_RE.test(text);
+  const curriculum = CURRICULUM_RE.test(text);
+  switch (fact.kind) {
+    case "course":
+    case "faculty":
+      return { substance: 1, academic: true, amenity: false };
+    case "lab":
+      return { substance: LISTING_RE.test(text) ? 0.6 : 0.97, academic: true, amenity: false };
+    case "major":
+      return { substance: 0.92, academic: true, amenity: false };
+    case "center":
+      // Labs and centers are academic by default; identity, service, venture, and arts hubs are not.
+      if (IDENTITY_RE.test(text) && !research) return { substance: 0.66, academic: false, amenity: false };
+      if (SERVICE_RE.test(text)) return { substance: 0.55, academic: false, amenity: true };
+      if (VENTURE_ARTS_RE.test(text) && !research) return { substance: 0.72, academic: false, amenity: false };
+      if (research) return { substance: 0.9, academic: true, amenity: false };
+      return { substance: /\binstitute\b/i.test(title) ? 0.85 : 0.78, academic: true, amenity: false };
+    case "program":
+      if (RECREATION_RE.test(text) && !research) return { substance: 0.5, academic: false, amenity: true };
+      if (research) return { substance: 0.95, academic: true, amenity: false };
+      if (IDENTITY_RE.test(text)) return { substance: 0.62, academic: false, amenity: false };
+      if (curriculum) return { substance: 0.88, academic: true, amenity: false };
+      return { substance: 0.72, academic: false, amenity: false };
+    case "facility":
+      if (AMENITY_RE.test(text)) return { substance: 0.42, academic: false, amenity: true };
+      if (COLLECTION_RE.test(text)) return { substance: 0.5, academic: false, amenity: true };
+      if (SERVICE_RE.test(text)) return { substance: 0.55, academic: false, amenity: true };
+      if (LAB_SPACE_RE.test(title) || research || curriculum) {
+        return { substance: MAKER_RE.test(text) && !research ? 0.7 : research ? 0.85 : 0.78, academic: true, amenity: false };
+      }
+      return { substance: 0.55, academic: false, amenity: false };
+    case "location":
+      if (RECREATION_RE.test(text) || AMENITY_RE.test(text)) {
+        return research ? { substance: 0.55, academic: false, amenity: false } : { substance: 0.38, academic: false, amenity: true };
+      }
+      if (research) return { substance: 0.88, academic: true, amenity: false };
+      if (curriculum) return { substance: 0.78, academic: true, amenity: false };
+      if (/\b(?:project|atlas|program|partnership)\b/i.test(text)) return { substance: 0.72, academic: true, amenity: false };
+      return { substance: 0.55, academic: false, amenity: false };
+    case "organization":
+      if (LISTING_RE.test(text)) return { substance: 0.4, academic: false, amenity: false };
+      return { substance: PROJECT_RE.test(text) ? 0.8 : 0.7, academic: false, amenity: false };
+    case "tradition":
+      return { substance: research || PROJECT_RE.test(text) ? 0.6 : 0.45, academic: false, amenity: false };
+    default:
+      return { substance: 0.7, academic: false, amenity: false };
+  }
 }
 
 /* ------------------------------------------------------------------ */

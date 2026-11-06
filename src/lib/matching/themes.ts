@@ -50,7 +50,7 @@ export const THEMES: Theme[] = [
   t("earth-science", "Earth science", "environment", 1.1, String.raw`geolog\w*|earth sciences?|geoscien\w*|seismolog\w*|volcan\w*|glaci\w*|oceanograph\w*|atmospher\w*|meteorolog\w*`),
   t("polar", "Arctic and polar studies", "environment", 1.5, String.raw`arctic|antarctic\w*|polar\b|greenland|cryosphere|ice sheets?|northern studies`),
   t("environmental-justice", "Environmental justice", "environment", 1.4, String.raw`environmental justice|climate justice|environmental equity|frontline communit\w*`),
-  t("environmental-policy", "Environmental and energy policy", "environment", 1.4, String.raw`environmental polic\w*|climate polic\w*|energy polic\w*|environmental law|environmental governance|natural resources? polic\w*`),
+  t("environmental-policy", "Environmental and energy policy", "environment", 1.4, String.raw`environmental polic\w*|climate polic\w*|energy polic\w*|water polic\w*|(?:energy|climate|water|environmental)(?:,? (?:and|&) (?:energy|climate|water|environmental))+ polic\w*|environmental law|environmental governance|natural resources? polic\w*`),
   t("fieldwork", "Field research", "environment", 1.0, String.raw`field (?:research|work|stations?|courses?|stud\w*|sites?|trips?|sampling|samples?|measurements?|methods?|data|technicians?|crews?|interns?|internships?)|fieldwork|field-based|(?:water|stream|river|soil) sampling|sampl(?:ed|ing) (?:streams?|rivers?|creeks?|lakes?|water|soils?)`),
   t("environmental-studies", "Environmental studies", "environment", 1.0, String.raw`environmental stud(?:y|ies)|environmental sciences?|environment and sustainability|earth and environment\w*|environmental humanities`),
 
@@ -196,6 +196,55 @@ export function themeLabel(key: string): string {
 
 export function themeWeight(key: string): number {
   return BY_KEY.get(key)?.weight ?? 1;
+}
+
+export function themeGroup(key: string): ThemeGroup | undefined {
+  return BY_KEY.get(key)?.group;
+}
+
+/**
+ * Themes that describe a mode of involvement (volunteering, teaching, leading,
+ * careers, "global", "interdisciplinary") rather than a subject. Sharing one
+ * says little: a volunteer interpreter and a farm club that "organizes volunteer
+ * activities" are not connected. They may color a connection, never carry one.
+ */
+export const GENERIC_THEMES: ReadonlySet<string> = new Set([
+  "community-engagement",
+  "education",
+  "leadership",
+  "career",
+  "global",
+  "interdisciplinary",
+  "first-year",
+  "undergraduate-research",
+  "fitness",
+  "business",
+]);
+
+/** Minimum theme weight for a shared theme to carry a cited connection on its own. */
+export const SPECIFIC_THEME_WEIGHT = 1.1;
+
+/**
+ * A theme specific enough to justify "this detail connects to that activity"
+ * by itself: narrow (weight >= 1.1) and not a generic mode of involvement.
+ * Broader subject themes (weight 1.0, e.g. "computer-science", "sustainability")
+ * can still carry a connection when they are central on both sides; see
+ * `rank.ts` (citable shares).
+ */
+export function isSpecificTheme(key: string): boolean {
+  return isThemeKey(key) && !GENERIC_THEMES.has(key) && themeWeight(key) >= SPECIFIC_THEME_WEIGHT;
+}
+
+/** Theme groups that are usually pursuits outside the curriculum (unless a student's intended major is in them). */
+export const HOBBY_GROUPS: ReadonlySet<ThemeGroup> = new Set<ThemeGroup>(["arts", "outdoors"]);
+
+/** Narrow themes and the broader theme they sit inside: two details on jazz and on music are one topic. */
+const FAMILY: Record<string, string> = { jazz: "music", ai: "computer-science" };
+
+/** True when two theme keys name the same topic at different breadth (jazz and music). */
+export function sameThemeFamily(a: string, b: string): boolean {
+  if (a === b) return true;
+  return (FAMILY[a] ?? a) === (FAMILY[b] ?? b);
 }
 
 /** Theme keys detected in free text, ordered by weight (most specific first). */

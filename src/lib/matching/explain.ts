@@ -10,8 +10,7 @@
  */
 import type { Fact } from "@/lib/types";
 import type { ActivityProfile } from "./profile";
-import type { ActivityLink, InterestLink, ScoredFact } from "./rank";
-import { MIN_LINK_FIT } from "./rank";
+import type { ActivityLink, Basis, InterestLink, ScoredFact } from "./rank";
 import { getTheme } from "./themes";
 import { contentStems, firstSentence, lowerFirst, nounPhraseAround, phraseStems, stem, tidy, wordsOf } from "./text";
 
@@ -36,9 +35,10 @@ export function offerClause(s: ScoredFact): string {
 
 /**
  * A short phrase from the activity's own description that carries the
- * connection: first a rare word the fact shares, then the strongest shared theme.
+ * connection: the cited theme first, then a rare word the fact shares.
+ * `themes` (optional): the themes the sentence cites, strongest first.
  */
-export function evidencePhrase(a: ActivityProfile, link: ActivityLink): string | null {
+export function evidencePhrase(a: ActivityProfile, link: ActivityLink, themes?: string[]): string | null {
   const text = a.evidenceText;
   if (!text || text === a.title) return null;
   // Each candidate phrase is credited for what produced it: the connection's
@@ -53,8 +53,9 @@ export function evidencePhrase(a: ActivityProfile, link: ActivityLink): string |
     if (!prev || prev.credit < c) candidates.set(p, { credit: c, at: start });
   };
   const themeCredit = [1.2, 0.8, 0.5];
-  link.themes.slice(0, 3).forEach((t, i) => {
-    const m = getTheme(t.key)?.pattern.exec(text);
+  const keys = themes && themes.length > 0 ? themes : (link.specific.length > 0 ? link.specific : link.themes).map((t) => t.key);
+  keys.slice(0, 3).forEach((key, i) => {
+    const m = getTheme(key)?.pattern.exec(text);
     if (m) consider(m.index, m.index + m[0].length, () => themeCredit[i]);
   });
   for (const stemmed of link.tokens.slice(0, 3)) {
@@ -84,22 +85,23 @@ export function evidencePhrase(a: ActivityProfile, link: ActivityLink): string |
 }
 
 function leadFor(link: ActivityLink): string {
-  if (link.fit >= 0.68 || (link.fit >= 0.45 && link.tokens.length > 0 && link.raw > 0)) return "Builds directly on";
-  if (link.fit >= 0.3) return "Connects to";
+  const fit = link.specific.length > 0 ? link.citedFit : link.fit;
+  if (fit >= 0.68 || (fit >= 0.45 && link.tokens.length > 0 && link.raw > 0)) return "Builds directly on";
+  if (fit >= 0.3) return "Connects to";
   return "Relates to";
 }
 
-function fitWithActivity(s: ScoredFact, link: ActivityLink, short = false): string {
+function fitWithActivity(s: ScoredFact, link: ActivityLink, themes: string[], short = false): string {
   const a = link.source;
   const offer = offerClause(s);
-  const phrase = short ? null : evidencePhrase(a, link);
+  const phrase = short ? null : evidencePhrase(a, link, themes);
   const ref = short ? a.shortRef : a.ref;
   const lead = leadFor(link);
   const full = `${lead} ${ref}${phrase ? ` (${phrase})` : ""}: ${offer}.`;
   if (full.length <= MAX_SENTENCE || short) return full;
   const noPhrase = `${lead} ${ref}: ${offer}.`;
   if (noPhrase.length <= MAX_SENTENCE) return noPhrase;
-  return fitWithActivity(s, link, true);
+  return fitWithActivity(s, link, themes, true);
 }
 
 function fitWithInterest(s: ScoredFact, link: InterestLink): string {
@@ -115,17 +117,22 @@ export interface FitExplanation {
   basis: "activity" | "interest" | "major" | "none";
 }
 
-/** The plain fit sentence for a scored fact. */
-export function explainFit(s: ScoredFact): FitExplanation {
-  const link = s.links[0];
-  const interest = s.interest && s.interest.fit >= 0.2 ? s.interest : null;
-  const major = s.major && s.major.fit >= 0.2 ? s.major : null;
-  const side = interest ?? major;
-  if (link && link.fit >= MIN_LINK_FIT && (!side || link.fit >= 0.6 * side.fit)) {
-    return { sentence: fitWithActivity(s, link), activityId: link.source.id, basis: "activity" };
+/**
+ * The plain fit sentence for a scored fact, grounded in `cite`: the basis
+ * selection assigned (an activity, interest, or intended major that shares a
+ * specific theme with the fact). Without `cite`, the selected basis on the
+ * fact (`s.cite`) or its best basis is used. A fact with no basis is never
+ * presented as a match.
+ */
+export function explainFit(s: ScoredFact, cite?: Basis | null): FitExplanation {
+  const chosen = cite !== undefined ? cite : "cite" in s ? ((s as ScoredFact & { cite: Basis | null }).cite ?? null) : (s.bases?.[0] ?? null);
+  if (chosen?.kind === "activity") {
+    const link = chosen.link as ActivityLink;
+    return { sentence: fitWithActivity(s, link, chosen.themes), activityId: link.source.id, basis: "activity" };
   }
-  if (interest) return { sentence: fitWithInterest(s, interest), activityId: null, basis: "interest" };
-  if (major) return { sentence: fitWithInterest(s, major), activityId: null, basis: "major" };
+  if (chosen?.kind === "interest" || chosen?.kind === "major") {
+    return { sentence: fitWithInterest(s, chosen.link as InterestLink), activityId: null, basis: chosen.kind };
+  }
   return { sentence: `Not tied to a specific activity on your list: ${offerClause(s)}.`, activityId: null, basis: "none" };
 }
 

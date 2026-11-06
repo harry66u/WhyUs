@@ -1,0 +1,155 @@
+/**
+ * Through-lines for essay angles: a short, theme-specific idea that frames how
+ * an activity and a school's details connect. They are framings to explore,
+ * never essay prose: no first person, no claims about the school, no praise.
+ *
+ * Lines are deterministic. A theme without its own entry falls back to its
+ * group's line, then to a neutral one built from the theme label.
+ */
+import { themeGroup, themeLabel, type ThemeGroup } from "./themes";
+
+const BY_THEME: Record<string, string> = {
+  // Environment
+  water: "measurement that changes what a town decides about its water",
+  climate: "turning climate evidence into decisions people can act on",
+  energy: "the engineering and the tradeoffs behind an energy transition",
+  "environmental-policy": "where engineering analysis meets policy argument",
+  sustainability: "making sustainability measurable on a real site",
+  ecology: "reading an ecosystem's health from field evidence",
+  agriculture: "how food gets grown, and the systems around it",
+  "earth-science": "reading rivers and landscapes as systems that change",
+  polar: "what the coldest places reveal about a warming world",
+  "environmental-justice": "who carries environmental risk, and who decides",
+  fieldwork: "questions answered with samples taken in the field",
+  "environmental-studies": "environmental questions answered with evidence",
+  // Place
+  cities: "mapping a city's problems street by street",
+  transportation: "how people move through a city, and who it serves",
+  "gis-mapping": "putting a local problem on a map people can act on",
+  architecture: "how buildings and streets shape daily life",
+  // Engineering
+  sensors: "building instruments that answer real questions",
+  "environmental-engineering": "engineering cleaner water and air, from sample to system",
+  "civil-engineering": "infrastructure designed around the people who depend on it",
+  "mechanical-engineering": "machines understood by taking them apart and building them",
+  "electrical-engineering": "circuits and code that read the physical world",
+  robotics: "machines that sense and respond to the world around them",
+  "biomedical-engineering": "engineering built around one person's body and needs",
+  aerospace: "designing for the hardest environments there are",
+  materials: "what things are made of, and why it matters",
+  "chemical-engineering": "processes scaled from the bench to the plant",
+  "engineering-design": "taking a design from first sketch to tested prototype",
+  making: "fixing and building things by hand, then teaching others how",
+  // Computing
+  "computer-science": "code written to solve a specific problem",
+  ai: "machine learning held to a concrete, local problem",
+  "data-science": "turning raw data into something a community can use",
+  hci: "designing technology around the people who use it",
+  cybersecurity: "keeping systems trustworthy for the people who rely on them",
+  information: "how information moves, and who it reaches",
+  games: "designing systems people choose to play",
+  quantum: "the strangest physics, put to work",
+  // Science and health
+  biology: "living systems studied up close",
+  genetics: "reading the code inside living things",
+  neuroscience: "how the brain turns signals into behavior",
+  chemistry: "what reactions explain about the world around us",
+  physics: "the physics underneath everyday systems",
+  astronomy: "what the sky can be made to reveal",
+  mathematics: "abstract tools for concrete questions",
+  marine: "coastlines and oceans as systems people depend on",
+  psychology: "why people decide what they decide",
+  medicine: "care that starts with listening to the patient",
+  "public-health": "connecting local conditions to community health",
+  nursing: "care delivered at the bedside and beyond",
+  "mental-health": "well-being treated as seriously as any other need",
+  disability: "access designed in from the start",
+  nutrition: "what people eat, and what shapes it",
+  kinesiology: "how the body moves, and how to keep it moving",
+  // Society, civic, humanities
+  economics: "incentives, costs, and who pays them",
+  "political-science": "how decisions get made in public",
+  "public-policy": "turning evidence into a policy a community can adopt",
+  law: "how rules are written, argued, and applied",
+  "international-relations": "local questions seen across borders",
+  sociology: "how groups and institutions shape individual lives",
+  anthropology: "understanding a community on its own terms",
+  history: "what the past explains about the present",
+  philosophy: "hard questions argued carefully",
+  religion: "faith, practice, and community",
+  education: "teaching others what had to be learned by doing",
+  immigration: "practical help for newcomers, close to home",
+  "language-access": "making technical information usable for every neighbor",
+  languages: "a second language used where it changes outcomes",
+  "latin-america": "connections across the Americas, in more than one language",
+  literature: "reading closely and asking why it matters",
+  "creative-writing": "writing as a way to think",
+  journalism: "reporting that holds local decisions to account",
+  "film-media": "telling true stories on screen",
+  "radio-podcast": "stories told for the ear",
+  theater: "performance as a shared, live act",
+  music: "practice, ensemble, and arrangement as a discipline",
+  jazz: "improvising with others inside a shared structure",
+  "visual-arts": "seeing carefully, then making",
+  design: "form shaped by how something gets used",
+  museums: "objects as evidence, collections as arguments",
+  dance: "discipline and expression in motion",
+  classics: "ancient texts read for present questions",
+  entrepreneurship: "building something that has to work for real users",
+  finance: "how money decides what gets built",
+  business: "organizations that have to work for real people",
+  "social-enterprise": "ventures measured by the good they do",
+  hospitality: "the craft of taking care of people",
+  "community-engagement": "work done with a community, not just for it",
+  "civic-tech": "open data that residents and officials can both use",
+  "social-justice": "advocacy grounded in evidence",
+  debate: "researching both sides before arguing one",
+  leadership: "taking responsibility for a group's work",
+  youth: "mentoring younger students through real projects",
+  // Outdoors, global, identity, academic
+  outdoors: "learning a landscape by moving through it",
+  cycling: "keeping bikes on the road as everyday transportation",
+  running: "steady practice measured in miles",
+  athletics: "discipline built in practice and competition",
+  fitness: "habits that keep people moving",
+  "study-abroad": "a familiar question asked somewhere new",
+  global: "a local problem seen in a wider frame",
+  asia: "connections across Asia and its diasporas",
+  africa: "connections across Africa and its diasporas",
+  "middle-east": "connections across the Middle East and its diasporas",
+  "first-gen": "opening doors that were not open before",
+  lgbtq: "community, identity, and belonging",
+  "cultural-identity": "heritage carried into new places",
+  "women-gender": "who gets included, and how",
+  "undergraduate-research": "a question pursued past the classroom",
+  interdisciplinary: "a problem that needs more than one field",
+  "first-year": "a strong start, built deliberately",
+  career: "skills tested in real work",
+};
+
+const BY_GROUP: Record<ThemeGroup, string> = {
+  environment: "environmental questions answered with evidence",
+  place: "understanding a place in detail",
+  engineering: "engineering judgment applied to a real problem",
+  computing: "computing applied to a real problem",
+  science: "scientific questions pursued with real data",
+  health: "health questions grounded in community needs",
+  society: "how institutions shape everyday decisions",
+  humanities: "reading closely and asking why",
+  arts: "craft built through steady practice",
+  business: "building something that has to work for real users",
+  civic: "work that serves neighbors directly",
+  outdoors: "learning a place by moving through it",
+  global: "a local problem seen in a wider frame",
+  identity: "community, identity, and belonging",
+  academic: "a question pursued past the classroom",
+};
+
+/** The through-line for a theme, lowercase (callers capitalize it at the start of a line). */
+export function throughLine(theme: string): string {
+  const own = BY_THEME[theme];
+  if (own) return own;
+  const group = themeGroup(theme);
+  if (group && BY_GROUP[group]) return BY_GROUP[group];
+  return `${themeLabel(theme).toLowerCase()}, followed past the classroom`;
+}

@@ -52,14 +52,82 @@ export interface StudentThemes {
 }
 
 /**
- * How central a theme is to an activity, by where it appears. Description
- * mentions grow with repetition: a theme named once in passing ("energy and
- * water policy case files") counts less than one the activity is built on.
+ * How central a theme is to an activity, by where it appears. The title and the
+ * student's role name what the activity is; a theme found only in the
+ * description counts less, and grows with repetition: a theme named once
+ * ("energy and water policy case files") counts less than one the activity is
+ * built on.
  */
-const FIELD_SALIENCE = { title: 1, role: 0.6, organization: 0.45, category: 0.5 } as const;
+const FIELD_SALIENCE = { title: 1, role: 0.8, organization: 0.45, category: 0.5 } as const;
 
-function descriptionSalience(mentions: number): number {
-  return mentions <= 0 ? 0 : 0.55 + 0.12 * Math.min(3, mentions);
+/** Salience of a theme found only in the description (1, 2, 3+ substantive mentions: 0.52, 0.62, 0.72). */
+export function descriptionSalience(mentions: number): number {
+  return mentions <= 0 ? 0 : 0.42 + 0.1 * Math.min(3, mentions);
+}
+
+/**
+ * Incidental mentions say where or for whom something happened, or how a tool
+ * was built, not what the activity is about:
+ * - the first part of a modifier compound: "solar-powered sensors" is not an
+ *   energy project, a "bike-mounted logger" is not cycling;
+ * - venue and audience words: interpreting "at township meetings" or presenting
+ *   "to city council" is not political science;
+ * - agency names: a "conservation commission" or "Conservation District" is
+ *   not ecology work.
+ */
+const MODIFIER_SUFFIX =
+  /^(?:powered|mounted|based|driven|fueled|fuelled|operated|related|oriented|inspired|themed|friendly|speaking|style|like|sized|funded|led|run|owned|focused|wide)$/i;
+const VENUE_WORDS: Record<string, RegExp> = {
+  "political-science": /^(?:township|municipal|city council|town meetings?|local government|elections?)$/i,
+};
+/** A theme word that only names an agency ("conservation commission") or an event ("community health fair"). */
+const AGENCY_AFTER = /^[\s,]+(?:commissions?|district|authority|board|department|office|council|committee|agency|fairs?|festivals?|meetings?|expos?)\b/i;
+
+function isIncidentalMention(key: string, text: string, start: number, end: number): boolean {
+  const matched = text.slice(start, end);
+  // Enclosing hyphenated word, e.g. "solar-powered" around "solar".
+  let ws = start;
+  while (ws > 0 && /[A-Za-z0-9-]/.test(text[ws - 1])) ws--;
+  let we = end;
+  while (we < text.length && /[A-Za-z0-9-]/.test(text[we])) we++;
+  const word = text.slice(ws, we);
+  if (word.includes("-") && we > end) {
+    const tail = word.slice(end - ws).replace(/^-/, "");
+    const last = tail.split("-").pop() ?? "";
+    if (MODIFIER_SUFFIX.test(last)) return true;
+  }
+  const venue = VENUE_WORDS[key];
+  if (venue && venue.test(matched.trim())) return true;
+  if (AGENCY_AFTER.test(text.slice(end))) return true;
+  // The agenda of a venue: interpreting "at township meetings on stormwater fees" is not water work.
+  if (TOPIC_OF_VENUE.test(text.slice(Math.max(0, start - 40), start))) return true;
+  return false;
+}
+
+const TOPIC_OF_VENUE = /\b(?:meetings?|hearings?|sessions?|fairs?|events?)\s+(?:on|about|regarding)\s+(?:the\s+)?$/i;
+
+const GLOBAL_THEME_PATTERNS = new Map<string, RegExp>();
+
+/** Substantive (non-incidental) mentions of a theme in free text. */
+function substantiveMentions(key: string, source: RegExp, text: string): number {
+  if (!text) return 0;
+  let re = GLOBAL_THEME_PATTERNS.get(key);
+  if (!re) {
+    re = new RegExp(source.source, "gi");
+    GLOBAL_THEME_PATTERNS.set(key, re);
+  }
+  re.lastIndex = 0;
+  let n = 0;
+  let guard = 0;
+  for (let m = re.exec(text); m && guard < 12; m = re.exec(text), guard++) {
+    if (m[0].length === 0) {
+      re.lastIndex++;
+      continue;
+    }
+    if (!isIncidentalMention(key, text, m.index, m.index + m[0].length)) n++;
+    if (n >= 6) break;
+  }
+  return n;
 }
 
 /** Common App activity categories that imply a theme the text may not name. */
@@ -118,30 +186,21 @@ function depthOf(a: Activity, leadership: boolean): { depth: number; hours: numb
   return { depth, hours };
 }
 
-const GLOBAL_PATTERNS = new Map<string, RegExp>();
-
-function countMentions(key: string, source: RegExp, text: string): number {
-  if (!text) return 0;
-  let re = GLOBAL_PATTERNS.get(key);
-  if (!re) {
-    re = new RegExp(source.source, "gi");
-    GLOBAL_PATTERNS.set(key, re);
-  }
-  re.lastIndex = 0;
-  let n = 0;
-  while (re.exec(text)) {
-    n++;
-    if (re.lastIndex === 0 || n >= 6) break;
-  }
-  return n;
-}
-
-/** Theme salience from short fields (fixed weights) and an optional description (weighted by mentions). */
-function themeSalience(fields: [string, number][], description = ""): Map<string, number> {
+/**
+ * Theme salience from short fields (fixed weights) and an optional description
+ * (weighted by substantive mentions). Fields marked `filter` (the organization
+ * name) drop incidental mentions too: "Lakeview Township" names a government,
+ * not a subject the student studied.
+ */
+function themeSalience(fields: [string, number, boolean?][], description = ""): Map<string, number> {
   const out = new Map<string, number>();
   for (const th of THEMES) {
-    let s = descriptionSalience(countMentions(th.key, th.pattern, description));
-    for (const [text, w] of fields) if (w > s && text && th.pattern.test(text)) s = w;
+    let s = descriptionSalience(substantiveMentions(th.key, th.pattern, description));
+    for (const [text, w, filter] of fields) {
+      if (w <= s || !text || !th.pattern.test(text)) continue;
+      if (filter && substantiveMentions(th.key, th.pattern, text) === 0) continue;
+      s = w;
+    }
     if (s > 0) out.set(th.key, s);
   }
   return out;
@@ -211,7 +270,7 @@ function activityProfile(a: Activity, index: number): ActivityProfile {
     [
       [titleParts.name, FIELD_SALIENCE.title],
       [roleText, FIELD_SALIENCE.role],
-      [[titleParts.org, a.organization ?? ""].filter(Boolean).join("\n"), FIELD_SALIENCE.organization],
+      [[titleParts.org, a.organization ?? ""].filter(Boolean).join("\n"), FIELD_SALIENCE.organization, true],
       [a.category ?? "", FIELD_SALIENCE.category],
     ],
     description,

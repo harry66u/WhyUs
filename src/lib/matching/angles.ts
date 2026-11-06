@@ -1,19 +1,30 @@
 /**
  * Essay angles: one-line ideas, never drafted prose.
  *
- * Candidates come from (activity x theme) clusters: a cluster is supported by
- * the selected details whose connection to that activity runs through that
- * theme. Key: "<activityId>|<themeKey>" (interest and major clusters use the
- * pseudo-ids "interests" and "majors"). The lead angle avoids keys already used
- * as leads in the student's other dossiers and prefers activities and themes
- * that no other dossier leads with.
+ * Candidates come from the bases the details cite: the details grounded in one
+ * activity (at most two, see select.ts), or in the student's stated interests or
+ * intended majors, form a group; each specific theme those details share with
+ * the group's source is a candidate angle. Key: "<activityId>|<themeKey>"
+ * (interest and major angles use the pseudo-ids "interests" and "majors").
+ *
+ * Strength (comparable across a student's schools, used by coordinateAngles):
+ * relevance to the intended majors and to the prompt (academic angles first
+ * when the prompt asks about the academic program or a specific college; the
+ * unit's own core themes count more there), the fit and substance of the
+ * supporting details, their uniqueness, and the specificity of the theme.
+ *
+ * Lines name the activity and at most two details, framed by a theme-specific
+ * through-line ("Building instruments that answer real questions: from your
+ * Creek Watch Sensor Network to CEE 4795."). Angles shown together never share
+ * a detail, and secondary angles point in a different direction from the lead.
  */
 import type { EssayAngle, FactKind } from "@/lib/types";
+import { throughLine } from "./framing";
 import type { ActivityProfile, InterestProfile } from "./profile";
-import type { ScoredFact } from "./rank";
-import { MIN_LINK_FIT } from "./rank";
-import { themeLabel, themeWeight } from "./themes";
-import { joinList } from "./text";
+import type { ActivityLink, Basis, BasisKind, InterestLink, PromptFocus, ScoredFact } from "./rank";
+import { isHobbyTheme } from "./rank";
+import { themeGroup, themeLabel, themeWeight, type ThemeGroup } from "./themes";
+import { capitalizeFirst, joinList } from "./text";
 
 export const MAX_ANGLE_LENGTH = 160;
 
@@ -23,22 +34,31 @@ export interface AngleCandidate {
   theme: string;
   factIds: string[];
   themes: string[];
+  /** Strength: comparable across a student's dossiers. */
   score: number;
   line: string;
+  /** False for hobby angles (jazz, cycling) and angles with no academic detail behind them. */
+  academic?: boolean;
 }
 
 export interface RankedDetail {
   scored: ScoredFact;
   rank: number;
+  /** The basis this detail's fit sentence cites (from selection); undefined: its best basis. */
+  cite?: Basis | null;
 }
 
-interface Cluster {
-  key: string;
-  theme: string;
-  activity: ActivityProfile | null;
-  source: InterestProfile | null;
-  support: Map<string, { value: number; detail: RankedDetail }>;
-  related: Map<string, number>;
+/** Angle as stored on a dossier, with the strength and academic flag cross-school coordination reads. */
+export type ScoredEssayAngle = EssayAngle & { strength?: number; academic?: boolean };
+
+export interface AngleContext {
+  focus?: Pick<PromptFocus, "mode" | "themes">;
+  /** Theme keys of the student's intended majors. */
+  majorThemes?: Set<string>;
+  /** Theme groups of the student's intended majors. */
+  majorGroups?: Set<ThemeGroup>;
+  /** theme -> share (0-1) of the unit-scoped candidate facts that are about it: the unit's core subjects. */
+  unitThemes?: Map<string, number>;
 }
 
 function rankWeight(rank: number): number {
@@ -48,6 +68,7 @@ function rankWeight(rank: number): number {
 /**
  * How well a kind of detail can carry an essay angle: courses, labs, programs,
  * and people anchor an argument; amenities, places, and traditions support one.
+ * (Kept for callers; per-fact substance lives in features.ts.)
  */
 export const KIND_SUBSTANCE: Record<FactKind, number> = {
   course: 1,
@@ -62,23 +83,71 @@ export const KIND_SUBSTANCE: Record<FactKind, number> = {
   tradition: 0.75,
 };
 
-function pickThemes(themes: { key: string; value: number }[]): { key: string; value: number }[] {
-  const specific = themes.filter((t) => themeWeight(t.key) >= 0.75);
-  return (specific.length > 0 ? specific : themes).slice(0, 2);
-}
+/** Groups whose themes count as related to an intended major in that group. */
+const RELATED_GROUPS: Record<ThemeGroup, ThemeGroup[]> = {
+  environment: ["environment", "engineering", "place", "science"],
+  engineering: ["engineering", "environment", "computing", "science", "place"],
+  place: ["place", "environment", "society", "engineering"],
+  computing: ["computing", "engineering", "science"],
+  science: ["science", "environment", "health", "engineering"],
+  health: ["health", "science", "society"],
+  society: ["society", "civic", "place", "global"],
+  humanities: ["humanities", "society", "arts"],
+  arts: ["arts", "humanities"],
+  business: ["business", "society"],
+  civic: ["civic", "society"],
+  outdoors: ["outdoors"],
+  global: ["global", "society", "civic"],
+  identity: ["identity", "society", "civic"],
+  academic: [],
+};
+
+/* ------------------------------------------------------------------ */
+/* Lines                                                                */
+/* ------------------------------------------------------------------ */
 
 /** Fact names for a line: "ENGS 42 (Watershed Hydrology) and ENGS 28". */
 function factNames(details: RankedDetail[], long: boolean[]): string {
   return joinList(details.map((d, i) => (long[i] ? d.scored.features.longName : d.scored.features.name)));
 }
 
-function sourcePhrase(c: Cluster, short: boolean): string {
-  if (c.activity) return short ? c.activity.tinyRef : c.activity.shortRef;
-  if (c.source?.kind === "major") return `your plan to study ${c.source.text}`;
-  return `your interest in ${c.source?.text ?? themeLabel(c.theme).toLowerCase()}`;
+function fitToLength(line: string): string {
+  if (line.length <= MAX_ANGLE_LENGTH) return line;
+  return `${line.slice(0, MAX_ANGLE_LENGTH - 1).replace(/[\s,;:]+\S*$/, "")}.`;
 }
 
-/** One line, idea only: "Water resources: from your Creek Watch Sensor Network to ENGS 42 (Watershed Hydrology) and ENGS 28." */
+/**
+ * One line, idea only: a theme-specific through-line, then the activity and at
+ * most two details. "Measurement that changes what a town decides about its
+ * water: from your Creek Watch Sensor Network to Jacqueline Gerson and CEE 4795."
+ */
+export function ideaLine(theme: string, from: string, fromShort: string, details: RankedDetail[]): string {
+  const through = capitalizeFirst(throughLine(theme));
+  const two = details.slice(0, 2);
+  const attempts: [string, RankedDetail[], boolean[]][] = [
+    [from, two, [true, true]],
+    [from, two, [true, false]],
+    [from, two, [false, false]],
+    [fromShort, two, [false, false]],
+    [from, two.slice(0, 1), [true]],
+    [from, two.slice(0, 1), [false]],
+    [fromShort, two.slice(0, 1), [true]],
+    [fromShort, two.slice(0, 1), [false]],
+  ];
+  for (const [src, ds, long] of attempts) {
+    const line = ds.length > 0 ? `${through}: from ${src} to ${factNames(ds, long)}.` : `${through}: building on ${src}.`;
+    if (line.length <= MAX_ANGLE_LENGTH) return line;
+  }
+  // Very long names: the detail and the activity carry the idea without the framing.
+  const first = two[0];
+  if (first) {
+    const bare = `${capitalizeFirst(fromShort)} and ${first.scored.features.name}.`;
+    if (bare.length <= MAX_ANGLE_LENGTH) return bare;
+  }
+  return fitToLength(`${through}: building on ${fromShort}.`);
+}
+
+/** Earlier line format, kept for callers: "Water resources: from your Creek Watch Sensor Network to ENGS 42 and ENGS 28." */
 export function angleLine(topic: string, from: string, fromShort: string, details: RankedDetail[]): string {
   const attempts: [string, RankedDetail[], boolean[]][] = [
     [from, details.slice(0, 2), [true, true]],
@@ -92,110 +161,163 @@ export function angleLine(topic: string, from: string, fromShort: string, detail
     const line = ds.length > 0 ? `${topic}: from ${src} to ${factNames(ds, long)}.` : `${topic}: build on ${src}.`;
     if (line.length <= MAX_ANGLE_LENGTH) return line;
   }
-  const fallback = `${topic}: from ${fromShort}.`;
-  return fallback.length <= MAX_ANGLE_LENGTH ? fallback : `${fallback.slice(0, MAX_ANGLE_LENGTH - 1).replace(/\s+\S*$/, "")}.`;
+  return fitToLength(`${topic}: from ${fromShort}.`);
+}
+
+/* ------------------------------------------------------------------ */
+/* Candidates                                                           */
+/* ------------------------------------------------------------------ */
+
+interface Member {
+  detail: RankedDetail;
+  link: ActivityLink | InterestLink;
+  /** The detail's cited (primary) theme. */
+  primary: string;
+  /** Citable themes the detail shares with this group's source. */
+  themes: string[];
+}
+
+interface Group {
+  head: string;
+  kind: BasisKind;
+  activity: ActivityProfile | null;
+  members: Member[];
+}
+
+function citeOf(d: RankedDetail): Basis | null {
+  if (d.cite !== undefined) return d.cite;
+  return d.scored.bases?.[0] ?? null;
+}
+
+function sourcePhrase(g: Group, theme: string, short: boolean): string {
+  if (g.activity) return short ? g.activity.tinyRef : g.activity.shortRef;
+  const src = (g.members.find((m) => m.themes.includes(theme))?.link.source ?? g.members[0]?.link.source) as InterestProfile | undefined;
+  if (g.kind === "major") return `your plan to study ${src?.text ?? themeLabel(theme).toLowerCase()}`;
+  return `your interest in ${src?.text ?? themeLabel(theme).toLowerCase()}`;
+}
+
+function majorRelevance(theme: string, support: Member[], ctx: AngleContext): number {
+  const keys = ctx.majorThemes;
+  if (!keys || keys.size === 0) return 1;
+  if (keys.has(theme)) return 1.15;
+  if (support.some((m) => [...m.detail.scored.features.central].some((k) => keys.has(k)))) return 1.1;
+  const g = themeGroup(theme);
+  const groups = ctx.majorGroups ?? new Set<ThemeGroup>();
+  if (g && [...groups].some((mg) => RELATED_GROUPS[mg]?.includes(g))) return 1;
+  return 0.8;
+}
+
+function promptRelevance(theme: string, academic: boolean, support: Member[], ctx: AngleContext): number {
+  const mode = ctx.focus?.mode ?? "open";
+  let p: number;
+  switch (mode) {
+    case "academic":
+      p = academic ? 1.1 : 0.55;
+      // The unit's core subjects, and details scoped to the unit, answer "why this college".
+      p *= 1 + 0.35 * (ctx.unitThemes?.get(theme) ?? 0);
+      if (support.some((m) => m.detail.scored.unit === "unit" && (m.detail.scored.fact.unitIds ?? []).length > 0)) p *= 1.08;
+      break;
+    case "mixed":
+      p = academic ? 1.05 : 0.75;
+      break;
+    case "community":
+      p = 1;
+      break;
+    default:
+      p = academic ? 1.05 : 0.8;
+  }
+  if (ctx.focus?.themes?.includes(theme)) p *= 1.08;
+  return p;
 }
 
 /**
  * Candidate angles from the selected details, strongest first. `uniqueness`
  * (fact id -> 0-100) lets angles built on distinctive details rank higher.
  */
-export function angleCandidates(details: RankedDetail[], uniqueness: Map<string, number> = new Map()): AngleCandidate[] {
-  const clusters = new Map<string, Cluster>();
-  const touch = (key: string, theme: string, activity: ActivityProfile | null, source: InterestProfile | null): Cluster => {
-    let c = clusters.get(key);
-    if (!c) {
-      c = { key, theme, activity, source, support: new Map(), related: new Map() };
-      clusters.set(key, c);
-    }
-    return c;
-  };
-
+export function angleCandidates(details: RankedDetail[], uniqueness: Map<string, number> = new Map(), ctx: AngleContext = {}): AngleCandidate[] {
+  const groups = new Map<string, Group>();
   for (const d of details) {
-    const s = d.scored;
-    // The fact's central themes: an angle may run through a secondary link only via one of these.
-    const central = new Set(
-      [...s.features.themes.entries()]
-        .map(([k, v]) => [k, v * themeWeight(k)] as const)
-        .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
-        .slice(0, 2)
-        .map(([k]) => k),
-    );
-    const links = s.links.filter((l) => l.fit >= Math.max(0.25, MIN_LINK_FIT)).slice(0, 2);
-    links.forEach((link, li) => {
-      // A secondary link joins an angle only when it is strong and runs through
-      // one of the fact's central themes (not a passing mention).
-      if (li > 0 && link.fit < 0.45) return;
-      const total = link.themes.reduce((n, t) => n + t.value, 0) || 1;
-      for (const t of pickThemes(link.themes)) {
-        if (li > 0 && (!central.has(t.key) || (s.features.themes.get(t.key) ?? 0) < 0.75)) continue;
-        const c = touch(`${link.source.id}|${t.key}`, t.key, link.source, null);
-        const value = link.fit * (0.4 + 0.6 * (t.value / total)) * rankWeight(d.rank);
-        const prev = c.support.get(s.fact.id);
-        if (!prev || prev.value < value) c.support.set(s.fact.id, { value, detail: d });
-        for (const o of link.themes) if (o.key !== t.key) c.related.set(o.key, (c.related.get(o.key) ?? 0) + o.value);
-      }
-    });
-    for (const side of [s.interest, s.major]) {
-      if (!side || side.fit < 0.3) continue;
-      const t = pickThemes(side.themes)[0];
-      if (!t) continue;
-      const pseudo = side.source.kind === "major" ? "majors" : "interests";
-      const c = touch(`${pseudo}|${t.key}`, t.key, null, side.source);
-      const value = 0.6 * side.fit * rankWeight(d.rank);
-      const prev = c.support.get(s.fact.id);
-      if (!prev || prev.value < value) c.support.set(s.fact.id, { value, detail: d });
+    const cite = citeOf(d);
+    if (!cite) continue;
+    const gk = cite.kind === "activity" ? `a:${cite.sourceId}` : cite.keyHead;
+    let g = groups.get(gk);
+    if (!g) {
+      g = { head: cite.keyHead, kind: cite.kind, activity: cite.kind === "activity" ? (cite.link as ActivityLink).source : null, members: [] };
+      groups.set(gk, g);
     }
+    g.members.push({ detail: d, link: cite.link, primary: cite.theme, themes: cite.themes.length ? cite.themes : [cite.theme] });
   }
 
-  // Interest and major angles only for themes no activity angle already covers.
-  const activityThemes = new Set([...clusters.values()].filter((c) => c.activity).map((c) => c.theme));
+  const majors = ctx.majorGroups ?? new Set<ThemeGroup>();
   const out: AngleCandidate[] = [];
-  for (const c of clusters.values()) {
-    if (!c.activity && activityThemes.has(c.theme)) continue;
-    const support = [...c.support.values()].sort((a, b) => b.value - a.value || a.detail.rank - b.detail.rank);
-    // Keep supporting details that carry real weight next to the strongest one.
-    const top = support.filter((x, i) => i === 0 || x.value >= 0.45 * support[0].value).slice(0, 3);
-    const base = top.reduce((n, x) => n + x.value, 0);
-    const depth = c.activity ? 0.8 + 0.2 * c.activity.depth : 0.75;
-    const specificity = 0.85 + 0.1 * Math.min(1.5, themeWeight(c.theme));
-    const uniq = top.reduce((n, x) => n + (uniqueness.get(x.detail.scored.fact.id) ?? 60), 0) / Math.max(1, top.length);
-    const substance = top.reduce((n, x) => n + (KIND_SUBSTANCE[x.detail.scored.fact.kind] ?? 0.9), 0) / Math.max(1, top.length);
-    const score = base * (1 + 0.3 * Math.min(2, top.length - 1)) * depth * specificity * (0.6 + 0.4 * (uniq / 100)) * substance;
-    const topic = themeLabel(c.theme);
-    const lineDetails = top.map((x) => x.detail);
-    const line = angleLine(topic, sourcePhrase(c, false), sourcePhrase(c, true), lineDetails);
-    const related = [...c.related.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).map(([k]) => k);
-    out.push({
-      key: c.key,
-      activityId: c.activity?.id ?? null,
-      theme: c.theme,
-      factIds: top.map((x) => x.detail.scored.fact.id),
-      themes: [c.theme, ...related.slice(0, 2)],
-      score,
-      line,
-    });
+  for (const g of groups.values()) {
+    const themes = new Set<string>();
+    for (const m of g.members) for (const t of m.themes) themes.add(t);
+    for (const theme of themes) {
+      const contribution = (m: Member) =>
+        m.link.citedFit * (m.primary === theme ? 1 : 0.75) * (0.5 + 0.5 * m.detail.scored.features.substance) * rankWeight(m.detail.rank);
+      const support = g.members
+        .filter((m) => m.themes.includes(theme))
+        .map((m) => ({ m, c: contribution(m) }))
+        .sort((a, b) => b.c - a.c || a.m.detail.rank - b.m.detail.rank);
+      // An angle runs through what at least one detail is cited for, not a passing overlap.
+      if (!support.some((x) => x.m.primary === theme)) continue;
+      const top = support.slice(0, 2);
+      const members = top.map((x) => x.m);
+      const base = top[0].c + (top[1] ? 0.6 * top[1].c : 0);
+      const depth = g.activity ? 0.8 + 0.2 * g.activity.depth : g.kind === "major" ? 0.8 : 0.72;
+      const spec = 0.85 + 0.1 * Math.min(1.5, themeWeight(theme)) + (0.05 * members.reduce((n, m) => n + m.detail.scored.features.specificity, 0)) / members.length;
+      const uniq = members.reduce((n, m) => n + (uniqueness.get(m.detail.scored.fact.id) ?? 60), 0) / members.length;
+      const academic = !isHobbyTheme(theme, majors) && members.some((m) => m.detail.scored.academic);
+      const score =
+        base *
+        (1 + 0.2 * (members.length - 1)) *
+        depth *
+        spec *
+        (0.6 + 0.4 * (uniq / 100)) *
+        majorRelevance(theme, members, ctx) *
+        promptRelevance(theme, academic, members, ctx);
+      const lineDetails = members.map((m) => m.detail);
+      const related = new Map<string, number>();
+      for (const m of members) m.themes.forEach((t, i) => t !== theme && related.set(t, (related.get(t) ?? 0) + 1 / (i + 1)));
+      out.push({
+        key: `${g.head}|${theme}`,
+        activityId: g.activity?.id ?? null,
+        theme,
+        factIds: lineDetails.map((d) => d.scored.fact.id),
+        themes: [theme, ...[...related.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).map(([k]) => k).slice(0, 2)],
+        score,
+        line: ideaLine(theme, sourcePhrase(g, theme, false), sourcePhrase(g, theme, true), lineDetails),
+        academic,
+      });
+    }
   }
   // Activity angles before interest and major angles at equal strength.
   return out.sort((a, b) => b.score - a.score || Number(b.activityId != null) - Number(a.activityId != null) || a.key.localeCompare(b.key));
 }
 
-/** Fallback when the details support fewer than two angles: one per detail theme. */
+/** Fallback angles (one per detail theme): used when the details support too few angles that do not share a detail. */
 export function fallbackCandidates(details: RankedDetail[], schoolShortName: string, existing: Set<string>): AngleCandidate[] {
   const out: AngleCandidate[] = [];
   for (const d of details) {
-    const theme = [...d.scored.features.themes.entries()].sort((a, b) => b[1] * themeWeight(b[0]) - a[1] * themeWeight(a[0]) || a[0].localeCompare(b[0]))[0]?.[0];
+    const theme =
+      citeOf(d)?.theme ??
+      [...d.scored.features.themes.entries()].sort((a, b) => b[1] * themeWeight(b[0]) - a[1] * themeWeight(a[0]) || a[0].localeCompare(b[0]))[0]?.[0];
     if (!theme) continue;
     const key = `school|${theme}`;
     if (existing.has(key) || out.some((o) => o.key === key)) continue;
-    const name = d.scored.features.longName;
-    let line = `${themeLabel(theme)}: what ${name} would add to your time at ${schoolShortName}.`;
-    if (line.length > MAX_ANGLE_LENGTH) line = `${themeLabel(theme)}: what ${d.scored.features.name} would add at ${schoolShortName}.`;
+    const through = capitalizeFirst(throughLine(theme));
+    let line = `${through}: what ${d.scored.features.longName} would add at ${schoolShortName}.`;
+    if (line.length > MAX_ANGLE_LENGTH) line = `${through}: what ${d.scored.features.name} would add at ${schoolShortName}.`;
     if (line.length > MAX_ANGLE_LENGTH) continue;
-    out.push({ key, activityId: null, theme, factIds: [d.scored.fact.id], themes: [theme], score: 0.1 * d.scored.score, line });
+    out.push({ key, activityId: null, theme, factIds: [d.scored.fact.id], themes: [theme], score: 0.1 * d.scored.score, line, academic: d.scored.academic });
   }
   return out;
 }
+
+/* ------------------------------------------------------------------ */
+/* Choosing the shown angles                                            */
+/* ------------------------------------------------------------------ */
 
 export interface UsedLeads {
   keys: Set<string>;
@@ -215,37 +337,55 @@ export function usedLeadsFrom(keys: string[]): UsedLeads {
   return used;
 }
 
+/**
+ * How a lead is valued: an angle built on something the student did leads
+ * before one built on a stated interest, and an academic angle before an
+ * extracurricular one (jazz, cycling) unless nothing academic of reasonable
+ * strength (about a third as strong) is left.
+ */
+export function leadWeight(c: Pick<AngleCandidate, "activityId" | "academic" | "key">): number {
+  const own = c.activityId ? 1 : /^school\|/.test(c.key) ? 0.2 : 0.3;
+  return own * (c.academic === false ? 0.3 : 1);
+}
+
 function leadScore(c: AngleCandidate, used: UsedLeads): number {
-  // A lead built on something the student did beats one built on a stated interest.
-  let v = c.activityId ? c.score : 0.4 * c.score;
+  let v = c.score * leadWeight(c);
   if (used.keys.has(c.key)) v *= 0.01;
   if (c.activityId && used.activities.has(c.activityId)) v *= 0.55;
   if (used.themes.has(c.theme)) v *= 0.75;
   return v;
 }
 
-/** Lead first, then one or two more; the rest are kept as options for cross-school coordination. */
+const sharesFacts = (a: Pick<AngleCandidate, "factIds">, taken: Set<string>) => a.factIds.some((id) => taken.has(id));
+
+/** Lead first, then one or two more that share no detail with it; the rest are kept as options for cross-school coordination. */
 export function chooseAngles(cands: AngleCandidate[], used: UsedLeads): { shown: AngleCandidate[]; options: AngleCandidate[] } {
   if (cands.length === 0) return { shown: [], options: [] };
   const byLead = [...cands].sort((a, b) => leadScore(b, used) - leadScore(a, used) || b.score - a.score || a.key.localeCompare(b.key));
   const lead = byLead[0];
   const shown = [lead];
+  const taken = new Set(lead.factIds);
   const rest = cands.filter((c) => c !== lead);
-  while (shown.length < 3 && rest.length > 0) {
-    const distinct = (c: AngleCandidate) =>
-      (!c.activityId || !shown.some((s) => s.activityId === c.activityId)) && !shown.some((s) => s.theme === c.theme);
+  for (;;) {
+    if (shown.length >= 3) break;
+    const sameActivity = (c: AngleCandidate) => c.activityId != null && shown.some((s) => s.activityId === c.activityId);
+    const sameTheme = (c: AngleCandidate) => shown.some((s) => s.theme === c.theme);
     const score2 = (c: AngleCandidate) => {
-      let v = c.activityId ? c.score : 0.8 * c.score;
-      if (!distinct(c)) v *= 0.35;
+      let v = c.score * (c.activityId ? 1 : 0.8) * (c.academic === false ? 0.7 : 1);
+      if (sameActivity(c)) v *= 0.4;
+      if (sameTheme(c)) v *= 0.5;
       if (used.keys.has(c.key)) v *= 0.8;
       return v;
     };
-    rest.sort((a, b) => score2(b) - score2(a) || b.score - a.score || a.key.localeCompare(b.key));
-    const next = rest[0];
+    const eligible = rest.filter((c) => !sharesFacts(c, taken) && !(sameActivity(c) && sameTheme(c)));
+    if (eligible.length === 0) break;
+    eligible.sort((a, b) => score2(b) - score2(a) || b.score - a.score || a.key.localeCompare(b.key));
+    const next = eligible[0];
     // A third angle must add a new direction and carry some weight.
-    if (shown.length >= 2 && (score2(next) < 0.3 * lead.score || !distinct(next))) break;
+    if (shown.length >= 2 && (score2(next) < 0.3 * lead.score || sameActivity(next) || sameTheme(next))) break;
     shown.push(next);
-    rest.splice(0, 1);
+    for (const id of next.factIds) taken.add(id);
+    rest.splice(rest.indexOf(next), 1);
   }
   // Alternates for cross-school coordination: the best angle for every activity
   // not already shown (so another school's lead never leaves this one stuck), then the strongest rest.
@@ -259,11 +399,11 @@ export function chooseAngles(cands: AngleCandidate[], used: UsedLeads): { shown:
       options.push(c);
     }
   }
-  for (const c of rest) if (options.length < 8 && !options.includes(c)) options.push(c);
-  return { shown, options: options.slice(0, 10) };
+  for (const c of rest) if (options.length < 12 && !options.includes(c)) options.push(c);
+  return { shown, options: options.slice(0, 14) };
 }
 
-export function toEssayAngle(c: AngleCandidate, isLead: boolean): EssayAngle {
+export function toEssayAngle(c: AngleCandidate, isLead: boolean): ScoredEssayAngle {
   return {
     key: c.key,
     line: c.line,
@@ -271,5 +411,7 @@ export function toEssayAngle(c: AngleCandidate, isLead: boolean): EssayAngle {
     activityIds: c.activityId ? [c.activityId] : [],
     themes: [...c.themes],
     isLead,
+    strength: Math.round(c.score * 10_000) / 10_000,
+    academic: c.academic !== false,
   };
 }

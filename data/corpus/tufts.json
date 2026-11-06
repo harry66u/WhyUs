@@ -1,7 +1,2054 @@
 {
   "schoolId": "tufts",
   "term": "2026-fall",
-  "builtAt": "",
-  "builtBy": "",
-  "facts": []
+  "builtAt": "2026-11-06",
+  "builtBy": "research-agent",
+  "facts": [
+    {
+      "id": "tufts:allen-discovery-center-at-tufts-universi:c092ac",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "center",
+      "title": "Allen Discovery Center at Tufts University",
+      "nameOnPage": "Allen Discovery Center at Tufts University",
+      "summary": "A research center led by Michael Levin that studies how groups of cells build and repair complex anatomies, with researchers from biology, computer science, and engineering.",
+      "hook": "studies how groups of cells build and repair anatomy, bridging biology, computer science, and engineering",
+      "quote": "The Allen Discovery Center at Tufts University is a center for fundamental research on the mechanisms and algorithms by which groups of cells build and repair complex anatomies. ... Led by Michael Levin, the team is comprised of researchers with expertise in biology, computer science, and engineering",
+      "sourceUrl": "https://allencenter.tufts.edu/",
+      "sourceTitle": "Home - Allen Discovery Center at Tufts UniversityAllen Discovery Center at Tufts University",
+      "themes": [
+        "biology",
+        "computer-science"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Well-known research center for biology-minded applicants.",
+      "people": [
+        "Michael Levin"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:28.976Z"
+      }
+    },
+    {
+      "id": "tufts:center-for-engineering-education-and-out:62f844",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "center",
+      "title": "Center for Engineering Education and Outreach (CEEO)",
+      "nameOnPage": "Center for Engineering Education and Outreach",
+      "summary": "An interdisciplinary center in the School of Engineering where engineering, education, child development, and computer science researchers develop K-12 through college engineering education tools.",
+      "hook": "develops engineering education research and tools for learners from kindergarten through college",
+      "quote": "The Center for Engineering Education and Outreach is an interdisciplinary center dedicated to creating the next generation of problem solvers, kindergarten through college, through engineering education. Housed within the School of Engineering, Tufts CEEO is home to students, staff, postdoctoral fellows, and faculty from engineering, education, child development, and computer science who collaborate on educational research and educational tool and technology development.",
+      "sourceUrl": "https://engineering.tufts.edu/research/centers-and-institutes",
+      "sourceTitle": "Centers and Institutes | School of Engineering",
+      "themes": [
+        "education",
+        "engineering-design",
+        "youth",
+        "computer-science",
+        "interdisciplinary"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Well-known Tufts center for engineering education.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:28.734Z"
+      }
+    },
+    {
+      "id": "tufts:derby-entrepreneurship-center:a9ce10",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "center",
+      "title": "Derby Entrepreneurship Center",
+      "nameOnPage": "Derby Entrepreneurship Center",
+      "summary": "Tufts' entrepreneurship center, which offers academic programs, hands-on experiences, and equity-free funding to help students turn ideas into action.",
+      "hook": "offers entrepreneurship academic programs, hands-on experiences, and equity-free funding for student ideas",
+      "quote": "The award-winning Derby Entrepreneurship Center is where entrepreneurial leaders bring ideas to life at Tufts. We do this through academic programs, hands-on experiences, and equity-free funding to transform ideas into action.",
+      "sourceUrl": "https://derbyecenter.tufts.edu/",
+      "sourceTitle": "Derby Entrepreneurship Center - Derby Entrepreneurship Center at Tufts",
+      "themes": [
+        "entrepreneurship"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Tufts' main entrepreneurship hub, familiar to business-minded applicants.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:28.723Z"
+      }
+    },
+    {
+      "id": "tufts:jonathan-m-tisch-college-of-civic-life:e2a98c",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "center",
+      "title": "Jonathan M. Tisch College of Civic Life",
+      "nameOnPage": "Jonathan M. Tisch College of Civic Life",
+      "summary": "Tufts' university-wide college for civic life, which studies and promotes the civic and political engagement of young people at Tufts, in local communities, and in democracy.",
+      "hook": "connects students to civic and political engagement on campus, in nearby communities, and in democracy",
+      "quote": "The only university-wide college of its kind, the Jonathan M. Tisch College of Civic Life studies and promotes the civic and political engagement of young people at Tufts University, in our communities, and in our democracy.",
+      "sourceUrl": "https://tischcollege.tufts.edu/about/vision-mission",
+      "sourceTitle": "Vision & Mission | Jonathan M. Tisch College of Civic Life",
+      "themes": [
+        "community-engagement",
+        "political-science",
+        "youth"
+      ],
+      "commonness": "common",
+      "commonnessReason": "Tufts' signature civic engagement college, featured throughout admissions materials.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:28.716Z"
+      }
+    },
+    {
+      "id": "tufts:tufts-latinx-center:9cedcb",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "center",
+      "title": "Tufts Latinx Center",
+      "nameOnPage": "Latinx Center",
+      "summary": "Founded in 1993, the Latinx Center is a space and resource where Tufts students and community members gather, share experiences, and support Latinx identities.",
+      "hook": "gives students a space to gather, share experiences, and support Latinx identities",
+      "quote": "The Tufts Latinx Center was founded in October 1993 as a space and resource for Tufts University students and community members to gather, learn, share experiences, support and appreciate Latinx identities.",
+      "sourceUrl": "https://students.tufts.edu/division-student-diversity-and-inclusion/communities/latinx-center",
+      "sourceTitle": "Latinx Center | AS&E Students",
+      "themes": [
+        "latin-america",
+        "cultural-identity"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:28.733Z"
+      }
+    },
+    {
+      "id": "tufts:tufts-university-bloom-center:064565",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "center",
+      "title": "Tufts University BLOOM Center",
+      "nameOnPage": "BLOOM Center",
+      "summary": "The BLOOM Center, built on the former FIRST Resource Center and Center for STEM Diversity, centers first-generation and high-need students navigating college or STEM, while welcoming all undergraduates.",
+      "hook": "supports first-generation and high-need students navigating college or STEM without a roadmap",
+      "quote": "Building on the legacies of the FIRST Resource Center and the Center for STEM Diversity, BLOOM centers the experiences of those who are first-generation, high-financial need, and/or navigating college and/or STEM without a clear roadmap, while welcoming undergraduate students from all backgrounds.",
+      "sourceUrl": "https://students.tufts.edu/division-student-diversity-and-inclusion/communities/bloom-center",
+      "sourceTitle": "BLOOM Center | AS&E Students",
+      "themes": [
+        "first-gen",
+        "finance"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "First-generation support center; comparable offices exist at most schools.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:28.830Z"
+      }
+    },
+    {
+      "id": "tufts:ec-132-economics-of-energy-markets:2b6424",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "course",
+      "title": "EC 132: Economics of Energy Markets",
+      "nameOnPage": "Economics of Energy Markets",
+      "summary": "An economics course analyzing energy markets and energy policy, including depletable resources, energy externalities, market power, climate change, and energy security.",
+      "hook": "analyzes energy markets and policy, from energy externalities to climate change and energy security",
+      "quote": "EC 132 Economics of Energy Markets. Analysis of energy markets and policy issues arising from our production and consumption of energy. Topics considered include the theory of depletable resources, measurement of energy externalities, market power in energy production, climate change and energy security.",
+      "sourceUrl": "https://as.tufts.edu/economics/academics/courses",
+      "sourceTitle": "Courses | Department of Economics",
+      "themes": [
+        "energy",
+        "economics",
+        "climate",
+        "environmental-policy",
+        "public-policy"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:29.162Z"
+      }
+    },
+    {
+      "id": "tufts:ecs-0055-sea-level-change-in-new-england:e129a6",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "course",
+      "title": "ECS 0055: Sea Level Change in New England",
+      "nameOnPage": "Sea Level Change in New England",
+      "summary": "An Earth and Climate Sciences course in which students do fieldwork to collect coastal sediment and run lab analyses that generate original data on past sea-level change.",
+      "hook": "sends students into the field to collect coastal sediment and generate original sea-level data",
+      "quote": "ECS 0055 Sea Level Change in New England. Patterns and causes of sea-level change during the past ~5000 years through hands-on research. Fieldwork to collect coastal sediment and complete laboratory analysis to generate original proxy data.",
+      "sourceUrl": "https://as.tufts.edu/ecs/academics/courses",
+      "sourceTitle": "Courses | Department of Earth and Climate Sciences",
+      "themes": [
+        "climate",
+        "fieldwork",
+        "marine",
+        "earth-science"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:29.215Z"
+      }
+    },
+    {
+      "id": "tufts:en1-section-06-equitable-and-inclusive-c:c39a4e",
+      "schoolId": "tufts",
+      "unitIds": [
+        "engineering"
+      ],
+      "kind": "course",
+      "title": "EN1 Section 06: Equitable and Inclusive Civil Infrastructure",
+      "nameOnPage": "Equitable and Inclusive Civil Infrastructure",
+      "summary": "A Fall 2026 EN1 engineering section covering the technical and professional sides of transportation, water, energy, and waste infrastructure, with a focus on equitable and inclusive development.",
+      "hook": "introduces transportation, water, energy, and waste infrastructure with a focus on equitable, inclusive development",
+      "quote": "EN1 Sections for Fall 2026: ... This course introduces civil infrastructure; with a focus on transportation, water, energy, and waste management components. Both the technical and professional aspects of these components will be explored. In addition, the course focuses on concepts of equitable and inclusive development of infrastructure, whether in the creation of new or in the renovation of existing elements.",
+      "sourceUrl": "https://sites.tufts.edu/soefirstyear/en1/en1-fall-2026/",
+      "sourceTitle": "EN1 Fall 2026 – School of Engineering (SOE) First Year Information",
+      "themes": [
+        "civil-engineering",
+        "water",
+        "energy",
+        "transportation"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Chelsea Andrews"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:29.285Z"
+      }
+    },
+    {
+      "id": "tufts:en1-section-19-wind-energy-extreme-engin:5c167a",
+      "schoolId": "tufts",
+      "unitIds": [
+        "engineering"
+      ],
+      "kind": "course",
+      "title": "EN1 Section 19: Wind Energy: Extreme Engineering & Societal Impacts",
+      "nameOnPage": "Wind Energy: Extreme Engineering & Societal Impacts",
+      "summary": "A Fall 2026 EN1 engineering section on the physics, engineering challenges, and societal impact of wind energy, including climate change, economics, energy policy, and energy justice.",
+      "hook": "pairs wind energy physics and engineering with climate change, energy policy, and energy justice",
+      "quote": "EN1 Sections for Fall 2026: ... This course will provide a first look at the physics, engineering challenges, and societal impact of wind energy. ... Topics on Societal Impacts will include climate change, economics, and energy policy, as well as energy justice and environmental impacts.",
+      "sourceUrl": "https://sites.tufts.edu/soefirstyear/en1/en1-fall-2026/",
+      "sourceTitle": "EN1 Fall 2026 – School of Engineering (SOE) First Year Information",
+      "themes": [
+        "energy",
+        "climate",
+        "environmental-policy",
+        "physics",
+        "economics",
+        "public-policy"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Dan Kuchma"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:29.285Z"
+      }
+    },
+    {
+      "id": "tufts:en1-section-28-cutting-your-first-vinyl:94b1e1",
+      "schoolId": "tufts",
+      "unitIds": [
+        "engineering"
+      ],
+      "kind": "course",
+      "title": "EN1 Section 28: Cutting Your First Vinyl Record",
+      "nameOnPage": "Cutting Your First Vinyl Record",
+      "summary": "A Spring 2027 EN1 engineering section in which students build a musical instrument, compose and record an original piece, and cut a 45rpm vinyl record.",
+      "hook": "has students build an instrument, record an original piece, and cut a 45rpm vinyl record",
+      "quote": "EN1 Sections (Spring 2027): ... Learn the science, engineering, and art of music production from the ground up, including building your own musical instrument, composing an original piece, recording and post-production digital processing, and finally cutting a 45rpm vinyl record.",
+      "sourceUrl": "https://sites.tufts.edu/soefirstyear/en1/en1spring2027/",
+      "sourceTitle": "EN1 Spring 2027 – School of Engineering (SOE) First Year Information",
+      "themes": [
+        "music",
+        "making",
+        "engineering-design"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Chris Rogers"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:29.321Z"
+      }
+    },
+    {
+      "id": "tufts:gis-0101-introduction-to-gis:056a39",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "course",
+      "title": "GIS 0101: Introduction to GIS",
+      "nameOnPage": "Introduction to GIS",
+      "summary": "A course (cross-listed as ENV 0107) that builds a foundation in GIS data, cartographic visualization, and basic spatial analysis, applied to term projects in each student's field.",
+      "hook": "teaches GIS data management, map design, and spatial analysis through a term project in the student's field",
+      "quote": "GIS 0101-01/ENV 0107-01 Introduction to GIS. (3 Credits) Broad foundation of Geographic Information Systems theory, capabilities, technology, and applications. Topics include GIS data discovery, data structure and management; principles of cartographic visualization; and basic spatial analysis and modeling. Assignments concentrate on applying concepts covered in lectures and class exercises to term projects in each student's fields of interest.",
+      "sourceUrl": "https://as.tufts.edu/uep/academics/courses",
+      "sourceTitle": "Courses | Department of Urban and Environmental Policy and Planning",
+      "themes": [
+        "gis-mapping",
+        "data-science"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:29.441Z"
+      }
+    },
+    {
+      "id": "tufts:mus-0071-jazz-improvisation-ensemble:67a8be",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "course",
+      "title": "MUS 0071: Jazz Improvisation Ensemble",
+      "nameOnPage": "Jazz Improvisation Ensemble",
+      "summary": "A performance course on jazz improvisation in small combo settings, covering blues and AABA forms, turnarounds, phrasing, scale and chord relationships, and rhythmic pulse.",
+      "hook": "builds jazz improvisation skills in small combo settings",
+      "quote": "MUS 0071 Jazz Improvisation Ensemble. Focus on a practical knowledge of jazz improvisation in small combo settings; includes blues and AABA structures, turnarounds, ... phrasing, scale and chord relationships, and rhythmic pulse.",
+      "sourceUrl": "https://as.tufts.edu/music/academics/courses",
+      "sourceTitle": "Courses | Department of Music",
+      "themes": [
+        "jazz",
+        "music"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:29.641Z"
+      }
+    },
+    {
+      "id": "tufts:mus-0141-electronic-musical-instrument-d:0d3f7e",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "course",
+      "title": "MUS 0141: Electronic Musical Instrument Design",
+      "nameOnPage": "Electronic Musical Instrument Design",
+      "summary": "A music engineering course (cross-listed as ES 95) in which students design and build electronic instruments and controllers with sensors that respond to touch, movement, and wind pressure.",
+      "hook": "has students build electronic instruments with sensors that respond to touch, movement, and breath",
+      "quote": "MUS 0141 Electronic Musical Instrument Design. (Cross-listed as ES 95.) Non-standard electronic musical instruments or \"controllers,\" incorporating sensors that respond to touch, position, movement, finger pressure, wind pressure, and other human factors ... Designing and building original systems using common materials and object-oriented music-specific programming languages and software-based synthesis.",
+      "sourceUrl": "https://as.tufts.edu/music/academics/courses",
+      "sourceTitle": "Courses | Department of Music",
+      "themes": [
+        "sensors",
+        "music",
+        "electrical-engineering",
+        "engineering-design",
+        "computer-science"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:29.641Z"
+      }
+    },
+    {
+      "id": "tufts:mus-0148-boston-soundscapes-and-musical:c05c54",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "course",
+      "title": "MUS 0148: Boston Soundscapes and Musical Communities",
+      "nameOnPage": "Boston Soundscapes and Musical Communities",
+      "summary": "A music course on how Boston residents and institutions build ideas of home and community through music, in which the class develops a collaborative ArcGIS StoryMap of public musical life in the area.",
+      "hook": "maps Boston's public musical life in a collaborative ArcGIS StoryMap",
+      "quote": "MUS 0148 Boston Soundscapes and Musical Communities. Explores the soundscapes of Boston and Greater Boston and how residents and institutions construct ideas of home and community through music. ... Through a semester-long, library- supported research project, a collaborative ArcGIS StoryMap documenting public musical life in the Boston area is developed.",
+      "sourceUrl": "https://as.tufts.edu/music/academics/courses",
+      "sourceTitle": "Courses | Department of Music",
+      "themes": [
+        "music",
+        "cities",
+        "gis-mapping"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:29.641Z"
+      }
+    },
+    {
+      "id": "tufts:spn-0128-medical-spanish:842ba6",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "course",
+      "title": "SPN 0128: Medical Spanish",
+      "nameOnPage": "Medical Spanish",
+      "summary": "A Spanish course on the practice of medical interpretation, building communication, ethics, and medical vocabulary skills with practice interpreting in a simulated medical setting.",
+      "hook": "trains students to interpret in Spanish in a simulated medical setting",
+      "quote": "SPN 0128 Medical Spanish. This course provides an overview of the practice of medical interpretation in Spanish. Students will build their skills in communications, ethics, and medical vocabulary while exploring cultural and advocacy questions. It offers students an opportunity to practice interpretation in a simulated medical setting.",
+      "sourceUrl": "https://as.tufts.edu/romancestudies/academics/courses/spanish-program-courses",
+      "sourceTitle": "Spanish Program Courses | Department of Romance Studies",
+      "themes": [
+        "language-access",
+        "medicine",
+        "languages",
+        "philosophy",
+        "social-justice"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:30.657Z"
+      }
+    },
+    {
+      "id": "tufts:spn-0146-spanish-in-the-community:4feb56",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "course",
+      "title": "SPN 0146: Spanish in the Community",
+      "nameOnPage": "Spanish In The Community",
+      "summary": "A Spanish course that pairs study of Hispanic cultures with at least four hours a week of volunteer work in bilingual settings with organizations serving Latino communities.",
+      "hook": "pairs advanced Spanish with weekly bilingual volunteer work for organizations serving Latino communities",
+      "quote": "SPN 0146 Spanish In The Community. Application of academic study of Spanish language and Hispanic cultures to volunteer work in bilingual situations with organizations that serve Latino communities. ... Minimum of four hours of volunteer work per week.",
+      "sourceUrl": "https://as.tufts.edu/romancestudies/academics/courses/spanish-program-courses",
+      "sourceTitle": "Spanish Program Courses | Department of Romance Studies",
+      "themes": [
+        "language-access",
+        "community-engagement",
+        "latin-america",
+        "languages"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:30.657Z"
+      }
+    },
+    {
+      "id": "tufts:uep-0094-environmental-policy-planning-a:c3e0bb",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "course",
+      "title": "UEP 0094: Environmental Policy, Planning and Politics",
+      "nameOnPage": "Environmental Policy, Planning and Politics",
+      "summary": "A course (cross-listed as ENV 0094) built around simulated environmental conflicts that end in policy forums where student teams represent advocates, legislators, agencies, and corporations.",
+      "hook": "has student teams argue simulated environmental conflicts in policy forums as advocates, legislators, and agencies",
+      "quote": "UEP/ENV 0094-01 Environmental Policy, Planning and Politics. (3 Credits) This course introduces students to the concepts and techniques central to environmental policy, including the important roles played by politics and planning. ... Structured around four varied case studies involving simulated environmental conflicts, each culminating in a \"policy forum\" consisting of presentations by student teams who represent specific interests (e.g., environmental advocates, legislators, agencies and corporations).",
+      "sourceUrl": "https://as.tufts.edu/uep/academics/courses",
+      "sourceTitle": "Courses | Department of Urban and Environmental Policy and Planning",
+      "themes": [
+        "environmental-policy",
+        "debate",
+        "public-policy",
+        "political-science"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:29.441Z"
+      }
+    },
+    {
+      "id": "tufts:nolop-fast-facility-makerspace:5a3912",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "facility",
+      "title": "Nolop FAST Facility Makerspace",
+      "nameOnPage": "Nolop FAST Facility Makerspace",
+      "summary": "A makerspace open to all Tufts students where staff train students on a large collection of tools and support a community of makers; no experience is needed.",
+      "hook": "trains any student to use a large collection of fabrication tools, with no experience needed",
+      "quote": "The Nolop Fast Lab is a makerspace open to all students at Tufts University. ... Nolop FAST Facility Makerspace is a creative space for everyone at Tufts University. Staff help students build cool stuff by providing a large collection of well-maintained tools, training students to use those tools safely, and nourishing a community of makers. Everyone is welcome; no experience necessary.",
+      "sourceUrl": "https://engineering.tufts.edu/about/support-school-engineering/nolop-fast-facility-makerspace",
+      "sourceTitle": "Nolop FAST Facility Makerspace | School of Engineering",
+      "themes": [
+        "making",
+        "engineering-design"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Tufts' main makerspace, often mentioned by engineering applicants.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:30.665Z"
+      }
+    },
+    {
+      "id": "tufts:perry-and-marty-granoff-music-center:2bc4f8",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "facility",
+      "title": "Perry and Marty Granoff Music Center",
+      "nameOnPage": "Granoff Music Center",
+      "summary": "Home of the Tufts Department of Music and its 300-seat Distler Performance Hall, the center for musical activity on the Medford campus.",
+      "hook": "houses the Music Department and the 300-seat Distler Performance Hall",
+      "quote": "Opened in February 2007, The Perry and Marty Granoff Music Center is home to the Tufts Department of Music and is the focal point for all musical activities on the Medford campus. ... The crown jewel of the $27 million building is the 300-seat Distler Performance Hall, an acoustically separate \"box-within-a-box\" that was designed to be a showcase for live acoustic performances.",
+      "sourceUrl": "https://as.tufts.edu/music/about/granoff-music-center",
+      "sourceTitle": "Granoff Music Center | Department of Music",
+      "themes": [
+        "music"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Main music building that music applicants often mention.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:30.730Z"
+      }
+    },
+    {
+      "id": "tufts:tufts-data-lab:75aa7c",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "facility",
+      "title": "Tufts Data Lab",
+      "nameOnPage": "Tufts Data Lab",
+      "summary": "A teaching and research computing lab, formerly the GIS Center, that supports data analysis and visualization for geospatial and non-geospatial work across all Tufts campuses.",
+      "hook": "supports student data analysis and visualization for mapping and other projects",
+      "quote": "Welcome to Tufts Data Lab (formerly known as the GIS Center). The Data Lab is a new teaching and research computing lab designed to foster collaboration and innovation across all campuses and departments. The Data Lab provides methodological and technological service and support for data reference, analysis, and visualization for both geospatial and non-geospatial applications.",
+      "sourceUrl": "https://sites.tufts.edu/gis/gis-center/",
+      "sourceTitle": "The Data Lab – GIS at Tufts",
+      "themes": [
+        "gis-mapping",
+        "data-science",
+        "computer-science",
+        "education"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:30.992Z"
+      }
+    },
+    {
+      "id": "tufts:deborah-sunter:34db27",
+      "schoolId": "tufts",
+      "unitIds": [
+        "engineering"
+      ],
+      "kind": "faculty",
+      "title": "Deborah Sunter",
+      "nameOnPage": "Deborah Sunter",
+      "summary": "Deborah Sunter uses computational modeling and data science to study how technology innovation and policy can improve environmental sustainability and energy justice.",
+      "hook": "models the interface of energy technology and policy for sustainability and energy justice",
+      "quote": "At Tufts University, she uses computational modeling and data science techniques to explore the interface of technology innovation and policy for improved environmental sustainability and energy justice.",
+      "sourceUrl": "https://engineering.tufts.edu/cee/people/faculty/deborah-sunter",
+      "sourceTitle": "Deborah Sunter | Department of Civil and Environmental Engineering",
+      "themes": [
+        "energy",
+        "environmental-policy",
+        "data-science",
+        "sustainability",
+        "computer-science",
+        "public-policy"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Deborah Sunter"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:30.992Z"
+      }
+    },
+    {
+      "id": "tufts:greses-perez:0a99b6",
+      "schoolId": "tufts",
+      "unitIds": [
+        "engineering"
+      ],
+      "kind": "faculty",
+      "title": "Greses Pérez",
+      "nameOnPage": "Greses Pérez",
+      "summary": "Greses Pérez's research examines how the language and cultural practices of communities relate to engineering practices, and she supports students who feel a cultural mismatch in engineering.",
+      "hook": "studies how the language and cultural practices of communities connect to engineering",
+      "quote": "Her scholarship is particularly focused on the relationship between the language and cultural practices of communities and engineering practices. Through her research, teaching, service and mentoring, she supports traditionally underrepresented students who experience a cultural mismatch between the ways of knowing and speaking in their communities and those in engineering.",
+      "sourceUrl": "https://engineering.tufts.edu/cee/people/faculty/greses-perez",
+      "sourceTitle": "Greses Pérez | Department of Civil and Environmental Engineering",
+      "themes": [
+        "languages",
+        "education",
+        "cultural-identity"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Greses Pérez"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:31.330Z"
+      }
+    },
+    {
+      "id": "tufts:neelakshi-hudda:8fb211",
+      "schoolId": "tufts",
+      "unitIds": [
+        "engineering"
+      ],
+      "kind": "faculty",
+      "title": "Neelakshi Hudda",
+      "nameOnPage": "Neelakshi Hudda",
+      "summary": "Neelakshi Hudda studies urban air pollution from transportation and leads ambient, indoor, and mobile monitoring work with city governments and community organizations.",
+      "hook": "leads mobile and indoor air monitoring of urban transportation pollution with cities and community groups",
+      "quote": "Dr. Hudda's main area of research is urban air pollution with a particular focus on transportation emissions. ... In her current role at Tufts, she leads the ambient, indoor and mobile monitoring activities for various federal grants and consulting works with city governments and community organizations",
+      "sourceUrl": "https://engineering.tufts.edu/cee/people/faculty/neelakshi-hudda",
+      "sourceTitle": "Neelakshi Hudda | Department of Civil and Environmental Engineering",
+      "themes": [
+        "sensors",
+        "cities",
+        "environmental-engineering",
+        "transportation",
+        "climate",
+        "business"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Neelakshi Hudda"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:32.075Z"
+      }
+    },
+    {
+      "id": "tufts:shan-jiang:fddff8",
+      "schoolId": "tufts",
+      "unitIds": [
+        "engineering"
+      ],
+      "kind": "faculty",
+      "title": "Shan Jiang",
+      "nameOnPage": "Shan Jiang",
+      "summary": "Shan Jiang's research applies big data analytics, spatial data science, and GIS to land use, transportation, and urban planning to design policies for sustainable, resilient, and healthy cities.",
+      "hook": "applies big data, spatial data science, and GIS to land use, transportation, and urban planning",
+      "quote": "Assistant Professor, Civil and Environmental Engineering ... Her research interests lie in the fields of Big Data Analytics, Spatial Data Science, Geographic Information Science, Computational Social Science, and the use of Information and Communication Technology (ICT) in Land Use, Transportation, and Urban Planning. Her work investigates the interactions of human activities and the built environment in global urbanization processes to design responsive policies for smart, sustainable, resilient and healthy cities.",
+      "sourceUrl": "https://engineering.tufts.edu/cee/people/faculty/shan-jiang",
+      "sourceTitle": "Shan Jiang | Department of Civil and Environmental Engineering",
+      "themes": [
+        "cities",
+        "gis-mapping",
+        "data-science",
+        "transportation",
+        "environmental-engineering",
+        "information",
+        "sustainability",
+        "computer-science",
+        "public-policy",
+        "global"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Shan Jiang"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:32.382Z"
+      }
+    },
+    {
+      "id": "tufts:wayne-chudyk:3e0d35",
+      "schoolId": "tufts",
+      "unitIds": [
+        "engineering"
+      ],
+      "kind": "faculty",
+      "title": "Wayne Chudyk",
+      "nameOnPage": "Wayne Chudyk",
+      "summary": "Wayne Chudyk's research covers fiber optic sensors, groundwater monitoring, and the treatment of drinking water and wastewater.",
+      "hook": "researches fiber optic sensors, groundwater monitoring, and drinking water and wastewater treatment",
+      "quote": "Wayne Chudyk's research interests include fiber optic sensors, ground water monitoring, and water treatment, both drinking water and wastewater.",
+      "sourceUrl": "https://engineering.tufts.edu/cee/people/faculty/wayne-chudyk",
+      "sourceTitle": "Wayne Chudyk | Department of Civil and Environmental Engineering",
+      "themes": [
+        "sensors",
+        "water",
+        "environmental-engineering"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Wayne Chudyk"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:32.904Z"
+      }
+    },
+    {
+      "id": "tufts:environmental-and-water-resources-engine:cf1f4b",
+      "schoolId": "tufts",
+      "unitIds": [
+        "engineering"
+      ],
+      "kind": "lab",
+      "title": "Environmental and Water Resources Engineering research group",
+      "nameOnPage": "Environmental and water resources engineering",
+      "summary": "Tufts CEE's environmental and water resources engineering area, whose faculty research and teach water quality engineering, hydrology and hydraulics, environmental field measurements, and water resources management.",
+      "hook": "lets students study and research water quality, hydrology, and environmental field measurements",
+      "quote": "Research in this area focuses on environmental science, as well as engineering and management aspects of water resources. Faculty conduct research in and teach classes on: environmental/water quality engineering; environmental hydrology and hydraulics; data analysis; environmental field measurements; land-use planning; geomorphology; hydrogeology; systems engineering; environmental economics; and water resources management.",
+      "sourceUrl": "https://engineering.tufts.edu/cee/research/environmental-and-water-resources-engineering",
+      "sourceTitle": "Environmental and water resources engineering | Department of Civil and Environmental Engineering",
+      "themes": [
+        "water",
+        "environmental-engineering",
+        "fieldwork",
+        "data-science",
+        "environmental-studies",
+        "economics"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "The department's core water research area, familiar to environmental engineering applicants.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:33.318Z"
+      }
+    },
+    {
+      "id": "tufts:human-robot-interaction-lab:5994c9",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "lab",
+      "title": "Human-Robot Interaction Lab",
+      "nameOnPage": "Human-Robot Interaction Lab",
+      "summary": "A Tufts lab studying how robots can meet the cognitive, affective, physical, and ethical demands of task-based interactions with people.",
+      "hook": "studies how robots can meet the cognitive and ethical demands of working with people",
+      "quote": "Robots are becoming part of every aspect of human societies. We seek to understand how they can best meet the various cognitive, affective, physical and, in particular, ethical demands that task-based interactions require.",
+      "sourceUrl": "https://hrilab.tufts.edu/",
+      "sourceTitle": "HRILab Tufts",
+      "themes": [
+        "robotics",
+        "ai",
+        "philosophy"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Known lab among robotics and AI applicants.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:33.901Z"
+      }
+    },
+    {
+      "id": "tufts:lamontagne-lab:7f9e25",
+      "schoolId": "tufts",
+      "unitIds": [
+        "engineering"
+      ],
+      "kind": "lab",
+      "title": "Lamontagne Lab",
+      "nameOnPage": "Lamontagne Lab",
+      "summary": "The Lamontagne Lab studies decision making for linked water, energy, and agriculture systems under uncertainty such as climate change, including hydrologic risk analysis and grid-scale power modeling.",
+      "hook": "models linked water, energy, and agriculture systems, including hydrologic risk under climate change",
+      "quote": "We aim to improve decision making for multisector systems confronting uncertainty, including climate change, population growth, and technological innovation. Our work takes an integrated, multi-sector approach that captures the linkages between water, energy generation, and agriculture. Current studies focus on hydrologic risk analysis, robust infrastructure decision making, grid-scale power systems modeling, and the economics of land use change.",
+      "sourceUrl": "https://sites.tufts.edu/systems/",
+      "sourceTitle": "Lamontagne Lab",
+      "themes": [
+        "water",
+        "climate",
+        "energy",
+        "civil-engineering",
+        "agriculture",
+        "economics"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Jonathan Lamontagne"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:33.704Z"
+      }
+    },
+    {
+      "id": "tufts:lantagne-group:1350b2",
+      "schoolId": "tufts",
+      "unitIds": [
+        "engineering"
+      ],
+      "kind": "lab",
+      "title": "Lantagne Group",
+      "nameOnPage": "Lantagne Group",
+      "summary": "The Lantagne Group works to reduce infectious disease by evaluating water, sanitation, and hygiene interventions in developing countries and emergencies through lab, field, and policy work.",
+      "hook": "evaluates water, sanitation, and hygiene interventions through lab testing, field evaluations, and policy work",
+      "quote": "The Lantagne Group seeks to reduce the burden of infectious diseases by investigating and evaluating the efficacy and effectiveness of water, sanitation, and hygiene interventions in developing countries and emergencies, through laboratory testing, field evaluations, and policy work.",
+      "sourceUrl": "https://engineering.tufts.edu/cee/people/faculty/daniele-lantagne",
+      "sourceTitle": "Daniele Lantagne | Department of Civil and Environmental Engineering",
+      "themes": [
+        "water",
+        "public-health",
+        "fieldwork",
+        "public-policy"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Daniele Lantagne"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:33.953Z"
+      }
+    },
+    {
+      "id": "tufts:mggg-redistricting-lab:34a9ed",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "lab",
+      "title": "MGGG Redistricting Lab",
+      "nameOnPage": "MGGG Redistricting Lab",
+      "summary": "A Tisch College-supported lab that applies geometry and computing to U.S. redistricting to address gerrymandering.",
+      "hook": "applies geometry and computing to redistricting maps to address gerrymandering",
+      "quote": "Supported by Tisch College, MGGG studies applications of geometry and computing to U.S. redistricting in order to tackle a fundamental threat to our democracy: gerrymandering.",
+      "sourceUrl": "https://tischcollege.tufts.edu/research-faculty/research-democracy/mggg-redistricting-lab",
+      "sourceTitle": "MGGG Redistricting Lab | Jonathan M. Tisch College of Civic Life",
+      "themes": [
+        "political-science",
+        "mathematics",
+        "gis-mapping",
+        "data-science",
+        "computer-science"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:34.088Z"
+      }
+    },
+    {
+      "id": "tufts:spearing-research-group:738259",
+      "schoolId": "tufts",
+      "unitIds": [
+        "engineering"
+      ],
+      "kind": "lab",
+      "title": "Spearing Research Group",
+      "nameOnPage": "Spearing Research Group",
+      "summary": "The Spearing Research Group studies infrastructure management during disruptions, public perceptions of the built environment, and the organizational conditions that spur technology adoption.",
+      "hook": "studies how communities experience infrastructure and what drives adoption of new technology",
+      "quote": "My research fosters resilient and sustainable communities by using systems approaches to study the interface between built, natural, and social systems, with the goal of improving the level of service communities receive from their infrastructure. My group works in three areas: 1) infrastructure management during disruptions, from pandemics to disasters; 2) public perceptions of and experiences with the built environment; 3) the organizational conditions that spur technology adoption.",
+      "sourceUrl": "https://sites.tufts.edu/spearing/",
+      "sourceTitle": "Spearing Research Group",
+      "themes": [
+        "civil-engineering",
+        "cities",
+        "sustainability"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Lauryn Spearing"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:34.516Z"
+      }
+    },
+    {
+      "id": "tufts:english-and-citizenship-classes-at-cores:087aae",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "location",
+      "title": "English and citizenship classes at CORES in Somerville",
+      "nameOnPage": "Committee for Refugees from El Salvador (CORES)",
+      "summary": "Tufts students teach English language and citizenship classes to immigrants at the Committee for Refugees from El Salvador (CORES) in Somerville.",
+      "hook": "lets students teach English and citizenship classes to immigrants in Somerville",
+      "quote": "Tufts students reach out to people around the country, around the world, and those right here in Medford and Somerville. ... Students provide English language and citizenship classes to immigrants at the Committee for Refugees from El Salvador (CORES) organization in Somerville",
+      "sourceUrl": "https://admissions.tufts.edu/discover-tufts/life-at-tufts/student-organizations/",
+      "sourceTitle": "Student Organizations | Tufts Admissions",
+      "themes": [
+        "immigration",
+        "language-access",
+        "community-engagement",
+        "latin-america"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:39.991Z"
+      }
+    },
+    {
+      "id": "tufts:minuteman-bikeway-mystic-lakes-and-middl:5e1a19",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "location",
+      "title": "Minuteman Bikeway, Mystic Lakes, and Middlesex Fells",
+      "nameOnPage": "Minuteman Bikeway",
+      "summary": "From nearby Davis Square, students can ride the 10-mile Minuteman Bikeway, and the Mystic Lakes and Middlesex Fells Reservation are also close to campus.",
+      "hook": "puts the 10-mile Minuteman Bikeway, the Mystic Lakes, and the Middlesex Fells within reach of campus",
+      "quote": "Head down to Davis Square and hop on the 10 mile Minuteman Bikeway, which passes through Arlington, Lexington, and Bedford. Other nearby destinations include the Mystic Lakes, the Middlesex Fells Reservation, and Assembly Row.",
+      "sourceUrl": "https://sustainability.tufts.edu/resources/transportation/biking-at-tufts/",
+      "sourceTitle": "Biking at Tufts - Office of Sustainability",
+      "themes": [
+        "cycling",
+        "outdoors",
+        "water"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:40.480Z"
+      }
+    },
+    {
+      "id": "tufts:somerville-community-partnerships:72e094",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "location",
+      "title": "Somerville community partnerships",
+      "nameOnPage": "Partners in Somerville",
+      "summary": "Half of Tufts' main campus is in Somerville, a city shaped by many waves of immigrants where more than 50 languages are spoken.",
+      "hook": "puts students next door to a city where more than 50 languages are spoken",
+      "quote": "Indeed, throughout the centuries Somerville has seen many waves of immigrants, and by 1930 it was the most densely populated city in the United States. ... Half of Tufts University’s main campus is located in Somerville. With a wealth of ethnic diversity, more than 50 different languages are spoken on the streets of Somerville, resulting in vibrant business centers and lively residential communities.",
+      "sourceUrl": "https://tischcollege.tufts.edu/community/community-partners/partners-somerville",
+      "sourceTitle": "Partners in Somerville | Jonathan M. Tisch College of Civic Life",
+      "themes": [
+        "community-engagement",
+        "immigration",
+        "languages",
+        "cities",
+        "business"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:39.857Z"
+      }
+    },
+    {
+      "id": "tufts:the-loj-in-woodstock-new-hampshire:eb0aff",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "location",
+      "title": "The Loj in Woodstock, New Hampshire",
+      "nameOnPage": "the Loj",
+      "summary": "The Tufts Mountain Club manages the Loj, a Tufts-owned property in Woodstock, New Hampshire, with easy access to the White Mountain National Forest.",
+      "hook": "gives students a Tufts-owned base for trips into the White Mountain National Forest",
+      "quote": "TMC manages the Loj - a Tufts-owned property in Woodstock, NH that provides students with easy access to the White Mountain National Forest and surrounding recreation areas.",
+      "sourceUrl": "https://students.tufts.edu/office-campus-life/outdoor-education/outdoor-education-programs",
+      "sourceTitle": "Outdoor Education Programs | AS&E Students",
+      "themes": [
+        "outdoors",
+        "ecology",
+        "fitness"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Known to outdoorsy applicants through the Tufts Mountain Club.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:40.328Z"
+      }
+    },
+    {
+      "id": "tufts:tufts-in-talloires-at-the-tufts-european:1ff897",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "location",
+      "title": "Tufts in Talloires at the Tufts European Center",
+      "nameOnPage": "Tufts in Talloires",
+      "summary": "At the Tufts European Center in Talloires, France, undergraduates can spend a six-week summer taking two credit-bearing courses chosen from Tufts undergraduate offerings.",
+      "hook": "lets students take two Tufts courses during a six-week summer in Talloires, France",
+      "quote": "The academic programs at the Tufts European Center in Talloires, provide students with a unique opportunity to gain a wide range of academic and personal skills in an extraordinary setting. ... For undergraduate students at Tufts and other universities, Tufts in Talloires is a six-week summer program that offers students the opportunity to take two credit-bearing courses, chosen from a wide selection of Tufts undergraduate offerings.",
+      "sourceUrl": "https://europeancenter.tufts.edu/academic-programs/",
+      "sourceTitle": "Academic Programs Overview - Tufts European Center",
+      "themes": [
+        "study-abroad",
+        "global"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Tufts' own European campus, featured by admissions.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:41.962Z"
+      }
+    },
+    {
+      "id": "tufts:ba-in-international-relations:797f6c",
+      "schoolId": "tufts",
+      "unitIds": [
+        "as"
+      ],
+      "kind": "major",
+      "title": "BA in International Relations",
+      "nameOnPage": "BA in International Relations",
+      "summary": "Tufts' International Relations major includes eight semesters of second-language training and lets students specialize through one of six concentrations.",
+      "hook": "combines international relations study with eight semesters of language training and a concentration",
+      "quote": "The IR curriculum, which includes eight semesters of secondary language training, is expressly designed to enrich, to challenge and to appeal to students with a broad range of interests and abilities. ... Students can tailor their education in International Relations through one of our six available concentrations in the program.",
+      "sourceUrl": "https://as.tufts.edu/ir/academics/undergraduate-program",
+      "sourceTitle": "Undergraduate Program | International Relations Program",
+      "themes": [
+        "international-relations",
+        "languages",
+        "education",
+        "global"
+      ],
+      "commonness": "common",
+      "commonnessReason": "One of Tufts' best-known undergraduate majors.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:40.999Z"
+      }
+    },
+    {
+      "id": "tufts:ba-in-theatre-dance-and-performance-stud:d2cad0",
+      "schoolId": "tufts",
+      "unitIds": [
+        "as"
+      ],
+      "kind": "major",
+      "title": "BA in Theatre, Dance, and Performance Studies",
+      "nameOnPage": "BA in Theatre, Dance, and Performance Studies",
+      "summary": "The Department of Theatre, Dance, and Performance Studies offers a BA in which students explore acting, choreography, dance, design, directing, filmmaking, playwriting, and screenwriting.",
+      "hook": "lets students explore acting, choreography, directing, filmmaking, and playwriting",
+      "quote": "Our undergraduate and graduate programs offer you opportunities to explore acting, choreography, dance, design, directing, dramatic literature and theory, performance studies, filmmaking, playwriting, and screenwriting. ... BA in Theatre, Dance, and Performance Studies",
+      "sourceUrl": "https://tdps.tufts.edu/",
+      "sourceTitle": "Homepage | Department of Theatre, Dance, and Performance Studies",
+      "themes": [
+        "theater",
+        "dance",
+        "film-media",
+        "creative-writing",
+        "literature"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "The main theater and dance major.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:42.396Z"
+      }
+    },
+    {
+      "id": "tufts:ba-bs-in-community-health:c49c3d",
+      "schoolId": "tufts",
+      "unitIds": [
+        "as"
+      ],
+      "kind": "major",
+      "title": "BA/BS in Community Health",
+      "nameOnPage": "BA/BS in Community Health",
+      "summary": "Tufts' Community Health major combines classes and field work to prepare students for graduate study or careers in public health, health policy, social work, health care, or medicine.",
+      "hook": "combines health policy classes with field work toward public health or medical careers",
+      "quote": "The BA/BS in Community Health combines classes and field work, and prepares students to continue further graduate studies, or pursue careers in health-related fields including but not limited to: public health, health policy, health economics, social work, health care or medicine.",
+      "sourceUrl": "https://as.tufts.edu/commhealth/academics/undergraduate-programs",
+      "sourceTitle": "Undergraduate Programs | Department of Community Health",
+      "themes": [
+        "public-health",
+        "medicine",
+        "fieldwork",
+        "economics",
+        "public-policy",
+        "career"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Distinctive major that pre-health applicants often find.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:41.961Z"
+      }
+    },
+    {
+      "id": "tufts:bachelor-of-fine-arts-at-smfa-at-tufts:e07e35",
+      "schoolId": "tufts",
+      "unitIds": [
+        "smfa"
+      ],
+      "kind": "major",
+      "title": "Bachelor of Fine Arts at SMFA at Tufts",
+      "nameOnPage": "Bachelor of Fine Arts",
+      "summary": "SMFA's BFA offers an art-focused education with an entirely elective open studio curriculum that students shape around their own artistic inquiry.",
+      "hook": "lets art students build an entirely elective studio curriculum around their own inquiry",
+      "quote": "Bachelor of Fine Arts – The BFA is designed for students who wish to have an art-focused education of their own making. The open studio curriculum is entirely elective—allowing you to curate courses based on your artistic inquiry.",
+      "sourceUrl": "https://as.tufts.edu/academics/smfa-tufts",
+      "sourceTitle": "SMFA at Tufts | School of Arts and Sciences",
+      "themes": [
+        "visual-arts",
+        "museums",
+        "education"
+      ],
+      "commonness": "common",
+      "commonnessReason": "The core degree SMFA applicants cite.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:42.007Z"
+      }
+    },
+    {
+      "id": "tufts:bachelor-of-science-in-environmental-eng:b3bcb5",
+      "schoolId": "tufts",
+      "unitIds": [
+        "engineering"
+      ],
+      "kind": "major",
+      "title": "Bachelor of Science in Environmental Engineering",
+      "nameOnPage": "Bachelor of Science in Environmental Engineering",
+      "summary": "Tufts' BS in Environmental Engineering covers treatment, risk assessment, pollution prevention, and environmental systems modeling across air, soil, and water, the department's traditional strength.",
+      "hook": "covers treatment, pollution prevention, and environmental systems modeling across air, soil, and water",
+      "quote": "The comprehensive view of environmental engineering comprising the program includes treatment; health, safety, and risk assessment; pollution prevention; modeling and simulation of environmental systems; and the design and operation of engineered works. All three environmental media are addressed: air, soil, and the traditional departmental strength in water.",
+      "sourceUrl": "https://engineering.tufts.edu/cee/current-students/undergraduate-program/majors/bachelor-science-environmental-engineering",
+      "sourceTitle": "Bachelor of Science in Environmental Engineering | Department of Civil and Environmental Engineering",
+      "themes": [
+        "environmental-engineering",
+        "water",
+        "agriculture"
+      ],
+      "commonness": "common",
+      "commonnessReason": "The major itself; nearly every Environmental Engineering applicant to Tufts names it.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:42.309Z"
+      }
+    },
+    {
+      "id": "tufts:minor-in-environmental-science-and-polic:45921b",
+      "schoolId": "tufts",
+      "unitIds": [
+        "engineering"
+      ],
+      "kind": "major",
+      "title": "Minor in Environmental Science and Policy",
+      "nameOnPage": "Minor in Environmental Science and Policy",
+      "summary": "An Environmental Studies minor open only to engineering majors that adds natural and social science coursework on the causes of and solutions to environmental sustainability problems.",
+      "hook": "lets engineering majors add natural and social science coursework on environmental sustainability problems",
+      "quote": "This minor is for engineering majors only and is designed to give them greater exposure to natural and social sciences, thereby deepening their understanding of the causes of and solutions to problems related to environmental sustainability.",
+      "sourceUrl": "https://as.tufts.edu/environmentalstudies/academics/undergraduate-programs/minor-environmental-science-and-policy",
+      "sourceTitle": "Minor in Environmental Science and Policy | Environmental Studies Program",
+      "themes": [
+        "environmental-policy",
+        "sustainability",
+        "environmental-studies",
+        "public-policy"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:42.359Z"
+      }
+    },
+    {
+      "id": "tufts:minor-in-music-engineering:83d4c5",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "major",
+      "title": "Minor in Music Engineering",
+      "nameOnPage": "Minor in Music Engineering",
+      "summary": "An interdisciplinary minor open to all undergraduates, run jointly by Music, Computer Science, Mechanical Engineering, and Electrical Engineering, with emphases in recording, electronic, and acoustic instrument design.",
+      "hook": "combines music and engineering through recording, electronic instrument design, or acoustic instrument design",
+      "quote": "This interdisciplinary minor is offered through the School of Engineering, but is open to all undergraduates. It is a joint effort of the Music, Computer Science, Mechanical Engineering, and Electrical Engineering departments. The minor is offered in three emphases: sound recording and production, electronic instrument design, and acoustic instrument design.",
+      "sourceUrl": "https://as.tufts.edu/music/academics/undergraduate-programs/minor-music-engineering",
+      "sourceTitle": "Minor in Music Engineering | Department of Music",
+      "themes": [
+        "music",
+        "electrical-engineering",
+        "engineering-design",
+        "mechanical-engineering",
+        "computer-science",
+        "interdisciplinary"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:42.466Z"
+      }
+    },
+    {
+      "id": "tufts:minor-in-public-health-engineering:b12ac7",
+      "schoolId": "tufts",
+      "unitIds": [
+        "as",
+        "engineering"
+      ],
+      "kind": "major",
+      "title": "Minor in Public Health Engineering",
+      "nameOnPage": "Minor in Public Health Engineering",
+      "summary": "A new five-course Civil and Environmental Engineering minor on engineering tools for population health, public health interventions, and civil infrastructure, open to Arts and Sciences and Engineering students.",
+      "hook": "teaches engineering tools for population health, public health interventions, and civil infrastructure",
+      "quote": "The Department of Civil and Environmental Engineering has launched a new five-course minor in Public Health Engineering. With a strong emphasis on real-world applications, students gain mastery over engineering tools related to population health, public health interventions, civil infrastructure, and more. The program welcomes students from the School of Arts and Sciences and the School of Engineering who are interested in strengthening their engineering skills to improve population health at scale.",
+      "sourceUrl": "https://engineering.tufts.edu/studentlife/new-programs-and-courses",
+      "sourceTitle": "New Programs and Courses | School of Engineering",
+      "themes": [
+        "public-health",
+        "environmental-engineering",
+        "civil-engineering"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:42.717Z"
+      }
+    },
+    {
+      "id": "tufts:minor-in-the-application-of-ai:7b0f6f",
+      "schoolId": "tufts",
+      "unitIds": [
+        "as",
+        "engineering"
+      ],
+      "kind": "major",
+      "title": "Minor in the Application of AI",
+      "nameOnPage": "Minor in the Application of AI",
+      "summary": "A new minor, available beginning Fall 2026, for students who want to understand how AI works and apply it within their own discipline rather than build core AI technologies.",
+      "hook": "teaches how AI works and how to apply it within a student's own discipline",
+      "quote": "The minor will be available beginning Fall 2026. The Minor in the Application of AI is for students who want to understand how AI works and how to apply AI within a disciplinary context, but not necessarily how to build new core AI technologies.",
+      "sourceUrl": "https://engineering.tufts.edu/cs/current-students/undergraduate/minor-application-ai",
+      "sourceTitle": "Minor in the Application of AI | Department of Computer Science",
+      "themes": [
+        "ai",
+        "computer-science"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:43.062Z"
+      }
+    },
+    {
+      "id": "tufts:american-society-of-civil-engineers-asce:e53219",
+      "schoolId": "tufts",
+      "unitIds": [
+        "engineering"
+      ],
+      "kind": "organization",
+      "title": "American Society of Civil Engineers (ASCE) Tufts student chapter",
+      "nameOnPage": "American Society of Civil Engineers (ASCE)",
+      "summary": "Tufts' ASCE student chapter connects civil engineering students with professional contacts and competes in the steel bridge and concrete canoe competitions.",
+      "hook": "builds entries for the steel bridge and concrete canoe competitions and hosts speakers and field trips",
+      "quote": "Tufts student chapter of the American Society of Civil Engineers helps civil engineering students create professional contacts and associations. Typical society activities include: participating in the steel bridge and concrete canoe competitions, hosting trivia nights, listening to invited speakers, and taking field trips.",
+      "sourceUrl": "https://engineering.tufts.edu/cee/community/student-organizations",
+      "sourceTitle": "Student organizations | Department of Civil and Environmental Engineering",
+      "themes": [
+        "civil-engineering",
+        "engineering-design",
+        "outdoors",
+        "fieldwork"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:43.510Z"
+      }
+    },
+    {
+      "id": "tufts:club-and-intramural-sports:ea71bf",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "organization",
+      "title": "Club and Intramural Sports",
+      "nameOnPage": "Club and Intramural Sports",
+      "summary": "Tufts' club and intramural sports offer an alternative to Division III varsity commitments, with popular club teams in fencing, soccer, Ultimate Frisbee, and quadball.",
+      "hook": "lets students compete in club or intramural sports without a varsity commitment",
+      "quote": "If you’re looking for a way to stay athletic (but aren’t ready to commit to Division III sports) Club and Intramural Sports can offer a good compromise. ... Some of Tufts’ most popular club sports include fencing, soccer, Ultimate Frisbee, and the Quadball team, the Tufflepuffs.",
+      "sourceUrl": "https://admissions.tufts.edu/discover-tufts/life-at-tufts/student-organizations/",
+      "sourceTitle": "Student Organizations | Tufts Admissions",
+      "themes": [
+        "athletics",
+        "fitness"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Standard recreation option at most schools.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:39.991Z"
+      }
+    },
+    {
+      "id": "tufts:leonard-carmichael-society:cad3ae",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "organization",
+      "title": "Leonard Carmichael Society",
+      "nameOnPage": "Leonard Carmichael Society",
+      "summary": "The largest student-run community service organization at Tufts, an umbrella for more than twenty service groups working in Medford, Somerville, and Greater Boston.",
+      "hook": "runs more than twenty student service groups working in Medford, Somerville, and Greater Boston",
+      "quote": "The Leonard Carmichael Society (LCS) is the largest student-run community service organization at Tufts University. LCS operates as an umbrella group for more than twenty service-oriented sub-groups. We also work alongside the Tisch College of Civic Life and our neighboring communities of Medford, Somerville, and Greater Boston to challenge students to adapt a meaningful view of service and become civically engaged with the world around them.",
+      "sourceUrl": "https://tischcollege.tufts.edu/community/student-groups/leonard-carmichael-society",
+      "sourceTitle": "Leonard Carmichael Society | Jonathan M. Tisch College of Civic Life",
+      "themes": [
+        "community-engagement"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Tufts' best-known service organization.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:43.570Z"
+      }
+    },
+    {
+      "id": "tufts:the-tufts-daily:0db24b",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "organization",
+      "title": "The Tufts Daily",
+      "nameOnPage": "Tufts Daily",
+      "summary": "Tufts' student newspaper; admissions notes Tufts is the smallest school with a daily student newspaper, alongside the Tufts Observer magazine and Zamboni humor publication.",
+      "hook": "publishes a daily student newspaper alongside other campus magazines",
+      "quote": "Publications include the Tufts Daily (Tufts is the smallest school with a daily student newspaper), the Tufts Observer (student magazine with long-form pieces and visual arts), Zamboni (Tufts’ equivalent of ‘The Onion’), and more.",
+      "sourceUrl": "https://admissions.tufts.edu/discover-tufts/life-at-tufts/student-organizations/",
+      "sourceTitle": "Student Organizations | Tufts Admissions",
+      "themes": [
+        "journalism",
+        "visual-arts"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "The main student newspaper; widely known on campus.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:39.991Z"
+      }
+    },
+    {
+      "id": "tufts:tufts-bikes:98d826",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "organization",
+      "title": "Tufts Bikes",
+      "nameOnPage": "Tufts Bikes",
+      "summary": "Tufts Bikes runs a free bikeshare for anyone with a Tufts ID and a fully equipped repair shop where its mechanics help riders fix their bikes for free.",
+      "hook": "runs a free bikeshare and a repair shop where Tufts Bikes mechanics help fix bikes for free",
+      "quote": "Tufts Bikes runs a free bikeshare available to anyone with a Tufts ID. ... Tufts Bikes has a fully equipped bike repair shop located in the garage of 28 Sawyer Ave. Bring in your bike during mechanic hours and a Tufts Bikes mechanic will help you fix it for free.",
+      "sourceUrl": "https://sustainability.tufts.edu/resources/transportation/biking-at-tufts/",
+      "sourceTitle": "Biking at Tufts - Office of Sustainability",
+      "themes": [
+        "cycling",
+        "making"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:40.480Z"
+      }
+    },
+    {
+      "id": "tufts:tufts-climate-action:6126ca",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "organization",
+      "title": "Tufts Climate Action",
+      "nameOnPage": "Tufts Climate Action",
+      "summary": "A student group committed to fighting climate change in solidarity with climate justice.",
+      "hook": "organizes students to fight climate change in solidarity with climate justice",
+      "quote": "Tufts Climate Action is committed to fighting climate change in solidarity with climate justice.",
+      "sourceUrl": "https://sustainability.tufts.edu/get-involved/students/student-organizations/",
+      "sourceTitle": "Get Involved: Student Organizations - Office of Sustainability",
+      "themes": [
+        "climate",
+        "environmental-justice",
+        "social-justice"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:43.612Z"
+      }
+    },
+    {
+      "id": "tufts:tufts-debate-society:45ee80",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "organization",
+      "title": "Tufts Debate Society",
+      "nameOnPage": "Debate Society",
+      "summary": "Tufts' debate team competes in APDA-style parliamentary debate and hosts an annual tournament on campus.",
+      "hook": "competes in APDA-style parliamentary debate and hosts an annual tournament on the Hill",
+      "quote": "Debate Society might be right for you. The team engages in APDA-style parliamentary debate and hosts an annual tournament on the Hill.",
+      "sourceUrl": "https://admissions.tufts.edu/discover-tufts/life-at-tufts/student-organizations/",
+      "sourceTitle": "Student Organizations | Tufts Admissions",
+      "themes": [
+        "debate"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:39.991Z"
+      }
+    },
+    {
+      "id": "tufts:tufts-engineers-without-borders:9d627a",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "organization",
+      "title": "Tufts Engineers Without Borders",
+      "nameOnPage": "Tufts Engineers Without Borders",
+      "summary": "A student-run chapter that brings liberal arts and engineering students together to design and implement sustainable engineering projects with partner communities.",
+      "hook": "brings liberal arts and engineering students together on sustainable projects with partner communities",
+      "quote": "Tufts Engineers Without Borders is a student-run group at Tufts University that designs and implements sustainable engineering projects in developing communities. Engineers Without Borders at Tufts is unique in that it brings together liberal arts and engineering students who collaborate to integrate the conceptual and technical strengths of both disciplines, thereby strengthening our chapter’s projects in the communities where we work.",
+      "sourceUrl": "https://sites.tufts.edu/ewb/",
+      "sourceTitle": "Tufts Engineers Without Borders",
+      "themes": [
+        "engineering-design",
+        "sustainability",
+        "community-engagement",
+        "global"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "A common engineering service club found at many schools.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:43.650Z"
+      }
+    },
+    {
+      "id": "tufts:tufts-jazz-orchestra-and-small-jazz-ense:f9add0",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "organization",
+      "title": "Tufts Jazz Orchestra and Small Jazz Ensembles",
+      "nameOnPage": "Jazz Orchestra and Small Jazz Ensembles",
+      "summary": "The Music Department's jazz orchestra and small jazz ensembles are open to the Tufts community and can be taken for credit or not.",
+      "hook": "lets students play in the jazz orchestra or a small jazz ensemble, for credit or not",
+      "quote": "All ensembles are open to the Tufts community and can be taken either for credit or for no credit. ... Tufts students perform a variety of instruments in the Tufts Jazz Orchestra. Jazz Orchestra and Small Jazz Ensembles",
+      "sourceUrl": "https://as.tufts.edu/music/academics/ensembles",
+      "sourceTitle": "Ensembles | Department of Music",
+      "themes": [
+        "jazz",
+        "music"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Standard jazz performance option many music applicants cite.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:43.712Z"
+      }
+    },
+    {
+      "id": "tufts:tufts-mock-trial:a7e06d",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "organization",
+      "title": "Tufts Mock Trial",
+      "nameOnPage": "Tufts Mock Trial",
+      "summary": "Tufts' mock trial team gives students a more structured, law-related alternative to debate.",
+      "hook": "offers structured, law-related competition for students interested in trial advocacy",
+      "quote": "If you’re looking for something a little more structured and law-related, try the Tufts Mock Trial team (routinely ranked among the top teams in the country).",
+      "sourceUrl": "https://admissions.tufts.edu/discover-tufts/life-at-tufts/student-organizations/",
+      "sourceTitle": "Student Organizations | Tufts Admissions",
+      "themes": [
+        "law",
+        "debate",
+        "social-justice"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:39.991Z"
+      }
+    },
+    {
+      "id": "tufts:tufts-mountain-club:e0a411",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "organization",
+      "title": "Tufts Mountain Club",
+      "nameOnPage": "Tufts Mountain Club",
+      "summary": "One of the oldest and largest student organizations at Tufts, offering free gear rentals, trips, transportation, and skill-building clinics so every student can get outdoors.",
+      "hook": "offers free gear rentals, trips, transportation, and skill clinics so any student can get outdoors",
+      "quote": "TMC is both one of the oldest and largest student organizations on campus. With its slogan of “Go Outside”, TMC creates pathways to outdoor access for every student at Tufts through free gear rentals, diverse trip opportunities, transportation options, skill building clinics, and more.",
+      "sourceUrl": "https://students.tufts.edu/office-campus-life/outdoor-education/outdoor-education-programs",
+      "sourceTitle": "Outdoor Education Programs | AS&E Students",
+      "themes": [
+        "outdoors",
+        "transportation"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Tufts' outing club; many outdoorsy applicants mention it.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:40.328Z"
+      }
+    },
+    {
+      "id": "tufts:tufts-robotics-club:350403",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "organization",
+      "title": "Tufts Robotics Club",
+      "nameOnPage": "Tufts Robotics Club",
+      "summary": "A student club founded in 2010 that teaches robotics through hands-on tutorials and projects and offers workshops and training with no prior experience required.",
+      "hook": "teaches robotics through hands-on tutorials and projects, with no prior experience required",
+      "quote": "Since its inception in 2010, The Tufts Robotics Club has aimed to bring together students who are interested in robotics and eager to learn and apply new engineering skills through hands-on tutorials and projects. ... As part of our mission, the club offers workshops and training for all members – no prior programming or robotics experience is required.",
+      "sourceUrl": "https://sites.tufts.edu/robotics/",
+      "sourceTitle": "Tufts Robotics Club",
+      "themes": [
+        "robotics",
+        "making",
+        "computer-science",
+        "education"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:43.774Z"
+      }
+    },
+    {
+      "id": "tufts:tufts-solar-vehicle-project:e82673",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "organization",
+      "title": "Tufts Solar Vehicle Project",
+      "nameOnPage": "Tufts Solar Vehicle Project",
+      "summary": "A student-initiated team that designs, builds, and races solar-powered vehicles to give members hands-on engineering experience in clean mobility.",
+      "hook": "designs, builds, and races solar-powered vehicles for hands-on clean mobility engineering",
+      "quote": "Tufts Solar Vehicle Project is a student-initiated organization that strives to provide real-world, hands-on engineering opportunities for members through designing, building, and racing high-performance solar-powered vehicles that drive innovation in clean mobility.",
+      "sourceUrl": "https://sustainability.tufts.edu/get-involved/students/student-organizations/",
+      "sourceTitle": "Get Involved: Student Organizations - Office of Sustainability",
+      "themes": [
+        "energy",
+        "engineering-design",
+        "transportation"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:43.612Z"
+      }
+    },
+    {
+      "id": "tufts:civicgreen:f90f18",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "program",
+      "title": "CivicGreen",
+      "nameOnPage": "CivicGreen",
+      "summary": "A collaborative project among scholars and practitioners to expand democratic and policy options for sustainable, resilient, and just U.S. responses to the climate crisis.",
+      "hook": "expands democratic and policy options for just U.S. responses to the climate crisis",
+      "quote": "CivicGreen is a collaborative project among scholars and practitioners to enrich our democratic imagination and to expand our policy options for sustainable, resilient, and just responses to climate crisis in the United States in the coming decades.",
+      "sourceUrl": "https://tischcollege.tufts.edu/research-faculty/research-democracy/civicgreen",
+      "sourceTitle": "CivicGreen | Jonathan M. Tisch College of Civic Life",
+      "themes": [
+        "climate",
+        "environmental-policy",
+        "political-science",
+        "sustainability",
+        "public-policy"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:44.556Z"
+      }
+    },
+    {
+      "id": "tufts:education-for-public-inquiry-and-interna:fa90da",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "program",
+      "title": "Education for Public Inquiry and International Citizenship (EPIIC)",
+      "nameOnPage": "Education for Public Inquiry and International Citizenship (EPIIC)",
+      "summary": "EPIIC is a multidisciplinary program whose curricula and projects prepare students for informed activity in their communities, locally, nationally, or globally.",
+      "hook": "prepares students for informed civic activity locally, nationally, or globally through multidisciplinary curricula and projects",
+      "quote": "EPIIC is a carefully integrated, multidisciplinary program. Through its innovative and rigorous curricula and projects, EPIIC prepares young people for informed activity in their communities, whether locally, nationally, or globally.",
+      "sourceUrl": "https://tischcollege.tufts.edu/programs-major/programs-undergraduates/institute-global-leadership",
+      "sourceTitle": "Institute for Global Leadership | Jonathan M. Tisch College of Civic Life",
+      "themes": [
+        "international-relations",
+        "global",
+        "interdisciplinary",
+        "education",
+        "youth"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Long-running Institute for Global Leadership program.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:44.619Z"
+      }
+    },
+    {
+      "id": "tufts:experimental-college-excollege:24266a",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "program",
+      "title": "Experimental College (ExCollege)",
+      "nameOnPage": "Experimental College",
+      "summary": "A Tufts department offering interdisciplinary undergraduate electives taught by visiting lecturers, where students can also design and teach courses and help choose the course list.",
+      "hook": "lets students take interdisciplinary electives and even design and teach their own courses",
+      "quote": "The ExCollege is a department at Tufts University that offers innovative undergraduate elective courses. We hire Visiting Lecturers with a range of perspectives and professional experience to teach interdisciplinary and interactive courses. ... At the ExCollege, students can design and teach courses, serve on our governing board, evaluate course proposals, interview prospective visiting lecturers, select courses to be offered, and more.",
+      "sourceUrl": "https://excollege.tufts.edu/",
+      "sourceTitle": "Homepage | Experimental College",
+      "themes": [
+        "interdisciplinary",
+        "education"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Distinctive Tufts institution that some applicants mention.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:45.210Z"
+      }
+    },
+    {
+      "id": "tufts:tisch-scholars:09a2eb",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "program",
+      "title": "Tisch Scholars",
+      "nameOnPage": "Tisch Scholars",
+      "summary": "A Tisch College leadership development program combining coursework, community-based learning, and reflection, with Scholars spending 8 hours a week on projects at a community placement.",
+      "hook": "pairs civic coursework with an 8-hour weekly placement at a local community organization",
+      "quote": "Tisch Scholars is a unique leadership development program that combines academic coursework, community-based learning, and critical reflection. ... Scholars spend 8 hours per week during the academic year engaged in projects to build capacity at their placement organization.",
+      "sourceUrl": "https://tischcollege.tufts.edu/programs-major/programs-undergraduates/tisch-scholars",
+      "sourceTitle": "Tisch Scholars | Jonathan M. Tisch College of Civic Life",
+      "themes": [
+        "community-engagement",
+        "leadership"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Tisch College's flagship undergraduate civic program.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:44.671Z"
+      }
+    },
+    {
+      "id": "tufts:tufts-civic-semester:2342a3",
+      "schoolId": "tufts",
+      "unitIds": [
+        "as"
+      ],
+      "kind": "program",
+      "title": "Tufts Civic Semester",
+      "nameOnPage": "Tufts Civic Semester",
+      "summary": "A first-semester program for incoming Arts and Sciences students that places small cohorts in Urubamba, Peru, or Chiang Mai, Thailand, to learn alongside local community organizations.",
+      "hook": "lets incoming Arts and Sciences students spend first semester learning with community groups in Peru or Thailand",
+      "quote": "Tisch College and Tufts University offer incoming students the opportunity to participate in the Tufts Civic Semester, a transformational first-semester program that combines academic and experiential learning with a focus on community engagement and social and environmental justice. Based in either Urubamba, Peru or Chiang Mai, Thailand, participants join a small cohort of 8-12 peers to create a living and learning community which engages deeply with important social issues through Tufts coursework and hands-on learning with local community organizations. ... Due to degree restrictions, only incoming students in the School of Arts & Sciences, not including BFA and SMFA combined degree students and participants in the BLAST program, are eligible to apply.",
+      "sourceUrl": "https://tischcollege.tufts.edu/programs-major/first-year-global-programs/tufts-civic-semester",
+      "sourceTitle": "Tufts Civic Semester | Jonathan M. Tisch College of Civic Life",
+      "themes": [
+        "community-engagement",
+        "study-abroad",
+        "latin-america",
+        "asia",
+        "first-year",
+        "environmental-justice"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Featured on the admissions study-abroad page.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:44.956Z"
+      }
+    },
+    {
+      "id": "tufts:tufts-global-education-study-abroad:d78bab",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "program",
+      "title": "Tufts Global Education study abroad",
+      "nameOnPage": "Tufts Global Education",
+      "summary": "More than 40 percent of Tufts undergraduates study abroad for a semester or year, through ten Tufts programs from Chile to Japan or nearly 200 pre-approved external programs.",
+      "hook": "sends students abroad through ten Tufts-run programs or nearly 200 pre-approved external programs",
+      "quote": "More than 40 percent of Tufts undergraduates participate in full-year or semester-long global education programs around the world. ... Students looking for a more immersive experience might spend a full semester or year abroad on one of Tufts' ten study abroad programs in Chile, China, France, Germany, Ghana, Hong Kong, Japan, London, Madrid, Oxford, or Paris or through one of nearly 200 pre-approved external programs.",
+      "sourceUrl": "https://admissions.tufts.edu/discover-tufts/academics/study-abroad/",
+      "sourceTitle": "Study Elsewhere | Tufts Admissions",
+      "themes": [
+        "study-abroad",
+        "global",
+        "asia",
+        "education"
+      ],
+      "commonness": "common",
+      "commonnessReason": "Study abroad is featured prominently by admissions.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:45.255Z"
+      }
+    },
+    {
+      "id": "tufts:tufts-new-ventures-competition:e3fff5",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "program",
+      "title": "Tufts New Ventures Competition",
+      "nameOnPage": "Tufts New Ventures Competition",
+      "summary": "Tufts' main venture competition, in which student-, faculty-, staff-, and alumni-led teams pitch new ventures in General, Social Impact, and Healthcare & Life Science tracks.",
+      "hook": "lets student teams pitch new ventures in general, social impact, or healthcare and life science tracks",
+      "quote": "The Tufts New Ventures Competition is the flagship venture competition at Tufts. Teams led by students, faculty, staff and recent alumni pitch their new ventures in three tracks: General, Social Impact, and Healthcare & Life Science.",
+      "sourceUrl": "https://derbyecenter.tufts.edu/competitions/newventurescompetition/",
+      "sourceTitle": "Tufts New Ventures Competition - Derby Entrepreneurship Center at Tufts",
+      "themes": [
+        "entrepreneurship",
+        "social-enterprise",
+        "medicine"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Tufts' best-known startup competition.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:45.467Z"
+      }
+    },
+    {
+      "id": "tufts:tufts-wilderness-orientation-two:09f5cc",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "program",
+      "title": "Tufts Wilderness Orientation (TWO)",
+      "nameOnPage": "Tufts Wilderness Orientation",
+      "summary": "Tufts' largest pre-orientation program, in which small groups of incoming first-years and two upperclass leaders go on hiking, canoeing, and trail crew trips.",
+      "hook": "starts college with a small-group hiking, canoeing, or trail crew trip led by upperclass students",
+      "quote": "As the largest pre-orientation program, TWO provides incoming first-years with a small group of peers led by 2 upperclassmen leaders that use hiking, canoeing, and trail crew trips to create a supportive network for the rest of the year.",
+      "sourceUrl": "https://students.tufts.edu/office-campus-life/outdoor-education/outdoor-education-programs",
+      "sourceTitle": "Outdoor Education Programs | AS&E Students",
+      "themes": [
+        "outdoors",
+        "first-year",
+        "athletics"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Popular pre-orientation trip; many schools have similar programs.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:40.328Z"
+      }
+    },
+    {
+      "id": "tufts:undergraduate-research-in-the-school-of:9e289c",
+      "schoolId": "tufts",
+      "unitIds": [
+        "engineering"
+      ],
+      "kind": "program",
+      "title": "Undergraduate Research in the School of Engineering",
+      "nameOnPage": "Summer Scholars Program",
+      "summary": "More than 60 percent of Tufts undergraduate engineers do independent research, and the engineering dean adds summer research funds in each engineering department.",
+      "hook": "puts most engineering undergraduates into independent research, with summer funding in every department",
+      "quote": "Research is at the heart of the engineering program at Tufts. More than 60 percent of Tufts undergraduate engineering students participate in independent research. ... The Dean of the School of Engineering provides additional funds to support undergraduate research each summer in each of the engineering departments.",
+      "sourceUrl": "https://engineering.tufts.edu/research/undergraduate-research",
+      "sourceTitle": "Undergraduate Research | School of Engineering",
+      "themes": [
+        "undergraduate-research"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "General research opportunity that many engineering applicants mention.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:45.648Z"
+      }
+    },
+    {
+      "id": "tufts:illumination-ceremony:624366",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "tradition",
+      "title": "Illumination Ceremony",
+      "nameOnPage": "Illumination Ceremony",
+      "summary": "Every incoming first-year lights a candle on the President's Lawn on their first night on campus, and the ceremony is repeated the night before graduation.",
+      "hook": "welcomes each first-year with a candle lighting that is repeated the night before graduation",
+      "quote": "To honor Charles Tufts, every incoming first-year student lights a candle on the President’s Lawn for their first night on campus. ... The candle lighting ceremony is repeated the night before graduation, and a few enterprising souls always save their first-year orientation candles to reuse four years later.",
+      "sourceUrl": "https://admissions.tufts.edu/discover-tufts/tufts-traditions/",
+      "sourceTitle": "Tufts Traditions | Tufts Admissions",
+      "themes": [
+        "first-year",
+        "history"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Listed among Tufts traditions by admissions.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:45.656Z"
+      }
+    },
+    {
+      "id": "tufts:jumbo-the-elephant:5bb69a",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "tradition",
+      "title": "Jumbo the Elephant",
+      "nameOnPage": "Jumbo the Elephant",
+      "summary": "Tufts' mascot, Jumbo the Elephant, was the prime attraction of P.T. Barnum's entertainment empire, and students once tugged his tail and left pennies on his trunk for luck before exams.",
+      "hook": "connects students to Jumbo, the Barnum elephant who became Tufts' mascot",
+      "quote": "Jumbo the Elephant, Tufts’ official mascot, was the prime attraction in P.T. Barnum's entertainment empire. ... Students would tug on his tail and place a penny on his trunk for good luck in exam season.",
+      "sourceUrl": "https://admissions.tufts.edu/discover-tufts/tufts-traditions/",
+      "sourceTitle": "Tufts Traditions | Tufts Admissions",
+      "themes": [
+        "history"
+      ],
+      "commonness": "common",
+      "commonnessReason": "The university mascot.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:45.656Z"
+      }
+    },
+    {
+      "id": "tufts:painting-the-cannon:11edf7",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "tradition",
+      "title": "Painting the Cannon",
+      "nameOnPage": "The Cannon",
+      "summary": "Students paint the campus cannon, only at night, to advertise, commemorate, or have fun, and guard their design until dawn.",
+      "hook": "lets student groups paint the campus cannon overnight for any cause",
+      "quote": "Perhaps Tufts’ best known tradition is painting \"the Cannon.\" Students will paint the cannon (it can only be done at night) for every cause imaginable: be it advertising, commemorating or just fooling around. ... guard the cannon ‘til dawn, lest another group ensures your design never sees the light of day.",
+      "sourceUrl": "https://admissions.tufts.edu/discover-tufts/tufts-traditions/",
+      "sourceTitle": "Tufts Traditions | Tufts Admissions",
+      "themes": [
+        "visual-arts"
+      ],
+      "commonness": "common",
+      "commonnessReason": "Admissions calls it Tufts' best known tradition.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:45.656Z"
+      }
+    },
+    {
+      "id": "tufts:spring-fling:b7f8da",
+      "schoolId": "tufts",
+      "unitIds": [],
+      "kind": "tradition",
+      "title": "Spring Fling",
+      "nameOnPage": "Spring Fling",
+      "summary": "Since 1980, students have gathered on the Academic Quad right before final exams for the Spring Fling concert.",
+      "hook": "brings students together on the Academic Quad for a concert before finals",
+      "quote": "Since 1980, Tufts students have come together immediately before final exams on the Academic Quad for the Spring Fling concert. That's forty five years of bands and performers - big and small!",
+      "sourceUrl": "https://admissions.tufts.edu/discover-tufts/tufts-traditions/",
+      "sourceTitle": "Tufts Traditions | Tufts Admissions",
+      "themes": [
+        "music"
+      ],
+      "commonness": "common",
+      "commonnessReason": "Annual spring concert that many applicants mention.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-06",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-06T16:06:45.656Z"
+      }
+    }
+  ]
 }

@@ -79,7 +79,17 @@ export interface UniquenessResult {
   reason: string;
 }
 
-export function scoreUniqueness(fact: Fact, swap: SwapResult[], specificity: number): UniquenessResult {
+/** Below this substance a detail is an amenity, service, collection, or place: never "Distinctive" on rarity alone. */
+export const LOW_SUBSTANCE = 0.6;
+/** Highest score a low-substance detail can reach ("Uncommon" at most). */
+const LOW_SUBSTANCE_CAP = 64;
+
+/**
+ * Per-detail uniqueness. `substance` (0-1, default 1) is the detail's
+ * essay-worthiness (features.ts): a rare bike map is uncommon, not distinctive,
+ * because rarity alone does not make something worth building an essay on.
+ */
+export function scoreUniqueness(fact: Fact, swap: SwapResult[], specificity: number, substance = 1): UniquenessResult {
   const commonness: Commonness = fact.commonness in BASE ? fact.commonness : "moderate";
   const base = BASE[commonness];
   const spec = 6 * Math.max(0, Math.min(1, specificity));
@@ -93,16 +103,33 @@ export function scoreUniqueness(fact: Fact, swap: SwapResult[], specificity: num
   } else {
     score = base + spec;
   }
+  const sub = Number.isFinite(substance) ? Math.max(0, Math.min(1, substance)) : 1;
+  score *= 0.8 + 0.2 * sub;
+  const lowSubstance = sub < LOW_SUBSTANCE;
+  if (lowSubstance) score = Math.min(score, LOW_SUBSTANCE_CAP);
   if (commonness === "common") score = Math.min(score, 34);
   score = Math.round(Math.max(0, Math.min(100, score)));
   const label = uniquenessLabel(score, commonness);
   const commonlyMentioned = commonness === "common" || label === "Commonly mentioned";
 
-  const first = commonnessPhrase(fact);
+  const first = lowSubstance ? amenityPhrase(fact) : commonnessPhrase(fact);
   const second = swapPhrase(swap);
   let reason = second ? `${first}; ${second}.` : `${first}.`;
   if (reason.length > 200 && second) reason = `${first}.`;
   return { score, label, commonlyMentioned, reason };
+}
+
+/** Why a rare but low-substance detail is not rated distinctive. */
+function amenityPhrase(fact: Fact): string {
+  const what =
+    fact.kind === "location"
+      ? "A place or local resource"
+      : /\b(?:collections?|archives?|sheet music|manuscripts|museums?)\b/i.test(`${fact.title} ${fact.summary}`)
+        ? "A collection"
+        : /\b(?:library|advis\w*|services?|software|support)\b/i.test(`${fact.title} ${fact.summary} ${fact.hook}`)
+          ? "A campus service"
+          : "A campus amenity";
+  return `${what}: useful color, but rarely what an essay rests on`;
 }
 
 /** Rank-weighted mean of detail uniqueness (rank 1 counts most). 0 when there are no details. */

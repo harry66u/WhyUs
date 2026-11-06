@@ -33,12 +33,21 @@ import {
   type School,
   type StudentProfile,
 } from "@/lib/types";
-import { angleCandidates, chooseAngles, fallbackCandidates, toEssayAngle, usedLeadsFrom, type AngleCandidate, type RankedDetail } from "./angles";
+import {
+  angleCandidates,
+  chooseAngles,
+  fallbackCandidates,
+  toEssayAngle,
+  usedLeadsFrom,
+  type AngleCandidate,
+  type AngleContext,
+  type RankedDetail,
+} from "./angles";
 import { explainFit } from "./explain";
 import { improveWithClaude, vocabularyFor, type DraftForClaude } from "./llm";
 import { studentThemes } from "./profile";
 import { pickQuestions } from "./questions";
-import { connectedActivityIds, scoreFacts } from "./rank";
+import { connectedActivityIds, majorGroups, promptFocus, scoreFacts, type ScoredFact } from "./rank";
 import { selectDetails } from "./select";
 import { swapTest } from "./swap";
 import { round } from "./text";
@@ -145,6 +154,29 @@ function unitNameOf(school: School, unitId: string | null): string | null {
   return school.units?.find((u) => u.id === unitId)?.name ?? null;
 }
 
+/**
+ * Names a prompt may use for the applicant's unit, when the unit is a college
+ * or school inside the university (not the whole school): "Duffield
+ * Engineering", "the College", "Wharton".
+ */
+function unitNamesFor(school: School, unitId: string | null): string[] {
+  const unit = unitId ? school.units?.find((u) => u.id === unitId) : undefined;
+  if (!unit || unit.name === school.name) return [];
+  const schoolNames = new Set([school.name, school.shortName].map((n) => n.toLowerCase()));
+  return [unit.name, unit.shortName ?? "", ...(unit.aliases ?? [])].filter((n) => n && n.trim().length >= 3 && !schoolNames.has(n.toLowerCase()));
+}
+
+/** Share of the unit-scoped facts that are about each theme: the unit's core subjects. */
+function unitThemeShares(scored: ScoredFact[]): Map<string, number> {
+  const unitFacts = scored.filter((s) => s.unit === "unit" && (s.fact.unitIds ?? []).length > 0);
+  const counts = new Map<string, number>();
+  for (const s of unitFacts) for (const k of s.features.central) counts.set(k, (counts.get(k) ?? 0) + 1);
+  const out = new Map<string, number>();
+  if (unitFacts.length < 3) return out;
+  for (const [k, n] of counts) out.set(k, n / unitFacts.length);
+  return out;
+}
+
 export async function buildDossier(input: BuildDossierInput, hooks: BuildHooks = {}): Promise<Dossier> {
   const { signal } = hooks;
   const emit = async (event: ResearchEvent) => {
@@ -156,9 +188,10 @@ export async function buildDossier(input: BuildDossierInput, hooks: BuildHooks =
   throwIfAborted(signal);
 
   const unitName = unitNameOf(input.school, input.unitId);
+  const focus = promptFocus(input.prompt?.text ?? "", unitNamesFor(input.school, input.unitId));
   const { facts, verifiedOn } = usableFacts(input);
   const student = studentThemes(input.student);
-  const scored = scoreFacts(student, facts, { unitId: input.unitId, promptText: input.prompt?.text ?? "" });
+  const scored = scoreFacts(student, facts, { unitId: input.unitId, focus });
   if (scored.length === 0) {
     throw new Error(
       `No verified facts are available for ${input.school.name}${unitName ? ` (${unitName})` : ""} yet, so there is nothing to build a dossier from.`,
@@ -168,14 +201,17 @@ export async function buildDossier(input: BuildDossierInput, hooks: BuildHooks =
   // Swap test and uniqueness for every candidate first, so that selection can
   // favor uncommon details (cheap: verified facts x other schools' facts).
   const swapById = new Map(scored.map((s) => [s.fact.id, swapTest(s.fact, input.otherSchools ?? [])]));
-  const uniqueById = new Map(scored.map((s) => [s.fact.id, scoreUniqueness(s.fact, swapById.get(s.fact.id) ?? [], s.features.specificity)]));
+  const uniqueById = new Map(
+    scored.map((s) => [s.fact.id, scoreUniqueness(s.fact, swapById.get(s.fact.id) ?? [], s.features.specificity, s.features.substance)]),
+  );
   const value = (s: (typeof scored)[number]) => s.score * (0.72 + 0.28 * ((uniqueById.get(s.fact.id)?.score ?? 50) / 100));
 
   /* Match ----------------------------------------------------------- */
   await stage("match", "start");
-  const selected = selectDetails(scored, { min: 6, max: 8, value });
-  const ranked: RankedDetail[] = selected.map((s, i) => ({ scored: s, rank: i + 1 }));
-  const explanations = ranked.map((d) => explainFit(d.scored));
+  const selected = selectDetails(scored, { min: 6, max: 8, value, focus });
+  const ranked: RankedDetail[] = selected.map((s, i) => ({ scored: s, rank: i + 1, cite: s.cite }));
+  const explanations = ranked.map((d) => explainFit(d.scored, d.cite ?? null));
+  const fitScore = (d: RankedDetail) => round(d.cite ? d.cite.fit : 0.5 * d.scored.fit, 2);
   for (let i = 0; i < ranked.length; i++) {
     throwIfAborted(signal);
     const s = ranked[i].scored;
@@ -185,7 +221,7 @@ export async function buildDossier(input: BuildDossierInput, hooks: BuildHooks =
       factId: s.fact.id,
       title: s.fact.title,
       ...(named ? { activityTitle: named.title } : {}),
-      score: round(s.fit, 2),
+      score: fitScore(ranked[i]),
       sentence: explanations[i].sentence,
     });
   }
@@ -221,6 +257,7 @@ export async function buildDossier(input: BuildDossierInput, hooks: BuildHooks =
     if (explanation.basis === "activity" && explanation.activityId) {
       activityIds = [explanation.activityId, ...connectedActivityIds(s).filter((id) => id !== explanation.activityId)].slice(0, 3);
     }
+    const cited = d.cite?.themes ?? [];
     return {
       factId: f.id,
       rank: d.rank,
@@ -235,22 +272,36 @@ export async function buildDossier(input: BuildDossierInput, hooks: BuildHooks =
       fit: {
         sentence: explanation.sentence,
         activityIds,
-        themes: s.themes.slice(0, 4),
-        score: round(s.fit, 2),
+        themes: [...cited, ...s.themes.filter((t) => !cited.includes(t))].slice(0, 4),
+        score: fitScore(d),
       },
-      uniqueness: uniqueById.get(f.id) ?? scoreUniqueness(f, swaps[i], s.features.specificity),
+      uniqueness: uniqueById.get(f.id) ?? scoreUniqueness(f, swaps[i], s.features.specificity, s.features.substance),
       swap: swaps[i],
     };
   });
 
-  let candidates: AngleCandidate[] = angleCandidates(ranked, new Map(details.map((d) => [d.factId, d.uniqueness.score])));
-  if (candidates.length < 2) {
-    candidates = [...candidates, ...fallbackCandidates(ranked, input.school.shortName || input.school.name, new Set(candidates.map((c) => c.key)))];
+  const angleContext: AngleContext = {
+    focus,
+    majorThemes: new Set(student.majors.flatMap((m) => [...m.themes.keys()])),
+    majorGroups: majorGroups(student),
+    unitThemes: unitThemeShares(scored),
+  };
+  let candidates: AngleCandidate[] = angleCandidates(ranked, new Map(details.map((d) => [d.factId, d.uniqueness.score])), angleContext);
+  const fallback = fallbackCandidates(ranked, input.school.shortName || input.school.name, new Set(candidates.map((c) => c.key)));
+  if (candidates.length < 2) candidates = [...candidates, ...fallback];
+  const chosen = chooseAngles(candidates, usedLeadsFrom(input.usedLeadAngleKeys ?? []));
+  const shown = [...chosen.shown];
+  // Every dossier shows at least two angles that share no detail: a single-detail angle fills in when needed.
+  if (shown.length === 1) {
+    const taken = new Set(shown[0].factIds);
+    const extra = fallback.find((c) => !c.factIds.some((id) => taken.has(id)) && !shown.some((x) => x.key === c.key));
+    if (extra) shown.push(extra);
   }
-  const { shown, options } = chooseAngles(candidates, usedLeadsFrom(input.usedLeadAngleKeys ?? []));
+  const shownKeys = new Set(shown.map((c) => c.key));
+  const options = [...chosen.options.filter((c) => !shownKeys.has(c.key)), ...fallback.filter((c) => !shownKeys.has(c.key) && !chosen.options.includes(c))].slice(0, 20);
   let angles: EssayAngle[] = shown.map((c, i) => toEssayAngle(c, i === 0));
   let angleOptions: EssayAngle[] = options.map((c) => toEssayAngle(c, false));
-  let questions = pickQuestions(ranked);
+  let questions = pickQuestions(ranked, { seed: input.school.id });
 
   /* Optional Claude pass ---------------------------------------------- */
   let engine: Dossier["stats"]["engine"] = "deterministic";
@@ -323,8 +374,7 @@ function draftForClaude(
     details: ranked.map((d, i) => {
       const f = d.scored.fact;
       const e = explanations[i];
-      const interest =
-        e.basis === "interest" ? (d.scored.interest?.source.text ?? null) : e.basis === "major" ? (d.scored.major?.source.text ?? null) : null;
+      const interest = (e.basis === "interest" || e.basis === "major") && d.cite ? d.cite.sourceId : null;
       return {
         factId: f.id,
         kind: f.kind,
