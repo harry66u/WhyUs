@@ -301,47 +301,88 @@
       "url": "https://students.tufts.edu/diversity-and-inclusion",
       "category": "overview",
       "note": "Identity centers and diversity resources."
+    },
+    {
+      "url": "https://admissions.tufts.edu/discover-tufts/academics/school-of-engineering/",
+      "category": "admissions",
+      "unitIds": [
+        "engineering"
+      ],
+      "note": "Admissions overview of Tufts Engineering: EN1, senior design, Summer Scholars, and the Nolop FAST Facility."
+    },
+    {
+      "url": "https://admissions.tufts.edu/discover-tufts/life-at-tufts/civic-engagement/",
+      "category": "admissions",
+      "note": "Admissions overview of civic engagement: Tisch Scholars, Tisch Summer Fellows, Civic Semester, JumboCode, LCS."
+    },
+    {
+      "url": "https://tischcollege.tufts.edu/community/student-groups",
+      "category": "organizations",
+      "note": "Tisch College-affiliated student groups with descriptions (JumboCode, CIVIC, EWB, LCS, and more)."
+    },
+    {
+      "url": "https://tischcollege.tufts.edu/community/student-groups/leonard-carmichael-society",
+      "category": "organizations",
+      "note": "Leonard Carmichael Society and its current service subgroups (ESL, LCS Tutors, TASTE, and more)."
+    },
+    {
+      "url": "https://students.tufts.edu/academic-advising-and-undergraduate-studies/scholarship-and-research/summer-scholars-program",
+      "category": "research",
+      "note": "Summer Scholars program: funded ten-week independent research for rising juniors and seniors."
+    },
+    {
+      "url": "https://smfa.tufts.edu/about",
+      "category": "overview",
+      "unitIds": [
+        "smfa"
+      ],
+      "note": "SMFA overview: review boards, two campuses, and the relationship with the Museum of Fine Arts, Boston. Other smfa.tufts.edu pages read fine; only the homepage is too large to read."
     }
   ],
   "unreachableHosts": [
     {
       "host": "environment.tufts.edu",
-      "reason": "Tufts Institute of the Environment site: the network proxy rejects the connection (gateway 502 on CONNECT), so fetch-text cannot read robots.txt or any page. Environmental facts cite engineering.tufts.edu, as.tufts.edu, and sustainability.tufts.edu instead.",
+      "reason": "Tufts Institute of the Environment site. The name does not resolve in DNS from here (the proxy answers 502 on CONNECT), although search engines still index its pages, including the Tufts Energy Conference. The TIE programs visible elsewhere (the Sustainable Water Management master's and environmental research fellowships) are graduate-level, so environmental facts cite engineering.tufts.edu, as.tufts.edu, sites.tufts.edu, and sustainability.tufts.edu instead.",
       "checkedAt": "2026-11-06"
     },
     {
       "host": "cee.tufts.edu",
-      "reason": "Does not resolve from here (gateway 502 on CONNECT). The Civil and Environmental Engineering department is published at engineering.tufts.edu/cee/.",
+      "reason": "Does not resolve in DNS (no address). The Civil and Environmental Engineering department is published at engineering.tufts.edu/cee/.",
       "checkedAt": "2026-11-06"
     },
     {
       "host": "bulletin.tufts.edu",
-      "reason": "Gateway 502 on CONNECT, so the bulletin cannot be read; course facts cite department course pages on as.tufts.edu and the EN1 section pages on sites.tufts.edu.",
+      "reason": "Does not resolve in DNS from here (the proxy answers 502 on CONNECT), so the bulletin cannot be read; course facts cite department course pages on as.tufts.edu and the EN1 section pages on sites.tufts.edu.",
       "checkedAt": "2026-11-06"
     },
     {
       "host": "courses.tufts.edu",
-      "reason": "Answers with a 301 redirect to University College continuing-education listings that fetch-text cannot follow (UND_ERR_SOCKET); it is not the undergraduate catalog.",
+      "reason": "Resolves, but answers with a 301 redirect to University College continuing-education listings and fetch-text fails on it (UND_ERR_SOCKET); it is not the undergraduate catalog.",
       "checkedAt": "2026-11-06"
     },
     {
       "host": "ase.tufts.edu",
-      "reason": "Legacy Arts, Sciences and Engineering host; answers with a 301 redirect to www.tufts.edu that fetch-text cannot follow (UND_ERR_SOCKET). Current pages live on as.tufts.edu and engineering.tufts.edu.",
+      "reason": "Resolves, but answers with a 301 redirect to www.tufts.edu and fetch-text fails on it (UND_ERR_SOCKET). Current pages live on as.tufts.edu and engineering.tufts.edu.",
       "checkedAt": "2026-11-06"
     },
     {
       "host": "go.tufts.edu",
-      "reason": "robots.txt disallows automated reading (short-link host, e.g. go.tufts.edu/sis).",
+      "reason": "robots.txt disallows all automated reading (short-link host; go.tufts.edu/sis redirects to the SIS login).",
       "checkedAt": "2026-11-06"
     },
     {
-      "host": "smfa.tufts.edu",
-      "reason": "Responds (HTTP 200) but the homepage exceeds the page-size limit, and other paths redirect to it; SMFA facts cite as.tufts.edu/academics/smfa-tufts instead.",
+      "host": "sis.it.tufts.edu",
+      "reason": "The Student Information System class search redirects to a login page, so term offerings cannot be checked there.",
+      "checkedAt": "2026-11-06"
+    },
+    {
+      "host": "tufts.box.com",
+      "reason": "Department term-offering lists (Fall 2026, Spring 2027) linked from as.tufts.edu course pages are Box shared links that render client-side, so nothing is readable; box.com is also not an official domain. Course facts therefore cite department course-description pages, which do not mark which term a course runs.",
       "checkedAt": "2026-11-06"
     },
     {
       "host": "jumbolife.tufts.edu",
-      "reason": "Redirects to tufts.campusgroups.com, a third-party host that is not listed as official; its group listings carry little descriptive text, so club facts cite tufts.edu pages.",
+      "reason": "Redirects (302) to tufts.campusgroups.com, which is not listed as an official host and renders its group directory with JavaScript, so no group descriptions are readable; club facts cite tufts.edu pages.",
       "checkedAt": "2026-11-06"
     }
   ],
