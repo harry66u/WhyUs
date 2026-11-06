@@ -226,7 +226,7 @@ const DESCRIBE_TAIL = new RegExp(
 
 const LABELS: { field: LabelField; strong: boolean; re: RegExp }[] = [
   { field: "category", strong: true, re: new RegExp(String.raw`^activity\s*type\b${SEP}`, "i") },
-  { field: "role", strong: true, re: new RegExp(String.raw`^position\s*(?:\/|and|&)?\s*leadership(?:\s+description)?\b${SEP}`, "i") },
+  { field: "role", strong: true, re: new RegExp(String.raw`^position\s*(?:\/|and|&)?\s*leadership(?:\s+description)?(?:\s+(?:and|&)\s+organi[sz]ation\s+name)?\b${SEP}`, "i") },
   { field: "organization", strong: true, re: new RegExp(String.raw`^organi[sz]ation\s+name\b${SEP}`, "i") },
   { field: "organization", strong: false, re: new RegExp(String.raw`^organi[sz]ation${SEP_OR_END}`, "i") },
   { field: "description", strong: true, re: DESCRIBE_LABEL },
@@ -255,7 +255,7 @@ const LABEL_TAILS: Partial<Record<LabelField, RegExp>> = {
 
 /** Strong labels may also start mid-line when a PDF puts several fields on one line. */
 const INLINE_LABEL_RE =
-  /\s(?=(?:activity\s+type|position\s*(?:\/|and|&)?\s*leadership|organi[sz]ation\s+name|please\s+describe\s+this\s+activity|participation\s+grade\s+levels?|timing\s+of\s+participation|hours?\s+spent\s+per\s+week|weeks?\s+spent\s+per\s+year|i\s+intend\s+to\s+participate)\b)/gi;
+  /\s(?=(?:activity\s+type|position\s*(?:\/|and|&)?\s*leadership|(?<!(?:description|leadership)\s+(?:and|&)\s+)organi[sz]ation\s+name|please\s+describe\s+this\s+activity|participation\s+grade\s+levels?|timing\s+of\s+participation|hours?\s+spent\s+per\s+week|weeks?\s+spent\s+per\s+year|i\s+intend\s+to\s+participate)\b)/gi;
 
 /** "Activity 2" on its own line. (A bare number is not a heading: values like hours sit on their own lines.) */
 const ACTIVITY_HEADING_RE = /^activity\s*#?\s*\d{1,2}\s*[:.)]?$/i;

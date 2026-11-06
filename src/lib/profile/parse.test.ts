@@ -470,3 +470,24 @@ describe("PDF text", () => {
     expect(removeRepeatedPageLines(["only page\nPage 1"])).toEqual(["only page\nPage 1"]);
   });
 });
+
+describe("Common App combined position label", () => {
+  it("reads 'Position/Leadership description and organization name' as one label", async () => {
+    const text = [
+      "1. Activity type: Science/Math",
+      "Position/Leadership description and organization name: Founder and President, Example Robotics Outreach",
+      "Please describe this activity, including what you accomplished and any recognition you received, etc.: Started a club that runs free robotics workshops.",
+      "Participation grade levels: 10, 11, 12",
+      "Hours spent per week: 4",
+      "Weeks spent per year: 30",
+    ].join("\n");
+    const { activities } = await parseActivitiesText(text, { useLlm: false });
+    expect(activities).toHaveLength(1);
+    const a = activities[0];
+    expect([a.title, a.role, a.organization].filter(Boolean).join(" | ")).not.toMatch(/(^|\|\s)and(\s\||$)/);
+    expect(a.role ?? a.title).toMatch(/Founder and President/);
+    expect(`${a.title} ${a.organization ?? ""}`).toMatch(/Example Robotics Outreach/);
+    expect(a.hoursPerWeek).toBe(4);
+    expect(a.weeksPerYear).toBe(30);
+  });
+});
