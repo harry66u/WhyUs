@@ -1,7 +1,2052 @@
 {
   "schoolId": "penn",
   "term": "2026-fall",
-  "builtAt": "",
-  "builtBy": "",
-  "facts": []
+  "builtAt": "2026-11-05",
+  "builtBy": "research-agent",
+  "facts": [
+    {
+      "id": "penn:casa-latina-center-for-hispanic-excellen:34be62",
+      "schoolId": "penn",
+      "unitIds": [],
+      "kind": "center",
+      "title": "Casa Latina (Center for Hispanic Excellence)",
+      "nameOnPage": "Casa Latina",
+      "summary": "Casa Latina promotes awareness of Latinx issues, culture, and identity at Penn through programs, events, and dialogues on issues affecting Latinx communities locally, nationally, and internationally.",
+      "hook": "hosts programs and dialogues on issues affecting Latinx communities locally and nationally",
+      "quote": "Casa Latina promotes greater awareness of Latinx issues, culture, and identity at the University of Pennsylvania. Casa Latina works closely with the Penn community to offer a supportive environment where all students are welcomed and engaged in programs, events, and dialogues that address important issues affecting Latinxs locally, nationally, and internationally.",
+      "sourceUrl": "https://casalatina.universitylife.upenn.edu/",
+      "sourceTitle": "Center for Hispanic Excellence: Casa Latina Latina - Casa Latina",
+      "themes": [
+        "latin-america",
+        "cultural-identity",
+        "global"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:29:47.416Z"
+      }
+    },
+    {
+      "id": "penn:center-for-undergraduate-research-and-fe:08c49a",
+      "schoolId": "penn",
+      "unitIds": [],
+      "kind": "center",
+      "title": "Center for Undergraduate Research and Fellowships (CURF)",
+      "nameOnPage": "Center for Undergraduate Research and Fellowships",
+      "summary": "CURF supports Penn students pursuing undergraduate research, scholars programs, and fellowships, and promotes connections and mentorship between faculty and students.",
+      "hook": "helps students find faculty mentors, research opportunities, and fellowships",
+      "quote": "The Center for Undergraduate Research and Fellowships (CURF) supports all students as they pursue transformative experiences through fellowships, scholars programs, and undergraduate research. CURF promotes connections between faculty and students, encourages mentorship, and educates the Penn community about opportunities for all students and alumni.",
+      "sourceUrl": "https://curf.upenn.edu/about-us",
+      "sourceTitle": "About Us | Penn CURF",
+      "themes": [
+        "undergraduate-research",
+        "education"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:29:47.303Z"
+      }
+    },
+    {
+      "id": "penn:kelly-writers-house:f725fa",
+      "schoolId": "penn",
+      "unitIds": [],
+      "kind": "center",
+      "title": "Kelly Writers House",
+      "nameOnPage": "Kelly Writers House",
+      "summary": "Founded in 1995, the Kelly Writers House is a 13-room house on Locust Walk that serves writers from Penn and the Philadelphia region and hosts about 150 public programs each semester.",
+      "hook": "offers a 13-room house on Locust Walk with about 150 public writing programs each semester",
+      "quote": "Founded in 1995 by a group of students, faculty, staff and alumni, the Kelly Writers House is an actual 13-room house at 3805 Locust Walk on Penn's campus that serves as a center for writers of all kinds from Penn and the Philadelphia region at large. Each semester the Writers House hosts approximately 150 public programs and projects",
+      "sourceUrl": "https://writing.upenn.edu/wh/about/",
+      "sourceTitle": "About the Kelly Writers House",
+      "themes": [
+        "creative-writing",
+        "literature"
+      ],
+      "commonness": "common",
+      "commonnessReason": "One of the most frequently cited Penn landmarks in applicant essays.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:29:47.727Z"
+      }
+    },
+    {
+      "id": "penn:kleinman-center-for-energy-policy:c682f9",
+      "schoolId": "penn",
+      "unitIds": [],
+      "kind": "center",
+      "title": "Kleinman Center for Energy Policy",
+      "nameOnPage": "Kleinman Center",
+      "summary": "Penn's Kleinman Center for Energy Policy has funded more than 200 Penn student grants, offered four times a year to individual students and student groups for research and conferences.",
+      "hook": "funds student research and conference grants four times a year, open to individuals and student groups",
+      "quote": "From research to conferences, the Kleinman Center has funded more than 200 Penn student grants. Grants are offered four times per year in the spring, summer, fall, and winter, and are open to individual students as well as student groups.",
+      "sourceUrl": "https://kleinmanenergy.upenn.edu/education/student-grants/",
+      "sourceTitle": "Student Grants - Kleinman Center for Energy Policy",
+      "themes": [
+        "energy",
+        "environmental-policy",
+        "undergraduate-research",
+        "public-policy"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Penn's energy policy center is known to energy-minded applicants, but its student grant program is less often cited.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:29:47.835Z"
+      }
+    },
+    {
+      "id": "penn:netter-center-for-community-partnerships:c7c288",
+      "schoolId": "penn",
+      "unitIds": [],
+      "kind": "center",
+      "title": "Netter Center for Community Partnerships",
+      "nameOnPage": "Netter Center for Community Partnerships",
+      "summary": "Founded in 1992, the Netter Center builds place-based partnerships between Penn and West Philadelphia on problems such as health inequities, environmental sustainability, and unequal education.",
+      "hook": "connects students to place-based research, teaching, and service partnerships in West Philadelphia",
+      "quote": "Founded in 1992, the Barbara and Edward Netter Center for Community Partnerships ... help solve universal problems such as poverty, health inequities, environmental sustainability, and inadequate, unequal education ... The Netter Center develops and helps implement democratic, mutually transformative, place-based partnerships between Penn and West Philadelphia that advance research, teaching, learning, and service.",
+      "sourceUrl": "https://www.nettercenter.upenn.edu/about-center",
+      "sourceTitle": "About the Center | Netter Center for Community Partnerships",
+      "themes": [
+        "community-engagement",
+        "cities",
+        "sustainability",
+        "education"
+      ],
+      "commonness": "common",
+      "commonnessReason": "Penn's best-known community engagement center, frequently named in Penn essays.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:29:47.466Z"
+      }
+    },
+    {
+      "id": "penn:penn-first-plus:9a7acd",
+      "schoolId": "penn",
+      "unitIds": [],
+      "kind": "center",
+      "title": "Penn First Plus",
+      "nameOnPage": "Penn First Plus",
+      "summary": "Penn First Plus is Penn's hub for first-generation students, including the four-week Pre-First Year Program that precedes New Student Orientation.",
+      "hook": "supports first-generation students, including a four-week summer program before orientation",
+      "quote": "Penn is a place for firsts, and Penn First Plus serves as Penn’s hub for making the Penn undergraduate experience more welcoming ... for first generation students ... Part of Penn First Plus, the Pre-First Year Program (PFP) is an intensive four-week summer program preceding New Student Orientation (NSO)",
+      "sourceUrl": "https://admissions.upenn.edu/student-life/exploring-community/student-resources/penn-first-plus",
+      "sourceTitle": "Penn First Plus | Penn Admissions",
+      "themes": [
+        "first-gen",
+        "first-year"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:29:47.386Z"
+      }
+    },
+    {
+      "id": "penn:the-water-center-at-penn:b76979",
+      "schoolId": "penn",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "center",
+      "title": "The Water Center at Penn",
+      "nameOnPage": "The Water Center at Penn",
+      "summary": "The Water Center at Penn is a center for urban water policy, innovation, and science that engages faculty and students and takes an integrated approach to water supply, stormwater, and water quality.",
+      "hook": "connects students to urban water policy work on water supply, stormwater systems, and water quality",
+      "quote": "The Water Center at Penn is a center for urban water policy, innovation, and science that engages University faculty and students ... integrating planning for water supply, wastewater and stormwater systems, protecting human health, and improving water quality.",
+      "sourceUrl": "https://earth.sas.upenn.edu/research/water-center",
+      "sourceTitle": "The Water Center | Earth and Environmental Sciences",
+      "themes": [
+        "water",
+        "environmental-policy",
+        "cities",
+        "environmental-engineering",
+        "public-policy"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:29:47.874Z"
+      }
+    },
+    {
+      "id": "penn:venture-lab:f6c1b4",
+      "schoolId": "penn",
+      "unitIds": [],
+      "kind": "center",
+      "title": "Venture Lab",
+      "nameOnPage": "Venture Lab",
+      "summary": "Venture Lab, a partnership of Wharton, Penn Engineering, and the Weitzman School of Design, is a starting point for any Penn student or alum interested in entrepreneurship and innovation.",
+      "hook": "gives students from every Penn school a starting point for entrepreneurship and innovation",
+      "quote": "Venture Lab is a partnership by The Wharton School, Penn Engineering, and The Stuart Weitzman School of Design that provides a physical start here button to serve all students and alumni across the University of Pennsylvania who are interested in entrepreneurship and innovation.",
+      "sourceUrl": "https://venturelab.upenn.edu/",
+      "sourceTitle": "Homepage",
+      "themes": [
+        "entrepreneurship"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:29:47.949Z"
+      }
+    },
+    {
+      "id": "penn:eas-2020-rivers-in-a-changing-world:9dc34f",
+      "schoolId": "penn",
+      "unitIds": [
+        "seas"
+      ],
+      "kind": "course",
+      "title": "EAS 2020: Rivers in a Changing World",
+      "nameOnPage": "EAS 2020: Rivers in a Changing World",
+      "summary": "An ABCS course that brings Penn undergraduates and Sayre High School students together at an environmental river laboratory steps from Cobbs Creek for hands-on river science.",
+      "hook": "pairs Penn undergraduates with Sayre High School students for hands-on river science beside Cobbs Creek",
+      "quote": "to develop an Academically Based Community Service (ABCS) course on “Rivers in a changing world”. ... The unique setting of an environmental river laboratory that is just steps from a natural river (Cobbs Creek), and close to Sayre High School, presents a special opportunity for meaningful hands-on learning of Sayre students in collaboration with Penn undergraduates.",
+      "sourceUrl": "https://www.nettercenter.upenn.edu/fall-2026-abcs-courses",
+      "sourceTitle": "Fall 2026 ABCS Courses | Netter Center for Community Partnerships",
+      "themes": [
+        "water",
+        "community-engagement",
+        "youth",
+        "fieldwork"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Douglas Jerolmack"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:29:47.606Z"
+      }
+    },
+    {
+      "id": "penn:eas-3990-pre-college-robotics-education:42c7f2",
+      "schoolId": "penn",
+      "unitIds": [
+        "seas"
+      ],
+      "kind": "course",
+      "title": "EAS 3990: Pre-College Robotics Education",
+      "nameOnPage": "EAS 3990: Pre-College Robotics Education",
+      "summary": "In this ABCS engineering course, students learn robotics basics including rapid prototyping and Arduino programming, then mentor classroom robotics projects in a Philadelphia public school.",
+      "hook": "teaches Arduino programming and prototyping, then has students mentor robotics in a Philadelphia public school",
+      "quote": "This Academically-Based Community Service (ABCS) course combines community engagement with education research to prepare Penn students to conduct impactful engineering teaching and outreach. Students will learn robotics basics (multi-body kinematics, rapid prototyping, and arduino programming) and then help mentor classroom robotics projects in a Philadelphia public school.",
+      "sourceUrl": "https://www.nettercenter.upenn.edu/fall-2026-abcs-courses",
+      "sourceTitle": "Fall 2026 ABCS Courses | Netter Center for Community Partnerships",
+      "themes": [
+        "robotics",
+        "engineering-design",
+        "youth",
+        "community-engagement",
+        "electrical-engineering",
+        "computer-science",
+        "education"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Daniel Feshbach",
+        "Cynthia Sung"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:29:47.606Z"
+      }
+    },
+    {
+      "id": "penn:eesc-4300-meteorology-and-atmospheric-sc:e98414",
+      "schoolId": "penn",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "course",
+      "title": "EESC 4300: Meteorology and Atmospheric Science",
+      "nameOnPage": "EESC 4300",
+      "summary": "This course explains the physics of weather and climate, from hurricanes and heat waves to urban heat islands and neighborhood-scale urban microclimates.",
+      "hook": "explains urban heat islands and neighborhood microclimates through atmospheric physics",
+      "quote": "From hurricanes and heat waves to climate change and urban heat islands, atmospheric science sits at the center of some of today's most urgent environmental challenges. ... from neighborhood urban microclimates to the entire planet",
+      "sourceUrl": "https://earth.sas.upenn.edu/course-list/2027A",
+      "sourceTitle": "Courses for Spring 2027 | Earth and Environmental Sciences",
+      "themes": [
+        "climate",
+        "cities",
+        "physics",
+        "earth-science"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Einara Zahn"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:29:48.198Z"
+      }
+    },
+    {
+      "id": "penn:eesc-4630-hydrology:70ebe0",
+      "schoolId": "penn",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "course",
+      "title": "EESC 4630: Hydrology",
+      "nameOnPage": "EESC 4630",
+      "summary": "A fall 2026 course introducing the hydrologic cycle and water budgets, stream flow, flood hydrographs, groundwater flow, and water quality.",
+      "hook": "covers stream flow, flood hydrographs, groundwater flow, and water quality fundamentals",
+      "quote": "Introduction to the basic principles of the hydrologic cycle and water budgets, precipitation and infiltration, evaporation and transpiration, stream flow, hydrograph analysis (floods), subsurface and groundwater flow, well hydraulics, water quality, and frequency analysis.",
+      "sourceUrl": "https://earth.sas.upenn.edu/course-list/2026C",
+      "sourceTitle": "Courses for Fall 2026 | Earth and Environmental Sciences",
+      "themes": [
+        "water",
+        "earth-science"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Hugo Ulloa"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:29:48.399Z"
+      }
+    },
+    {
+      "id": "penn:eesc-4700-remote-sensing:f787c9",
+      "schoolId": "penn",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "course",
+      "title": "EESC 4700: Remote Sensing",
+      "nameOnPage": "EESC 4700",
+      "summary": "A remote sensing course that teaches Google Earth Engine analysis, including thermal imagery, as student teams partner with community organizations on environmental questions.",
+      "hook": "has student teams use remote sensing and thermal imagery to answer community partners' environmental questions",
+      "quote": "analysis of remotely sensed data using Google Earth Engine will be emphasized. ... multispectral, hyperspectral, and thermal imagery; image interpretation; and spatial analysis. ... Working in teams, students partner with community organizations, schools, agencies, or other stakeholders to identify an environmental question, challenge, or information need that can be addressed using remote sensing.",
+      "sourceUrl": "https://earth.sas.upenn.edu/course-list/2026C",
+      "sourceTitle": "Courses for Fall 2026 | Earth and Environmental Sciences",
+      "themes": [
+        "gis-mapping",
+        "sensors",
+        "community-engagement",
+        "data-science"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Jane E Dmochowski"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:29:48.399Z"
+      }
+    },
+    {
+      "id": "penn:envs-1615-urban-environments-speaking-ab:9de8d4",
+      "schoolId": "penn",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "course",
+      "title": "ENVS 1615: Urban Environments: Speaking About Lead in West Philadelphia",
+      "nameOnPage": "ENVS 1615",
+      "summary": "In this ABCS course, students study the epidemiology and exposure pathways of lead poisoning, then work with West Philadelphia teachers to apply lead research with middle school students.",
+      "hook": "has students teach West Philadelphia middle schoolers to apply lead-exposure research to their own neighborhoods",
+      "quote": "In ENVS 1615, Penn undergraduates learn about the epidemiology of lead poisoning, the pathways of exposure, and methods for community outreach and education. Penn students collaborate with middle school and high school teachers in West Philadelphia to engage middle school children in exercises that apply environmental research relating to lead poisoning to their homes and neighborhoods.",
+      "sourceUrl": "https://earth.sas.upenn.edu/course-list/2026C",
+      "sourceTitle": "Courses for Fall 2026 | Earth and Environmental Sciences",
+      "themes": [
+        "public-health",
+        "community-engagement",
+        "cities",
+        "youth",
+        "environmental-justice",
+        "education"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Emma Lapp"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:29:48.399Z"
+      }
+    },
+    {
+      "id": "penn:envs-2390-freshwater-ecology:9b8296",
+      "schoolId": "penn",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "course",
+      "title": "ENVS 2390: Freshwater Ecology",
+      "nameOnPage": "ENVS 2390",
+      "summary": "A spring 2027 survey of the physical, chemical, and biological properties of freshwater ecosystems, from rivers to still waters, both natural and polluted.",
+      "hook": "surveys the physics, chemistry, and biology of natural and polluted freshwater ecosystems",
+      "quote": "Survey of the physical, chemical and biological properties of freshwater ecosystems, both riverine and lentic, natural and polluted.",
+      "sourceUrl": "https://earth.sas.upenn.edu/course-list/2027A",
+      "sourceTitle": "Courses for Spring 2027 | Earth and Environmental Sciences",
+      "themes": [
+        "water",
+        "ecology",
+        "biology",
+        "environmental-engineering",
+        "chemistry",
+        "physics"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Melinda Daniels"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:29:48.198Z"
+      }
+    },
+    {
+      "id": "penn:envs-3053-span-3910-sustainable-developm:37a090",
+      "schoolId": "penn",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "course",
+      "title": "ENVS 3053 / SPAN 3910: Sustainable Development and Culture in Latin America",
+      "nameOnPage": "ENVS 3053",
+      "summary": "An upper-level seminar for Spanish majors and minors that examines the environmental, economic, and social dimensions of sustainable development through peyote, coca, and coffee in Latin America.",
+      "hook": "studies sustainable development in Latin America in an upper-level seminar for Spanish students",
+      "quote": "This interdisciplinary course exposes students to the three dimensions of sustainable development -environmental, economic, and social- through an examination of three products -peyote, coca, and coffee- that are crucial in shaping modern identity in areas of Latin America. ... This is an upper level seminar open to majors and minors of Spanish",
+      "sourceUrl": "https://earth.sas.upenn.edu/course-list/2027A",
+      "sourceTitle": "Courses for Spring 2027 | Earth and Environmental Sciences",
+      "themes": [
+        "sustainability",
+        "latin-america",
+        "languages",
+        "economics",
+        "interdisciplinary"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Teresa Gimenez"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:29:48.198Z"
+      }
+    },
+    {
+      "id": "penn:envs-3100-environmental-case-studies:fd79d0",
+      "schoolId": "penn",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "course",
+      "title": "ENVS 3100: Environmental Case Studies",
+      "nameOnPage": "ENVS 3100",
+      "summary": "This course analyzes one or two environmental case studies each week through debates, action plans, role-playing, and group decision-making simulations.",
+      "hook": "uses weekly debates, role-play, and decision simulations to analyze environmental cases",
+      "quote": "The class analyzes 1-2 case studies each week, beginning with at-home preparatory assignments for each class, followed by in-class activities such as debates, drafting action plans, role-playing and group decision-making simulations.",
+      "sourceUrl": "https://earth.sas.upenn.edu/course-list/2027A",
+      "sourceTitle": "Courses for Spring 2027 | Earth and Environmental Sciences",
+      "themes": [
+        "debate",
+        "environmental-policy"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Jane E Dmochowski"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:29:48.198Z"
+      }
+    },
+    {
+      "id": "penn:envs-3700-gis-mapping-places-and-analyzi:325900",
+      "schoolId": "penn",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "course",
+      "title": "ENVS 3700: GIS Mapping Places and Analyzing Spaces",
+      "nameOnPage": "ENVS 3700",
+      "summary": "A hands-on introduction to geographic information systems that builds the skills for basic GIS projects and advanced GIS coursework, with no prior GIS experience required.",
+      "hook": "teaches the GIS skills needed to map and analyze spatial data for projects and advanced coursework",
+      "quote": "This course is a hands-on introduction to the concepts and capabilities of geographic information systems (GIS). Students will develop the skills necessary for carrying out basic GIS projects and for advanced GIS coursework. ... Previous experience in the use of GIS is not required.",
+      "sourceUrl": "https://earth.sas.upenn.edu/course-list/2027A",
+      "sourceTitle": "Courses for Spring 2027 | Earth and Environmental Sciences",
+      "themes": [
+        "gis-mapping",
+        "data-science"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Thomas Philip Mckeon"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:29:48.198Z"
+      }
+    },
+    {
+      "id": "penn:envs-4250-our-water-planet:f5fab3",
+      "schoolId": "penn",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "course",
+      "title": "ENVS 4250: Our Water Planet",
+      "nameOnPage": "ENVS 4250",
+      "summary": "A spring 2027 course that uses case studies to examine water issues and the outlook for water quality and availability in an era of rapid environmental change, with a local field trip.",
+      "hook": "examines the future of water quality and availability through case studies and a local field trip",
+      "quote": "use topical case studies to examine water issues in the Anthropocene and examine what lies in store for water quality and availability in the twenty-first century during an era of rapid environmental change. ... This course will include a local field trip.",
+      "sourceUrl": "https://earth.sas.upenn.edu/course-list/2027A",
+      "sourceTitle": "Courses for Spring 2027 | Earth and Environmental Sciences",
+      "themes": [
+        "water",
+        "fieldwork"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Jon Hawkings"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:29:48.198Z"
+      }
+    },
+    {
+      "id": "penn:envs-4330-climate-and-environmental-comm:967a11",
+      "schoolId": "penn",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "course",
+      "title": "ENVS 4330: Climate and Environmental Communication: Theory and Application",
+      "nameOnPage": "ENVS 4330",
+      "summary": "A course on how climate science reaches the public through forms such as consensus statements, op-eds, court briefs, fact checks, and speeches.",
+      "hook": "analyzes how climate science is communicated through op-eds, court briefs, fact checks, and speeches",
+      "quote": "This course will focus on understanding the multiple ways in which climate science is communicated to publics and how they come to understand it. ... Forms of communication on which the class will focus include consensus statements, manifestos, commentaries, court briefs, news accounts, fact checks, op-eds, letters to the editor, speeches, and media interviews.",
+      "sourceUrl": "https://earth.sas.upenn.edu/course-list/2027A",
+      "sourceTitle": "Courses for Spring 2027 | Earth and Environmental Sciences",
+      "themes": [
+        "climate",
+        "journalism",
+        "law"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Co-taught by Michael Mann, a widely known climate scientist whom applicants may already mention.",
+      "people": [
+        "Kathleen Hall Jamieson",
+        "Michael Mann"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:29:48.198Z"
+      }
+    },
+    {
+      "id": "penn:jwst-1120-translating-cultures-literatur:485ab9",
+      "schoolId": "penn",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "course",
+      "title": "JWST 1120: Translating Cultures: Literature on and in Translation",
+      "nameOnPage": "JWST 1120",
+      "summary": "A course that reads autobiography, fiction, poetry, and literary theory to ask what it means to translate and to live between two languages.",
+      "hook": "explores what it means to translate and to live between two languages",
+      "quote": "With a diverse group of readings--autobiography, fiction, poetry, anthology, and literary theory--this course will address some fundamental questions about translating language and culture. What does it mean to translate? How do we read a text in translation? What does it mean to live between two languages? Who is a translator?",
+      "sourceUrl": "https://plc.sas.upenn.edu/course-list/2027A",
+      "sourceTitle": "Courses for Spring 2027 | Penn Language Center",
+      "themes": [
+        "language-access",
+        "literature",
+        "languages"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Kathryn Hellerstein"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:29:49.252Z"
+      }
+    },
+    {
+      "id": "penn:span-1005-advanced-spanish-for-medical-p:a15c13",
+      "schoolId": "penn",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "course",
+      "title": "SPAN 1005: Advanced Spanish for Medical Professions",
+      "nameOnPage": "SPAN 1005",
+      "summary": "An advanced Spanish course for students headed toward health careers that builds medical vocabulary through contemporary health topics and covers health care issues affecting Hispanic/Latino patients.",
+      "hook": "builds advanced medical Spanish and awareness of health care issues facing Hispanic/Latino patients",
+      "quote": "The goal of this course is to provide advanced practice in Spanish to those students who are interested in pursuing careers in the medical and health care fields. ... Students will also gain awareness of those health care issues affecting the Hispanic/Latino patient.",
+      "sourceUrl": "https://plc.sas.upenn.edu/course-list/2027A",
+      "sourceTitle": "Courses for Spring 2027 | Penn Language Center",
+      "themes": [
+        "languages",
+        "language-access",
+        "medicine",
+        "latin-america",
+        "career"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Linda Grabner"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:29:49.252Z"
+      }
+    },
+    {
+      "id": "penn:stat-4929-community-data-science:4d1e70",
+      "schoolId": "penn",
+      "unitIds": [
+        "wharton"
+      ],
+      "kind": "course",
+      "title": "STAT 4929: Community Data Science",
+      "nameOnPage": "STAT 4929",
+      "summary": "An ABCS statistics course in which student teams solve data science problems for community organizations, with possible projects including heat islands in West Philadelphia.",
+      "hook": "puts data science skills to work for community groups on projects such as West Philadelphia heat islands",
+      "quote": "This course provides students with the opportunity to hone their data science skills and gain practical experience by working with a community organization on a data science problem of interest to the organization. ... Heat islands in West Philadelphia ... This is an Academically Based Community Service (ABCS) course.",
+      "sourceUrl": "https://www.nettercenter.upenn.edu/fall-2026-abcs-courses",
+      "sourceTitle": "Fall 2026 ABCS Courses | Netter Center for Community Partnerships",
+      "themes": [
+        "data-science",
+        "cities",
+        "community-engagement",
+        "civic-tech"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Dylan Small"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:29:47.606Z"
+      }
+    },
+    {
+      "id": "penn:campus-bike-repair-stations-and-penn-bik:fbd0f8",
+      "schoolId": "penn",
+      "unitIds": [],
+      "kind": "facility",
+      "title": "Campus bike repair stations and Penn Bike Map",
+      "nameOnPage": "bike repair stations",
+      "summary": "Penn maintains two campus bike repair stations for community use and a Penn Bike Map showing city bike lanes, Penn bike parking, and repair stations.",
+      "hook": "gives cyclists two campus repair stations and a map of bike lanes, parking, and repair stops",
+      "quote": "Flat tire? Penn has campus bike repair stations. There are two bike repair stations available for use by the Penn Community. ... Penn Bike Map - includes City designated bike lanes, Penn bike parking, and repair stations on campus.",
+      "sourceUrl": "https://transportation.upenn.edu/resources-cyclists",
+      "sourceTitle": "Resources for Cyclists | Penn Transportation and Parking",
+      "themes": [
+        "cycling",
+        "transportation",
+        "gis-mapping",
+        "making"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:29:49.919Z"
+      }
+    },
+    {
+      "id": "penn:engineering-studios-venture-lab:dc1e0c",
+      "schoolId": "penn",
+      "unitIds": [],
+      "kind": "facility",
+      "title": "Engineering Studios @ Venture Lab",
+      "nameOnPage": "Engineering Studios",
+      "summary": "The Engineering Studios at Venture Lab are fabrication labs open to the whole Penn community, with free 3D printing and laser cutting and a mechatronics lab for electrical projects.",
+      "hook": "provides free 3D printing, laser cutting, and a mechatronics lab for student building projects",
+      "quote": "The Engineering Studios @ Venture Lab are a collection of fabrication labs open to the entire University of Pennsylvania community ... The Prototyping studio offers basic hand tools, and 3D printing and laser cutting services free of charge. ... Access to Mechatronics Lab for your electrical projects.",
+      "sourceUrl": "https://venturelab.upenn.edu/engineering-studios",
+      "sourceTitle": "Engineering Studios",
+      "themes": [
+        "making",
+        "engineering-design",
+        "electrical-engineering",
+        "robotics",
+        "entrepreneurship"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:29:50.100Z"
+      }
+    },
+    {
+      "id": "penn:penn-farm-at-penn-park:1fc228",
+      "schoolId": "penn",
+      "unitIds": [],
+      "kind": "facility",
+      "title": "Penn Farm at Penn Park",
+      "nameOnPage": "Penn Farm",
+      "summary": "The Penn Farm, which grew out of the Penn Food and Wellness Collaborative, engages the Penn community around wellness, food access, sustainability, and education.",
+      "hook": "involves students in a campus farm focused on food access, wellness, and sustainability",
+      "quote": "The Penn Farm, which originated through the Penn Food and Wellness Collaborative (PFWC), is a unique, multidisciplinary initiative that engages stakeholders from across the Penn community around four central pillars of wellness, food access, sustainability, and education.",
+      "sourceUrl": "https://www.sustainability.upenn.edu/get-involved/opportunities/penn-farm",
+      "sourceTitle": "Penn Farm | Penn Sustainability",
+      "themes": [
+        "agriculture",
+        "sustainability",
+        "nutrition",
+        "education",
+        "interdisciplinary"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:29:57.869Z"
+      }
+    },
+    {
+      "id": "penn:howard-neukrug-professor-of-practice-in:17c069",
+      "schoolId": "penn",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "faculty",
+      "title": "Howard Neukrug, Professor of Practice in Earth and Environmental Science",
+      "nameOnPage": "Howard Neukrug",
+      "summary": "Howard Neukrug, a Professor of Practice in Earth and Environmental Science, is the former Commissioner and CEO of Philadelphia Water, whose water system serves 2.3 million people.",
+      "hook": "brings experience leading Philadelphia Water's drinking water, wastewater, and stormwater system",
+      "quote": "Mr. Neukrug is the former Commissioner and CEO of Philadelphia Water ... for its drinking water/wastewater/stormwater system serving 2.3 million people. He is currently a Professor of Practice in the Earth and Environmental Sciences Department",
+      "sourceUrl": "https://earth.sas.upenn.edu/people/howard-neukrug",
+      "sourceTitle": "Howard Neukrug | Earth and Environmental Sciences",
+      "themes": [
+        "water",
+        "cities",
+        "public-policy",
+        "environmental-engineering",
+        "environmental-studies"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Howard Neukrug"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:29:57.675Z"
+      }
+    },
+    {
+      "id": "penn:hugo-n-ulloa-assistant-professor-of-eart:341e86",
+      "schoolId": "penn",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "faculty",
+      "title": "Hugo N. Ulloa, Assistant Professor of Earth and Environmental Science",
+      "nameOnPage": "Hugo N. Ulloa",
+      "summary": "Hugo Ulloa studies the physics of transport and mixing in natural waters such as lakes and coastal seas, blending theory, numerical modeling, and laboratory and field observations.",
+      "hook": "studies how water moves and mixes in lakes and coastal seas using models plus lab and field observations",
+      "quote": "My research focuses on characterizing the physics governing transport and mixing processes in natural waters, such as lakes and coastal seas. For this, I blend theory, high-resolution numerical modelling with laboratory and field observations.",
+      "sourceUrl": "https://earth.sas.upenn.edu/people/hugo-ulloa",
+      "sourceTitle": "Hugo N. Ulloa | Earth and Environmental Sciences",
+      "themes": [
+        "water",
+        "physics",
+        "fieldwork",
+        "marine",
+        "environmental-studies"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Hugo N. Ulloa"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:29:57.675Z"
+      }
+    },
+    {
+      "id": "penn:jon-hawkings-assistant-professor-of-eart:a1e6e6",
+      "schoolId": "penn",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "faculty",
+      "title": "Jon Hawkings, Assistant Professor of Earth and Environmental Science",
+      "nameOnPage": "Jon Hawkings",
+      "summary": "Jon Hawkings studies how glacial meltwater shapes downstream biogeochemical cycles, relying heavily on field sampling and electrochemical sensor deployment.",
+      "hook": "researches meltwater chemistry through field sampling and deployed electrochemical sensors",
+      "quote": "My current research focuses on the role of glacial meltwater in downstream biogeochemical cycles. ... A large part of my research is based on field observations (sample collection for analysis in labs and electrochemical sensor deployment).",
+      "sourceUrl": "https://earth.sas.upenn.edu/people/jon-hawkings",
+      "sourceTitle": "Jon Hawkings | Earth and Environmental Sciences",
+      "themes": [
+        "water",
+        "sensors",
+        "fieldwork",
+        "chemistry",
+        "earth-science",
+        "environmental-studies"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Jon Hawkings"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:29:57.675Z"
+      }
+    },
+    {
+      "id": "penn:oceans-and-climate-group-penn:6fb6c1",
+      "schoolId": "penn",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "lab",
+      "title": "Oceans & Climate Group @Penn",
+      "nameOnPage": "Oceans & Climate Group",
+      "summary": "The Oceans & Climate Group runs global climate models and built a Digital Climate Atlas of over 200 geospatial datasets with IPCC projections of how warming will affect places.",
+      "hook": "uses global climate models and a 200-dataset online climate atlas to map warming impacts",
+      "quote": "We run global climate models and study their output ... The Digital Climate Atlas is an online climate visualization project. It includes over 200 geospatial datasets and includes IPCC projections for how temperature increases will impact places around the world.",
+      "sourceUrl": "https://web.sas.upenn.edu/oceans-and-climate/",
+      "sourceTitle": "Oceans and Climate |",
+      "themes": [
+        "climate",
+        "gis-mapping",
+        "data-science",
+        "marine",
+        "global"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Irina Marinov"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:29:58.605Z"
+      }
+    },
+    {
+      "id": "penn:penn-atmospheric-multiscale-observations:be20b9",
+      "schoolId": "penn",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "lab",
+      "title": "Penn ATmospheric Multiscale Observations & Simulations (ATMOS) Lab",
+      "nameOnPage": "Urban Microclimate & Atmospheric Physics",
+      "summary": "The ATMOS Lab studies how surface turbulence interacts with the atmosphere from microclimates to regional climate, with a research area on heat, mass, and momentum transfer in cities.",
+      "hook": "investigates urban microclimates and how heat moves through cities",
+      "quote": "The ATMOS Lab studies how turbulent processes at the Earth’s surface interact with the atmosphere across scales, from microclimates to regional weather and climate. ... Urban Microclimate & Atmospheric Physics ... Fundamental understanding of heat, mass, and momentum transfer in cities.",
+      "sourceUrl": "https://web.sas.upenn.edu/atmos-lab/",
+      "sourceTitle": "Atmos-Lab – Penn Arts & Sciences",
+      "themes": [
+        "climate",
+        "cities",
+        "physics",
+        "earth-science"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:29:58.688Z"
+      }
+    },
+    {
+      "id": "penn:penn-geflow-lab:a2e481",
+      "schoolId": "penn",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "lab",
+      "title": "Penn GEFLOW Lab",
+      "nameOnPage": "Urban Flooding in a Changing Climate",
+      "summary": "The Penn GEFLOW Lab studies fluid physics in nature, including a project on how extreme rainfall becomes urban flood waves, and lists senior thesis research among its openings for undergraduates.",
+      "hook": "offers undergraduates senior thesis research on natural flows such as urban flooding from extreme rainfall",
+      "quote": "This project aims to develop an interdisciplinary framework to predict how extreme rainfall events become flood waves in urban environments and quantify its impacts. ... Undergraduate student – Senior thesis",
+      "sourceUrl": "https://web.sas.upenn.edu/geflow-lab/",
+      "sourceTitle": "Penn GEFLOW Lab – Exploring the Physics of Fluids in Nature",
+      "themes": [
+        "water",
+        "cities",
+        "climate",
+        "undergraduate-research",
+        "physics",
+        "interdisciplinary"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:29:58.748Z"
+      }
+    },
+    {
+      "id": "penn:plante-lab-at-penn:21e2e6",
+      "schoolId": "penn",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "lab",
+      "title": "Plante Lab at Penn",
+      "nameOnPage": "Plante Lab at Penn",
+      "summary": "The Plante Lab studies what stabilizes and destabilizes organic matter in mineral soils and mentors undergraduate students in its research program.",
+      "hook": "mentors undergraduates in soil science research on how organic matter persists in soils",
+      "quote": "We seek to characterize and understand the mechanisms that stabilize and destabilize organic matter in mineral soils. ... Mentoring postdocs, graduate and undergraduate students in our research program, teaching graduate and undergraduate courses using active learning techniques, and K12 teaching and outreach on the importance of soils.",
+      "sourceUrl": "https://web.sas.upenn.edu/aplante/",
+      "sourceTitle": "Plante Lab @ Penn | Soil Science and Terrestrial Biogeochemistry Research at Penn",
+      "themes": [
+        "earth-science",
+        "agriculture",
+        "undergraduate-research",
+        "education"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Alain F. Plante"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:30:08.911Z"
+      }
+    },
+    {
+      "id": "penn:price-lab-for-digital-humanities:c5e6a3",
+      "schoolId": "penn",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "lab",
+      "title": "Price Lab for Digital Humanities",
+      "nameOnPage": "Price Lab for Digital Humanities",
+      "summary": "The Price Lab for Digital Humanities helps humanities scholars become creators and critics of technology through cross-disciplinary collaboration and digital skill-sharing at all levels.",
+      "hook": "builds digital and computational skills for humanities students through cross-disciplinary collaboration",
+      "quote": "Welcome to the Price Lab for Digital Humanities at the University of Pennsylvania. Our mission is to empower humanities scholars to become more confident creators and critics of technology. Toward that end, we provide a space for exploratory collaborations across the disciplines, as well as digital skill-sharing at all levels of experience and expertise.",
+      "sourceUrl": "https://pricelab.sas.upenn.edu/about/what-we-do",
+      "sourceTitle": "What We Do | Price Lab for Digital Humanities",
+      "themes": [
+        "computer-science",
+        "literature",
+        "history",
+        "interdisciplinary"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:29:58.803Z"
+      }
+    },
+    {
+      "id": "penn:academically-based-community-service-abc:89d900",
+      "schoolId": "penn",
+      "unitIds": [],
+      "kind": "location",
+      "title": "Academically Based Community Service (ABCS) courses with West Philadelphia partners",
+      "nameOnPage": "ABCS Courses",
+      "summary": "In Academically Based Community Service courses, Penn students and faculty work with West Philadelphia public schools, communities of faith, and community organizations on shared problems.",
+      "hook": "takes coursework into West Philadelphia public schools, congregations, and community organizations",
+      "quote": "Academically Based Community Service is at the core of the Netter Center’s work. ABCS students and faculty work with West Philadelphia public schools, communities of faith, and community organizations to help solve critical campus and community problems.",
+      "sourceUrl": "https://www.upenn.edu/academics/off-campus-learning",
+      "sourceTitle": "Off-campus Learning | University of Pennsylvania",
+      "themes": [
+        "community-engagement",
+        "cities",
+        "education",
+        "religion"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "ABCS is a signature Penn model that some applicants mention, though specific ABCS courses are rarely named.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:30:00.198Z"
+      }
+    },
+    {
+      "id": "penn:civic-sustainability-fellowship-with-phi:f04804",
+      "schoolId": "penn",
+      "unitIds": [],
+      "kind": "location",
+      "title": "Civic Sustainability Fellowship with Philadelphia city agencies",
+      "nameOnPage": "Civic Sustainability Fellowship",
+      "summary": "This eleven-week paid summer fellowship places Penn students with Philadelphia city agencies and nonprofits, such as the City's Office of Sustainability and the Philadelphia Energy Authority.",
+      "hook": "places students in paid summer roles with Philadelphia's sustainability office and energy authority",
+      "quote": "This eleven-week paid summer program places research interns in summer positions with city agencies and non-profit organization to support the City’s sustainability objectives and provide professional development and real-world learning opportunities to Penn students. ... City of Philadelphia’s Office of Sustainability ... Philadelphia Energy Authority",
+      "sourceUrl": "https://www.sustainability.upenn.edu/get-involved/opportunities/civic-sustainability-fellowship",
+      "sourceTitle": "Civic Sustainability Fellowship | Penn Sustainability",
+      "themes": [
+        "sustainability",
+        "cities",
+        "energy",
+        "career",
+        "social-enterprise"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:30:00.325Z"
+      }
+    },
+    {
+      "id": "penn:morris-arboretum-and-gardens:458a8c",
+      "schoolId": "penn",
+      "unitIds": [],
+      "kind": "location",
+      "title": "Morris Arboretum & Gardens",
+      "nameOnPage": "Morris Arboretum & Gardens",
+      "summary": "Penn's Morris Arboretum & Gardens is a historic public garden and educational institution whose year-round offerings integrate art, science, and environmental stewardship.",
+      "hook": "offers year-round activities that combine science and environmental stewardship at Penn's public garden",
+      "quote": "A historic public garden and educational institution, the Morris Arboretum & Gardens hosts year-round ... that integrates art, science, and environmental stewardship.",
+      "sourceUrl": "https://www.upenn.edu/life-at-penn/arts",
+      "sourceTitle": "Arts & Culture | University of Pennsylvania",
+      "themes": [
+        "ecology",
+        "museums",
+        "education"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:30:00.405Z"
+      }
+    },
+    {
+      "id": "penn:quaker-consortium-courses-at-bryn-mawr-h:eef45f",
+      "schoolId": "penn",
+      "unitIds": [],
+      "kind": "location",
+      "title": "Quaker Consortium courses at Bryn Mawr, Haverford, and Swarthmore",
+      "nameOnPage": "Quaker Consortium",
+      "summary": "Through the Quaker Consortium, Penn students can study at Bryn Mawr, Haverford, or Swarthmore Colleges during the fall and spring terms.",
+      "hook": "lets students take fall and spring courses at Bryn Mawr, Haverford, or Swarthmore",
+      "quote": "Penn students have a unique opportunity to study at Bryn Mawr, Haverford, or Swarthmore Colleges during the fall and spring terms of the academic year.",
+      "sourceUrl": "https://www.upenn.edu/academics/off-campus-learning",
+      "sourceTitle": "Off-campus Learning | University of Pennsylvania",
+      "themes": [
+        "interdisciplinary"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:30:00.198Z"
+      }
+    },
+    {
+      "id": "penn:artificial-intelligence-bse:bd00c5",
+      "schoolId": "penn",
+      "unitIds": [
+        "seas"
+      ],
+      "kind": "major",
+      "title": "Artificial Intelligence, BSE",
+      "nameOnPage": "Artificial Intelligence, BSE",
+      "summary": "Penn Engineering offers an in-person BSE in Artificial Intelligence, described as the first Ivy League AI engineering degree, that integrates computer science, robotics, ethics, and data science.",
+      "hook": "combines computer science, robotics, ethics, and data science in an undergraduate AI engineering degree",
+      "quote": "Penn Engineering; Offered In-Person; First Ivy League BSE in AI integrating CS, robotics, ethics, and data science.",
+      "sourceUrl": "https://ai.upenn.edu/education",
+      "sourceTitle": "Education | Penn AI",
+      "themes": [
+        "ai",
+        "computer-science",
+        "robotics",
+        "data-science",
+        "philosophy"
+      ],
+      "commonness": "common",
+      "commonnessReason": "Widely publicized as the first Ivy League undergraduate AI degree, so many applicants cite it.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:30:01.003Z"
+      }
+    },
+    {
+      "id": "penn:computational-neuroscience-minor:e9aa63",
+      "schoolId": "penn",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "major",
+      "title": "Computational Neuroscience Minor",
+      "nameOnPage": "Computational Neuroscience",
+      "summary": "Penn's cross-school Computational Neuroscience minor gives students who study the brain quantitative skills and teaches neuroscience to students already trained in quantitative methods.",
+      "hook": "pairs quantitative training with neuroscience for students coming from either side",
+      "quote": "The Neuroscience Program has established a cross-school, inter-disciplinary Minor in Computational Neuroscience ... The minor provides quantitative skills to those already studying the brain, and teaches neuroscience to those already immersed in quantitative methodologies.",
+      "sourceUrl": "https://neuroscience.sas.upenn.edu/studying-neuroscience/requirements/computational-neuroscience-minor",
+      "sourceTitle": "Computational Neuroscience Minor | Neuroscience",
+      "themes": [
+        "neuroscience",
+        "mathematics",
+        "interdisciplinary",
+        "computer-science"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:30:01.443Z"
+      }
+    },
+    {
+      "id": "penn:environmental-studies-major:fbb55d",
+      "schoolId": "penn",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "major",
+      "title": "Environmental Studies Major",
+      "nameOnPage": "Environmental Studies",
+      "summary": "Penn's Environmental Studies major trains graduates to model geographic and environmental systems and to collect, manage, and work with complex environmental data sets in software.",
+      "hook": "trains students to collect, manage, and work with complex environmental data sets in software",
+      "quote": "Graduates can also develop basic models of geographic, environmental or geologic systems. Graduates can collect and manage a complex data set. They can also manipulate environmental data with computer software.",
+      "sourceUrl": "https://earth.sas.upenn.edu/undergraduate/majors/environmental-studies",
+      "sourceTitle": "Environmental Studies | Earth and Environmental Sciences",
+      "themes": [
+        "earth-science",
+        "data-science",
+        "environmental-engineering",
+        "environmental-studies",
+        "computer-science"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "The intended major itself is often named by applicants, but its data and modeling objectives are rarely cited.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:30:01.636Z"
+      }
+    },
+    {
+      "id": "penn:environmental-studies-environmental-poli:8bfb37",
+      "schoolId": "penn",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "major",
+      "title": "Environmental Studies: Environmental Policy & Application concentration",
+      "nameOnPage": "Environmental Policy & Application",
+      "summary": "An Environmental Studies concentration on the social and management aspects of environmental problems, in which community-based ABCS courses are strongly recommended.",
+      "hook": "pairs environmental policy coursework with strongly recommended community-based ABCS courses",
+      "quote": "Students in the Environmental Policy and Application acquire a background in the social and management aspects of environmental problems. ABCS courses in ENVS are strongly recommended for this concentration.",
+      "sourceUrl": "https://earth.sas.upenn.edu/undergraduate/majors/environmental-studies",
+      "sourceTitle": "Environmental Studies | Earth and Environmental Sciences",
+      "themes": [
+        "environmental-policy",
+        "community-engagement",
+        "environmental-studies",
+        "public-policy",
+        "business"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:30:01.636Z"
+      }
+    },
+    {
+      "id": "penn:impact-value-and-sustainable-business-iv:b99369",
+      "schoolId": "penn",
+      "unitIds": [
+        "wharton"
+      ],
+      "kind": "major",
+      "title": "Impact, Value, and Sustainable Business (IVSB) concentration",
+      "nameOnPage": "Impact, Value, and Sustainable Business",
+      "summary": "Starting in 2026-27, Wharton undergraduates can concentrate in Impact, Value, and Sustainable Business, with an optional Business, Energy, Environment and Sustainability (BEES) specialization.",
+      "hook": "lets Wharton students specialize in business, energy, environment, and sustainability",
+      "quote": "Starting in the 2026-2027 academic year, Wharton undergraduate students can declare a concentration in Impact, Value, and Sustainable Business (IVSB). ... IVSB concentrators may choose to earn one of two transcript-level specializations—Business, Energy, Environment and Sustainability (BEES) or Social and Governance (SOGO)",
+      "sourceUrl": "https://impact.wharton.upenn.edu/students/undergraduate-concentration-impact-value-and-sustainable-business/",
+      "sourceTitle": "Undergraduate Concentration: Impact, Value, and Sustainable Business - Impact, Value, and Sustainable Business Initiative",
+      "themes": [
+        "business",
+        "sustainability",
+        "energy",
+        "social-enterprise",
+        "environmental-studies",
+        "political-science"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:30:02.429Z"
+      }
+    },
+    {
+      "id": "penn:philosophy-politics-and-economics-ppe-ma:d75e2b",
+      "schoolId": "penn",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "major",
+      "title": "Philosophy, Politics and Economics (PPE) major",
+      "nameOnPage": "PPE Thematic Concentrations",
+      "summary": "PPE is an interdisciplinary major in which students design a thematic concentration of advanced courses, with themes such as Public Policy and Governance and Distributive Justice.",
+      "hook": "lets students build a cross-disciplinary concentration in themes like public policy and governance",
+      "quote": "PPE is an interdisciplinary major that aims teach its majors how to think and work interdisciplinarily. ... Students design a thematic concentration composed of challenging classes, allowing them to think deeply about interdisciplinary topics ... Public Policy and Governance ... Distributive Justice",
+      "sourceUrl": "https://ppe.sas.upenn.edu/study/curriculum/thematic-concentrations",
+      "sourceTitle": "Thematic Concentrations | Philosophy Politics & Economics",
+      "themes": [
+        "philosophy",
+        "political-science",
+        "economics",
+        "public-policy",
+        "interdisciplinary"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:30:03.010Z"
+      }
+    },
+    {
+      "id": "penn:community-school-student-partnerships-cs:d06e54",
+      "schoolId": "penn",
+      "unitIds": [],
+      "kind": "organization",
+      "title": "Community School Student Partnerships (CSSP)",
+      "nameOnPage": "Community School Student Partnerships",
+      "summary": "CSSP is an undergraduate organization that works with Netter Center community schools to run school-day and after-school programs for children and families at four West Philadelphia schools.",
+      "hook": "lets students help run school-day and after-school programs at four West Philadelphia schools",
+      "quote": "Community School Student Partnerships (CSSP) is an undergraduate student organization that works in close collaboration with the Netter Center’s university-assisted community schools to provide academic and cultural enrichment to children and families in West Philadelphia. Penn students help operate school day and after school programs in four local schools.",
+      "sourceUrl": "https://www.nettercenter.upenn.edu/what-we-do/university-assisted-community-schools/community-school-student-partnerships",
+      "sourceTitle": "Community School Student Partnerships | Netter Center for Community Partnerships",
+      "themes": [
+        "community-engagement",
+        "youth",
+        "education"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:30:08.975Z"
+      }
+    },
+    {
+      "id": "penn:penn-band:26c158",
+      "schoolId": "penn",
+      "unitIds": [],
+      "kind": "organization",
+      "title": "Penn Band",
+      "nameOnPage": "Penn Band",
+      "summary": "The student-run Penn Band, part of Penn's Department of Athletics, performs upwards of 100 times during the academic year.",
+      "hook": "performs more than 100 times a year as a student-run band within Penn Athletics",
+      "quote": "The Penn Band—guardians of all things “Red and Blue”—is a part of the Department of Athletics at Penn. It stands among the largest and most active student-run organizations on-campus, performing upwards of 100 times during the academic year.",
+      "sourceUrl": "https://admissions.upenn.edu/student-life/exploring-community/community-engagement/performing-arts",
+      "sourceTitle": "Performing Arts | Penn Admissions",
+      "themes": [
+        "music",
+        "athletics"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:30:09.034Z"
+      }
+    },
+    {
+      "id": "penn:penn-cycling-and-triathlon-sport-club:b87eba",
+      "schoolId": "penn",
+      "unitIds": [],
+      "kind": "organization",
+      "title": "Penn Cycling & Triathlon sport club",
+      "nameOnPage": "Cycling & Triathlon",
+      "summary": "Cycling & Triathlon is one of Penn's student sport clubs, which operate under the Sport Club Council and the Campus Recreation Department.",
+      "hook": "gives riders a student-run cycling and triathlon club within Penn Campus Recreation",
+      "quote": "Sport Clubs fall under the direction of the Sport Club Council (SCC) and the Campus Recreation Department. ... Cycling & Triathlon",
+      "sourceUrl": "https://recreation.upenn.edu/sports/2019/9/25/sport-club-directory.aspx",
+      "sourceTitle": "Sport Club Directory - Penn Campus Recreation",
+      "themes": [
+        "cycling",
+        "athletics",
+        "fitness"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:30:09.612Z"
+      }
+    },
+    {
+      "id": "penn:penn-debate-society:e7ae8f",
+      "schoolId": "penn",
+      "unitIds": [],
+      "kind": "organization",
+      "title": "Penn Debate Society",
+      "nameOnPage": "Penn Debate Society",
+      "summary": "Founded in 1984, the Penn Debate Society is Penn's competitive parliamentary debate team in the American Parliamentary Debate Association, with members from engineering to English.",
+      "hook": "competes in parliamentary debate in the American Parliamentary Debate Association",
+      "quote": "The Penn Debate Society (PDS) was founded in 1984 as the Penn Parliamentary Debate Society as part of the Penn Debate Council. Today, we are Penn's nationally ranked competitive debate team in the American Parliamentary Debate Association ... Our debaters range from engineering students to English majors and hail from all around the world.",
+      "sourceUrl": "https://socialfundraising.apps.upenn.edu/socialFundraising/jsp/fast.do?customApplicationNameOrId=PennDebateSociety&fastStart=customTemplateByNameOrId",
+      "sourceTitle": "Social Fundraising",
+      "themes": [
+        "debate"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Most universities have a debate team; useful for the swap test.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:30:09.918Z"
+      }
+    },
+    {
+      "id": "penn:penn-environmental-group-and-other-under:6e71f9",
+      "schoolId": "penn",
+      "unitIds": [],
+      "kind": "organization",
+      "title": "Penn Environmental Group and other undergraduate sustainability groups",
+      "nameOnPage": "Penn Environmental Group",
+      "summary": "Penn's undergraduate environmental and climate student groups include the Penn Environmental Group, Penn Climate Ventures, the Penn Beekeeping Club, and the Penn Outdoors Club.",
+      "hook": "offers student-run environmental, climate, beekeeping, and outdoors clubs",
+      "quote": "Penn is home to numerous undergraduate student groups focused on environmental interests, climate action, and sustainability. Penn Outdoors Club, Penn Beekeeping Club, Penn Climate Ventures, and Penn Environmental Group are just a few.",
+      "sourceUrl": "https://www.sustainability.upenn.edu/get-involved/opportunities/sustainability-student-groups",
+      "sourceTitle": "Sustainability Student Groups | Penn Sustainability",
+      "themes": [
+        "sustainability",
+        "climate",
+        "outdoors"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Most universities have an environmental club; useful mainly for the swap test.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:30:10.648Z"
+      }
+    },
+    {
+      "id": "penn:penn-for-immigrant-rights-pir:03e2a0",
+      "schoolId": "penn",
+      "unitIds": [],
+      "kind": "organization",
+      "title": "Penn for Immigrant Rights (PIR)",
+      "nameOnPage": "Penn for Immigrant Rights (PIR)",
+      "summary": "Penn for Immigrant Rights is a student advocacy group that educates the Penn campus and the Philadelphia community about immigration through demonstrations and workshops.",
+      "hook": "runs workshops for Penn and Philadelphia audiences that address misconceptions about immigration",
+      "quote": "Penn for Immigrant Rights (PIR) is a social and political advocacy group dedicated to opening up the dialogue about undocumented immigrants and immigration in general. We strive to educate Penn’s campus and the Philadelphia community through demonstrations and workshops that seek to dismantle misconceptions about immigration",
+      "sourceUrl": "https://casalatina.universitylife.upenn.edu/latinx-student-groups/",
+      "sourceTitle": "Latinx Student Groups - Casa Latina",
+      "themes": [
+        "immigration",
+        "social-justice",
+        "community-engagement"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:30:10.822Z"
+      }
+    },
+    {
+      "id": "penn:penn-geology-society:049002",
+      "schoolId": "penn",
+      "unitIds": [],
+      "kind": "organization",
+      "title": "Penn Geology Society",
+      "nameOnPage": "Penn Geology Society",
+      "summary": "The Penn Geology Society, formed in 2016, organizes local and regional field trips to geologically significant sites and welcomes any student interested in geology or environmental science.",
+      "hook": "runs local and regional geology field trips open to students interested in earth or environmental science",
+      "quote": "The Penn Geology Society formed in 2016 with the goal of fostering an environment where students with a passion for Earth science can come together to learn, grow, and develop. ... Organize field trips to geologically significant sites at both the local and regional level. ... all students with an interest in geology, environmental science, or related fields are welcome to join.",
+      "sourceUrl": "https://earth.sas.upenn.edu/undergraduate/penn-geology-society",
+      "sourceTitle": "Penn Geology Society | Earth and Environmental Sciences",
+      "themes": [
+        "earth-science",
+        "fieldwork",
+        "outdoors",
+        "environmental-studies"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:30:11.207Z"
+      }
+    },
+    {
+      "id": "penn:penn-jazz-ensembles:745195",
+      "schoolId": "penn",
+      "unitIds": [],
+      "kind": "organization",
+      "title": "Penn Jazz Ensembles",
+      "nameOnPage": "Penn Jazz Ensembles",
+      "summary": "The Music Department's Penn Jazz Ensembles are directed by Philadelphia-area professionals and open to all students by audition; undergraduates can earn credit through MUSC 0070.",
+      "hook": "lets students audition into professionally led jazz ensembles and earn MUSC 0070 credit",
+      "quote": "These ensembles, directed by leading professionals in the Philadelphia area, are open to all students, faculty, staff, and community members by audition ... Penn Jazz Ensembles ... Undergraduate students may elect to receive credit (0.5 credit/semester as MUSC 0070) for their participation in these professionally-led Department ensembles.",
+      "sourceUrl": "https://music.sas.upenn.edu/performance/ensembles",
+      "sourceTitle": "Ensembles | Department of Music",
+      "themes": [
+        "jazz",
+        "music"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Most universities offer jazz ensembles; useful for the swap test.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:30:11.871Z"
+      }
+    },
+    {
+      "id": "penn:performing-arts-council-at-platt-student:d37dcf",
+      "schoolId": "penn",
+      "unitIds": [],
+      "kind": "organization",
+      "title": "Performing Arts Council at Platt Student Performing Arts House",
+      "nameOnPage": "The Performing Arts Council",
+      "summary": "Platt Student Performing Arts House is home to the Performing Arts Council, an umbrella for 46 student-run comedy, spoken word, dance, theater, and music groups.",
+      "hook": "connects students to 46 student-run comedy, spoken word, dance, theater, and music groups",
+      "quote": "Platt House is home to The Performing Arts Council, an umbrella organization for 46 student-run comedy, spoken word, dance, theater, and music organizations.",
+      "sourceUrl": "https://admissions.upenn.edu/student-life/exploring-community/community-engagement/performing-arts",
+      "sourceTitle": "Performing Arts | Penn Admissions",
+      "themes": [
+        "theater",
+        "dance",
+        "music"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:30:09.034Z"
+      }
+    },
+    {
+      "id": "penn:the-daily-pennsylvanian:b60b0f",
+      "schoolId": "penn",
+      "unitIds": [],
+      "kind": "organization",
+      "title": "The Daily Pennsylvanian",
+      "nameOnPage": "The Daily Pennsylvanian",
+      "summary": "The Daily Pennsylvanian is Penn's independent student media organization, publishing news, sports, and entertainment coverage of Penn and the Philadelphia area about 116 mornings a year.",
+      "hook": "gives student journalists a newsroom covering Penn and the Philadelphia metro area",
+      "quote": "The Daily Pennsylvanian (DP)—recognized as one of the top college newspapers in the country—is Penn’s independent student media organization. About 116 mornings each school year, Penn students, faculty and staff turn to the DP for news, sports, and entertainment coverage about the Philadelphia metro area and Penn.",
+      "sourceUrl": "https://admissions.upenn.edu/student-life/exploring-community/community-engagement/media-communications",
+      "sourceTitle": "Media and Communications | Penn Admissions",
+      "themes": [
+        "journalism"
+      ],
+      "commonness": "common",
+      "commonnessReason": "A standard student newspaper featured on admissions pages; most schools have an equivalent.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:30:12.044Z"
+      }
+    },
+    {
+      "id": "penn:hayden-scholars:b6f8c6",
+      "schoolId": "penn",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "program",
+      "title": "Hayden Scholars",
+      "nameOnPage": "Hayden Scholars",
+      "summary": "Hayden Scholars builds a community of undergraduate geoscience researchers through independent research experiences affiliated with Penn's Department of Earth and Environmental Science.",
+      "hook": "gives undergraduates mentored, independent geoscience research experiences within a cohort",
+      "quote": "The Hayden Scholars program aims to build a community of undergraduate researchers in the geosciences at Penn through extra-curricular, independent research experiences affiliated with the Department of Earth and Environmental Science.",
+      "sourceUrl": "https://earth.sas.upenn.edu/undergraduate/undergraduate-research",
+      "sourceTitle": "Undergraduate Research | Earth and Environmental Sciences",
+      "themes": [
+        "earth-science",
+        "undergraduate-research",
+        "environmental-studies",
+        "education"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:30:12.203Z"
+      }
+    },
+    {
+      "id": "penn:kleinman-center-undergraduate-climate-an:b61d14",
+      "schoolId": "penn",
+      "unitIds": [],
+      "kind": "program",
+      "title": "Kleinman Center Undergraduate Climate & Energy Policy Seminar",
+      "nameOnPage": "Climate & Energy Policy Seminar",
+      "summary": "The Kleinman Center's selective seminar for committed undergraduates meets four to six times a semester to hear energy researchers discuss the findings and policy implications of their work.",
+      "hook": "selects undergraduate fellows to hear energy researchers discuss the policy implications of their work",
+      "quote": "This program is designed as a competitive and selective appointment for committed undergraduates. Admitted students are expected to attend 4-6 seminars over the course of the semester at the Kleinman Center for Energy Policy. These sessions provide students with the opportunity to meet and hear from energy researchers as they discuss the findings and policy implications of their recent research.",
+      "sourceUrl": "https://kleinmanenergy.upenn.edu/education/undergraduate-seminar/",
+      "sourceTitle": "Undergraduate Seminar - Kleinman Center for Energy Policy",
+      "themes": [
+        "environmental-policy",
+        "energy",
+        "climate",
+        "public-policy"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:30:12.288Z"
+      }
+    },
+    {
+      "id": "penn:penn-abroad:f6f0b2",
+      "schoolId": "penn",
+      "unitIds": [],
+      "kind": "program",
+      "title": "Penn Abroad",
+      "nameOnPage": "Penn Abroad",
+      "summary": "Penn Abroad sends over 2,500 students a year to more than 50 countries for semester study abroad, summer internships, service learning, and short-term programs.",
+      "hook": "sends students to more than 50 countries for study abroad, internships, and service learning",
+      "quote": "Penn Abroad serves as the hub for student global opportunities at Penn. Each year the University sends over 2,500 Penn students to more than 50 countries around the world on semester study abroad, summer internships, service learning, and short-term programs.",
+      "sourceUrl": "https://www.upenn.edu/academics/off-campus-learning",
+      "sourceTitle": "Off-campus Learning | University of Pennsylvania",
+      "themes": [
+        "study-abroad",
+        "global",
+        "community-engagement",
+        "career"
+      ],
+      "commonness": "common",
+      "commonnessReason": "Study abroad offices exist at nearly every university and are often cited generically.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:30:00.198Z"
+      }
+    },
+    {
+      "id": "penn:penn-adventure-outdoor-trips-campus-recr:9e1138",
+      "schoolId": "penn",
+      "unitIds": [],
+      "kind": "program",
+      "title": "Penn Adventure outdoor trips (Campus Recreation)",
+      "nameOnPage": "Penn Adventure trips",
+      "summary": "Campus Recreation's outdoor adventure trips range from scenic day trips to multi-day expeditions in the Greater Philadelphia area and beyond.",
+      "hook": "takes students on day trips and multi-day outdoor expeditions near Philadelphia and beyond",
+      "quote": "Whether you're looking for a scenic day trip or a multi-day expedition, our outdoor adventure trips program has you covered. Penn Adventure trips can take you to local destinations in the Greater Philadelphia area or outside of the state",
+      "sourceUrl": "https://recreation.upenn.edu/sports/2025/3/18/outdoor-trips.aspx",
+      "sourceTitle": "Outdoor Trips - Penn Campus Recreation",
+      "themes": [
+        "outdoors",
+        "fitness"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:30:13.318Z"
+      }
+    },
+    {
+      "id": "penn:penn-green-fund:2f361b",
+      "schoolId": "penn",
+      "unitIds": [],
+      "kind": "program",
+      "title": "Penn Green Fund",
+      "nameOnPage": "Green Fund",
+      "summary": "Penn's Green Fund accepts ideas from students, faculty, staff, and postdocs for improving the University's environmental performance and cutting campus emissions, with awards up to $30,000.",
+      "hook": "funds student-proposed campus sustainability projects with awards of up to $30,000",
+      "quote": "Penn’s Green Fund welcomes ideas from students, faculty, staff, and postdocs about ways to improve the University’s environmental performance and reduce campus emissions. ... There is no minimum award for a Green Fund application and the maximum award is $30,000.",
+      "sourceUrl": "https://www.sustainability.upenn.edu/get-involved/opportunities/green-fund",
+      "sourceTitle": "Green Fund | Penn Sustainability",
+      "themes": [
+        "sustainability",
+        "climate"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:30:14.291Z"
+      }
+    },
+    {
+      "id": "penn:penn-iur-undergraduate-urban-research-co:579a37",
+      "schoolId": "penn",
+      "unitIds": [],
+      "kind": "program",
+      "title": "Penn IUR Undergraduate Urban Research Colloquium (UURC)",
+      "nameOnPage": "Undergraduate Urban Research Colloquium",
+      "summary": "The Penn Institute for Urban Research's colloquium pairs faculty doing urban-focused research with undergraduates in a semester-long, credit-bearing research seminar.",
+      "hook": "pairs undergraduates with faculty doing urban research in a credit-bearing seminar",
+      "quote": "This innovative research program pairs faculty conducting urban-focused scholarship with undergraduates that have an interest in developing research skills in a semester-long, credit-bearing seminar.",
+      "sourceUrl": "https://penniur.upenn.edu/student-programs",
+      "sourceTitle": "Student Programs | Penn IUR",
+      "themes": [
+        "cities",
+        "undergraduate-research"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:30:14.726Z"
+      }
+    },
+    {
+      "id": "penn:penn-model-organization-of-american-stat:b03008",
+      "schoolId": "penn",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "program",
+      "title": "Penn Model Organization of American States (Penn Model OAS)",
+      "nameOnPage": "Penn Model OAS",
+      "summary": "Penn Model OAS pairs Penn undergraduates with Philadelphia-area public high school students who prepare as diplomats for an annual Model OAS simulation in Washington, D.C., including public speaking.",
+      "hook": "prepares students as diplomats for a Model OAS simulation alongside Philadelphia high schoolers",
+      "quote": "Students come from public high schools across in Philadelphia and the Norristown area to work with Penn college students in preparing to serve as “diplomats” in the annual Model OAS simulation in Washington, D.C. in late fall. ... They also engage in public speaking, and interact with policy experts, public officials, and leading scholars in the field.",
+      "sourceUrl": "https://clals.sas.upenn.edu/welcome-penn-model-oas",
+      "sourceTitle": "Welcome to Penn Model OAS | Center for Latin American and Latinx Studies",
+      "themes": [
+        "debate",
+        "latin-america",
+        "international-relations",
+        "youth",
+        "community-engagement",
+        "public-policy"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:30:15.167Z"
+      }
+    },
+    {
+      "id": "penn:penn-undergraduate-research-mentoring-pr:e6ca97",
+      "schoolId": "penn",
+      "unitIds": [],
+      "kind": "program",
+      "title": "Penn Undergraduate Research Mentoring Program (PURM)",
+      "nameOnPage": "Penn Undergraduate Research Mentoring Program",
+      "summary": "PURM lets first- and second-year Penn students spend a summer doing research under a standing Penn faculty member, with no prior research experience required.",
+      "hook": "gives first- and second-year students a summer of faculty-mentored research with no experience required",
+      "quote": "PURM provides Penn students completing their first or second undergraduate year the opportunity to spend a summer conducting cutting-edge research under the guidance of a standing Penn faculty member. No prior experience is required.",
+      "sourceUrl": "https://curf.upenn.edu/undergraduate-research/funding-opportunities",
+      "sourceTitle": "Funding Opportunities | Penn CURF",
+      "themes": [
+        "undergraduate-research",
+        "education"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "A well-publicized Penn research program that some applicants mention.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:30:18.968Z"
+      }
+    },
+    {
+      "id": "penn:penngreen-pre-orientation-program:c2806e",
+      "schoolId": "penn",
+      "unitIds": [],
+      "kind": "program",
+      "title": "PennGreen Pre-Orientation Program",
+      "nameOnPage": "PennGreen",
+      "summary": "PennGreen is a pre-orientation program for incoming students that explores local green spaces, sustainable food networks, and sustainability pathways, with an overnight camping trip as a highlight.",
+      "hook": "introduces incoming students to local green spaces and sustainability pathways, with an overnight camping trip",
+      "quote": "PennGreen is a Pre-Orientation Program for incoming students sponsored by Penn Sustainability and the Undergraduate Assembly. ... discovering local green spaces, exploring sustainable food networks, learning about academic and extracurricular pathways in sustainability ... A highlight of the program is an overnight camping trip.",
+      "sourceUrl": "https://www.sustainability.upenn.edu/get-involved/opportunities/penngreen",
+      "sourceTitle": "PennGreen | Penn Sustainability",
+      "themes": [
+        "sustainability",
+        "first-year",
+        "outdoors"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:30:19.030Z"
+      }
+    },
+    {
+      "id": "penn:spanish-for-healthcare-professionals-and:7e399a",
+      "schoolId": "penn",
+      "unitIds": [
+        "nursing"
+      ],
+      "kind": "program",
+      "title": "Spanish for Healthcare Professionals & Cultural Immersion in Oaxaca (NURS 2980)",
+      "nameOnPage": "Spanish for Healthcare Professionals",
+      "summary": "Penn Nursing's six-week field course in Oaxaca, Mexico, has rising juniors, seniors, and graduate students practice Spanish in health care settings with local partners such as Clinica Del Pueblo.",
+      "hook": "has students practice Spanish in Oaxaca health care settings with local community partners",
+      "quote": "Rising juniors, seniors, and graduate students ... a six-week immersive field experience in the vibrant cultural landscape of Oaxaca, Mexico. ... Master your Spanish Skills in Healthcare settings by applying your skills in practical, real-world settings. ... Connect with the Community through meaningful engagement with our local partners, Instituto Cultural Oaxaca, Fundacion En Via and Clinica Del Pueblo.",
+      "sourceUrl": "https://www.nursing.upenn.edu/live/profiles/19979-independent-study-instituto-cultural-oaxaca-copy",
+      "sourceTitle": "Spanish for Healthcare Professionals & Cultural Immersion in Oaxaca • Global Health • Penn Nursing",
+      "themes": [
+        "study-abroad",
+        "languages",
+        "language-access",
+        "medicine",
+        "latin-america",
+        "nursing",
+        "fieldwork",
+        "community-engagement"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:30:19.510Z"
+      }
+    },
+    {
+      "id": "penn:student-eco-reps:abbaa1",
+      "schoolId": "penn",
+      "unitIds": [],
+      "kind": "program",
+      "title": "Student Eco-Reps",
+      "nameOnPage": "Eco-Reps",
+      "summary": "Each year 10 to 20 sophomores, juniors, and seniors are selected as paid Eco-Reps who work with Penn's Sustainability Office, developing small-scale pilots and then broader implementation.",
+      "hook": "pays students to develop and pilot sustainability projects with Penn's Sustainability Office",
+      "quote": "Students work as paid employees of Penn’s Sustainability Office ... Each year, a cohort of 10-20 Penn sophomores, juniors, and seniors are selected to participate in the Eco-Reps program. ... developing small-scale pilots, and then focusing on broader implementation.",
+      "sourceUrl": "https://www.sustainability.upenn.edu/get-involved/opportunities/student-eco-reps",
+      "sourceTitle": "Student Eco-Reps | Penn Sustainability",
+      "themes": [
+        "sustainability"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:30:19.393Z"
+      }
+    },
+    {
+      "id": "penn:the-marian-anderson-performance-program:d59281",
+      "schoolId": "penn",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "program",
+      "title": "The Marian Anderson Performance Program (MUSC 0100)",
+      "nameOnPage": "Marian Anderson",
+      "summary": "This auditioned Music Department program, open to music majors and minors, provides performance instruction in classical, jazz, and world music traditions.",
+      "hook": "offers auditioned performance instruction in jazz, classical, and world music for music majors and minors",
+      "quote": "This program is open to music majors and minors only. ... The Department of Music supports a wide variety of performance traditions and encourages qualified students to apply for instruction in classical, jazz, and world music traditions.",
+      "sourceUrl": "https://music.sas.upenn.edu/performance/marian-anderson-performance-program",
+      "sourceTitle": "The Marian Anderson Performance Program | Department of Music",
+      "themes": [
+        "music",
+        "jazz"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:30:19.455Z"
+      }
+    },
+    {
+      "id": "penn:the-roy-and-diana-vagelos-integrated-pro:952e8a",
+      "schoolId": "penn",
+      "unitIds": [
+        "college",
+        "seas"
+      ],
+      "kind": "program",
+      "title": "The Roy and Diana Vagelos Integrated Program in Energy Research (VIPER)",
+      "nameOnPage": "The Roy and Diana Vagelos Integrated Program in Energy Research",
+      "summary": "VIPER is a coordinated dual-degree program in energy research in which students earn a BA from the College of Arts and Sciences and a BS in Engineering from Penn Engineering.",
+      "hook": "combines a College BA with an engineering BS for students focused on energy research",
+      "quote": "The Roy and Diana Vagelos Integrated Program in Energy Research ... Students earn a BA from the College of Arts and Sciences and a BS in Engineering from the School of Engineering and Applied Science.",
+      "sourceUrl": "https://www.upenn.edu/academics/interdisciplinary",
+      "sourceTitle": "Interdisciplinary | University of Pennsylvania",
+      "themes": [
+        "energy",
+        "interdisciplinary"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "A known specialized program with its own application; energy-focused applicants often mention it.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:30:19.648Z"
+      }
+    },
+    {
+      "id": "penn:hey-day:370457",
+      "schoolId": "penn",
+      "unitIds": [],
+      "kind": "tradition",
+      "title": "Hey Day",
+      "nameOnPage": "Hey Day",
+      "summary": "Hey Day, which marks juniors becoming seniors, is today Penn's most notable student tradition and incorporates elements of many past and present traditions.",
+      "hook": "marks the passage of juniors to seniors in Penn's most notable annual tradition",
+      "quote": "Today the most notable is the annual Hey Day event which incorporates elements of many other traditions past and present. ... Hey Day as an event to mark the passing of juniors to seniors of the College has its origins in a ceremony that was part of the senior’s Class Day in 1889.",
+      "sourceUrl": "https://archives.upenn.edu/exhibits/penn-history/traditions/hey-day/",
+      "sourceTitle": "Penn Student Traditions: Hey Day",
+      "themes": [
+        "history"
+      ],
+      "commonness": "common",
+      "commonnessReason": "Penn's best-known student tradition, widely cited by applicants.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:30:20.013Z"
+      }
+    },
+    {
+      "id": "penn:new-student-convocation-at-franklin-fiel:9cb3eb",
+      "schoolId": "penn",
+      "unitIds": [],
+      "kind": "tradition",
+      "title": "New Student Convocation at Franklin Field",
+      "nameOnPage": "Convocation",
+      "summary": "Convocation at Franklin Field is Penn's traditional welcome ceremony for the incoming class and new transfer students, with remarks and musical performances.",
+      "hook": "welcomes each new class at Franklin Field with remarks and musical performances",
+      "quote": "hosted the Convocation Ceremony ... at Franklin Field. This ceremony is Penn's traditional welcome to the Class of ... and new transfer students as they join the Penn community, with remarks and musical performances.",
+      "sourceUrl": "https://convocation.upenn.edu/",
+      "sourceTitle": "University of Pennsylvania",
+      "themes": [
+        "first-year",
+        "history",
+        "music"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Most universities hold a convocation; useful mainly for the swap test.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:30:20.156Z"
+      }
+    },
+    {
+      "id": "penn:penn-relays:6498b1",
+      "schoolId": "penn",
+      "unitIds": [],
+      "kind": "tradition",
+      "title": "Penn Relays",
+      "nameOnPage": "Penn Relays",
+      "summary": "First held in 1895, the Penn Relays Carnival is the country's longest-running track and field meet, attracting more than 100,000 spectators and 15,000 entries each year.",
+      "hook": "brings more than 100,000 spectators to campus each year for the longest-running US track meet",
+      "quote": "First held on April 21, 1895, the Penn Relays Carnival is the longest running track & field meet in the country ... more than 100,000 spectators and more than 15,000 entries each year.",
+      "sourceUrl": "https://www.upenn.edu/life-at-penn/athletics-and-recreation",
+      "sourceTitle": "Athletics & Recreation | University of Pennsylvania",
+      "themes": [
+        "running",
+        "athletics"
+      ],
+      "commonness": "common",
+      "commonnessReason": "A famous Penn tradition that many applicants mention.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:30:19.893Z"
+      }
+    }
+  ]
 }

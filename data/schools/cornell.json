@@ -77,13 +77,17 @@
     },
     {
       "id": "engineering",
-      "name": "College of Engineering",
-      "shortName": "Cornell Engineering",
+      "name": "Cornell David A. Duffield College of Engineering",
+      "shortName": "Duffield Engineering",
       "aliases": [
+        "Duffield Engineering",
+        "Duffield College of Engineering",
+        "Cornell Duffield Engineering",
         "Cornell Engineering",
         "College of Engineering"
       ],
       "hosts": [
+        "www.duffield.cornell.edu",
         "www.engineering.cornell.edu"
       ]
     },
@@ -137,8 +141,539 @@
       ]
     }
   ],
-  "prompts": [],
-  "seedUrls": [],
-  "unreachableHosts": [],
-  "hasCorpus": false
+  "prompts": [
+    {
+      "id": "cornell-2026-engineering-why-engineering",
+      "schoolId": "cornell",
+      "unitIds": [
+        "engineering"
+      ],
+      "cycle": "2026-27",
+      "kind": "why_major",
+      "title": "Why engineering (Duffield Engineering long essay 1)",
+      "text": "Fundamentally, engineering is the application of math, science, and technology to solve complex problems. Why do you want to study engineering?",
+      "wordLimit": {
+        "max": 200
+      },
+      "sourceUrl": "https://admissions.cornell.edu/first-year-duffield-engineering-applicants",
+      "verifiedAt": "2026-11-05",
+      "note": "Also listed in Cornell's admissions FAQ 'What are the essay questions for the Fall 2027 application?', which says applicants complete only the essay(s) for the college or school they apply to; there is no university-wide essay this cycle."
+    },
+    {
+      "id": "cornell-2026-engineering-why-duffield",
+      "schoolId": "cornell",
+      "unitIds": [
+        "engineering"
+      ],
+      "cycle": "2026-27",
+      "kind": "why_school",
+      "title": "Why Duffield Engineering (long essay 2)",
+      "text": "Why do you think you would love to study at Duffield Engineering?",
+      "wordLimit": {
+        "max": 200
+      },
+      "sourceUrl": "https://admissions.cornell.edu/first-year-duffield-engineering-applicants",
+      "verifiedAt": "2026-11-05",
+      "note": "Also listed in Cornell's admissions FAQ 'What are the essay questions for the Fall 2027 application?', which says applicants complete only the essay(s) for the college or school they apply to; there is no university-wide essay this cycle."
+    },
+    {
+      "id": "cornell-2026-engineering-joy",
+      "schoolId": "cornell",
+      "unitIds": [
+        "engineering"
+      ],
+      "cycle": "2026-27",
+      "kind": "other",
+      "title": "What brings you joy? (Duffield short answer 1)",
+      "text": "What brings you joy?",
+      "wordLimit": {
+        "max": 100
+      },
+      "sourceUrl": "https://admissions.cornell.edu/first-year-duffield-engineering-applicants",
+      "verifiedAt": "2026-11-05",
+      "note": "Also listed in Cornell's admissions FAQ 'What are the essay questions for the Fall 2027 application?', which says applicants complete only the essay(s) for the college or school they apply to; there is no university-wide essay this cycle."
+    },
+    {
+      "id": "cornell-2026-engineering-contribute",
+      "schoolId": "cornell",
+      "unitIds": [
+        "engineering"
+      ],
+      "cycle": "2026-27",
+      "kind": "community",
+      "title": "Your contribution to Duffield Engineering (short answer 2)",
+      "text": "What do you believe you will contribute to the Duffield Engineering community beyond what you've already detailed in your application? What unique voice will you bring?",
+      "wordLimit": {
+        "max": 100
+      },
+      "sourceUrl": "https://admissions.cornell.edu/first-year-duffield-engineering-applicants",
+      "verifiedAt": "2026-11-05",
+      "note": "Also listed in Cornell's admissions FAQ 'What are the essay questions for the Fall 2027 application?', which says applicants complete only the essay(s) for the college or school they apply to; there is no university-wide essay this cycle."
+    },
+    {
+      "id": "cornell-2026-engineering-activity",
+      "schoolId": "cornell",
+      "unitIds": [
+        "engineering"
+      ],
+      "cycle": "2026-27",
+      "kind": "other",
+      "title": "Most meaningful activity (Duffield short answer 3)",
+      "text": "What is one activity, club, team, organization, work/volunteer experience or family responsibility that is especially meaningful to you? Please briefly tell us about its significance for you.",
+      "wordLimit": {
+        "max": 100
+      },
+      "sourceUrl": "https://admissions.cornell.edu/first-year-duffield-engineering-applicants",
+      "verifiedAt": "2026-11-05",
+      "note": "Also listed in Cornell's admissions FAQ 'What are the essay questions for the Fall 2027 application?', which says applicants complete only the essay(s) for the college or school they apply to; there is no university-wide essay this cycle."
+    },
+    {
+      "id": "cornell-2026-engineering-award",
+      "schoolId": "cornell",
+      "unitIds": [
+        "engineering"
+      ],
+      "cycle": "2026-27",
+      "kind": "other",
+      "title": "Most meaningful award or achievement (Duffield short answer 4)",
+      "text": "What is one award you have received or achievement you have attained that has meant the most to you? Please briefly describe its importance to you.",
+      "wordLimit": {
+        "max": 100
+      },
+      "sourceUrl": "https://admissions.cornell.edu/first-year-duffield-engineering-applicants",
+      "verifiedAt": "2026-11-05",
+      "note": "Also listed in Cornell's admissions FAQ 'What are the essay questions for the Fall 2027 application?', which says applicants complete only the essay(s) for the college or school they apply to; there is no university-wide essay this cycle."
+    },
+    {
+      "id": "cornell-2026-cals-why-major",
+      "schoolId": "cornell",
+      "unitIds": [
+        "cals"
+      ],
+      "cycle": "2026-27",
+      "kind": "why_major",
+      "title": "Why your CALS major",
+      "text": "What interests you about the major you selected? Tell us about experiences (both in and outside of the classroom), questions, and goals that influenced your choice.",
+      "wordLimit": {
+        "max": 350
+      },
+      "sourceUrl": "https://admissions.cornell.edu/first-year-cals-applicants",
+      "verifiedAt": "2026-11-05",
+      "note": "Also listed in Cornell's admissions FAQ 'What are the essay questions for the Fall 2027 application?', which says applicants complete only the essay(s) for the college or school they apply to; there is no university-wide essay this cycle."
+    },
+    {
+      "id": "cornell-2026-cals-why-cals",
+      "schoolId": "cornell",
+      "unitIds": [
+        "cals"
+      ],
+      "cycle": "2026-27",
+      "kind": "why_school",
+      "title": "Why Cornell CALS",
+      "text": "What draws you to Cornell’s College of Agriculture and Life Sciences (CALS)? Reflect on the learning, community, or impact opportunities that matter most to you, and share how they align with Cornell CALS (as you understand it currently).",
+      "wordLimit": {
+        "max": 350
+      },
+      "sourceUrl": "https://admissions.cornell.edu/first-year-cals-applicants",
+      "verifiedAt": "2026-11-05",
+      "note": "Also listed in Cornell's admissions FAQ 'What are the essay questions for the Fall 2027 application?', which says applicants complete only the essay(s) for the college or school they apply to; there is no university-wide essay this cycle."
+    },
+    {
+      "id": "cornell-2026-aap-barch",
+      "schoolId": "cornell",
+      "unitIds": [
+        "aap"
+      ],
+      "cycle": "2026-27",
+      "kind": "why_major",
+      "title": "Why architecture (AAP B.Arch applicants)",
+      "text": "Describe how your interests connect to architecture. Include an example of a creative project, design experience, or personal passion that sparked your interest in pursuing a 5-year professional degree in architecture. Reflect on how this experience shaped your understanding of the field and your motivation to study architecture.",
+      "wordLimit": {
+        "max": 650
+      },
+      "sourceUrl": "https://admissions.cornell.edu/first-year-cornell-aap-applicants",
+      "verifiedAt": "2026-11-05",
+      "note": "For B.Arch applicants. Also listed in Cornell's admissions FAQ 'What are the essay questions for the Fall 2027 application?', which says applicants complete only the essay(s) for the college or school they apply to; there is no university-wide essay this cycle."
+    },
+    {
+      "id": "cornell-2026-aap-bfa",
+      "schoolId": "cornell",
+      "unitIds": [
+        "aap"
+      ],
+      "cycle": "2026-27",
+      "kind": "other",
+      "title": "Artist statement (AAP BFA applicants)",
+      "text": "Submit an artist statement describing your creative interests and practice. Address how your work reflects your artistic voice, influences, and process, and how studying art at Cornell AAP would support and expand your practice. (You will also be prompted to upload a copy to your Slideroom portal.)",
+      "wordLimit": {
+        "max": 650
+      },
+      "sourceUrl": "https://admissions.cornell.edu/first-year-cornell-aap-applicants",
+      "verifiedAt": "2026-11-05",
+      "note": "For BFA applicants. Also listed in Cornell's admissions FAQ 'What are the essay questions for the Fall 2027 application?', which says applicants complete only the essay(s) for the college or school they apply to; there is no university-wide essay this cycle."
+    },
+    {
+      "id": "cornell-2026-aap-urs",
+      "schoolId": "cornell",
+      "unitIds": [
+        "aap"
+      ],
+      "cycle": "2026-27",
+      "kind": "why_major",
+      "title": "Why urban and regional studies (AAP URS applicants)",
+      "text": "Describe your interest in urban and regional studies. Discuss experiences, ideas, or issues that have shaped your interest in cities, communities, and regional systems, and explain how URS at Cornell aligns with your academic and career goals.",
+      "wordLimit": {
+        "max": 650
+      },
+      "sourceUrl": "https://admissions.cornell.edu/first-year-cornell-aap-applicants",
+      "verifiedAt": "2026-11-05",
+      "note": "For Urban and Regional Studies applicants. Also listed in Cornell's admissions FAQ 'What are the essay questions for the Fall 2027 application?', which says applicants complete only the essay(s) for the college or school they apply to; there is no university-wide essay this cycle."
+    },
+    {
+      "id": "cornell-2026-as-why",
+      "schoolId": "cornell",
+      "unitIds": [
+        "as"
+      ],
+      "cycle": "2026-27",
+      "kind": "why_school",
+      "title": "Why Arts and Sciences (your intellectual passion and the A&S curriculum)",
+      "text": "At the College of Arts and Sciences, your education is yours to shape. Describe an intellectual passion, question, or idea that has captured your attention—whether it emerges from your studies or extends beyond your coursework. What specific aspects of our liberal arts curriculum would you draw on to explore and connect your varied interests?",
+      "wordLimit": {
+        "max": 650
+      },
+      "sourceUrl": "https://admissions.cornell.edu/first-year-arts-sciences-applicants",
+      "verifiedAt": "2026-11-05",
+      "note": "Also listed in Cornell's admissions FAQ 'What are the essay questions for the Fall 2027 application?', which says applicants complete only the essay(s) for the college or school they apply to; there is no university-wide essay this cycle."
+    },
+    {
+      "id": "cornell-2026-brooks-why-policy",
+      "schoolId": "cornell",
+      "unitIds": [
+        "brooks"
+      ],
+      "cycle": "2026-27",
+      "kind": "why_major",
+      "title": "Why study policy at the Brooks School",
+      "text": "Discuss your interest in pursuing a major in policy at the Cornell Jeb E. Brooks School of Public Policy and what draws you to this field of study. You are encouraged to consider including details related to your personal experiences, values, academic influences, or extracurricular activities that have shaped your perspective and future goals.",
+      "wordLimit": {
+        "max": 650
+      },
+      "sourceUrl": "https://admissions.cornell.edu/first-year-brooks-school-applicants",
+      "verifiedAt": "2026-11-05",
+      "note": "Also listed in Cornell's admissions FAQ 'What are the essay questions for the Fall 2027 application?', which says applicants complete only the essay(s) for the college or school they apply to; there is no university-wide essay this cycle."
+    },
+    {
+      "id": "cornell-2026-brooks-dc-start",
+      "schoolId": "cornell",
+      "unitIds": [
+        "brooks"
+      ],
+      "cycle": "2026-27",
+      "kind": "other",
+      "title": "Why DC Start (Brooks DC Start applicants only)",
+      "text": "Please describe why you are interested in being considered for the Brooks School DC Start program.",
+      "wordLimit": {
+        "max": 350
+      },
+      "sourceUrl": "https://admissions.cornell.edu/first-year-brooks-school-applicants",
+      "verifiedAt": "2026-11-05",
+      "note": "Required only of applicants who want to be considered for the Brooks School DC Start program. Also listed in Cornell's admissions FAQ 'What are the essay questions for the Fall 2027 application?', which says applicants complete only the essay(s) for the college or school they apply to; there is no university-wide essay this cycle."
+    },
+    {
+      "id": "cornell-2026-scj-why",
+      "schoolId": "cornell",
+      "unitIds": [
+        "dyson",
+        "nolan"
+      ],
+      "cycle": "2026-27",
+      "kind": "why_school",
+      "title": "What kind of business student are you? (SC Johnson College: Dyson or Nolan)",
+      "text": "What kind of business student are you? Using your personal, academic, or volunteer/work experiences, describe the topics or issues that you care about and why they are important to you. Your response should convey how your interests align with the school to which you are applying within the Cornell SC Johnson College of Business (the Dyson School or the Nolan School).",
+      "wordLimit": {
+        "max": 650
+      },
+      "sourceUrl": "https://admissions.cornell.edu/first-year-sc-johnson-college-applicants",
+      "verifiedAt": "2026-11-05",
+      "note": "One prompt for both schools of the Cornell SC Johnson College of Business; the answer should align with the school applied to (Dyson or Nolan). Also listed in Cornell's admissions FAQ 'What are the essay questions for the Fall 2027 application?', which says applicants complete only the essay(s) for the college or school they apply to; there is no university-wide essay this cycle."
+    },
+    {
+      "id": "cornell-2026-human-ecology-why",
+      "schoolId": "cornell",
+      "unitIds": [
+        "human-ecology"
+      ],
+      "cycle": "2026-27",
+      "kind": "why_major",
+      "title": "Your experience, the CHE mission, and your intended major",
+      "text": "The College of Human Ecology prepares students to respond to human needs through an education organized around the interconnected issues that profoundly affect individuals, communities, and the institutions that shape our lives.\n\nThink about an extracurricular/community engagement/work experience that most closely connects you to the CHE mission and your intended choice of major. Tell us what that experience taught you about your broader community and its needs, and the impact you can make. How will your intended CHE major help you make that impact? (Refer to our essay application tips as you write your essay.)",
+      "wordLimit": {
+        "max": 550
+      },
+      "sourceUrl": "https://admissions.cornell.edu/first-year-human-ecology-applicants",
+      "verifiedAt": "2026-11-05",
+      "note": "Also listed in Cornell's admissions FAQ 'What are the essay questions for the Fall 2027 application?', which says applicants complete only the essay(s) for the college or school they apply to; there is no university-wide essay this cycle."
+    },
+    {
+      "id": "cornell-2026-ilr-why",
+      "schoolId": "cornell",
+      "unitIds": [
+        "ilr"
+      ],
+      "cycle": "2026-27",
+      "kind": "why_school",
+      "title": "Topics you care about and the ILR School",
+      "text": "Using your personal, academic, or volunteer/work experiences, describe the topics or issues that you care about and why they are important to you. Your response should show us that your interests align with the ILR School.",
+      "wordLimit": {
+        "max": 650
+      },
+      "sourceUrl": "https://admissions.cornell.edu/first-year-ilr-applicants",
+      "verifiedAt": "2026-11-05",
+      "note": "Also listed in Cornell's admissions FAQ 'What are the essay questions for the Fall 2027 application?', which says applicants complete only the essay(s) for the college or school they apply to; there is no university-wide essay this cycle."
+    }
+  ],
+  "seedUrls": [
+    {
+      "url": "https://classes.cornell.edu/browse/roster/SP27",
+      "category": "catalog",
+      "note": "Class Roster, Spring 2027; course pages print 2026-2027 catalog descriptions (courses.cornell.edu is unreadable from here)."
+    },
+    {
+      "url": "https://classes.cornell.edu/browse/roster/FA26",
+      "category": "catalog",
+      "note": "Class Roster, Fall 2026."
+    },
+    {
+      "url": "https://www.duffield.cornell.edu/degree/",
+      "category": "departments",
+      "unitIds": [
+        "engineering"
+      ],
+      "note": "Duffield Engineering majors and minors index."
+    },
+    {
+      "url": "https://www.duffield.cornell.edu/cee/environmental-engineering-major/",
+      "category": "departments",
+      "unitIds": [
+        "engineering",
+        "cals"
+      ],
+      "note": "Environmental Engineering major (joint Engineering and CALS)."
+    },
+    {
+      "url": "https://www.duffield.cornell.edu/cee/research-groups/",
+      "category": "research",
+      "unitIds": [
+        "engineering"
+      ],
+      "note": "Civil and Environmental Engineering research groups."
+    },
+    {
+      "url": "https://www.duffield.cornell.edu/cee/educational-facilities/",
+      "category": "research",
+      "unitIds": [
+        "engineering"
+      ],
+      "note": "CEE teaching and research laboratories."
+    },
+    {
+      "url": "https://www.duffield.cornell.edu/student-project-teams/active-project-teams/",
+      "category": "organizations",
+      "unitIds": [
+        "engineering"
+      ],
+      "note": "Duffield Engineering student project teams."
+    },
+    {
+      "url": "https://www.duffield.cornell.edu/cee/clubs-organizations/",
+      "category": "organizations",
+      "unitIds": [
+        "engineering"
+      ],
+      "note": "CEE clubs and organizations."
+    },
+    {
+      "url": "https://www.duffield.cornell.edu/undergraduate-research/",
+      "category": "research",
+      "unitIds": [
+        "engineering"
+      ],
+      "note": "Engineering undergraduate research programs."
+    },
+    {
+      "url": "https://www.duffield.cornell.edu/study-abroad/global-start-cantabria/",
+      "category": "programs",
+      "unitIds": [
+        "engineering"
+      ],
+      "note": "First-semester engineering program in Santander, Spain."
+    },
+    {
+      "url": "https://cals.cornell.edu/water-resources-institute",
+      "category": "research",
+      "note": "New York State Water Resources Institute at Cornell."
+    },
+    {
+      "url": "https://cornell.campusgroups.com/club_signup",
+      "category": "organizations",
+      "note": "Official student organization directory (CampusGroups); use ?search= to filter."
+    },
+    {
+      "url": "https://einhorn.cornell.edu/",
+      "category": "programs",
+      "note": "Einhorn Center for Community Engagement."
+    },
+    {
+      "url": "https://lrc.cornell.edu/student-organizations",
+      "category": "organizations",
+      "note": "Language Resource Center student organizations, including the Translator Interpreter Program."
+    },
+    {
+      "url": "https://music.cornell.edu/jazz",
+      "category": "organizations",
+      "note": "Jazz ensembles, combos, and student jazz groups."
+    },
+    {
+      "url": "https://sustainable.cornell.edu/focus-areas/living-laboratory",
+      "category": "programs",
+      "note": "Campus as a living laboratory for sustainability."
+    },
+    {
+      "url": "https://eship.cornell.edu/",
+      "category": "programs",
+      "note": "Entrepreneurship at Cornell programs and accelerators."
+    },
+    {
+      "url": "https://publicpolicy.cornell.edu/dc/",
+      "category": "programs",
+      "note": "Cornell in Washington (DC Start, DC Connect)."
+    },
+    {
+      "url": "https://alumni.cornell.edu/come-back/cornell-traditions/",
+      "category": "traditions",
+      "note": "Cornell traditions index (Slope Day, Dragon Day, and more)."
+    },
+    {
+      "url": "https://admissions.cornell.edu/community-belonging/cornell-experience",
+      "category": "traditions",
+      "note": "Admissions overview of traditions and Ithaca location."
+    },
+    {
+      "url": "https://cornellbotanicgardens.org/explore/on-campus-natural-areas",
+      "category": "location",
+      "note": "Gorges, Beebe Lake, and campus natural areas."
+    },
+    {
+      "url": "https://cals.cornell.edu/biological-field-station-shackelton-point",
+      "category": "location",
+      "note": "Cornell Biological Field Station on Oneida Lake."
+    },
+    {
+      "url": "https://admissions.cornell.edu/community-belonging/belonging-inclusion",
+      "category": "overview",
+      "note": "Identity centers, student life resources, and featured organizations."
+    },
+    {
+      "url": "https://faq.enrollment.cornell.edu/kb/article/479-what-are-the-essay-questions-for-the-fall-2027-application/",
+      "category": "admissions",
+      "note": "All 2026-27 (Fall 2027 entry) writing supplement prompts."
+    },
+    {
+      "url": "https://admissions.cornell.edu/first-year-duffield-engineering-applicants",
+      "category": "admissions",
+      "unitIds": [
+        "engineering"
+      ],
+      "note": "Duffield Engineering requirements and prompts."
+    }
+  ],
+  "unreachableHosts": [
+    {
+      "host": "atkinson.cornell.edu",
+      "reason": "Bot challenge; WhyUs does not try to get past it. Cornell Atkinson is cited from the CEE affiliated-centers page instead.",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "www.cs.cornell.edu",
+      "reason": "TLS certificate chain could not be validated.",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "cee.cornell.edu",
+      "reason": "TLS certificate chain could not be validated. CEE department pages are also published at www.duffield.cornell.edu/cee/.",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "scl.cornell.edu",
+      "reason": "TLS certificate chain could not be validated (Student and Campus Life, including Cornell Outdoor Education pages).",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "courses.cornell.edu",
+      "reason": "Returns HTTP 202 with an empty body, so the catalog cannot be read; course facts use classes.cornell.edu, which prints 2026-2027 catalog descriptions.",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "catalog.cornell.edu",
+      "reason": "Returns HTTP 202 with an empty body, same as courses.cornell.edu.",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "chimes.cornell.edu",
+      "reason": "TLS certificate chain could not be validated. Cornell Chimes is cited from the Cornell University Library exhibit instead.",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "slopeday.cornell.edu",
+      "reason": "TLS certificate chain could not be validated. Slope Day is cited from alumni.cornell.edu instead.",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "www.birds.cornell.edu",
+      "reason": "Bot challenge (HTTP 403); Cornell Lab of Ornithology pages could not be read.",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "esw.engineering.cornell.edu",
+      "reason": "TLS certificate chain could not be validated (Engineers for a Sustainable World project team site).",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "eia.engineering.cornell.edu",
+      "reason": "TLS certificate chain could not be validated (Engineers in Action project team site).",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "www.sml.cornell.edu",
+      "reason": "TLS certificate chain could not be validated (Shoals Marine Laboratory).",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "shoals.cornell.edu",
+      "reason": "robots.txt disallows automated reading.",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "www.arnotforest.cornell.edu",
+      "reason": "robots.txt disallows automated reading.",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "ciw.cornell.edu",
+      "reason": "robots.txt disallows automated reading; Cornell in Washington pages are read at publicpolicy.cornell.edu/dc/.",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "visit.engineering.cornell.edu",
+      "reason": "robots.txt disallows automated reading.",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "aguaclara.cornell.edu",
+      "reason": "Reachable (HTTP 200) but the page text is rendered client-side, so no text can be verified; AguaClara is cited from a Duffield Engineering page instead.",
+      "checkedAt": "2026-11-05"
+    }
+  ],
+  "hasCorpus": true
 }

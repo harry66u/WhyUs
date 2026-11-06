@@ -240,6 +240,8 @@ export type ResearchEvent =
       status: "verified" | "rejected";
       quote?: string;
       reason?: string;
+      /** How often applicants cite this detail (from the research base); lets the live view estimate uniqueness. */
+      commonness?: Commonness;
     }
   | { type: "match"; factId: string; title: string; activityTitle?: string; score: number; sentence: string }
   | {
@@ -295,6 +297,11 @@ export interface DossierDetail {
   sourceTitle: string;
   /** ISO date (YYYY-MM-DD) the fact was confirmed on the live page. */
   verifiedAt: string;
+  /**
+   * Units the fact belongs to, copied from `Fact.unitIds` (empty = open to all
+   * undergraduates). Optional: the briefing states the detail's unit scope when present.
+   */
+  unitIds?: string[];
   fit: {
     sentence: string; // one plain sentence explaining the connection
     activityIds: string[];
@@ -339,6 +346,11 @@ export interface Dossier {
   uniquenessScore: number; // 0-100
   details: DossierDetail[]; // 6-8
   angles: EssayAngle[]; // 2-3
+  /**
+   * Alternate angles (not shown) the matching engine may promote when it
+   * re-coordinates leads across the student's schools (coordinateAngles).
+   */
+  angleOptions?: EssayAngle[];
   questions: DossierQuestion[]; // exactly 3
   policyNote: string;
   stats: {

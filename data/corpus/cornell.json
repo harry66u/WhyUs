@@ -5,6 +5,220 @@
   "builtBy": "research-agent",
   "facts": [
     {
+      "id": "cornell:akwe-kon:6d4944",
+      "schoolId": "cornell",
+      "unitIds": [],
+      "kind": "center",
+      "title": "Akwe:kon",
+      "nameOnPage": "Akwe:kon",
+      "summary": "Akwe:kon, the first Native student residence hall in North America, is offered alongside Indigenous Studies courses and student leadership opportunities.",
+      "hook": "offers a home at Akwe:kon, the first Native student residence hall in North America",
+      "quote": "Indigenous Studies (AIIS) courses, student leadership opportunities, and an undergraduate residential experience at Akwe:kon, the first Native student residence hall in North America.",
+      "sourceUrl": "https://admissions.cornell.edu/community-belonging/belonging-inclusion",
+      "sourceTitle": "Belonging & Inclusion | Undergraduate Admissions",
+      "themes": [
+        "cultural-identity",
+        "leadership"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Listed on the admissions belonging page.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:15:41.781Z"
+      }
+    },
+    {
+      "id": "cornell:cornell-atkinson-center-for-sustainabili:76a7e9",
+      "schoolId": "cornell",
+      "unitIds": [],
+      "kind": "center",
+      "title": "Cornell Atkinson Center for Sustainability",
+      "nameOnPage": "Cornell Atkinson Center for Sustainability",
+      "summary": "Cornell's hub for collaborative sustainability research, connecting researchers, students, staff, and outside partners.",
+      "hook": "connects students and researchers across Cornell on sustainability research",
+      "quote": "The Cornell Atkinson Center for Sustainability is the hub of collaborative sustainability research at Cornell University, forging vital connections among researchers, students, staff and external partners.",
+      "sourceUrl": "https://www.duffield.cornell.edu/cee/affiliated-centers/",
+      "sourceTitle": "Affiliated Centers | School of Civil and Environmental Engineering | Cornell Duffield Engineering",
+      "themes": [
+        "sustainability",
+        "climate"
+      ],
+      "commonness": "common",
+      "commonnessReason": "Cornell's flagship sustainability center; many environment-focused applicants name it.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:15:41.776Z"
+      }
+    },
+    {
+      "id": "cornell:david-m-einhorn-center-for-community-eng:e64033",
+      "schoolId": "cornell",
+      "unitIds": [],
+      "kind": "center",
+      "title": "David M. Einhorn Center for Community Engagement",
+      "nameOnPage": "Einhorn Center",
+      "summary": "Cornell's community engagement center supports courses and co-curricular programs so that undergraduates learn to partner with communities.",
+      "hook": "supports community-engaged courses and programs across the university",
+      "quote": "At the Einhorn Center, we’re making high-quality community-engaged learning a hallmark of a Cornell education. We want every undergraduate student to learn how to partner with communities to create a better world, and we support programs across the university — from courses to co-curricular activities — that advance this goal.",
+      "sourceUrl": "https://einhorn.cornell.edu/",
+      "sourceTitle": "Einhorn Center for Community Engagement",
+      "themes": [
+        "community-engagement",
+        "education"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Featured on admissions pages as Cornell's community engagement hub.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:15:41.784Z"
+      }
+    },
+    {
+      "id": "cornell:entrepreneurship-at-cornell:74501c",
+      "schoolId": "cornell",
+      "unitIds": [],
+      "kind": "center",
+      "title": "Entrepreneurship at Cornell",
+      "nameOnPage": "Entrepreneurship at Cornell",
+      "summary": "A university-wide entrepreneurship program that runs conferences, hackathons, internships, mentorship, a business accelerator, co-working spaces, and competitions.",
+      "hook": "runs hackathons, mentorship, a business accelerator, and competitions for student founders",
+      "quote": "Entrepreneurship at Cornell (EaC) is a university-wide program ... like big conferences, hackathons, internship and mentorship programs, webinars, a business accelerator, and wonderful co-working spaces and competitions",
+      "sourceUrl": "https://eship.cornell.edu/",
+      "sourceTitle": "Entrepreneurship at Cornell - Entrepreneurship at Cornell",
+      "themes": [
+        "entrepreneurship",
+        "education",
+        "business",
+        "career"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Most universities have an entrepreneurship hub; applicants interested in startups often cite it.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:15:42.011Z"
+      }
+    },
+    {
+      "id": "cornell:health-professions-advising-center-hpac:9427b2",
+      "schoolId": "cornell",
+      "unitIds": [],
+      "kind": "center",
+      "title": "Health Professions Advising Center (HPAC)",
+      "nameOnPage": "Health Professions Advising Center",
+      "summary": "Cornell's Health Professions Advising Center serves all students interested in pre-health, from early exploration through preparing for and applying to pre-health programs.",
+      "hook": "advises any Cornell student exploring, preparing for, or applying to pre-health programs",
+      "quote": "Cornell’s resource for all students interested in pre-health is the Health Professions Advising Center (HPAC) office and website. This office serves students interested in a variety of pre-health professional pathways and assists students at various stages of exploration, preparing for, and applying to pre-health programs.",
+      "sourceUrl": "https://www.duffield.cornell.edu/advising/choose-your-academic-pathway/pre-health-pathways/",
+      "sourceTitle": "Pre-Health Pathways | Cornell Duffield Engineering",
+      "themes": [
+        "medicine",
+        "career"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Pre-health advising offices are standard at most universities.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:15:41.819Z"
+      }
+    },
+    {
+      "id": "cornell:john-s-knight-institute-for-writing-in-t:5390ae",
+      "schoolId": "cornell",
+      "unitIds": [],
+      "kind": "center",
+      "title": "John S. Knight Institute for Writing in the Disciplines",
+      "nameOnPage": "John S. Knight Institute for Writing in the Disciplines",
+      "summary": "The Knight Institute runs Cornell's First-Year Writing Seminar Program, which serves the vast majority of first-year students, and its Writing Workshop offers writing classes and tutoring.",
+      "hook": "runs the first-year writing seminars and a Writing Workshop with tutoring for all writers",
+      "quote": "The Knight Institute coordinates the First-Year Writing Seminar Program, which serves the vast majority of first-year students at Cornell. ... The Knight Institute is also home to the Writing Workshop, which offers tutorial-based writing classes and tutoring services for writers at all levels, disciplines, and stages of the writing process.",
+      "sourceUrl": "https://knight.as.cornell.edu/",
+      "sourceTitle": "John S. Knight Institute for Writing in the Disciplines | John S. Knight Institute for Writing in the Disciplines",
+      "themes": [
+        "creative-writing",
+        "first-year",
+        "literature",
+        "education"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "First-Year Writing Seminars are a standard part of the Cornell curriculum.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:15:41.935Z"
+      }
+    },
+    {
+      "id": "cornell:latina-o-studies-program-and-latino-livi:95cc91",
+      "schoolId": "cornell",
+      "unitIds": [],
+      "kind": "center",
+      "title": "Latina/o Studies Program and Latino Living Center",
+      "nameOnPage": "Latino Living Center",
+      "summary": "The Latina/o Studies Program welcomes all students to its academic and cultural events and includes the Latino Living Center, an intercultural residential program house.",
+      "hook": "offers Latina/o studies events and an intercultural program house, the Latino Living Center",
+      "quote": "All Cornell students are welcome to participate in the Latina/o Studies Program’s academic and socio-cultural events. ... its intercultural residential program house, the Latino Living Center. The Living Center provides students from many cultural backgrounds with a safe and supportive environment where Latino cultures and worldviews are valued.",
+      "sourceUrl": "https://admissions.cornell.edu/community-belonging/belonging-inclusion",
+      "sourceTitle": "Belonging & Inclusion | Undergraduate Admissions",
+      "themes": [
+        "latin-america",
+        "cultural-identity"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Listed on the admissions belonging page.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:15:41.781Z"
+      }
+    },
+    {
+      "id": "cornell:new-york-state-water-resources-institute:2226ef",
+      "schoolId": "cornell",
+      "unitIds": [],
+      "kind": "center",
+      "title": "New York State Water Resources Institute",
+      "nameOnPage": "New York State Water Resources Institute",
+      "summary": "The New York State Water Resources Institute at Cornell connects researchers, water managers, policymakers, and the public to improve water management through research, funding, and outreach.",
+      "hook": "links Cornell water research with New York agencies, managers, and community groups",
+      "quote": "At the New York State Water Resources Institute at Cornell University (NYSWRI), we support robust science and dialogue between researchers, managers, policymakers, and the general public to improve water management through: ... Relationship-building with state agencies, professional organizations, and citizen stakeholder groups.",
+      "sourceUrl": "https://cals.cornell.edu/water-resources-institute",
+      "sourceTitle": "New York State Water Resources Institute | CALS",
+      "themes": [
+        "water",
+        "environmental-policy",
+        "public-policy",
+        "business"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:15:42.333Z"
+      }
+    },
+    {
       "id": "cornell:bee-4670-applied-water-research-in-nys:3ac8a1",
       "schoolId": "cornell",
       "unitIds": [
@@ -31,7 +245,7 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:52:34.870Z"
+        "checkedAt": "2026-11-05T16:15:42.346Z"
       }
     },
     {
@@ -63,7 +277,7 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:52:35.269Z"
+        "checkedAt": "2026-11-05T16:15:42.387Z"
       }
     },
     {
@@ -96,7 +310,7 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:52:34.595Z"
+        "checkedAt": "2026-11-05T16:15:42.721Z"
       }
     },
     {
@@ -130,7 +344,39 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:52:34.628Z"
+        "checkedAt": "2026-11-05T16:15:43.071Z"
+      }
+    },
+    {
+      "id": "cornell:crp-4680-introduction-to-urban-data-scie:5bcd1c",
+      "schoolId": "cornell",
+      "unitIds": [
+        "aap"
+      ],
+      "kind": "course",
+      "title": "CRP 4680: Introduction to Urban Data Science: Theory, Applications, and Practice",
+      "nameOnPage": "CRP 4680",
+      "summary": "A city planning course in which students use Python and open-source urban datasets to analyze, visualize, and communicate data for planning and policy questions.",
+      "hook": "has students analyze open urban datasets in Python and present findings for planning and policy",
+      "quote": "Urban data science combines questions of urban development, structure, complexity, theory, policy, and dynamics with a set of computational tools and big data. ... Using Python and open-source urban datasets in the Jupyter Notebook environment, students will work on hands-on applied exercises and projects which emphasize framing theoretically grounded and data-driven questions, analyzing and visualizing data, and communicating results for planning and policy contexts.",
+      "sourceUrl": "https://classes.cornell.edu/browse/roster/SP27/class/CRP/4680",
+      "sourceTitle": "Class Roster - Spring 2027 - CRP 4680",
+      "themes": [
+        "cities",
+        "data-science",
+        "civic-tech",
+        "gis-mapping",
+        "computer-science",
+        "public-policy"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:15:42.590Z"
       }
     },
     {
@@ -163,7 +409,7 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:52:34.870Z"
+        "checkedAt": "2026-11-05T16:15:43.480Z"
       }
     },
     {
@@ -195,7 +441,124 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:52:35.003Z"
+        "checkedAt": "2026-11-05T16:15:43.551Z"
+      }
+    },
+    {
+      "id": "cornell:engri-1410-how-machines-learn-ai-from-th:5a8520",
+      "schoolId": "cornell",
+      "unitIds": [
+        "engineering"
+      ],
+      "kind": "course",
+      "title": "ENGRI 1410: How Machines Learn: AI from the Perceptron to GPT",
+      "nameOnPage": "ENGRI 1410",
+      "summary": "An introductory engineering course on machine learning and neural networks, from the perceptron to GPT-style models, taught with math tools first-year students can use.",
+      "hook": "introduces first-year engineers to how neural networks learn, from the perceptron to GPT",
+      "quote": "This course covers learning, deep learning, and neural networks from the perceptron ... The course emphasizes concepts and applications with mathematical tools that freshmen can wield to connect engineering tools with AI methods.",
+      "sourceUrl": "https://classes.cornell.edu/browse/roster/SP27/class/ENGRI/1410",
+      "sourceTitle": "Class Roster - Spring 2027 - ENGRI 1410",
+      "themes": [
+        "ai",
+        "computer-science",
+        "mathematics"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:15:43.828Z"
+      }
+    },
+    {
+      "id": "cornell:envs-4500-climate-solutions-capstone:e32f98",
+      "schoolId": "cornell",
+      "unitIds": [
+        "cals"
+      ],
+      "kind": "course",
+      "title": "ENVS 4500: Climate Solutions Capstone",
+      "nameOnPage": "ENVS 4500",
+      "summary": "A capstone in which students carry out a climate action from Project Drawdown's list and work in teams with Cornell Cooperative Extension or Climate Action Now on climate education.",
+      "hook": "teams students with Cornell Cooperative Extension or Climate Action Now on climate solutions",
+      "quote": "In this course, you will choose and implement a climate action from Project Drawdown's (www.drawdown.org) list of 82 climate solutions. ... For the capstone team project, you will work with other students and a community partner (Cornell Cooperative Extension or Climate Action Now) to support education related to plant-rich diet, low-emissions agriculture, forest regeneration, or other climate solutions.",
+      "sourceUrl": "https://classes.cornell.edu/browse/roster/FA26/class/ENVS/4500",
+      "sourceTitle": "Class Roster - Fall 2026 - ENVS 4500",
+      "themes": [
+        "climate",
+        "community-engagement",
+        "sustainability",
+        "agriculture",
+        "engineering-design",
+        "ecology",
+        "education"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:15:44.162Z"
+      }
+    },
+    {
+      "id": "cornell:lsp-3250-vamos-pa-l-norte-u-s-migration:56c8b0",
+      "schoolId": "cornell",
+      "unitIds": [
+        "as"
+      ],
+      "kind": "course",
+      "title": "LSP 3250: Vamos Pa'l Norte: U.S. Migration and Communication",
+      "nameOnPage": "LSP 3250",
+      "summary": "A Latina/o Studies course on how communication can reduce or deepen the barriers migrants face in the United States, focused on Latina/o/x immigrant communities.",
+      "hook": "examines how communication helps or hinders Latina/o/x immigrant communities in the U.S.",
+      "quote": "Thus, this course will introduce us to different frameworks, research, and practices that can help us understand the important role of communication in different, U.S., migration experiences. On the one hand, communication can help mitigate some of the social and structural barriers that migrants face in the United States and elsewhere. ... The readings and content of this course primarily focus on the experiences of Latina/o/x immigrant communities in the U.S.",
+      "sourceUrl": "https://classes.cornell.edu/browse/roster/SP27/class/LSP/3250",
+      "sourceTitle": "Class Roster - Spring 2027 - LSP 3250",
+      "themes": [
+        "immigration",
+        "latin-america",
+        "language-access"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:15:44.535Z"
+      }
+    },
+    {
+      "id": "cornell:music-4616-jazz-combos:c53286",
+      "schoolId": "cornell",
+      "unitIds": [],
+      "kind": "course",
+      "title": "MUSIC 4616: Jazz Combos",
+      "nameOnPage": "MUSIC 4616",
+      "summary": "Cornell's jazz combo course, in which students explore traditional and contemporary styles through ear-based learning and weekly coaching.",
+      "hook": "places students in jazz combos with weekly coaching on traditional and contemporary styles",
+      "quote": "Jazz Combos (MUSIC 4616) ... Students explore traditional and contemporary styles through ear-based learning and collaborative rehearsal techniques. Weekly coachings help develop musicianship, creativity, and a personal artistic voice.",
+      "sourceUrl": "https://music.cornell.edu/jazz",
+      "sourceTitle": "Jazz | Department of Music",
+      "themes": [
+        "jazz",
+        "music"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:15:45.145Z"
       }
     },
     {
@@ -222,7 +585,68 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:52:35.269Z"
+        "checkedAt": "2026-11-05T16:15:45.220Z"
+      }
+    },
+    {
+      "id": "cornell:pubpol-3015-climate-economics-and-policy:5918b5",
+      "schoolId": "cornell",
+      "unitIds": [
+        "brooks"
+      ],
+      "kind": "course",
+      "title": "PUBPOL 3015: Climate Economics and Policy",
+      "nameOnPage": "PUBPOL 3015",
+      "summary": "A Brooks School course that applies economics to climate policy, starting with climate-related market failures, the climate policy portfolio, and the history of international climate negotiations.",
+      "hook": "applies economics to climate policy, from market failures to international climate negotiations",
+      "quote": "This course applies the tools of economics to the analysis of the climate challenge and climate policy. We will start with an introduction to the multiple market failures relevant to climate change, an overview of the climate policy portfolio, and a history of international climate negotiations.",
+      "sourceUrl": "https://classes.cornell.edu/browse/roster/FA26/class/PUBPOL/3015",
+      "sourceTitle": "Class Roster - Fall 2026 - PUBPOL 3015",
+      "themes": [
+        "environmental-policy",
+        "climate",
+        "economics",
+        "public-policy",
+        "history",
+        "global"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:15:45.309Z"
+      }
+    },
+    {
+      "id": "cornell:span-2070-intermediate-spanish-for-the-m:a824df",
+      "schoolId": "cornell",
+      "unitIds": [],
+      "kind": "course",
+      "title": "SPAN 2070: Intermediate Spanish for the Medical and Health Professions",
+      "nameOnPage": "SPAN 2070",
+      "summary": "An intermediate Spanish course built on health-related themes that practices real situations such as taking a medical history and speaking with Hispanic patients in a culturally appropriate way.",
+      "hook": "practices medical Spanish, from taking a patient history to culturally aware doctor-patient talk",
+      "quote": "Special attention is given to relevant cultural differences and how cultural notions may affect medical care and communication between doctor and patient. The objective of 2070 is to provide practice in real-life application, such as taking a medical history, calming a patient, and how to speak to a Hispanic patient in a culturally acceptable manner.",
+      "sourceUrl": "https://classes.cornell.edu/browse/roster/SP27/class/SPAN/2070",
+      "sourceTitle": "Class Roster - Spring 2027 - SPAN 2070",
+      "themes": [
+        "languages",
+        "language-access",
+        "medicine",
+        "latin-america",
+        "history"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:15:45.572Z"
       }
     },
     {
@@ -252,7 +676,34 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:52:33.829Z"
+        "checkedAt": "2026-11-05T16:15:45.928Z"
+      }
+    },
+    {
+      "id": "cornell:dilmun-hill-student-farm:dcaacc",
+      "schoolId": "cornell",
+      "unitIds": [],
+      "kind": "facility",
+      "title": "Dilmun Hill Student Farm",
+      "nameOnPage": "Dilmun Hill",
+      "summary": "A working farm managed by students, who make day-to-day decisions, grow produce for the campus, and build hands-on skills in sustainable agriculture.",
+      "hook": "lets students run a working farm and grow produce for the campus community",
+      "quote": "Dilmun Hill is a place where students build hands-on skills in sustainable agriculture, manage a working farm, and grow collaborations and community. ... Student managers lead day-to-day decisions, growing fresh produce for the wider campus community.",
+      "sourceUrl": "https://cals.cornell.edu/agricultural-experiment-station/research-farms/dilmun-hill-student-farm",
+      "sourceTitle": "Dilmun Hill Student Farm | CALS",
+      "themes": [
+        "agriculture",
+        "sustainability",
+        "outdoors"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:15:46.035Z"
       }
     },
     {
@@ -283,7 +734,35 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:52:33.829Z"
+        "checkedAt": "2026-11-05T16:15:45.928Z"
+      }
+    },
+    {
+      "id": "cornell:herbert-f-johnson-museum-of-art:388f98",
+      "schoolId": "cornell",
+      "unitIds": [],
+      "kind": "facility",
+      "title": "Herbert F. Johnson Museum of Art",
+      "nameOnPage": "Johnson Museum",
+      "summary": "Cornell's art museum sits at the top of Libe Slope, has free admission, and leads class sessions in its permanent collection galleries.",
+      "hook": "brings classes into its permanent collection galleries, with free admission for all",
+      "quote": "Admission is always free and open to all ... The Museum was designed by I. M. Pei and sits at the top of Libe Slope. ... We help design and lead class sessions in our permanent collection galleries and classrooms",
+      "sourceUrl": "https://museum.cornell.edu/",
+      "sourceTitle": "Homepage - Herbert F. Johnson Museum of Art",
+      "themes": [
+        "museums",
+        "visual-arts",
+        "architecture",
+        "design"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "A campus landmark featured on admissions pages.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:15:47.157Z"
       }
     },
     {
@@ -312,7 +791,7 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:52:34.182Z"
+        "checkedAt": "2026-11-05T16:15:46.619Z"
       }
     },
     {
@@ -340,7 +819,36 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:52:34.182Z"
+        "checkedAt": "2026-11-05T16:15:46.619Z"
+      }
+    },
+    {
+      "id": "cornell:schwartz-center-for-the-performing-arts:d529bb",
+      "schoolId": "cornell",
+      "unitIds": [],
+      "kind": "facility",
+      "title": "Schwartz Center for the Performing Arts",
+      "nameOnPage": "Schwartz Center for the Performing Arts",
+      "summary": "Home of the Department of Performing and Media Arts, with four performance spaces, rehearsal studios, scenery, costume, and prop shops, and film editing and production suites.",
+      "hook": "houses four stages, theater and dance studios, scene shops, and film production suites",
+      "quote": "Its marble walls encompass all the elements needed for teaching and performance in theatre, film and dance: four performance spaces, dance and theatre rehearsal studios, scenery, costume and prop shops ... and film editing and production suites.",
+      "sourceUrl": "https://pma.cornell.edu/schwartz-center",
+      "sourceTitle": "The Schwartz Center | Performing and Media Arts",
+      "themes": [
+        "theater",
+        "dance",
+        "film-media",
+        "education",
+        "design"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "The main performing arts venue, mentioned on admissions pages.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:15:47.107Z"
       }
     },
     {
@@ -352,7 +860,7 @@
       "kind": "faculty",
       "title": "Damian Helbling",
       "nameOnPage": "Damian Helbling",
-      "summary": "Damian Helbling, in Cornell's School of Civil and Environmental Engineering, studies organic chemicals in water and wastewater and develops remediation technologies; his doctoral work used sensor networks in water systems.",
+      "summary": "Damian Helbling, in Cornell's School of Civil and Environmental Engineering, studies organic chemicals in water and wastewater and develops ways to remediate impacted water systems.",
       "hook": "researches contaminants in water and wastewater and technologies to clean impacted water systems",
       "quote": "His graduate research focused on the use of sensor networks within drinking water distribution systems to monitor and control post-treatment water quality. ... Helbling joined the School of Civil and Environmental Engineering at Cornell University in January 2014. His research has focused on developing techniques to characterize the universe of organic molecules in water and wastewater by means of high-resolution mass spectrometry and developing technologies for the remediation of impacted water systems.",
       "sourceUrl": "https://www.duffield.cornell.edu/people/damian-e-helbling/",
@@ -371,7 +879,114 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:52:33.570Z"
+        "checkedAt": "2026-11-05T16:15:46.978Z"
+      }
+    },
+    {
+      "id": "cornell:edwin-todd-cowen:44130c",
+      "schoolId": "cornell",
+      "unitIds": [
+        "engineering"
+      ],
+      "kind": "faculty",
+      "title": "Edwin (Todd) Cowen",
+      "nameOnPage": "Edwin (Todd) Cowen",
+      "summary": "Todd Cowen directs Cornell's DeFrees Hydraulics Laboratory and studies environmental fluid mechanics, including lake hydrodynamics and how water masses and environmental DNA move in Cayuga Lake.",
+      "hook": "studies lake hydrodynamics and how water and environmental DNA move through Cayuga Lake",
+      "quote": "Edwin “Todd” Cowen is the Director of the DeFrees Hydraulics Laboratory ... He has built an environmental fluid mechanics research program centered on five themes: environmental transport processes, water wave induced flows, lake hydrodynamics (physical limnology), energy harvesting, and quantitative imaging techniques. ... the fate, transport and residence time of water masses and environmental DNA in Cayuga Lake",
+      "sourceUrl": "https://www.duffield.cornell.edu/people/edwin-todd-cowen/",
+      "sourceTitle": "Edwin (Todd) Cowen | Cornell Duffield Engineering",
+      "themes": [
+        "water",
+        "environmental-engineering",
+        "energy",
+        "mechanical-engineering",
+        "genetics",
+        "undergraduate-research"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Edwin (Todd) Cowen"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:15:47.064Z"
+      }
+    },
+    {
+      "id": "cornell:h-oliver-gao:72e99a",
+      "schoolId": "cornell",
+      "unitIds": [
+        "engineering"
+      ],
+      "kind": "faculty",
+      "title": "H. Oliver Gao",
+      "nameOnPage": "H. Oliver Gao",
+      "summary": "Oliver Gao researches climate-smart mobility and low-emission infrastructure and directs the Center for Transportation, Environment, and Community Health (CTECH).",
+      "hook": "leads research on climate-smart transportation, low-emission infrastructure, and community health",
+      "quote": "His research focuses on advancing climate-smart mobility, low-emission infrastructure, and data-enabled health systems ... As the Director of the Center for Transportation, Environment, and Community Health (CTECH)—a U.S. Department of Transportation University Transportation Center—Gao leads a multi-institutional consortium uniting engineering, environmental science, public health, and data analytics to drive systems innovation for healthy and sustainable communities.",
+      "sourceUrl": "https://www.duffield.cornell.edu/people/h-oliver-gao/",
+      "sourceTitle": "H. Oliver Gao | Cornell Duffield Engineering",
+      "themes": [
+        "transportation",
+        "climate",
+        "cities",
+        "public-health",
+        "civil-engineering",
+        "data-science",
+        "sustainability",
+        "environmental-studies"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "H. Oliver Gao"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:15:47.183Z"
+      }
+    },
+    {
+      "id": "cornell:jacqueline-gerson:ab91a7",
+      "schoolId": "cornell",
+      "unitIds": [
+        "engineering",
+        "cals"
+      ],
+      "kind": "faculty",
+      "title": "Jacqueline Gerson",
+      "nameOnPage": "Jacqueline Gerson",
+      "summary": "Jacqueline Gerson, an assistant professor of biological and environmental engineering, teaches water quality from sample collection and data analysis to policies and management strategies.",
+      "hook": "teaches water quality from sample collection through data analysis to management and policy",
+      "quote": "Assistant Professor, Biological and Environmental Engineering ... Professor Gerson teaches students about water quality, from sample collection to data analysis and ultimately management of our waters. Her courses examine the physical, chemical, and biological aspects of water quality, and how this information can be leveraged to develop effective polices and management strategies that benefit both human and ecological health.",
+      "sourceUrl": "https://cals.cornell.edu/people/jacqueline-gerson",
+      "sourceTitle": "Jacqueline Gerson | CALS",
+      "themes": [
+        "water",
+        "environmental-engineering",
+        "data-science",
+        "biology",
+        "business",
+        "environmental-policy",
+        "ecology",
+        "public-policy"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Jacqueline Gerson"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:15:47.272Z"
       }
     },
     {
@@ -383,7 +998,7 @@
       "kind": "lab",
       "title": "Albertson Lab",
       "nameOnPage": "Albertson Lab",
-      "summary": "A civil and environmental engineering lab studying how water, carbon dioxide, pollutants, and energy move between land and atmosphere, combining measurements and models for hydrometeorology and air quality.",
+      "summary": "A civil and environmental engineering lab studying how water, CO2, pollutants, and energy move between land and atmosphere, fusing measurements and models for air quality prediction.",
       "hook": "fuses field measurements and models to predict land-atmosphere exchange and air quality",
       "quote": "Focusing on the development of a comprehensive understanding of the exchange rates of mass (e.g. water, CO2, pollutants), energy, and momentum between the land and atmosphere. Primary applications in hydrometeorology and air quality, particularly focused on the fusion of measurements and models for optimal prediction.",
       "sourceUrl": "https://www.duffield.cornell.edu/cee/research-groups/",
@@ -393,7 +1008,8 @@
         "earth-science",
         "sensors",
         "climate",
-        "energy"
+        "energy",
+        "fieldwork"
       ],
       "commonness": "rare",
       "commonnessReason": "",
@@ -402,7 +1018,38 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:52:33.069Z"
+        "checkedAt": "2026-11-05T16:15:47.320Z"
+      }
+    },
+    {
+      "id": "cornell:critical-infrastructure-systems-lab:338d05",
+      "schoolId": "cornell",
+      "unitIds": [
+        "engineering"
+      ],
+      "kind": "lab",
+      "title": "Critical Infrastructure Systems Lab",
+      "nameOnPage": "Critical Infrastructure Systems Lab",
+      "summary": "A civil and environmental engineering lab that assesses climate risk to interconnected infrastructure and designs management approaches that balance reliability, resilience, and sustainability.",
+      "hook": "studies how climate risk threatens interconnected infrastructure and how to manage it",
+      "quote": "CIS Lab works on the interaction between critical infrastructures and the natural environment. Members characterize climate risk on interconnected infrastructure systems and provide adaptive, robust, and scalable management solutions that balance reliability, resilience, and sustainability.",
+      "sourceUrl": "https://www.duffield.cornell.edu/cee/research-groups/",
+      "sourceTitle": "Research Groups | School of Civil and Environmental Engineering | Cornell Duffield Engineering",
+      "themes": [
+        "climate",
+        "civil-engineering",
+        "sustainability",
+        "environmental-engineering",
+        "business"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:15:47.320Z"
       }
     },
     {
@@ -435,7 +1082,7 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:52:33.069Z"
+        "checkedAt": "2026-11-05T16:15:47.320Z"
       }
     },
     {
@@ -465,11 +1112,11 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:52:33.069Z"
+        "checkedAt": "2026-11-05T16:15:47.320Z"
       }
     },
     {
-      "id": "cornell:richardson-lab:61c7f2",
+      "id": "cornell:richardson-lab:552927",
       "schoolId": "cornell",
       "unitIds": [
         "engineering"
@@ -479,15 +1126,13 @@
       "nameOnPage": "Richardson Lab",
       "summary": "A civil and environmental engineering lab that studies microbial communities for bioremediation, bioenergy, sustainable wastewater treatment, and pathogen detection.",
       "hook": "investigates microbes used for bioremediation, wastewater treatment, and pathogen detection",
-      "quote": "The Richardson group studies microbial communities of relevance to important environmental engineering problems. Application areas include bioremediation, bioenergy, sustainable wastewater treatment, nutrient and greenhouse gas cycling, and pathogen detection.",
+      "quote": "The Richardson group studies microbial communities of relevance to important environmental engineering problems. Application areas include bioremediation, bioenergy, sustainable wastewater treatment ... and pathogen detection.",
       "sourceUrl": "https://www.duffield.cornell.edu/cee/research-groups/",
       "sourceTitle": "Research Groups | School of Civil and Environmental Engineering | Cornell Duffield Engineering",
       "themes": [
         "environmental-engineering",
         "biology",
         "water",
-        "cycling",
-        "climate",
         "sustainability"
       ],
       "commonness": "rare",
@@ -497,7 +1142,94 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:52:33.069Z"
+        "checkedAt": "2026-11-05T16:15:47.320Z"
+      }
+    },
+    {
+      "id": "cornell:cayuga-lake:1c6a8b",
+      "schoolId": "cornell",
+      "unitIds": [],
+      "kind": "location",
+      "title": "Cayuga Lake",
+      "nameOnPage": "Cayuga Lake",
+      "summary": "Cayuga Lake, one of the Finger Lakes, gives Cornell students a place for boating, swimming, and fishing.",
+      "hook": "gives students a Finger Lake for boating, swimming, and fishing",
+      "quote": "Cayuga Lake is a fantastic place for boating, swimming, fishing, or just watching the sunset. Discover what makes life in the Finger Lakes so unique by taking advantage of our beautiful lake.",
+      "sourceUrl": "https://admissions.cornell.edu/community-belonging/cornell-experience",
+      "sourceTitle": "The Cornell Experience | Undergraduate Admissions",
+      "themes": [
+        "water",
+        "outdoors",
+        "athletics"
+      ],
+      "commonness": "common",
+      "commonnessReason": "Featured on admissions pages; a standard part of Cornell's setting.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:15:48.108Z"
+      }
+    },
+    {
+      "id": "cornell:cornell-biological-field-station-interns:44094c",
+      "schoolId": "cornell",
+      "unitIds": [
+        "cals"
+      ],
+      "kind": "location",
+      "title": "Cornell Biological Field Station internships on Oneida Lake",
+      "nameOnPage": "Cornell Biological Field Station",
+      "summary": "The Cornell Biological Field Station on the south shore of Oneida Lake offers 10-week summer undergraduate research internships with mentor scientists.",
+      "hook": "offers 10-week summer research internships on Oneida Lake with mentor scientists",
+      "quote": "The Department of Natural Resources and the Environment, in conjunction with the Cornell Biological Field Station (CBFS), will offer 10-week undergraduate research internships during the summer field season. ... The Cornell Biological Field Station is a well-equipped facility located on the south shore of Oneida Lake, NY.",
+      "sourceUrl": "https://cals.cornell.edu/biological-field-station-shackelton-point/cbfs-internship-program",
+      "sourceTitle": "CBFS Internship Program | CALS",
+      "themes": [
+        "water",
+        "ecology",
+        "fieldwork",
+        "undergraduate-research",
+        "biology",
+        "education",
+        "career"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:15:48.108Z"
+      }
+    },
+    {
+      "id": "cornell:cornell-botanic-gardens-on-campus-natura:7a46fd",
+      "schoolId": "cornell",
+      "unitIds": [],
+      "kind": "location",
+      "title": "Cornell Botanic Gardens on-campus natural areas",
+      "nameOnPage": "Fall Creek Gorge",
+      "summary": "Cornell Botanic Gardens' on-campus natural areas include the Cascadilla Gorge Trail, Beebe Lake's water, woods, and wetlands, and the nearly 200-foot-deep Fall Creek Gorge.",
+      "hook": "offers gorge trails, Beebe Lake, and wetlands in the heart of campus",
+      "quote": "The iconic Cascadilla Gorge Trail passes through one of the most picturesque gorges in the Finger Lakes Region. ... Beebe Lake is a sanctuary of water, woods, and wetlands in the heart of the Cornell Campus. ... Nearly 200 feet deep, Fall Creek’s Gorge is among the most impressive gorges in the Finger Lakes Region.",
+      "sourceUrl": "https://cornellbotanicgardens.org/explore/on-campus-natural-areas",
+      "sourceTitle": "On-Campus Natural Areas | Cornell Botanic Gardens",
+      "themes": [
+        "outdoors",
+        "water",
+        "ecology"
+      ],
+      "commonness": "common",
+      "commonnessReason": "Ithaca's gorges are among the most frequently cited features of Cornell.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:15:48.554Z"
       }
     },
     {
@@ -529,7 +1261,37 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:52:36.767Z"
+        "checkedAt": "2026-11-05T16:15:48.484Z"
+      }
+    },
+    {
+      "id": "cornell:biological-sciences-major:682e63",
+      "schoolId": "cornell",
+      "unitIds": [
+        "cals",
+        "as"
+      ],
+      "kind": "major",
+      "title": "Biological Sciences Major",
+      "nameOnPage": "Biological Sciences",
+      "summary": "Cornell's Biological Sciences major requires each student to declare one of 14 concentrations, among them Neurobiology & Behavior, which explores how nervous systems generate behavior.",
+      "hook": "lets biology majors specialize in one of 14 concentrations, from neurobiology to marine biology",
+      "quote": "Biological Sciences 14 concentrations ... All Biological Sciences Majors must declare a concentration. ... Neurobiology & Behavior ... Exploring how nervous systems generate behavior, from neurons to societies.",
+      "sourceUrl": "https://cals.cornell.edu/biological-sciences/undergraduate-program/concentrations",
+      "sourceTitle": "Concentrations | CALS",
+      "themes": [
+        "biology",
+        "neuroscience",
+        "marine"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "The main biology major; pre-med and biology applicants often cite it.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:15:48.110Z"
       }
     },
     {
@@ -559,7 +1321,40 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:52:32.722Z"
+        "checkedAt": "2026-11-05T16:15:48.310Z"
+      }
+    },
+    {
+      "id": "cornell:minor-in-sustainable-energy-systems:2440ea",
+      "schoolId": "cornell",
+      "unitIds": [],
+      "kind": "major",
+      "title": "Minor in Sustainable Energy Systems",
+      "nameOnPage": "Sustainable Energy Systems",
+      "summary": "A six-course minor open to all undergraduates that requires a course in each of four categories, including one on the policy, economics, business, history, and ethics of energy.",
+      "hook": "pairs energy technology courses with a required policy, economics, or ethics course",
+      "quote": "The minor is open to all undergraduate students. ... To earn the minor, students must complete six courses and a minimum of 18 credits ... At least one course from each of four breadth categories: ... Category 4: Social Impact: Policy, Economics, Business, History, Ethics, and Risk Analysis",
+      "sourceUrl": "https://www.duffield.cornell.edu/degree/sustainable-energy-systems-minor-requirements/",
+      "sourceTitle": "Minor in Sustainable Energy Systems | Cornell Duffield Engineering",
+      "themes": [
+        "energy",
+        "sustainability",
+        "environmental-policy",
+        "social-enterprise",
+        "philosophy",
+        "economics",
+        "public-policy",
+        "history",
+        "business"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:15:48.444Z"
       }
     },
     {
@@ -592,11 +1387,11 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:52:32.745Z"
+        "checkedAt": "2026-11-05T16:15:48.473Z"
       }
     },
     {
-      "id": "cornell:aguaclara-project-team:f483dd",
+      "id": "cornell:aguaclara-project-team:fc67a5",
       "schoolId": "cornell",
       "unitIds": [
         "engineering"
@@ -605,8 +1400,8 @@
       "title": "AguaClara Project Team",
       "nameOnPage": "AguaClara Project team",
       "summary": "AguaClara is a Cornell engineering project team that develops sustainable, gravity-powered water treatment technologies, including an automated coagulant dosing system, for communities worldwide.",
-      "hook": "develops gravity-powered water treatment technology for communities with limited resources",
-      "quote": "I am one of the team leads for the AguaClara Project team, where we develop sustainable, gravity-powered water treatment technologies for communities around the world. We are currently developing an automated coagulant dosing system to eliminate the need for an operator at all times in communities with limited financial resources.",
+      "hook": "develops gravity-powered water treatment technology for communities around the world",
+      "quote": "I am one of the team leads for the AguaClara Project team, where we develop sustainable, gravity-powered water treatment technologies for communities around the world. We are currently developing an automated coagulant dosing system to eliminate the need for an operator at all times",
       "sourceUrl": "https://www.duffield.cornell.edu/cbe/2025/08/01/kayla-stephenson-26-from-classroom-to-community/",
       "sourceTitle": "Kayla Stephenson '26: From classroom to community | R.F. Smith School of Chemical and Biomolecular Engineering",
       "themes": [
@@ -614,7 +1409,6 @@
         "environmental-engineering",
         "engineering-design",
         "global",
-        "finance",
         "sustainability"
       ],
       "commonness": "moderate",
@@ -624,7 +1418,35 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:52:36.053Z"
+        "checkedAt": "2026-11-05T16:15:48.574Z"
+      }
+    },
+    {
+      "id": "cornell:cornell-greenclub:03c7b3",
+      "schoolId": "cornell",
+      "unitIds": [],
+      "kind": "organization",
+      "title": "Cornell GreenClub",
+      "nameOnPage": "GreenClub",
+      "summary": "A student-led sustainability group, offered with a course, whose interdisciplinary teams design and carry out community-based sustainability projects with campus or community partners.",
+      "hook": "runs student-led sustainability projects with campus and community partners",
+      "quote": "This course engages students in real-world, community-based sustainability projects through Cornell GreenClub. Structured as a student-led, engaged-learning experience, students work in interdisciplinary teams to design and implement stakeholder-focused projects that address community needs.",
+      "sourceUrl": "https://classes.cornell.edu/browse/roster/SP27/class/BEE/4950",
+      "sourceTitle": "Class Roster - Spring 2027 - BEE 4950",
+      "themes": [
+        "sustainability",
+        "community-engagement",
+        "design",
+        "interdisciplinary"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:15:48.829Z"
       }
     },
     {
@@ -651,7 +1473,7 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:52:36.071Z"
+        "checkedAt": "2026-11-05T16:15:49.335Z"
       }
     },
     {
@@ -681,7 +1503,60 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:52:35.909Z"
+        "checkedAt": "2026-11-05T16:15:49.101Z"
+      }
+    },
+    {
+      "id": "cornell:jazz-ensemble-music-4615:40e162",
+      "schoolId": "cornell",
+      "unitIds": [],
+      "kind": "organization",
+      "title": "Jazz Ensemble (MUSIC 4615)",
+      "nameOnPage": "Jazz Ensemble",
+      "summary": "Cornell's auditioned jazz ensemble builds musicianship, improvisation, and ensemble skills while studying the cultural and historical contexts of jazz.",
+      "hook": "builds improvisation and ensemble skills for auditioned jazz players",
+      "quote": "Jazz Ensemble (MUSIC 4615) ... The Jazz Ensemble develops musicianship, improvisation, and ensemble skills while exploring the cultural and historical contexts of the art form. ... Participation is by audition.",
+      "sourceUrl": "https://music.cornell.edu/jazz",
+      "sourceTitle": "Jazz | Department of Music",
+      "themes": [
+        "jazz",
+        "music",
+        "history"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Most universities have a jazz ensemble.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:15:45.145Z"
+      }
+    },
+    {
+      "id": "cornell:jazz:797e80",
+      "schoolId": "cornell",
+      "unitIds": [],
+      "kind": "organization",
+      "title": "Jazz+",
+      "nameOnPage": "Jazz+",
+      "summary": "A student jazz organization open to everyone that runs jam sessions, master classes, and guest artist performances and manages a gig referral service.",
+      "hook": "organizes jam sessions, master classes, and a gig referral service for student musicians",
+      "quote": "Jazz+ is a student organization dedicated to the appreciation and performance of jazz music plus more. ... Jazz+ is open to everyone. Officers and members coordinate jam sessions, social events, master classes, and performances by guest artists. The org manages a gig referral service for student groups and helps manage performance and studio equipment.",
+      "sourceUrl": "https://music.cornell.edu/jazz",
+      "sourceTitle": "Jazz | Department of Music",
+      "themes": [
+        "jazz",
+        "music"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:15:45.145Z"
       }
     },
     {
@@ -710,7 +1585,224 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:52:36.221Z"
+        "checkedAt": "2026-11-05T16:15:49.158Z"
+      }
+    },
+    {
+      "id": "cornell:the-cornell-daily-sun:05d14f",
+      "schoolId": "cornell",
+      "unitIds": [],
+      "kind": "organization",
+      "title": "The Cornell Daily Sun",
+      "nameOnPage": "The Cornell Daily Sun",
+      "summary": "Cornell's student newspaper, founded in 1880, is independent of the university and staffed almost entirely by Cornell students from an office in downtown Ithaca.",
+      "hook": "is staffed almost entirely by students, who run an independent paper founded in 1880",
+      "quote": "Founded in 1880, The Cornell Daily Sun is the oldest continuously independent college daily newspaper in the country. It is staffed almost entirely by Cornell students, operating out of an office building in downtown Ithaca.",
+      "sourceUrl": "https://faq.enrollment.cornell.edu/kb/article/264-does-cornell-have-a-student-newspaper/",
+      "sourceTitle": "Does Cornell have a student newspaper? - Frequently Asked Questions",
+      "themes": [
+        "journalism",
+        "cities"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Every campus has a student paper; known but rarely the center of an essay.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:15:50.341Z"
+      }
+    },
+    {
+      "id": "cornell:translator-interpreter-program-tip:321c80",
+      "schoolId": "cornell",
+      "unitIds": [],
+      "kind": "organization",
+      "title": "Translator Interpreter Program (TIP)",
+      "nameOnPage": "Translator Interpreter Program",
+      "summary": "A student-run program at Cornell's Language Resource Center that trains bilingual and multilingual volunteers to translate and interpret for community agencies.",
+      "hook": "trains bilingual students to interpret and translate for local community agencies",
+      "quote": "The LRC's Translator Interpreter Program (TIP) is the oldest and largest faculty-approved, student-run translation and interpretation program in the United States. TIP trains bilingual and multilingual Cornell volunteers to become translators and interpreters for both emergency and non-emergency situations of community agencies.",
+      "sourceUrl": "https://lrc.cornell.edu/student-organizations",
+      "sourceTitle": "Student Organizations | Language Resource Center",
+      "themes": [
+        "language-access",
+        "community-engagement",
+        "immigration"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:15:49.856Z"
+      }
+    },
+    {
+      "id": "cornell:campus-as-a-living-laboratory:a323a0",
+      "schoolId": "cornell",
+      "unitIds": [],
+      "kind": "program",
+      "title": "Campus as a Living Laboratory",
+      "nameOnPage": "Campus as a Living Laboratory",
+      "summary": "Cornell opens its campus energy and water systems for study: solar farms share real-time data, and students can tour and work with staff at the Central Energy Plant and water filtration plant.",
+      "hook": "opens campus solar farm data and energy and water plants to student projects",
+      "quote": "Our solar farms have open data-platforms to study real-time data, and campus community members can tour and work with staff in the Central Energy Plant, water filtration plant, and more. By using real-world systems for course study and projects, our students and staff can learn about sustainability innovation on our campus and help improve our systems in real time.",
+      "sourceUrl": "https://sustainable.cornell.edu/focus-areas/living-laboratory",
+      "sourceTitle": "Living Laboratory | Sustainable Cornell",
+      "themes": [
+        "energy",
+        "sustainability",
+        "data-science",
+        "water",
+        "agriculture"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:15:49.960Z"
+      }
+    },
+    {
+      "id": "cornell:community-learning-and-service-partnersh:fea66a",
+      "schoolId": "cornell",
+      "unitIds": [],
+      "kind": "program",
+      "title": "Community Learning and Service Partnership (CLASP)",
+      "nameOnPage": "Community Learning and Service Partnership",
+      "summary": "An Einhorn Center program that pairs students with Cornell employees each semester for learning partnerships, most often English for Speakers of Other Languages.",
+      "hook": "pairs students with Cornell employees in learning partnerships, most often English language practice",
+      "quote": "They were among the roughly 40 employee-student learning partnerships brought together each semester through the Community Learning and Service Partnership (CLASP). ... English for Speakers of Other Languages is the most commonly requested area of study, followed by computer skills, but goals vary widely, from studying for the GED to learning an instrument or improving health and wellness.",
+      "sourceUrl": "https://einhorn.cornell.edu/clasp-joins-einhorn-center-expanding-employee-student-learning-partnerships/",
+      "sourceTitle": "CLASP joins Einhorn Center, expanding employee-student learning partnerships – Einhorn Center for Community Engagement",
+      "themes": [
+        "language-access",
+        "community-engagement",
+        "education"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:15:49.843Z"
+      }
+    },
+    {
+      "id": "cornell:cornell-in-washington-dc-connect:61795d",
+      "schoolId": "cornell",
+      "unitIds": [],
+      "kind": "program",
+      "title": "Cornell in Washington (DC Connect)",
+      "nameOnPage": "Cornell In Washington",
+      "summary": "Cornell in Washington lets students live and learn in Washington, D.C.; its DC Connect Spring program is open to all upper-level Cornell students.",
+      "hook": "lets upper-level students live and learn in Washington, D.C., through DC Connect",
+      "quote": "Students live and learn in the heart of Washington, D.C., while enjoying the support of our experienced residence life team. ... DC Connect Spring ... Open to all upper-level Cornell students",
+      "sourceUrl": "https://publicpolicy.cornell.edu/dc/",
+      "sourceTitle": "Brooks DC Programs - Cornell Brooks Public Policy",
+      "themes": [
+        "public-policy",
+        "political-science"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "A well-known Cornell off-campus program for policy-minded students.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:15:50.416Z"
+      }
+    },
+    {
+      "id": "cornell:cornell-outdoor-education:2c9739",
+      "schoolId": "cornell",
+      "unitIds": [],
+      "kind": "program",
+      "title": "Cornell Outdoor Education",
+      "nameOnPage": "Cornell Outdoor Education",
+      "summary": "Cornell Outdoor Education offers wilderness trips, adventure programs, and outdoor courses for students.",
+      "hook": "takes students into the wilderness through outdoor courses and adventure trips",
+      "quote": "Discover the wilderness, experience new adventures, and explore the world. Cornell offers the most comprehensive collegiate outdoor education program in the country.",
+      "sourceUrl": "https://admissions.cornell.edu/community-belonging/health-wellness",
+      "sourceTitle": "Health & Wellness | Undergraduate Admissions",
+      "themes": [
+        "outdoors",
+        "fitness",
+        "education"
+      ],
+      "commonness": "common",
+      "commonnessReason": "Featured on admissions pages and widely cited by applicants who love the outdoors.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:15:50.040Z"
+      }
+    },
+    {
+      "id": "cornell:dc-start:fdd459",
+      "schoolId": "cornell",
+      "unitIds": [
+        "brooks"
+      ],
+      "kind": "program",
+      "title": "DC Start",
+      "nameOnPage": "DC Start",
+      "summary": "A first-semester residential program in Washington, D.C., for first-year Brooks School students entering the public policy and health care policy majors.",
+      "hook": "starts first-year Brooks students' policy studies in Washington, D.C.",
+      "quote": "DC Start is a residential academic experience offered to first year Brooks School undergraduate students in their fall semester. Housed at the Brooks School’s Wolpe Building in close walking distance to Dupont Circle in Washington D.C., the program offers an inspiring, immersive public policy learning experience to students entering the public policy and health care policy majors.",
+      "sourceUrl": "https://publicpolicy.cornell.edu/dc/start/",
+      "sourceTitle": "First-Year Undergrads - Cornell Brooks Public Policy",
+      "themes": [
+        "public-policy",
+        "first-year",
+        "medicine"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Featured in the Brooks School admissions requirements.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:15:50.470Z"
+      }
+    },
+    {
+      "id": "cornell:elab:4385d2",
+      "schoolId": "cornell",
+      "unitIds": [],
+      "kind": "program",
+      "title": "eLab",
+      "nameOnPage": "eLab",
+      "summary": "Cornell's student business accelerator, which admits many student teams in the fall and narrows the cohort in the spring as teams build their companies.",
+      "hook": "runs a fall-to-spring accelerator cohort for student startups",
+      "quote": "eLab is a student accelerator that launches several businesses each year. ... A large number of student teams are welcomed in the fall semester and the cohort is narrowed in the spring based off a pre-determined rubric instructors use to evaluate teams’ performance and business models.",
+      "sourceUrl": "https://eship.cornell.edu/item/elab/",
+      "sourceTitle": "eLab - Entrepreneurship at Cornell",
+      "themes": [
+        "entrepreneurship",
+        "business"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Student accelerators are common; eLab is known among entrepreneurship applicants.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:15:50.200Z"
       }
     },
     {
@@ -739,7 +1831,93 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:52:35.385Z"
+        "checkedAt": "2026-11-05T16:15:50.211Z"
+      }
+    },
+    {
+      "id": "cornell:laidlaw-leadership-and-research-program:05644c",
+      "schoolId": "cornell",
+      "unitIds": [],
+      "kind": "program",
+      "title": "Laidlaw Leadership and Research Program",
+      "nameOnPage": "Laidlaw Leadership and Research Program",
+      "summary": "A two-year cohort program for first- and second-year students from any college that supports leadership development, research, and a summer abroad putting skills into action.",
+      "hook": "supports early undergraduates with leadership training, research, and a summer abroad",
+      "quote": "With generous support for your leadership development, a summer abroad putting your skills into action, and research, this two-year cohort program for emerging leaders lays out a path for you to invest your skills, knowledge, and experience to make global change. ... First- and second-year students from any college or major may apply.",
+      "sourceUrl": "https://einaudi.cornell.edu/funding/laidlaw",
+      "sourceTitle": "Laidlaw Leadership and Research Program | Einaudi Center",
+      "themes": [
+        "undergraduate-research",
+        "leadership",
+        "study-abroad",
+        "global"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:15:50.723Z"
+      }
+    },
+    {
+      "id": "cornell:nyswri-summer-student-research-program:0982e9",
+      "schoolId": "cornell",
+      "unitIds": [],
+      "kind": "program",
+      "title": "NYSWRI Summer Student Research Program",
+      "nameOnPage": "Summer Student Research Program",
+      "summary": "A paid summer internship of about ten weeks, open to any Cornell student, on water projects such as emerging contaminants, watershed resilience, water governance, and water infrastructure.",
+      "hook": "offers paid summer water research internships on contaminants, watersheds, and infrastructure",
+      "quote": "Intern applications are solicited from any Cornell University undergraduate or graduate student. ... Summer internships last for approximately ten weeks. ... This unique set of paid summer intern projects deal with issues such as micropollutants and emerging contaminants, watershed resilience to climate change, water resource governance, sustainable water infrastructure, and environmental justice.",
+      "sourceUrl": "https://cals.cornell.edu/water-resources-institute/summer-student-research-program",
+      "sourceTitle": "Summer Student Research Program | CALS",
+      "themes": [
+        "water",
+        "undergraduate-research",
+        "environmental-justice",
+        "climate",
+        "civil-engineering",
+        "sustainability",
+        "political-science",
+        "career"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:15:50.573Z"
+      }
+    },
+    {
+      "id": "cornell:pre-orientation-service-trips-post:b0bbc2",
+      "schoolId": "cornell",
+      "unitIds": [],
+      "kind": "program",
+      "title": "Pre-Orientation Service Trips (POST)",
+      "nameOnPage": "Pre-Orientation Service Trips",
+      "summary": "A pre-orientation program in which incoming students do daily community service projects in Ithaca and Tompkins County while transitioning to Cornell.",
+      "hook": "starts incoming students with community service projects around Ithaca and Tompkins County",
+      "quote": "POST offers a unique opportunity for incoming students to explore and engage with the Ithaca and Tompkins County communities while transitioning to college life at Cornell. The program includes daily community-service projects, learning about pressing community issues and participation in fun group evening events.",
+      "sourceUrl": "https://einhorn.cornell.edu/opportunity/post/",
+      "sourceTitle": "Pre-Orientation Service Trips (POST) – Einhorn Center for Community Engagement",
+      "themes": [
+        "community-engagement",
+        "first-year"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:15:50.679Z"
       }
     },
     {
@@ -767,7 +1945,83 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:52:35.614Z"
+        "checkedAt": "2026-11-05T16:15:50.758Z"
+      }
+    },
+    {
+      "id": "cornell:cornell-chimes:34e5d4",
+      "schoolId": "cornell",
+      "unitIds": [],
+      "kind": "tradition",
+      "title": "Cornell Chimes",
+      "nameOnPage": "Cornell Chimes",
+      "summary": "Bells in McGraw Tower mark every fifteen minutes and ring daily concerts played by the student-run Cornell Chimes, whose chimesmasters are student and alumni musicians.",
+      "hook": "fills campus with daily bell concerts played by student chimesmasters in McGraw Tower",
+      "quote": "Cornell’s chimes are housed in McGraw Tower, which is attached to the library. Every fifteen minutes, bells mark the passing of time, and two or three times a day, the campus is treated to a bell concert ... The Cornell Chimes is a student-run organization, and the chimesmasters themselves are student and alumni musicians who bring music to the campus every day.",
+      "sourceUrl": "https://exhibits.library.cornell.edu/uris-historical-tour/feature/cornell-chimes",
+      "sourceTitle": "Cornell Chimes | Uris Historical Tour - Online exhibitions across Cornell University Library",
+      "themes": [
+        "music"
+      ],
+      "commonness": "common",
+      "commonnessReason": "An iconic Cornell tradition that many applicants mention.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:15:51.211Z"
+      }
+    },
+    {
+      "id": "cornell:dragon-day:45ded2",
+      "schoolId": "cornell",
+      "unitIds": [],
+      "kind": "tradition",
+      "title": "Dragon Day",
+      "nameOnPage": "Dragon Day",
+      "summary": "Each spring, first-year architecture students parade a giant dragon across campus to the Arts Quad, where it meets a phoenix built by engineering students.",
+      "hook": "pits a dragon built by first-year architects against a phoenix built by engineering students",
+      "quote": "Every year around St. Patrick's Day, an enormous dragon created by first-year architecture students parades across campus. Accompanied by architecture students in outrageous costumes, the dragon lumbers to the Arts Quad where it is slain by a phoenix created by rival engineering students.",
+      "sourceUrl": "https://admissions.cornell.edu/community-belonging/cornell-experience",
+      "sourceTitle": "The Cornell Experience | Undergraduate Admissions",
+      "themes": [
+        "architecture",
+        "engineering-design"
+      ],
+      "commonness": "common",
+      "commonnessReason": "One of Cornell's best-known traditions, featured on admissions pages.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:15:48.108Z"
+      }
+    },
+    {
+      "id": "cornell:slope-day:7804fd",
+      "schoolId": "cornell",
+      "unitIds": [],
+      "kind": "tradition",
+      "title": "Slope Day",
+      "nameOnPage": "Slope Day",
+      "summary": "Every May before finals, thousands of students gather on Libe Slope for a day of music and celebration, a tradition that began as Spring Day in 1902.",
+      "hook": "brings thousands of students to Libe Slope for music and celebration before finals",
+      "quote": "Every May, before the start of final exams, thousands of students gather on Libe Slope for a day of music, fun, and celebration. ... A Cornell tradition for more than 100 years, it started in 1902 when the university declared “Spring Day” a campus-wide holiday.",
+      "sourceUrl": "https://alumni.cornell.edu/come-back/cornell-traditions/slope-day/",
+      "sourceTitle": "Slope Day",
+      "themes": [
+        "music"
+      ],
+      "commonness": "common",
+      "commonnessReason": "Cornell's best-known annual celebration, named on admissions pages.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:15:51.373Z"
       }
     }
   ]

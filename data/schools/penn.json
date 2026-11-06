@@ -22,7 +22,13 @@
       ],
       "hosts": [
         "www.college.upenn.edu",
-        "www.sas.upenn.edu"
+        "www.sas.upenn.edu",
+        "earth.sas.upenn.edu",
+        "plc.sas.upenn.edu",
+        "music.sas.upenn.edu",
+        "clals.sas.upenn.edu",
+        "ppe.sas.upenn.edu",
+        "neuroscience.sas.upenn.edu"
       ]
     },
     {
@@ -46,7 +52,8 @@
         "Wharton"
       ],
       "hosts": [
-        "www.wharton.upenn.edu"
+        "www.wharton.upenn.edu",
+        "undergrad.wharton.upenn.edu"
       ]
     },
     {
@@ -62,8 +69,353 @@
       ]
     }
   ],
-  "prompts": [],
-  "seedUrls": [],
-  "unreachableHosts": [],
-  "hasCorpus": false
+  "prompts": [
+    {
+      "id": "penn-2026-thank-you",
+      "schoolId": "penn",
+      "unitIds": [],
+      "cycle": "2026-27",
+      "kind": "other",
+      "title": "Thank-you note (all applicants)",
+      "text": "Write a short thank-you note to someone you have not yet thanked and would like to acknowledge. (We encourage you to share this note with that person, if possible, and reflect on the experience!)",
+      "wordLimit": {
+        "min": 50,
+        "max": 200
+      },
+      "sourceUrl": "https://admissions.upenn.edu/how-to-apply/preparing-your-application/writing",
+      "verifiedAt": "2026-11-05",
+      "note": "Required of every Penn applicant, in addition to the community prompt and one school-specific prompt."
+    },
+    {
+      "id": "penn-2026-community",
+      "schoolId": "penn",
+      "unitIds": [],
+      "cycle": "2026-27",
+      "kind": "community",
+      "title": "Exploring community at Penn (all applicants)",
+      "text": "How will you explore community at Penn? Consider how Penn will help shape your perspective, and how your experiences and perspective will help shape Penn.",
+      "wordLimit": {
+        "min": 50,
+        "max": 200
+      },
+      "sourceUrl": "https://admissions.upenn.edu/how-to-apply/preparing-your-application/writing",
+      "verifiedAt": "2026-11-05",
+      "note": "Required of every Penn applicant."
+    },
+    {
+      "id": "penn-2026-why-college",
+      "schoolId": "penn",
+      "unitIds": [
+        "college"
+      ],
+      "cycle": "2026-27",
+      "kind": "why_school",
+      "title": "Why the College of Arts and Sciences",
+      "text": "The College of Arts and Sciences is designed to foster discovery and connection. Describe something you are curious about—something you'd like to learn more about or find a new approach to—and how you might pursue that curiosity in the College.",
+      "wordLimit": {
+        "min": 50,
+        "max": 200
+      },
+      "sourceUrl": "https://admissions.upenn.edu/how-to-apply/preparing-your-application/writing",
+      "verifiedAt": "2026-11-05",
+      "note": "School-specific prompt for single-degree applicants to the College. Penn suggests reviewing the College's curriculum, departments, and areas of study. Coordinated dual-degree applicants answer this for their single-degree school and write separate program essays."
+    },
+    {
+      "id": "penn-2026-why-wharton",
+      "schoolId": "penn",
+      "unitIds": [
+        "wharton"
+      ],
+      "cycle": "2026-27",
+      "kind": "why_school",
+      "title": "Why Wharton",
+      "text": "Wharton prepares its students to make an impact by applying business methods and economic theory to real-world problems, including economic, political, and social issues. Discuss a current issue of importance to you and how you hope a Wharton education would help you explore it.",
+      "wordLimit": {
+        "min": 50,
+        "max": 200
+      },
+      "sourceUrl": "https://admissions.upenn.edu/how-to-apply/preparing-your-application/writing",
+      "verifiedAt": "2026-11-05",
+      "note": "School-specific prompt for single-degree applicants to Wharton. Penn suggests reviewing the foundations of a Wharton education."
+    },
+    {
+      "id": "penn-2026-why-seas",
+      "schoolId": "penn",
+      "unitIds": [
+        "seas"
+      ],
+      "cycle": "2026-27",
+      "kind": "why_school",
+      "title": "Why Penn Engineering (intended major)",
+      "text": "Penn Engineering prepares its students to become leaders in technology by combining a strong foundation in the natural sciences and mathematics with depth of study in focused disciplinary majors. Describe how you plan to pursue your engineering interests at Penn, particularly within the intended major you selected.",
+      "wordLimit": {
+        "min": 50,
+        "max": 200
+      },
+      "sourceUrl": "https://admissions.upenn.edu/how-to-apply/preparing-your-application/writing",
+      "verifiedAt": "2026-11-05",
+      "note": "School-specific prompt for single-degree applicants to Penn Engineering; it centers on the intended major. Penn suggests reviewing the major's curriculum for specific courses, labs, or research opportunities."
+    },
+    {
+      "id": "penn-2026-why-nursing",
+      "schoolId": "penn",
+      "unitIds": [
+        "nursing"
+      ],
+      "cycle": "2026-27",
+      "kind": "why_school",
+      "title": "Why Penn Nursing",
+      "text": "Penn Nursing intends to meet the health needs of society in a global and multicultural world by preparing its students to impact healthcare by advancing science. Why are you applying to Nursing, where do you see yourself professionally in the future, and how will you contribute to our mission of promoting equity in healthcare?",
+      "wordLimit": {
+        "min": 50,
+        "max": 200
+      },
+      "sourceUrl": "https://admissions.upenn.edu/how-to-apply/preparing-your-application/writing",
+      "verifiedAt": "2026-11-05",
+      "note": "School-specific prompt for single-degree applicants to Penn Nursing. Penn suggests reviewing Penn Nursing's mission and approach to equity in healthcare."
+    }
+  ],
+  "seedUrls": [
+    {
+      "url": "https://www.upenn.edu/academics/off-campus-learning",
+      "category": "location",
+      "note": "ABCS, Quaker Consortium, Penn Abroad, Penn Global Seminars, Civic House"
+    },
+    {
+      "url": "https://curf.upenn.edu/undergraduate-research/funding-opportunities",
+      "category": "research",
+      "note": "PURM, SHIP, and CURF research grants database"
+    },
+    {
+      "url": "https://www.nettercenter.upenn.edu/fall-2026-abcs-courses",
+      "category": "catalog",
+      "note": "Academically Based Community Service course list; switch to the current term's page each semester"
+    },
+    {
+      "url": "https://earth.sas.upenn.edu/course-list",
+      "unitIds": [
+        "college"
+      ],
+      "category": "catalog",
+      "note": "Earth and Environmental Science (ENVS/EESC) roster; redirects to the current term"
+    },
+    {
+      "url": "https://plc.sas.upenn.edu/course-list",
+      "unitIds": [
+        "college"
+      ],
+      "category": "catalog",
+      "note": "Language and area-studies roster (SPAN, LING, CHIN, AFRC and more); redirects to the current term"
+    },
+    {
+      "url": "https://www.sustainability.upenn.edu/get-involved/opportunities",
+      "category": "programs",
+      "note": "Eco-Reps, Green Fund, PennGreen, Civic Sustainability Fellowship"
+    },
+    {
+      "url": "https://kleinmanenergy.upenn.edu/education/internships-opportunities/",
+      "category": "programs",
+      "note": "Kleinman Center seminar, fellowships, research assistantships, grants"
+    },
+    {
+      "url": "https://casalatina.universitylife.upenn.edu/latinx-student-groups/",
+      "category": "organizations",
+      "note": "Latinx student organizations"
+    },
+    {
+      "url": "https://recreation.upenn.edu/sports/2019/9/25/sport-club-directory.aspx",
+      "category": "organizations",
+      "note": "Sport club directory"
+    },
+    {
+      "url": "https://admissions.upenn.edu/student-life/exploring-community/community-engagement/performing-arts",
+      "category": "organizations",
+      "note": "Performing Arts Council, Penn Band, orchestras"
+    },
+    {
+      "url": "https://archives.upenn.edu/exhibits/penn-history/traditions/",
+      "category": "traditions",
+      "note": "University Archives traditions exhibit (Hey Day and historical traditions)"
+    },
+    {
+      "url": "https://www.upenn.edu/life-at-penn/philadelphia",
+      "category": "location",
+      "note": "Penn and Philadelphia city guides and partnerships"
+    },
+    {
+      "url": "https://earth.sas.upenn.edu/people/faculty",
+      "unitIds": [
+        "college"
+      ],
+      "category": "faculty",
+      "note": "Earth and Environmental Science faculty directory"
+    },
+    {
+      "url": "https://earth.sas.upenn.edu/undergraduate/ees-courses",
+      "unitIds": [
+        "college"
+      ],
+      "category": "catalog",
+      "note": "ENVS and EESC major course lists by requirement"
+    },
+    {
+      "url": "https://music.sas.upenn.edu/performance/ensembles",
+      "category": "organizations",
+      "note": "Music Department ensembles, including Penn Jazz Ensembles"
+    },
+    {
+      "url": "https://penniur.upenn.edu/student-programs",
+      "category": "programs",
+      "note": "Penn IUR undergraduate urban research programs"
+    },
+    {
+      "url": "https://climate.upenn.edu/resources-and-opportunities/student-opportunities/",
+      "category": "programs",
+      "note": "Penn Climate student cohort, internships, climate student groups"
+    },
+    {
+      "url": "https://ai.upenn.edu/education",
+      "category": "departments",
+      "note": "AI and data science degrees, minors, and concentrations across schools"
+    },
+    {
+      "url": "https://undergrad.wharton.upenn.edu/concentrations/",
+      "unitIds": [
+        "wharton"
+      ],
+      "category": "departments",
+      "note": "Wharton undergraduate concentrations"
+    },
+    {
+      "url": "https://www.upenn.edu/academics/interdisciplinary",
+      "category": "overview",
+      "note": "Coordinated dual-degree programs, university minors, SNF Paideia"
+    },
+    {
+      "url": "https://venturelab.upenn.edu/engineering-studios",
+      "category": "programs",
+      "note": "Makerspace: Prototyping studio, Advanced Fabrication Lab, Mechatronics Lab"
+    },
+    {
+      "url": "https://transportation.upenn.edu/resources-cyclists",
+      "category": "location",
+      "note": "Campus bike repair stations, bike map, Indego bike share"
+    },
+    {
+      "url": "https://www.nursing.upenn.edu/",
+      "unitIds": [
+        "nursing"
+      ],
+      "category": "overview",
+      "note": "Penn Nursing home page"
+    },
+    {
+      "url": "https://admissions.upenn.edu/how-to-apply/preparing-your-application/writing",
+      "category": "admissions",
+      "note": "Official 2026-27 short answer and essay prompts"
+    }
+  ],
+  "unreachableHosts": [
+    {
+      "host": "catalog.upenn.edu",
+      "reason": "TLS certificate chain could not be validated from this environment",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "www.seas.upenn.edu",
+      "reason": "TLS certificate chain could not be validated from this environment",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "www.cis.upenn.edu",
+      "reason": "TLS certificate chain could not be validated from this environment",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "grasp.upenn.edu",
+      "reason": "TLS certificate chain could not be validated from this environment",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "pennsed.seas.upenn.edu",
+      "reason": "TLS certificate chain could not be validated from this environment",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "nettercenter.upenn.edu",
+      "reason": "TLS certificate chain could not be validated from this environment (www.nettercenter.upenn.edu works)",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "www.college.upenn.edu",
+      "reason": "Site answered automated requests with a bot challenge; not bypassed",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "www.sas.upenn.edu",
+      "reason": "HTTP 403 to automated requests (earlier today a bot challenge); not bypassed",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "penntoday.upenn.edu",
+      "reason": "Site answered automated requests with a bot challenge; not bypassed",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "www.design.upenn.edu",
+      "reason": "Site answered automated requests with a bot challenge; not bypassed",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "watercenter.sas.upenn.edu",
+      "reason": "Site answered automated requests with a bot challenge; not bypassed (Water Center pages on earth.sas.upenn.edu work)",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "ppeh.sas.upenn.edu",
+      "reason": "Site answered automated requests with a bot challenge; not bypassed",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "civichouse.upenn.edu",
+      "reason": "Site answered automated requests with a bot challenge; not bypassed",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "www.library.upenn.edu",
+      "reason": "Site answered automated requests with a bot challenge; not bypassed",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "spanish.sas.upenn.edu",
+      "reason": "Site answered automated requests with a bot challenge; not bypassed",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "amc.sas.upenn.edu",
+      "reason": "Site answered automated requests with a bot challenge; not bypassed",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "viper.upenn.edu",
+      "reason": "Site answered automated requests with a bot challenge; not bypassed",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "global.upenn.edu",
+      "reason": "Site answered automated requests with a bot challenge; not bypassed",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "www.alumni.upenn.edu",
+      "reason": "Site answered automated requests with a bot challenge; not bypassed",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "www.bio.upenn.edu",
+      "reason": "HTTP 403 to automated requests",
+      "checkedAt": "2026-11-05"
+    }
+  ],
+  "hasCorpus": true
 }

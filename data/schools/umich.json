@@ -111,8 +111,775 @@
       ]
     }
   ],
-  "prompts": [],
-  "seedUrls": [],
-  "unreachableHosts": [],
-  "hasCorpus": false
+  "prompts": [
+    {
+      "id": "umich-2026-why",
+      "schoolId": "umich",
+      "unitIds": [],
+      "cycle": "2026-27",
+      "kind": "why_school",
+      "title": "Why Michigan (your school or college)",
+      "text": "Describe the unique qualities that attract you to the specific undergraduate college or school (including preferred admission and dual degree programs) to which you are applying at the University of Michigan. How would that curriculum support your interests?",
+      "wordLimit": {
+        "min": 100,
+        "max": 550
+      },
+      "sourceUrl": "https://admissions.umich.edu/apply/first-year-applicants/essay-questions",
+      "verifiedAt": null,
+      "note": "Required for all first-year applicants; answered about the unit applied to (for Urban Technology applicants, Taubman College). admissions.umich.edu answers automated clients with a Cloudflare bot challenge (fetch-text and WebFetch both refused with HTTP 403), so the text could not be confirmed on the official page from this environment. Search results for the official essay-questions page show this wording and word range, and two independent 2026-27 essay guides reproduce the identical prompt (one reports checking U-M's page on 2026-09-24 and that the prompts are unchanged from 2025-26). Re-confirm on the official page before marking verified."
+    },
+    {
+      "id": "umich-2026-contribute",
+      "schoolId": "umich",
+      "unitIds": [],
+      "cycle": "2026-27",
+      "kind": "other",
+      "title": "Leaders and citizens (how you will contribute)",
+      "text": "At the University of Michigan, we are focused on developing leaders and citizens who will challenge the present and enrich the future. In your essay, share with us how you are prepared to contribute to these goals. This could include the people, places, experiences, or aspirations that have shaped your journey and future plans.",
+      "wordLimit": {
+        "min": 100,
+        "max": 300
+      },
+      "sourceUrl": "https://admissions.umich.edu/apply/first-year-applicants/essay-questions",
+      "verifiedAt": null,
+      "note": "Required for all first-year applicants. admissions.umich.edu answers automated clients with a Cloudflare bot challenge (fetch-text and WebFetch both refused with HTTP 403), so the text could not be confirmed on the official page from this environment. Search results for the official essay-questions page show this wording and word range, and two independent 2026-27 essay guides reproduce the identical prompt (one reports checking U-M's page on 2026-09-24 and that the prompts are unchanged from 2025-26). Re-confirm on the official page before marking verified."
+    }
+  ],
+  "seedUrls": [
+    {
+      "url": "https://taubmancollege.umich.edu/courses/?_term=fall-2026",
+      "category": "catalog",
+      "unitIds": [
+        "taubman"
+      ],
+      "note": "Taubman course list for a term; change _term (e.g. winter-2027). Course pages carry descriptions and instructors."
+    },
+    {
+      "url": "https://taubmancollege.umich.edu/courses/",
+      "category": "catalog",
+      "unitIds": [
+        "taubman"
+      ],
+      "note": "Default view lists the upcoming term."
+    },
+    {
+      "url": "https://taubmancollege.umich.edu/academics/urban-and-regional-planning/bachelor-of-science-in-urban-technology/",
+      "category": "departments",
+      "unitIds": [
+        "taubman"
+      ]
+    },
+    {
+      "url": "https://taubmancollege.umich.edu/academics/urban-and-regional-planning/bachelor-of-science-in-urban-technology/degree-information/",
+      "category": "departments",
+      "unitIds": [
+        "taubman"
+      ]
+    },
+    {
+      "url": "https://taubmancollege.umich.edu/faculty/directory/",
+      "category": "faculty",
+      "unitIds": [
+        "taubman"
+      ]
+    },
+    {
+      "url": "https://taubmancollege.umich.edu/research/clusters-and-labs/",
+      "category": "research",
+      "unitIds": [
+        "taubman"
+      ],
+      "note": "Initiatives, research clusters, and labs (heat, water, urban technology, climate)."
+    },
+    {
+      "url": "https://taubmancollege.umich.edu/about/facilities/",
+      "category": "research",
+      "unitIds": [
+        "taubman"
+      ],
+      "note": "FABLab, TVLab, shops, Liberty Annex."
+    },
+    {
+      "url": "https://taubmancollege.umich.edu/students/student-groups/",
+      "category": "organizations",
+      "unitIds": [
+        "taubman"
+      ]
+    },
+    {
+      "url": "https://taubmancollege.umich.edu/students/travel/",
+      "category": "programs",
+      "unitIds": [
+        "taubman"
+      ]
+    },
+    {
+      "url": "https://taubmancollege.umich.edu/students/awards/",
+      "category": "traditions",
+      "unitIds": [
+        "taubman"
+      ],
+      "note": "Annual Student Show Exhibition and Wallenberg awards."
+    },
+    {
+      "url": "https://taubmancollege.umich.edu/students/ann-arbor/",
+      "category": "location"
+    },
+    {
+      "url": "https://taubmancollege.umich.edu/admissions/apply/bachelor-of-science-in-urban-technology/",
+      "category": "admissions",
+      "unitIds": [
+        "taubman"
+      ]
+    },
+    {
+      "url": "https://www.si.umich.edu/programs/courses/special-topics-courses-fall-2026",
+      "category": "catalog",
+      "unitIds": [
+        "si"
+      ],
+      "note": "Term-specific; look for the newest special-topics page each term."
+    },
+    {
+      "url": "https://www.si.umich.edu/research/research-centers-and-groups",
+      "category": "research",
+      "unitIds": [
+        "si"
+      ]
+    },
+    {
+      "url": "https://www.si.umich.edu/student-experience/student-life/student-organizations",
+      "category": "organizations"
+    },
+    {
+      "url": "https://www.si.umich.edu/programs/engaged-learning/engaged-learning-programs",
+      "category": "programs"
+    },
+    {
+      "url": "https://www.si.umich.edu/research/student-research-opportunities",
+      "category": "programs",
+      "note": "Describes UROP and other university-wide research programs."
+    },
+    {
+      "url": "https://robotics.umich.edu/academics/courses/complete-course-list/",
+      "category": "catalog",
+      "unitIds": [
+        "engineering"
+      ]
+    },
+    {
+      "url": "https://robotics.umich.edu/people/student-teams/",
+      "category": "organizations"
+    },
+    {
+      "url": "https://bluelab.engin.umich.edu/project-teams.html",
+      "category": "organizations"
+    },
+    {
+      "url": "https://planetblue.umich.edu/campus/get-involved/for-students/student-orgs/",
+      "category": "organizations",
+      "note": "Sustainability-focused student organizations; descriptions live on Maize Pages, which renders client-side."
+    },
+    {
+      "url": "https://planetblue.umich.edu/campus/about/historic-milestones/",
+      "category": "traditions"
+    },
+    {
+      "url": "https://arts.umich.edu/",
+      "category": "programs",
+      "note": "Arts Initiative programs (Passport to the Arts, Art Outta Town, Culture Corps, Arts Honors Cords)."
+    },
+    {
+      "url": "https://arts.umich.edu/sao",
+      "category": "organizations",
+      "note": "Student Arts Org pages; only the organization name renders server-side."
+    },
+    {
+      "url": "https://www.lib.umich.edu/visit-and-study/events-and-exhibits/annual-events-and-series/",
+      "category": "traditions"
+    },
+    {
+      "url": "https://www.lib.umich.edu/visit-and-study/creation-and-learning-spaces/",
+      "category": "research",
+      "note": "Shapiro Design Lab and other library makerspaces."
+    },
+    {
+      "url": "https://admissions.umich.edu/apply/first-year-applicants/essay-questions",
+      "category": "admissions",
+      "note": "Official essay questions; bot challenge blocks automated reading."
+    }
+  ],
+  "unreachableHosts": [
+    {
+      "host": "umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "admissions.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "lsa.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "www.engin.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "seas.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "michiganross.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "smtd.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "stamps.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "fordschool.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "sph.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "careercenter.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "detroit.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "ii.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "isr.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "midas.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "studentlife.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "uunions.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "umma.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "mdp.engin.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "bulletin.engin.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "cee.engin.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "ece.engin.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "me.engin.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "cse.engin.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "www.eecs.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "sites.lsa.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "earth.lsa.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "public.websites.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "websites.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "mbgna.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "bentley.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "ginsberg.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "recsports.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "internationalcenter.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "graham.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "css.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "ciglr.seas.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "glisa.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "mcity.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "www.umtri.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "ai.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "poverty.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "closup.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "ssw.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "housing.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "spectrumcenter.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "mesa.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "trotter.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "ltp.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "cfe.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "zli.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "entrepreneurship.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "innovationpartnerships.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "ro.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "finaid.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "president.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "nursing.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "pharmacy.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "dent.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "kines.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "marsal.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "gis.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "global.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "events.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "offcampus.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "maizeraise.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "deanofstudents.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "record.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "news.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "news.engin.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "artsengine.engin.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "crlt.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "detroitsurvey.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "economicgrowth.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "democracy.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "ies.engin.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "ihpi.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "michr.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "micde.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "stpp.fordschool.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "urbanlab.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "advance.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "hr.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "campusinfo.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "alumni.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "heritage.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "brand.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "michigan.law.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "deepblue.lib.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "quod.lib.umich.edu",
+      "reason": "Cloudflare bot challenge (HTTP 403) for automated clients; WhyUs does not try to get past it",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "engin.umich.edu",
+      "reason": "TLS certificate chain could not be validated by Node",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "music.umich.edu",
+      "reason": "TLS certificate chain could not be validated by Node",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "sustainability.umich.edu",
+      "reason": "TLS certificate chain could not be validated by Node",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "umtri.umich.edu",
+      "reason": "TLS certificate chain could not be validated by Node",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "law.umich.edu",
+      "reason": "TLS certificate chain could not be validated by Node",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "caps.umich.edu",
+      "reason": "TLS certificate chain could not be validated by Node",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "uhs.umich.edu",
+      "reason": "TLS certificate chain could not be validated by Node",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "diversity.umich.edu",
+      "reason": "TLS certificate chain could not be validated by Node",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "ssd.umich.edu",
+      "reason": "TLS certificate chain could not be validated by Node",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "eecs.umich.edu",
+      "reason": "TLS certificate chain could not be validated by Node",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "soe.umich.edu",
+      "reason": "TLS certificate chain could not be validated by Node",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "teamdynamix.umich.edu",
+      "reason": "TLS certificate chain could not be validated by Node",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "mmb.music.umich.edu",
+      "reason": "connection failed through the network proxy (HTTP 502 on CONNECT); robots.txt unreachable, so the fetcher treats the host as disallowed",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "umbs.lsa.umich.edu",
+      "reason": "connection failed through the network proxy (HTTP 502 on CONNECT); robots.txt unreachable, so the fetcher treats the host as disallowed",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "clubsports.umich.edu",
+      "reason": "connection failed through the network proxy (HTTP 502 on CONNECT); robots.txt unreachable, so the fetcher treats the host as disallowed",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "orientation.umich.edu",
+      "reason": "connection failed through the network proxy (HTTP 502 on CONNECT); robots.txt unreachable, so the fetcher treats the host as disallowed",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "lab11.eecs.umich.edu",
+      "reason": "connection failed through the network proxy (HTTP 502 on CONNECT); robots.txt unreachable, so the fetcher treats the host as disallowed",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "mrover.engin.umich.edu",
+      "reason": "connection failed through the network proxy (HTTP 502 on CONNECT); robots.txt unreachable, so the fetcher treats the host as disallowed",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "umautonomy.engin.umich.edu",
+      "reason": "connection failed through the network proxy (HTTP 502 on CONNECT); robots.txt unreachable, so the fetcher treats the host as disallowed",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "wilsoncenter.engin.umich.edu",
+      "reason": "connection failed through the network proxy (HTTP 502 on CONNECT); robots.txt unreachable, so the fetcher treats the host as disallowed",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "optimize.umich.edu",
+      "reason": "connection failed through the network proxy (HTTP 502 on CONNECT); robots.txt unreachable, so the fetcher treats the host as disallowed",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "debate2020.umich.edu",
+      "reason": "connection failed through the network proxy (HTTP 502 on CONNECT); robots.txt unreachable, so the fetcher treats the host as disallowed",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "maizepages.umich.edu",
+      "reason": "reachable, but organization pages render client-side; the fetched HTML has no visible text to verify",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "atlas.ai.umich.edu",
+      "reason": "reachable, but course, instructor, and major pages redirect to U-M single sign-on",
+      "checkedAt": "2026-11-05"
+    }
+  ],
+  "hasCorpus": true
 }

@@ -19,11 +19,15 @@
       "aliases": [
         "Dartmouth",
         "Arts and Sciences",
+        "Arts & Sciences",
+        "School of Arts and Sciences",
         "Faculty of Arts and Sciences"
       ],
       "hosts": [
         "home.dartmouth.edu",
-        "dartmouth.smartcatalogiq.com"
+        "dartmouth.smartcatalogiq.com",
+        "eaps.dartmouth.edu",
+        "students.dartmouth.edu"
       ]
     },
     {
@@ -32,6 +36,7 @@
       "shortName": "Thayer",
       "aliases": [
         "Thayer",
+        "Thayer School",
         "Dartmouth Engineering",
         "Engineering"
       ],
@@ -40,8 +45,413 @@
       ]
     }
   ],
-  "prompts": [],
-  "seedUrls": [],
-  "unreachableHosts": [],
-  "hasCorpus": false
+  "prompts": [
+    {
+      "id": "dartmouth-2026-why",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "cycle": "2026-27",
+      "kind": "why_school",
+      "title": "Why Dartmouth",
+      "text": "As you seek admission to Dartmouth’s Class of 2031, what aspects of the college’s academic program, community, and/or campus environment attract your interest? How is Dartmouth a good fit for you?",
+      "wordLimit": {
+        "max": 100
+      },
+      "sourceUrl": "https://admissions.dartmouth.edu/glossary-term/writing-supplement",
+      "verifiedAt": null,
+      "note": "Question 1 of the Class of 2031 writing supplement; required of all applicants, 100 words or fewer. The official page (marked Updated July 22, 2026) could not be read from this environment on 2026-11-05: fetch-text reports the TLS chain cannot be validated and WebFetch returned HTTP 503. Wording comes from WebSearch results for the official page and matches two independent reproductions of it."
+    },
+    {
+      "id": "dartmouth-2026-q2a",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "cycle": "2026-27",
+      "kind": "other",
+      "title": "Question 2, Option A: Let your life speak",
+      "text": "There is a Quaker saying: Let your life speak. Describe the environment in which you were raised and the impact it has had on the person you are today.",
+      "wordLimit": {
+        "max": 250
+      },
+      "sourceUrl": "https://admissions.dartmouth.edu/glossary-term/writing-supplement",
+      "verifiedAt": null,
+      "note": "Question 2 is required: choose Option A or Option B and respond in 250 words or fewer. Not confirmed on the official page from this environment (TLS failure for fetch-text, HTTP 503 for WebFetch on 2026-11-05); text matches WebSearch results for the official page and two independent reproductions of it."
+    },
+    {
+      "id": "dartmouth-2026-q2b",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "cycle": "2026-27",
+      "kind": "other",
+      "title": "Question 2, Option B: Introduce yourself",
+      "text": "“Be yourself,” Oscar Wilde advised. “Everyone else is taken.” Introduce yourself.",
+      "wordLimit": {
+        "max": 250
+      },
+      "sourceUrl": "https://admissions.dartmouth.edu/glossary-term/writing-supplement",
+      "verifiedAt": null,
+      "note": "Question 2 is required: choose Option A or Option B and respond in 250 words or fewer. Not confirmed on the official page from this environment (TLS failure for fetch-text, HTTP 503 for WebFetch on 2026-11-05); text matches two independent reproductions of the official page."
+    },
+    {
+      "id": "dartmouth-2026-q3a",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "cycle": "2026-27",
+      "kind": "other",
+      "title": "Question 3, Option A: What excites you?",
+      "text": "What excites you?",
+      "wordLimit": {
+        "max": 250
+      },
+      "sourceUrl": "https://admissions.dartmouth.edu/glossary-term/writing-supplement",
+      "verifiedAt": null,
+      "note": "Question 3 is required: choose one of six prompts (A-F) and respond in 250 words or fewer. Not confirmed on the official page from this environment (TLS failure for fetch-text, HTTP 503 for WebFetch on 2026-11-05); text matches WebSearch results for the official page and two independent reproductions of it."
+    },
+    {
+      "id": "dartmouth-2026-q3b",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "cycle": "2026-27",
+      "kind": "other",
+      "title": "Question 3, Option B: A life of purpose (Dolores Huerta)",
+      "text": "Labor leader and civil rights activist Dolores Huerta recommended a life of purpose. “We must use our lives to make the world a better place to live, not just to acquire things,” she said. “That is what we are put on the earth for.” In what ways do you hope to make—or are you already making—an impact? Why? How?",
+      "wordLimit": {
+        "max": 250
+      },
+      "sourceUrl": "https://admissions.dartmouth.edu/glossary-term/writing-supplement",
+      "verifiedAt": null,
+      "note": "Question 3 is required: choose one of six prompts (A-F) and respond in 250 words or fewer. Not confirmed on the official page from this environment (TLS failure for fetch-text, HTTP 503 for WebFetch on 2026-11-05); text matches two independent reproductions of the official page, which differ only in using dashes or commas around 'or are you already making'."
+    },
+    {
+      "id": "dartmouth-2026-q3c",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "cycle": "2026-27",
+      "kind": "other",
+      "title": "Question 3, Option C: Insight from reading (Matt Haig)",
+      "text": "In an Instagram post, best-selling British author Matt Haig cheered the impact of reading. “A good novel is the best invention humans have ever created for imagining other lives,” he wrote. How have you experienced such insight from reading? What did you read and how did it alter the way you understand yourself and others?",
+      "wordLimit": {
+        "max": 250
+      },
+      "sourceUrl": "https://admissions.dartmouth.edu/glossary-term/writing-supplement",
+      "verifiedAt": null,
+      "note": "Question 3 is required: choose one of six prompts (A-F) and respond in 250 words or fewer. Not confirmed on the official page from this environment (TLS failure for fetch-text, HTTP 503 for WebFetch on 2026-11-05); text matches two independent reproductions of the official page."
+    },
+    {
+      "id": "dartmouth-2026-q3d",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "cycle": "2026-27",
+      "kind": "community",
+      "title": "Question 3, Option D: Finding common ground (Jane Goodall)",
+      "text": "The social and family interactions of wild chimpanzees have been the focus of Dame Jane Goodall’s research for decades. Her understanding of animal behavior prompted the English primatologist to see a lesson for human communities as well: “Change happens by listening and then starting a dialogue with the people who are doing something you don’t believe is right.” Channel Dame Goodall: Tell us about a moment when you engaged in a difficult conversation or encountered someone with an opinion or perspective that was different from your own. How did you find common ground?",
+      "wordLimit": {
+        "max": 250
+      },
+      "sourceUrl": "https://admissions.dartmouth.edu/glossary-term/writing-supplement",
+      "verifiedAt": null,
+      "note": "Question 3 is required: choose one of six prompts (A-F) and respond in 250 words or fewer. Not confirmed on the official page from this environment (TLS failure for fetch-text, HTTP 503 for WebFetch on 2026-11-05); text matches two independent reproductions of the official page."
+    },
+    {
+      "id": "dartmouth-2026-q3e",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "cycle": "2026-27",
+      "kind": "other",
+      "title": "Question 3, Option E: Celebrate your nerdy side",
+      "text": "Celebrate your nerdy side.",
+      "wordLimit": {
+        "max": 250
+      },
+      "sourceUrl": "https://admissions.dartmouth.edu/glossary-term/writing-supplement",
+      "verifiedAt": null,
+      "note": "Question 3 is required: choose one of six prompts (A-F) and respond in 250 words or fewer. Not confirmed on the official page from this environment (TLS failure for fetch-text, HTTP 503 for WebFetch on 2026-11-05); text matches WebSearch results for the official page and two independent reproductions of it."
+    },
+    {
+      "id": "dartmouth-2026-q3f",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "cycle": "2026-27",
+      "kind": "community",
+      "title": "Question 3, Option F: It’s not easy being green",
+      "text": "“It’s not easy being green…” was the frequent refrain of Kermit the Frog. How has difference been a part of your life, and how have you embraced it as part of your identity, outlook, or sense of purpose?",
+      "wordLimit": {
+        "max": 250
+      },
+      "sourceUrl": "https://admissions.dartmouth.edu/glossary-term/writing-supplement",
+      "verifiedAt": null,
+      "note": "Question 3 is required: choose one of six prompts (A-F) and respond in 250 words or fewer. Not confirmed on the official page from this environment (TLS failure for fetch-text, HTTP 503 for WebFetch on 2026-11-05); text matches two independent reproductions of the official page."
+    }
+  ],
+  "seedUrls": [
+    {
+      "url": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate",
+      "category": "catalog",
+      "unitIds": [
+        "college"
+      ],
+      "note": "2026-27 ORC: index of undergraduate departments, programs, and course lists"
+    },
+    {
+      "url": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/engineering-sciences/engs-engineering-sciences-undergraduate",
+      "category": "catalog",
+      "unitIds": [
+        "college",
+        "thayer"
+      ],
+      "note": "2026-27 ORC: ENGS undergraduate course list"
+    },
+    {
+      "url": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/engineering-sciences",
+      "category": "departments",
+      "unitIds": [
+        "college",
+        "thayer"
+      ],
+      "note": "Engineering Sciences majors, modified majors, and minors"
+    },
+    {
+      "url": "https://engineering.dartmouth.edu/undergraduate/ab/majors",
+      "category": "departments",
+      "unitIds": [
+        "college",
+        "thayer"
+      ],
+      "note": "Thayer's A.B. majors and modified majors"
+    },
+    {
+      "url": "https://home.dartmouth.edu/academics/departments-programs",
+      "category": "departments",
+      "unitIds": [
+        "college"
+      ],
+      "note": "Directory of Arts and Sciences departments and programs"
+    },
+    {
+      "url": "https://engineering.dartmouth.edu/research/labs",
+      "category": "research",
+      "unitIds": [
+        "college",
+        "thayer"
+      ],
+      "note": "Directory of Thayer research laboratories with lead faculty"
+    },
+    {
+      "url": "https://engineering.dartmouth.edu/community/offices/labs",
+      "category": "research",
+      "unitIds": [
+        "college",
+        "thayer"
+      ],
+      "note": "Thayer instructional labs, makerspace, and MShop"
+    },
+    {
+      "url": "https://eaps.dartmouth.edu/research/labs-facilities",
+      "category": "research",
+      "unitIds": [
+        "college"
+      ],
+      "note": "Earth and Planetary Sciences labs and facilities"
+    },
+    {
+      "url": "https://home.dartmouth.edu/academics/centers-institutes",
+      "category": "research",
+      "note": "One-line descriptions of Dartmouth centers and institutes"
+    },
+    {
+      "url": "https://engineering.dartmouth.edu/undergraduate/opportunities",
+      "category": "programs",
+      "unitIds": [
+        "college",
+        "thayer"
+      ],
+      "note": "Undergraduate research and entrepreneurship opportunities in engineering"
+    },
+    {
+      "url": "https://students.dartmouth.edu/surfd/",
+      "category": "programs",
+      "note": "Undergraduate research programs and fellowships (URAD, ERAS, Presidential Scholars)"
+    },
+    {
+      "url": "https://students.dartmouth.edu/social-impact/programs-initiatives/students",
+      "category": "programs",
+      "note": "Center for Social Impact programs for students"
+    },
+    {
+      "url": "https://www.sustainability.dartmouth.edu/experience",
+      "category": "programs",
+      "note": "Sustainability programs, Organic Farm, and Dartmouth Bikes"
+    },
+    {
+      "url": "https://dickey.dartmouth.edu/student-opportunities/",
+      "category": "programs",
+      "note": "Dickey Center student programs and internships"
+    },
+    {
+      "url": "https://home.dartmouth.edu/campus-life/student-groups-activities",
+      "category": "organizations",
+      "note": "Overview of student groups, the Outing Club, The Dartmouth, and the arts"
+    },
+    {
+      "url": "https://engineering.dartmouth.edu/community/student-groups",
+      "category": "organizations",
+      "unitIds": [
+        "college",
+        "thayer"
+      ],
+      "note": "Engineering student groups and professional chapters"
+    },
+    {
+      "url": "https://hop.dartmouth.edu/events/resident-ensembles/resident-ensembles",
+      "category": "organizations",
+      "note": "Hopkins Center resident ensembles, including the Coast Jazz Orchestra"
+    },
+    {
+      "url": "https://opal.dartmouth.edu/exploring-community/llcaffinity-houses",
+      "category": "organizations",
+      "note": "Living-learning and affinity houses"
+    },
+    {
+      "url": "https://home.dartmouth.edu/about/dartmouth-milestones",
+      "category": "traditions",
+      "note": "Milestone pages on traditions such as First-Year Trips, Winter Carnival, and Dartmouth Night"
+    },
+    {
+      "url": "https://home.dartmouth.edu/about/life-upper-valley",
+      "category": "location",
+      "note": "Upper Valley setting, Appalachian Trail, and Connecticut River"
+    },
+    {
+      "url": "https://www.dartmouth.edu/woodlands/",
+      "category": "location",
+      "note": "Second College Grant and other Dartmouth woodlands"
+    },
+    {
+      "url": "https://www.sustainability.dartmouth.edu/campus-as-lab",
+      "category": "location",
+      "note": "Campus lands used as living-lab research sites"
+    },
+    {
+      "url": "https://admissions.dartmouth.edu/glossary-term/writing-supplement",
+      "category": "admissions",
+      "note": "Official writing supplement prompts (unreachable from this environment on 2026-11-05)"
+    }
+  ],
+  "unreachableHosts": [
+    {
+      "host": "admissions.dartmouth.edu",
+      "reason": "fetch-text: TLS certificate chain could not be validated; WebFetch returned HTTP 503",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "outdoors.dartmouth.edu",
+      "reason": "TLS certificate chain could not be validated",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "library.dartmouth.edu",
+      "reason": "TLS certificate chain could not be validated (www.library.dartmouth.edu is reachable)",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "geography.dartmouth.edu",
+      "reason": "TLS certificate chain could not be validated",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "web.cs.dartmouth.edu",
+      "reason": "TLS certificate chain could not be validated",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "cs.dartmouth.edu",
+      "reason": "TLS certificate chain could not be validated",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "rockefeller.dartmouth.edu",
+      "reason": "TLS certificate chain could not be validated",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "irving.dartmouth.edu",
+      "reason": "TLS certificate chain could not be validated",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "faculty.dartmouth.edu",
+      "reason": "TLS certificate chain could not be validated",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "envs.dartmouth.edu",
+      "reason": "TLS certificate chain could not be validated",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "earthsciences.dartmouth.edu",
+      "reason": "TLS certificate chain could not be validated (eaps.dartmouth.edu is reachable)",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "spanport.dartmouth.edu",
+      "reason": "TLS certificate chain could not be validated",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "music.dartmouth.edu",
+      "reason": "TLS certificate chain could not be validated",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "govt.dartmouth.edu",
+      "reason": "TLS certificate chain could not be validated",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "guarini.dartmouth.edu",
+      "reason": "TLS certificate chain could not be validated",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "hoodmuseum.dartmouth.edu",
+      "reason": "TLS certificate chain could not be validated",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "neukom.dartmouth.edu",
+      "reason": "TLS certificate chain could not be validated",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "leslie.dartmouth.edu",
+      "reason": "TLS certificate chain could not be validated",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "theater.dartmouth.edu",
+      "reason": "TLS certificate chain could not be validated",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "rauner.dartmouth.edu",
+      "reason": "robots.txt disallows automated reading (www.library.dartmouth.edu/rauner is reachable)",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "wisp.dartmouth.edu",
+      "reason": "robots.txt disallows automated reading",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "socialimpact.dartmouth.edu",
+      "reason": "robots.txt disallows automated reading (students.dartmouth.edu/social-impact is reachable)",
+      "checkedAt": "2026-11-05"
+    },
+    {
+      "host": "fysep.dartmouth.edu",
+      "reason": "robots.txt disallows automated reading (fgo.dartmouth.edu is reachable)",
+      "checkedAt": "2026-11-05"
+    }
+  ],
+  "hasCorpus": true
 }

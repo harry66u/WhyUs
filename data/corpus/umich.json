@@ -1,7 +1,2169 @@
 {
   "schoolId": "umich",
   "term": "2026-fall",
-  "builtAt": "",
-  "builtBy": "",
-  "facts": []
+  "builtAt": "2026-11-05",
+  "builtBy": "research-agent",
+  "facts": [
+    {
+      "id": "umich:center-for-social-media-responsibility:56063a",
+      "schoolId": "umich",
+      "unitIds": [
+        "si"
+      ],
+      "kind": "center",
+      "title": "Center for Social Media Responsibility",
+      "nameOnPage": "Center for Social Media Responsibility",
+      "summary": "A UMSI center that addresses the negative effects of social media and creates principles, metrics, and tools that help technologists set responsible policy.",
+      "hook": "develops metrics and tools that help social media technologists set responsible policy",
+      "quote": "The Center for Social Media Responsibility addresses the negative effects of broad access to the means of public communication, while amplifying positive effects. ... The Center for Social Media Responsibility (CSMR) articulates principles and creates metrics and tools that empower technologists to set responsible policy.",
+      "sourceUrl": "https://www.si.umich.edu/research/research-centers-and-groups",
+      "sourceTitle": "Research centers and groups | umsi",
+      "themes": [
+        "information",
+        "public-policy"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:06.762Z"
+      }
+    },
+    {
+      "id": "umich:climate-futures:a1e30a",
+      "schoolId": "umich",
+      "unitIds": [
+        "taubman"
+      ],
+      "kind": "center",
+      "title": "Climate Futures",
+      "nameOnPage": "Climate Futures",
+      "summary": "A Taubman College effort that amplifies architecture, design, and planning contributions in the built environment, with a space students can reserve for climate-related discussions and projects.",
+      "hook": "gives students a reservable space for climate-related discussions, meetings, and projects",
+      "quote": "Climate Futures amplifies architectural, design and planning contributions to mutual flourishing in the built environment. ... Taubman College students and faculty can reserve the space via Google Calendar for climate-related discussions, meetings, and collaborative or course projects.",
+      "sourceUrl": "https://taubmancollege.umich.edu/research/initiatives/climate-futures/",
+      "sourceTitle": "Climate Futures - Taubman College",
+      "themes": [
+        "climate",
+        "architecture",
+        "cities"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:06.652Z"
+      }
+    },
+    {
+      "id": "umich:geospatial-data-and-mapping-u-m-library:6fe940",
+      "schoolId": "umich",
+      "unitIds": [],
+      "kind": "center",
+      "title": "Geospatial Data and Mapping (U-M Library)",
+      "nameOnPage": "Geospatial Data and Mapping",
+      "summary": "The U-M Library connects new and experienced GIS users to experts and services, with digital mapping software such as ArcGIS Pro, ArcGIS Online, and QGIS.",
+      "hook": "connects students at any level to GIS experts and mapping software such as ArcGIS Pro and QGIS",
+      "quote": "Whether you’re an experienced user of geospatial data and geographic information systems (GIS) or are just starting out, we can connect you to experts and services to support your work. ... Use the digital mapping software we have available at the library, including ArcGIS Pro, ArcGIS Online, QGIS, and others",
+      "sourceUrl": "https://www.lib.umich.edu/research-and-scholarship/data-services/geospatial-data-and-mapping/",
+      "sourceTitle": "Geospatial Data and Mapping | University of Michigan Library",
+      "themes": [
+        "gis-mapping",
+        "data-science",
+        "computer-science"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:06.692Z"
+      }
+    },
+    {
+      "id": "umich:institute-for-advanced-construction-futu:d33c82",
+      "schoolId": "umich",
+      "unitIds": [
+        "taubman"
+      ],
+      "kind": "center",
+      "title": "Institute for Advanced Construction Futures",
+      "nameOnPage": "Institute for Advanced Construction Futures",
+      "summary": "A U-M institute that uses external partnerships to drive research on how the built environment is designed and built, with priorities including construction robotics and AI-enabled technologies.",
+      "hook": "pursues partner-driven research on construction robotics and AI in the built environment",
+      "quote": "The Institute for Advanced Construction Futures (IACF) leverages external partnerships to mobilize innovative research that will positively transform the design, construction, and implementation of the built environment towards more livable futures. ... Current Research Priority Areas: Construction robotics; Off-site and on-site robotic construction; AI enabled technologies",
+      "sourceUrl": "https://iacf.umich.edu/",
+      "sourceTitle": "Institute for Advanced Construction Futures - University of Michigan",
+      "themes": [
+        "robotics",
+        "ai",
+        "civil-engineering",
+        "architecture",
+        "cities"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:06.612Z"
+      }
+    },
+    {
+      "id": "umich:u-m-arts-initiative:eab651",
+      "schoolId": "umich",
+      "unitIds": [],
+      "kind": "center",
+      "title": "U-M Arts Initiative",
+      "nameOnPage": "Arts Initiative",
+      "summary": "A university-wide initiative that works to expand the arts at U-M, including strengthening the student experience by integrating the arts into teaching and learning.",
+      "hook": "expands student access to the arts and works them into teaching and learning",
+      "quote": "The U-M Arts Initiative seeks to illuminate and expand human connections, inspire collaborative creativity, and build a more just and equitable world through the arts. ... Strengthening the student experience by expanding and integrating the arts in teaching and learning",
+      "sourceUrl": "https://arts.umich.edu/arts-initiative",
+      "sourceTitle": "Arts Initiative — Michigan Arts",
+      "themes": [
+        "visual-arts",
+        "music",
+        "theater",
+        "education"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Runs the university-wide arts programs many applicants encounter.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:06.606Z"
+      }
+    },
+    {
+      "id": "umich:si-311-sports-analytics:c5fff8",
+      "schoolId": "umich",
+      "unitIds": [
+        "si"
+      ],
+      "kind": "course",
+      "title": "SI 311: Sports Analytics",
+      "nameOnPage": "SI 311.030",
+      "summary": "A course in which students work with U-M Athletics training and coaching staff to analyze data on athlete health, safety, and performance from tracking devices, cameras, and box scores.",
+      "hook": "has students analyze U-M Athletics data on athlete health and performance from wearables and cameras",
+      "quote": "In this course students will work with the instructor and with training/coaching personnel in U-M Athletics to address a set of analyses related to athlete health, safety or performance, such as by using data gathered from: tracking devices worn in practice and competition (e.g., Catapult); cameras (e.g., TrackMan); or boxscore and other statistical data (e.g, Pro Football Focus).",
+      "sourceUrl": "https://www.si.umich.edu/programs/courses/special-topics-courses-fall-2026",
+      "sourceTitle": "Special topics courses - Fall 2026 | umsi",
+      "themes": [
+        "data-science",
+        "athletics",
+        "sensors"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "T. Finholt"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:06.702Z"
+      }
+    },
+    {
+      "id": "umich:urp-357-architecture-sustainability-and:438c91",
+      "schoolId": "umich",
+      "unitIds": [
+        "taubman"
+      ],
+      "kind": "course",
+      "title": "URP 357: Architecture, Sustainability and the City",
+      "nameOnPage": "Architecture, Sustainability and the City",
+      "summary": "A course covering sustainable building and community design, including energy and water conservation, recycling, livability, walkability, bikeability, and transit.",
+      "hook": "covers sustainable building and community design, from water conservation to bikeability and transit",
+      "quote": "Contemporary problems and opportunities in sustainable building and community design will be considered, including energy and water conservation, waste management and recycling. Livability, walkability, bikeability and transit, as well as the importance of a vibrant and diverse public realm, will also be studied.",
+      "sourceUrl": "https://taubmancollege.umich.edu/course/urp357-architecture-sustainability-and-the-city-section-1-winter-2027/",
+      "sourceTitle": "URP 357 Section 1 - Architecture, Sustainability and the City - Winter 2027 - Taubman College",
+      "themes": [
+        "sustainability",
+        "water",
+        "energy",
+        "cycling",
+        "cities",
+        "architecture",
+        "transportation",
+        "ecology",
+        "business"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Jen Maigret"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:06.761Z"
+      }
+    },
+    {
+      "id": "umich:urp-423-introduction-to-urban-and-enviro:95bc19",
+      "schoolId": "umich",
+      "unitIds": [
+        "taubman"
+      ],
+      "kind": "course",
+      "title": "URP 423: Introduction to Urban and Environmental Planning",
+      "nameOnPage": "Introduction to Urban and Environmental Planning",
+      "summary": "An introductory planning course asking who shapes the urban environment and how, with attention to equity and sustainability across transportation, land use, housing, and infrastructure.",
+      "hook": "asks who shapes cities and how, covering transportation, land use, housing, and infrastructure",
+      "quote": "This course invites students to explore three organizing questions: Who shapes the urban environment? How? What are the implications? With special attention to the challenges of equity and sustainability, the class introduces the key concerns of the urban planning profession–transportation, land use, housing, economic development, infrastructure, etc.,–to better understand a wide array of built environments.",
+      "sourceUrl": "https://taubmancollege.umich.edu/course/urp423-introduction-to-urban-and-environmental-planning-section-1-fall-2026/",
+      "sourceTitle": "URP 423 Section 1 - Introduction to Urban and Environmental Planning - Fall 2026 - Taubman College",
+      "themes": [
+        "cities",
+        "sustainability",
+        "transportation",
+        "civil-engineering",
+        "economics"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Gus Wendel"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:06.900Z"
+      }
+    },
+    {
+      "id": "umich:urp-489-tech-clusters-and-smart-cities:3a6e29",
+      "schoolId": "umich",
+      "unitIds": [
+        "taubman"
+      ],
+      "kind": "course",
+      "title": "URP 489: Tech Clusters and Smart Cities",
+      "nameOnPage": "Tech Clusters and Smart Cities",
+      "summary": "A course on how high-tech clusters such as research parks, urban innovation districts, incubators, and smart cities are planned, designed, and funded.",
+      "hook": "examines how tech clusters, innovation districts, and smart cities are planned and funded",
+      "quote": "This course examines the evolution, planning, design, funding, and future of high-tech clusters. These dense agglomerations of innovative enterprises take on various forms: suburban research parks, urban innovation districts, industrial corridors, tech incubators/accelerators, and smart cities.",
+      "sourceUrl": "https://taubmancollege.umich.edu/course/urp489-tech-clusters-and-smart-cities-section-1-fall-2026/",
+      "sourceTitle": "URP 489 Section 1 - Tech Clusters and Smart Cities - Fall 2026 - Taubman College",
+      "themes": [
+        "cities",
+        "economics",
+        "entrepreneurship",
+        "biology"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Scott Campbell"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:07.011Z"
+      }
+    },
+    {
+      "id": "umich:ut-102-anatomy-of-the-city:797a72",
+      "schoolId": "umich",
+      "unitIds": [
+        "taubman"
+      ],
+      "kind": "course",
+      "title": "UT 102: Anatomy of the City",
+      "nameOnPage": "Anatomy of the City",
+      "summary": "A course on the natural, built, and human systems that shape cities, presented as a framework and platform for engaging the field of urban technology.",
+      "hook": "teaches the natural, built, and human systems that shape cities as a base for urban technology work",
+      "quote": "This course equips students to understand the basic systems that shape and define cities: natural systems, built systems, and human systems. Students will understand urban systems as a framework and platform for engaging the field of urban technology",
+      "sourceUrl": "https://taubmancollege.umich.edu/course/ut102-anatomy-of-the-city-section-1-fall-2026/",
+      "sourceTitle": "UT 102 Section 1 - Anatomy of the City - Fall 2026 - Taubman College",
+      "themes": [
+        "cities",
+        "interdisciplinary"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Philip D’Anieri"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:07.149Z"
+      }
+    },
+    {
+      "id": "umich:ut-210-listening:b05194",
+      "schoolId": "umich",
+      "unitIds": [
+        "taubman"
+      ],
+      "kind": "course",
+      "title": "UT 210: Listening",
+      "nameOnPage": "UT 210",
+      "summary": "A course in the ethics and methods of ethnographic design research, from writing fieldwork protocols and holding conversations in the field to turning findings into design insights.",
+      "hook": "trains students to plan fieldwork, talk with people in the field, and turn findings into design insights",
+      "quote": "This course introduces students to the ethics, principles, and methods of ethnographic design research. Students will learn to acknowledge themselves in relationship to the people with and on whom they conduct research; develop research protocols for fieldwork; facilitate conversations with others in the field; process and code their research; and synthesize the findings into insights that are useful in the design process.",
+      "sourceUrl": "https://taubmancollege.umich.edu/course/ut210-listening-section-1-winter-2027/",
+      "sourceTitle": "UT 210 Section 1 - Listening - Winter 2027 - Taubman College",
+      "themes": [
+        "community-engagement",
+        "fieldwork",
+        "design",
+        "anthropology",
+        "philosophy"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Chanel Beebe"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:07.160Z"
+      }
+    },
+    {
+      "id": "umich:ut-230-design-and-urban-inquiries:f1ef12",
+      "schoolId": "umich",
+      "unitIds": [
+        "taubman"
+      ],
+      "kind": "course",
+      "title": "UT 230: Design and Urban Inquiries",
+      "nameOnPage": "Design and Urban Inquiries",
+      "summary": "A course that starts with data visualization and mapping of the lived experience of the city, then has students prototype a design intervention to make the city more legible and livable.",
+      "hook": "has students map and visualize city life, then prototype a design intervention based on what they find",
+      "quote": "The first part of the semester introduces data visualization and mapping. Students will gather, synthesize, and present information to create a new understanding of the lived experience of the city. Building on their findings, students will then develop and prototype a design intervention to enhance the legibility and livability of the city.",
+      "sourceUrl": "https://taubmancollege.umich.edu/course/ut230-design-and-urban-inquiries-section-1-winter-2027/",
+      "sourceTitle": "UT 230 Section 1 - Design and Urban Inquiries - Winter 2027 - Taubman College",
+      "themes": [
+        "gis-mapping",
+        "data-science",
+        "cities",
+        "engineering-design"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Matthew Wizinsky",
+        "Wonyoung So"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:07.217Z"
+      }
+    },
+    {
+      "id": "umich:ut-340-prototyping:7221b2",
+      "schoolId": "umich",
+      "unitIds": [
+        "taubman"
+      ],
+      "kind": "course",
+      "title": "UT 340: Prototyping",
+      "nameOnPage": "UT 340",
+      "summary": "A workshop course in which students prototype hardware and software design concepts for urban technology and test them with real users, including in the public realm.",
+      "hook": "has students build hardware and software prototypes and test them with real users in public space",
+      "quote": "This course recognizes that in urban technology, design concepts must be tested to be able to evaluate whether they are fit for purpose, desired by users, and viable long term. This course will be a workshop of experimentation where students learn how to prototype and assess the workings of hardware and software design concepts with real users, including in the public realm.",
+      "sourceUrl": "https://taubmancollege.umich.edu/course/ut340-prototyping-section-1-fall-2026/",
+      "sourceTitle": "UT 340 Section 1 - Prototyping - Fall 2026 - Taubman College",
+      "themes": [
+        "engineering-design",
+        "making",
+        "cities",
+        "computer-science"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Violet Whitney"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:07.421Z"
+      }
+    },
+    {
+      "id": "umich:ut-360-advanced-studio-service-design-an:bd02a3",
+      "schoolId": "umich",
+      "unitIds": [
+        "taubman"
+      ],
+      "kind": "course",
+      "title": "UT 360: Advanced Studio: Service Design and Urban Needs",
+      "nameOnPage": "Service Design and Urban Needs",
+      "summary": "A course in which students learn service design by developing a new product or service for an urban need such as housing, food, mobility, social services, or energy.",
+      "hook": "has students design a new product or service for an urban need such as housing, mobility, or energy",
+      "quote": "Students will be introduced to the basic principles and methods of service design by developing a new product or service that fulfills a fundamental urban need such as housing, food, mobility, social services, and energy. The course will cover the related research and design methodologies of stakeholder analysis, user journey mapping, and the development of a compelling value proposition.",
+      "sourceUrl": "https://taubmancollege.umich.edu/course/ut360-advanced-studio-service-design-and-urban-needs-section-1-winter-2027/",
+      "sourceTitle": "UT 360 Section 1 - Advanced Studio: Service Design and Urban Needs - Winter 2027 - Taubman College",
+      "themes": [
+        "design",
+        "cities",
+        "energy",
+        "transportation",
+        "gis-mapping"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Alex Johnston",
+        "Sheng-Hung Lee"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:07.445Z"
+      }
+    },
+    {
+      "id": "umich:ut-402-public-mechanics-how-services-wor:724e6c",
+      "schoolId": "umich",
+      "unitIds": [
+        "taubman"
+      ],
+      "kind": "course",
+      "title": "UT 402: Public Mechanics: How Services Work",
+      "nameOnPage": "Public Mechanics: How Services Work",
+      "summary": "A course on how public services work, examining the gap between policy and on-the-ground implementation in government, transit systems, libraries, and utilities.",
+      "hook": "examines how public services work, from trash pickup to why bike lanes change at a city line",
+      "quote": "How does the trash get delivered? How does a grocery clerk end up enforcing federal nutrition policy? Why do bike lanes change when you cross a city line? This course is designed for students across disciplines who want to build fluency in how public services work and to examine the latency between policy development and on-the-ground implementation, across federal, state, and local government as well as public institutions like libraries, transit systems, and utilities.",
+      "sourceUrl": "https://taubmancollege.umich.edu/course/ut402-public-mechanics-how-services-work-section-1-fall-2026/",
+      "sourceTitle": "UT 402 Section 1 - Public Mechanics: How Services Work - Fall 2026 - Taubman College",
+      "themes": [
+        "public-policy",
+        "political-science",
+        "cities",
+        "transportation",
+        "cycling",
+        "nutrition",
+        "community-engagement"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Ron Bronson"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:07.783Z"
+      }
+    },
+    {
+      "id": "umich:ut-402-urban-transportation-policy:fec88f",
+      "schoolId": "umich",
+      "unitIds": [
+        "taubman"
+      ],
+      "kind": "course",
+      "title": "UT 402: Urban Transportation Policy",
+      "nameOnPage": "Urban Transportation Policy",
+      "summary": "An introductory course on U.S. transportation policy that works through real-world case studies and reform initiatives with attention to social equity, sustainability, and technology.",
+      "hook": "studies U.S. transportation policy through real case studies with an eye to equity and sustainability",
+      "quote": "This introductory course examines fundamental theories, concepts, and the historical context of transportation policy, offering students a comprehensive overview of the mechanisms that drive transportation systems in the United States. Emphasizing the importance of social equity, environmental sustainability, and technological innovation, students will engage with real-world case studies and policy reform initiatives.",
+      "sourceUrl": "https://taubmancollege.umich.edu/course/ut402-urban-transportation-policy-section-2-winter-2027/",
+      "sourceTitle": "UT 402 Section 2 - Urban Transportation Policy - Winter 2027 - Taubman College",
+      "themes": [
+        "transportation",
+        "public-policy",
+        "sustainability",
+        "cities",
+        "history"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Joe Grengs"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:08.194Z"
+      }
+    },
+    {
+      "id": "umich:ut-435-intro-to-urban-informatics:4bb494",
+      "schoolId": "umich",
+      "unitIds": [
+        "taubman"
+      ],
+      "kind": "course",
+      "title": "UT 435: Intro to Urban Informatics",
+      "nameOnPage": "Intro to Urban Informatics",
+      "summary": "A course introducing urban informatics, the use of data and information technology to analyze and plan cities, organized around data acquisition, mapping, visualization, and civic technologies.",
+      "hook": "teaches data acquisition, mapping, visualization, and civic technology for analyzing cities",
+      "quote": "This course provides students an introduction to the technical, theoretical and practice-based dimensions of urban informatics, an interdisciplinary field of research and practice that uses data and information technology for the analysis, management, planning, inhabitation, and usability of cities. ... grouped into five topical categories—data acquisition, numerical analysis, mapping and spatialization, visualization and interaction, and civic technologies",
+      "sourceUrl": "https://taubmancollege.umich.edu/course/ut435-intro-to-urban-informatics-section-1-fall-2026/",
+      "sourceTitle": "UT 435 Section 1 - Intro to Urban Informatics - Fall 2026 - Taubman College",
+      "themes": [
+        "data-science",
+        "civic-tech",
+        "gis-mapping",
+        "cities",
+        "business",
+        "interdisciplinary"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Xiaofan Liang"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:08.478Z"
+      }
+    },
+    {
+      "id": "umich:ut-439-urban-ai:0e41fa",
+      "schoolId": "umich",
+      "unitIds": [
+        "taubman"
+      ],
+      "kind": "course",
+      "title": "UT 439: Urban AI",
+      "nameOnPage": "Urban AI",
+      "summary": "A course on AI in urban contexts covering machine learning basics, language models, AI governance, ethics, and environmental costs, with weekly programming labs and student projects.",
+      "hook": "pairs lectures on AI in cities and its governance with weekly programming labs and an own-choice project",
+      "quote": "Topics include GenAI tools, basics of machine learning, natural language processing, and large language models, AI applications in urban contexts, AI governance, ethics, and environmental costs, and human-in-the-loop AI. The course is structured with weekly lectures and programming-based technical labs. Students will have opportunities to develop their own projects.",
+      "sourceUrl": "https://taubmancollege.umich.edu/course/ut439-urban-ai-section-1-winter-2027/",
+      "sourceTitle": "UT 439 Section 1 - Urban AI - Winter 2027 - Taubman College",
+      "themes": [
+        "ai",
+        "cities",
+        "computer-science",
+        "philosophy",
+        "political-science"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Xiaofan Liang"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:08.831Z"
+      }
+    },
+    {
+      "id": "umich:digital-fabrication-and-robotics-lab-fab:f4360d",
+      "schoolId": "umich",
+      "unitIds": [
+        "taubman"
+      ],
+      "kind": "facility",
+      "title": "Digital Fabrication and Robotics Lab (FABLab)",
+      "nameOnPage": "Digital Fabrication and Robotics Lab",
+      "summary": "Taubman College's fabrication lab gives students access to industrial machinery for architecture and construction work, with training through coursework and orientation sessions.",
+      "hook": "trains students at all levels to run industrial fabrication machinery",
+      "quote": "The FABLab provides students and faculty at Taubman College with extensive access to industrial machinery and the expertise to apply it to real-world architecture and building construction challenges. ... Students at all levels are trained to operate these machines through coursework, orientation sessions, and specific training sessions.",
+      "sourceUrl": "https://taubmancollege.umich.edu/about/facilities/digital-fabrication-lab/",
+      "sourceTitle": "Digital Fabrication Lab - Taubman College",
+      "themes": [
+        "making",
+        "robotics",
+        "architecture",
+        "civil-engineering"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Listed among Taubman College's featured facilities.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:09.213Z"
+      }
+    },
+    {
+      "id": "umich:ford-robotics-building:cab41f",
+      "schoolId": "umich",
+      "unitIds": [
+        "engineering"
+      ],
+      "kind": "facility",
+      "title": "Ford Robotics Building",
+      "nameOnPage": "Ford Robotics Building",
+      "summary": "The Ford Robotics Building includes a robotics maker space with CNC machines, 3D printers, and soldering irons, plus a 10,000-gallon research water tank for marine robotics.",
+      "hook": "pairs a robotics maker space with a 10,000-gallon tank for testing marine robots",
+      "quote": "A robotics maker space with CNC, 3D printers, soldering irons, and other shop tools ... A 10,000 gallon research water tank with motion capture cameras for marine robotics",
+      "sourceUrl": "https://robotics.umich.edu/about/facilities/ford-robotics-building/",
+      "sourceTitle": "Ford Robotics Building | Michigan Robotics",
+      "themes": [
+        "robotics",
+        "making",
+        "marine"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "A widely publicized engineering building.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:10.939Z"
+      }
+    },
+    {
+      "id": "umich:metals-lab:278ca8",
+      "schoolId": "umich",
+      "unitIds": [
+        "taubman"
+      ],
+      "kind": "facility",
+      "title": "Metals Lab",
+      "nameOnPage": "Metals Lab",
+      "summary": "Taubman's Metals Lab provides space, equipment, and training in metal fabrication skills such as welding, bending metal tubes, brazing, and soldering.",
+      "hook": "teaches students welding, bending metal tubes, brazing, and soldering",
+      "quote": "The Taubman College Metals Lab provides space, equipment, and training to incorporate metalworking and fabrication into the basic repertoire of design exploration, model making, and construction activity. ... They learn essential metal fabrication skills such as welding, grinding and finishing, shearing and folding sheet metals, assembly of large frames and structures, bending metal rods and tubes, brazing, and soldering.",
+      "sourceUrl": "https://taubmancollege.umich.edu/about/facilities/shops-and-labs/",
+      "sourceTitle": "Shops and Labs - Taubman College",
+      "themes": [
+        "making",
+        "civil-engineering"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:09.884Z"
+      }
+    },
+    {
+      "id": "umich:montgomery-sheet-music-collection:05ba17",
+      "schoolId": "umich",
+      "unitIds": [],
+      "kind": "facility",
+      "title": "Montgomery Sheet Music Collection",
+      "nameOnPage": "Montgomery Sheet Music Collection",
+      "summary": "A U-M Library collection of more than 20,000 pieces of sheet music from 1900 to 1950, assembled by a jazz and ragtime pianist and including works by Duke Ellington and Fats Waller.",
+      "hook": "holds early 20th-century sheet music by composers such as Duke Ellington and Fats Waller",
+      "quote": "Assembled by Michael Montgomery, a jazz and ragtime pianist, sheet music collector, and U-M alum, the Montgomery Sheet Music Collection contains more than 20,000 pieces dating primarily from 1900 to 1950. ... Duke Ellington, Fats Waller, Eubie Blake, W. C. Handy, James P. Johnson, Shelton Brooks, Chris Smith, and Gussie Davis are among those represented.",
+      "sourceUrl": "https://www.lib.umich.edu/collections/collecting-areas/special-collections/music-library-special-collections/montgomery-sheet/",
+      "sourceTitle": "Montgomery Sheet Music Collection | University of Michigan Library",
+      "themes": [
+        "jazz",
+        "music",
+        "history"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:10.232Z"
+      }
+    },
+    {
+      "id": "umich:shapiro-design-lab:62ddde",
+      "schoolId": "umich",
+      "unitIds": [],
+      "kind": "facility",
+      "title": "Shapiro Design Lab",
+      "nameOnPage": "Shapiro Design Lab",
+      "summary": "A U-M Library makerspace offering workspaces, expert guidance, and prototyping tools such as 3D printers, die cutters, and an engraving machine.",
+      "hook": "offers students 3D printers, die cutters, and prototyping help in the library",
+      "quote": "We offer creative workspaces and expert guidance for students, faculty, and staff to develop, experiment, and collaborate on projects through the use of a variety of available tools — from hands-on and digital prototype and design equipment to community engagement resources. ... Get creative with our 3D printers, die cutters, engraving machine, and other hands-on equipment.",
+      "sourceUrl": "https://www.lib.umich.edu/visit-and-study/creation-and-learning-spaces/shapiro-design-lab/",
+      "sourceTitle": "Shapiro Design Lab | University of Michigan Library",
+      "themes": [
+        "making",
+        "engineering-design",
+        "community-engagement"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "The library's main makerspace, open to all students.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:10.436Z"
+      }
+    },
+    {
+      "id": "umich:taubman-visualization-lab-tvlab:4b1c76",
+      "schoolId": "umich",
+      "unitIds": [
+        "taubman"
+      ],
+      "kind": "facility",
+      "title": "Taubman Visualization Lab (TVLab)",
+      "nameOnPage": "Taubman Visualization Lab",
+      "summary": "A Taubman lab with augmented and virtual reality, 3D scanning and spatial mapping equipment, drones, and cameras, set up for both experts and novices.",
+      "hook": "gives students XR equipment, 3D scanning and spatial mapping gear, and drones for projects",
+      "quote": "The Taubman Visualization Lab (TVLab) is a flexible, collaborative, accessible space equipped with a broad range of Extended Reality (XR) technologies, including augmented and virtual reality, 3D scanning and spatial mapping equipment, computational devices, and more. ... Designed to accommodate everyone from expert to novice, the TVLab offers virtual production and capture technology resources, including video cameras, 360 cameras, drones, and projectors.",
+      "sourceUrl": "https://taubmancollege.umich.edu/about/facilities/taubman-visualization-lab/",
+      "sourceTitle": "Taubman Visualization Lab - Taubman College",
+      "themes": [
+        "gis-mapping",
+        "hci",
+        "film-media",
+        "robotics",
+        "disability",
+        "computer-science"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:10.591Z"
+      }
+    },
+    {
+      "id": "umich:ana-paula-pimentel-walker:65be61",
+      "schoolId": "umich",
+      "unitIds": [
+        "taubman"
+      ],
+      "kind": "faculty",
+      "title": "Ana Paula Pimentel Walker",
+      "nameOnPage": "Ana Paula Pimentel Walker",
+      "summary": "A planning scholar who studies how disenfranchised communities engage with urban governance, including a project documenting immigrant- and refugee-led community organizations in Michigan.",
+      "hook": "studies participatory planning and immigrant- and refugee-led community organizations in Michigan",
+      "quote": "Pimentel Walker investigates how disenfranchised communities engage with urban governance and evaluates the significance of participatory institutions in planning socially and environmentally just cities. ... “Migrant-run organizations (MROs) in Michigan,” which documents the nature and scope of immigrant- and refugee-led community-based organizations",
+      "sourceUrl": "https://taubmancollege.umich.edu/faculty/directory/ana-paula-pimentel-walker/",
+      "sourceTitle": "Ana Paula Pimentel Walker - Taubman College",
+      "themes": [
+        "immigration",
+        "community-engagement",
+        "cities",
+        "social-justice",
+        "political-science"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Ana Paula Pimentel Walker"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:10.757Z"
+      }
+    },
+    {
+      "id": "umich:larissa-larsen:f1421a",
+      "schoolId": "umich",
+      "unitIds": [
+        "taubman"
+      ],
+      "kind": "faculty",
+      "title": "Larissa Larsen",
+      "nameOnPage": "Larissa Larsen",
+      "summary": "A professor of urban and regional planning whose research measures extreme urban heat and stormwater flooding and tests the effectiveness of design and policy interventions.",
+      "hook": "researches extreme urban heat and stormwater flooding and tests design and policy fixes",
+      "quote": "Larissa Larsen is a professor of urban and regional planning at the University of Michigan. ... Larsen’s research focuses on the urban environmental problems of extreme heat and stormwater flooding, now exacerbated with climate change. In her research, she documents the magnitude of these environmental problems and ‘tests’ the effectiveness of different design and policy interventions.",
+      "sourceUrl": "https://taubmancollege.umich.edu/faculty/directory/larissa-larsen/",
+      "sourceTitle": "Larissa Larsen - Taubman College",
+      "themes": [
+        "climate",
+        "water",
+        "cities",
+        "environmental-policy",
+        "public-policy"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Larissa Larsen"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:10.932Z"
+      }
+    },
+    {
+      "id": "umich:robert-goodspeed:6348c9",
+      "schoolId": "umich",
+      "unitIds": [
+        "taubman"
+      ],
+      "kind": "faculty",
+      "title": "Robert Goodspeed",
+      "nameOnPage": "Robert Goodspeed",
+      "summary": "An associate professor of urban planning who teaches GIS, collaborative planning, and scenario planning and studies how information technologies can improve planning.",
+      "hook": "teaches GIS and scenario planning and researches how technology can improve planning",
+      "quote": "Robert Goodspeed is an Associate Professor of Urban Planning. He teaches in the areas of geographic information systems (GIS), collaborative planning, and scenario planning theory and methods. His research investigates how new information technologies can be used to improve the planning process and planning outcomes",
+      "sourceUrl": "https://taubmancollege.umich.edu/faculty/directory/robert-goodspeed/",
+      "sourceTitle": "Robert Goodspeed - Taubman College",
+      "themes": [
+        "gis-mapping",
+        "cities",
+        "civic-tech"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Robert Goodspeed"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:11.004Z"
+      }
+    },
+    {
+      "id": "umich:wonyoung-so:33fbc1",
+      "schoolId": "umich",
+      "unitIds": [
+        "taubman"
+      ],
+      "kind": "faculty",
+      "title": "Wonyoung So",
+      "nameOnPage": "Wonyoung So",
+      "summary": "An assistant professor of urban technology who directs the Reparative Technology Lab and uses critical data studies and data visualization to study housing and access to opportunity.",
+      "hook": "uses data visualization and critical data studies to examine housing and access to opportunity",
+      "quote": "Wonyoung So is an assistant professor of urban technology and director of the Reparative Technology Lab. He works at the intersection of urban planning, critical data studies, and data visualization to study how access to resources and opportunities — over space and place — is mediated by data and technology, with a focus on housing and translating scholarly research into public impact that promotes democratic participation by marginalized residents.",
+      "sourceUrl": "https://taubmancollege.umich.edu/faculty/directory/wonyoung-so/",
+      "sourceTitle": "Wonyoung So - Taubman College",
+      "themes": [
+        "data-science",
+        "cities",
+        "social-justice",
+        "language-access"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Wonyoung So"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:11.285Z"
+      }
+    },
+    {
+      "id": "umich:xiaofan-liang:566a3f",
+      "schoolId": "umich",
+      "unitIds": [
+        "taubman"
+      ],
+      "kind": "faculty",
+      "title": "Xiaofan Liang",
+      "nameOnPage": "Xiaofan Liang",
+      "summary": "An assistant professor of urban and regional planning who studies how mobility, social, and digital networks and emerging AI shape how cities function and are governed.",
+      "hook": "researches how transportation, digital networks, and AI shape city life and governance",
+      "quote": "Xiaofan Liang is an Assistant Professor of Urban and Regional Planning at Taubman College of Architecture & Urban Planning, University of Michigan – Ann Arbor. ... Liang’s research examines how network infrastructures such as mobility, social, and digital systems, as well as emerging AI technologies, shape, support, or hinder how cities function, how they are governed, and how residents experience everyday urban life.",
+      "sourceUrl": "https://taubmancollege.umich.edu/faculty/directory/xiaofan-liang/",
+      "sourceTitle": "Xiaofan Liang - Taubman College",
+      "themes": [
+        "ai",
+        "cities",
+        "transportation",
+        "civil-engineering",
+        "architecture",
+        "political-science"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Xiaofan Liang"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:11.634Z"
+      }
+    },
+    {
+      "id": "umich:community-health-informatics-lab:f200ed",
+      "schoolId": "umich",
+      "unitIds": [
+        "si"
+      ],
+      "kind": "lab",
+      "title": "Community Health Informatics Lab",
+      "nameOnPage": "Community Health Informatics Lab",
+      "summary": "A UMSI lab studying how information systems and services can improve the health of groups facing disease-related disparities, from prevention to community-based care.",
+      "hook": "studies technology for disease prevention and care in communities facing health disparities",
+      "quote": "The Community Health Informatics Lab focuses on the potential of information systems and services to improve the health and well-being of groups that experience disease-related health disparities. The lab investigates technology-enhanced disease prevention, management, care and support in everyday life contexts, as well as at the interface of clinical and community-based care.",
+      "sourceUrl": "https://www.si.umich.edu/research/research-centers-and-groups",
+      "sourceTitle": "Research centers and groups | umsi",
+      "themes": [
+        "public-health",
+        "information",
+        "medicine",
+        "mental-health",
+        "community-engagement",
+        "business"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Tiffany Veinot"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:06.762Z"
+      }
+    },
+    {
+      "id": "umich:empathy-in-point-clouds-scan-lab:a3cc4f",
+      "schoolId": "umich",
+      "unitIds": [
+        "taubman"
+      ],
+      "kind": "lab",
+      "title": "Empathy in Point-Clouds Scan-Lab",
+      "nameOnPage": "Empathy in Point-Clouds Scan-Lab",
+      "summary": "A Taubman lab that uses LiDAR scanning to survey buildings, environments, and landscapes, run by two faculty co-directors with a team of student research assistants.",
+      "hook": "employs student research assistants on LiDAR surveys of buildings, environments, and landscapes",
+      "quote": "Empathy in Point-Clouds Scan-Lab specializes in cutting-edge LiDAR scanning technology to create detailed surveys and immersive spatial narratives of architecture, environments, and landscapes. The EIPC Scan-Lab is co-directed by Dawn Gilpin and Robert Adams and a cross-disciplinary team of student research assistants and post-graduates.",
+      "sourceUrl": "https://taubmancollege.umich.edu/research/clusters-and-labs/empathy-in-point-clouds-scan-lab/",
+      "sourceTitle": "Empathy in Point-Clouds Scan-Lab - Taubman College",
+      "themes": [
+        "sensors",
+        "gis-mapping",
+        "architecture",
+        "undergraduate-research",
+        "interdisciplinary"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Dawn Gilpin",
+        "Robert Adams"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:11.981Z"
+      }
+    },
+    {
+      "id": "umich:heat-health-and-the-built-environment:32e041",
+      "schoolId": "umich",
+      "unitIds": [
+        "taubman"
+      ],
+      "kind": "lab",
+      "title": "Heat, Health, and the Built Environment",
+      "nameOnPage": "Heat, Health, and the Built Environment",
+      "summary": "A Taubman research cluster of faculty, staff, and students addressing heat stress, climate adaptation, and health equity through the built environment, including urban heat vulnerability mapping.",
+      "hook": "involves students in research on urban heat stress, climate adaptation, and health equity",
+      "quote": "The Heat, Health, and the Built Environment cluster at Taubman College is a dynamic constellation of interdisciplinary projects that spans faculty, staff, researchers, and students from across the University of Michigan, as well as global partners committed to addressing the urgent challenges of heat stress, climate adaptation, and health equity through modifications to the built environment. ... Urban Heat Vulnerability Mapping",
+      "sourceUrl": "https://taubmancollege.umich.edu/research/clusters-and-labs/heat-health-and-the-built-environment/",
+      "sourceTitle": "Heat, Health, and the Built Environment - Taubman College",
+      "themes": [
+        "climate",
+        "public-health",
+        "cities",
+        "gis-mapping",
+        "undergraduate-research",
+        "global",
+        "interdisciplinary"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Larissa Larsen",
+        "Ana Paula Pimentel Walker"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:12.342Z"
+      }
+    },
+    {
+      "id": "umich:urban-technology-research-cluster:f0a6ce",
+      "schoolId": "umich",
+      "unitIds": [
+        "taubman"
+      ],
+      "kind": "lab",
+      "title": "Urban Technology Research Cluster",
+      "nameOnPage": "Urban Technology",
+      "summary": "A Taubman research cluster that applies digital tools, data analytics, and human-centered design to urban problems, including civic technologies for access, accountability, and participation.",
+      "hook": "applies data analytics and human-centered design to city problems, including civic technology",
+      "quote": "Urban Technology focuses on the intersection of technology, design and cities. The cluster applies digital tools, data analytics, and human-centered design to improve urban functionality, sustainability, and quality of life. ... Building civic technologies that improve access, accountability, and public participation.",
+      "sourceUrl": "https://taubmancollege.umich.edu/research/clusters-and-labs/urban-technology-research-cluster/",
+      "sourceTitle": "Urban Technology Research Cluster - Taubman College",
+      "themes": [
+        "civic-tech",
+        "data-science",
+        "cities",
+        "design",
+        "engineering-design",
+        "sustainability"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Bryan Boyer",
+        "Ron Bronson",
+        "Robert Goodspeed",
+        "Sheng-Hung Lee",
+        "Xiaofan Liang",
+        "Wonyoung So",
+        "Matthew Wizinsky"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:12.771Z"
+      }
+    },
+    {
+      "id": "umich:water-infrastructure-and-coastal-resilie:cbc855",
+      "schoolId": "umich",
+      "unitIds": [
+        "taubman"
+      ],
+      "kind": "lab",
+      "title": "Water, Infrastructure, and Coastal Resilience",
+      "nameOnPage": "Water, Infrastructure, and Coastal Resilience",
+      "summary": "A Taubman research cluster of faculty, staff, and students who work with Michigan communities on water, watershed, stormwater, and coastal resilience, governance, and infrastructure.",
+      "hook": "connects students to research with Michigan communities on watersheds, stormwater, and coastal resilience",
+      "quote": "The Water, Infrastructure and Coastal Resilience cluster at Taubman College is a collection of interdisciplinary projects that spans faculty, staff, researchers, and students from across the University of Michigan who work with communities and constituencies across the state of Michigan, North America, and around the world to engage, understand, foster dialogue, plan, design, and document water, watershed, stormwater, and coastal resilience, governance, law, and infrastructures.",
+      "sourceUrl": "https://taubmancollege.umich.edu/research/clusters-and-labs/water/",
+      "sourceTitle": "Water, Infrastructure, and Coastal Resilience - Taubman College",
+      "themes": [
+        "water",
+        "cities",
+        "civil-engineering",
+        "undergraduate-research",
+        "marine",
+        "law",
+        "political-science",
+        "interdisciplinary"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Richard Norton",
+        "Larissa Larsen",
+        "María Arquero de Alarcón"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:13.034Z"
+      }
+    },
+    {
+      "id": "umich:ann-arbor-bike-lane-network:e27e37",
+      "schoolId": "umich",
+      "unitIds": [],
+      "kind": "location",
+      "title": "Ann Arbor bike lane network",
+      "nameOnPage": "Ann Arbor",
+      "summary": "Ann Arbor is described as one of America's top bike-friendly communities, with an expanding network of bike lanes, pedestrian-friendly streets, and growing EV infrastructure.",
+      "hook": "puts students in a bike-friendly city with an expanding network of bike lanes",
+      "quote": "Ann Arbor has earned its place among America’s top bike-friendly communities with an extensive, ever-expanding network of bike lanes. Pedestrian-friendly streets promote an active lifestyle and sustainable mobility, along with a growing infrastructure for electric vehicles (EVs) and other modes of transportation reflect a commitment to reducing carbon footprints.",
+      "sourceUrl": "https://taubmancollege.umich.edu/students/ann-arbor/",
+      "sourceTitle": "Ann Arbor - Taubman College",
+      "themes": [
+        "cycling",
+        "transportation",
+        "cities",
+        "sustainability",
+        "civil-engineering",
+        "climate"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Ann Arbor's livability is a familiar theme in Michigan essays.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:13.396Z"
+      }
+    },
+    {
+      "id": "umich:detroit-and-chicago-study-visits:d844b1",
+      "schoolId": "umich",
+      "unitIds": [
+        "taubman"
+      ],
+      "kind": "location",
+      "title": "Detroit and Chicago study visits",
+      "nameOnPage": "Detroit and Chicago",
+      "summary": "Urban Technology students study and visit regional centers such as Detroit and Chicago and compare them with global metropolises.",
+      "hook": "takes Urban Technology students to study Detroit and Chicago firsthand",
+      "quote": "Build a strong foundation in how cities work to better recognize urban challenges and tackle them with sharper insight and greater creativity. Students study and visit regional centers like Detroit and Chicago, while comparing and contrasting them with global metropolises.",
+      "sourceUrl": "https://taubmancollege.umich.edu/academics/urban-and-regional-planning/bachelor-of-science-in-urban-technology/",
+      "sourceTitle": "Bachelor of Science in Urban Technology - Taubman College",
+      "themes": [
+        "cities",
+        "global"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:13.743Z"
+      }
+    },
+    {
+      "id": "umich:huron-river-and-border-to-border-trail:34f736",
+      "schoolId": "umich",
+      "unitIds": [],
+      "kind": "location",
+      "title": "Huron River and Border-to-Border Trail",
+      "nameOnPage": "Border-to-Border Trail",
+      "summary": "Ann Arbor's green spaces offer outdoor options such as kayaking on the Huron River and hiking the Border-to-Border Trail.",
+      "hook": "offers kayaking on the Huron River and hiking on the Border-to-Border Trail",
+      "quote": "The city’s abundant green spaces and tree-lined streets provide a natural laboratory for studying how people live and thrive in the natural and built environments. Outdoor enthusiasts will discover plenty to love, whether kayaking on the scenic Huron River, hiking the Border-to-Border Trail, or enjoying the city’s many other outdoor amenities.",
+      "sourceUrl": "https://taubmancollege.umich.edu/students/ann-arbor/",
+      "sourceTitle": "Ann Arbor - Taubman College",
+      "themes": [
+        "outdoors",
+        "water",
+        "cities"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "The Huron River is a familiar Ann Arbor landmark.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:13.396Z"
+      }
+    },
+    {
+      "id": "umich:michigan-great-lakes-coastal-program:e80378",
+      "schoolId": "umich",
+      "unitIds": [
+        "taubman"
+      ],
+      "kind": "location",
+      "title": "Michigan Great Lakes Coastal Program",
+      "nameOnPage": "Michigan Great Lakes Coastal Program",
+      "summary": "Training developed through the Michigan Great Lakes Coastal Program to help Michigan's Great Lakes coastal communities plan and manage their coastal lands.",
+      "hook": "develops shoreline-planning training for Michigan's Great Lakes coastal communities",
+      "quote": "Developing training to encourage and help Michigan great lakes coastal communities to pay attention to coastal short lands and plan and manage them, through the Michigan Great Lakes Coastal Program.",
+      "sourceUrl": "https://taubmancollege.umich.edu/research/clusters-and-labs/water/",
+      "sourceTitle": "Water, Infrastructure, and Coastal Resilience - Taubman College",
+      "themes": [
+        "water",
+        "cities",
+        "environmental-policy",
+        "marine"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Richard Norton"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:13.034Z"
+      }
+    },
+    {
+      "id": "umich:michigan-zoning-atlas:430b75",
+      "schoolId": "umich",
+      "unitIds": [
+        "taubman"
+      ],
+      "kind": "location",
+      "title": "Michigan Zoning Atlas",
+      "nameOnPage": "Michigan Zoning Atlas",
+      "summary": "A partnership with the Michigan Association of Planning to build an interactive statewide zoning map, starting with a pilot atlas of the Grand Rapids area.",
+      "hook": "maps zoning across Michigan with the state planning association, starting with Grand Rapids",
+      "quote": "A partnership with the Michigan Association of Planning (MAP) that began in early 2023 to begin developing the interactive map as part of a coordinated effort through the National Zoning Atlas. The Michigan team recently launched a pilot zoning atlas of the Grand Rapids area — the first step in a statewide zoning atlas.",
+      "sourceUrl": "https://taubmancollege.umich.edu/research/clusters-and-labs/urban-technology-research-cluster/",
+      "sourceTitle": "Urban Technology Research Cluster - Taubman College",
+      "themes": [
+        "gis-mapping",
+        "cities",
+        "civic-tech"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Robert Goodspeed"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:12.771Z"
+      }
+    },
+    {
+      "id": "umich:architecture-minor:6f88e6",
+      "schoolId": "umich",
+      "unitIds": [
+        "taubman"
+      ],
+      "kind": "major",
+      "title": "Architecture Minor",
+      "nameOnPage": "Architecture Minor",
+      "summary": "A 15-credit Taubman minor open to Urban Technology students that starts with ARCH 212, an introductory architecture course designed for non-majors.",
+      "hook": "lets Urban Technology students add an architecture minor that begins with a course built for non-majors",
+      "quote": "The Architecture Minor is currently open to undergraduate students enrolled in the College of Literature, Science, and the Arts (LSA), Stamps School of Art & Design, Ross School of Business, and Taubman College (Urban Technology). ... The 15-credit architecture minor contains a core introductory course, ARCH 212, designed specifically for non-majors",
+      "sourceUrl": "https://taubmancollege.umich.edu/academics/architecture/architecture-minor/",
+      "sourceTitle": "Architecture Minor - Taubman College",
+      "themes": [
+        "architecture",
+        "design",
+        "cities",
+        "literature",
+        "business"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:14.791Z"
+      }
+    },
+    {
+      "id": "umich:bachelor-of-science-in-information:ffce4e",
+      "schoolId": "umich",
+      "unitIds": [
+        "si"
+      ],
+      "kind": "major",
+      "title": "Bachelor of Science in Information",
+      "nameOnPage": "Bachelor of Science in Information",
+      "summary": "UMSI's undergraduate degree teaching programming, design, and data skills grounded in psychology, business, and ethics, with every student working on projects for real clients.",
+      "hook": "teaches programming, design, and data with people in mind, including projects for real clients",
+      "quote": "The Bachelor of Science in Information program prepares undergraduate students with technical skills in programming, design and data manipulation — plus something more: Through courses grounded in psychology, business and ethics, you'll learn to harness data and technology in ways that work for people. ... 100% of BSI students work on projects for real clients",
+      "sourceUrl": "https://www.si.umich.edu/programs/degree-programs/bachelor-science-information",
+      "sourceTitle": "Bachelor of Science in Information | umsi",
+      "themes": [
+        "information",
+        "hci",
+        "data-science",
+        "computer-science",
+        "psychology",
+        "philosophy",
+        "education",
+        "business"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:15.141Z"
+      }
+    },
+    {
+      "id": "umich:bachelor-of-science-in-urban-technology:8c21e1",
+      "schoolId": "umich",
+      "unitIds": [
+        "taubman"
+      ],
+      "kind": "major",
+      "title": "Bachelor of Science in Urban Technology",
+      "nameOnPage": "Bachelor of Science in Urban Technology",
+      "summary": "Taubman College's undergraduate degree that pairs the study of cities with design and technology skills, including data science, coding, prototyping, and AI.",
+      "hook": "combines the study of cities with data science, coding, prototyping, and AI",
+      "quote": "Our Bachelor of Science in Urban Technology is for future urban leaders. Students graduate with an understanding of cities and the design and technology skills to research city life and respond to urban needs. ... Through data science, coding, prototyping, and AI, you will leave Taubman College with confidence and ability.",
+      "sourceUrl": "https://taubmancollege.umich.edu/academics/urban-and-regional-planning/bachelor-of-science-in-urban-technology/",
+      "sourceTitle": "Bachelor of Science in Urban Technology - Taubman College",
+      "themes": [
+        "cities",
+        "data-science",
+        "design",
+        "ai",
+        "computer-science",
+        "engineering-design"
+      ],
+      "commonness": "common",
+      "commonnessReason": "The degree itself; every Urban Technology applicant names it.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:13.743Z"
+      }
+    },
+    {
+      "id": "umich:real-estate-development-minor:203b20",
+      "schoolId": "umich",
+      "unitIds": [
+        "taubman"
+      ],
+      "kind": "major",
+      "title": "Real Estate Development Minor",
+      "nameOnPage": "Real Estate Development Minor",
+      "summary": "A minor drawing on faculty from Taubman, Ross, and Kinesiology that lets undergraduates in many fields add real estate development and the built environment to their major.",
+      "hook": "adds real estate development and the built environment to a student's major",
+      "quote": "A minor in real estate development empowers undergraduate students in many fields to supplement their major areas of study with broad knowledge about improving metropolitan developments. ... With faculty expertise from Taubman College of Architecture and Urban Planning, the Ross School of Business, and the School of Kinesiology, this program offers a progressive approach to developing real estate and the built environment in the U.S. and worldwide.",
+      "sourceUrl": "https://taubmancollege.umich.edu/academics/urban-and-regional-planning/real-estate-development-minor/",
+      "sourceTitle": "Real Estate Development Minor - Taubman College",
+      "themes": [
+        "cities",
+        "business",
+        "architecture",
+        "kinesiology",
+        "visual-arts"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:15.491Z"
+      }
+    },
+    {
+      "id": "umich:robotics-undergraduate-program:8e1171",
+      "schoolId": "umich",
+      "unitIds": [
+        "engineering"
+      ],
+      "kind": "major",
+      "title": "Robotics Undergraduate Program",
+      "nameOnPage": "Robotics Undergraduate Program",
+      "summary": "Michigan Robotics' undergraduate degree, with hands-on core courses in human-robot interaction, sensors and signals, and operating systems plus electives such as wearable sensors and marine dynamics.",
+      "hook": "builds hands-on skills in sensors and signals, robot control, and human-robot interaction",
+      "quote": "Robotics students gain an understanding of foundational concepts through hands-on core courses such as human-robot interaction, sensors and signals, and operating systems, then quickly adapt the degree to their interests with electives in areas such as robot control, autonomous robotics, wearable sensors, aircraft structures, or even marine dynamics.",
+      "sourceUrl": "https://robotics.umich.edu/academics/undergraduate/",
+      "sourceTitle": "Robotics Undergraduate Program | Michigan Robotics",
+      "themes": [
+        "robotics",
+        "sensors",
+        "engineering-design",
+        "marine"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:15.491Z"
+      }
+    },
+    {
+      "id": "umich:black-si:7f96a1",
+      "schoolId": "umich",
+      "unitIds": [
+        "si"
+      ],
+      "kind": "organization",
+      "title": "Black@SI",
+      "nameOnPage": "Black@SI",
+      "summary": "An academic and social support network for Black students, alumni, and allies of the School of Information.",
+      "hook": "offers Black information students an academic and social support network",
+      "quote": "Black@SI is an academic and social support network that serves Black students, alumni and allies of the University of Michigan School of Information.",
+      "sourceUrl": "https://www.si.umich.edu/student-experience/student-life/student-organizations",
+      "sourceTitle": "Student organizations | umsi",
+      "themes": [
+        "cultural-identity"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:15.542Z"
+      }
+    },
+    {
+      "id": "umich:blue-bop-jazz-orchestra:30e322",
+      "schoolId": "umich",
+      "unitIds": [],
+      "kind": "organization",
+      "title": "Blue Bop Jazz Orchestra",
+      "nameOnPage": "Blue Bop Jazz Orchestra",
+      "summary": "Blue Bop Jazz Orchestra is listed in the U-M Arts Initiative's Student Arts Org Directory.",
+      "hook": "appears in U-M's Student Arts Org Directory as a student jazz orchestra",
+      "quote": "Blue Bop Jazz Orchestra ... Student Arts Org Directory",
+      "sourceUrl": "https://arts.umich.edu/sao/6409952492427187631",
+      "sourceTitle": "Blue Bop Jazz Orchestra — Michigan Arts",
+      "themes": [
+        "jazz",
+        "music"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:15.649Z"
+      }
+    },
+    {
+      "id": "umich:bluelab-metro:91cf40",
+      "schoolId": "umich",
+      "unitIds": [],
+      "kind": "organization",
+      "title": "BLUElab Metro",
+      "nameOnPage": "BLUElab Metro",
+      "summary": "A BLUElab team building a smart irrigation system for two local community gardens and farms that monitors soil and weather conditions to optimize watering.",
+      "hook": "designs a soil- and weather-monitoring irrigation control system with local community farms",
+      "quote": "This year we are working on our smart water irrigation system for both the Apple Ridge Community Gardens in Ypsilanti and Clay Hill Community Farm and Garden in Superior Township. By monitoring the soil and weather conditions, and researching each plant's watering needs, we are designing a control system that optimizes the watering process.",
+      "sourceUrl": "https://bluelab.engin.umich.edu/bluelab-metro.html",
+      "sourceTitle": "BLUElab Metro",
+      "themes": [
+        "water",
+        "sensors",
+        "agriculture",
+        "community-engagement",
+        "engineering-design",
+        "political-science"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:16.293Z"
+      }
+    },
+    {
+      "id": "umich:michigan-backpacking-club:30c775",
+      "schoolId": "umich",
+      "unitIds": [],
+      "kind": "organization",
+      "title": "Michigan Backpacking Club",
+      "nameOnPage": "Michigan Backpacking Club",
+      "summary": "Planet Blue lists the Michigan Backpacking Club among U-M's more than 100 sustainability-focused student organizations.",
+      "hook": "appears on Planet Blue's list of sustainability-focused student organizations",
+      "quote": "Check out the list below of the 100+ sustainability-focused student organizations on campus. ... Michigan Backpacking Club",
+      "sourceUrl": "https://planetblue.umich.edu/campus/get-involved/for-students/student-orgs/",
+      "sourceTitle": "Student Organizations | Planet Blue",
+      "themes": [
+        "outdoors",
+        "sustainability"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:16.262Z"
+      }
+    },
+    {
+      "id": "umich:michigan-ecodata:fa52a3",
+      "schoolId": "umich",
+      "unitIds": [],
+      "kind": "organization",
+      "title": "Michigan EcoData",
+      "nameOnPage": "Michigan EcoData",
+      "summary": "A student organization that applies technology and data analysis to environmental and biological problems through talks, group ecological projects, and environmental trips.",
+      "hook": "applies technology and data analysis to environmental problems through group projects and trips",
+      "quote": "Michigan EcoData exists to foster a community of individuals at the University of Michigan who solve environmental and biological problems with the innovative use of technology and data analysis. The organization hosts environmental-tech talks, facilitates group ecological projects, provides support to individual students’ projects, hosts group environmental trips and plans social gatherings.",
+      "sourceUrl": "https://www.si.umich.edu/student-experience/student-life/student-organizations",
+      "sourceTitle": "Student organizations | umsi",
+      "themes": [
+        "data-science",
+        "ecology",
+        "sustainability",
+        "biology"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:15.542Z"
+      }
+    },
+    {
+      "id": "umich:michigan-neuroprosthetics:041cde",
+      "schoolId": "umich",
+      "unitIds": [],
+      "kind": "organization",
+      "title": "Michigan Neuroprosthetics",
+      "nameOnPage": "Michigan Neuroprosthetics",
+      "summary": "A student team designing affordable, accessible myoelectric prostheses for children in partnership with individuals and local communities.",
+      "hook": "designs low-cost myoelectric prostheses for children with community partners",
+      "quote": "Michigan Neuroprosthetics (MNP) aims to design cost affordable, accessible, and scalable myoelectric prostheses for children. MNP focuses on partnering with individuals and local communities to build prosthetics devices in order to alter the way in which an individual can access and interact with the world.",
+      "sourceUrl": "https://robotics.umich.edu/people/student-teams/",
+      "sourceTitle": "Student Teams | Michigan Robotics",
+      "themes": [
+        "biomedical-engineering",
+        "disability",
+        "youth",
+        "medicine",
+        "community-engagement"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:15.949Z"
+      }
+    },
+    {
+      "id": "umich:mkr:060b23",
+      "schoolId": "umich",
+      "unitIds": [],
+      "kind": "organization",
+      "title": "MKR",
+      "nameOnPage": "MKR",
+      "summary": "A student club for makers and tinkerers that provides access to maker tools and a collaborative community for hands-on technical experimentation.",
+      "hook": "gives makers and tinkerers access to maker tools and a hands-on community",
+      "quote": "MKR is a club for makers, tinkerers and bold thinkers. Our mission is to support interdisciplinary exploration, hands-on learning and technological experimentation through access to maker tools and a collaborative community.",
+      "sourceUrl": "https://www.si.umich.edu/student-experience/student-life/student-organizations",
+      "sourceTitle": "Student organizations | umsi",
+      "themes": [
+        "making",
+        "interdisciplinary"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:15.542Z"
+      }
+    },
+    {
+      "id": "umich:um-autonomy:bb3d0b",
+      "schoolId": "umich",
+      "unitIds": [],
+      "kind": "organization",
+      "title": "UM::Autonomy",
+      "nameOnPage": "UM::Autonomy",
+      "summary": "A student team that designs and builds an autonomous water-surface vehicle, with work spanning sensor integration, control systems, and hull design.",
+      "hook": "builds an autonomous boat, from sensor integration to hull design",
+      "quote": "UM::Autonomy members design and build a water-surface vehicle capable of navigating and performing various naval operations without any human interaction. Meeting this objective requires expertise from multiple fields for tasks such as sensor integration, control system design, hull design, and funding management.",
+      "sourceUrl": "https://robotics.umich.edu/people/student-teams/",
+      "sourceTitle": "Student Teams | Michigan Robotics",
+      "themes": [
+        "robotics",
+        "sensors",
+        "marine",
+        "transportation",
+        "business"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:15.949Z"
+      }
+    },
+    {
+      "id": "umich:university-of-michigan-solar-car-team:e52e8b",
+      "schoolId": "umich",
+      "unitIds": [],
+      "kind": "organization",
+      "title": "University of Michigan Solar Car Team",
+      "nameOnPage": "Solar Car Team",
+      "summary": "A student-run team that designs, builds, and races solar-electric vehicles and is building a new car for the 2027 Bridgestone World Solar Challenge across Australia.",
+      "hook": "designs, builds, and races solar-electric cars, including across Australia in the World Solar Challenge",
+      "quote": "The University of Michigan Solar Car Team is an entirely student-run organization that designs, builds, and races solar-electric vehicles. Since its establishment in 1989, the team has built 18 vehicles. ... This year, we are engineering a brand-new vehicle for the 2027 Bridgestone World Solar Challenge, occurring in August 2027; it’s a 3,000 km race across the Australian outback, from Darwin all the way to Adelaide.",
+      "sourceUrl": "https://www.solarcar.engin.umich.edu/",
+      "sourceTitle": "University of Michigan Solar Car Team",
+      "themes": [
+        "energy",
+        "engineering-design",
+        "transportation"
+      ],
+      "commonness": "common",
+      "commonnessReason": "One of U-M's best-known student teams, often cited by engineering applicants.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:16.593Z"
+      }
+    },
+    {
+      "id": "umich:urb-consulting:c379a2",
+      "schoolId": "umich",
+      "unitIds": [
+        "taubman"
+      ],
+      "kind": "organization",
+      "title": "URB Consulting",
+      "nameOnPage": "URB Consulting",
+      "summary": "An interdisciplinary student consulting club that takes on real client projects for organizations doing technology-driven work in cities and the built environment.",
+      "hook": "lets students consult for real clients doing technology-driven work in cities",
+      "quote": "URB Consulting is an interdisciplinary club where students across the university come together to solve difficult problems for organizations that do technology-driven work in cities and the built environment. The club works with real clients and also hosts various speakers, industry visits and social events throughout the year.",
+      "sourceUrl": "https://taubmancollege.umich.edu/students/student-groups/",
+      "sourceTitle": "Student Groups - Taubman College",
+      "themes": [
+        "cities",
+        "business",
+        "career",
+        "interdisciplinary"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:16.168Z"
+      }
+    },
+    {
+      "id": "umich:urban-technology-student-organization-ut:e13f0d",
+      "schoolId": "umich",
+      "unitIds": [
+        "taubman"
+      ],
+      "kind": "organization",
+      "title": "Urban Technology Student Organization (UTSO)",
+      "nameOnPage": "Urban Technology Student Organization",
+      "summary": "A student-led group for Urban Technology students and others with similar interests that hosts social events and adds technical training and real-world applications to coursework.",
+      "hook": "connects Urban Technology students through social events and technical training",
+      "quote": "The Urban Technology Student Organization (UTSO) is a student-led organization that strives to create an inclusive environment for Urban Technology (UT) students and others with similar interests to gather. ... The organization hopes to foster a strong community by hosting social events, exploring our interests within the UT discipline, and enhancing in-class learning with technical training and real-world applications.",
+      "sourceUrl": "https://taubmancollege.umich.edu/students/student-groups/",
+      "sourceTitle": "Student Groups - Taubman College",
+      "themes": [
+        "cities"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:16.168Z"
+      }
+    },
+    {
+      "id": "umich:woven-wind:b1a073",
+      "schoolId": "umich",
+      "unitIds": [],
+      "kind": "organization",
+      "title": "Woven Wind",
+      "nameOnPage": "Woven Wind",
+      "summary": "A BLUElab student team designing a portable wind turbine and running outreach that teaches kids about engineering and renewable energy in Southeast Michigan.",
+      "hook": "builds a portable wind turbine and teaches kids about engineering and renewable energy",
+      "quote": "Woven Wind is focused on building a portable wind turbine for schools and communities in tandem with educational outreach designed to teach kids about engineering and renewable energy. Our team is currently designing a portable wind turbine to travel throughout Southeast Michigan and beyond.",
+      "sourceUrl": "https://bluelab.engin.umich.edu/woven-wind.html",
+      "sourceTitle": "Woven Wind",
+      "themes": [
+        "energy",
+        "youth",
+        "education",
+        "engineering-design",
+        "running"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:16.526Z"
+      }
+    },
+    {
+      "id": "umich:campus-as-lab:e340f9",
+      "schoolId": "umich",
+      "unitIds": [],
+      "kind": "program",
+      "title": "Campus as Lab",
+      "nameOnPage": "Campus as Lab",
+      "summary": "An effort that uses the U-M campus as a living test bed where students can work on sustainability projects such as pollinator gardens, monitoring equipment, and renewable energy installations.",
+      "hook": "lets students test sustainability ideas on campus, from monitoring equipment to renewable energy installations",
+      "quote": "Campus as Lab (CAL) creates a living test bed where students, faculty, and staff can work together to explore ideas, test approaches, and help shape a more sustainable future. ... Projects may range from small pilots that refine existing programs to larger initiatives embedded in campus systems, including pollinator gardens, monitoring equipment, renewable energy installations, and infrastructure-based research.",
+      "sourceUrl": "https://planetblue.umich.edu/campus/get-involved/campus-as-lab/",
+      "sourceTitle": "Campus as Lab | Planet Blue",
+      "themes": [
+        "sustainability",
+        "sensors",
+        "energy",
+        "civil-engineering"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:16.537Z"
+      }
+    },
+    {
+      "id": "umich:culture-corps:5da77b",
+      "schoolId": "umich",
+      "unitIds": [],
+      "kind": "program",
+      "title": "Culture Corps",
+      "nameOnPage": "Culture Corps",
+      "summary": "An Arts Initiative program that places U-M undergraduates in paid internships at Southeast Michigan arts and culture organizations after a mini-course.",
+      "hook": "places undergraduates in paid internships at Southeast Michigan arts and culture organizations",
+      "quote": "Culture Corps matches U-M undergraduate students to paid internships at arts and culture organizations in Southeast Michigan after taking a mini-course. ... Most internships are up to 20 hours/week for 15–16 weeks.",
+      "sourceUrl": "https://arts.umich.edu/culture-corps",
+      "sourceTitle": "Culture Corps — Michigan Arts",
+      "themes": [
+        "career",
+        "museums"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:16.564Z"
+      }
+    },
+    {
+      "id": "umich:global-health-equity-student-organizatio:e93a33",
+      "schoolId": "umich",
+      "unitIds": [],
+      "kind": "program",
+      "title": "Global Health Equity Student Organization Pitch Competition",
+      "nameOnPage": "Student organization pitch competition",
+      "summary": "A Center for Global Health Equity competition in which interdisciplinary student organizations co-design a global health solution with an international partner and pitch it for funding.",
+      "hook": "funds student organizations that co-design global health solutions with international partners",
+      "quote": "Our pitch competition invites interdisciplinary U-M student organizations to co-design a global health solution with an international partner, then pitch it for funding. ... Funding for every finalist, with the top team receiving up to $5,000.",
+      "sourceUrl": "https://www.globalhealthequity.umich.edu/programs/pitch",
+      "sourceTitle": "Pitch competition for U-M student organizations | Programs | Center for Global Health Equity",
+      "themes": [
+        "public-health",
+        "global",
+        "social-enterprise",
+        "interdisciplinary"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:17.022Z"
+      }
+    },
+    {
+      "id": "umich:graduate-education-preparation-program-g:48a8d7",
+      "schoolId": "umich",
+      "unitIds": [],
+      "kind": "program",
+      "title": "Graduate Education Preparation Program (GEPP)",
+      "nameOnPage": "Graduate Education Preparation Program",
+      "summary": "A two-year cohort program that helps first-generation students and students who have faced financial hardship prepare for advanced degrees.",
+      "hook": "supports first-generation and lower-income students preparing for graduate school",
+      "quote": "The Graduate Education Preparation Program (GEPP) is a two-year, cohort-based model, designed to increase access to advanced degrees. This program specifically seeks to support students who have experienced financial hardship as a result of family economic circumstances and/or are first generation in their families to graduate from a four-year college.",
+      "sourceUrl": "https://www.si.umich.edu/research/student-research-opportunities",
+      "sourceTitle": "Student research opportunities | umsi",
+      "themes": [
+        "first-gen",
+        "undergraduate-research",
+        "finance",
+        "economics",
+        "education"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:16.763Z"
+      }
+    },
+    {
+      "id": "umich:impact-studio:64ec77",
+      "schoolId": "umich",
+      "unitIds": [],
+      "kind": "program",
+      "title": "Impact Studio",
+      "nameOnPage": "Impact Studio",
+      "summary": "A multidisciplinary incubator run by Ross, UMSI, and Engineering where students from across U-M get coaching, funding, and workspace to launch ventures focused on positive change.",
+      "hook": "gives student founders coaching, funding, and workspace to launch ventures focused on positive change",
+      "quote": "Organized by the Ross School of Business, UMSI and the College of Engineering, the Impact Studio is a multidisciplinary incubator that brings students together from across U-M to develop and launch early-stage ventures focused on creating positive change. As a participating founder, you will receive coaching, funding, workspace and support to turn your ideas into working prototypes.",
+      "sourceUrl": "https://www.si.umich.edu/programs/engaged-learning/entrepreneurship-and-innovation-opportunities",
+      "sourceTitle": "Entrepreneurship and innovation opportunities | umsi",
+      "themes": [
+        "entrepreneurship",
+        "social-enterprise",
+        "engineering-design",
+        "business",
+        "interdisciplinary"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:16.802Z"
+      }
+    },
+    {
+      "id": "umich:spring-travel-courses:f688d5",
+      "schoolId": "umich",
+      "unitIds": [
+        "taubman"
+      ],
+      "kind": "program",
+      "title": "Spring Travel Courses",
+      "nameOnPage": "Spring Travel Courses",
+      "summary": "Three-credit Taubman travel courses offered in the spring or summer half-term, with participating students receiving $1,500 in support for international travel or $1,000 for domestic travel.",
+      "hook": "sends students on three-credit travel courses with $1,500 in support for international trips",
+      "quote": "The three-credit spring travel courses are available to Taubman College undergraduate and graduate students during the spring or summer half-term. ... Participating Taubman College students receive $1,500 in support for international travel and $1,000 for domestic travel.",
+      "sourceUrl": "https://taubmancollege.umich.edu/students/travel/spring-travel-courses/",
+      "sourceTitle": "Spring Travel Courses - Taubman College",
+      "themes": [
+        "study-abroad",
+        "global"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Featured on Taubman College's student travel pages.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:16.852Z"
+      }
+    },
+    {
+      "id": "umich:u-m-public-design-corps:95d4e1",
+      "schoolId": "umich",
+      "unitIds": [
+        "taubman"
+      ],
+      "kind": "program",
+      "title": "U-M Public Design Corps",
+      "nameOnPage": "Public Design Corps",
+      "summary": "A Taubman College initiative that pairs student teams with partner organizations on public design work rooted in equity and reciprocity.",
+      "hook": "pairs student design teams with community partner organizations on public projects",
+      "quote": "PDC brings students, faculty, and partners into design processes rooted in equity and reciprocity. ... Student teams are paired with partner organizations aligned with their academic and professional interests, positioning learning and public benefit as mutually reinforcing.",
+      "sourceUrl": "https://taubmancollege.umich.edu/research/initiatives/public-design-corps/",
+      "sourceTitle": "Public Design Corps - Taubman College",
+      "themes": [
+        "community-engagement",
+        "design",
+        "social-justice"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:16.876Z"
+      }
+    },
+    {
+      "id": "umich:umsi-study-abroad:a385e6",
+      "schoolId": "umich",
+      "unitIds": [
+        "si"
+      ],
+      "kind": "program",
+      "title": "UMSI Study Abroad",
+      "nameOnPage": "Study abroad",
+      "summary": "UMSI runs 10 study abroad programs with partner universities, including Amsterdam, where coursework can focus on urban interaction design, virtual reality, or big data.",
+      "hook": "sends information students abroad, including to Amsterdam for urban interaction design",
+      "quote": "UMSI hosts 10 study abroad programs in partnership with universities around the world. ... At the Amsterdam University of Applied Sciences, you’ll choose a thematic focus for your coursework — from urban interaction design to virtual reality to big data — and collaborate with local organizations to solve real challenges.",
+      "sourceUrl": "https://www.si.umich.edu/student-life/study-abroad",
+      "sourceTitle": "Study abroad | umsi",
+      "themes": [
+        "study-abroad",
+        "global",
+        "cities",
+        "hci",
+        "data-science"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:16.895Z"
+      }
+    },
+    {
+      "id": "umich:undergraduate-research-opportunity-progr:146215",
+      "schoolId": "umich",
+      "unitIds": [],
+      "kind": "program",
+      "title": "Undergraduate Research Opportunity Program (UROP)",
+      "nameOnPage": "Undergraduate Research Opportunity Program",
+      "summary": "A university-wide program that pairs first- and second-year students with U-M faculty and research scientists on research across all schools and colleges.",
+      "hook": "pairs first- and second-year students with faculty researchers across every school",
+      "quote": "The Undergraduate Research Opportunity Program (UROP) creates research partnerships between first- and second-year students and University of Michigan faculty and research scientists. All schools and colleges of the University of Michigan are active participants in UROP, providing a wealth of research topics for you to choose from.",
+      "sourceUrl": "https://www.si.umich.edu/research/student-research-opportunities",
+      "sourceTitle": "Student research opportunities | umsi",
+      "themes": [
+        "undergraduate-research"
+      ],
+      "commonness": "common",
+      "commonnessReason": "U-M's best-known undergraduate research program; many applicants cite it.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:16.763Z"
+      }
+    },
+    {
+      "id": "umich:urban-technology-leadership-development:1645d5",
+      "schoolId": "umich",
+      "unitIds": [
+        "taubman"
+      ],
+      "kind": "program",
+      "title": "Urban Technology Leadership Development Trek",
+      "nameOnPage": "Urban Technology Leadership Development Trek",
+      "summary": "A spring-break travel experience in which Urban Technology students spend five days in New York City and Boston meeting U-M alumni and other professionals who make change.",
+      "hook": "takes Urban Technology students to New York City and Boston to meet alumni making change",
+      "quote": "The Urban Technology Leadership Development Trek is a spring break travel experience for students seeking to grow as emerging leaders and clarify the impact they hope to make in their communities and professional fields. ... You will travel together to New York City and Boston for 5 days and 4 nights over spring break, where we will visit UM alumni and other professionals to learn from their real-world experience making change on the sidewalk and in the boardroom.",
+      "sourceUrl": "https://taubmancollege.umich.edu/course/ut402-urban-technology-leadership-development-trek-section-4-winter-2027/",
+      "sourceTitle": "UT 402 Section 4 - Urban Technology Leadership Development Trek - Winter 2027 - Taubman College",
+      "themes": [
+        "leadership",
+        "cities",
+        "career"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Lisa Sauvé"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:16.895Z"
+      }
+    },
+    {
+      "id": "umich:voices-in-civic-belonging:4bdbb1",
+      "schoolId": "umich",
+      "unitIds": [
+        "taubman"
+      ],
+      "kind": "program",
+      "title": "Voices in Civic Belonging",
+      "nameOnPage": "Voices in Civic Belonging",
+      "summary": "A U-M initiative led by social work and planning faculty to strengthen civic engagement in Michigan's immigrant and refugee communities, including a statewide training program for leaders.",
+      "hook": "works with Michigan immigrant and refugee communities on civic engagement and leadership training",
+      "quote": "Voices in Civic Belonging: Strengthening Immigrant and Refugee Engagement in Michigan is led by Odessa Gonzalez Benson, associate professor of social work and urban and regional planning, and Ana Paula Pimentel Walker, associate professor of urban and regional planning. ... Activities will include engaging community stakeholders, collecting data, developing educational and capacity-building programs, implementing a statewide training program for immigrant and refugee leaders, and evaluating the program’s impact.",
+      "sourceUrl": "https://taubmancollege.umich.edu/news/2026/08/27/new-gonzalez-benson-and-pimentel-walker-initiative-aims-to-strengthen-civic-engagement-among-immigrant-and-refugee-communities/",
+      "sourceTitle": "New Gonzalez Benson and Pimentel Walker initiative aims to strengthen civic engagement among immigrant and refugee communities - Taubman College",
+      "themes": [
+        "immigration",
+        "community-engagement",
+        "political-science",
+        "cities",
+        "education",
+        "leadership"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Odessa Gonzalez Benson",
+        "Ana Paula Pimentel Walker"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:17.184Z"
+      }
+    },
+    {
+      "id": "umich:a2-data-dive:00fdab",
+      "schoolId": "umich",
+      "unitIds": [],
+      "kind": "tradition",
+      "title": "A2 Data Dive",
+      "nameOnPage": "A2 Data Dive",
+      "summary": "An annual student-run data hackathon, founded by UMSI students in 2011, where participants help local nonprofit and civic organizations analyze their data.",
+      "hook": "pairs students with local nonprofits and civic groups to analyze their data in an annual hackathon",
+      "quote": "Founded by UMSI students in 2011, A2 Data Dive is an annual data hackathon for good, run by student coordinators with support from the Engaged Learning Office. You’ll join fellow students, faculty and data professionals to help local nonprofit and civic organizations analyze data and develop solutions.",
+      "sourceUrl": "https://www.si.umich.edu/programs/engaged-learning/engaged-learning-programs",
+      "sourceTitle": "Engaged learning programs | umsi",
+      "themes": [
+        "data-science",
+        "civic-tech",
+        "community-engagement",
+        "social-enterprise"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:17.244Z"
+      }
+    },
+    {
+      "id": "umich:arts-honors-cords:0c03e6",
+      "schoolId": "umich",
+      "unitIds": [],
+      "kind": "tradition",
+      "title": "Arts Honors Cords",
+      "nameOnPage": "Arts Honors Cord",
+      "summary": "Magenta Arts Honors Cords recognize U-M students who earn at least fifteen points through arts activities, courses, programs, and jobs during their time at Michigan.",
+      "hook": "awards magenta graduation cords to students who earn fifteen points through arts activities",
+      "quote": "These magenta cords recognize students who meaningfully integrated the arts into their University of Michigan experience to learn & grow as creatives, leaders, and people. ... To be accepted into the Excellence in Arts Honors Cord program, U-M students must participate in a variety of arts and creative activities, courses, programs, internships, jobs, or academic minors or majors during their period of study at the University of Michigan. A minimum of fifteen points must be earned to qualify.",
+      "sourceUrl": "https://arts.umich.edu/honors",
+      "sourceTitle": "Arts Honors Cord — Michigan Arts",
+      "themes": [
+        "visual-arts",
+        "music",
+        "theater",
+        "career"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:17.253Z"
+      }
+    },
+    {
+      "id": "umich:cafe-shapiro:f3eae2",
+      "schoolId": "umich",
+      "unitIds": [],
+      "kind": "tradition",
+      "title": "Café Shapiro",
+      "nameOnPage": "Café Shapiro",
+      "summary": "An annual U-M Library event where nominated undergraduate writers read from their creative work.",
+      "hook": "showcases nominated undergraduate writers reading their creative work each year",
+      "quote": "Join undergraduate student writers as they read from their creative work. ... It then became an annual event to showcase nominated undergraduate writers, whose work demonstrates the engaged creative and critical thinking that helps them understand and participate in the world.",
+      "sourceUrl": "https://www.lib.umich.edu/visit-and-study/events-and-exhibits/annual-events-and-series/cafe-shapiro/",
+      "sourceTitle": "Café Shapiro | University of Michigan Library",
+      "themes": [
+        "creative-writing",
+        "literature"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:17.386Z"
+      }
+    },
+    {
+      "id": "umich:student-show-exhibition:e6e1c5",
+      "schoolId": "umich",
+      "unitIds": [
+        "taubman"
+      ],
+      "kind": "tradition",
+      "title": "Student Show Exhibition",
+      "nameOnPage": "Student Show Exhibition",
+      "summary": "Taubman College's annual Student Show Exhibition displays faculty-selected studio projects from the fall, and undergraduate and graduate students compete for awards.",
+      "hook": "puts the best fall studio work on display and in competition for awards each year",
+      "quote": "Graduate and undergraduates may also compete for awards in the annual Student Show Exhibition, a gallery of faculty-selected projects representing the best of the student work created in the fall studios.",
+      "sourceUrl": "https://taubmancollege.umich.edu/students/awards/",
+      "sourceTitle": "Student Awards - Taubman College",
+      "themes": [
+        "architecture",
+        "design",
+        "museums"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:25:17.582Z"
+      }
+    }
+  ]
 }

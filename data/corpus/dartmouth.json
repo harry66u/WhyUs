@@ -5,6 +5,31 @@
   "builtBy": "research-agent",
   "facts": [
     {
+      "id": "dartmouth:arthur-l-irving-institute-for-energy-and:456a21",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "kind": "center",
+      "title": "Arthur L. Irving Institute for Energy and Society",
+      "nameOnPage": "Irving Institute for Energy and Society",
+      "summary": "Dartmouth's energy institute, described as a hub of collaboration that prepares the next generation of energy experts.",
+      "hook": "connects students to a collaborative hub preparing the next generation of energy experts",
+      "quote": "Irving Institute for Energy and Society: A hub of collaboration preparing the next generation of energy experts.",
+      "sourceUrl": "https://home.dartmouth.edu/academics/centers-institutes",
+      "sourceTitle": "Centers & Institutes | Dartmouth",
+      "themes": [
+        "energy"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Dartmouth's main energy institute, familiar to applicants interested in energy.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:22:02.554Z"
+      }
+    },
+    {
       "id": "dartmouth:dartmouth-center-for-social-impact:e28cc5",
       "schoolId": "dartmouth",
       "unitIds": [],
@@ -27,7 +52,116 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:56:18.353Z"
+        "checkedAt": "2026-11-05T16:22:02.974Z"
+      }
+    },
+    {
+      "id": "dartmouth:institute-of-arctic-studies:537aa3",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "kind": "center",
+      "title": "Institute of Arctic Studies",
+      "nameOnPage": "Institute of Arctic Studies",
+      "summary": "An institute that offers interdisciplinary research opportunities, discussion, and education in polar studies.",
+      "hook": "offers interdisciplinary research opportunities and education in polar studies",
+      "quote": "Institute of Arctic Studies: Provides interdisciplinary research opportunities, discussion, and education in polar studies, highlighting the importance of polar regions.",
+      "sourceUrl": "https://home.dartmouth.edu/academics/centers-institutes",
+      "sourceTitle": "Centers & Institutes | Dartmouth",
+      "themes": [
+        "polar",
+        "interdisciplinary",
+        "education",
+        "undergraduate-research"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:22:02.554Z"
+      }
+    },
+    {
+      "id": "dartmouth:john-sloan-dickey-center-for-internation:fc99b5",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "kind": "center",
+      "title": "John Sloan Dickey Center for International Understanding",
+      "nameOnPage": "Dickey Center",
+      "summary": "A center that brings the world to Dartmouth through dialogue, experiential education, and engagement on international policy and diplomacy.",
+      "hook": "engages students in international policy and diplomacy through dialogue and experiential education",
+      "quote": "Through informed and impactful dialogue, experiential education, and engagement on pressing issues in international policy and diplomacy, The Dickey Center brings the world to Dartmouth and Dartmouth to the world to engage with today's great issues.",
+      "sourceUrl": "https://dickey.dartmouth.edu/",
+      "sourceTitle": "Dickey Center for International Understanding - Dickey Center for International Understanding at Dartmouth",
+      "themes": [
+        "international-relations",
+        "global",
+        "public-policy",
+        "education"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "A prominent center that internationally minded applicants often mention.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:22:02.537Z"
+      }
+    },
+    {
+      "id": "dartmouth:magnuson-center-for-entrepreneurship:fafd30",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "kind": "center",
+      "title": "Magnuson Center for Entrepreneurship",
+      "nameOnPage": "Magnuson Center for Entrepreneurship",
+      "summary": "Dartmouth's entrepreneurship center, which supports students along the entrepreneurial journey with hands-on learning, mentorship, events, and resources.",
+      "hook": "supports students at every stage of the entrepreneurial journey with hands-on learning, mentorship, and events",
+      "quote": "Our mission is to serve Dartmouth students, alumni, faculty, and staff along all points of the entrepreneurial journey through hands-on learning, mentorship, events, and resources.",
+      "sourceUrl": "https://magnuson.dartmouth.edu/",
+      "sourceTitle": "Magnuson",
+      "themes": [
+        "entrepreneurship",
+        "education"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "The college's main entrepreneurship center.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:22:02.521Z"
+      }
+    },
+    {
+      "id": "dartmouth:native-american-program:654765",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "kind": "center",
+      "title": "Native American Program",
+      "nameOnPage": "Native American Program",
+      "summary": "A program that supports Indigenous students with holistic support and dedicated living-learning spaces, and partners across Dartmouth to uphold its founding charter.",
+      "hook": "supports Indigenous students with holistic support and dedicated living-learning spaces",
+      "quote": "The Native American Program champions Indigenous students through holistic support ... and dedicated living-learning spaces. The program partners with faculty, staff, and student organizations across the institution to uphold Dartmouth's founding charter through collaboration, training, and educational opportunities.",
+      "sourceUrl": "https://nap.dartmouth.edu/",
+      "sourceTitle": "Native American Program",
+      "themes": [
+        "cultural-identity",
+        "education",
+        "first-year"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "A well-known part of Dartmouth's identity and history.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:22:02.623Z"
       }
     },
     {
@@ -37,8 +171,8 @@
       "kind": "center",
       "title": "Nelson A. Rockefeller Center for Public Policy and the Social Sciences",
       "nameOnPage": "Rockefeller Center",
-      "summary": "Dartmouth's public policy center, which offers policy courses, a public policy minor, research opportunities, skills training, and visits from scholars and practitioners.",
-      "hook": "trains students in public policy through courses, policy research, and skills training",
+      "summary": "Dartmouth's public policy center, which trains students through policy and social science education, public lectures with visiting scholars and practitioners, policy research, and skills training.",
+      "hook": "trains students in public policy through education, policy research, and skills training",
       "quote": "The Rockefeller Center educates, trains, and inspires the next generation of public policy leaders, across fields, through multidisciplinary policy and social science-focused education, engagements and public lectures with distinguished visiting scholars and practitioners, policy-oriented research across the social sciences, and skills training.",
       "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/the-nelson-a-rockefeller-center-for-public-policy",
       "sourceTitle": "Dartmouth College - The Nelson A. Rockefeller Center for Public Policy",
@@ -56,66 +190,7 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:56:17.872Z"
-      }
-    },
-    {
-      "id": "dartmouth:engs-14-technology-entrepreneurship:99541b",
-      "schoolId": "dartmouth",
-      "unitIds": [
-        "college",
-        "thayer"
-      ],
-      "kind": "course",
-      "title": "ENGS 14: Technology Entrepreneurship",
-      "nameOnPage": "ENGS 14",
-      "summary": "An introductory course on technology entrepreneurship and the venture ecosystem, designed for undergraduates from all majors.",
-      "hook": "introduces students from any major to how technology ventures are started, funded, and grown",
-      "quote": "It is designed for undergraduate students from all majors, including science, engineering, and the humanities who seek to better understand the entrepreneurial mindset as applied to the commercialization of new technologies and its key processes and challenges.",
-      "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/engineering-sciences/engs-engineering-sciences-undergraduate/engs-14",
-      "sourceTitle": "Dartmouth College - ENGS14",
-      "themes": [
-        "entrepreneurship",
-        "ecology"
-      ],
-      "commonness": "rare",
-      "commonnessReason": "",
-      "people": [],
-      "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
-      "verification": {
-        "status": "verified",
-        "checkedAt": "2026-11-05T15:56:08.661Z"
-      }
-    },
-    {
-      "id": "dartmouth:engs-18-system-dynamics-in-policy-design:4da799",
-      "schoolId": "dartmouth",
-      "unitIds": [
-        "college",
-        "thayer"
-      ],
-      "kind": "course",
-      "title": "ENGS 18: System Dynamics in Policy Design and Analysis",
-      "nameOnPage": "ENGS 18",
-      "summary": "An introduction to system dynamics, a feedback- and simulation-based approach to designing policies, with no prior engineering or computer science experience required.",
-      "hook": "teaches computer simulation of feedback systems as a tool for designing and analyzing policy",
-      "quote": "This course introduces systems dynamics, an approach to policy design and analysis based upon feedback principles and computer simulation. ... No prior engineering or computer science experience is necessary.",
-      "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/engineering-sciences/engs-engineering-sciences-undergraduate/engs-18",
-      "sourceTitle": "Dartmouth College - ENGS18",
-      "themes": [
-        "public-policy",
-        "computer-science",
-        "design"
-      ],
-      "commonness": "rare",
-      "commonnessReason": "",
-      "people": [],
-      "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
-      "verification": {
-        "status": "verified",
-        "checkedAt": "2026-11-05T15:56:09.067Z"
+        "checkedAt": "2026-11-05T16:22:03.073Z"
       }
     },
     {
@@ -144,7 +219,7 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:56:09.002Z"
+        "checkedAt": "2026-11-05T16:22:03.390Z"
       }
     },
     {
@@ -157,8 +232,8 @@
       "kind": "course",
       "title": "ENGS 28: Embedded Systems",
       "nameOnPage": "ENGS 28",
-      "summary": "An early-stage engineering course that introduces physical sensors and actuators and how to connect and program them on a microcontroller, aimed partly at students who started with Arduino.",
-      "hook": "takes students from hobby-level Arduino projects to programming sensors and actuators on a microcontroller",
+      "summary": "An engineering course that introduces physical sensors and actuators and how to connect them to a microcontroller, building on hobby-level experience with boards like Arduino.",
+      "hook": "takes students from hobby-level Arduino projects to connecting sensors and actuators to a microcontroller",
       "quote": "Many students have been exposed to the potential of embedded systems at the hobby or maker level through robotics and the boards such as the popular Arduino and are excited to go farther. ... Engs 28 will introduce you to a variety of physical sensors and actuators, and how to connect them to a microcontroller.",
       "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/engineering-sciences/engs-engineering-sciences-undergraduate/engs-28",
       "sourceTitle": "Dartmouth College - ENGS28",
@@ -176,7 +251,7 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:56:09.358Z"
+        "checkedAt": "2026-11-05T16:22:03.459Z"
       }
     },
     {
@@ -190,7 +265,7 @@
       "title": "ENGS 37: Introduction to Environmental Engineering",
       "nameOnPage": "ENGS 37",
       "summary": "A survey of the sources, measurement techniques, and treatment technologies for pollution, covering water pollution, air pollution, solid wastes, and pollutant fate and transport.",
-      "hook": "introduces how engineers measure and treat water and air pollution, using design examples and case studies",
+      "hook": "introduces the sources, measurement, and treatment of water and air pollution",
       "quote": "A survey of the sources, measurement techniques, and treatment technologies relating to environmental pollution resulting from the activities of humans. ... Technological and other issues will be addressed relating to water pollution, air pollution, solid wastes, and the fate and transport of pollutants in the environment.",
       "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/engineering-sciences/engs-engineering-sciences-undergraduate/engs-37",
       "sourceTitle": "Dartmouth College - ENGS37",
@@ -206,7 +281,7 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:56:09.703Z"
+        "checkedAt": "2026-11-05T16:22:03.816Z"
       }
     },
     {
@@ -237,38 +312,7 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:56:10.051Z"
-      }
-    },
-    {
-      "id": "dartmouth:engs-43-environmental-transport-and-fate:972f66",
-      "schoolId": "dartmouth",
-      "unitIds": [
-        "college",
-        "thayer"
-      ],
-      "kind": "course",
-      "title": "ENGS 43: Environmental Transport and Fate",
-      "nameOnPage": "ENGS 43",
-      "summary": "An introduction to groundwater resources taught through case studies on groundwater budgets, well hydraulics, numerical modeling, contaminant transport, and water quality standards.",
-      "hook": "uses case studies to teach groundwater modeling, contaminant transport, and water quality standards",
-      "quote": "This course is an introduction to groundwater and groundwater resources. ... The case studies also provide insight into the complexity of sustainable groundwater resource management through the exploration of the ideas of safe yield, surface-groundwater interactions, and water quality standards.",
-      "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/engineering-sciences/engs-engineering-sciences-undergraduate/engs-43",
-      "sourceTitle": "Dartmouth College - ENGS43",
-      "themes": [
-        "water",
-        "environmental-engineering",
-        "sustainability",
-        "business"
-      ],
-      "commonness": "rare",
-      "commonnessReason": "",
-      "people": [],
-      "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
-      "verification": {
-        "status": "verified",
-        "checkedAt": "2026-11-05T15:56:10.677Z"
+        "checkedAt": "2026-11-05T16:22:04.160Z"
       }
     },
     {
@@ -304,39 +348,7 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:56:10.782Z"
-      }
-    },
-    {
-      "id": "dartmouth:engs-8-understand-energy:7f70d3",
-      "schoolId": "dartmouth",
-      "unitIds": [
-        "college",
-        "thayer"
-      ],
-      "kind": "course",
-      "title": "ENGS 8: Understand Energy",
-      "nameOnPage": "ENGS 8",
-      "summary": "A course that builds literacy in energy technologies, from batteries to heat pumps, with field trips, labs, and attention to the policies reshaping the energy landscape.",
-      "hook": "builds energy literacy through field trips, labs, and discussion of the policies reshaping power demand",
-      "quote": "This course builds students' literacy around energy technologies (from batteries to heat pumps), impacts, and the undergirding science. Students engage with readings, discussions, and problem sets; experience energy in the real world through field trips and labs; and explore news about the events, shifting policies, and increasing demand for power that are reshaping the energy landscape.",
-      "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/engineering-sciences/engs-engineering-sciences-undergraduate/engs-8",
-      "sourceTitle": "Dartmouth College - ENGS8",
-      "themes": [
-        "energy",
-        "climate",
-        "fieldwork",
-        "public-policy",
-        "education"
-      ],
-      "commonness": "rare",
-      "commonnessReason": "",
-      "people": [],
-      "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
-      "verification": {
-        "status": "verified",
-        "checkedAt": "2026-11-05T15:56:11.255Z"
+        "checkedAt": "2026-11-05T16:22:03.089Z"
       }
     },
     {
@@ -367,36 +379,7 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:56:11.600Z"
-      }
-    },
-    {
-      "id": "dartmouth:engs-89-engineering-design-methodology-a:fc344d",
-      "schoolId": "dartmouth",
-      "unitIds": [
-        "college",
-        "thayer"
-      ],
-      "kind": "course",
-      "title": "ENGS 89: Engineering Design Methodology and Project Initiation",
-      "nameOnPage": "ENGS 89",
-      "summary": "The first half of a two-term team design sequence (ENGS 89/90) in which projects come from specifications submitted by industry and other organizations.",
-      "hook": "has student teams spend two terms on design projects specified by industry and other organizations",
-      "quote": "Design projects are developed from specifications submitted by industry and other organizations and are pursued over the course of two quarters as a team project, 89/90.",
-      "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/engineering-sciences/engs-engineering-sciences-undergraduate/engs-89",
-      "sourceTitle": "Dartmouth College - ENGS89",
-      "themes": [
-        "engineering-design",
-        "design"
-      ],
-      "commonness": "moderate",
-      "commonnessReason": "The engineering capstone sequence, familiar to many engineering applicants.",
-      "people": [],
-      "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
-      "verification": {
-        "status": "verified",
-        "checkedAt": "2026-11-05T15:56:11.935Z"
+        "checkedAt": "2026-11-05T16:22:04.577Z"
       }
     },
     {
@@ -408,7 +391,7 @@
       "kind": "course",
       "title": "ENVS 21: Transforming the Energy System: Keeping the Lights on While Saving the Planet",
       "nameOnPage": "ENVS 21",
-      "summary": "A team-taught course on the shift to renewable energy in New England that ends with a discussion of Dartmouth's own energy transition.",
+      "summary": "A course on the shift to renewable energy in New England as a response to climate change that culminates in a discussion of Dartmouth's own energy transition.",
       "hook": "studies New England's renewable energy transition and ends by examining Dartmouth's own energy transition",
       "quote": "This course will explore how transitioning to renewable energy systems is a necessary leverage point for addressing human-caused climate change, with a specific focus on how energy for electricity and heat is generated and used in New England. ... The course will culminate in a discussion of Dartmouth's own energy transition as well as regional- and national scale solutions",
       "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/environmental-studies-program/envs-environmental-studies/envs-21",
@@ -424,7 +407,7 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:56:14.397Z"
+        "checkedAt": "2026-11-05T16:22:04.907Z"
       }
     },
     {
@@ -436,7 +419,7 @@
       "kind": "course",
       "title": "ENVS 50: Environmental Problem Analysis and Policy Formulation",
       "nameOnPage": "ENVS 50",
-      "summary": "A senior course in which student teams develop policy measures for a local environmental problem and present and defend their recommendations publicly.",
+      "summary": "A course in which student groups formulate policy measures for a local environmental problem and present and defend their recommendations publicly.",
       "hook": "has student teams craft and publicly defend policy recommendations for a local environmental problem",
       "quote": "Students working together in groups will formulate and justify policy measures that they think would be appropriate to deal with a local environmental problem. ... Considerable field work may be involved, and the final examination will consist of a public presentation and defense of student-generated policy recommendations.",
       "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/environmental-studies-program/envs-environmental-studies/envs-50",
@@ -453,7 +436,7 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:56:14.397Z"
+        "checkedAt": "2026-11-05T16:22:05.235Z"
       }
     },
     {
@@ -465,17 +448,15 @@
       "kind": "course",
       "title": "GEOG 28: Immigration, Race, and Ethnicity",
       "nameOnPage": "GEOG 28",
-      "summary": "A geography course on 20th-century immigration to the United States, covering citizenship, social mobility, transnationalism, and Latino, Asian, and European immigrant groups.",
-      "hook": "examines U.S. immigration, citizenship, and the experiences of Latino, Asian, and European groups",
+      "summary": "A geography course on 20th-century U.S. immigration that pays special attention to race and ethnicity, nativist reactions, and differences among Latino, Asian, and European groups.",
+      "hook": "examines U.S. immigration and differences among Latino, Asian, and European immigrant groups",
       "quote": "This course examines 20th century immigration to the United States and pays special attention to issues of race and ethnicity. ... We feature nativist reactions to immigration and highlight differences within and between Latino, Asian, and European groups throughout the course.",
       "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/geography/geog-geography/geog-28",
       "sourceTitle": "Dartmouth College - GEOG28",
       "themes": [
         "immigration",
         "latin-america",
-        "transportation",
-        "asia",
-        "global"
+        "asia"
       ],
       "commonness": "rare",
       "commonnessReason": "",
@@ -484,7 +465,7 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:56:14.032Z"
+        "checkedAt": "2026-11-05T16:22:05.586Z"
       }
     },
     {
@@ -496,8 +477,8 @@
       "kind": "course",
       "title": "GEOG 42: Water Policy and Politics",
       "nameOnPage": "GEOG 42",
-      "summary": "A course on the political, social, and legal sides of water resource management and how regulatory agencies and the legal sector handle water issues.",
-      "hook": "shows how the technical side of hydrology plays out in water policy, regulation, and law",
+      "summary": "A course on the political, social, and legal aspects of water resource management that shows how hydrology plays out in a socio-political arena.",
+      "hook": "shows how the technical side of hydrology plays out in water policy and politics",
       "quote": "This course is designed to provide students with a general background to the issues confronting water resource management. The course covers the political, social and legal aspects confronting effective water policy decision making. One of the goals is to demonstrate that the technical aspects of hydrology occur within a socio-political arena.",
       "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/geography/geog-geography/geog-42",
       "sourceTitle": "Dartmouth College - GEOG42",
@@ -516,7 +497,7 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:56:13.681Z"
+        "checkedAt": "2026-11-05T16:22:05.939Z"
       }
     },
     {
@@ -529,7 +510,7 @@
       "title": "GEOG 57: Urban Applications of GIS",
       "nameOnPage": "GEOG 57",
       "summary": "A geography course on using GIS to solve urban problems in planning and design, public administration, environmental assessment, land use change, and social and political issues.",
-      "hook": "teaches students to apply GIS to real urban planning, land use, and public administration problems",
+      "hook": "teaches students to apply GIS to urban planning, land use, and public administration problems",
       "quote": "This course is about how to use GIS technology to solve urban problems. The application problems that will be discussed in the class are from areas including urban planning and design, public administration, business decision-making, environment assessment, land use change, and social and political issues.",
       "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/geography/geog-geography/geog-57",
       "sourceTitle": "Dartmouth College - GEOG57",
@@ -547,7 +528,7 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:56:12.961Z"
+        "checkedAt": "2026-11-05T16:22:06.289Z"
       }
     },
     {
@@ -576,7 +557,7 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:56:13.242Z"
+        "checkedAt": "2026-11-05T16:22:06.636Z"
       }
     },
     {
@@ -588,8 +569,8 @@
       "kind": "course",
       "title": "MUS 35: The Jazz Language",
       "nameOnPage": "MUS 35",
-      "summary": "A course that teaches instrumentalists and vocalists the core jazz vocabulary by ear, including transcribing phrases in all 12 keys and learning solos as a class.",
-      "hook": "trains jazz players to learn phrases and solos by ear and transcribe them in all 12 keys",
+      "summary": "A course that presents the essential jazz vocabulary to instrumentalists and vocalists, who learn phrases by ear and transcribe them in all 12 keys.",
+      "hook": "trains jazz players to learn phrases by ear and transcribe them in all 12 keys",
       "quote": "This course will present the essential elements of the \"jazz vocabulary\" to instrumentalists and vocalists. ... Students will practice learning phrases by ear, which they will then transcribe and write in 12-keys.",
       "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/music/mus-music-undergraduate-courses/mus-20-mus-39/mus-35",
       "sourceTitle": "Dartmouth College - MUS35",
@@ -604,36 +585,7 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:56:15.467Z"
-      }
-    },
-    {
-      "id": "dartmouth:mus-45-12-advanced-studies-in-jazz-histo:13652e",
-      "schoolId": "dartmouth",
-      "unitIds": [
-        "college"
-      ],
-      "kind": "course",
-      "title": "MUS 45.12: Advanced Studies in Jazz History: A Century of Jazz at Dartmouth",
-      "nameOnPage": "MUS 45.12",
-      "summary": "A research course on Dartmouth's own history with jazz and other forms of Black music, using primary sources, interviews, and oral history.",
-      "hook": "has students document Dartmouth's century of jazz through archival research and oral history",
-      "quote": "This term we will be turning our gaze inward, exploring Dartmouth's own history with jazz and other forms of Black music over the past century. Through a combination of primary source research, interviews and oral history, and creative storytelling and writing, the goal of this course is to generate lasting, honest, insightful, and engaging documentation of the complicated history of jazz at Dartmouth.",
-      "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/music/mus-music-undergraduate-courses/mus-40-mus-49/mus-45-12",
-      "sourceTitle": "Dartmouth College - MUS45.12",
-      "themes": [
-        "jazz",
-        "music",
-        "history"
-      ],
-      "commonness": "rare",
-      "commonnessReason": "",
-      "people": [],
-      "term": "2026-fall",
-      "verifiedAt": "2026-11-05",
-      "verification": {
-        "status": "verified",
-        "checkedAt": "2026-11-05T15:56:15.784Z"
+        "checkedAt": "2026-11-05T16:22:06.972Z"
       }
     },
     {
@@ -645,7 +597,7 @@
       "kind": "course",
       "title": "SPAN 73.14: Embodying Care: Immigration, Health, and the Medical Humanities",
       "nameOnPage": "SPAN 73.14",
-      "summary": "A seminar co-taught with Geisel faculty in which students study immigrant health in U.S. and Latinx contexts and produce bilingual, public-facing work.",
+      "summary": "A seminar in which students use fiction, theatre, art, documentary, and community-engaged methods to study immigrant health in U.S. and Latinx contexts and produce bilingual, public-facing work.",
       "hook": "has students study immigrant health in Latinx communities and produce bilingual, public-facing work",
       "quote": "Through fiction, theatre, visual art, documentary, and community-engaged methods, students examine immigrant health in U.S. and Latinx contexts and produce bilingual, public-facing work that connects analysis to practice.",
       "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/spanish-and-portuguese-languages-and-literatures/span-spanish/span-73-14",
@@ -669,7 +621,7 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:56:14.962Z"
+        "checkedAt": "2026-11-05T16:22:07.333Z"
       }
     },
     {
@@ -701,7 +653,629 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:56:14.665Z"
+        "checkedAt": "2026-11-05T16:22:07.693Z"
+      }
+    },
+    {
+      "id": "dartmouth:dartmouth-brain-imaging-center:abfc4b",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "kind": "facility",
+      "title": "Dartmouth Brain Imaging Center",
+      "nameOnPage": "Dartmouth Brain Imaging Center",
+      "summary": "A research facility with an MRI machine used only for research and available to students and faculty studying neuroscience topics.",
+      "hook": "gives students studying neuroscience access to a research-only MRI facility",
+      "quote": "Dartmouth Brain Imaging Center: Houses an MRI machine used strictly for research and available to students and faculty studying a wide range of topics related to neuroscience.",
+      "sourceUrl": "https://home.dartmouth.edu/academics/centers-institutes",
+      "sourceTitle": "Centers & Institutes | Dartmouth",
+      "themes": [
+        "neuroscience",
+        "psychology"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:22:02.554Z"
+      }
+    },
+    {
+      "id": "dartmouth:dartmouth-organic-farm:f9a049",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "kind": "facility",
+      "title": "Dartmouth Organic Farm",
+      "nameOnPage": "Dartmouth Organic Farm",
+      "summary": "An educational farm three miles north of campus, on conservation land whose growing field borders trails along the Connecticut River, used for hands-on and interdisciplinary learning.",
+      "hook": "offers hands-on, interdisciplinary learning on a college farm beside the Connecticut River",
+      "quote": "Since then, the O Farm (as it is lovingly called by students) has grown into a hub for hands-on and interdisciplinary learning at Dartmouth. ... The O Farm is 3 miles north of the main Dartmouth campus, at 104 Lyme Road (Rt. 10) in Hanover. It is situated on conservation easement land, and our growing field abuts public-access walking trails along the Connecticut River.",
+      "sourceUrl": "https://www.sustainability.dartmouth.edu/organic-farm",
+      "sourceTitle": "FARM | Dartmouth Sustainability",
+      "themes": [
+        "agriculture",
+        "sustainability",
+        "water",
+        "outdoors",
+        "ecology",
+        "education",
+        "interdisciplinary"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "A known campus resource for environmentally minded students.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:22:08.265Z"
+      }
+    },
+    {
+      "id": "dartmouth:hood-museum-of-art:ca01cb",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "kind": "facility",
+      "title": "Hood Museum of Art",
+      "nameOnPage": "Hood Museum of Art",
+      "summary": "Dartmouth's teaching museum, which aims to create a learning environment for transformative encounters with works of art.",
+      "hook": "uses a teaching museum to bring students into direct encounters with works of art",
+      "quote": "Hood Museum of Art: A teaching museum that creates an ideal learning environment that fosters transformative encounters with works of art.",
+      "sourceUrl": "https://home.dartmouth.edu/academics/centers-institutes",
+      "sourceTitle": "Centers & Institutes | Dartmouth",
+      "themes": [
+        "museums",
+        "visual-arts",
+        "education"
+      ],
+      "commonness": "common",
+      "commonnessReason": "A flagship campus institution featured on the college's main student life pages.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:22:02.554Z"
+      }
+    },
+    {
+      "id": "dartmouth:hop-student-workshops:1c029f",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "kind": "facility",
+      "title": "Hop Student Workshops",
+      "nameOnPage": "Student Workshops",
+      "summary": "Woodworking, jewelry and metal, and ceramics studios at the Hopkins Center where students build hands-on projects without prior experience.",
+      "hook": "opens woodworking, metal, and ceramics studios to students with no experience",
+      "quote": "Hone your craft with hands-on projects in wood, metal/jewelry and clay—no experience needed! ... This workshop allows students to try their hands at furniture design, cabinetmaking, wood turning, carving and all aspects of woodworking.",
+      "sourceUrl": "https://hop.dartmouth.edu/student-opportunities/student-workshops",
+      "sourceTitle": "Student Workshops | Hopkins Center for the Arts at Dartmouth",
+      "themes": [
+        "making",
+        "visual-arts",
+        "design"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "A well-known campus maker resource featured on the college's student life pages.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:22:08.825Z"
+      }
+    },
+    {
+      "id": "dartmouth:mshop-at-dartmouth:633af6",
+      "schoolId": "dartmouth",
+      "unitIds": [
+        "college",
+        "thayer"
+      ],
+      "kind": "facility",
+      "title": "MShop at Dartmouth",
+      "nameOnPage": "MShop",
+      "summary": "An instructional machine shop with machining and fabrication equipment where staff teach hands-on skills to students with no experience.",
+      "hook": "teaches machining and fabrication to students who have never used a tool",
+      "quote": "No experience necessary. ... The MShop is a unique instructional workshop where problem-solving and teamwork skills are fostered through hands-on learning. ... Browse our extensive array of machining and fabrication equipment. Never even used a tool before? We'll teach you everything you need to know.",
+      "sourceUrl": "https://sites.dartmouth.edu/mshop/",
+      "sourceTitle": "MShop – Overview of the machines available for use, along with related operating manuals and other useful information.",
+      "themes": [
+        "making",
+        "mechanical-engineering"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:22:09.135Z"
+      }
+    },
+    {
+      "id": "dartmouth:rauner-special-collections-library:6fd74f",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "kind": "facility",
+      "title": "Rauner Special Collections Library",
+      "nameOnPage": "Rauner Special Collections Library",
+      "summary": "Dartmouth's special collections library, holding rare books, manuscripts, and the College Archives, with staff who work with students on research.",
+      "hook": "lets students work hands-on with rare books, manuscripts, and the College Archives",
+      "quote": "Stewarded by a team of specialists, Rauner Special Collections Library houses over 100,000 rare books, millions of manuscripts, and the extensive Dartmouth College Archives. The team collaborates and partners with students, faculty, staff, and the archive-curious at Dartmouth—and across the globe—to accelerate research and advance scholarship.",
+      "sourceUrl": "https://www.library.dartmouth.edu/rauner",
+      "sourceTitle": "Rauner Special Collections Library | Dartmouth Libraries",
+      "themes": [
+        "history",
+        "museums"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "A well-known library that humanities applicants often mention.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:22:09.251Z"
+      }
+    },
+    {
+      "id": "dartmouth:thayer-project-spaces-and-instructional:40f59f",
+      "schoolId": "dartmouth",
+      "unitIds": [
+        "college",
+        "thayer"
+      ],
+      "kind": "facility",
+      "title": "Thayer Project Spaces and Instructional Labs",
+      "nameOnPage": "Project Spaces & Labs",
+      "summary": "Thayer's instructional labs and workshops, which support the project-based curriculum with hands-on engineering projects and design and fabrication for research.",
+      "hook": "gives students hands-on space and staff support for real-world engineering projects",
+      "quote": "The instructional labs and workshops, and their staff, support Dartmouth's project-based curriculum. The goal is to give students hands-on experiences with real-world engineering projects, as well as provide support for faculty and students involved in design and fabrication for research.",
+      "sourceUrl": "https://engineering.dartmouth.edu/community/offices/labs",
+      "sourceTitle": "Project Spaces & Labs | Dartmouth Engineering",
+      "themes": [
+        "making",
+        "engineering-design",
+        "design"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:22:09.483Z"
+      }
+    },
+    {
+      "id": "dartmouth:carl-e-renshaw-professor-of-earth-scienc:41e82b",
+      "schoolId": "dartmouth",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "faculty",
+      "title": "Carl E. Renshaw, Professor of Earth Sciences",
+      "nameOnPage": "Carl E. Renshaw",
+      "summary": "A hydrologist who studies how rivers and streams respond to disturbances such as large floods, climate change, dams, dam removal, and industrial and agricultural legacy contaminants.",
+      "hook": "studies how rivers respond to floods, climate change, dam removal, and legacy contaminants",
+      "quote": "I am a hydrologist with research interests in the response of rivers and streams to disturbance -- whether the disturbance is natural (e.g. large floods and climate change) or anthropogenic (e.g. dams, dam removal, and industrial and agricultural legacy contaminants).",
+      "sourceUrl": "https://eaps.dartmouth.edu/people/carl-e-renshaw",
+      "sourceTitle": "Carl E. Renshaw | Department of Earth and Planetary Sciences",
+      "themes": [
+        "water",
+        "climate",
+        "earth-science",
+        "agriculture"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Carl E. Renshaw"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:22:09.938Z"
+      }
+    },
+    {
+      "id": "dartmouth:erin-mayfield-hodgson-family-assistant-p:424305",
+      "schoolId": "dartmouth",
+      "unitIds": [
+        "college",
+        "thayer"
+      ],
+      "kind": "faculty",
+      "title": "Erin Mayfield, Hodgson Family Assistant Professor of Engineering",
+      "nameOnPage": "Erin Mayfield",
+      "summary": "An engineering professor whose research in sustainable systems engineering and public policy covers energy and industrial systems planning, climate change mitigation, and multi-attribute decision-making.",
+      "hook": "researches energy systems planning and climate mitigation at the line between engineering and public policy",
+      "quote": "Erin Mayfield's research is in the areas of sustainable systems engineering and public policy. She focuses on three interacting research themes: energy and industrial systems planning, climate change mitigation, and multi-attribute decision-making.",
+      "sourceUrl": "https://engineering.dartmouth.edu/community/faculty/erin-mayfield",
+      "sourceTitle": "Erin Mayfield | Hodgson Family Assistant… | Dartmouth Engineering",
+      "themes": [
+        "energy",
+        "climate",
+        "environmental-policy",
+        "public-policy",
+        "sustainability"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Erin Mayfield"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:22:09.672Z"
+      }
+    },
+    {
+      "id": "dartmouth:klaus-keller-hodgson-distinguished-profe:3c5b47",
+      "schoolId": "dartmouth",
+      "unitIds": [
+        "college",
+        "thayer"
+      ],
+      "kind": "faculty",
+      "title": "Klaus Keller, Hodgson Distinguished Professor of Engineering",
+      "nameOnPage": "Klaus Keller",
+      "summary": "An engineering professor who studies climate risk management, mitigation and adaptation, robust decision making, and flood risk, aiming to design sustainable risk management strategies.",
+      "hook": "studies how to design risk management strategies for a changing climate, including flood risk",
+      "quote": "Second, how can we use this information to design sustainable, scientifically sound, technologically feasible, economically efficient, and ethically defensible risk management strategies? ... Climate risk management; climate change mitigation and adaptation; multisector dynamics; robust decision making; flood risk",
+      "sourceUrl": "https://engineering.dartmouth.edu/community/faculty/klaus-keller",
+      "sourceTitle": "Klaus Keller | Hodgson Distinguished… | Dartmouth Engineering",
+      "themes": [
+        "climate",
+        "water",
+        "sustainability",
+        "economics",
+        "design",
+        "business"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Klaus Keller"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:22:09.702Z"
+      }
+    },
+    {
+      "id": "dartmouth:taylor-ho-bynum-director-coast-jazz-orch:6a18ff",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "kind": "faculty",
+      "title": "Taylor Ho Bynum, Director, Coast Jazz Orchestra at Dartmouth",
+      "nameOnPage": "Taylor Ho Bynum",
+      "summary": "The cornetist and composer who directs the Coast Jazz Orchestra and whose Acoustic Bicycle Tours have him traveling to concerts solely by bike.",
+      "hook": "leads the jazz orchestra as a cornetist and composer who tours to concerts by bicycle",
+      "quote": "Director, Coast Jazz Orchestra at Dartmouth ... Bynum's expressionistic playing on cornet and his expansive vision as composer have garnered him critical attention on over twenty recordings as a bandleader and dozens more as a sideman. His varied endeavors include his Acoustic Bicycle Tours (where he travels to concerts solely by bike across thousands of miles)",
+      "sourceUrl": "https://hop.dartmouth.edu/people/taylor-ho-bynum",
+      "sourceTitle": "Taylor Ho Bynum | Hopkins Center for the Arts at Dartmouth",
+      "themes": [
+        "jazz",
+        "music",
+        "cycling"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Taylor Ho Bynum"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:22:09.789Z"
+      }
+    },
+    {
+      "id": "dartmouth:analog-lab-at-dartmouth:555626",
+      "schoolId": "dartmouth",
+      "unitIds": [
+        "college",
+        "thayer"
+      ],
+      "kind": "lab",
+      "title": "Analog Lab at Dartmouth",
+      "nameOnPage": "Analog Lab",
+      "summary": "A lab that designs highly efficient analog and mixed-signal circuits for sensor interfaces in wearable biomedical devices that need quality sensor data at very low power.",
+      "hook": "designs low-power circuits that read sensors in wearable health devices",
+      "quote": "The primary goal of our work is to design highly-efficient analog and mixed signal integrated circuits for sensor interfaces in wearable biomedical devices. Many of these devices simultaneously require high quality sensor data and very low power consumption.",
+      "sourceUrl": "https://sites.dartmouth.edu/odame/",
+      "sourceTitle": "Analog Lab at Dartmouth – Nonlinear Analog Integrated Circuits and Systems",
+      "themes": [
+        "sensors",
+        "electrical-engineering",
+        "biomedical-engineering",
+        "design"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:22:10.049Z"
+      }
+    },
+    {
+      "id": "dartmouth:citrin-family-gis-applied-spatial-analys:3862ae",
+      "schoolId": "dartmouth",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "lab",
+      "title": "Citrin Family GIS/Applied Spatial Analysis Lab",
+      "nameOnPage": "Citrin Family GIS/Applied Spatial Analysis Lab",
+      "summary": "A GIS and remote sensing lab whose GPS units, photogrammetric workstations, and field spectrometer students and faculty have used for mapping and field measurements such as turbidity.",
+      "hook": "lends GPS units and a field spectrometer and supports student GIS, mapping, and remote sensing projects",
+      "quote": "Dartmouth's Citrin Family GIS/Applied Spatial Analysis Lab supports research and education in geographic information science and technology, remote sensing, spatial analysis, geographic data visualization, and related fields. ... Students and faculty have used the lab's GPS units for mapping projects, mobile photogrammetric workstations for offsite work, and our field spectrometer for measuring turbidity in a Svalbard fjord",
+      "sourceUrl": "https://spatial.host.dartmouth.edu/",
+      "sourceTitle": "Citrin Family GIS / Applied Spatial Analysis Lab at Dartmouth College – Geographic information science and technology",
+      "themes": [
+        "gis-mapping",
+        "sensors",
+        "water",
+        "data-science",
+        "information",
+        "education",
+        "fieldwork"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:22:11.504Z"
+      }
+    },
+    {
+      "id": "dartmouth:dali-lab:833566",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "kind": "lab",
+      "title": "DALI Lab",
+      "nameOnPage": "DALI",
+      "summary": "A student lab where small teams of developers, designers, and project managers build apps, VR/AR experiences, games, and data visualizations for partners.",
+      "hook": "puts students on small teams that build apps and data visualizations for real partners",
+      "quote": "At DALI (founded 2013), students work in small teams to solve big problems brought to the lab by partners from around the world. Student teams (software engineers, designers, project manager) follow the DALI process to build mobile tools, such as mobile and web applications, VR/AR interactive experiences, games, data visualizations, animations, and more.",
+      "sourceUrl": "https://eejust.dartmouth.edu/undergraduate/fellowships-internships/ee-just-dali-internship",
+      "sourceTitle": "E.E. Just DALI Internship | E.E. Just Program for STEM Advancement",
+      "themes": [
+        "computer-science",
+        "hci",
+        "data-science",
+        "film-media"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "A well-known student technology lab among computing applicants.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:22:10.844Z"
+      }
+    },
+    {
+      "id": "dartmouth:empower-lab:c29d3f",
+      "schoolId": "dartmouth",
+      "unitIds": [
+        "college",
+        "thayer"
+      ],
+      "kind": "lab",
+      "title": "Empower Lab",
+      "nameOnPage": "Empower Lab",
+      "summary": "A lab that co-creates inclusive technologies with communities, combining human-computer interaction, personal informatics, social computing, and AI to support health and behavior change.",
+      "hook": "co-designs inclusive technology with communities to support health, accessibility, and sustainability",
+      "quote": "We co-create inclusive technologies with communities, combining human–computer interaction, personal informatics, social computing, and AI to support health and behavior change. Through research, design, and real-world deployment, we advance health equity, accessibility, and sustainability to empower individuals and communities.",
+      "sourceUrl": "https://www.empowerlab.dartmouth.edu/",
+      "sourceTitle": "Empower Lab | Dartmouth",
+      "themes": [
+        "hci",
+        "public-health",
+        "community-engagement",
+        "disability",
+        "ai",
+        "sustainability",
+        "computer-science",
+        "design"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [
+        "Elizabeth Murnane"
+      ],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:22:11.388Z"
+      }
+    },
+    {
+      "id": "dartmouth:fallout-radionuclide-analytics:813a26",
+      "schoolId": "dartmouth",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "lab",
+      "title": "Fallout RadioNuclide Analytics",
+      "nameOnPage": "Fallout RadioNuclide Analytics",
+      "summary": "A gamma spectroscopy lab that uses radionuclide chronometers to study modern change in atmospheric aerosols, forest ecosystems, landscapes, and river systems.",
+      "hook": "uses radionuclide tracers to measure change in rivers, forests, landscapes, and the atmosphere",
+      "quote": "This is a gamma spectroscopy lab where we use a suite of fallout radionuclide (FRN) and short-lived radionuclide (SLR) chronometers to understand modern change to atmospheric aerosols, forest ecosystems, physical landscapes, river systems, and the biogeochemical connections among them.",
+      "sourceUrl": "https://eaps.dartmouth.edu/research/labs-facilities/fallout-radionuclide-analytics",
+      "sourceTitle": "Fallout RadioNuclide Analytics | Department of Earth and Planetary Sciences",
+      "themes": [
+        "water",
+        "earth-science",
+        "ecology",
+        "data-science"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:22:11.536Z"
+      }
+    },
+    {
+      "id": "dartmouth:appalachian-trail-and-connecticut-river:018b41",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "kind": "location",
+      "title": "Appalachian Trail and Connecticut River",
+      "nameOnPage": "Appalachian Trail",
+      "summary": "The Appalachian Trail runs through campus and the Connecticut River is steps away, and the Dartmouth Outing Club offers membership open to all.",
+      "hook": "puts the Appalachian Trail and the Connecticut River within steps of campus",
+      "quote": "With the Appalachian Trail running through campus and the Connecticut River just steps away, outdoor activities ... The Dartmouth Outing Club (DOC) is the country's oldest and largest collegiate outing club, with membership open to all.",
+      "sourceUrl": "https://home.dartmouth.edu/about/life-upper-valley",
+      "sourceTitle": "Life in the Upper Valley | Dartmouth",
+      "themes": [
+        "outdoors",
+        "water",
+        "running"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "A widely known feature of Dartmouth's setting.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:22:11.639Z"
+      }
+    },
+    {
+      "id": "dartmouth:dartmouth-skiway:4f1f5e",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "kind": "location",
+      "title": "Dartmouth Skiway",
+      "nameOnPage": "Dartmouth Skiway",
+      "summary": "One of only a handful of U.S. ski areas owned by a college, the Dartmouth Skiway also serves as a ski resource for the wider Upper Valley community.",
+      "hook": "gives students a college-owned ski area that also serves the Upper Valley community",
+      "quote": "One of only a handful of American ski areas owned by colleges or universities, the Skiway has become a ski resource for the entire Upper Valley community.",
+      "sourceUrl": "https://home.dartmouth.edu/about/dartmouth-skiway-opens",
+      "sourceTitle": "Dartmouth Skiway Opens | Dartmouth",
+      "themes": [
+        "outdoors",
+        "athletics"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "A known Dartmouth amenity that outdoors-minded applicants mention.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:22:12.099Z"
+      }
+    },
+    {
+      "id": "dartmouth:moosilauke-ravine-lodge:6a558f",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "kind": "location",
+      "title": "Moosilauke Ravine Lodge",
+      "nameOnPage": "Ravine Lodge",
+      "summary": "A log lodge 2,500 feet up Mount Moosilauke where incoming students get their introduction to Dartmouth and each other through songs, stories, and shared meals.",
+      "hook": "introduces new students to Dartmouth through songs, stories, and meals at a log lodge on Mount Moosilauke",
+      "quote": "getting their introduction to Dartmouth and each other, not on a manicured campus but through songs and stories and shared meals in a log lodge 2,500 feet up the eastern flank of Mount Moosilauke.",
+      "sourceUrl": "https://home.dartmouth.edu/about/moosilauke-ravine-lodge-built",
+      "sourceTitle": "Moosilauke Ravine Lodge Built | Dartmouth",
+      "themes": [
+        "outdoors"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Familiar through First-Year Trips and often mentioned by outdoors-minded applicants.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:22:12.183Z"
+      }
+    },
+    {
+      "id": "dartmouth:second-college-grant:7065ef",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "kind": "location",
+      "title": "Second College Grant",
+      "nameOnPage": "Second College Grant",
+      "summary": "A 27,000-acre woodland given to the College by New Hampshire in 1807 and managed for wilderness recreation, timber that funds scholarships, education, and research.",
+      "hook": "offers a 27,000-acre college woodland used for wilderness recreation, education, and research",
+      "quote": "Dartmouth's most visited woodland is a 27,000 acre parcel called the Second College Grant or \"the Grant\", given to the College by the State of New Hampshire in 1807. ... The Grant has long been recognized as a model forest; one which balances wilderness recreation, timber harvesting that provides revenue for student scholarship, and a sustainably managed forest that supports education and research at Dartmouth",
+      "sourceUrl": "https://www.dartmouth.edu/woodlands/",
+      "sourceTitle": "Woodlands",
+      "themes": [
+        "ecology",
+        "outdoors",
+        "fieldwork",
+        "sustainability",
+        "education",
+        "fitness"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:22:13.129Z"
+      }
+    },
+    {
+      "id": "dartmouth:energy-engineering-concentration-energy:c180a3",
+      "schoolId": "dartmouth",
+      "unitIds": [
+        "college",
+        "thayer"
+      ],
+      "kind": "major",
+      "title": "Energy Engineering Concentration (Energy Engineering Program Area)",
+      "nameOnPage": "Energy Engineering Program Area",
+      "summary": "Within the engineering sciences degree, students may choose an energy engineering concentration that also considers social, political, and economic contexts.",
+      "hook": "lets engineering students concentrate in energy while weighing its social, political, and economic contexts",
+      "quote": "Within their engineering sciences degree, students may choose a concentration in energy engineering. The Energy Engineering Program Area provides structure and guidance for this concentration involving not only application of the full spectrum of engineering disciplines but also recognition of the social, political, and economic contexts with particular emphasis on human-centered impact.",
+      "sourceUrl": "https://engineering.dartmouth.edu/areas/energy",
+      "sourceTitle": "Energy Engineering Program Area | Dartmouth Engineering",
+      "themes": [
+        "energy",
+        "economics"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:22:12.635Z"
       }
     },
     {
@@ -725,7 +1299,8 @@
         "ecology",
         "earth-science",
         "chemistry",
-        "biology"
+        "biology",
+        "environmental-studies"
       ],
       "commonness": "rare",
       "commonnessReason": "",
@@ -734,7 +1309,7 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:56:12.189Z"
+        "checkedAt": "2026-11-05T16:22:12.773Z"
       }
     },
     {
@@ -764,7 +1339,7 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:56:12.189Z"
+        "checkedAt": "2026-11-05T16:22:12.773Z"
       }
     },
     {
@@ -783,7 +1358,8 @@
       "sourceTitle": "Dartmouth College - Environmental Studies",
       "themes": [
         "sustainability",
-        "energy"
+        "energy",
+        "environmental-studies"
       ],
       "commonness": "moderate",
       "commonnessReason": "The main environmental major, so environmentally minded applicants often name it.",
@@ -792,7 +1368,288 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:56:16.134Z"
+        "checkedAt": "2026-11-05T16:22:13.006Z"
+      }
+    },
+    {
+      "id": "dartmouth:coast-jazz-orchestra-at-dartmouth:fa963c",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "kind": "organization",
+      "title": "Coast Jazz Orchestra at Dartmouth",
+      "nameOnPage": "Coast Jazz Orchestra",
+      "summary": "Dartmouth's jazz orchestra, open by audition to students of any major and any instrument, alongside smaller Music Department combos.",
+      "hook": "lets non-majors audition for the jazz orchestra or smaller combos to keep playing jazz",
+      "quote": "The Coast Jazz Orchestra is open to anyone and any instrument by audition. Students don't have to be a music major or minor, and in addition to the jazz orchestra, the Music Department has several active smaller combos, so hopefully all students can find a context to keep playing that fits their interests and commitment level.",
+      "sourceUrl": "https://hop.dartmouth.edu/events/resident-ensembles/coast-jazz-orchestra-dartmouth",
+      "sourceTitle": "Coast Jazz Orchestra at Dartmouth | Hopkins Center for the Arts at Dartmouth",
+      "themes": [
+        "jazz",
+        "music"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "The college's main jazz ensemble, which musically active applicants often mention.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:22:13.175Z"
+      }
+    },
+    {
+      "id": "dartmouth:dartmouth-bikes:b6ffc8",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "kind": "organization",
+      "title": "Dartmouth Bikes",
+      "nameOnPage": "Dartmouth Bikes",
+      "summary": "A student-run campus bike shop that repairs, rents, and refurbishes bikes and trains students to become bike mechanics.",
+      "hook": "trains students as bike mechanics in a student-run shop that repairs, rents, and refurbishes bikes",
+      "quote": "Our student-run bike shop repairs, rents, refurbishes all bikes on campus! Get your bike tuned up by one of our skilled student mechanics, or get trained to be a bike mechanic yourself!",
+      "sourceUrl": "https://www.sustainability.dartmouth.edu/experience",
+      "sourceTitle": "EXPERIENCE | Dartmouth Sustainability",
+      "themes": [
+        "cycling",
+        "making",
+        "sustainability"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:22:13.218Z"
+      }
+    },
+    {
+      "id": "dartmouth:dartmouth-cycling:2eb35d",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "kind": "organization",
+      "title": "Dartmouth Cycling",
+      "nameOnPage": "Dartmouth Cycling",
+      "summary": "Dartmouth's collegiate cycling team, which races road from mid-March through May and mountain and cyclocross from September to December, and welcomes riders without racing experience.",
+      "hook": "welcomes riders new to racing onto a team that races road, mountain, and cyclocross",
+      "quote": "We are always excited when people who lack experience get on a bike and give racing a try. Collegiate racing is a great place to start. ... The collegiate road season runs from mid-March through May. A smaller subset of the team also races mountain and cyclocross from September to December.",
+      "sourceUrl": "https://sites.dartmouth.edu/cycling/",
+      "sourceTitle": "Dartmouth Cycling | Riding Bikes Fast since 1961",
+      "themes": [
+        "cycling",
+        "athletics"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:22:13.708Z"
+      }
+    },
+    {
+      "id": "dartmouth:dartmouth-forensic-union:e2c4ee",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "kind": "organization",
+      "title": "Dartmouth Forensic Union",
+      "nameOnPage": "Dartmouth Forensic Union",
+      "summary": "Dartmouth's intercollegiate policy debate team, which takes an interdisciplinary approach to debate.",
+      "hook": "fields Dartmouth's intercollegiate policy debate team",
+      "quote": "The Dartmouth Forensic Union fields Dartmouth's intercollegiate policy debate team. ... We are committed to an interdisciplinary approach to debate that promotes critical thinking.",
+      "sourceUrl": "https://forensic-union.dartmouth.edu/about",
+      "sourceTitle": "About | Forensic Union",
+      "themes": [
+        "debate",
+        "public-policy",
+        "interdisciplinary"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "The college's competitive policy debate team, a natural reference for debaters.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:22:19.273Z"
+      }
+    },
+    {
+      "id": "dartmouth:dartmouth-formula-racing-dfr:2bedbc",
+      "schoolId": "dartmouth",
+      "unitIds": [
+        "college",
+        "thayer"
+      ],
+      "kind": "organization",
+      "title": "Dartmouth Formula Racing (DFR)",
+      "nameOnPage": "Dartmouth Formula Racing",
+      "summary": "A student team that designs, builds, and tests a hybrid or electric race car and started the Formula Hybrid+Electric competition that Thayer runs.",
+      "hook": "has students design, build, and test a hybrid or electric race car",
+      "quote": "The Dartmouth Formula Racing (DFR) team designs, builds, and tests a high performance hybrid or electric race car. The DFR team initiated the annual Formula Hybrid+Electric™ competition, which is run by Thayer.",
+      "sourceUrl": "https://engineering.dartmouth.edu/community/student-groups",
+      "sourceTitle": "Student Groups & Councils | Dartmouth Engineering",
+      "themes": [
+        "mechanical-engineering",
+        "making",
+        "transportation",
+        "design"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:22:19.257Z"
+      }
+    },
+    {
+      "id": "dartmouth:dartmouth-humanitarian-engineering-dhe:d00a66",
+      "schoolId": "dartmouth",
+      "unitIds": [
+        "college",
+        "thayer"
+      ],
+      "kind": "organization",
+      "title": "Dartmouth Humanitarian Engineering (DHE)",
+      "nameOnPage": "Dartmouth Humanitarian Engineering",
+      "summary": "A student engineering group that organizes and supports service projects around the world aimed at socially conscious, economically feasible, and sustainable solutions.",
+      "hook": "organizes engineering service initiatives that aim for socially conscious, economically feasible, sustainable solutions",
+      "quote": "Dartmouth Humanitarian Engineering (DHE) organizes and supports service initiatives all over the world with the goal of improving a community's quality of life with solutions that are socially conscious, economically feasible, and fully sustainable.",
+      "sourceUrl": "https://engineering.dartmouth.edu/community/student-groups",
+      "sourceTitle": "Student Groups & Councils | Dartmouth Engineering",
+      "themes": [
+        "community-engagement",
+        "sustainability",
+        "engineering-design",
+        "economics"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:22:19.257Z"
+      }
+    },
+    {
+      "id": "dartmouth:dartmouth-organic-farm-club:9931ae",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "kind": "organization",
+      "title": "Dartmouth Organic Farm Club",
+      "nameOnPage": "Farm Club",
+      "summary": "A student-run club that organizes educational, social, and volunteer activities at the Organic Farm, on campus, and in the Upper Valley, with no farming experience required.",
+      "hook": "organizes educational, social, and volunteer activities at the farm and in the Upper Valley, no farming experience needed",
+      "quote": "Our student-run Farm Club is not just about farming! The Farm Club organizes educational, social, and volunteer opportunities at the O Farm, on campus, and in the Upper Valley. ... The Farm Club is open to any and all who are interested in getting involved! No farming or gardening experience is required.",
+      "sourceUrl": "https://www.sustainability.dartmouth.edu/organic-farm",
+      "sourceTitle": "FARM | Dartmouth Sustainability",
+      "themes": [
+        "agriculture",
+        "sustainability",
+        "community-engagement",
+        "education"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:22:08.265Z"
+      }
+    },
+    {
+      "id": "dartmouth:dartmouth-outing-club:bd8fe9",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "kind": "organization",
+      "title": "Dartmouth Outing Club",
+      "nameOnPage": "Dartmouth Outing Club",
+      "summary": "The largest and oldest collegiate outing club in the country, which sponsors outdoor recreation and environmental stewardship.",
+      "hook": "sponsors outdoor recreation and environmental stewardship through the country's oldest collegiate outing club",
+      "quote": "The largest and oldest collegiate outing club in the country, the DOC sponsors outdoor recreation and environmental stewardship.",
+      "sourceUrl": "https://home.dartmouth.edu/campus-life/student-groups-activities",
+      "sourceTitle": "Student Groups & Activities | Dartmouth",
+      "themes": [
+        "outdoors",
+        "ecology",
+        "fitness"
+      ],
+      "commonness": "common",
+      "commonnessReason": "One of Dartmouth's signature institutions and among the most cited details in Why Dartmouth essays.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:22:19.525Z"
+      }
+    },
+    {
+      "id": "dartmouth:the-dartmouth:26c648",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "kind": "organization",
+      "title": "The Dartmouth",
+      "nameOnPage": "The Dartmouth",
+      "summary": "The student newspaper, founded in 1799, which the college describes as the first collegiate newspaper in America.",
+      "hook": "lets students join the first collegiate newspaper in America, founded in 1799",
+      "quote": "Founded in 1799, The Dartmouth is the first collegiate newspaper in America.",
+      "sourceUrl": "https://home.dartmouth.edu/campus-life/student-groups-activities",
+      "sourceTitle": "Student Groups & Activities | Dartmouth",
+      "themes": [
+        "journalism"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "Well known on campus and to applicants interested in journalism.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:22:19.525Z"
+      }
+    },
+    {
+      "id": "dartmouth:biology-foreign-studies-program-costa-ri:498062",
+      "schoolId": "dartmouth",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "program",
+      "title": "Biology Foreign Studies Program (Costa Rica and the Caribbean)",
+      "nameOnPage": "Biology Foreign Studies Program",
+      "summary": "A full-immersion biology program in which students study tropical forests and freshwater ecosystems in Costa Rica and coral reef ecosystems in the Caribbean.",
+      "hook": "immerses students in the study of tropical forests and freshwater in Costa Rica and Caribbean coral reefs",
+      "quote": "The Biology Foreign Studies Program (BIOL 55, BIOL 56, BIOL 57) exposes students, through intensive, full-immersion study, to Earth's most diverse biological communities. BIOL 56 is a continuation of BIOL 55; these courses comprise the first two-thirds of the FSP, and focus on land (tropical forests) and tropical freshwater ecosystems in Costa Rica. BIOL 57 focuses on coral reef ecosystems in the Caribbean.",
+      "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/biological-sciences/biol-biological-sciences-undergraduate/biol-55",
+      "sourceTitle": "Dartmouth College - BIOL55",
+      "themes": [
+        "study-abroad",
+        "ecology",
+        "biology",
+        "fieldwork",
+        "latin-america",
+        "water",
+        "marine"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:22:19.554Z"
       }
     },
     {
@@ -821,7 +1678,7 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:56:18.597Z"
+        "checkedAt": "2026-11-05T16:22:19.761Z"
       }
     },
     {
@@ -834,7 +1691,7 @@
       "title": "Environmental Studies Africa Foreign Study Program (Namibia)",
       "nameOnPage": "Africa Foreign Study Program",
       "summary": "An Environmental Studies foreign study program that travels to Namibia to study environmental issues in the context of southern Africa, open to students of all majors.",
-      "hook": "takes students of any major to Namibia for field-based environmental study in southern Africa",
+      "hook": "takes students of any major to Namibia to study environmental themes in southern Africa",
       "quote": "We also offer the Africa Foreign Study Program that travels to Namibia where we explore the themes of environmental studies within the particular environment, culture and history of the southern Africa region. ... The program benefits from having diverse perspectives among the student participants, and all majors are welcome to apply.",
       "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/environmental-studies-program",
       "sourceTitle": "Dartmouth College - Environmental Studies",
@@ -842,7 +1699,8 @@
         "study-abroad",
         "africa",
         "fieldwork",
-        "history"
+        "history",
+        "environmental-studies"
       ],
       "commonness": "rare",
       "commonnessReason": "",
@@ -851,20 +1709,21 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:56:16.134Z"
+        "checkedAt": "2026-11-05T16:22:13.006Z"
       }
     },
     {
       "id": "dartmouth:first-year-research-in-engineering-exper:322002",
       "schoolId": "dartmouth",
       "unitIds": [
+        "college",
         "thayer"
       ],
       "kind": "program",
       "title": "First Year Research in Engineering Experience (FYREE)",
       "nameOnPage": "First Year Research in Engineering Experience",
-      "summary": "A paid research internship that pairs first-year students and prospective engineering majors with engineering faculty for two terms of lab research.",
-      "hook": "pairs first-year students with engineering faculty for a paid, two-term research internship in their labs",
+      "summary": "A paid research internship that pairs first-year students and prospective engineering majors with engineering faculty to take part in active research in their labs.",
+      "hook": "pairs first-year students with engineering faculty for a paid research internship in their labs",
       "quote": "The First Year Research in Engineering Experience (FYREE) program is a paid research internship that provides early hands-on research experience and mentoring within the engineering sciences for first-year Dartmouth undergraduate students and prospective engineering majors. ... During the program, FYREE students are paired with engineering faculty and take part in active research in their labs.",
       "sourceUrl": "https://engineering.dartmouth.edu/undergraduate/fyree",
       "sourceTitle": "First Year Research in Engineering Experience | Dartmouth Engineering",
@@ -881,7 +1740,60 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:56:17.300Z"
+        "checkedAt": "2026-11-05T16:22:19.865Z"
+      }
+    },
+    {
+      "id": "dartmouth:lalac-house:786134",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "kind": "program",
+      "title": "LALAC House",
+      "nameOnPage": "LALAC House",
+      "summary": "One of Dartmouth's LLC/affinity houses, devoted to Latin American, Latine, and Caribbean intellectual, social, and cultural life.",
+      "hook": "offers a residential community centered on Latin American, Latine, and Caribbean culture",
+      "quote": "LLC/Affinity Houses ... A community devoted to the exploration and expression of traditional and contemporary aspects of Latin American, Latine, and Caribbean intellectual, social and cultural life.",
+      "sourceUrl": "https://opal.dartmouth.edu/exploring-community/llcaffinity-houses",
+      "sourceTitle": "LLC/Affinity Houses | Office of Pluralism and Leadership",
+      "themes": [
+        "latin-america",
+        "cultural-identity"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:22:20.312Z"
+      }
+    },
+    {
+      "id": "dartmouth:language-study-abroad-lsa-and-lsa:2aaa05",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "kind": "program",
+      "title": "Language Study Abroad (LSA and LSA+)",
+      "nameOnPage": "Language Study Abroad (LSA)",
+      "summary": "Students can meet the language requirement with two preparatory courses and a term abroad, with LSA and advanced LSA+ programs in countries including Spain, Argentina, Brazil, China, Japan, and Morocco.",
+      "hook": "lets students complete the language requirement with a term of language study abroad",
+      "quote": "A student may choose to satisfy the Language Requirement through a combination of two preparatory courses at Dartmouth and one term of study abroad. ... Language Study Abroad (LSA) is available in France, Germany, Italy, Argentina, or Spain. Advanced Language Study Abroad (LSA+) is available in Brazil, China, France, Italy, Japan, Morocco, and Russia.",
+      "sourceUrl": "https://dartmouth.smartcatalogiq.com/en/current/orc/departments-programs-undergraduate/language-and-advanced-language-study-abroad-program",
+      "sourceTitle": "Dartmouth College - Language and Advanced Language Study Abroad Program",
+      "themes": [
+        "study-abroad",
+        "languages",
+        "asia"
+      ],
+      "commonness": "moderate",
+      "commonnessReason": "A well-known Dartmouth off-campus option among applicants interested in languages.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:22:20.040Z"
       }
     },
     {
@@ -909,7 +1821,7 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:56:17.872Z"
+        "checkedAt": "2026-11-05T16:22:03.073Z"
       }
     },
     {
@@ -937,7 +1849,66 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:56:18.341Z"
+        "checkedAt": "2026-11-05T16:22:20.145Z"
+      }
+    },
+    {
+      "id": "dartmouth:sustainability-action-program-sap:bab4a3",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "kind": "program",
+      "title": "Sustainability Action Program (SAP)",
+      "nameOnPage": "Sustainability Action Program",
+      "summary": "A first-year program that teaches how campus food, energy, waste, water, and transportation systems work, then trains teams in design thinking to carry out a campus sustainability project.",
+      "hook": "trains first-years in design thinking and has teams design and implement a campus sustainability project",
+      "quote": "The Sustainability Action Program (SAP) is focused on first years ... You will build a solid foundation for understanding how food, energy, waste, water, and transportation work at Dartmouth ... equipping you with tools such as design thinking, systems thinking, and behavior change theory. Then YOU (and a team of fellow SAP-lings) will design and implement a project on a topic you care about that makes Dartmouth even greener!",
+      "sourceUrl": "https://www.sustainability.dartmouth.edu/sustainability-action-program",
+      "sourceTitle": "SAP | Dartmouth Sustainability",
+      "themes": [
+        "sustainability",
+        "first-year",
+        "engineering-design",
+        "energy",
+        "transportation"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:22:20.297Z"
+      }
+    },
+    {
+      "id": "dartmouth:the-stretch:ad5a85",
+      "schoolId": "dartmouth",
+      "unitIds": [
+        "college"
+      ],
+      "kind": "program",
+      "title": "The Stretch",
+      "nameOnPage": "The Stretch",
+      "summary": "A roughly two-month off-campus field program across the western United States and Canada in which students collect and analyze field data.",
+      "hook": "takes students on a two-month field traverse of the American West to collect and analyze data",
+      "quote": "The Stretch is among the most storied and longest-lived off-campus programs at Dartmouth, and it consists of a roughly two-month traverse across the western United States and Canada where students are directly engaged in field-based data collection and analysis.",
+      "sourceUrl": "https://eaps.dartmouth.edu/stretch/stretch",
+      "sourceTitle": "The Stretch | Department of Earth and Planetary Sciences",
+      "themes": [
+        "fieldwork",
+        "earth-science",
+        "outdoors",
+        "study-abroad"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:22:20.401Z"
       }
     },
     {
@@ -962,7 +1933,110 @@
       "verifiedAt": "2026-11-05",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-05T15:56:18.014Z"
+        "checkedAt": "2026-11-05T16:22:20.489Z"
+      }
+    },
+    {
+      "id": "dartmouth:dartmouth-night-and-homecoming:c1b2bb",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "kind": "tradition",
+      "title": "Dartmouth Night and Homecoming",
+      "nameOnPage": "Dartmouth Night",
+      "summary": "A celebration in which alumni return to join students for a parade and bonfire.",
+      "hook": "brings alumni back to join students for a parade and bonfire",
+      "quote": "During Dartmouth Night and Homecoming, alumni return to join students in a revelatory celebration that includes a colorful parade and blazing bonfire.",
+      "sourceUrl": "https://home.dartmouth.edu/about/first-dartmouth-night",
+      "sourceTitle": "The First Dartmouth Night | Dartmouth",
+      "themes": [
+        "history"
+      ],
+      "commonness": "common",
+      "commonnessReason": "A well-known Dartmouth tradition.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:22:20.588Z"
+      }
+    },
+    {
+      "id": "dartmouth:first-year-trips:ec67c9",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "kind": "tradition",
+      "title": "First-Year Trips",
+      "nameOnPage": "First Year Trips",
+      "summary": "A tradition involving over 90 percent of first-year students, whose groups spend two nights outdoors and then reconvene at the Ravine Lodge on Mt. Moosilauke.",
+      "hook": "starts college with an outdoor trip that ends at the Moosilauke Ravine Lodge",
+      "quote": "Today the program involves over 90 percent of the freshman class and more than two hundred upperclassmen student leaders. ... After two nights in the outdoors, the groups reconvene at the Ravine Lodge at the base of Mt. Moosilauke and are treated to stories from administrators, faculty, or alumni about their own Dartmouth experiences.",
+      "sourceUrl": "https://home.dartmouth.edu/about/first-year-trips-begin",
+      "sourceTitle": "First Year Trips Begin | Dartmouth",
+      "themes": [
+        "outdoors",
+        "first-year",
+        "leadership"
+      ],
+      "commonness": "common",
+      "commonnessReason": "A signature Dartmouth tradition that many applicants mention.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:22:20.736Z"
+      }
+    },
+    {
+      "id": "dartmouth:ledyard-canoe-club-trip-to-the-sea:06c84c",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "kind": "tradition",
+      "title": "Ledyard Canoe Club Trip to the Sea",
+      "nameOnPage": "Trip to the Sea",
+      "summary": "An annual Ledyard Canoe Club tradition in which seniors paddle the Connecticut River from Hanover to Long Island Sound.",
+      "hook": "sends seniors paddling down the Connecticut River from Hanover to Long Island Sound",
+      "quote": "This tradition continues today as the annual Trip to the Sea, which sends seniors traveling down the Connecticut River from Hanover to the Long Island Sound.",
+      "sourceUrl": "https://home.dartmouth.edu/about/founding-ledyard-canoe-club",
+      "sourceTitle": "Founding of the Ledyard Canoe Club | Dartmouth",
+      "themes": [
+        "outdoors",
+        "water"
+      ],
+      "commonness": "rare",
+      "commonnessReason": "",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:22:20.857Z"
+      }
+    },
+    {
+      "id": "dartmouth:winter-carnival:d65c86",
+      "schoolId": "dartmouth",
+      "unitIds": [],
+      "kind": "tradition",
+      "title": "Winter Carnival",
+      "nameOnPage": "Winter Carnival",
+      "summary": "A Dartmouth cold-weather celebration with indoor and outdoor fun for all.",
+      "hook": "celebrates winter with indoor and outdoor events for the whole campus",
+      "quote": "But one thing remains constant: Winter Carnival at Dartmouth is still one of the greatest cold-weather celebrations, with indoor and outdoor fun for all.",
+      "sourceUrl": "https://home.dartmouth.edu/about/winter-carnival",
+      "sourceTitle": "Dartmouth Winter Carnival | Dartmouth",
+      "themes": [
+        "outdoors"
+      ],
+      "commonness": "common",
+      "commonnessReason": "One of Dartmouth's best-known traditions.",
+      "people": [],
+      "term": "2026-fall",
+      "verifiedAt": "2026-11-05",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-05T16:22:20.868Z"
       }
     }
   ]
