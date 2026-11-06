@@ -106,19 +106,35 @@ export function DetailEntry({
           ) : null}
         </dl>
 
-        {/* The verbatim quote and where it was confirmed */}
-        <figure className="mt-6 min-w-0 self-start border-l-2 border-line-strong pl-4 @2xl/dossier:col-start-1 @2xl/dossier:row-start-2 @2xl/dossier:mt-5">
-          <blockquote cite={detail.sourceUrl} className="font-serif text-[0.9375rem]/[1.6] text-muted">
+        {/* Where it was confirmed, with the verbatim quote one click away (always printed). */}
+        <figure className="mt-5 min-w-0 self-start @2xl/dossier:col-start-1 @2xl/dossier:row-start-2 @2xl/dossier:mt-4">
+          <figcaption className="min-w-0">
+            <span className="sr-only">Source: </span>
+            <SourceLink url={detail.sourceUrl} verifiedAt={detail.verifiedAt} className="max-w-full" />
+          </figcaption>
+          <details className="group mt-2 print:hidden">
+            <summary className="inline-flex cursor-pointer list-none items-center gap-1.5 rounded-xs text-xs text-subtle transition-colors hover:text-fg [&::-webkit-details-marker]:hidden">
+              <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true" className="transition-transform duration-150 group-open:rotate-90">
+                <path d="M3.5 2l3 3-3 3" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+              <span className="group-open:hidden">Show the quoted text from this page</span>
+              <span className="hidden group-open:inline">Hide the quoted text</span>
+            </summary>
+            <blockquote cite={detail.sourceUrl} className="mt-2.5 border-l-2 border-line-strong pl-4 font-serif text-[0.9375rem]/[1.6] text-muted">
+              <p>
+                <span aria-hidden="true">“</span>
+                {detail.quote}
+                <span aria-hidden="true">”</span>
+              </p>
+            </blockquote>
+          </details>
+          <blockquote cite={detail.sourceUrl} className="mt-2.5 hidden border-l-2 border-line-strong pl-4 font-serif text-[0.9375rem]/[1.6] text-muted print:block">
             <p>
               <span aria-hidden="true">“</span>
               {detail.quote}
               <span aria-hidden="true">”</span>
             </p>
           </blockquote>
-          <figcaption className="mt-2.5 min-w-0">
-            <span className="sr-only">Source: </span>
-            <SourceLink url={detail.sourceUrl} verifiedAt={detail.verifiedAt} className="max-w-full" />
-          </figcaption>
         </figure>
       </div>
     </article>

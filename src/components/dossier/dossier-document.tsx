@@ -112,7 +112,7 @@ export function DossierDocument({ dossier, preparedFor, idPrefix = "dossier", an
               {details.map((detail, i) => {
                 const motion = enter(animated, 140 + i * 45);
                 return (
-                  <li key={detail.factId} className={cn("py-9 first:pt-0 last:pb-2", motion.className)} style={motion.style}>
+                  <li key={detail.factId} className={cn("py-7 first:pt-0 last:pb-2", motion.className)} style={motion.style}>
                     <DetailEntry
                       detail={detail}
                       dossier={dossier}
