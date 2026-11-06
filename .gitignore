@@ -31,3 +31,6 @@ next-env.d.ts
 
 # debug
 npm-debug.log*
+
+# agent scratch files
+__scratch__/
