@@ -23,7 +23,7 @@ import { llmAvailable } from "@/lib/llm/client";
 import { isVerifiedFact, swapTest, type OtherSchool } from "@/lib/matching/swap";
 import { getSchoolFacts } from "@/lib/research/corpus-store";
 import { currentTerm, isoDate, verifiedThisTerm } from "@/lib/research/term";
-import { getSchool } from "@/lib/schools/registry";
+import { getSchool, listSchools } from "@/lib/schools/registry";
 import type { Activity, DraftIssueType, Fact, FactKind, School } from "@/lib/types";
 import { extractClaims, resolveOverlaps, type Claim, type ClaimKind } from "./claims";
 import { buildFactIndex, matchElsewhere, matchHere, nearMiss, scanKnownNames, type FactIndex, type FactMatch, type KnownHit } from "./facts-index";
@@ -52,6 +52,12 @@ export interface DraftCheckInput {
 
 export interface DraftCheckDeps {
   getSchool(id: string): School | undefined;
+  /**
+   * Every school WhyUs knows. Names and verified details of schools that are not on
+   * the student's list are still flagged as "another school"; only the swap test is
+   * limited to the list.
+   */
+  listSchools?(): School[];
   /** Verified facts for a school (all units). */
   loadFacts(schoolId: string): Promise<Fact[]>;
   /** Cached official pages for a school, read this term. Called only when a claim is not in the facts. */
@@ -64,6 +70,7 @@ export interface DraftCheckDeps {
 function defaultDeps(): DraftCheckDeps {
   return {
     getSchool,
+    listSchools,
     loadFacts: (schoolId) => getSchoolFacts(schoolId),
     loadPages: (school) => loadCachedOfficialPages(school),
     extractClaims: llmAvailable() ? (text, ctx) => extractClaimsWithClaude(text, ctx) : undefined,
@@ -258,9 +265,11 @@ export async function checkDraft(input: DraftCheckInput, deps: Partial<DraftChec
   for (const o of input.otherSchools ?? []) if (o?.schoolId && !specs.has(o.schoolId)) specs.set(o.schoolId, o.unitId ?? null);
   for (const id of input.otherSchoolIds ?? []) if (id && !specs.has(id)) specs.set(id, null);
   specs.delete(school.id);
+  const onList = new Set(specs.keys());
+  for (const s of d.listSchools?.() ?? []) if (s && s.id !== school.id && !specs.has(s.id)) specs.set(s.id, null);
   const others = [...specs.entries()]
-    .map(([schoolId, unitId]) => ({ school: d.getSchool(schoolId), unitId }))
-    .filter((o): o is { school: School; unitId: string | null } => Boolean(o.school));
+    .map(([schoolId, unitId]) => ({ school: d.getSchool(schoolId), unitId, onList: onList.has(schoolId) }))
+    .filter((o): o is { school: School; unitId: string | null; onList: boolean } => Boolean(o.school));
 
   // Optional extra spans; any failure (thrown or rejected) leaves the patterns to do the work.
   const extract = d.extractClaims;
@@ -522,12 +531,18 @@ export async function checkDraft(input: DraftCheckInput, deps: Partial<DraftChec
   }
 
   // Swap test per sentence, against the other schools' verified research (scoped like the dossiers).
-  const swapOthers: OtherSchool[] = others.map((o, i) => ({
-    school: o.school,
-    facts: usable(factLists[i + 1], o.school).filter(
-      (f) => verifiedThisTerm(f.verifiedAt, now) && (!o.unitId || (f.unitIds ?? []).length === 0 || f.unitIds.includes(o.unitId)),
-    ),
-  }));
+  const swapOthers: OtherSchool[] = others.flatMap((o, i) =>
+    o.onList
+      ? [
+          {
+            school: o.school,
+            facts: usable(factLists[i + 1], o.school).filter(
+              (f) => verifiedThisTerm(f.verifiedAt, now) && (!o.unitId || (f.unitIds ?? []).length === 0 || f.unitIds.includes(o.unitId)),
+            ),
+          },
+        ]
+      : [],
+  );
   if (swapOthers.length > 0) {
     for (const [index, facts] of verifiedBySentence) {
       const sentence = seg.sentences[index];
